@@ -1,0 +1,11 @@
+.next
+node_modules
+out
+work
+story
+outputs
+.agents
+.codex
+*.tsbuildinfo
+.env*
+!.env.example
