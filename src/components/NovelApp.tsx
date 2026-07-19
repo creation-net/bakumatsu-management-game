@@ -9,6 +9,7 @@ import {
   getChapterLabel,
   getChoiceDisplayText,
   getChoiceValue,
+  getJapaneseChapterNumber,
   titleImagePath,
 } from "@/lib/storyPresentation";
 import type { Chapter, Choice, Passage, ReadingProgress, ReadingStep } from "@/types/story";
@@ -298,7 +299,9 @@ function EndingScreen({
   onIndex: () => void;
 }) {
   const isLastChapter = chapter.id === chapters[chapters.length - 1]?.id;
-  const nextLabel = isLastChapter ? "タイプ診断へ進む" : `第${chapter.id + 1}章へ進む`;
+  const nextLabel = isLastChapter
+    ? "タイプ診断へ進む"
+    : `第${getJapaneseChapterNumber(chapter.id + 1)}章へ進む`;
 
   return (
     <article className="ending-view scene-frame">
@@ -309,7 +312,6 @@ function EndingScreen({
         <section className="selected-choice" aria-label="選択した内容">
           <span>{choice.label}</span>
           <div>
-            {choice.person && <p className="choice-person">{choice.person}</p>}
             <p>{getChoiceDisplayText(choice.text, choice.person)}</p>
             <small>{getChoiceValue(choice.text, choice.value)}</small>
           </div>
@@ -352,16 +354,19 @@ function ChapterHeader({
 function PassageList({ passages, compact = false }: { passages: Passage[]; compact?: boolean }) {
   return (
     <div className={compact ? "passage-list compact" : "passage-list"}>
-      {passages.map((passage) => {
+      {passages.map((passage, index) => {
         const isThought = passage.kind === "scene" && /^（/.test(passage.text);
+        const previous = passages[index - 1];
+        const showSpeaker =
+          passage.kind === "dialogue" &&
+          passage.speaker &&
+          !(previous?.kind === "dialogue" && previous.speaker === passage.speaker);
         return (
           <section
             className={isThought ? `passage ${passage.kind} thought` : `passage ${passage.kind}`}
             key={passage.id}
           >
-            {passage.kind === "dialogue" && passage.speaker && (
-              <p className="speaker">{passage.speaker}</p>
-            )}
+            {showSpeaker && <p className="speaker">{passage.speaker}</p>}
             <p className="passage-text">{passage.text}</p>
           </section>
         );
@@ -375,7 +380,6 @@ function ChoiceButton({ choice, onClick }: { choice: Choice; onClick: () => void
     <button className="choice" type="button" onClick={onClick}>
       <span className="choice-label">{choice.label}</span>
       <span className="choice-body">
-        {choice.person && <strong>{choice.person}</strong>}
         <span>{getChoiceDisplayText(choice.text, choice.person)}</span>
         <em>{getChoiceValue(choice.text, choice.value)}</em>
       </span>

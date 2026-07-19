@@ -452,6 +452,7 @@ function applyEditorialAdjustments(chapter) {
   applyTextCorrections(chapter);
   applyFuriganaAndIntroductions(chapter);
   cleanupDuplicateReadings([...chapter.passages, ...chapter.endingPassages]);
+  applyPostFuriganaReviewCorrections(chapter);
   normalizeChoices(chapter);
   return chapter;
 }
@@ -504,7 +505,7 @@ function toJapaneseNumeral(value) {
 }
 
 function isRemovedSceneMarker(text) {
-  return /^【(?:ナレーション|問い)】$/u.test(text);
+  return /^【(?:ナレーション|問い|導入)】$/u.test(text);
 }
 
 function normalizeSpeakers(passages) {
@@ -573,6 +574,7 @@ function applyTextCorrections(chapter) {
       "「政府の倉庫から、武器や弾薬を持ち出しております。」",
     ],
   ]);
+  applyRequestedReviewCorrections(chapter);
   cleanupDuplicateReadings(all);
 
   if (chapter.id === 3) {
@@ -642,6 +644,222 @@ function replaceTexts(passages, pairs) {
   }
 }
 
+function removeTextPassages(passages, texts) {
+  for (let index = passages.length - 1; index >= 0; index -= 1) {
+    if (texts.includes(passages[index].text)) {
+      passages.splice(index, 1);
+    }
+  }
+  reindexPassages(passages);
+}
+
+function insertBeforeText(passages, targetText, passage) {
+  const index = passages.findIndex((item) => item.text === targetText);
+  if (index >= 0 && !passages.some((item) => item.text === passage.text)) {
+    passages.splice(index, 0, passage);
+    reindexPassages(passages);
+  }
+}
+
+function insertAfterText(passages, targetText, passage) {
+  const index = passages.findIndex((item) => item.text === targetText);
+  if (index >= 0 && !passages.some((item) => item.text === passage.text)) {
+    passages.splice(index + 1, 0, passage);
+    reindexPassages(passages);
+  }
+}
+
+function reindexPassages(passages) {
+  for (let index = 0; index < passages.length; index += 1) {
+    const prefix = passages[index].id?.startsWith("e-") ? "e" : "p";
+    passages[index].id = `${prefix}-${index + 1}`;
+  }
+}
+
+function replaceSpeakers(passages, from, to) {
+  for (const passage of passages) {
+    if (passage.speaker === from) {
+      passage.speaker = to;
+    }
+  }
+}
+
+function assignFollowingDialogueSpeaker(passages, markerText, speaker) {
+  const markerIndex = passages.findIndex((passage) => passage.text === markerText);
+  if (markerIndex < 0) {
+    return;
+  }
+  for (let index = markerIndex + 1; index < passages.length; index += 1) {
+    const passage = passages[index];
+    if (passage.kind !== "dialogue") {
+      break;
+    }
+    if (!passage.speaker) {
+      passage.speaker = speaker;
+    }
+  }
+}
+
+function setSceneMarker(passages, from, to) {
+  const passage = passages.find((item) => item.text === from);
+  if (passage) {
+    passage.kind = "scene";
+    passage.text = to;
+  }
+}
+
+function applyRequestedReviewCorrections(chapter) {
+  if (chapter.id === 1 || chapter.id === 2) {
+    replaceTexts(chapter.passages, [
+      ["吉田松陰", "吉田 松陰（よしだ しょういん）"],
+      ["松下村塾", "松下村塾（しょうかそんじゅく）"],
+    ]);
+  }
+
+  if (chapter.id === 3) {
+    replaceTexts(chapter.passages, [
+      ["西郷隆盛。", "西郷 吉之助（さいごう きちのすけ／薩摩藩の中心人物）。"],
+    ]);
+  }
+
+  if (chapter.id === 5) {
+    removeTextPassages(chapter.passages, [
+      "静寂。",
+      "「ならば。」",
+      "「藩は幕府へ恭順する。」",
+      "部屋が静まり返る。",
+      "高杉は静かに目を閉じる。",
+      "敬親は続ける。",
+      "「じゃが。」",
+      "「長州の志まで。」",
+      "「差し出すことはせん。」",
+      "（殿はそのすべてを背負って決断された。）",
+    ]);
+  }
+
+  if (chapter.id === 6) {
+    insertBeforeText(chapter.passages, "「そうじゃ！」", {
+      id: "p-inserted-voice",
+      kind: "narration",
+      text: "隊士たちが声を上げる。",
+    });
+    replaceTexts(chapter.passages, [
+      [
+        "長州藩士・山縣 有朋（やまがた ありとも／長州藩出身の軍政家）だった。",
+        "長州藩士・山縣 狂介（やまがた きょうすけ／のちの山縣有朋。長州藩出身の軍政家）だった。",
+      ],
+      ["【山縣有朋】", "【山縣狂介】"],
+    ]);
+    insertAfterText(chapter.passages, "「仲間へ銃を向けるんじゃろうか。」", {
+      id: "p-inserted-yamagata",
+      kind: "dialogue",
+      text: "「まだ決断する時ではない。情勢を見極めるべきじゃ。」",
+      speaker: "山縣狂介",
+    });
+  }
+
+  if (chapter.id === 7) {
+    replaceTexts(chapter.passages, [
+      [
+        "薩摩藩士・西郷 吉之助（さいごう きちのすけ／薩摩藩士）。",
+        "西郷 吉之助（さいごう きちのすけ／薩摩藩の中心人物）。",
+      ],
+      ["「蔵六。」", "「村田先生。」"],
+      ["「お前の言うことは正しい。」", "「あなたのおっしゃることは正しい。」"],
+      ["「難しゅう考えすぎじゃ。」", "「両方とも、極端な話じゃ。」"],
+      ["「どうする。」", "「君の考えも聞かせてほしい。」"],
+    ]);
+  }
+
+  if (chapter.id === 8) {
+    replaceTexts(chapter.passages, [
+      [
+        "長州藩士・桂 小五郎（かつら こごろう／長州藩の重臣）。",
+        "桂 小五郎（かつら こごろう／長州藩の重臣）。",
+      ],
+      [
+        "長州藩士・高杉 晋作（たかすぎ しんさく／奇兵隊を率いる長州藩士）。",
+        "高杉 晋作（たかすぎ しんさく／奇兵隊を率いる長州藩士）。",
+      ],
+      [
+        "長州藩士・村田 蔵六（むらた ぞうろく／兵学者）。",
+        "村田 蔵六（むらた ぞうろく／兵学者）。",
+      ],
+      ["「わしらの何倍もの兵力じゃ。」", "「こちらの何倍もの兵力です。」"],
+      ["「じゃが。」", "「ですが。」"],
+      ["「数で勝てん戦ほど。」", "「数で勝てぬ戦ほど。」"],
+      ["「戦う場所が大事になる。」", "「戦う場所が大事になります。」"],
+      ["「明日から。」", "「これから。」"],
+    ]);
+  }
+
+  if (chapter.id === 9) {
+    replaceTexts(chapter.passages, [
+      [
+        "廊下の奥から薩摩藩士・西郷 吉之助（さいごう きちのすけ／薩摩藩士）が歩いてくる。",
+        "廊下の奥から西郷 吉之助（さいごう きちのすけ／薩摩藩の中心人物）が歩いてくる。",
+      ],
+      [
+        "老中・板倉 勝静（いたくら かつきよ／幕府老中）が静かに口を開く。",
+        "板倉 勝静（いたくら かつきよ／幕府老中）が静かに口を開く。",
+      ],
+      ["／長州藩の下級武士", ""],
+    ]);
+  }
+
+  if (chapter.id === 11) {
+    insertBeforeText(chapter.passages, "「村瀬どん。」", {
+      id: "p-inserted-saigo",
+      kind: "scene",
+      text: "【西郷吉之助】",
+    });
+  }
+
+  if (chapter.id === 12) {
+    insertAfterText(chapter.passages, "ある日。", {
+      id: "p-inserted-arsenal",
+      kind: "narration",
+      text: "この地には、のちに大阪砲兵工廠（おおさかほうへいこうしょう）と呼ばれる施設が築かれようとしていた。",
+    });
+  }
+
+  if (chapter.id === 13) {
+    replaceTexts(chapter.passages, [
+      ["／長州藩の下級武士", ""],
+      ["江藤新平（えとう しんぺい）", "江藤 新平（えとう しんぺい／佐賀藩出身の司法制度づくりを担う新政府要人）"],
+      ["「何に困っちょるか、分かりもすか。」", "「何に困っちょるか、お分かりになりもすか。」"],
+      ["「分かるか。」", ""],
+      ["「それが出来ん。」", "「それが、できもはん。」"],
+      ["「藩が集めちょる。」", "「いまだ藩が集めちょります。」"],
+      ["「藩が持っちょる。」", "「藩が持っちょります。」"],
+      ["「藩が決めちょる。」", "「藩が決めちょります。」"],
+      ["「藩に頼まんと動けん。」", "「藩に頼まんと、動けもはん。」"],
+      ["「何を最も大切にしますか。」", "「何を大切に考える。」"],
+    ]);
+  }
+
+  if (chapter.id === 14) {
+    replaceTexts(chapter.passages, [
+      [
+        "村瀬 新之助（むらせ しんのすけ／長州藩の下級武士）が部屋へ入ると、西郷隆盛、大久保利通、木戸 孝允（きど たかよし／長州藩出身の新政府要人）が向かい合っていた。",
+        "村瀬 新之助（むらせ しんのすけ）が部屋へ入ると、西郷 隆盛（さいごう たかもり／薩摩藩出身の参議）、大久保 利通（おおくぼ としみち／薩摩藩出身の参議）、木戸 孝允（きど たかよし／長州藩出身の参議）が向かい合っていた。",
+      ],
+      ["「私は、戦をしに行くのではなか。」", "「おいは、戦をしに行くのではなか。」"],
+      ["「私は、その役目を引き受ける。」", "「おいは、その役目を引き受ける。」"],
+    ]);
+  }
+
+  if (chapter.id === 15) {
+    replaceTexts(chapter.passages, [
+      ["／長州藩の下級武士", ""],
+      ["「戦がしたいわけじゃありもはん。」。", "「戦がしたいわけじゃありもはん。」"],
+      ["「時間をくれ。」", "「少し、時をくいやんせ。」"],
+      ["「これまでじゃ。」", "「ここまででよか。」"],
+    ]);
+    replaceSpeakers(chapter.passages, "西郷吉之助", "西郷隆盛");
+  }
+}
+
 function removeEmptyPassages(passages) {
   for (let index = passages.length - 1; index >= 0; index -= 1) {
     if (!passages[index].text.trim()) {
@@ -692,16 +910,18 @@ function mergeRukonrokuPassage(passages) {
 
 function applyFuriganaAndIntroductions(chapter) {
   const entries = [
-    ["村瀬新之助", "村瀬 新之助（むらせ しんのすけ／長州藩の下級武士）"],
+    ["村瀬新之助", "村瀬 新之助（むらせ しんのすけ）"],
+    ["吉田松陰", "吉田 松陰（よしだ しょういん／松下村塾を主宰した思想家）"],
+    ["松下村塾", "松下村塾（しょうかそんじゅく）"],
     ["久坂玄瑞", "久坂 玄瑞（くさか げんずい／松下村塾門下の志士）"],
     ["来島又兵衛", "来島 又兵衛（きじま またべえ／長州藩の強硬派の武士）"],
     ["周布政之助", "周布 政之助（すふ まさのすけ／長州藩の家老）"],
-    ["高杉晋作", "高杉 晋作（たかすぎ しんさく／奇兵隊を率いる長州藩士）"],
+    ["高杉晋作", "高杉 晋作（たかすぎ しんさく／長州藩士。のちに奇兵隊を率いる）"],
     ["桂小五郎", "桂 小五郎（かつら こごろう／長州藩の重臣）"],
     ["村田蔵六", "村田 蔵六（むらた ぞうろく／兵学者）"],
     ["勝海舟", "勝 海舟（かつ かいしゅう／幕臣）"],
     ["坂本龍馬", "坂本 龍馬（さかもと りょうま／土佐藩出身の志士）"],
-    ["西郷吉之助", "西郷 吉之助（さいごう きちのすけ／薩摩藩士）"],
+    ["西郷吉之助", "西郷 吉之助（さいごう きちのすけ／薩摩藩の中心人物）"],
     ["大久保利通", "大久保 利通（おおくぼ としみち／薩摩藩士）"],
     ["木戸孝允", "木戸 孝允（きど たかよし／長州藩出身の新政府要人）"],
     ["山縣有朋", "山縣 有朋（やまがた ありとも／長州藩出身の軍政家）"],
@@ -711,6 +931,7 @@ function applyFuriganaAndIntroductions(chapter) {
     ["板倉勝静", "板倉 勝静（いたくら かつきよ／幕府老中）"],
     ["松平容保", "松平 容保（まつだいら かたもり／会津藩主）"],
     ["大山綱良", "大山 綱良（おおやま つなよし／鹿児島県令）"],
+    ["江藤新平", "江藤 新平（えとう しんぺい／佐賀藩出身の司法制度づくりを担う新政府要人）"],
   ];
   const seen = new Set();
   for (const passage of [...chapter.passages, ...chapter.endingPassages]) {
@@ -723,14 +944,72 @@ function applyFuriganaAndIntroductions(chapter) {
   }
 }
 
+function applyPostFuriganaReviewCorrections(chapter) {
+  const all = [...chapter.passages, ...chapter.endingPassages];
+  replaceTexts(all, [
+    ["／長州藩の下級武士", ""],
+    ["長州藩士・桂 小五郎", "桂 小五郎"],
+    ["長州藩士・高杉 晋作", "高杉 晋作"],
+    ["長州藩士・村田 蔵六", "村田 蔵六"],
+    ["薩摩藩士・西郷 吉之助", "西郷 吉之助"],
+    ["老中・板倉 勝静", "板倉 勝静"],
+  ]);
+
+  if (chapter.id === 6) {
+    replaceTexts(chapter.passages, [
+      [
+        "長州藩士・山縣 有朋（やまがた ありとも／長州藩出身の軍政家）だった。",
+        "長州藩士・山縣 狂介（やまがた きょうすけ／のちの山縣有朋。長州藩出身の軍政家）だった。",
+      ],
+    ]);
+  }
+
+  if (chapter.id === 11) {
+    assignFollowingDialogueSpeaker(chapter.passages, "「まあ固くなるな。座んな。」", "西郷吉之助");
+  }
+
+  if (chapter.id === 14) {
+    replaceTexts(chapter.passages, [
+      [
+        "村瀬 新之助（むらせ しんのすけ）が部屋へ入ると、西郷隆盛、大久保利通、木戸 孝允（きど たかよし／長州藩出身の新政府要人）が向かい合っていた。",
+        "村瀬 新之助（むらせ しんのすけ）が部屋へ入ると、西郷 隆盛（さいごう たかもり／薩摩藩出身の参議）、大久保 利通（おおくぼ としみち／薩摩藩出身の参議）、木戸 孝允（きど たかよし／長州藩出身の参議）が向かい合っていた。",
+      ],
+    ]);
+  }
+
+  if (chapter.id === 15) {
+    setSceneMarker(chapter.passages, "桐野利秋（きりの としあき）", "【桐野利秋】");
+    setSceneMarker(chapter.passages, "村田新八（むらた しんぱち）", "【村田新八】");
+    assignFollowingDialogueSpeaker(chapter.passages, "【桐野利秋】", "桐野利秋");
+    assignFollowingDialogueSpeaker(chapter.passages, "【村田新八】", "村田新八");
+    replaceSpeakers(chapter.passages, "村田蔵六", "村田新八");
+  }
+
+  if (chapter.id === 15) {
+    replaceTexts(chapter.endingPassages, [
+      ["高杉 晋作（たかすぎ しんさく／長州藩士。のちに奇兵隊を率いる）。", "高杉晋作。"],
+      ["木戸 孝允（きど たかよし／長州藩出身の新政府要人）。", "木戸孝允。"],
+      ["大久保 利通（おおくぼ としみち／薩摩藩士）。", "大久保利通。"],
+      ["坂本 龍馬（さかもと りょうま／土佐藩出身の志士）。", "坂本龍馬。"],
+      ["勝 海舟（かつ かいしゅう／幕臣）。", "勝海舟。"],
+    ]);
+    insertAfterText(chapter.endingPassages, "「身はたとひ武蔵の野辺に朽ちぬとも\n留め置かまし大和魂」", {
+      id: "e-inserted-rukonroku-meaning",
+      kind: "narration",
+      text: "たとえこの身が武蔵野に朽ちても、大和魂だけはこの世に留め置きたい、という意味である。",
+    });
+  }
+}
+
 function normalizeChoices(chapter) {
   const choicePeople = {
     1: ["久坂玄瑞", "吉田松陰", "高杉晋作"],
     2: ["高杉晋作", "久坂玄瑞", "桂小五郎"],
     3: ["勝海舟", "西郷吉之助", "坂本龍馬"],
     4: ["来島又兵衛", "久坂玄瑞", "桂小五郎"],
-    5: ["椋梨藤太", "周布政之助", "山縣有朋"],
-    7: ["桂小五郎", "坂本龍馬", "村田蔵六"],
+    5: ["椋梨藤太", "周布政之助", "高杉晋作"],
+    6: ["高杉晋作", "赤根武人", "山縣狂介"],
+    7: ["村田蔵六", "坂本龍馬", "桂小五郎"],
     8: ["桂小五郎", "高杉晋作", "村田蔵六"],
     9: ["山内容堂", "松平春嶽", "西郷吉之助"],
     10: ["勝海舟", "板倉勝静", "松平容保"],
@@ -744,7 +1023,17 @@ function normalizeChoices(chapter) {
     5: [
       "① 藩を守るため、幕府の要求を受け入れるべきです。",
       "② 交渉し、少しでも長州に有利な条件を引き出すべきです。",
+      "③ 勝機があるなら、長州の志を守るために戦うべきだ。",
+    ],
+    6: [
+      "① 今こそ立つべきだ。長州を救うには、今しかない。",
+      "② 藩内で争うべきではない。同じ長州人同士が血を流してはならない。",
       "③ まだ決断する時ではない。情勢を見極めるべきだ。",
+    ],
+    7: [
+      "① 敵であっても、日本のためなら手を結ぶべきだ。",
+      "② まずは小さな信頼を積み重ねるべきだ。",
+      "③ 自国の結束を固めてから協力を考えるべきだ。",
     ],
     10: [
       "① 日本全体を守ることを優先する",

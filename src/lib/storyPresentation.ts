@@ -53,6 +53,10 @@ export function getChoiceDisplayText(text: string, person?: string) {
     .trim();
 }
 
+export function getJapaneseChapterNumber(chapterId: number) {
+  return japaneseChapterNumerals[chapterId] ?? String(chapterId);
+}
+
 export function getChapterLabel(chapterId: number) {
-  return `第${japaneseChapterNumerals[chapterId] ?? String(chapterId)}章`;
+  return `第${getJapaneseChapterNumber(chapterId)}章`;
 }

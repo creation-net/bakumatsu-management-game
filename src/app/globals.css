@@ -457,12 +457,55 @@ h3 {
 }
 
 .ending-copy {
-  margin-bottom: 34px;
+  position: relative;
+  margin: 8px 0 38px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(192, 160, 90, 0.2);
+}
+
+.ending-copy::before {
+  display: block;
+  width: 72px;
+  margin-bottom: 26px;
+  content: "";
+  border-top: 1px solid var(--gold-dim);
+}
+
+.ending-copy .passage-list.compact {
+  gap: 20px;
+}
+
+.ending-copy .passage {
+  max-width: 760px;
+}
+
+.ending-copy .passage:nth-child(4n + 1):not(:first-child) {
+  margin-top: 18px;
+}
+
+.ending-copy .passage-text {
+  color: rgba(239, 232, 211, 0.9);
+  font-size: clamp(1.02rem, 2vw, 1.15rem);
+  line-height: 2.18;
+}
+
+.ending-copy .passage.scene {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top-color: rgba(192, 160, 90, 0.24);
+}
+
+.ending-copy .passage.scene .passage-text {
+  color: var(--gold);
+  letter-spacing: 0.08em;
 }
 
 .ending-copy .passage:last-child .passage-text {
   color: var(--ink-strong);
-  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  max-width: 720px;
+  margin-top: 18px;
+  font-size: clamp(1.22rem, 3vw, 1.65rem);
+  line-height: 1.9;
 }
 
 .section-header {
