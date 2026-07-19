@@ -220,7 +220,10 @@ function TitleScreen({
     <section className="title-screen scene-frame title-art">
       <div className="title-copy">
         <p className="eyebrow">経営者タイプ別診断</p>
-        <h1>幕末・明治維新</h1>
+        <h1>
+          <span>幕末・</span>
+          <span>明治維新</span>
+        </h1>
         <p className="subtitle">村瀬新之助と歩む十五の決断</p>
         <p className="lead">
           黒船来航から武士の終焉まで。歴史の分岐点に立ち、人物たちの意思決定を通じて
@@ -422,7 +425,6 @@ function ChapterIndex({
                 type="button"
                 onClick={() => onChapterSelect(chapter.id)}
               >
-                <span className="chapter-number">{getChapterLabel(chapter.id)}</span>
                 <span className="chapter-row-title">
                   <strong>{chapter.title}</strong>
                   {chapter.subtitle && <small>{chapter.subtitle}</small>}

@@ -1,5 +1,8 @@
 .next
 node_modules
+.npm-cache
+.edge-mobile-check
+.chrome-mobile-check
 out
 work
 story
