@@ -219,15 +219,16 @@ function TitleScreen({
   return (
     <section className="title-screen scene-frame title-art">
       <div className="title-copy">
-        <p className="eyebrow">経営者タイプ別診断</p>
+        <p className="eyebrow">十五の決断で読み解く</p>
         <h1>
-          <span>幕末・</span>
-          <span>明治維新</span>
+          <span>経営者タイプ別</span>
+          <span>診断</span>
         </h1>
+        <p className="title-theme">幕末・明治維新編</p>
         <p className="subtitle">村瀬新之助と歩む十五の決断</p>
         <p className="lead">
-          黒船来航から武士の終焉まで。歴史の分岐点に立ち、人物たちの意思決定を通じて
-          自分の資質を診断します。
+          幕末から明治維新へ。歴史の分岐点に立つ人物たちの意思決定を通じて、
+          あなたの経営者としての資質を診断します。
         </p>
         <p className="fiction-note">
           本作は史実を尊重して制作しておりますが、物語として描くため、一部に創作を加えております。

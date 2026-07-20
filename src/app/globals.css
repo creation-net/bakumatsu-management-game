@@ -262,8 +262,21 @@ h3 {
   font-family: var(--sans);
 }
 
+.title-theme {
+  width: fit-content;
+  max-width: 100%;
+  margin: 18px 0 0;
+  padding: 7px 14px 8px;
+  color: var(--gold);
+  border: 1px solid rgba(192, 160, 90, 0.46);
+  font-family: var(--sans);
+  font-size: clamp(1.02rem, 2.4vw, 1.42rem);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
 .subtitle {
-  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2.3vw, 1.34rem);
 }
 
 .lead {
@@ -704,6 +717,12 @@ h3 {
   .subtitle {
     font-size: clamp(1rem, 4.2vw, 1.22rem);
     line-height: 1.55;
+  }
+
+  .title-theme {
+    margin-top: 14px;
+    padding: 6px 11px 7px;
+    font-size: clamp(0.96rem, 4vw, 1.12rem);
   }
 
   .lead {
