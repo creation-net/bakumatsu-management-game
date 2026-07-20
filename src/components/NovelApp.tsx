@@ -229,6 +229,10 @@ function TitleScreen({
           黒船来航から武士の終焉まで。歴史の分岐点に立ち、人物たちの意思決定を通じて
           自分の資質を診断します。
         </p>
+        <p className="fiction-note">
+          本作は史実をもとに構成していますが、物語上の演出や一部の着色にはフィクションを含みます。
+          その点をご了解のうえお楽しみください。
+        </p>
       </div>
 
       <div className="title-actions" aria-label="開始メニュー">
