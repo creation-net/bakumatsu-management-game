@@ -6868,7 +6868,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-83",
         "kind": "dialogue",
-        "text": "「私は兵学者です。だからこそ、戦は好みません。」"
+        "text": "「私は兵学者です。ですが、戦は好きではありません。」"
       },
       {
         "id": "p-84",
