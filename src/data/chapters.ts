@@ -120,7 +120,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-23",
         "kind": "narration",
-        "text": "年齢の1歳上と近い。"
+        "text": "村瀬より一歳年上で、年齢も近い。"
       },
       {
         "id": "p-24",
