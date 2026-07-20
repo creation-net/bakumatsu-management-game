@@ -129,6 +129,15 @@ export function NovelApp() {
     setScreen(getScreenFromStep(nextStep));
   }
 
+  function changeChapterChoice(chapterId: number) {
+    updateProgress({
+      ...progress,
+      currentChapterId: chapterId,
+      currentStep: "reading",
+    });
+    setScreen("chapter");
+  }
+
   function handleReset() {
     resetProgress();
     setProgress(initialProgress);
@@ -156,7 +165,7 @@ export function NovelApp() {
           表紙
         </button>
         <button className="text-button" type="button" onClick={() => setScreen("index")}>
-          章の一覧表
+          進行確認
         </button>
         <button className="text-button muted" type="button" onClick={handleReset}>
           初期化
@@ -194,6 +203,7 @@ export function NovelApp() {
         <ChapterIndex
           progress={progress}
           onChapterSelect={jumpToChapter}
+          onChangeChoice={changeChapterChoice}
           onStart={() => startStory("continue")}
         />
       )}
@@ -414,17 +424,25 @@ function ChoiceButton({ choice, onClick }: { choice: Choice; onClick: () => void
 function ChapterIndex({
   progress,
   onChapterSelect,
+  onChangeChoice,
   onStart,
 }: {
   progress: ReadingProgress;
   onChapterSelect: (chapterId: number) => void;
+  onChangeChoice: (chapterId: number) => void;
   onStart: () => void;
 }) {
+  const answeredCount = Object.keys(progress.choices).length;
+  const completedCount = progress.completedChapterIds.length;
+
   return (
     <section className="index-view scene-frame">
       <header className="section-header">
-        <p className="eyebrow">歴史年表</p>
-          <h2>章の一覧表</h2>
+        <p className="eyebrow">進行と回答</p>
+        <h2>進行確認</h2>
+        <p className="index-summary">
+          読了 {completedCount} / {chapters.length}　回答 {answeredCount} / {chapters.length}
+        </p>
       </header>
 
       {chapters.length === 0 ? (
@@ -438,20 +456,39 @@ function ChapterIndex({
         <div className="chapter-list">
           {chapters.map((chapter) => {
             const completed = progress.completedChapterIds.includes(chapter.id);
+            const selectedChoice = chapter.choices.find((choice) => choice.id === progress.choices[chapter.id]);
+            const answered = Boolean(selectedChoice);
             const current = progress.currentChapterId === chapter.id && !completed;
+            const status = completed ? "completed" : answered ? "answered" : current ? "current" : "unread";
+            const statusLabel = completed ? "読了" : answered ? "回答済み" : current ? "途中" : "未読";
             return (
-              <button
-                className={current ? "chapter-row current" : "chapter-row"}
+              <article
+                className={`chapter-row ${status}`}
                 key={chapter.id}
-                type="button"
-                onClick={() => onChapterSelect(chapter.id)}
               >
-                <span className="chapter-row-title">
+                <div className="chapter-row-title">
                   <strong>{chapter.title}</strong>
                   {chapter.subtitle && <small>{chapter.subtitle}</small>}
-                </span>
-                <em>{completed ? "読了" : current ? "途中" : "未読"}</em>
-              </button>
+                  {selectedChoice && (
+                    <p className="chapter-choice-summary">
+                      選択: {getChoiceValue(selectedChoice.text, selectedChoice.value)}
+                    </p>
+                  )}
+                </div>
+                <div className="chapter-row-status">
+                  <em>{statusLabel}</em>
+                  <div className="chapter-row-actions">
+                    <button className="small-button" type="button" onClick={() => onChapterSelect(chapter.id)}>
+                      {answered || completed ? "読み直す" : "読む"}
+                    </button>
+                    {answered && (
+                      <button className="small-button ghost" type="button" onClick={() => onChangeChoice(chapter.id)}>
+                        選択を変更
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </article>
             );
           })}
         </div>
@@ -459,7 +496,7 @@ function ChapterIndex({
 
       <div className="index-actions">
         <button className="primary-button" type="button" onClick={onStart}>
-          読書画面へ
+          続きから読む
         </button>
       </div>
     </section>
