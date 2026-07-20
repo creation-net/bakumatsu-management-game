@@ -2488,22 +2488,17 @@ export const chapters: Chapter[] = [
       {
         "id": "p-80",
         "kind": "scene",
-        "text": "（私などが……。）"
+        "text": "（……私に何ができる。）"
       },
       {
         "id": "p-81",
         "kind": "narration",
-        "text": "先生の言葉がよみがえる。"
+        "text": "村瀬は一度目を閉じた。"
       },
       {
         "id": "p-82",
         "kind": "dialogue",
-        "text": "「自分で考えよ。」"
-      },
-      {
-        "id": "p-83",
-        "kind": "narration",
-        "text": "村瀬は立ち上がった。"
+        "text": "「恐れながら、申し上げます。」"
       }
     ],
     "endingPassages": [
@@ -2990,26 +2985,16 @@ export const chapters: Chapter[] = [
       },
       {
         "id": "p-80",
-        "kind": "scene",
-        "text": "（私などが……。）"
+        "kind": "narration",
+        "text": "村瀬も部屋を見渡した。"
       },
       {
         "id": "p-81",
-        "kind": "narration",
-        "text": "しかし。"
+        "kind": "scene",
+        "text": "（私は……。）"
       },
       {
         "id": "p-82",
-        "kind": "narration",
-        "text": "先生の言葉がよみがえる。"
-      },
-      {
-        "id": "p-83",
-        "kind": "dialogue",
-        "text": "「自分で考えよ。」"
-      },
-      {
-        "id": "p-84",
         "kind": "narration",
         "text": "村瀬はゆっくり立ち上がった。"
       }
@@ -6771,7 +6756,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-54",
         "kind": "narration",
-        "text": "・・・・村瀬は答えることができない。"
+        "text": "……村瀬は答えることができない。"
       },
       {
         "id": "p-55",
