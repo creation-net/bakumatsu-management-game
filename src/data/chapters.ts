@@ -5372,7 +5372,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-12",
         "kind": "scene",
-        "text": "【土佐藩主・山内 容堂（やまうち ようどう／土佐藩主）】"
+        "text": "【土佐藩主・山内 容堂（やまうち ようどう）】"
       },
       {
         "id": "p-13",
@@ -5442,7 +5442,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-26",
         "kind": "scene",
-        "text": "【越前藩主・松平 春嶽（まつだいら しゅんがく／越前藩主）】"
+        "text": "【越前藩主・松平 春嶽（まつだいら しゅんがく）】"
       },
       {
         "id": "p-27",
