@@ -3458,136 +3458,170 @@ export const chapters: Chapter[] = [
       {
         "id": "p-79",
         "kind": "dialogue",
-        "text": "「まだ決断する時ではない。情勢を見極めるべきじゃ。」",
-        "speaker": "山縣狂介"
+        "text": "「まだ決断する時ではない。情勢を見極めるべきじゃ。」"
       },
       {
         "id": "p-80",
-        "kind": "narration",
-        "text": "山縣は村瀬を見る。"
+        "kind": "dialogue",
+        "text": "「恭順を唱えちょる者も。」"
       },
       {
         "id": "p-81",
         "kind": "dialogue",
-        "text": "「お前は。」"
+        "text": "「皆が同じ思いではない。」"
       },
       {
         "id": "p-82",
         "kind": "dialogue",
-        "text": "「どうしてそんな冷静でおられるんじゃ。」"
+        "text": "「時が経てば。」"
       },
       {
         "id": "p-83",
-        "kind": "narration",
-        "text": "村瀬は首を横に振った。"
+        "kind": "dialogue",
+        "text": "「必ず流れは変わる。」"
       },
       {
         "id": "p-84",
-        "kind": "narration",
-        "text": "冷静だったわけではない。"
+        "kind": "dialogue",
+        "text": "「今動けば。」"
       },
       {
         "id": "p-85",
-        "kind": "narration",
-        "text": "誰よりも不安だった。"
+        "kind": "dialogue",
+        "text": "「敵より先に。」"
       },
       {
         "id": "p-86",
-        "kind": "narration",
-        "text": "それでも。"
+        "kind": "dialogue",
+        "text": "「長州の仲間へ銃を向けることになる。」"
       },
       {
         "id": "p-87",
         "kind": "narration",
-        "text": "今、自分に何ができるのか。"
+        "text": "山縣は村瀬を見る。"
       },
       {
         "id": "p-88",
-        "kind": "narration",
-        "text": "それだけを考えていた。"
-      },
-      {
-        "id": "p-89",
-        "kind": "narration",
-        "text": "その時。"
-      },
-      {
-        "id": "p-90",
-        "kind": "narration",
-        "text": "高杉が部屋を見渡す。"
-      },
-      {
-        "id": "p-91",
-        "kind": "dialogue",
-        "text": "「異論がある者は。」"
-      },
-      {
-        "id": "p-92",
-        "kind": "dialogue",
-        "text": "「遠慮はいらん。」"
-      },
-      {
-        "id": "p-93",
-        "kind": "dialogue",
-        "text": "「今日。」"
-      },
-      {
-        "id": "p-94",
-        "kind": "dialogue",
-        "text": "「この場で決める。」"
-      },
-      {
-        "id": "p-95",
-        "kind": "narration",
-        "text": "村瀬を見る。"
-      },
-      {
-        "id": "p-96",
-        "kind": "dialogue",
-        "text": "「村瀬！」"
-      },
-      {
-        "id": "p-97",
-        "kind": "dialogue",
-        "text": "「何か言いたそうな顔しちょるな。」"
-      },
-      {
-        "id": "p-98",
         "kind": "dialogue",
         "text": "「お前は。」"
       },
       {
+        "id": "p-89",
+        "kind": "dialogue",
+        "text": "「どうしてそんな冷静でおられるんじゃ。」"
+      },
+      {
+        "id": "p-90",
+        "kind": "narration",
+        "text": "村瀬は首を横に振った。"
+      },
+      {
+        "id": "p-91",
+        "kind": "narration",
+        "text": "冷静だったわけではない。"
+      },
+      {
+        "id": "p-92",
+        "kind": "narration",
+        "text": "誰よりも不安だった。"
+      },
+      {
+        "id": "p-93",
+        "kind": "narration",
+        "text": "それでも。"
+      },
+      {
+        "id": "p-94",
+        "kind": "narration",
+        "text": "今、自分に何ができるのか。"
+      },
+      {
+        "id": "p-95",
+        "kind": "narration",
+        "text": "それだけを考えていた。"
+      },
+      {
+        "id": "p-96",
+        "kind": "narration",
+        "text": "その時。"
+      },
+      {
+        "id": "p-97",
+        "kind": "narration",
+        "text": "高杉が部屋を見渡す。"
+      },
+      {
+        "id": "p-98",
+        "kind": "dialogue",
+        "text": "「異論がある者は。」"
+      },
+      {
         "id": "p-99",
         "kind": "dialogue",
-        "text": "「どう思う。」"
+        "text": "「遠慮はいらん。」"
       },
       {
         "id": "p-100",
-        "kind": "narration",
-        "text": "部屋中の視線が村瀬へ集まる。"
+        "kind": "dialogue",
+        "text": "「今日。」"
       },
       {
         "id": "p-101",
-        "kind": "scene",
-        "text": "（私などが……。）"
+        "kind": "dialogue",
+        "text": "「この場で決める。」"
       },
       {
         "id": "p-102",
         "kind": "narration",
-        "text": "しかし。"
+        "text": "村瀬を見る。"
       },
       {
         "id": "p-103",
-        "kind": "narration",
-        "text": "先生の言葉がよみがえる。"
+        "kind": "dialogue",
+        "text": "「村瀬！」"
       },
       {
         "id": "p-104",
         "kind": "dialogue",
-        "text": "「自分で考えよ。」"
+        "text": "「何か言いたそうな顔しちょるな。」"
       },
       {
         "id": "p-105",
+        "kind": "dialogue",
+        "text": "「お前は。」"
+      },
+      {
+        "id": "p-106",
+        "kind": "dialogue",
+        "text": "「どう思う。」"
+      },
+      {
+        "id": "p-107",
+        "kind": "narration",
+        "text": "部屋中の視線が村瀬へ集まる。"
+      },
+      {
+        "id": "p-108",
+        "kind": "scene",
+        "text": "（私などが……。）"
+      },
+      {
+        "id": "p-109",
+        "kind": "narration",
+        "text": "しかし。"
+      },
+      {
+        "id": "p-110",
+        "kind": "narration",
+        "text": "先生の言葉がよみがえる。"
+      },
+      {
+        "id": "p-111",
+        "kind": "dialogue",
+        "text": "「自分で考えよ。」"
+      },
+      {
+        "id": "p-112",
         "kind": "narration",
         "text": "村瀬はゆっくり立ち上がった。"
       }
