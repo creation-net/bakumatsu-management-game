@@ -2268,12 +2268,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-36",
         "kind": "dialogue",
-        "text": "「山も海も、わしらの庭じゃ、攻める者より。」"
+        "text": "「山も海も、わしらの庭じゃ。」"
       },
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「守る者が強い。」"
+        "text": "「攻める者より、守る者が強い。」"
       },
       {
         "id": "p-38",
