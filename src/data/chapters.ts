@@ -1707,12 +1707,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-36",
         "kind": "dialogue",
-        "text": "「強い方へ流れる、今の京都じゃ。」"
+        "text": "「強い方へ流れる。」"
       },
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「誰も長州の話など聞かん。」"
+        "text": "「今の京都じゃ、誰も長州の話など聞かん。」"
       },
       {
         "id": "p-38",
