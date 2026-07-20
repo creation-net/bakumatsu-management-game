@@ -8,532 +8,532 @@ export const chapters: Chapter[] = [
     "sourceFile": "第1話_黒船_ストーリー案.docx",
     "passages": [
       {
-        "id": "p-2",
+        "id": "p-1",
         "kind": "narration",
         "text": "嘉永6年（1853年）。"
       },
       {
-        "id": "p-3",
+        "id": "p-2",
         "kind": "narration",
         "text": "アメリカのペリー提督率いる黒船が浦賀へ現れた。"
       },
       {
-        "id": "p-4",
+        "id": "p-3",
         "kind": "narration",
         "text": "二百年以上続いた泰平の世は、大きく揺れ始める。"
       },
       {
-        "id": "p-5",
+        "id": "p-4",
         "kind": "narration",
         "text": "長州藩でも、城下では黒船の噂で持ちきりだった。"
       },
       {
-        "id": "p-6",
+        "id": "p-5",
         "kind": "scene",
         "text": "【長州藩　城下町】"
       },
       {
-        "id": "p-7",
+        "id": "p-6",
         "kind": "narration",
         "text": "村瀬 新之助（むらせ しんのすけ）は、長州藩の下級武士である。"
       },
       {
-        "id": "p-8",
+        "id": "p-7",
         "kind": "narration",
         "text": "藩の役所で文書の整理や使い走りなどを任される毎日。"
       },
       {
-        "id": "p-9",
+        "id": "p-8",
         "kind": "narration",
         "text": "世の中が変わろうとしていることは感じていた。"
       },
       {
-        "id": "p-10",
+        "id": "p-9",
         "kind": "narration",
         "text": "しかし、自分には何ができるのか分からない。"
       },
       {
-        "id": "p-11",
+        "id": "p-10",
         "kind": "narration",
         "text": "城下では国を憂う者が増えていた。"
       },
       {
-        "id": "p-12",
+        "id": "p-11",
         "kind": "narration",
         "text": "だが、酒を飲みながら幕府を批判する者。"
       },
       {
-        "id": "p-13",
+        "id": "p-12",
         "kind": "narration",
         "text": "威勢のいいことばかり言う者。"
       },
       {
-        "id": "p-14",
+        "id": "p-13",
         "kind": "narration",
         "text": "そんな姿を見るたび、村瀬は思っていた。"
       },
       {
-        "id": "p-15",
+        "id": "p-14",
         "kind": "dialogue",
         "text": "「口で国は変わらん。」"
       },
       {
-        "id": "p-16",
+        "id": "p-15",
         "kind": "dialogue",
         "text": "「武士なら行動せねば意味がない。」"
       },
       {
-        "id": "p-17",
+        "id": "p-16",
         "kind": "narration",
         "text": "そんなある日、一人の青年が声を掛ける。"
       },
       {
-        "id": "p-18",
+        "id": "p-17",
         "kind": "scene",
         "text": "【久坂 玄瑞（くさか げんずい／松下村塾門下の志士）】"
       },
       {
-        "id": "p-19",
+        "id": "p-18",
         "kind": "dialogue",
         "text": "「村瀬。」"
       },
       {
-        "id": "p-20",
+        "id": "p-19",
         "kind": "dialogue",
         "text": "「少し付き合わんか。」"
       },
       {
-        "id": "p-21",
+        "id": "p-20",
         "kind": "narration",
         "text": "村瀬は振り返る。"
       },
       {
-        "id": "p-22",
+        "id": "p-21",
         "kind": "narration",
         "text": "久坂玄瑞。"
       },
       {
-        "id": "p-23",
+        "id": "p-22",
         "kind": "narration",
         "text": "藩でも評判の秀才だった。"
       },
       {
-        "id": "p-24",
+        "id": "p-23",
         "kind": "narration",
         "text": "年齢の1歳上と近い。"
       },
       {
-        "id": "p-25",
+        "id": "p-24",
         "kind": "narration",
         "text": "だが、学問では遠く及ばない。"
       },
       {
-        "id": "p-26",
+        "id": "p-25",
         "kind": "narration",
         "text": "村瀬は、その才を素直に認めながらも、どこか近寄り難さを感じていた。"
       },
       {
-        "id": "p-27",
+        "id": "p-26",
         "kind": "scene",
         "text": "【村瀬】"
       },
       {
-        "id": "p-28",
+        "id": "p-27",
         "kind": "dialogue",
         "text": "「どこへ行くんじゃ。」"
       },
       {
-        "id": "p-29",
+        "id": "p-28",
         "kind": "scene",
         "text": "【久坂】"
       },
       {
-        "id": "p-30",
+        "id": "p-29",
         "kind": "dialogue",
         "text": "「松下村塾（しょうかそんじゅく）じゃ。」"
       },
       {
-        "id": "p-31",
+        "id": "p-30",
         "kind": "dialogue",
         "text": "「吉田 松陰（よしだ しょういん）先生がおられる。」"
       },
       {
-        "id": "p-32",
+        "id": "p-31",
         "kind": "scene",
         "text": "【村瀬】"
       },
       {
-        "id": "p-33",
+        "id": "p-32",
         "kind": "dialogue",
         "text": "「吉田 松陰……。」"
       },
       {
-        "id": "p-34",
+        "id": "p-33",
         "kind": "dialogue",
         "text": "「あの。」"
       },
       {
-        "id": "p-35",
+        "id": "p-34",
         "kind": "dialogue",
         "text": "「黒船へ乗り込もうとして捕まった男か。」"
       },
       {
-        "id": "p-36",
+        "id": "p-35",
         "kind": "scene",
         "text": "【久坂】"
       },
       {
-        "id": "p-37",
+        "id": "p-36",
         "kind": "dialogue",
         "text": "「そうじゃ。」"
       },
       {
-        "id": "p-38",
+        "id": "p-37",
         "kind": "dialogue",
         "text": "「じゃが。」"
       },
       {
-        "id": "p-39",
+        "id": "p-38",
         "kind": "dialogue",
         "text": "「あの人ほど。」"
       },
       {
-        "id": "p-40",
+        "id": "p-39",
         "kind": "dialogue",
         "text": "「この国のことを考えちょる人はおらん。」"
       },
       {
-        "id": "p-41",
+        "id": "p-40",
         "kind": "narration",
         "text": "村瀬は少し眉をひそめる。"
       },
       {
-        "id": "p-42",
+        "id": "p-41",
         "kind": "dialogue",
         "text": "「また。」"
       },
       {
-        "id": "p-43",
+        "id": "p-42",
         "kind": "dialogue",
         "text": "「大きなことを語る先生か。」"
       },
       {
-        "id": "p-44",
+        "id": "p-43",
         "kind": "narration",
         "text": "そんな思いが胸をよぎる。"
       },
       {
-        "id": "p-45",
+        "id": "p-44",
         "kind": "scene",
         "text": "【村瀬】"
       },
       {
-        "id": "p-46",
+        "id": "p-45",
         "kind": "dialogue",
         "text": "「分かった。」"
       },
       {
-        "id": "p-47",
+        "id": "p-46",
         "kind": "dialogue",
         "text": "「行こう。」"
       },
       {
-        "id": "p-48",
+        "id": "p-47",
         "kind": "dialogue",
         "text": "「もし。」"
       },
       {
-        "id": "p-49",
+        "id": "p-48",
         "kind": "dialogue",
         "text": "「国を惑わすだけの男なら。」"
       },
       {
-        "id": "p-50",
+        "id": "p-49",
         "kind": "narration",
         "text": "村瀬は静かに腰の刀へ手を添える。"
       },
       {
-        "id": "p-51",
+        "id": "p-50",
         "kind": "dialogue",
         "text": "「武士として。」"
       },
       {
-        "id": "p-52",
+        "id": "p-51",
         "kind": "dialogue",
         "text": "「見過ごすわけにはいかん。」"
       },
       {
-        "id": "p-53",
+        "id": "p-52",
         "kind": "narration",
         "text": "久坂は苦笑する。"
       },
       {
-        "id": "p-54",
+        "id": "p-53",
         "kind": "dialogue",
         "text": "「そんな人じゃない。」"
       },
       {
-        "id": "p-55",
+        "id": "p-54",
         "kind": "dialogue",
         "text": "「きっと、お前も分かる。」"
       },
       {
-        "id": "p-56",
+        "id": "p-55",
         "kind": "scene",
         "text": "【松下村塾（しょうかそんじゅく）】"
       },
       {
-        "id": "p-57",
+        "id": "p-56",
         "kind": "narration",
         "text": "村瀬は初めて松下村塾（しょうかそんじゅく）の門をくぐる。"
       },
       {
-        "id": "p-58",
+        "id": "p-57",
         "kind": "narration",
         "text": "小さな部屋には、多くの若者が集まっていた。"
       },
       {
-        "id": "p-59",
+        "id": "p-58",
         "kind": "narration",
         "text": "先生だけが話しているわけではない。"
       },
       {
-        "id": "p-60",
+        "id": "p-59",
         "kind": "narration",
         "text": "皆が真剣な表情で語り合っている。"
       },
       {
-        "id": "p-61",
+        "id": "p-60",
         "kind": "narration",
         "text": "部屋の中央に座る男が、静かに村瀬へ目を向けた。"
       },
       {
-        "id": "p-62",
+        "id": "p-61",
         "kind": "scene",
         "text": "【吉田 松陰】"
       },
       {
-        "id": "p-63",
+        "id": "p-62",
         "kind": "dialogue",
         "text": "「初めて見る顔じゃな。」"
       },
       {
-        "id": "p-64",
+        "id": "p-63",
         "kind": "dialogue",
         "text": "「よう来た。」"
       },
       {
-        "id": "p-65",
+        "id": "p-64",
         "kind": "dialogue",
         "text": "「遠慮はいらん。」"
       },
       {
-        "id": "p-66",
+        "id": "p-65",
         "kind": "dialogue",
         "text": "「ここでは。」"
       },
       {
-        "id": "p-67",
+        "id": "p-66",
         "kind": "dialogue",
         "text": "「身分も年も関係ない。」"
       },
       {
-        "id": "p-68",
+        "id": "p-67",
         "kind": "dialogue",
         "text": "「思うことを語ればよい。」"
       },
       {
-        "id": "p-69",
+        "id": "p-68",
         "kind": "narration",
         "text": "村瀬は一礼し、輪の中へ座った。"
       },
       {
-        "id": "p-70",
+        "id": "p-69",
         "kind": "narration",
         "text": "松陰が静かに口を開く。"
       },
       {
-        "id": "p-71",
+        "id": "p-70",
         "kind": "dialogue",
         "text": "「黒船が浦賀へ現れた。」"
       },
       {
-        "id": "p-72",
+        "id": "p-71",
         "kind": "dialogue",
         "text": "「この国は、大きな岐路に立っちょる。」"
       },
       {
-        "id": "p-73",
+        "id": "p-72",
         "kind": "dialogue",
         "text": "「皆は、どう思う。」"
       },
       {
-        "id": "p-74",
+        "id": "p-73",
         "kind": "narration",
         "text": "久坂玄瑞"
       },
       {
-        "id": "p-75",
+        "id": "p-74",
         "kind": "narration",
         "text": "久坂は一歩前へ出る。"
       },
       {
-        "id": "p-76",
+        "id": "p-75",
         "kind": "dialogue",
         "text": "「先生、私は今こそ攘夷を決行すべき時じゃと思います。」"
       },
       {
-        "id": "p-77",
+        "id": "p-76",
         "kind": "dialogue",
         "text": "「阿片戦争（あへんせんそう）で清国は西洋列強に敗れました。」"
       },
       {
-        "id": "p-78",
+        "id": "p-77",
         "kind": "dialogue",
         "text": "「その知らせを聞いた諸国は、西洋に逆らえば滅びると思い始めております。」"
       },
       {
-        "id": "p-79",
+        "id": "p-78",
         "kind": "dialogue",
         "text": "「もし日本まで異国の言いなりになれば、武士の魂も、民の誇りも失われましょう。」"
       },
       {
-        "id": "p-80",
+        "id": "p-79",
         "kind": "dialogue",
         "text": "「攘夷とは、異国への憎しみではありません。」"
       },
       {
-        "id": "p-81",
+        "id": "p-80",
         "kind": "dialogue",
         "text": "「日本は決して屈せぬ国であると天下に示し、国を守る覚悟を示すことこそが攘夷じゃと思います。」"
       },
       {
-        "id": "p-82",
+        "id": "p-81",
         "kind": "narration",
         "text": "吉田 松陰（よしだ しょういん）"
       },
       {
-        "id": "p-83",
+        "id": "p-82",
         "kind": "narration",
         "text": "松陰は静かにうなずく。"
       },
       {
-        "id": "p-84",
+        "id": "p-83",
         "kind": "dialogue",
         "text": "「玄瑞、お前の志は立派じゃ。」"
       },
       {
-        "id": "p-85",
+        "id": "p-84",
         "kind": "dialogue",
         "text": "「じゃが、力だけでは国は守れん。」"
       },
       {
-        "id": "p-86",
+        "id": "p-85",
         "kind": "dialogue",
         "text": "「敵を知り、自らを知ることが先じゃ。」"
       },
       {
-        "id": "p-87",
+        "id": "p-86",
         "kind": "dialogue",
         "text": "「西洋には学ぶべき学問、制度、技術が数多くある。」"
       },
       {
-        "id": "p-88",
+        "id": "p-87",
         "kind": "dialogue",
         "text": "「それを学び、日本をより強い国にする。」"
       },
       {
-        "id": "p-89",
+        "id": "p-88",
         "kind": "dialogue",
         "text": "「そして、その考えを幕府や藩主へ届け、国そのものを変えていかねばならん。」"
       },
       {
-        "id": "p-90",
+        "id": "p-89",
         "kind": "dialogue",
         "text": "「戦うのは、その後でも遅くはない。」"
       },
       {
-        "id": "p-91",
+        "id": "p-90",
         "kind": "narration",
         "text": "高杉 晋作（たかすぎ しんさく／長州藩士。のちに奇兵隊を率いる）"
       },
       {
-        "id": "p-92",
+        "id": "p-91",
         "kind": "narration",
         "text": "高杉は腕を組み、少し笑う。"
       },
       {
-        "id": "p-93",
+        "id": "p-92",
         "kind": "dialogue",
         "text": "「先生も玄瑞も、もっともじゃ。」"
       },
       {
-        "id": "p-94",
+        "id": "p-93",
         "kind": "dialogue",
         "text": "「じゃが、今はまだ何も見えちょらん。」"
       },
       {
-        "id": "p-95",
+        "id": "p-94",
         "kind": "dialogue",
         "text": "「黒船が来た。」"
       },
       {
-        "id": "p-96",
+        "id": "p-95",
         "kind": "dialogue",
         "text": "「それだけじゃ。」"
       },
       {
-        "id": "p-97",
+        "id": "p-96",
         "kind": "dialogue",
         "text": "「幕府がどう動くか。」"
       },
       {
-        "id": "p-98",
+        "id": "p-97",
         "kind": "dialogue",
         "text": "「諸藩がどう動くか。」"
       },
       {
-        "id": "p-99",
+        "id": "p-98",
         "kind": "dialogue",
         "text": "「誰も分からん。」"
       },
       {
-        "id": "p-100",
+        "id": "p-99",
         "kind": "dialogue",
         "text": "「焦って動けば、国を滅ぼす。」"
       },
       {
-        "id": "p-101",
+        "id": "p-100",
         "kind": "dialogue",
         "text": "「動かねば、好機を逃す。」"
       },
       {
-        "id": "p-102",
+        "id": "p-101",
         "kind": "dialogue",
         "text": "「その時が来たら、誰よりも早く動けるよう、今は備えることじゃ。」"
       },
       {
-        "id": "p-103",
+        "id": "p-102",
         "kind": "narration",
         "text": "三人の視線が、一斉にあなたへ向く。"
       },
       {
-        "id": "p-104",
+        "id": "p-103",
         "kind": "narration",
         "text": "部屋が静まり返る。"
       },
       {
-        "id": "p-105",
+        "id": "p-104",
         "kind": "narration",
         "text": "松陰が穏やかに微笑む。"
       },
       {
-        "id": "p-106",
+        "id": "p-105",
         "kind": "dialogue",
         "text": "「さて……。」"
       },
       {
-        "id": "p-107",
+        "id": "p-106",
         "kind": "dialogue",
         "text": "「お前は、どう思うちょる？」"
       }
@@ -645,22 +645,22 @@ export const chapters: Chapter[] = [
         "text": "自分自身もまた、大きく変わろうとしていた。"
       },
       {
-        "id": "e-23",
+        "id": "e-22",
         "kind": "narration",
         "text": "黒船来航をきっかけに、日本は開国への道を歩み始める。"
       },
       {
-        "id": "e-24",
+        "id": "e-23",
         "kind": "narration",
         "text": "その一方で、国の進むべき道を巡り、各地で激しい議論が起こるようになった。"
       },
       {
-        "id": "e-25",
+        "id": "e-24",
         "kind": "narration",
         "text": "松下村塾の若者たちも、それぞれの志を胸に、新しい時代へ歩み始める。"
       },
       {
-        "id": "e-26",
+        "id": "e-25",
         "kind": "narration",
         "text": "村瀬新之助もまた、この日を境に、自ら考え、行動する道を歩み始めるのだった。"
       }
@@ -4229,80 +4229,340 @@ export const chapters: Chapter[] = [
       {
         "id": "p-120",
         "kind": "narration",
-        "text": "部屋は静まり返る。"
+        "text": "部屋に静寂が流れる。"
       },
       {
         "id": "p-121",
         "kind": "narration",
-        "text": "村瀬は三人を見つめる。"
+        "text": "桂は龍馬をじっと見つめていた。"
       },
       {
         "id": "p-122",
         "kind": "narration",
-        "text": "桂小五郎。"
+        "text": "やがて、ゆっくりと口を開く。"
       },
       {
         "id": "p-123",
-        "kind": "narration",
-        "text": "組織を守る男。"
+        "kind": "scene",
+        "text": "【桂小五郎】"
       },
       {
         "id": "p-124",
-        "kind": "narration",
-        "text": "坂本龍馬。"
+        "kind": "dialogue",
+        "text": "「坂本さん。」"
       },
       {
         "id": "p-125",
-        "kind": "narration",
-        "text": "人と人をつなぐ男。"
+        "kind": "dialogue",
+        "text": "「私は、薩摩と手を結ぶことに反対ではありません。」"
       },
       {
         "id": "p-126",
-        "kind": "narration",
-        "text": "村田蔵六。"
+        "kind": "dialogue",
+        "text": "「だからこそ。」"
       },
       {
         "id": "p-127",
-        "kind": "narration",
-        "text": "未来を設計する男。"
+        "kind": "dialogue",
+        "text": "「藩内の反対を押し切り、ここまで参りました。」"
       },
       {
         "id": "p-128",
         "kind": "narration",
-        "text": "三人とも。"
+        "text": "少し間を置く。"
       },
       {
         "id": "p-129",
-        "kind": "narration",
-        "text": "日本を救おうとしている。"
+        "kind": "dialogue",
+        "text": "「ですが。」"
       },
       {
         "id": "p-130",
-        "kind": "narration",
-        "text": "だから。"
+        "kind": "dialogue",
+        "text": "「藩では、皆が申しました。」"
       },
       {
         "id": "p-131",
-        "kind": "narration",
-        "text": "誰も間違っていない。"
+        "kind": "dialogue",
+        "text": "「薩摩は信用できぬ。」"
       },
       {
         "id": "p-132",
-        "kind": "narration",
-        "text": "桂が村瀬を見る。"
+        "kind": "dialogue",
+        "text": "「また裏切られるだけだ、と。」"
       },
       {
         "id": "p-133",
-        "kind": "dialogue",
-        "text": "「村瀬君。」"
+        "kind": "narration",
+        "text": "拳を握る。"
       },
       {
         "id": "p-134",
         "kind": "dialogue",
-        "text": "「……君なら。」"
+        "text": "「それでも私は。」"
       },
       {
         "id": "p-135",
+        "kind": "dialogue",
+        "text": "「長州を救う道は、それしかないと信じました。」"
+      },
+      {
+        "id": "p-136",
+        "kind": "dialogue",
+        "text": "「しかし。」"
+      },
+      {
+        "id": "p-137",
+        "kind": "dialogue",
+        "text": "「会談は反故にされました。」"
+      },
+      {
+        "id": "p-138",
+        "kind": "dialogue",
+        "text": "「あの時。」"
+      },
+      {
+        "id": "p-139",
+        "kind": "dialogue",
+        "text": "「皆の言うことが正しかったのではないかと。」"
+      },
+      {
+        "id": "p-140",
+        "kind": "dialogue",
+        "text": "「そう思わずにはいられません。」"
+      },
+      {
+        "id": "p-141",
+        "kind": "dialogue",
+        "text": "「それでも同盟を進めると申せば。」"
+      },
+      {
+        "id": "p-142",
+        "kind": "dialogue",
+        "text": "「私一人の首では済まぬ話でしょう。」"
+      },
+      {
+        "id": "p-143",
+        "kind": "narration",
+        "text": "桂が話し終える。"
+      },
+      {
+        "id": "p-144",
+        "kind": "narration",
+        "text": "部屋は重い空気に包まれる。"
+      },
+      {
+        "id": "p-145",
+        "kind": "narration",
+        "text": "しかし、その空気を破るように村田が口を開く。"
+      },
+      {
+        "id": "p-146",
+        "kind": "scene",
+        "text": "【村田蔵六】"
+      },
+      {
+        "id": "p-147",
+        "kind": "dialogue",
+        "text": "「坂本さん。」"
+      },
+      {
+        "id": "p-148",
+        "kind": "dialogue",
+        "text": "「あなたのお考えは分かります。」"
+      },
+      {
+        "id": "p-149",
+        "kind": "dialogue",
+        "text": "「しかし。」"
+      },
+      {
+        "id": "p-150",
+        "kind": "dialogue",
+        "text": "「今、長州には武器が足りません。」"
+      },
+      {
+        "id": "p-151",
+        "kind": "dialogue",
+        "text": "「兵も足りません。」"
+      },
+      {
+        "id": "p-152",
+        "kind": "dialogue",
+        "text": "「次の征討が始まれば。」"
+      },
+      {
+        "id": "p-153",
+        "kind": "dialogue",
+        "text": "「今のままでは持ちこたえられません。」"
+      },
+      {
+        "id": "p-154",
+        "kind": "narration",
+        "text": "さらに、"
+      },
+      {
+        "id": "p-155",
+        "kind": "dialogue",
+        "text": "「信用を積み重ねる。」"
+      },
+      {
+        "id": "p-156",
+        "kind": "dialogue",
+        "text": "「それは平時の話です。」"
+      },
+      {
+        "id": "p-157",
+        "kind": "dialogue",
+        "text": "「幕府は。」"
+      },
+      {
+        "id": "p-158",
+        "kind": "dialogue",
+        "text": "「こちらの都合など待ってはくれません。」"
+      },
+      {
+        "id": "p-159",
+        "kind": "dialogue",
+        "text": "「今日も。」"
+      },
+      {
+        "id": "p-160",
+        "kind": "dialogue",
+        "text": "「明日も。」"
+      },
+      {
+        "id": "p-161",
+        "kind": "dialogue",
+        "text": "「征討の準備を進めています。」"
+      },
+      {
+        "id": "p-162",
+        "kind": "dialogue",
+        "text": "「我々が信用を築いている間にも。」"
+      },
+      {
+        "id": "p-163",
+        "kind": "dialogue",
+        "text": "「戦は近づいております。」"
+      },
+      {
+        "id": "p-164",
+        "kind": "dialogue",
+        "text": "「それに。」"
+      },
+      {
+        "id": "p-165",
+        "kind": "dialogue",
+        "text": "「薩摩も安泰ではありません。」"
+      },
+      {
+        "id": "p-166",
+        "kind": "dialogue",
+        "text": "「長州が滅べば。」"
+      },
+      {
+        "id": "p-167",
+        "kind": "dialogue",
+        "text": "「幕府は次に薩摩へ向かうでしょう。」"
+      },
+      {
+        "id": "p-168",
+        "kind": "dialogue",
+        "text": "「それは薩摩も分かっているはずです。」"
+      },
+      {
+        "id": "p-169",
+        "kind": "dialogue",
+        "text": "「ならば。」"
+      },
+      {
+        "id": "p-170",
+        "kind": "dialogue",
+        "text": "「今は信用を育てるより。」"
+      },
+      {
+        "id": "p-171",
+        "kind": "dialogue",
+        "text": "「共に生き残る道を選ぶべきではありませんか。」"
+      },
+      {
+        "id": "p-172",
+        "kind": "narration",
+        "text": "部屋は静まり返る。"
+      },
+      {
+        "id": "p-173",
+        "kind": "narration",
+        "text": "村瀬は三人を見つめる。"
+      },
+      {
+        "id": "p-174",
+        "kind": "narration",
+        "text": "桂小五郎。"
+      },
+      {
+        "id": "p-175",
+        "kind": "narration",
+        "text": "組織を守る男。"
+      },
+      {
+        "id": "p-176",
+        "kind": "narration",
+        "text": "坂本龍馬。"
+      },
+      {
+        "id": "p-177",
+        "kind": "narration",
+        "text": "人と人をつなぐ男。"
+      },
+      {
+        "id": "p-178",
+        "kind": "narration",
+        "text": "村田蔵六。"
+      },
+      {
+        "id": "p-179",
+        "kind": "narration",
+        "text": "未来を設計する男。"
+      },
+      {
+        "id": "p-180",
+        "kind": "narration",
+        "text": "三人とも。"
+      },
+      {
+        "id": "p-181",
+        "kind": "narration",
+        "text": "日本を救おうとしている。"
+      },
+      {
+        "id": "p-182",
+        "kind": "narration",
+        "text": "だから。"
+      },
+      {
+        "id": "p-183",
+        "kind": "narration",
+        "text": "誰も間違っていない。"
+      },
+      {
+        "id": "p-184",
+        "kind": "narration",
+        "text": "桂が村瀬を見る。"
+      },
+      {
+        "id": "p-185",
+        "kind": "dialogue",
+        "text": "「村瀬君。」"
+      },
+      {
+        "id": "p-186",
+        "kind": "dialogue",
+        "text": "「……君なら。」"
+      },
+      {
+        "id": "p-187",
         "kind": "dialogue",
         "text": "「君の考えも聞かせてほしい。」"
       }
@@ -4386,522 +4646,522 @@ export const chapters: Chapter[] = [
     "sourceFile": "第8話_第二次長州征討.docx",
     "passages": [
       {
-        "id": "p-2",
+        "id": "p-1",
         "kind": "narration",
         "text": "禁門の変。"
       },
       {
-        "id": "p-3",
+        "id": "p-2",
         "kind": "narration",
         "text": "京都で多くの仲間を失った。"
       },
       {
-        "id": "p-4",
+        "id": "p-3",
         "kind": "narration",
         "text": "第一次長州征討。"
       },
       {
-        "id": "p-5",
+        "id": "p-4",
         "kind": "narration",
         "text": "戦うことすら許されず、長州は屈辱に耐えた。"
       },
       {
-        "id": "p-6",
+        "id": "p-5",
         "kind": "narration",
         "text": "功山寺挙兵。"
       },
       {
-        "id": "p-7",
+        "id": "p-6",
         "kind": "narration",
         "text": "長州は再び立ち上がった。"
       },
       {
-        "id": "p-8",
+        "id": "p-7",
         "kind": "narration",
         "text": "そして今。"
       },
       {
-        "id": "p-9",
+        "id": "p-8",
         "kind": "narration",
         "text": "幕府との最後の決戦が始まろうとしていた。"
       },
       {
-        "id": "p-10",
+        "id": "p-9",
         "kind": "scene",
         "text": "【出陣前夜　軍議】"
       },
       {
-        "id": "p-11",
+        "id": "p-10",
         "kind": "narration",
         "text": "村瀬は軍議へ呼ばれた。"
       },
       {
-        "id": "p-12",
+        "id": "p-11",
         "kind": "narration",
         "text": "部屋には三人の指揮官がいる。"
       },
       {
-        "id": "p-13",
+        "id": "p-12",
         "kind": "narration",
         "text": "桂 小五郎（かつら こごろう／長州藩の重臣）。"
       },
       {
-        "id": "p-14",
+        "id": "p-13",
         "kind": "narration",
         "text": "高杉 晋作（たかすぎ しんさく／奇兵隊を率いる長州藩士）。"
       },
       {
-        "id": "p-15",
+        "id": "p-14",
         "kind": "narration",
         "text": "村田 蔵六（むらた ぞうろく／兵学者）。"
       },
       {
-        "id": "p-16",
+        "id": "p-15",
         "kind": "narration",
         "text": "静かな空気の中、桂が地図を広げる。"
       },
       {
-        "id": "p-17",
+        "id": "p-16",
         "kind": "scene",
         "text": "【桂小五郎】"
       },
       {
-        "id": "p-18",
+        "id": "p-17",
         "kind": "dialogue",
         "text": "「敵は。」"
       },
       {
-        "id": "p-19",
+        "id": "p-18",
         "kind": "dialogue",
         "text": "「こちらの何倍もの兵力です。」"
       },
       {
-        "id": "p-20",
+        "id": "p-19",
         "kind": "dialogue",
         "text": "「ですが。」"
       },
       {
-        "id": "p-21",
+        "id": "p-20",
         "kind": "dialogue",
         "text": "「数で勝てぬ戦ほど。」"
       },
       {
-        "id": "p-22",
+        "id": "p-21",
         "kind": "dialogue",
         "text": "「戦う場所が大事になります。」"
       },
       {
-        "id": "p-23",
+        "id": "p-22",
         "kind": "narration",
         "text": "地図を指す。"
       },
       {
-        "id": "p-24",
+        "id": "p-23",
         "kind": "dialogue",
         "text": "「守る時は守る。」"
       },
       {
-        "id": "p-25",
+        "id": "p-24",
         "kind": "dialogue",
         "text": "「退く時は退く。」"
       },
       {
-        "id": "p-26",
+        "id": "p-25",
         "kind": "dialogue",
         "text": "「兵を失うたら。」"
       },
       {
-        "id": "p-27",
+        "id": "p-26",
         "kind": "dialogue",
         "text": "「次の戦はない。」"
       },
       {
-        "id": "p-28",
+        "id": "p-27",
         "kind": "narration",
         "text": "村瀬を見る。"
       },
       {
-        "id": "p-29",
+        "id": "p-28",
         "kind": "dialogue",
         "text": "「指揮官は。」"
       },
       {
-        "id": "p-30",
+        "id": "p-29",
         "kind": "dialogue",
         "text": "「勝つ責任だけじゃない。」"
       },
       {
-        "id": "p-31",
+        "id": "p-30",
         "kind": "dialogue",
         "text": "「皆を生きて帰す責任も負うてます。」"
       },
       {
-        "id": "p-32",
+        "id": "p-31",
         "kind": "narration",
         "text": "静寂。"
       },
       {
-        "id": "p-33",
+        "id": "p-32",
         "kind": "narration",
         "text": "高杉が笑いながら腕を組む。"
       },
       {
-        "id": "p-34",
+        "id": "p-33",
         "kind": "scene",
         "text": "【高杉晋作】"
       },
       {
-        "id": "p-35",
+        "id": "p-34",
         "kind": "dialogue",
         "text": "「桂さんらしいのう。」"
       },
       {
-        "id": "p-36",
+        "id": "p-35",
         "kind": "narration",
         "text": "村瀬を見る。"
       },
       {
-        "id": "p-37",
+        "id": "p-36",
         "kind": "dialogue",
         "text": "「禁門も。」"
       },
       {
-        "id": "p-38",
+        "id": "p-37",
         "kind": "dialogue",
         "text": "「功山寺も。」"
       },
       {
-        "id": "p-39",
+        "id": "p-38",
         "kind": "dialogue",
         "text": "「よう生き抜いたな。」"
       },
       {
-        "id": "p-40",
+        "id": "p-39",
         "kind": "dialogue",
         "text": "「敵は強い。」"
       },
       {
-        "id": "p-41",
+        "id": "p-40",
         "kind": "dialogue",
         "text": "「数は向こうが上じゃ。」"
       },
       {
-        "id": "p-42",
+        "id": "p-41",
         "kind": "dialogue",
         "text": "「じゃが。勝負は数で決まらん。」"
       },
       {
-        "id": "p-43",
+        "id": "p-42",
         "kind": "dialogue",
         "text": "「最後に戦うんは人じゃ。」"
       },
       {
-        "id": "p-44",
+        "id": "p-43",
         "kind": "dialogue",
         "text": "「兵は。」"
       },
       {
-        "id": "p-45",
+        "id": "p-44",
         "kind": "dialogue",
         "text": "「指揮官の背中を見て動く。」"
       },
       {
-        "id": "p-46",
+        "id": "p-45",
         "kind": "dialogue",
         "text": "「わしが前へ出りゃ。」"
       },
       {
-        "id": "p-47",
+        "id": "p-46",
         "kind": "dialogue",
         "text": "「皆も前へ出る。」"
       },
       {
-        "id": "p-48",
+        "id": "p-47",
         "kind": "dialogue",
         "text": "「士気は。」"
       },
       {
-        "id": "p-49",
+        "id": "p-48",
         "kind": "dialogue",
         "text": "「数の差をひっくり返す。」"
       },
       {
-        "id": "p-50",
+        "id": "p-49",
         "kind": "narration",
         "text": "村田が静かに口を開く。"
       },
       {
-        "id": "p-51",
+        "id": "p-50",
         "kind": "scene",
         "text": "【村田蔵六】"
       },
       {
-        "id": "p-52",
+        "id": "p-51",
         "kind": "dialogue",
         "text": "「高杉さん。」"
       },
       {
-        "id": "p-53",
+        "id": "p-52",
         "kind": "dialogue",
         "text": "「士気は大切です。」"
       },
       {
-        "id": "p-54",
+        "id": "p-53",
         "kind": "dialogue",
         "text": "「しかし。」"
       },
       {
-        "id": "p-55",
+        "id": "p-54",
         "kind": "dialogue",
         "text": "「士気だけでは勝てません。」"
       },
       {
-        "id": "p-56",
+        "id": "p-55",
         "kind": "narration",
         "text": "地図へ印を書き込む。"
       },
       {
-        "id": "p-57",
+        "id": "p-56",
         "kind": "dialogue",
         "text": "「兵糧。」"
       },
       {
-        "id": "p-58",
+        "id": "p-57",
         "kind": "dialogue",
         "text": "「補給。」"
       },
       {
-        "id": "p-59",
+        "id": "p-58",
         "kind": "dialogue",
         "text": "「情報。」"
       },
       {
-        "id": "p-60",
+        "id": "p-59",
         "kind": "dialogue",
         "text": "「配置。」"
       },
       {
-        "id": "p-61",
+        "id": "p-60",
         "kind": "dialogue",
         "text": "「これが整って初めて。」"
       },
       {
-        "id": "p-62",
+        "id": "p-61",
         "kind": "dialogue",
         "text": "「兵は安心して戦えます。」"
       },
       {
-        "id": "p-63",
+        "id": "p-62",
         "kind": "dialogue",
         "text": "「勝つ仕組みを作る。」"
       },
       {
-        "id": "p-64",
+        "id": "p-63",
         "kind": "dialogue",
         "text": "「それが指揮官の仕事です。」"
       },
       {
-        "id": "p-65",
+        "id": "p-64",
         "kind": "narration",
         "text": "高杉が笑う。"
       },
       {
-        "id": "p-66",
+        "id": "p-65",
         "kind": "dialogue",
         "text": "「村田先生。」"
       },
       {
-        "id": "p-67",
+        "id": "p-66",
         "kind": "dialogue",
         "text": "「相変わらず理屈じゃのう。」"
       },
       {
-        "id": "p-68",
+        "id": "p-67",
         "kind": "narration",
         "text": "村田は穏やかに答える。"
       },
       {
-        "id": "p-69",
+        "id": "p-68",
         "kind": "dialogue",
         "text": "「理屈で勝てる戦なら。」"
       },
       {
-        "id": "p-70",
+        "id": "p-69",
         "kind": "dialogue",
         "text": "「理屈で勝つべきです。」"
       },
       {
-        "id": "p-71",
+        "id": "p-70",
         "kind": "narration",
         "text": "桂は二人を見て微笑む。"
       },
       {
-        "id": "p-72",
+        "id": "p-71",
         "kind": "dialogue",
         "text": "「二人とも。」"
       },
       {
-        "id": "p-73",
+        "id": "p-72",
         "kind": "dialogue",
         "text": "「間違うちょらん。」"
       },
       {
-        "id": "p-74",
+        "id": "p-73",
         "kind": "dialogue",
         "text": "「戦には。」"
       },
       {
-        "id": "p-75",
+        "id": "p-74",
         "kind": "dialogue",
         "text": "「勇気も。」"
       },
       {
-        "id": "p-76",
+        "id": "p-75",
         "kind": "dialogue",
         "text": "「準備もいる。」"
       },
       {
-        "id": "p-77",
+        "id": "p-76",
         "kind": "narration",
         "text": "軍議が終わる。"
       },
       {
-        "id": "p-78",
+        "id": "p-77",
         "kind": "narration",
         "text": "三人は立ち上がる。"
       },
       {
-        "id": "p-79",
+        "id": "p-78",
         "kind": "narration",
         "text": "村瀬も一礼して部屋を出ようとする。"
       },
       {
-        "id": "p-80",
+        "id": "p-79",
         "kind": "narration",
         "text": "桂が呼び止める。"
       },
       {
-        "id": "p-81",
+        "id": "p-80",
         "kind": "dialogue",
         "text": "「村瀬君。」"
       },
       {
-        "id": "p-82",
+        "id": "p-81",
         "kind": "dialogue",
         "text": "「待ちなさい。」"
       },
       {
-        "id": "p-83",
+        "id": "p-82",
         "kind": "narration",
         "text": "村瀬は振り返る。"
       },
       {
-        "id": "p-84",
+        "id": "p-83",
         "kind": "dialogue",
         "text": "「いよいよ。」"
       },
       {
-        "id": "p-85",
+        "id": "p-84",
         "kind": "dialogue",
         "text": "「それぞれの隊が動きます。」"
       },
       {
-        "id": "p-86",
+        "id": "p-85",
         "kind": "narration",
         "text": "高杉が笑う。"
       },
       {
-        "id": "p-87",
+        "id": "p-86",
         "kind": "dialogue",
         "text": "「お前にも働いてもらうぞ。」"
       },
       {
-        "id": "p-89",
+        "id": "p-87",
         "kind": "narration",
         "text": "村田もうなずく。"
       },
       {
-        "id": "p-90",
+        "id": "p-88",
         "kind": "dialogue",
         "text": "「どの隊にも。」"
       },
       {
-        "id": "p-91",
+        "id": "p-89",
         "kind": "dialogue",
         "text": "「役割があります。」"
       },
       {
-        "id": "p-92",
+        "id": "p-90",
         "kind": "narration",
         "text": "桂が静かに言う。"
       },
       {
-        "id": "p-93",
+        "id": "p-91",
         "kind": "dialogue",
         "text": "「戦の時まで。」"
       },
       {
-        "id": "p-94",
+        "id": "p-92",
         "kind": "dialogue",
         "text": "「よう考えなさい。」"
       },
       {
-        "id": "p-95",
+        "id": "p-93",
         "kind": "narration",
         "text": "高杉。"
       },
       {
-        "id": "p-96",
+        "id": "p-94",
         "kind": "dialogue",
         "text": "「誰の下で戦いたいか。」"
       },
       {
-        "id": "p-97",
+        "id": "p-95",
         "kind": "narration",
         "text": "村田。"
       },
       {
-        "id": "p-98",
+        "id": "p-96",
         "kind": "dialogue",
         "text": "「命を預ける相手は。」"
       },
       {
-        "id": "p-99",
+        "id": "p-97",
         "kind": "dialogue",
         "text": "「自分で選ぶべきです。」"
       },
       {
-        "id": "p-100",
+        "id": "p-98",
         "kind": "narration",
         "text": "桂。"
       },
       {
-        "id": "p-101",
+        "id": "p-99",
         "kind": "dialogue",
         "text": "「その決断が。」"
       },
       {
-        "id": "p-102",
+        "id": "p-100",
         "kind": "dialogue",
         "text": "「お前自身の戦い方になる。」"
       },
       {
-        "id": "p-103",
+        "id": "p-101",
         "kind": "narration",
         "text": "高杉は村瀬の肩を軽く叩く。"
       },
       {
-        "id": "p-104",
+        "id": "p-102",
         "kind": "dialogue",
         "text": "「どこへ来ても。」"
       },
       {
-        "id": "p-105",
+        "id": "p-103",
         "kind": "dialogue",
         "text": "「長州のために戦うんは同じじゃ。」"
       },
       {
-        "id": "p-106",
+        "id": "p-104",
         "kind": "narration",
         "text": "村瀬は三人へ深く頭を下げた。"
       }
@@ -5186,7 +5446,7 @@ export const chapters: Chapter[] = [
       },
       {
         "id": "p-39",
-        "kind": "narration",
+        "kind": "dialogue",
         "text": "「徳川を外したままでは、諸藩も納得いたしますまい。」"
       },
       {
@@ -5196,261 +5456,256 @@ export const chapters: Chapter[] = [
       },
       {
         "id": "p-41",
-        "kind": "narration",
+        "kind": "dialogue",
         "text": "「されど、徳川を加えれば、再び幕府の世に戻るおそれがある。」"
       },
       {
         "id": "p-42",
-        "kind": "narration",
+        "kind": "dialogue",
         "text": "「徳川を呼ぶとしても。」"
       },
       {
         "id": "p-43",
-        "kind": "narration",
+        "kind": "dialogue",
         "text": "「どの立場で加わってもらうのか。」"
       },
       {
         "id": "p-44",
-        "kind": "narration",
-        "text": "「どの立場で加わってもらうのか。」"
+        "kind": "dialogue",
+        "text": "「旧幕府の主としてか。」"
       },
       {
         "id": "p-45",
-        "kind": "narration",
-        "text": "「旧幕府の主としてか。」"
+        "kind": "dialogue",
+        "text": "「一諸侯としてか。」"
       },
       {
         "id": "p-46",
         "kind": "narration",
-        "text": "「一諸侯としてか。」"
+        "text": "意見が次々と交わされる。"
       },
       {
         "id": "p-47",
         "kind": "narration",
-        "text": "意見が次々と交わされる。"
+        "text": "徳川を招くべきだという者。"
       },
       {
         "id": "p-48",
         "kind": "narration",
-        "text": "徳川を招くべきだという者。"
+        "text": "新しい政を始めるため、距離を置くべきだという者。"
       },
       {
         "id": "p-49",
         "kind": "narration",
-        "text": "新しい政を始めるため、距離を置くべきだという者。"
+        "text": "誰もが国の行く末を考えていた。"
       },
       {
         "id": "p-50",
         "kind": "narration",
-        "text": "誰もが国の行く末を考えていた。"
+        "text": "しかし、議論を重ねるほど、答えは遠ざかっていった。"
       },
       {
         "id": "p-51",
         "kind": "narration",
-        "text": "しかし、議論を重ねるほど、答えは遠ざかっていった。"
+        "text": "岩倉も腕を組み、考え込んでいる。"
       },
       {
         "id": "p-52",
         "kind": "narration",
-        "text": "岩倉も腕を組み、考え込んでいる。"
-      },
-      {
-        "id": "p-53",
-        "kind": "narration",
         "text": "やがて静かに口を開いた。"
       },
       {
-        "id": "p-54",
+        "id": "p-53",
         "kind": "dialogue",
         "text": "「このまま続けても、今は結論が出まい。」"
       },
       {
-        "id": "p-55",
-        "kind": "narration",
+        "id": "p-54",
+        "kind": "dialogue",
         "text": "「ひとまず休憩としよう。」"
       },
       {
-        "id": "p-56",
-        "kind": "narration",
+        "id": "p-55",
+        "kind": "dialogue",
         "text": "「各々、もう一度考えてもらいたい。」"
       },
       {
-        "id": "p-57",
+        "id": "p-56",
         "kind": "scene",
         "text": "【廊下】"
       },
       {
-        "id": "p-58",
+        "id": "p-57",
         "kind": "narration",
         "text": "村瀬は廊下へ出る。"
       },
       {
-        "id": "p-59",
+        "id": "p-58",
         "kind": "narration",
         "text": "冬の冷たい空気が流れている。"
       },
       {
-        "id": "p-60",
+        "id": "p-59",
         "kind": "narration",
         "text": "岩倉も一人、庭を眺めていた。"
       },
       {
-        "id": "p-61",
+        "id": "p-60",
         "kind": "narration",
         "text": "村瀬は少し離れた場所で頭を下げる。"
       },
       {
-        "id": "p-62",
+        "id": "p-61",
         "kind": "narration",
         "text": "岩倉は村瀬に気付く。"
       },
       {
-        "id": "p-63",
+        "id": "p-62",
         "kind": "dialogue",
         "text": "「長州の者か。」"
       },
       {
-        "id": "p-64",
+        "id": "p-63",
         "kind": "narration",
         "text": "村瀬は静かにうなずく。"
       },
       {
-        "id": "p-65",
+        "id": "p-64",
         "kind": "narration",
         "text": "岩倉は小さく苦笑した。"
       },
       {
-        "id": "p-66",
+        "id": "p-65",
         "kind": "dialogue",
         "text": "「皆、この国を思うておる。」"
       },
       {
-        "id": "p-67",
+        "id": "p-66",
         "kind": "dialogue",
         "text": "「だからこそ決められん。」"
       },
       {
-        "id": "p-68",
+        "id": "p-67",
         "kind": "narration",
         "text": "その時だった。"
       },
       {
-        "id": "p-69",
+        "id": "p-68",
         "kind": "narration",
         "text": "廊下の奥から西郷 吉之助（さいごう きちのすけ／薩摩藩の中心人物）が歩いてくる。"
       },
       {
-        "id": "p-70",
+        "id": "p-69",
         "kind": "scene",
         "text": "【西郷吉之助】"
       },
       {
-        "id": "p-71",
+        "id": "p-70",
         "kind": "dialogue",
         "text": "「岩倉さま。」"
       },
       {
-        "id": "p-72",
+        "id": "p-71",
         "kind": "dialogue",
         "text": "「まだ決まりもはんか。」"
       },
       {
-        "id": "p-73",
+        "id": "p-72",
         "kind": "narration",
         "text": "岩倉は苦笑する。"
       },
       {
-        "id": "p-74",
+        "id": "p-73",
         "kind": "dialogue",
         "text": "「皆、正しいことを申す。」"
       },
       {
-        "id": "p-75",
+        "id": "p-74",
         "kind": "dialogue",
         "text": "「だから決められん。」"
       },
       {
-        "id": "p-76",
+        "id": "p-75",
         "kind": "narration",
         "text": "西郷は静かに村瀬を見る。"
       },
       {
-        "id": "p-77",
+        "id": "p-76",
         "kind": "narration",
         "text": "そして腰の短刀にそっと手を添えた。"
       },
       {
-        "id": "p-78",
+        "id": "p-77",
         "kind": "dialogue",
         "text": "「あいくちが一本あればよか。」"
       },
       {
-        "id": "p-79",
+        "id": "p-78",
         "kind": "narration",
         "text": "村瀬は驚く。"
       },
       {
-        "id": "p-80",
+        "id": "p-79",
         "kind": "narration",
         "text": "西郷は穏やかな表情のまま続ける。"
       },
       {
-        "id": "p-81",
+        "id": "p-80",
         "kind": "dialogue",
         "text": "「人を斬るためではなか。」"
       },
       {
-        "id": "p-82",
+        "id": "p-81",
         "kind": "dialogue",
         "text": "「責任を負う覚悟です。」"
       },
       {
-        "id": "p-83",
+        "id": "p-82",
         "kind": "dialogue",
         "text": "「議論は尽くした。」"
       },
       {
-        "id": "p-84",
+        "id": "p-83",
         "kind": "dialogue",
         "text": "「最後は誰かが決めんと、国は前へ進まん。」"
       },
       {
-        "id": "p-85",
+        "id": "p-84",
         "kind": "narration",
         "text": "岩倉はしばらく黙っていた。"
       },
       {
-        "id": "p-86",
+        "id": "p-85",
         "kind": "narration",
         "text": "やがて衣を整える。"
       },
       {
-        "id": "p-87",
+        "id": "p-86",
         "kind": "dialogue",
         "text": "「……そうですな。」"
       },
       {
-        "id": "p-88",
+        "id": "p-87",
         "kind": "dialogue",
         "text": "「会議を再開いたしましょう。」"
       },
       {
-        "id": "p-89",
+        "id": "p-88",
         "kind": "narration",
         "text": "岩倉は会議場へ戻っていく。"
       },
       {
-        "id": "p-90",
+        "id": "p-89",
         "kind": "narration",
         "text": "村瀬も、その後ろを静かについていく。"
       },
       {
-        "id": "p-91",
+        "id": "p-90",
         "kind": "narration",
         "text": "村瀬は、先ほど交わされた言葉を思い返した。"
       },
       {
-        "id": "p-92",
+        "id": "p-91",
         "kind": "narration",
         "text": "あなたなら、何を最も大切にするか。"
       }
@@ -5579,462 +5834,462 @@ export const chapters: Chapter[] = [
     "sourceFile": "第10章_鳥羽・伏見前夜.docx",
     "passages": [
       {
-        "id": "p-2",
+        "id": "p-1",
         "kind": "narration",
         "text": "慶応四年（一八六八年）。"
       },
       {
-        "id": "p-3",
+        "id": "p-2",
         "kind": "narration",
         "text": "京都、鳥羽・伏見。"
       },
       {
-        "id": "p-4",
+        "id": "p-3",
         "kind": "narration",
         "text": "新政府軍と旧幕府軍は、ついに武器を手に向かい合った。"
       },
       {
-        "id": "p-5",
+        "id": "p-4",
         "kind": "narration",
         "text": "薩摩藩、長州藩。"
       },
       {
-        "id": "p-6",
+        "id": "p-5",
         "kind": "narration",
         "text": "幕府軍、会津藩、新選組。"
       },
       {
-        "id": "p-7",
+        "id": "p-6",
         "kind": "narration",
         "text": "もはや一触即発。"
       },
       {
-        "id": "p-8",
+        "id": "p-7",
         "kind": "narration",
         "text": "村瀬は長州軍の本陣にいた。"
       },
       {
-        "id": "p-9",
+        "id": "p-8",
         "kind": "narration",
         "text": "その頃――"
       },
       {
-        "id": "p-10",
+        "id": "p-9",
         "kind": "narration",
         "text": "大坂城では、徳川十五代将軍・徳川慶喜（とくがわ よしのぶ）が、大きな決断を迫られていた。"
       },
       {
-        "id": "p-11",
+        "id": "p-10",
         "kind": "scene",
         "text": "【大坂城】"
       },
       {
-        "id": "p-12",
+        "id": "p-11",
         "kind": "narration",
         "text": "静まり返る部屋。"
       },
       {
-        "id": "p-13",
+        "id": "p-12",
         "kind": "narration",
         "text": "重臣たちが並ぶ。"
       },
       {
-        "id": "p-14",
+        "id": "p-13",
         "kind": "narration",
         "text": "口を開いたのは、勝 海舟（かつ かいしゅう／幕臣）だった。"
       },
       {
-        "id": "p-15",
+        "id": "p-14",
         "kind": "scene",
         "text": "【勝海舟】"
       },
       {
-        "id": "p-16",
+        "id": "p-15",
         "kind": "dialogue",
         "text": "「上様。」"
       },
       {
-        "id": "p-17",
+        "id": "p-16",
         "kind": "dialogue",
         "text": "「こいつぁ、徳川だけの戦じゃありません。」"
       },
       {
-        "id": "p-18",
+        "id": "p-17",
         "kind": "dialogue",
         "text": "「幕府には兵も船もある。」"
       },
       {
-        "id": "p-19",
+        "id": "p-18",
         "kind": "dialogue",
         "text": "「戦えば勝てるかもしれません。」"
       },
       {
-        "id": "p-20",
+        "id": "p-19",
         "kind": "dialogue",
         "text": "「ですがね。」"
       },
       {
-        "id": "p-21",
+        "id": "p-20",
         "kind": "dialogue",
         "text": "「勝っても、薩長を敵に回したままでは、この国はまとまりません。」"
       },
       {
-        "id": "p-22",
+        "id": "p-21",
         "kind": "dialogue",
         "text": "「これ以上、戦を広げれば、日本の力は削られる一方です。」"
       },
       {
-        "id": "p-23",
+        "id": "p-22",
         "kind": "dialogue",
         "text": "「今必要なのは、戦を終わらせることです。」"
       },
       {
-        "id": "p-24",
+        "id": "p-23",
         "kind": "dialogue",
         "text": "「上様には、この場にお残りいただきたい。」"
       },
       {
-        "id": "p-25",
+        "id": "p-24",
         "kind": "dialogue",
         "text": "「上様がおられるからこそ、幕府軍を抑え、薩長とも交渉ができます。」"
       },
       {
-        "id": "p-26",
+        "id": "p-25",
         "kind": "dialogue",
         "text": "「日本を一つにする道は、まだ残されております。」"
       },
       {
-        "id": "p-31",
+        "id": "p-26",
         "kind": "narration",
         "text": "板倉 勝静（いたくら かつきよ／幕府老中）が静かに口を開く。"
       },
       {
-        "id": "p-32",
+        "id": "p-27",
         "kind": "scene",
         "text": "【板倉勝静】"
       },
       {
-        "id": "p-33",
+        "id": "p-28",
         "kind": "dialogue",
         "text": "「勝殿のお考えにも道理がございます。」"
       },
       {
-        "id": "p-34",
+        "id": "p-29",
         "kind": "dialogue",
         "text": "「しかし、上様には徳川家を残す責任がございます。」"
       },
       {
-        "id": "p-35",
+        "id": "p-30",
         "kind": "dialogue",
         "text": "「二百六十年以上続いた徳川宗家。」"
       },
       {
-        "id": "p-36",
+        "id": "p-31",
         "kind": "dialogue",
         "text": "「これを絶やしてはなりません。」"
       },
       {
-        "id": "p-37",
+        "id": "p-32",
         "kind": "dialogue",
         "text": "「旗本も、御家人も、家臣も、その家族も。」"
       },
       {
-        "id": "p-38",
+        "id": "p-33",
         "kind": "dialogue",
         "text": "「皆、徳川家とともに生きてまいりました。」"
       },
       {
-        "id": "p-39",
+        "id": "p-34",
         "kind": "dialogue",
         "text": "「上様がお生きであれば、徳川家は残ります。」"
       },
       {
-        "id": "p-40",
+        "id": "p-35",
         "kind": "dialogue",
         "text": "「家が残れば、人も守れます。」"
       },
       {
-        "id": "p-41",
+        "id": "p-36",
         "kind": "dialogue",
         "text": "「どうか江戸へお戻りください。」"
       },
       {
-        "id": "p-42",
+        "id": "p-37",
         "kind": "dialogue",
         "text": "「徳川家を、お残しください。」"
       },
       {
-        "id": "p-43",
+        "id": "p-38",
         "kind": "narration",
         "text": "会津藩主・松平 容保（まつだいら かたもり／会津藩主）が立ち上がる。"
       },
       {
-        "id": "p-44",
+        "id": "p-39",
         "kind": "scene",
         "text": "【松平容保】"
       },
       {
-        "id": "p-45",
+        "id": "p-40",
         "kind": "dialogue",
         "text": "「私は、戦うべきであると考えます。」"
       },
       {
-        "id": "p-46",
+        "id": "p-41",
         "kind": "narration",
         "text": "部屋に緊張が走る。"
       },
       {
-        "id": "p-47",
+        "id": "p-42",
         "kind": "narration",
         "text": "容保は静かに地図を指す。"
       },
       {
-        "id": "p-48",
+        "id": "p-43",
         "kind": "dialogue",
         "text": "「この戦、我らが敗れると決まったわけではございません。」"
       },
       {
-        "id": "p-49",
+        "id": "p-44",
         "kind": "dialogue",
         "text": "「海軍は幕府が圧倒しております。」"
       },
       {
-        "id": "p-50",
+        "id": "p-45",
         "kind": "dialogue",
         "text": "「軍艦をもって海を押さえ、艦砲を撃てば、敵は容易には近づけません。」"
       },
       {
-        "id": "p-51",
+        "id": "p-46",
         "kind": "dialogue",
         "text": "「陸においても、兵の数は我らが上です。」"
       },
       {
-        "id": "p-52",
+        "id": "p-47",
         "kind": "dialogue",
         "text": "「武器も決して引けを取ってはおりません。」"
       },
       {
-        "id": "p-53",
+        "id": "p-48",
         "kind": "dialogue",
         "text": "「会津も。」"
       },
       {
-        "id": "p-54",
+        "id": "p-49",
         "kind": "dialogue",
         "text": "「桑名も。」"
       },
       {
-        "id": "p-55",
+        "id": "p-50",
         "kind": "dialogue",
         "text": "「新選組も。」"
       },
       {
-        "id": "p-56",
+        "id": "p-51",
         "kind": "dialogue",
         "text": "「幕臣たちも。」"
       },
       {
-        "id": "p-57",
+        "id": "p-52",
         "kind": "dialogue",
         "text": "「皆、戦う覚悟を固めております。」"
       },
       {
-        "id": "p-58",
+        "id": "p-53",
         "kind": "narration",
         "text": "少し間を置く。"
       },
       {
-        "id": "p-59",
+        "id": "p-54",
         "kind": "dialogue",
         "text": "「今の兵は、薩長への怒りで燃えております。」"
       },
       {
-        "id": "p-60",
+        "id": "p-55",
         "kind": "dialogue",
         "text": "「命を懸けても戦うという者ばかりです。」"
       },
       {
-        "id": "p-61",
+        "id": "p-56",
         "kind": "dialogue",
         "text": "「この状況で退却を命じれば。」"
       },
       {
-        "id": "p-62",
+        "id": "p-57",
         "kind": "dialogue",
         "text": "「命令を受け入れず、勝手に動く者が現れるやもしれませぬ。」"
       },
       {
-        "id": "p-63",
+        "id": "p-58",
         "kind": "dialogue",
         "text": "「軍の統制は失われます。」"
       },
       {
-        "id": "p-64",
+        "id": "p-59",
         "kind": "narration",
         "text": "容保は慶喜をまっすぐ見つめる。"
       },
       {
-        "id": "p-65",
+        "id": "p-60",
         "kind": "dialogue",
         "text": "「軍の統制を失えば。」"
       },
       {
-        "id": "p-66",
+        "id": "p-61",
         "kind": "dialogue",
         "text": "「上様のお命すら、お守りできる保証はございません。」"
       },
       {
-        "id": "p-67",
+        "id": "p-62",
         "kind": "dialogue",
         "text": "「私は、意地や面目のために戦えと申しているのではございません。」"
       },
       {
-        "id": "p-68",
+        "id": "p-63",
         "kind": "dialogue",
         "text": "「勝機がございます。」"
       },
       {
-        "id": "p-69",
+        "id": "p-64",
         "kind": "dialogue",
         "text": "「そして。」"
       },
       {
-        "id": "p-70",
+        "id": "p-65",
         "kind": "dialogue",
         "text": "「上様と徳川家をお守りするためにも。」"
       },
       {
-        "id": "p-71",
+        "id": "p-66",
         "kind": "dialogue",
         "text": "「今は戦うべきでございます。」"
       },
       {
-        "id": "p-72",
+        "id": "p-67",
         "kind": "scene",
         "text": "【勝海舟】"
       },
       {
-        "id": "p-73",
+        "id": "p-68",
         "kind": "dialogue",
         "text": "「なるほどな。」"
       },
       {
-        "id": "p-74",
+        "id": "p-69",
         "kind": "dialogue",
         "text": "「勝機はあるってわけだ。」"
       },
       {
-        "id": "p-75",
+        "id": "p-70",
         "kind": "dialogue",
         "text": "「だが容保公。」"
       },
       {
-        "id": "p-76",
+        "id": "p-71",
         "kind": "dialogue",
         "text": "「勝ったあとに残る日本まで考えなきゃいけねえ。」"
       },
       {
-        "id": "p-77",
+        "id": "p-72",
         "kind": "dialogue",
         "text": "「最後に守るべきものも、日本でしょう。」"
       },
       {
-        "id": "p-78",
+        "id": "p-73",
         "kind": "scene",
         "text": "【板倉勝静】"
       },
       {
-        "id": "p-79",
+        "id": "p-74",
         "kind": "dialogue",
         "text": "「日本も大切。」"
       },
       {
-        "id": "p-80",
+        "id": "p-75",
         "kind": "dialogue",
         "text": "「軍も大切。」"
       },
       {
-        "id": "p-81",
+        "id": "p-76",
         "kind": "dialogue",
         "text": "「しかし上様と徳川宗家を失えば、多くの者を守る道も失われます。」"
       },
       {
-        "id": "p-82",
+        "id": "p-77",
         "kind": "scene",
         "text": "【松平容保】"
       },
       {
-        "id": "p-83",
+        "id": "p-78",
         "kind": "dialogue",
         "text": "「家だけ残っても、支える者が離れれば家は続きません。」"
       },
       {
-        "id": "p-84",
+        "id": "p-79",
         "kind": "dialogue",
         "text": "「勝機がある今こそ戦うべきです。」"
       },
       {
-        "id": "p-85",
+        "id": "p-80",
         "kind": "narration",
         "text": "三人は互いに譲らない。"
       },
       {
-        "id": "p-86",
+        "id": "p-81",
         "kind": "narration",
         "text": "部屋は静まり返る。"
       },
       {
-        "id": "p-87",
+        "id": "p-82",
         "kind": "narration",
         "text": "誰一人、"
       },
       {
-        "id": "p-88",
+        "id": "p-83",
         "kind": "narration",
         "text": "誰も、自らの利益のために語っているわけではなかった。"
       },
       {
-        "id": "p-89",
+        "id": "p-84",
         "kind": "narration",
         "text": "守ろうとしているものが、"
       },
       {
-        "id": "p-90",
+        "id": "p-85",
         "kind": "narration",
         "text": "それぞれ違うだけだった。"
       },
       {
-        "id": "p-91",
+        "id": "p-86",
         "kind": "narration",
         "text": "慶喜は静かに立ち上がる。"
       },
       {
-        "id": "p-92",
+        "id": "p-87",
         "kind": "dialogue",
         "text": "「皆の考え、よく分かった。」"
       },
       {
-        "id": "p-93",
+        "id": "p-88",
         "kind": "dialogue",
         "text": "「どの策にも道理がある。」"
       },
       {
-        "id": "p-94",
+        "id": "p-89",
         "kind": "dialogue",
         "text": "「だからこそ。」"
       },
       {
-        "id": "p-95",
+        "id": "p-90",
         "kind": "dialogue",
         "text": "「決めねばならぬ。」"
       },
       {
-        "id": "p-96",
+        "id": "p-91",
         "kind": "narration",
         "text": "静寂が流れる。"
       },
       {
-        "id": "p-97",
+        "id": "p-92",
         "kind": "narration",
         "text": "慶喜は、何を最も守るべきだと考えるか。"
       }
@@ -6066,42 +6321,42 @@ export const chapters: Chapter[] = [
         "text": "鳥羽・伏見の戦いは、新政府軍の勝利に終わる。"
       },
       {
-        "id": "e-9",
+        "id": "e-6",
         "kind": "narration",
         "text": "退くこと。"
       },
       {
-        "id": "e-10",
+        "id": "e-7",
         "kind": "narration",
         "text": "守ること。"
       },
       {
-        "id": "e-11",
+        "id": "e-8",
         "kind": "narration",
         "text": "戦うこと。"
       },
       {
-        "id": "e-12",
+        "id": "e-9",
         "kind": "narration",
         "text": "どれも未来を思って選ばれた道だった。"
       },
       {
-        "id": "e-13",
+        "id": "e-10",
         "kind": "narration",
         "text": "歴史は、"
       },
       {
-        "id": "e-14",
+        "id": "e-11",
         "kind": "narration",
         "text": "何を守ると決めるかで、大きく姿を変えていく。"
       },
       {
-        "id": "e-15",
+        "id": "e-12",
         "kind": "narration",
         "text": "村瀬は静かに、"
       },
       {
-        "id": "e-16",
+        "id": "e-13",
         "kind": "narration",
         "text": "時代が動く音を聞いていた。"
       }
@@ -6138,540 +6393,540 @@ export const chapters: Chapter[] = [
     "sourceFile": "第11章_江戸城無血開城.docx",
     "passages": [
       {
-        "id": "p-2",
+        "id": "p-1",
         "kind": "narration",
         "text": "慶応四年三月。"
       },
       {
-        "id": "p-3",
+        "id": "p-2",
         "kind": "narration",
         "text": "鳥羽・伏見の戦いは新政府軍の勝利に終わった。"
       },
       {
-        "id": "p-4",
+        "id": "p-3",
         "kind": "narration",
         "text": "徳川慶喜は江戸へ退き、新政府軍は江戸城へ迫る。"
       },
       {
-        "id": "p-5",
+        "id": "p-4",
         "kind": "narration",
         "text": "しかし、その先には日本最大の町があった。"
       },
       {
-        "id": "p-6",
+        "id": "p-5",
         "kind": "narration",
         "text": "百万人を超える人々が暮らす江戸。"
       },
       {
-        "id": "p-7",
+        "id": "p-6",
         "kind": "narration",
         "text": "ここで戦になれば、武士だけではない。"
       },
       {
-        "id": "p-8",
+        "id": "p-7",
         "kind": "narration",
         "text": "商人も。"
       },
       {
-        "id": "p-9",
+        "id": "p-8",
         "kind": "narration",
         "text": "職人も。"
       },
       {
-        "id": "p-10",
+        "id": "p-9",
         "kind": "narration",
         "text": "子どもたちも巻き込まれる。"
       },
       {
-        "id": "p-11",
+        "id": "p-10",
         "kind": "narration",
         "text": "一方、新政府もまだ生まれたばかり。"
       },
       {
-        "id": "p-12",
+        "id": "p-11",
         "kind": "narration",
         "text": "反乱の火種を残せば、新しい日本は再び戦乱へ戻るかもしれない。"
       },
       {
-        "id": "p-13",
+        "id": "p-12",
         "kind": "narration",
         "text": "その日。"
       },
       {
-        "id": "p-14",
+        "id": "p-13",
         "kind": "narration",
         "text": "長州藩士・村瀬 新之助（むらせ しんのすけ）は重要な軍議へ呼ばれた。"
       },
       {
-        "id": "p-15",
+        "id": "p-14",
         "kind": "scene",
         "text": "【軍議】"
       },
       {
-        "id": "p-16",
+        "id": "p-15",
         "kind": "narration",
         "text": "部屋には三人の男がいた。"
       },
       {
-        "id": "p-17",
+        "id": "p-16",
         "kind": "narration",
         "text": "西郷 吉之助（さいごう きちのすけ／薩摩藩の中心人物）。"
       },
       {
-        "id": "p-18",
+        "id": "p-17",
         "kind": "narration",
         "text": "長州藩士・大村 益次郎（おおむら ますじろう／兵制改革を進めた兵学者）。"
       },
       {
-        "id": "p-19",
+        "id": "p-18",
         "kind": "narration",
         "text": "そして徳川方代表・勝 海舟（かつ かいしゅう／幕臣）。"
       },
       {
-        "id": "p-20",
+        "id": "p-19",
         "kind": "scene",
         "text": "【勝海舟】"
       },
       {
-        "id": "p-21",
+        "id": "p-20",
         "kind": "dialogue",
         "text": "「おっ。」"
       },
       {
-        "id": "p-22",
+        "id": "p-21",
         "kind": "dialogue",
         "text": "「君が長州の若い侍か。」"
       },
       {
-        "id": "p-23",
+        "id": "p-22",
         "kind": "dialogue",
         "text": "「あの京都の料亭にいた若い侍か。思ったより胆が据わっていたな。」"
       },
       {
-        "id": "p-24",
+        "id": "p-23",
         "kind": "dialogue",
         "text": "「まあ固くなるな。」"
       },
       {
-        "id": "p-25",
+        "id": "p-24",
         "kind": "dialogue",
         "text": "「今日は日本の話だ。」"
       },
       {
-        "id": "p-26",
+        "id": "p-25",
         "kind": "dialogue",
         "text": "「まあ固くなるな。座んな。」"
       },
       {
-        "id": "p-27",
+        "id": "p-26",
         "kind": "dialogue",
         "text": "「村瀬どん。」",
         "speaker": "西郷吉之助"
       },
       {
-        "id": "p-28",
+        "id": "p-27",
         "kind": "dialogue",
         "text": "「今日は、よう聞いちょっせ。」",
         "speaker": "西郷吉之助"
       },
       {
-        "id": "p-29",
+        "id": "p-28",
         "kind": "dialogue",
         "text": "「日本の行く末を決める話じゃ。」",
         "speaker": "西郷吉之助"
       },
       {
-        "id": "p-30",
+        "id": "p-29",
         "kind": "scene",
         "text": "【大村益次郎】"
       },
       {
-        "id": "p-31",
+        "id": "p-30",
         "kind": "dialogue",
         "text": "「村瀬君。」"
       },
       {
-        "id": "p-32",
+        "id": "p-31",
         "kind": "dialogue",
         "text": "「今日は勝ち負けの話ではありません。」"
       },
       {
-        "id": "p-33",
+        "id": "p-32",
         "kind": "dialogue",
         "text": "「戦をどう終わらせるか。」"
       },
       {
-        "id": "p-34",
+        "id": "p-33",
         "kind": "dialogue",
         "text": "「それを考えてください。」"
       },
       {
-        "id": "p-35",
+        "id": "p-34",
         "kind": "narration",
         "text": "勝海舟が窓の外を見ながら、口を開く。"
       },
       {
-        "id": "p-36",
+        "id": "p-35",
         "kind": "scene",
         "text": "【勝海舟】"
       },
       {
-        "id": "p-37",
+        "id": "p-36",
         "kind": "dialogue",
         "text": "「あの町が見えるだろう。」"
       },
       {
-        "id": "p-38",
+        "id": "p-37",
         "kind": "dialogue",
         "text": "「侍だけじゃねえ。」"
       },
       {
-        "id": "p-39",
+        "id": "p-38",
         "kind": "dialogue",
         "text": "「商人も。」"
       },
       {
-        "id": "p-40",
+        "id": "p-39",
         "kind": "dialogue",
         "text": "「職人も。」"
       },
       {
-        "id": "p-41",
+        "id": "p-40",
         "kind": "dialogue",
         "text": "「子どもも暮らしている。」"
       },
       {
-        "id": "p-42",
+        "id": "p-41",
         "kind": "dialogue",
         "text": "「あいつらはな。」"
       },
       {
-        "id": "p-43",
+        "id": "p-42",
         "kind": "dialogue",
         "text": "「戦なんぞ、これっぽっちも望んじゃいねえんだ。」"
       },
       {
-        "id": "p-44",
+        "id": "p-43",
         "kind": "narration",
         "text": "勝は江戸の町を指さす。"
       },
       {
-        "id": "p-45",
+        "id": "p-44",
         "kind": "dialogue",
         "text": "「勘違いしちゃいけねえ。」"
       },
       {
-        "id": "p-46",
+        "id": "p-45",
         "kind": "dialogue",
         "text": "「おれは、徳川だけを守りてえんじゃねえ。」"
       },
       {
-        "id": "p-47",
+        "id": "p-46",
         "kind": "dialogue",
         "text": "「日本を守りてえんだ。」"
       },
       {
-        "id": "p-48",
+        "id": "p-47",
         "kind": "dialogue",
         "text": "「江戸を戦場にしてみろ。」"
       },
       {
-        "id": "p-49",
+        "id": "p-48",
         "kind": "dialogue",
         "text": "「勝ったの、負けたのなんて話じゃ済まなくなる。」"
       },
       {
-        "id": "p-50",
+        "id": "p-49",
         "kind": "dialogue",
         "text": "「町は焼ける。」"
       },
       {
-        "id": "p-51",
+        "id": "p-50",
         "kind": "dialogue",
         "text": "「人は死ぬ。」"
       },
       {
-        "id": "p-52",
+        "id": "p-51",
         "kind": "dialogue",
         "text": "「日本そのものが、損をするんだ。」"
       },
       {
-        "id": "p-53",
+        "id": "p-52",
         "kind": "narration",
         "text": "勝は村瀬を見る。"
       },
       {
-        "id": "p-54",
+        "id": "p-53",
         "kind": "dialogue",
         "text": "「戦って勝つだけなら、できるかもしれねえ。」"
       },
       {
-        "id": "p-55",
+        "id": "p-54",
         "kind": "dialogue",
         "text": "「だがな。」"
       },
       {
-        "id": "p-56",
+        "id": "p-55",
         "kind": "dialogue",
         "text": "「始まった戦を終わらせる方が、よっぽど難しいんだよ。」"
       },
       {
-        "id": "p-57",
+        "id": "p-56",
         "kind": "narration",
         "text": "少し間を置く。"
       },
       {
-        "id": "p-58",
+        "id": "p-57",
         "kind": "dialogue",
         "text": "「上野に彰義隊が集まっていることも、百も承知だ。」"
       },
       {
-        "id": "p-59",
+        "id": "p-58",
         "kind": "dialogue",
         "text": "「放っておけなんて言うつもりはねえ。」"
       },
       {
-        "id": "p-60",
+        "id": "p-59",
         "kind": "dialogue",
         "text": "「おれが話をつける。」"
       },
       {
-        "id": "p-61",
+        "id": "p-60",
         "kind": "dialogue",
         "text": "「だからよ。」"
       },
       {
-        "id": "p-62",
+        "id": "p-61",
         "kind": "dialogue",
         "text": "「もう少しだけ待っちゃくれねえか。」"
       },
       {
-        "id": "p-63",
+        "id": "p-62",
         "kind": "narration",
         "text": "勝の表情から笑みが消える。"
       },
       {
-        "id": "p-64",
+        "id": "p-63",
         "kind": "dialogue",
         "text": "「あいつらだって。」"
       },
       {
-        "id": "p-65",
+        "id": "p-64",
         "kind": "dialogue",
         "text": "「同じ日本人なんだ。」"
       },
       {
-        "id": "p-66",
+        "id": "p-65",
         "kind": "scene",
         "text": "【西郷吉之助】"
       },
       {
-        "id": "p-67",
+        "id": "p-66",
         "kind": "dialogue",
         "text": "「勝先生のお気持ちは。」"
       },
       {
-        "id": "p-68",
+        "id": "p-67",
         "kind": "dialogue",
         "text": "「よう分かりもす。」"
       },
       {
-        "id": "p-69",
+        "id": "p-68",
         "kind": "dialogue",
         "text": "「じゃっどん。」"
       },
       {
-        "id": "p-70",
+        "id": "p-69",
         "kind": "dialogue",
         "text": "「新政府は、まだ生まれたばかいじゃ。」"
       },
       {
-        "id": "p-71",
+        "id": "p-70",
         "kind": "dialogue",
         "text": "「火種ば残せば。」"
       },
       {
-        "id": "p-72",
+        "id": "p-71",
         "kind": "dialogue",
         "text": "「また戦が始まりもす。」"
       },
       {
-        "id": "p-73",
+        "id": "p-72",
         "kind": "dialogue",
         "text": "「おいは徳川ば憎んじょるわけではなか。」"
       },
       {
-        "id": "p-74",
+        "id": "p-73",
         "kind": "dialogue",
         "text": "「新しか日本ば守りたか。」"
       },
       {
-        "id": "p-75",
+        "id": "p-74",
         "kind": "dialogue",
         "text": "「禍根だけは残したくなか。じゃっどん、火種を断つために徹底せねばならん時もありもす。」"
       },
       {
-        "id": "p-76",
+        "id": "p-75",
         "kind": "scene",
         "text": "【大村益次郎】"
       },
       {
-        "id": "p-77",
+        "id": "p-76",
         "kind": "dialogue",
         "text": "「勝先生のお考えは理解しています。」"
       },
       {
-        "id": "p-78",
+        "id": "p-77",
         "kind": "dialogue",
         "text": "「江戸城で戦う必要はありません。」"
       },
       {
-        "id": "p-79",
+        "id": "p-78",
         "kind": "dialogue",
         "text": "「ですが。」"
       },
       {
-        "id": "p-80",
+        "id": "p-79",
         "kind": "dialogue",
         "text": "「上野には彰義隊が集まっています。」"
       },
       {
-        "id": "p-81",
+        "id": "p-80",
         "kind": "dialogue",
         "text": "「武器を持つ集団が町に集まり続ければ。」"
       },
       {
-        "id": "p-82",
+        "id": "p-81",
         "kind": "dialogue",
         "text": "「町民は安心して暮らせません。」"
       },
       {
-        "id": "p-83",
+        "id": "p-82",
         "kind": "dialogue",
         "text": "「秩序は崩れます。」"
       },
       {
-        "id": "p-84",
+        "id": "p-83",
         "kind": "dialogue",
         "text": "「私は戦が好きではありません。」"
       },
       {
-        "id": "p-85",
+        "id": "p-84",
         "kind": "dialogue",
         "text": "「だからこそ。」"
       },
       {
-        "id": "p-86",
+        "id": "p-85",
         "kind": "dialogue",
         "text": "「二度と戦が起きぬよう。」"
       },
       {
-        "id": "p-87",
+        "id": "p-86",
         "kind": "dialogue",
         "text": "「必要な秩序は守らねばなりません。」"
       },
       {
-        "id": "p-88",
+        "id": "p-87",
         "kind": "narration",
         "text": "部屋は静まり返る。"
       },
       {
-        "id": "p-89",
+        "id": "p-88",
         "kind": "narration",
         "text": "誰一人、自分のために話している者はいなかった。"
       },
       {
-        "id": "p-90",
+        "id": "p-89",
         "kind": "narration",
         "text": "守ろうとしているものが違うだけだった。"
       },
       {
-        "id": "p-91",
+        "id": "p-90",
         "kind": "scene",
         "text": "【休憩】"
       },
       {
-        "id": "p-92",
+        "id": "p-91",
         "kind": "narration",
         "text": "村瀬は廊下へ出る。"
       },
       {
-        "id": "p-93",
+        "id": "p-92",
         "kind": "narration",
         "text": "荷を運ぶ商人。"
       },
       {
-        "id": "p-94",
+        "id": "p-93",
         "kind": "narration",
         "text": "笑う子ども。"
       },
       {
-        "id": "p-95",
+        "id": "p-94",
         "kind": "narration",
-        "text": "夕餉の支度をする母親。"
+        "text": "夕餉（ゆうげ）の支度をする母親。"
       },
       {
-        "id": "p-96",
+        "id": "p-95",
         "kind": "narration",
         "text": "村瀬は静かにつぶやく。"
       },
       {
-        "id": "p-97",
+        "id": "p-96",
         "kind": "dialogue",
         "text": "「皆、日本を思っている。」"
       },
       {
-        "id": "p-98",
+        "id": "p-97",
         "kind": "dialogue",
         "text": "「だから。」"
       },
       {
-        "id": "p-99",
+        "id": "p-98",
         "kind": "dialogue",
         "text": "「答えは一つじゃない。」"
       },
       {
-        "id": "p-100",
+        "id": "p-99",
         "kind": "scene",
         "text": "【決断】"
       },
       {
-        "id": "p-101",
+        "id": "p-100",
         "kind": "narration",
         "text": "勝が静かに笑う。"
       },
       {
-        "id": "p-102",
+        "id": "p-101",
         "kind": "dialogue",
         "text": "「村瀬。」"
       },
       {
-        "id": "p-103",
+        "id": "p-102",
         "kind": "dialogue",
         "text": "「若いんだから。」"
       },
       {
-        "id": "p-104",
+        "id": "p-103",
         "kind": "dialogue",
         "text": "「よく見て、よく考えろ。」"
       },
       {
-        "id": "p-105",
+        "id": "p-104",
         "kind": "dialogue",
         "text": "「さて。」"
       },
       {
-        "id": "p-106",
+        "id": "p-105",
         "kind": "dialogue",
         "text": "「お前なら。」"
       },
       {
-        "id": "p-107",
+        "id": "p-106",
         "kind": "dialogue",
         "text": "「この戦を、どう終わらせる。」"
       },
       {
-        "id": "p-108",
+        "id": "p-107",
         "kind": "narration",
         "text": "村瀬は、何を最も大切にするか。"
       }
@@ -9092,7 +9347,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-73",
         "kind": "dialogue",
-        "text": "「薩摩が動く理由を探しちょいもす。」",
+        "text": "「政府は、薩摩へ手を出す口実を探しちょいもす。」",
         "speaker": "大山綱良"
       },
       {
@@ -9158,7 +9413,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-84",
         "kind": "dialogue",
-        "text": "「政府でも、そう簡単には手は出せもはん。」",
+        "text": "「政府も、薩摩を敵に回す覚悟はまだできちょらん。」",
         "speaker": "大山綱良"
       },
       {
@@ -9636,4 +9891,4 @@ export const chapters: Chapter[] = [
     "notes": [],
     "subtitle": "志を受け継ぐ者"
   }
-];
+] satisfies Chapter[];
