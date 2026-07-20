@@ -245,6 +245,10 @@ h1 span {
   display: inline;
 }
 
+.title-copy h1 span {
+  display: block;
+}
+
 h2 {
   font-size: clamp(2rem, 5vw, 4rem);
   line-height: 1.08;
