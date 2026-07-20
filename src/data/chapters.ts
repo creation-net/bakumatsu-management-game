@@ -3979,7 +3979,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「藩論はまた割れる。」"
+        "text": "「藩論はまた割れるかもしれません。」"
       },
       {
         "id": "p-59",
@@ -9758,7 +9758,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-8",
         "kind": "narration",
-        "text": "吉田 松陰（よしだ しょういん／松下村塾（しょうかそんじゅく）を主宰した思想家）（よしだ しょういん）の墓を訪れる。"
+        "text": "吉田 松陰（よしだ しょういん）の墓を訪れる。"
       },
       {
         "id": "e-9",
@@ -9808,135 +9808,150 @@ export const chapters: Chapter[] = [
       {
         "id": "e-18",
         "kind": "narration",
-        "text": "木戸孝允。"
+        "text": "久坂玄瑞。"
       },
       {
         "id": "e-19",
         "kind": "narration",
-        "text": "大久保利通。"
+        "text": "木戸孝允。"
       },
       {
         "id": "e-20",
         "kind": "narration",
-        "text": "西郷隆盛。"
+        "text": "大村益次郎。"
       },
       {
         "id": "e-21",
         "kind": "narration",
-        "text": "坂本龍馬。"
+        "text": "山県有朋。"
       },
       {
         "id": "e-22",
         "kind": "narration",
-        "text": "勝海舟。"
+        "text": "大久保利通。"
       },
       {
         "id": "e-23",
         "kind": "narration",
-        "text": "そして、"
+        "text": "西郷隆盛。"
       },
       {
         "id": "e-24",
         "kind": "narration",
-        "text": "名も残らぬ多くの人々。"
+        "text": "坂本龍馬。"
       },
       {
         "id": "e-25",
         "kind": "narration",
-        "text": "それぞれが、"
+        "text": "勝海舟。"
       },
       {
         "id": "e-26",
         "kind": "narration",
-        "text": "それぞれの信念を胸に、"
+        "text": "そして、"
       },
       {
         "id": "e-27",
         "kind": "narration",
-        "text": "日本の未来を選び続けてきました。"
+        "text": "名も残らぬ多くの人々。"
       },
       {
         "id": "e-28",
         "kind": "narration",
-        "text": "村瀬は静かに立ち上がる。"
+        "text": "それぞれが、"
       },
       {
         "id": "e-29",
         "kind": "narration",
-        "text": "墓の横には、松陰が遺した『留魂録（りゅうこんろく）』の一節が刻まれていた。"
+        "text": "それぞれの信念を胸に、"
       },
       {
         "id": "e-30",
         "kind": "narration",
-        "text": "「身はたとひ武蔵の野辺に朽ちぬとも\n留め置かまし大和魂」"
+        "text": "日本の未来を選び続けてきました。"
       },
       {
         "id": "e-31",
         "kind": "narration",
-        "text": "たとえこの身が武蔵野に朽ちても、大和魂だけはこの世に留め置きたい、という意味である。"
+        "text": "村瀬は静かに立ち上がる。"
       },
       {
         "id": "e-32",
         "kind": "narration",
-        "text": "村瀬は、その言葉を静かに見つめる。"
+        "text": "墓の横には、松陰が遺した『留魂録（りゅうこんろく）』の一節が刻まれていた。"
       },
       {
         "id": "e-33",
-        "kind": "dialogue",
-        "text": "「先生……。」"
+        "kind": "narration",
+        "text": "「身はたとひ武蔵の野辺に朽ちぬとも\n留め置かまし大和魂」"
       },
       {
         "id": "e-34",
-        "kind": "dialogue",
-        "text": "「志は。」"
+        "kind": "narration",
+        "text": "たとえこの身が武蔵野に朽ちても、大和魂だけはこの世に留め置きたい、という意味である。"
       },
       {
         "id": "e-35",
-        "kind": "dialogue",
-        "text": "「人から人へ。」"
+        "kind": "narration",
+        "text": "村瀬は、その言葉を静かに見つめる。"
       },
       {
         "id": "e-36",
         "kind": "dialogue",
-        "text": "「受け継がれていくものなのですね。」"
+        "text": "「先生……。」"
       },
       {
         "id": "e-37",
-        "kind": "narration",
-        "text": "村瀬はゆっくりと歩き出した。"
+        "kind": "dialogue",
+        "text": "「志は。」"
       },
       {
         "id": "e-38",
-        "kind": "narration",
-        "text": "その後、"
+        "kind": "dialogue",
+        "text": "「人から人へ。」"
       },
       {
         "id": "e-39",
-        "kind": "narration",
-        "text": "村瀬新之助が歴史の表舞台に現れることは、二度となかった。"
+        "kind": "dialogue",
+        "text": "「受け継がれていくものなのですね。」"
       },
       {
         "id": "e-40",
         "kind": "narration",
-        "text": "しかし、"
+        "text": "村瀬はゆっくりと歩き出した。"
       },
       {
         "id": "e-41",
         "kind": "narration",
-        "text": "彼が出会った人々の志は、"
+        "text": "その後、"
       },
       {
         "id": "e-42",
         "kind": "narration",
-        "text": "新しい日本の中で、"
+        "text": "村瀬新之助が歴史の表舞台に現れることは、二度となかった。"
       },
       {
         "id": "e-43",
         "kind": "narration",
-        "text": "確かに生き続けていく。"
+        "text": "しかし、"
       },
       {
         "id": "e-44",
+        "kind": "narration",
+        "text": "彼が出会った人々の志は、"
+      },
+      {
+        "id": "e-45",
+        "kind": "narration",
+        "text": "新しい日本の中で、"
+      },
+      {
+        "id": "e-46",
+        "kind": "narration",
+        "text": "確かに生き続けていく。"
+      },
+      {
+        "id": "e-47",
         "kind": "narration",
         "text": "終わり"
       }
