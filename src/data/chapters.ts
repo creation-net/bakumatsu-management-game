@@ -2233,7 +2233,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-86",
         "kind": "dialogue",
-        "text": "「長州に理解を示してくださっている鷹司家に取り次いでいただければ」"
+        "text": "「長州に理解を示してくださっている鷹司家に取り次いでいただければ。」"
       },
       {
         "id": "p-87",
@@ -2775,27 +2775,27 @@ export const chapters: Chapter[] = [
       {
         "id": "p-65",
         "kind": "dialogue",
-        "text": "「勝てるかもしれん。」"
+        "text": "「お前の策は。」"
       },
       {
         "id": "p-66",
         "kind": "dialogue",
-        "text": "「だが勝てることと。」"
+        "text": "「勝つこともあろう。」"
       },
       {
         "id": "p-67",
         "kind": "dialogue",
-        "text": "「藩が残ることは違う。」"
+        "text": "「だが。」"
       },
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「一度負ければ。」"
+        "text": "「藩の命運を託すには。」"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「長州は終わる。」"
+        "text": "「危うすぎる。」"
       },
       {
         "id": "p-70",
