@@ -7627,7 +7627,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-26",
         "kind": "dialogue",
-        "text": "「その者たちが、賊のように扱われ、黙って見ちょれと言うのでごわすか。」",
+        "text": "「その者たちが、賊のように扱われ、黙って見ちょれと言うのですか。」",
         "speaker": "桐野利秋"
       },
       {
@@ -7645,7 +7645,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-29",
         "kind": "dialogue",
-        "text": "「先生を信じて集まった者たちを、見捨てたくないだけでごわす！」",
+        "text": "「先生を信じて集まった者たちを、見捨てたくないだけです！」",
         "speaker": "桐野利秋"
       },
       {
@@ -7668,7 +7668,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-33",
         "kind": "dialogue",
-        "text": "「その怒りのまま動けば、政府の思うつぼでごわす。」",
+        "text": "「その怒りのまま動けば、政府の思うつぼです。」",
         "speaker": "村田新八"
       },
       {
@@ -7692,13 +7692,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「村田どん、若い者だけ罪人にするのでごわすか！」",
+        "text": "「村田どん、若い者だけ罪人にするのですか！」",
         "speaker": "桐野利秋"
       },
       {
         "id": "p-38",
         "kind": "dialogue",
-        "text": "「先生を信じた者だけに、責任を負わせるのでごわすか！」",
+        "text": "「先生を信じた者だけに、責任を負わせるのですか！」",
         "speaker": "桐野利秋"
       },
       {
@@ -7749,7 +7749,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-47",
         "kind": "dialogue",
-        "text": "「何が違うのでごわす。」",
+        "text": "「何が違うのです。」",
         "speaker": "村田新八"
       },
       {
@@ -7839,7 +7839,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-62",
         "kind": "dialogue",
-        "text": "「若い者を見捨てろと言われるのでごわすか！」",
+        "text": "「若い者を見捨てろと言われるのですか！」",
         "speaker": "桐野利秋"
       },
       {
