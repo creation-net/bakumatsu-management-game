@@ -8873,7 +8873,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-90",
         "kind": "dialogue",
-        "text": "「木戸から、そなたの話は聞いておる。」",
+        "text": "「そなたの考えは、一度聞いてみる価値がある。」",
         "speaker": "岩倉具視"
       },
       {
