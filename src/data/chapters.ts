@@ -3608,7 +3608,7 @@ export const chapters: Chapter[] = [
       }
     ],
     "notes": [],
-    "subtitle": ""
+    "subtitle": "動く者の責任"
   },
   {
     "id": 7,
