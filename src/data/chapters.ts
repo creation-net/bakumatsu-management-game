@@ -5377,7 +5377,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-13",
         "kind": "narration",
-        "text": "勢いよく立ち上がる。"
+        "text": "容堂が真っ先に口を開いた。"
       },
       {
         "id": "p-14",

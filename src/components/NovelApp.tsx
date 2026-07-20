@@ -278,7 +278,7 @@ function ChapterScreen({
 
         <section className="choice-panel" aria-label="選択肢">
           <p className="eyebrow">決断</p>
-          <h3>{chapter.id === 10 ? "徳川慶喜は、何を選ぶか" : "村瀬は、何を選ぶか"}</h3>
+          <h3>{getChoiceQuestion(chapter.id)}</h3>
           <div className="choice-grid">
             {chapter.choices.map((choice) => (
               <ChoiceButton
@@ -380,6 +380,18 @@ function PassageList({ passages, compact = false }: { passages: Passage[]; compa
       })}
     </div>
   );
+}
+
+function getChoiceQuestion(chapterId: number) {
+  if (chapterId === 8) {
+    return "村瀬は、誰の軍に入るか";
+  }
+
+  if (chapterId === 10) {
+    return "徳川慶喜は、何を選ぶか";
+  }
+
+  return "村瀬は、何を選ぶか";
 }
 
 function ChoiceButton({ choice, onClick }: { choice: Choice; onClick: () => void }) {
