@@ -3776,135 +3776,145 @@ export const chapters: Chapter[] = [
       {
         "id": "p-133",
         "kind": "dialogue",
-        "text": "「それは平時の話です。」"
+        "text": "「坂本さん、そのお考えはごもっともです。」"
       },
       {
         "id": "p-134",
         "kind": "dialogue",
-        "text": "「幕府は、こちらの都合など待ってはくれません。」"
+        "text": "「ですが。」"
       },
       {
         "id": "p-135",
         "kind": "dialogue",
-        "text": "「今日も、明日も、征討の準備を進めています。」"
+        "text": "「それは平時の話です。」"
       },
       {
         "id": "p-136",
         "kind": "dialogue",
-        "text": "「我々が信用を築いている間にも、戦は近づいております。」"
+        "text": "「幕府は、こちらの都合など待ってはくれません。」"
       },
       {
         "id": "p-137",
         "kind": "dialogue",
-        "text": "「それに、薩摩も安泰ではありません。」"
+        "text": "「今日も、明日も、征討の準備を進めています。」"
       },
       {
         "id": "p-138",
         "kind": "dialogue",
-        "text": "「長州が滅べば。」"
+        "text": "「我々が信用を築いている間にも、戦は近づいております。」"
       },
       {
         "id": "p-139",
         "kind": "dialogue",
-        "text": "「幕府は次に薩摩へ向かうでしょう。」"
+        "text": "「それに、薩摩も安泰ではありません。」"
       },
       {
         "id": "p-140",
         "kind": "dialogue",
-        "text": "「それは薩摩も分かっているはずです。」"
+        "text": "「長州が滅べば。」"
       },
       {
         "id": "p-141",
         "kind": "dialogue",
-        "text": "「ならば。」"
+        "text": "「幕府は次に薩摩へ向かうでしょう。」"
       },
       {
         "id": "p-142",
         "kind": "dialogue",
-        "text": "「今は信用を育てるより。」"
+        "text": "「それは薩摩も分かっているはずです。」"
       },
       {
         "id": "p-143",
         "kind": "dialogue",
-        "text": "「共に生き残る道を選ぶべきではありませんか。」"
+        "text": "「ならば。」"
       },
       {
         "id": "p-144",
-        "kind": "narration",
-        "text": "部屋は静まり返る。"
+        "kind": "dialogue",
+        "text": "「今は信用を育てるより。」"
       },
       {
         "id": "p-145",
-        "kind": "narration",
-        "text": "村瀬は三人を見つめる。"
+        "kind": "dialogue",
+        "text": "「共に生き残る道を選ぶべきではありませんか。」"
       },
       {
         "id": "p-146",
         "kind": "narration",
-        "text": "桂小五郎。"
+        "text": "部屋は静まり返る。"
       },
       {
         "id": "p-147",
         "kind": "narration",
-        "text": "組織を守る男。"
+        "text": "村瀬は三人を見つめる。"
       },
       {
         "id": "p-148",
         "kind": "narration",
-        "text": "坂本龍馬。"
+        "text": "桂小五郎。"
       },
       {
         "id": "p-149",
         "kind": "narration",
-        "text": "人と人をつなぐ男。"
+        "text": "組織を守る男。"
       },
       {
         "id": "p-150",
         "kind": "narration",
-        "text": "村田蔵六。"
+        "text": "坂本龍馬。"
       },
       {
         "id": "p-151",
         "kind": "narration",
-        "text": "未来を設計する男。"
+        "text": "人と人をつなぐ男。"
       },
       {
         "id": "p-152",
         "kind": "narration",
-        "text": "三人とも。"
+        "text": "村田蔵六。"
       },
       {
         "id": "p-153",
         "kind": "narration",
-        "text": "日本を救おうとしている。"
+        "text": "未来を設計する男。"
       },
       {
         "id": "p-154",
         "kind": "narration",
-        "text": "だから。"
+        "text": "三人とも。"
       },
       {
         "id": "p-155",
         "kind": "narration",
-        "text": "誰も間違っていない。"
+        "text": "日本を救おうとしている。"
       },
       {
         "id": "p-156",
         "kind": "narration",
-        "text": "桂が村瀬を見る。"
+        "text": "だから。"
       },
       {
         "id": "p-157",
+        "kind": "narration",
+        "text": "誰も間違っていない。"
+      },
+      {
+        "id": "p-158",
+        "kind": "narration",
+        "text": "桂が村瀬を見る。"
+      },
+      {
+        "id": "p-159",
         "kind": "dialogue",
         "text": "「村瀬君。」"
       },
       {
-        "id": "p-158",
+        "id": "p-160",
         "kind": "dialogue",
         "text": "「……君なら。」"
       },
       {
-        "id": "p-159",
+        "id": "p-161",
         "kind": "dialogue",
         "text": "「君の考えも聞かせてほしい。」"
       }
