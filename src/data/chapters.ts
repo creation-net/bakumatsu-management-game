@@ -7767,7 +7767,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-50",
         "kind": "dialogue",
-        "text": "「政府は、政府は、薩摩へ手を出す口実を探しちょいもす。」",
+        "text": "「政府は、薩摩へ手を出す口実を探しちょいもす。」",
         "speaker": "大山綱良"
       },
       {
