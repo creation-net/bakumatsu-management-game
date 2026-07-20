@@ -140,7 +140,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-27",
         "kind": "dialogue",
-        "text": "「どこへ行くんじゃ。」"
+        "text": "「どこへ行くんですか。」"
       },
       {
         "id": "p-28",
@@ -175,7 +175,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「黒船へ乗り込もうとして捕まった男か。」"
+        "text": "「黒船へ乗り込もうとして捕まった男ですか。」"
       },
       {
         "id": "p-35",
@@ -230,12 +230,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-45",
         "kind": "dialogue",
-        "text": "「分かった。」"
+        "text": "「分かりました。」"
       },
       {
         "id": "p-46",
         "kind": "dialogue",
-        "text": "「行こう。」"
+        "text": "「行きます。」"
       },
       {
         "id": "p-47",
@@ -260,7 +260,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-51",
         "kind": "dialogue",
-        "text": "「見過ごすわけにはいかん。」"
+        "text": "「見過ごすわけにはいきません。」"
       },
       {
         "id": "p-52",
