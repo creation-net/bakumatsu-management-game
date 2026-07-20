@@ -440,9 +440,11 @@ function ChapterIndex({
         </div>
       )}
 
-      <button className="primary-button" type="button" onClick={onStart}>
-        読書画面へ
-      </button>
+      <div className="index-actions">
+        <button className="primary-button" type="button" onClick={onStart}>
+          読書画面へ
+        </button>
+      </div>
     </section>
   );
 }
