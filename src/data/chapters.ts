@@ -5490,7 +5490,7 @@ export const chapters: Chapter[] = [
       {
         "id": "choice-3",
         "label": "③",
-        "text": "③ 西郷隆盛\n「最後は責任を背負い、自ら決断する。」",
+        "text": "③ 西郷吉之助\n「最後は責任を背負い、自ら決断する。」",
         "person": "西郷吉之助",
         "value": "西郷吉之助の考え"
       }
@@ -6610,7 +6610,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-2",
         "kind": "narration",
-        "text": "勝海舟と西郷隆盛は会談を重ねた。"
+        "text": "勝海舟と西郷吉之助は会談を重ねた。"
       },
       {
         "id": "e-3",
@@ -6997,310 +6997,330 @@ export const chapters: Chapter[] = [
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「禁門の変。」"
+        "text": "「八月十八日の政変から。」"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
-        "text": "「四境戦争。」"
+        "text": "「御所での戦。」"
       },
       {
         "id": "p-60",
         "kind": "dialogue",
-        "text": "「そして戊辰。」"
+        "text": "「下関での戦。」"
       },
       {
         "id": "p-61",
         "kind": "dialogue",
-        "text": "「幾度も戦いました。」"
+        "text": "「幕府による征討。」"
       },
       {
         "id": "p-62",
         "kind": "dialogue",
-        "text": "「そのたびに。」"
+        "text": "「恭順派と正義派の内戦。」"
       },
       {
         "id": "p-63",
         "kind": "dialogue",
-        "text": "「兵を失い。」"
+        "text": "「四境戦争。」"
       },
       {
         "id": "p-64",
         "kind": "dialogue",
-        "text": "「財を使い。」"
+        "text": "「そして戊辰。」"
       },
       {
         "id": "p-65",
         "kind": "dialogue",
-        "text": "「国の力を使いました。」"
+        "text": "「幾度も戦いました。」"
       },
       {
         "id": "p-66",
-        "kind": "narration",
-        "text": "少し間を置く。"
+        "kind": "dialogue",
+        "text": "「そのたびに。」"
       },
       {
         "id": "p-67",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「兵を失い。」"
       },
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「薩摩には。」"
+        "text": "「財を使い。」"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「まだ大きな力が残っています。」"
+        "text": "「国の力を使いました。」"
       },
       {
         "id": "p-70",
-        "kind": "dialogue",
-        "text": "「兵も。」"
+        "kind": "narration",
+        "text": "少し間を置く。"
       },
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「財も。」"
+        "text": "「ですが。」"
       },
       {
         "id": "p-72",
         "kind": "dialogue",
-        "text": "「人も。」"
+        "text": "「薩摩には。」"
       },
       {
         "id": "p-73",
         "kind": "dialogue",
-        "text": "「長州より、はるかに余力があります。」"
+        "text": "「まだ大きな力が残っています。」"
       },
       {
         "id": "p-74",
-        "kind": "narration",
-        "text": "村瀬は黙って聞いている。"
+        "kind": "dialogue",
+        "text": "「兵も。」"
       },
       {
         "id": "p-75",
         "kind": "dialogue",
-        "text": "「だから備えるのです。」"
+        "text": "「財も。」"
       },
       {
         "id": "p-76",
         "kind": "dialogue",
-        "text": "「備えとは。」"
+        "text": "「人も。」"
       },
       {
         "id": "p-77",
         "kind": "dialogue",
-        "text": "「相手を疑うことではありません。」"
+        "text": "「長州より、はるかに余力があります。」"
       },
       {
         "id": "p-78",
-        "kind": "dialogue",
-        "text": "「誰が相手でも。」"
+        "kind": "narration",
+        "text": "村瀬は黙って聞いている。"
       },
       {
         "id": "p-79",
         "kind": "dialogue",
-        "text": "「国家が揺らがないようにすることです。」"
+        "text": "「だから備えるのです。」"
       },
       {
         "id": "p-80",
-        "kind": "narration",
-        "text": "山縣有朋が一歩前へ出る。"
+        "kind": "dialogue",
+        "text": "「備えとは。」"
       },
       {
         "id": "p-81",
-        "kind": "scene",
-        "text": "【山縣有朋】"
+        "kind": "dialogue",
+        "text": "「相手を疑うことではありません。」"
       },
       {
         "id": "p-82",
         "kind": "dialogue",
-        "text": "「先生。」"
+        "text": "「誰が相手でも。」"
       },
       {
         "id": "p-83",
         "kind": "dialogue",
-        "text": "「私は。」"
+        "text": "「国家が揺らがないようにすることです。」"
       },
       {
         "id": "p-84",
-        "kind": "dialogue",
-        "text": "「もう一歩先まで進めるべきだと思います。」"
+        "kind": "narration",
+        "text": "山縣有朋が一歩前へ出る。"
       },
       {
         "id": "p-85",
-        "kind": "narration",
-        "text": "木戸が山縣を見る。"
+        "kind": "scene",
+        "text": "【山縣有朋】"
       },
       {
         "id": "p-86",
         "kind": "dialogue",
-        "text": "「どういうことですか。」"
+        "text": "「先生。」"
       },
       {
         "id": "p-87",
-        "kind": "scene",
-        "text": "【山縣】"
-      },
-      {
-        "id": "p-88",
-        "kind": "dialogue",
-        "text": "「国家は、公平でなければならないと思います。」"
-      },
-      {
-        "id": "p-89",
-        "kind": "dialogue",
-        "text": "「力を持つ藩には。」"
-      },
-      {
-        "id": "p-90",
-        "kind": "dialogue",
-        "text": "「その力に応じた責任があります。」"
-      },
-      {
-        "id": "p-91",
-        "kind": "dialogue",
-        "text": "「軍備の費用も。」"
-      },
-      {
-        "id": "p-92",
-        "kind": "dialogue",
-        "text": "「武器庫の整備も。」"
-      },
-      {
-        "id": "p-93",
-        "kind": "dialogue",
-        "text": "「強い藩ほど負担する。」"
-      },
-      {
-        "id": "p-94",
-        "kind": "dialogue",
-        "text": "「それが公平です。」"
-      },
-      {
-        "id": "p-95",
-        "kind": "dialogue",
-        "text": "「そうすれば。」"
-      },
-      {
-        "id": "p-96",
-        "kind": "dialogue",
-        "text": "「力は藩ではなく。」"
-      },
-      {
-        "id": "p-97",
-        "kind": "dialogue",
-        "text": "「国家へ集まります。」"
-      },
-      {
-        "id": "p-98",
         "kind": "dialogue",
         "text": "「私は。」"
       },
       {
+        "id": "p-88",
+        "kind": "dialogue",
+        "text": "「もう一歩先まで進めるべきだと思います。」"
+      },
+      {
+        "id": "p-89",
+        "kind": "narration",
+        "text": "木戸が山縣を見る。"
+      },
+      {
+        "id": "p-90",
+        "kind": "dialogue",
+        "text": "「どういうことですか。」"
+      },
+      {
+        "id": "p-91",
+        "kind": "scene",
+        "text": "【山縣】"
+      },
+      {
+        "id": "p-92",
+        "kind": "dialogue",
+        "text": "「国家は、公平でなければならないと思います。」"
+      },
+      {
+        "id": "p-93",
+        "kind": "dialogue",
+        "text": "「力を持つ藩には。」"
+      },
+      {
+        "id": "p-94",
+        "kind": "dialogue",
+        "text": "「その力に応じた責任があります。」"
+      },
+      {
+        "id": "p-95",
+        "kind": "dialogue",
+        "text": "「軍備の費用も。」"
+      },
+      {
+        "id": "p-96",
+        "kind": "dialogue",
+        "text": "「武器庫の整備も。」"
+      },
+      {
+        "id": "p-97",
+        "kind": "dialogue",
+        "text": "「強い藩ほど負担する。」"
+      },
+      {
+        "id": "p-98",
+        "kind": "dialogue",
+        "text": "「それが公平です。」"
+      },
+      {
         "id": "p-99",
         "kind": "dialogue",
-        "text": "「薩摩だから申し上げているのではありません。」"
+        "text": "「そうすれば。」"
       },
       {
         "id": "p-100",
         "kind": "dialogue",
-        "text": "「長州でも。」"
+        "text": "「力は藩ではなく。」"
       },
       {
         "id": "p-101",
         "kind": "dialogue",
-        "text": "「土佐でも。」"
+        "text": "「国家へ集まります。」"
       },
       {
         "id": "p-102",
         "kind": "dialogue",
-        "text": "「同じです。」"
+        "text": "「私は。」"
       },
       {
         "id": "p-103",
         "kind": "dialogue",
-        "text": "「力を持つ者ほど。」"
+        "text": "「薩摩だから申し上げているのではありません。」"
       },
       {
         "id": "p-104",
         "kind": "dialogue",
-        "text": "「国家を支える責任がある。」"
+        "text": "「長州でも。」"
       },
       {
         "id": "p-105",
         "kind": "dialogue",
-        "text": "「その仕組みが。」"
+        "text": "「土佐でも。」"
       },
       {
         "id": "p-106",
         "kind": "dialogue",
-        "text": "「争いを防ぐ一番の備えだと思います。」"
+        "text": "「同じです。」"
       },
       {
         "id": "p-107",
-        "kind": "narration",
-        "text": "静かな時間が流れる。"
+        "kind": "dialogue",
+        "text": "「力を持つ者ほど。」"
       },
       {
         "id": "p-108",
-        "kind": "narration",
-        "text": "誰も反論しない。"
+        "kind": "dialogue",
+        "text": "「国家を支える責任がある。」"
       },
       {
         "id": "p-109",
-        "kind": "narration",
-        "text": "大村は備えを語った。"
+        "kind": "dialogue",
+        "text": "「その仕組みが。」"
       },
       {
         "id": "p-110",
-        "kind": "narration",
-        "text": "木戸は信頼を語った。"
+        "kind": "dialogue",
+        "text": "「争いを防ぐ一番の備えだと思います。」"
       },
       {
         "id": "p-111",
         "kind": "narration",
-        "text": "山縣は公平な制度を語った。"
+        "text": "静かな時間が流れる。"
       },
       {
         "id": "p-112",
         "kind": "narration",
-        "text": "目指す国は同じだった。"
+        "text": "誰も反論しない。"
       },
       {
         "id": "p-113",
         "kind": "narration",
-        "text": "違うのは、その国を守る方法だけだった。"
+        "text": "大村は備えを語った。"
       },
       {
         "id": "p-114",
-        "kind": "scene",
-        "text": "【木戸孝允】"
+        "kind": "narration",
+        "text": "木戸は信頼を語った。"
       },
       {
         "id": "p-115",
         "kind": "narration",
-        "text": "木戸は村瀬へ向き直る。"
+        "text": "山縣は公平な制度を語った。"
       },
       {
         "id": "p-116",
+        "kind": "narration",
+        "text": "目指す国は同じだった。"
+      },
+      {
+        "id": "p-117",
+        "kind": "narration",
+        "text": "違うのは、その国を守る方法だけだった。"
+      },
+      {
+        "id": "p-118",
+        "kind": "scene",
+        "text": "【木戸孝允】"
+      },
+      {
+        "id": "p-119",
+        "kind": "narration",
+        "text": "木戸は村瀬へ向き直る。"
+      },
+      {
+        "id": "p-120",
         "kind": "dialogue",
         "text": "「村瀬君。」"
       },
       {
-        "id": "p-117",
+        "id": "p-121",
         "kind": "dialogue",
         "text": "「新しい国を築くなら。」"
       },
       {
-        "id": "p-118",
+        "id": "p-122",
         "kind": "dialogue",
         "text": "「君は。」"
       },
       {
-        "id": "p-119",
+        "id": "p-123",
         "kind": "dialogue",
         "text": "「何を一番大切にする。」"
       }
@@ -7435,7 +7455,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-10",
         "kind": "narration",
-        "text": "そこには、大久保 利通（おおくぼ としみち／薩摩藩士）、江藤 新平（えとう しんぺい／佐賀藩出身の司法制度づくりを担う新政府要人）の姿もあった。"
+        "text": "そこには、大久保 利通（おおくぼ としみち／薩摩藩士）、江藤 新平（えとう しんぺい／司法担当の新政府要人）の姿もあった。"
       },
       {
         "id": "p-11",
@@ -7705,7 +7725,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-65",
         "kind": "scene",
-        "text": "【江藤 新平（えとう しんぺい／佐賀藩出身の司法制度づくりを担う新政府要人）】"
+        "text": "【江藤 新平（えとう しんぺい／司法担当の新政府要人）】"
       },
       {
         "id": "p-66",
@@ -7929,7 +7949,7 @@ export const chapters: Chapter[] = [
       }
     ],
     "notes": [],
-    "subtitle": ""
+    "subtitle": "藩を越える国"
   },
   {
     "id": 14,
@@ -8028,7 +8048,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-19",
         "kind": "dialogue",
-        "text": "「政府は、私を朝鮮へ送ると決めた。」",
+        "text": "「政府は、おいを朝鮮へ送ると決めた。」",
         "speaker": "西郷隆盛"
       },
       {
@@ -8082,13 +8102,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-28",
         "kind": "dialogue",
-        "text": "「一人で行き、誠を尽くして話をする。」",
+        "text": "「一人で参り、誠を尽くして話をしてきもす。」",
         "speaker": "西郷隆盛"
       },
       {
         "id": "p-29",
         "kind": "dialogue",
-        "text": "「国と国の間に問題があるなら、誰かが向き合わねばならん。」",
+        "text": "「国と国の間に問題があっとなら、誰かが向き合わにゃならん。」",
         "speaker": "西郷隆盛"
       },
       {
@@ -8140,7 +8160,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-38",
         "kind": "dialogue",
-        "text": "「だからこそ、まず私一人が行くのです。」",
+        "text": "「じゃからこそ、おい一人が参りもす。」",
         "speaker": "西郷隆盛"
       },
       {
@@ -8471,7 +8491,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-4",
         "kind": "narration",
-        "text": "板垣退助、江藤 新平（えとう しんぺい／佐賀藩出身の司法制度づくりを担う新政府要人）らも次々と辞職した。"
+        "text": "板垣退助、江藤 新平らも次々と辞職した。"
       },
       {
         "id": "e-5",
@@ -8568,7 +8588,7 @@ export const chapters: Chapter[] = [
       }
     ],
     "notes": [],
-    "subtitle": ""
+    "subtitle": "外へ向かう覚悟"
   },
   {
     "id": 15,
@@ -8810,7 +8830,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「政府の思うつぼです。」",
+        "text": "「政府の思うつぼでごわす。」",
         "speaker": "村田新八"
       },
       {
@@ -8822,7 +8842,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-45",
         "kind": "dialogue",
-        "text": "「一人ずつ政府へ差し出す。」",
+        "text": "「一人ずつ政府へ差し出しもす。」",
         "speaker": "村田新八"
       },
       {
@@ -8834,13 +8854,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-47",
         "kind": "dialogue",
-        "text": "「西郷先生には関わりがないことを伝える。」",
+        "text": "「先生には関わりがなかことを伝えもす。」",
         "speaker": "村田新八"
       },
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「政府へ嘆願する。」",
+        "text": "「政府へ嘆願しもす。」",
         "speaker": "村田新八"
       },
       {
@@ -8894,13 +8914,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「違います。」",
+        "text": "「違いもす。」",
         "speaker": "村田新八"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「先生を守るためです。」",
+        "text": "「先生を守るためでごわす。」",
         "speaker": "村田新八"
       },
       {
@@ -8918,13 +8938,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-61",
         "kind": "dialogue",
-        "text": "「私は。」",
+        "text": "「おいは。」",
         "speaker": "村田新八"
       },
       {
         "id": "p-62",
         "kind": "dialogue",
-        "text": "「先生だけは守りたい。」",
+        "text": "「先生だけは守りたか。」",
         "speaker": "村田新八"
       },
       {
@@ -8940,7 +8960,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-65",
         "kind": "dialogue",
-        "text": "「それも違う。」"
+        "text": "「そいも違う。」"
       },
       {
         "id": "p-66",
@@ -8974,7 +8994,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「政府の思うつぼです。」",
+        "text": "「政府の思うつぼでごわす。」",
         "speaker": "大山綱良"
       },
       {
@@ -8986,7 +9006,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-73",
         "kind": "dialogue",
-        "text": "「薩摩が動く理由を探しております。」",
+        "text": "「薩摩が動く理由を探しちょいもす。」",
         "speaker": "大山綱良"
       },
       {
@@ -9004,7 +9024,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-76",
         "kind": "dialogue",
-        "text": "「次の理由を作るだけです。」",
+        "text": "「次の理由を作るだけでごわす。」",
         "speaker": "大山綱良"
       },
       {
@@ -9016,7 +9036,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-78",
         "kind": "dialogue",
-        "text": "「動いた方が負けです。」",
+        "text": "「動いた方が負けでごわす。」",
         "speaker": "大山綱良"
       },
       {
@@ -9034,7 +9054,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-81",
         "kind": "dialogue",
-        "text": "「そうです。」",
+        "text": "「そうでごわす。」",
         "speaker": "大山綱良"
       },
       {
@@ -9052,7 +9072,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-84",
         "kind": "dialogue",
-        "text": "「政府でも簡単には手を出せん。」",
+        "text": "「政府でも、そう簡単には手は出せもはん。」",
         "speaker": "大山綱良"
       },
       {
@@ -9070,7 +9090,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-87",
         "kind": "dialogue",
-        "text": "「ましです。」",
+        "text": "「まだましでごわす。」",
         "speaker": "大山綱良"
       },
       {
@@ -9528,6 +9548,6 @@ export const chapters: Chapter[] = [
       }
     ],
     "notes": [],
-    "subtitle": ""
+    "subtitle": "志を受け継ぐ者"
   }
 ];
