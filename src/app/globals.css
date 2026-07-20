@@ -874,26 +874,34 @@ h3 {
   }
 
   .chapter-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
     gap: 12px;
     padding: 16px 0 16px 18px;
   }
 
   .chapter-row-status {
-    justify-items: start;
+    display: contents;
   }
 
   .chapter-row-status em {
+    grid-column: 1;
     justify-self: start;
   }
 
   .chapter-row-actions {
-    justify-content: flex-start;
-    width: 100%;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-content: flex-end;
+    width: auto;
   }
 
   .small-button {
-    flex: 1 1 128px;
+    flex: 0 0 auto;
+    min-width: 88px;
+    min-height: 38px;
+    padding: 8px 14px;
   }
 
   .chapter-header,
@@ -932,12 +940,22 @@ h3 {
   }
 
   .chapter-row {
-    grid-template-columns: 1fr;
-    gap: 5px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px 10px;
     padding-left: 22px;
   }
 
   .chapter-row em {
     justify-self: start;
+  }
+
+  .chapter-row-actions {
+    grid-row: 1 / span 2;
+  }
+
+  .small-button {
+    min-width: 82px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
