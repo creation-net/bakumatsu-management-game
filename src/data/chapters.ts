@@ -535,7 +535,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-106",
         "kind": "dialogue",
-        "text": "「お前は、どう思うちょる？」"
+        "text": "「村瀬君だったかな。」"
+      },
+      {
+        "id": "p-107",
+        "kind": "dialogue",
+        "text": "「君の考えを聞かせてください。」"
       }
     ],
     "endingPassages": [
@@ -1064,16 +1069,21 @@ export const chapters: Chapter[] = [
       },
       {
         "id": "p-66",
+        "kind": "dialogue",
+        "text": "「お前の意見を聞かせてくれ。」"
+      },
+      {
+        "id": "p-67",
         "kind": "narration",
         "text": "先生の言葉が頭をよぎる。"
       },
       {
-        "id": "p-67",
+        "id": "p-68",
         "kind": "dialogue",
         "text": "『諸君、狂いたまえ。』"
       },
       {
-        "id": "p-68",
+        "id": "p-69",
         "kind": "narration",
         "text": "村瀬は静かに立ち上がった。"
       }
@@ -1903,7 +1913,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-22",
         "kind": "dialogue",
-        "text": "「甘い。」"
+        "text": "「甘い！」"
       },
       {
         "id": "p-23",
@@ -1923,7 +1933,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-26",
         "kind": "dialogue",
-        "text": "「奴らは既に戦うつもりじゃ。」"
+        "text": "「奴らは既に戦うつもりじゃ！」"
       },
       {
         "id": "p-27",
@@ -1943,7 +1953,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-30",
         "kind": "dialogue",
-        "text": "「誰も長州の話など聞かん。」"
+        "text": "「誰も長州の話など聞かん！」"
       },
       {
         "id": "p-31",
@@ -1983,12 +1993,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-38",
         "kind": "dialogue",
-        "text": "「ならば。」"
+        "text": "「ならば！」"
       },
       {
         "id": "p-39",
         "kind": "dialogue",
-        "text": "「門は開くんか。」"
+        "text": "「門は開くんか！」"
       },
       {
         "id": "p-40",
@@ -2223,105 +2233,115 @@ export const chapters: Chapter[] = [
       {
         "id": "p-86",
         "kind": "dialogue",
-        "text": "「長州に理解を示してくださっている鷹司家に取り次いでいただければ、我らの真意を朝廷へ届けられるやもしれません。」"
+        "text": "「長州に理解を示してくださっている鷹司家に取り次いでいただければ」"
       },
       {
         "id": "p-87",
         "kind": "dialogue",
-        "text": "「武力に訴える前に、まずは嘆願によって、藩主父子の冤罪を晴らすべきです。」"
+        "text": "「我らの真意を朝廷へ届けられるやもしれません。」"
       },
       {
         "id": "p-88",
-        "kind": "narration",
-        "text": "二人の視線がぶつかる。"
+        "kind": "dialogue",
+        "text": "「武力に訴える前に、まずは嘆願によって、藩主父子の冤罪を晴らすべきです。」"
       },
       {
         "id": "p-89",
         "kind": "narration",
-        "text": "村瀬は三人を見る。"
+        "text": "二人の視線がぶつかる。"
       },
       {
         "id": "p-90",
-        "kind": "scene",
-        "text": "（来島殿は。）"
+        "kind": "narration",
+        "text": "村瀬は三人を見る。"
       },
       {
         "id": "p-91",
         "kind": "scene",
-        "text": "（今動かなければ終わると言う。）"
+        "text": "（来島殿は。）"
       },
       {
         "id": "p-92",
         "kind": "scene",
-        "text": "（久坂さんは。）"
+        "text": "（今動かなければ終わると言う。）"
       },
       {
         "id": "p-93",
         "kind": "scene",
-        "text": "（目的を見失うなと言う。）"
+        "text": "（久坂さんは。）"
       },
       {
         "id": "p-94",
         "kind": "scene",
-        "text": "（桂さんは。）"
+        "text": "（目的を見失うなと言う。）"
       },
       {
         "id": "p-95",
         "kind": "scene",
-        "text": "（未来を守れと言う。）"
+        "text": "（桂さんは。）"
       },
       {
         "id": "p-96",
         "kind": "scene",
-        "text": "（三人とも。）"
+        "text": "（未来を守れと言う。）"
       },
       {
         "id": "p-97",
         "kind": "scene",
-        "text": "（長州を救おうとしている。）"
+        "text": "（三人とも。）"
       },
       {
         "id": "p-98",
         "kind": "scene",
-        "text": "（先生なら。）"
+        "text": "（長州を救おうとしている。）"
       },
       {
         "id": "p-99",
         "kind": "scene",
-        "text": "（どうされたのだろう。）"
+        "text": "（先生なら。）"
       },
       {
         "id": "p-100",
+        "kind": "scene",
+        "text": "（どうされたのだろう。）"
+      },
+      {
+        "id": "p-101",
         "kind": "narration",
         "text": "久坂が村瀬を見る。"
       },
       {
-        "id": "p-101",
+        "id": "p-102",
         "kind": "dialogue",
         "text": "「お前はどう思う。」"
       },
       {
-        "id": "p-102",
-        "kind": "narration",
-        "text": "本陣が静まり返る。"
-      },
-      {
         "id": "p-103",
-        "kind": "scene",
-        "text": "（私などが……。）"
+        "kind": "dialogue",
+        "text": "「お前なら考えを持っているはずだ。」"
       },
       {
         "id": "p-104",
         "kind": "narration",
-        "text": "しかし、先生の言葉がよみがえる。"
+        "text": "本陣が静まり返る。"
       },
       {
         "id": "p-105",
+        "kind": "scene",
+        "text": "（私などが……。）"
+      },
+      {
+        "id": "p-106",
+        "kind": "narration",
+        "text": "しかし、先生の言葉がよみがえる。"
+      },
+      {
+        "id": "p-107",
         "kind": "dialogue",
         "text": "「自分で考えよ。」"
       },
       {
-        "id": "p-106",
+        "id": "p-108",
         "kind": "narration",
         "text": "村瀬は一歩前へ出た。"
       }
@@ -2613,7 +2633,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「それで長州が残る思うちょるんか。」"
+        "text": "「それで長州が残る思うちょるんか！」"
       },
       {
         "id": "p-38",
@@ -2735,7 +2755,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-61",
         "kind": "dialogue",
-        "text": "「勝機はある。」"
+        "text": "「勝機はある！」"
       },
       {
         "id": "p-62",
@@ -2930,25 +2950,30 @@ export const chapters: Chapter[] = [
       {
         "id": "p-100",
         "kind": "dialogue",
-        "text": "「お前はどう思う。」"
+        "text": "「お前のことは聞いておる。」"
       },
       {
         "id": "p-101",
+        "kind": "dialogue",
+        "text": "「お前はどう思う。」"
+      },
+      {
+        "id": "p-102",
         "kind": "scene",
         "text": "（私などが……。）"
       },
       {
-        "id": "p-102",
+        "id": "p-103",
         "kind": "narration",
         "text": "先生の言葉がよみがえる。"
       },
       {
-        "id": "p-103",
+        "id": "p-104",
         "kind": "dialogue",
         "text": "「自分で考えよ。」"
       },
       {
-        "id": "p-104",
+        "id": "p-105",
         "kind": "narration",
         "text": "村瀬は立ち上がった。"
       }
@@ -3093,7 +3118,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-11",
         "kind": "dialogue",
-        "text": "「皆、聞いちょくれ。」"
+        "text": "「皆、聞いちょくれ！」"
       },
       {
         "id": "p-12",
@@ -3148,7 +3173,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-22",
         "kind": "dialogue",
-        "text": "「わしらには奇兵隊がおる。」"
+        "text": "「わしらには奇兵隊がおる！」"
       },
       {
         "id": "p-23",
@@ -3163,7 +3188,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-25",
         "kind": "dialogue",
-        "text": "「恭順派に膝を折っとらん者も、まだ大勢おる。」"
+        "text": "「恭順派に膝を折っとらん者も、まだ大勢おる！」"
       },
       {
         "id": "p-26",
@@ -3183,7 +3208,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-29",
         "kind": "dialogue",
-        "text": "「ここで立たにゃ、長州は終わる。」"
+        "text": "「ここで立たにゃ、長州は終わる！」"
       },
       {
         "id": "p-30",
@@ -3444,90 +3469,125 @@ export const chapters: Chapter[] = [
       {
         "id": "p-81",
         "kind": "dialogue",
-        "text": "「お前なら。」"
+        "text": "「お前は。」"
       },
       {
         "id": "p-82",
         "kind": "dialogue",
-        "text": "「どうする。」"
+        "text": "「どうしてそんな冷静でおられるんじゃ。」"
       },
       {
         "id": "p-83",
         "kind": "narration",
-        "text": "その時。"
+        "text": "村瀬は首を横に振った。"
       },
       {
         "id": "p-84",
         "kind": "narration",
-        "text": "高杉が部屋を見渡す。"
+        "text": "冷静だったわけではない。"
       },
       {
         "id": "p-85",
-        "kind": "dialogue",
-        "text": "「異論がある者は。」"
+        "kind": "narration",
+        "text": "誰よりも不安だった。"
       },
       {
         "id": "p-86",
-        "kind": "dialogue",
-        "text": "「遠慮はいらん。」"
+        "kind": "narration",
+        "text": "それでも。"
       },
       {
         "id": "p-87",
-        "kind": "dialogue",
-        "text": "「今日。」"
+        "kind": "narration",
+        "text": "今、自分に何ができるのか。"
       },
       {
         "id": "p-88",
-        "kind": "dialogue",
-        "text": "「この場で決める。」"
+        "kind": "narration",
+        "text": "それだけを考えていた。"
       },
       {
         "id": "p-89",
         "kind": "narration",
-        "text": "村瀬を見る。"
+        "text": "その時。"
       },
       {
         "id": "p-90",
-        "kind": "dialogue",
-        "text": "「村瀬 新之助！。」"
+        "kind": "narration",
+        "text": "高杉が部屋を見渡す。"
       },
       {
         "id": "p-91",
         "kind": "dialogue",
-        "text": "「お前は。」"
+        "text": "「異論がある者は。」"
       },
       {
         "id": "p-92",
         "kind": "dialogue",
-        "text": "「どう思う。」"
+        "text": "「遠慮はいらん。」"
       },
       {
         "id": "p-93",
-        "kind": "narration",
-        "text": "部屋中の視線が村瀬へ集まる。"
+        "kind": "dialogue",
+        "text": "「今日。」"
       },
       {
         "id": "p-94",
-        "kind": "scene",
-        "text": "（私などが……。）"
+        "kind": "dialogue",
+        "text": "「この場で決める。」"
       },
       {
         "id": "p-95",
         "kind": "narration",
-        "text": "しかし。"
+        "text": "村瀬を見る。"
       },
       {
         "id": "p-96",
-        "kind": "narration",
-        "text": "先生の言葉がよみがえる。"
+        "kind": "dialogue",
+        "text": "「村瀬！」"
       },
       {
         "id": "p-97",
         "kind": "dialogue",
-        "text": "「自分で考えよ。」"
+        "text": "「何か言いたそうな顔しちょるな。」"
       },
       {
         "id": "p-98",
+        "kind": "dialogue",
+        "text": "「お前は。」"
+      },
+      {
+        "id": "p-99",
+        "kind": "dialogue",
+        "text": "「どう思う。」"
+      },
+      {
+        "id": "p-100",
+        "kind": "narration",
+        "text": "部屋中の視線が村瀬へ集まる。"
+      },
+      {
+        "id": "p-101",
+        "kind": "scene",
+        "text": "（私などが……。）"
+      },
+      {
+        "id": "p-102",
+        "kind": "narration",
+        "text": "しかし。"
+      },
+      {
+        "id": "p-103",
+        "kind": "narration",
+        "text": "先生の言葉がよみがえる。"
+      },
+      {
+        "id": "p-104",
+        "kind": "dialogue",
+        "text": "「自分で考えよ。」"
+      },
+      {
+        "id": "p-105",
         "kind": "narration",
         "text": "村瀬はゆっくり立ち上がった。"
       }
@@ -3774,12 +3834,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-29",
         "kind": "dialogue",
-        "text": "「待っちょくれ。」"
+        "text": "「待っちょくれ！」"
       },
       {
         "id": "p-30",
         "kind": "dialogue",
-        "text": "「まだ終わっちゃおらん。」"
+        "text": "「まだ終わっちゃおらん！」"
       },
       {
         "id": "p-31",
@@ -4848,7 +4908,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-41",
         "kind": "dialogue",
-        "text": "「じゃが。勝負は数で決まらん。」"
+        "text": "「じゃが。勝負は数で決まらん！」"
       },
       {
         "id": "p-42",
@@ -4873,7 +4933,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-46",
         "kind": "dialogue",
-        "text": "「皆も前へ出る。」"
+        "text": "「皆も前へ出る！」"
       },
       {
         "id": "p-47",
@@ -4883,7 +4943,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「数の差をひっくり返す。」"
+        "text": "「数の差をひっくり返す！」"
       },
       {
         "id": "p-49",
@@ -5702,12 +5762,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-90",
         "kind": "narration",
-        "text": "村瀬は、先ほど交わされた言葉を思い返した。"
+        "text": "村瀬の胸に、一つの問いが残っていた。"
       },
       {
         "id": "p-91",
         "kind": "narration",
-        "text": "あなたなら、何を最も大切にするか。"
+        "text": "――自分なら、何を最も大切にするか。"
       }
     ],
     "endingPassages": [
@@ -5946,7 +6006,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-23",
         "kind": "dialogue",
-        "text": "「上様には、この場にお残りいただきたい。」"
+        "text": "「上様には、この大坂城にお残りいただきたい。」"
       },
       {
         "id": "p-24",
@@ -8190,15 +8250,25 @@ export const chapters: Chapter[] = [
       {
         "id": "p-91",
         "kind": "dialogue",
-        "text": "「君なら。」"
+        "text": "「君の話には。」"
       },
       {
         "id": "p-92",
         "kind": "dialogue",
-        "text": "「新しい国をつくるために。」"
+        "text": "「いつも何か気づかされる。」"
       },
       {
         "id": "p-93",
+        "kind": "dialogue",
+        "text": "「君なら。」"
+      },
+      {
+        "id": "p-94",
+        "kind": "dialogue",
+        "text": "「新しい国をつくるために。」"
+      },
+      {
+        "id": "p-95",
         "kind": "dialogue",
         "text": "「何を大切に考える。」"
       }
@@ -8431,7 +8501,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-26",
         "kind": "dialogue",
-        "text": "「おいは、戦をしに行くのではなか。」",
+        "text": "「おいは、戦をしに行くのではなか！」",
         "speaker": "西郷隆盛"
       },
       {
@@ -8495,7 +8565,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「じゃからこそ、おい一人が参りもす。」",
+        "text": "「じゃからこそ、おい一人が参りもす！」",
         "speaker": "西郷隆盛"
       },
       {
@@ -8512,7 +8582,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「覚悟があれば、何をしてもよいわけではない。」",
+        "text": "「覚悟があれば、何をしてもよいわけではない！」",
         "speaker": "大久保利通"
       },
       {
@@ -8803,11 +8873,17 @@ export const chapters: Chapter[] = [
       {
         "id": "p-90",
         "kind": "dialogue",
-        "text": "「そなたなら、何を最も大切にする。」",
+        "text": "「木戸から、そなたの話は聞いておる。」",
         "speaker": "岩倉具視"
       },
       {
         "id": "p-91",
+        "kind": "dialogue",
+        "text": "「そなたなら、何を最も大切にする。」",
+        "speaker": "岩倉具視"
+      },
+      {
+        "id": "p-92",
         "kind": "dialogue",
         "text": "「そなたの意見も聞かせてくれないか。」",
         "speaker": "岩倉具視"
@@ -9019,13 +9095,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-17",
         "kind": "dialogue",
-        "text": "「先生。」",
+        "text": "「先生！」",
         "speaker": "私学校の若者"
       },
       {
         "id": "p-18",
         "kind": "dialogue",
-        "text": "「武器庫が襲われもした。」",
+        "text": "「武器庫が襲われもした！」",
         "speaker": "私学校の若者"
       },
       {
@@ -9037,7 +9113,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-20",
         "kind": "dialogue",
-        "text": "「政府の倉庫から、武器や弾薬を持ち出しております。」",
+        "text": "「政府の倉庫から、武器や弾薬を持ち出しております！」",
         "speaker": "私学校の若者"
       },
       {
@@ -9058,7 +9134,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-24",
         "kind": "dialogue",
-        "text": "「先生。」",
+        "text": "「西郷先生！」",
         "speaker": "桐野利秋"
       },
       {
@@ -9136,7 +9212,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「見捨てたくないだけでごわす。」",
+        "text": "「見捨てたくないだけでごわす！」",
         "speaker": "桐野利秋"
       },
       {
@@ -9219,7 +9295,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-51",
         "kind": "dialogue",
-        "text": "「若い者だけ罪人にするのでごわすか。」",
+        "text": "「若い者だけ罪人にするのでごわすか！」",
         "speaker": "桐野利秋"
       },
       {
@@ -9231,7 +9307,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-53",
         "kind": "dialogue",
-        "text": "「責任を負わせるのでごわすか。」",
+        "text": "「責任を負わせるのでごわすか！」",
         "speaker": "桐野利秋"
       },
       {
@@ -9377,7 +9453,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-78",
         "kind": "dialogue",
-        "text": "「動いた方が負けじゃ。」",
+        "text": "「動いた方が負けじゃ！」",
         "speaker": "大山綱良"
       },
       {
@@ -9413,7 +9489,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-84",
         "kind": "dialogue",
-        "text": "「政府も、薩摩を敵に回す覚悟はまだできちょらん。」",
+        "text": "「政府も、薩摩を敵に回す覚悟はまだできちょらん！」",
         "speaker": "大山綱良"
       },
       {
@@ -9443,7 +9519,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-89",
         "kind": "dialogue",
-        "text": "「若い者を見捨てろと言われるのでごわすか。」",
+        "text": "「若い者を見捨てろと言われるのでごわすか！」",
         "speaker": "桐野利秋"
       },
       {
