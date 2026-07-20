@@ -225,9 +225,12 @@ function TitleScreen({
           <span>資質診断</span>
         </h1>
         <p className="title-theme">幕末・明治維新編</p>
-        <p className="subtitle">村瀬新之助と歩む十五の決断</p>
+        <p className="subtitle">一人の長州藩士・村瀬新之助とたどる十五の決断</p>
         <p className="lead">
-          幕末から明治維新へ。歴史の分岐点に立つ人物たちの決断をたどりながら、
+          幕末から明治維新へ。架空の長州藩士・村瀬新之助の視点から、
+          <br />
+          歴史の分岐点に立つ人物たちの決断をたどり、
+          <br />
           あなたの価値観に近い幕末の偉人タイプを診断します。
         </p>
         <p className="fiction-note">
