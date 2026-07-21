@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="島津家 丸に十字">
+  <g fill="none" stroke="#fff" stroke-width="14">
+    <circle cx="100" cy="100" r="78"/>
+    <path d="M100 45v110M45 100h110"/>
+  </g>
+</svg>

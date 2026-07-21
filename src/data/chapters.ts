@@ -2428,13 +2428,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「寄せ集めの諸藩じゃ、命令一つ。」",
+        "text": "「寄せ集めの諸藩じゃ。」",
         "speaker": "高杉 晋作"
       },
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「まともに動きゃせん。」",
+        "text": "「命令一つじゃ、まともに動きゃせん。」",
         "speaker": "高杉 晋作"
       },
       {
@@ -2475,19 +2475,19 @@ export const chapters: Chapter[] = [
       {
         "id": "p-42",
         "kind": "dialogue",
-        "text": "「西洋の戦も学んじょる。幕府は数。」",
+        "text": "「西洋の戦も学んじょる。」",
         "speaker": "高杉 晋作"
       },
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「長州は質じゃ。戦えば。」",
+        "text": "「幕府は数、長州は質じゃ。」",
         "speaker": "高杉 晋作"
       },
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「勝機はある！」",
+        "text": "「戦えば、勝機はある！」",
         "speaker": "高杉 晋作"
       },
       {
@@ -6556,27 +6556,51 @@ export const chapters: Chapter[] = [
         "speaker": "大村 益次郎"
       },
       {
-        "id": "p-46",
+        "id": "p-46a",
         "kind": "dialogue",
-        "text": "「長州は、八月十八日の政変から、御所での戦。」",
+        "text": "「長州は、八月十八日の政変から、」",
         "speaker": "大村 益次郎"
       },
       {
-        "id": "p-47",
+        "id": "p-46b",
         "kind": "dialogue",
-        "text": "「下関での戦、幕府による征討。」",
+        "text": "「御所での戦、」",
         "speaker": "大村 益次郎"
       },
       {
-        "id": "p-48",
+        "id": "p-47a",
         "kind": "dialogue",
-        "text": "「恭順派と正義派の内戦、四境戦争。」",
+        "text": "「下関での戦、」",
         "speaker": "大村 益次郎"
       },
       {
-        "id": "p-49",
+        "id": "p-47b",
         "kind": "dialogue",
-        "text": "「そして戊辰、幾度も戦いました。」",
+        "text": "「幕府による征討、」",
+        "speaker": "大村 益次郎"
+      },
+      {
+        "id": "p-48a",
+        "kind": "dialogue",
+        "text": "「恭順派と正義派の内戦、」",
+        "speaker": "大村 益次郎"
+      },
+      {
+        "id": "p-48b",
+        "kind": "dialogue",
+        "text": "「四境戦争、」",
+        "speaker": "大村 益次郎"
+      },
+      {
+        "id": "p-49a",
+        "kind": "dialogue",
+        "text": "「そして戊辰、」",
+        "speaker": "大村 益次郎"
+      },
+      {
+        "id": "p-49b",
+        "kind": "dialogue",
+        "text": "「幾度も戦いました。」",
         "speaker": "大村 益次郎"
       },
       {
@@ -6614,6 +6638,7 @@ export const chapters: Chapter[] = [
         "text": "「兵も、財も、人も、長州より、はるかに余力があります。」",
         "speaker": "大村 益次郎"
       },
+
       {
         "id": "p-56",
         "kind": "narration",

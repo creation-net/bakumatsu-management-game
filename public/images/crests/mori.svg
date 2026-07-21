@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="毛利家 一文字三星">
+  <g fill="#fff">
+    <rect x="30" y="48" width="140" height="20" rx="2"/>
+    <circle cx="55" cy="125" r="25"/>
+    <circle cx="100" cy="125" r="25"/>
+    <circle cx="145" cy="125" r="25"/>
+  </g>
+</svg>
