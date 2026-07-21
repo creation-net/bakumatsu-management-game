@@ -618,16 +618,12 @@ function ResultScreen({
             <h2>
               <span>幕末・明治維新</span>
               <span className="report-title-diagnosis">経営資質診断</span>
-              <span className="report-title-report">レポート</span>
+              <span className="report-title-report">結果</span>
             </h2>
             <dl className="report-meta">
               <div>
                 <dt>診断日</dt>
                 <dd>{diagnosisDate}</dd>
-              </div>
-              <div>
-                <dt>あなたのタイプ</dt>
-                <dd>{primary.type}</dd>
               </div>
             </dl>
           </header>

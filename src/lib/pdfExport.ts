@@ -41,7 +41,7 @@ export async function downloadDiagnosisReportPdf(
   });
   const pdfBytes = createImagePdf(pageImages);
   const fileDate = diagnosisDate.replace(/[年月]/g, "-").replace("日", "");
-  const fileName = `幕末・明治維新_経営資質診断レポート_${fileDate}.pdf`;
+  const fileName = `幕末・明治維新_経営資質診断結果_${fileDate}.pdf`;
 
   downloadBlob(new Blob([pdfBytes.buffer as ArrayBuffer], { type: "application/pdf" }), fileName);
   return { pageCount: pageImages.length, byteLength: pdfBytes.length };
@@ -49,10 +49,9 @@ export async function downloadDiagnosisReportPdf(
 
 function renderReportPages(reportElement: HTMLElement): HTMLCanvasElement[] {
   const pages: PdfPage[] = [];
-  pages.push(drawCoverPage(reportElement));
-
   let currentPage = createPage("#ffffff");
   pages.push(currentPage);
+  drawCompactReportHeader(currentPage, reportElement);
 
   const sections = reportElement.querySelectorAll<HTMLElement>(".report-body > .report-section");
   sections.forEach((section) => {
@@ -85,52 +84,19 @@ function renderReportPages(reportElement: HTMLElement): HTMLCanvasElement[] {
   return pages.map((page) => page.canvas);
 }
 
-function drawCoverPage(reportElement: HTMLElement): PdfPage {
-  const page = createPage("#090a0c");
+function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement) {
   const titleLines = Array.from(reportElement.querySelectorAll<HTMLElement>(".report-cover h2 span"))
     .map((element) => element.textContent?.trim())
     .filter((text): text is string => Boolean(text));
-  const metaItems = Array.from(reportElement.querySelectorAll<HTMLElement>(".report-meta > div"))
-    .map((element) => ({
-      label: element.querySelector("dt")?.textContent?.trim() ?? "",
-      value: element.querySelector("dd")?.textContent?.trim() ?? "",
-    }));
+  const title = titleLines.join(" ");
+  const date = reportElement.querySelector<HTMLElement>(".report-meta dd")?.textContent?.trim();
 
-  page.y = 280;
-  titleLines.forEach((line, index) => {
-    drawCoverTitle(page, line, index === 0 ? 78 : 72);
-  });
-
-  page.y += 100;
-  metaItems.forEach((item) => {
-    page.context.strokeStyle = "#594a2c";
-    page.context.lineWidth = 2;
-    page.context.beginPath();
-    page.context.moveTo(PAGE_MARGIN, page.y);
-    page.context.lineTo(PAGE_MARGIN + 470, page.y);
-    page.context.stroke();
-    page.y += 30;
-    drawSingleLine(page, item.label, PAGE_MARGIN, 22, "#b8aa91", "normal", "sans");
-    page.y += 44;
-    drawSingleLine(page, item.value, PAGE_MARGIN, 34, "#f7f0e1", "bold", "serif");
-    page.y += 84;
-  });
-
-  return page;
-}
-
-function drawCoverTitle(page: PdfPage, text: string, preferredSize: number) {
-  let size = preferredSize;
-  page.context.font = fontValue(size, "bold", "serif");
-
-  while (page.context.measureText(text).width > CONTENT_WIDTH && size > 48) {
-    size -= 2;
-    page.context.font = fontValue(size, "bold", "serif");
+  drawSingleLine(page, title, PAGE_MARGIN, 34, "#211d18", "bold", "serif");
+  page.y += 54;
+  if (date) {
+    drawSingleLine(page, `診断日　${date}`, PAGE_MARGIN, 20, "#665e55", "normal", "sans");
+    page.y += 42;
   }
-
-  page.context.fillStyle = "#f7f0e1";
-  page.context.fillText(text, PAGE_MARGIN, page.y);
-  page.y += Math.round(size * 1.35);
 }
 
 function extractSectionBlocks(section: HTMLElement): DrawBlock[] {
@@ -140,11 +106,11 @@ function extractSectionBlocks(section: HTMLElement): DrawBlock[] {
   if (heading?.textContent?.trim()) {
     blocks.push({
       text: heading.textContent.trim(),
-      size: heading.classList.contains("diagnosis-heading") ? 38 : 32,
-      lineHeight: 54,
+      size: heading.classList.contains("diagnosis-heading") ? 34 : 29,
+      lineHeight: 48,
       color: "#806224",
       weight: "bold",
-      marginBottom: 28,
+      marginBottom: 22,
       keepTogether: true,
     });
   }
@@ -161,13 +127,13 @@ function extractSectionBlocks(section: HTMLElement): DrawBlock[] {
       }
 
       if (child.classList.contains("diagnosis-type-title")) {
-        blocks.push(textBlock(text, child.classList.contains("secondary") ? 52 : 60, 76, "#211d18", "bold", 12, 30));
+        blocks.push(textBlock(text, child.classList.contains("secondary") ? 46 : 52, 64, "#211d18", "bold", 8, 22));
       } else if (child.classList.contains("diagnosis-combination")) {
-        blocks.push(textBlock(text, 48, 66, "#211d18", "bold", 8, 18));
+        blocks.push(textBlock(text, 42, 58, "#211d18", "bold", 6, 14));
       } else if (child.classList.contains("diagnosis-combination-people")) {
-        blocks.push(textBlock(text, 27, 42, "#665e55", "normal", 0, 28));
+        blocks.push(textBlock(text, 24, 38, "#665e55", "normal", 0, 20));
       } else {
-        blocks.push(textBlock(text, 27, 47, "#332e27", "normal", 0, 28));
+        blocks.push(textBlock(text, 24, 41, "#332e27", "normal", 0, 20));
       }
       return;
     }
@@ -176,16 +142,16 @@ function extractSectionBlocks(section: HTMLElement): DrawBlock[] {
       const label = child.querySelector("span")?.textContent?.trim();
       const person = child.querySelector("strong")?.textContent?.trim();
       const stars = child.querySelector(".diagnosis-stars")?.textContent?.trim();
-      if (label) blocks.push(textBlock(label, 21, 34, "#665e55", "normal", 10, 8, "sans"));
-      if (person) blocks.push(textBlock(person, 34, 50, "#211d18", "bold", 0, 6));
-      if (stars) blocks.push(textBlock(stars, 27, 40, "#806224", "bold", 0, 28));
+      if (label) blocks.push(textBlock(label, 19, 30, "#665e55", "normal", 8, 6, "sans"));
+      if (person) blocks.push(textBlock(person, 30, 44, "#211d18", "bold", 0, 4));
+      if (stars) blocks.push(textBlock(stars, 24, 35, "#806224", "bold", 0, 20));
       return;
     }
 
     if (child.classList.contains("diagnosis-advice")) {
       child.querySelectorAll<HTMLElement>("p").forEach((paragraph) => {
         const text = paragraph.textContent?.trim();
-        if (text) blocks.push(textBlock(text, 26, 46, "#332e27", "normal", 0, 24));
+        if (text) blocks.push(textBlock(text, 23, 39, "#332e27", "normal", 0, 18));
       });
       return;
     }
@@ -193,7 +159,7 @@ function extractSectionBlocks(section: HTMLElement): DrawBlock[] {
     if (child.classList.contains("diagnosis-points")) {
       child.querySelectorAll<HTMLElement>(":scope > div").forEach((column) => {
         const title = column.querySelector("h3")?.textContent?.trim();
-        if (title) blocks.push(textBlock(title, 27, 42, "#806224", "bold", 12, 12));
+        if (title) blocks.push(textBlock(title, 24, 38, "#806224", "bold", 8, 8));
         column.querySelectorAll<HTMLElement>("li").forEach((item) => {
           const text = item.textContent?.trim();
           if (text) blocks.push(listBlock(text));
@@ -229,10 +195,10 @@ function textBlock(
 function listBlock(text: string): DrawBlock {
   return {
     text: `・${text}`,
-    size: 25,
-    lineHeight: 43,
+    size: 22,
+    lineHeight: 36,
     color: "#332e27",
-    marginBottom: 12,
+    marginBottom: 8,
     indent: 16,
   };
 }
@@ -311,7 +277,7 @@ function createPage(background: string): PdfPage {
 
 function drawDivider(page: PdfPage) {
   if (page.y > PAGE_MARGIN) {
-    page.y += 18;
+    page.y += 12;
   }
   page.context.strokeStyle = "#b9aa88";
   page.context.lineWidth = 2;
@@ -319,7 +285,7 @@ function drawDivider(page: PdfPage) {
   page.context.moveTo(PAGE_MARGIN, page.y);
   page.context.lineTo(CANVAS_WIDTH - PAGE_MARGIN, page.y);
   page.context.stroke();
-  page.y += 38;
+  page.y += 28;
 }
 
 function drawSingleLine(
