@@ -2538,7 +2538,7 @@ export const chapters: Chapter[] = [
         "id": "p-55",
         "kind": "dialogue",
         "text": "「今は感情で動く時ではない。」",
-        "speaker": "村瀬"
+        "speaker": "周布 政之助 書状より"
       },
       {
         "id": "p-56",
