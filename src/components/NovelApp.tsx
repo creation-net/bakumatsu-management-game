@@ -272,7 +272,7 @@ function TitleScreen({
   return (
     <section className="title-screen scene-frame title-art">
       <div className="title-copy">
-        <p className="eyebrow">十五の決断で読み解く</p>
+        <p className="eyebrow title-kicker">15の決断で読み解く</p>
         <h1>
           <span>あなたの</span>
           <span>経営資質診断</span>
@@ -280,7 +280,9 @@ function TitleScreen({
         <p className="title-theme">幕末・明治維新編</p>
         <p className="subtitle">一人の長州藩士・村瀬 新之助とたどる十五の決断</p>
         <p className="lead">
-          幕末から明治維新へ。架空の長州藩士・村瀬 新之助（むらせ しんのすけ）の視点から、
+          幕末から明治維新へ。
+          <br />
+          架空の長州藩士・村瀬 新之助（むらせ しんのすけ）の視点から、
           <br />
           歴史の分岐点に立つ人物たちの決断をたどり、
           <br />
