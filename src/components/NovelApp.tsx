@@ -154,6 +154,9 @@ export function NovelApp() {
     setScreen("title");
   }
 
+  const answeredCount = Object.keys(progress.choices).length;
+  const canViewResult = answeredCount >= chapters.length && chapters.length > 0;
+
   if (!mounted) {
     return <main className="app-shell" />;
   }
@@ -176,6 +179,14 @@ export function NovelApp() {
         </button>
         <button className="text-button" type="button" onClick={() => setScreen("index")}>
           進行確認
+        </button>
+        <button
+          className={canViewResult ? "text-button result-ready" : "text-button muted"}
+          type="button"
+          onClick={() => setScreen("result")}
+          disabled={!canViewResult}
+        >
+          診断結果
         </button>
         <button className="text-button muted" type="button" onClick={handleReset}>
           リセット
@@ -216,6 +227,7 @@ export function NovelApp() {
           onChangeChoice={changeChapterChoice}
           onStart={() => startStory("continue")}
           onResult={() => setScreen("result")}
+          canViewResult={canViewResult}
         />
       )}
 
@@ -438,12 +450,14 @@ function ChapterIndex({
   onChangeChoice,
   onStart,
   onResult,
+  canViewResult,
 }: {
   progress: ReadingProgress;
   onChapterSelect: (chapterId: number) => void;
   onChangeChoice: (chapterId: number) => void;
   onStart: () => void;
   onResult: () => void;
+  canViewResult: boolean;
 }) {
   const answeredCount = Object.keys(progress.choices).length;
   const completedCount = progress.completedChapterIds.length;
@@ -511,7 +525,12 @@ function ChapterIndex({
         <button className="primary-button" type="button" onClick={onStart}>
           続きから読む
         </button>
-        <button className="secondary-button" type="button" onClick={onResult} disabled={answeredCount === 0}>
+        <button
+          className={canViewResult ? "primary-button" : "secondary-button"}
+          type="button"
+          onClick={onResult}
+          disabled={!canViewResult}
+        >
           診断結果を見る
         </button>
       </div>

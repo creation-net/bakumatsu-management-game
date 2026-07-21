@@ -140,6 +140,17 @@ button:focus-visible {
   color: var(--muted);
 }
 
+.text-button.result-ready {
+  color: var(--ink-strong);
+  background: var(--vermilion-dark);
+  border-color: var(--vermilion);
+}
+
+.text-button.result-ready:hover {
+  border-color: var(--gold);
+  background: #8a3524;
+}
+
 .primary-button {
   padding: 0 24px;
   color: var(--ink-strong);
