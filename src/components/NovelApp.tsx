@@ -143,6 +143,11 @@ export function NovelApp() {
   }
 
   function handleReset() {
+    const confirmed = window.confirm("進行状況と選択した回答をリセットしてよろしいですか？");
+    if (!confirmed) {
+      return;
+    }
+
     resetProgress();
     setProgress(initialProgress);
     setScreen("title");
@@ -172,7 +177,7 @@ export function NovelApp() {
           進行確認
         </button>
         <button className="text-button muted" type="button" onClick={handleReset}>
-          初期化
+          リセット
         </button>
       </nav>
 
