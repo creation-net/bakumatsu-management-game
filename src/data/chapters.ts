@@ -105,7 +105,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-20",
         "kind": "narration",
-        "text": "久坂玄瑞。"
+        "text": "久坂 玄瑞。"
       },
       {
         "id": "p-21",
@@ -305,7 +305,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-60",
         "kind": "narration",
-        "text": "久坂玄瑞"
+        "text": "久坂 玄瑞"
       },
       {
         "id": "p-61",
@@ -582,7 +582,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-25",
         "kind": "narration",
-        "text": "村瀬新之助もまた、この日を境に、自ら考え、行動する道を歩み始めるのだった。"
+        "text": "村瀬 新之助もまた、この日を境に、自ら考え、行動する道を歩み始めるのだった。"
       }
     ],
     "choices": [
@@ -590,22 +590,22 @@ export const chapters: Chapter[] = [
         "id": "choice-1",
         "label": "①",
         "text": "① 今こそ、攘夷（外国を打ち払う）を決行すべきだ。",
-        "value": "久坂玄瑞の考え",
-        "person": "久坂玄瑞"
+        "value": "久坂 玄瑞の考え",
+        "person": "久坂 玄瑞"
       },
       {
         "id": "choice-2",
         "label": "②",
         "text": "② まずは学び、日本を強くする道を探るべきだ。",
-        "value": "吉田松陰の考え",
-        "person": "吉田松陰"
+        "value": "吉田 松陰の考え",
+        "person": "吉田 松陰"
       },
       {
         "id": "choice-3",
         "label": "③",
         "text": "③ 今は情勢を見極め、来るべき日に備えるべきだ。",
-        "value": "高杉晋作の考え",
-        "person": "高杉晋作"
+        "value": "高杉 晋作の考え",
+        "person": "高杉 晋作"
       }
     ],
     "notes": []
@@ -690,151 +690,151 @@ export const chapters: Chapter[] = [
         "id": "p-15",
         "kind": "dialogue",
         "text": "「先生は死んだ、じゃが、先生の志まで墓に入れちゃならん。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-16",
         "kind": "dialogue",
         "text": "「先生が望まれたんは、教えをそのまま守ることじゃない。古い世を壊し、新しい日本をつくることじゃ。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-17",
         "kind": "dialogue",
         "text": "「時代が変われば、戦い方も変えにゃならん。先生の言葉に従うだけでは、先生を超えることはできん。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-18",
         "kind": "dialogue",
         "text": "「誰かが最初の一歩を踏み出さにゃ、世の中は何も変わらんのじゃ。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-19",
         "kind": "dialogue",
         "text": "「村瀬。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-20",
         "kind": "dialogue",
         "text": "「わしは、先生の志を変革によって継ぐ。世の中は変えられる。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-21",
         "kind": "dialogue",
         "text": "「変える者がおればのう。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-22",
         "kind": "dialogue",
         "text": "「高杉、新しい道を語るだけでは足りません。」",
-        "speaker": "久坂玄瑞"
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-23",
         "kind": "dialogue",
         "text": "「先生は、正しいと思う道のために命を懸けられた。ならば我らも、志を言葉で終わらせてはならん。」",
-        "speaker": "久坂玄瑞"
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-24",
         "kind": "dialogue",
         "text": "「攘夷を唱えるなら、攘夷を決行する、国を守ると申すなら、そのために命を差し出す。」",
-        "speaker": "久坂玄瑞"
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-25",
         "kind": "dialogue",
         "text": "「覚悟を行いに変えてこそ、志は本物になるのです。私は、先生の志を決行によって継ぎます。」",
-        "speaker": "久坂玄瑞"
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-26",
         "kind": "dialogue",
         "text": "「先生のお示しになった道を、最後まで歩みます。それが私の覚悟です。」",
-        "speaker": "久坂玄瑞"
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-27",
         "kind": "dialogue",
         "text": "「命を懸けるだけで、国が変わるんか、倒れることが覚悟なら、生きて変える者は誰になる。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-28",
         "kind": "dialogue",
         "text": "「命を惜しんで決断を避ければ、何一つ始まりません。行われぬ志は、志ではなく願いにすぎんのです。」",
-        "speaker": "久坂玄瑞"
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-29",
         "kind": "dialogue",
         "text": "「二人とも、先生を思う気持ちは同じじゃ。じゃが、志は一人の命だけでは成し遂げられん。」",
-        "speaker": "桂小五郎"
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-30",
         "kind": "dialogue",
         "text": "「高杉が道を切り開き、久坂が先頭に立つ。それでも、あとに続く者がおらねば、そこで終わってしまう。」",
-        "speaker": "桂小五郎"
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-31",
         "kind": "dialogue",
         "text": "「志を人に伝え、仲間を増やし、次の世代へ残す。生き残ることもまた、覚悟の一つじゃ。」",
-        "speaker": "桂小五郎"
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-32",
         "kind": "dialogue",
         "text": "「私は、先生の志を継承によって未来へつなぐ。人が育ち、志が受け継がれてこそ、日本は変わる。」",
-        "speaker": "桂小五郎"
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-33",
         "kind": "dialogue",
         "text": "「それが先生の願いじゃと思う。」",
-        "speaker": "桂小五郎"
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-34",
         "kind": "dialogue",
         "text": "「桂さん。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-35",
         "kind": "dialogue",
         "text": "「後に残すことばかり考えちょったら、最初の一歩が遅れます。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-36",
         "kind": "dialogue",
         "text": "「世の中を変えるんは、いつも先に踏み出した者です。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-37",
         "kind": "dialogue",
         "text": "「その一歩を無駄にせんために、残る者が必要なのじゃ。」",
-        "speaker": "桂小五郎"
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-38",
         "kind": "dialogue",
         "text": "「一人の英雄が世を動かしても、その後が続かねば国は変わらん。」",
-        "speaker": "桂小五郎"
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-39",
         "kind": "dialogue",
         "text": "「変える力と、続ける力。その両方が必要なんじゃ。」",
-        "speaker": "桂小五郎"
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-40",
@@ -960,21 +960,21 @@ export const chapters: Chapter[] = [
         "label": "①",
         "text": "①「先生の志は、古い世を壊し、新しい道を切り開くことで受け継ぐべきです。」",
         "value": "変革によって志を継ぐ",
-        "person": "高杉晋作"
+        "person": "高杉 晋作"
       },
       {
         "id": "choice-2",
         "label": "②",
         "text": "②「先生の志は、命を懸けて実行することで受け継ぐべきです。」",
         "value": "決行によって志を継ぐ",
-        "person": "久坂玄瑞"
+        "person": "久坂 玄瑞"
       },
       {
         "id": "choice-3",
         "label": "③",
         "text": "③「先生の志は、人と組織に残し、未来へつなぐことで受け継ぐべきです。」",
         "value": "継承によって志を継ぐ",
-        "person": "桂小五郎"
+        "person": "桂 小五郎"
       }
     ],
     "notes": []
@@ -1143,12 +1143,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-32",
         "kind": "scene",
-        "text": "【勝海舟】"
+        "text": "【勝 海舟】"
       },
       {
         "id": "p-33",
         "kind": "narration",
-        "text": "勝海舟"
+        "text": "勝 海舟"
       },
       {
         "id": "p-34",
@@ -1233,7 +1233,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-50",
         "kind": "scene",
-        "text": "【坂本龍馬】"
+        "text": "【坂本 龍馬】"
       },
       {
         "id": "p-51",
@@ -1503,22 +1503,22 @@ export const chapters: Chapter[] = [
         "id": "choice-1",
         "label": "①",
         "text": "①「今ある仕組みを活かしながら改革を進めるべきです。」",
-        "value": "勝海舟の考え",
-        "person": "勝海舟"
+        "value": "勝 海舟の考え",
+        "person": "勝 海舟"
       },
       {
         "id": "choice-2",
         "label": "②",
         "text": "②「今こそ覚悟を決め、一気に改革を進めるべきです。」",
-        "value": "西郷吉之助の考え",
-        "person": "西郷吉之助"
+        "value": "西郷 吉之助の考え",
+        "person": "西郷 吉之助"
       },
       {
         "id": "choice-3",
         "label": "③",
         "text": "③「新しい仕組みを作り、皆が協力できる国を目指すべきです。」",
-        "value": "坂本龍馬の考え",
-        "person": "坂本龍馬"
+        "value": "坂本 龍馬の考え",
+        "person": "坂本 龍馬"
       }
     ],
     "notes": []
@@ -1602,7 +1602,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-15",
         "kind": "scene",
-        "text": "【来島又兵衛】"
+        "text": "【来島 又兵衛】"
       },
       {
         "id": "p-16",
@@ -1657,7 +1657,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-26",
         "kind": "scene",
-        "text": "【久坂玄瑞】"
+        "text": "【久坂 玄瑞】"
       },
       {
         "id": "p-27",
@@ -2062,22 +2062,22 @@ export const chapters: Chapter[] = [
         "id": "choice-1",
         "label": "①",
         "text": "① 今こそ行動を起こし、長州の覚悟を示すべきです。",
-        "value": "来島又兵衛の考え",
-        "person": "来島又兵衛"
+        "value": "来島 又兵衛の考え",
+        "person": "来島 又兵衛"
       },
       {
         "id": "choice-2",
         "label": "②",
         "text": "② 目的は朝廷への嘆願です。戦えば本来の目的を失います。",
-        "value": "久坂玄瑞の考え",
-        "person": "久坂玄瑞"
+        "value": "久坂 玄瑞の考え",
+        "person": "久坂 玄瑞"
       },
       {
         "id": "choice-3",
         "label": "③",
         "text": "③ 今日は退き、長州が再び立ち上がる機会を残すべきです。",
-        "value": "桂小五郎の考え",
-        "person": "桂小五郎"
+        "value": "桂 小五郎の考え",
+        "person": "桂 小五郎"
       }
     ],
     "notes": []
@@ -2156,7 +2156,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-14",
         "kind": "narration",
-        "text": "長州藩重臣の椋梨藤太（むくなし とうた）が静かに立つ。"
+        "text": "長州藩重臣の椋梨 藤太（むくなし とうた）が静かに立つ。"
       },
       {
         "id": "p-15",
@@ -2227,7 +2227,7 @@ export const chapters: Chapter[] = [
         "id": "p-28",
         "kind": "dialogue",
         "text": "「何を話しよる。」",
-        "speaker": "高杉晋作"
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-29",
@@ -2403,7 +2403,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-63",
         "kind": "narration",
-        "text": "長州藩主・毛利敬親（もうり たかちか）が姿を現す。"
+        "text": "長州藩主・毛利 敬親（もうり たかちか）が姿を現す。"
       },
       {
         "id": "p-64",
@@ -2550,7 +2550,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-9",
         "kind": "narration",
-        "text": "高杉晋作。"
+        "text": "高杉 晋作。"
       },
       {
         "id": "e-10",
@@ -2568,22 +2568,22 @@ export const chapters: Chapter[] = [
         "id": "choice-1",
         "label": "①",
         "text": "① 藩を守るため、幕府の要求を受け入れるべきです。",
-        "value": "椋梨藤太の考え",
-        "person": "椋梨藤太"
+        "value": "椋梨 藤太の考え",
+        "person": "椋梨 藤太"
       },
       {
         "id": "choice-2",
         "label": "②",
         "text": "② 交渉し、少しでも長州に有利な条件を引き出すべきです。",
-        "value": "周布政之助の考え",
-        "person": "周布政之助"
+        "value": "周布 政之助の考え",
+        "person": "周布 政之助"
       },
       {
         "id": "choice-3",
         "label": "③",
         "text": "③ 勝機があるなら、長州の志を守るために戦うべきだ。",
-        "value": "高杉晋作の考え",
-        "person": "高杉晋作"
+        "value": "高杉 晋作の考え",
+        "person": "高杉 晋作"
       }
     ],
     "notes": []
@@ -2641,7 +2641,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-10",
         "kind": "scene",
-        "text": "【高杉晋作】"
+        "text": "【高杉 晋作】"
       },
       {
         "id": "p-11",
@@ -2736,12 +2736,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-29",
         "kind": "narration",
-        "text": "長州藩士・赤根武人（あかね たけと）が口を開く。"
+        "text": "長州藩士・赤根 武人（あかね たけと）が口を開く。"
       },
       {
         "id": "p-30",
         "kind": "scene",
-        "text": "【赤根武人】"
+        "text": "【赤根 武人】"
       },
       {
         "id": "p-31",
@@ -2841,12 +2841,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-50",
         "kind": "narration",
-        "text": "長州藩士・山縣 狂介（やまがた きょうすけ／のちの山縣有朋。長州藩出身の軍政家）だった。"
+        "text": "長州藩士・山縣 狂介（やまがた きょうすけ／のちの山縣 有朋。長州藩出身の軍政家）だった。"
       },
       {
         "id": "p-51",
         "kind": "scene",
-        "text": "【山縣狂介】"
+        "text": "【山縣 狂介】"
       },
       {
         "id": "p-52",
@@ -3068,7 +3068,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-12",
         "kind": "narration",
-        "text": "やがて功山寺で挙兵した高杉晋作は。"
+        "text": "やがて功山寺で挙兵した高杉 晋作は。"
       },
       {
         "id": "e-13",
@@ -3081,22 +3081,22 @@ export const chapters: Chapter[] = [
         "id": "choice-1",
         "label": "①",
         "text": "① 今こそ立つべきだ。長州を救うには、今しかない。",
-        "value": "高杉晋作の考え",
-        "person": "高杉晋作"
+        "value": "高杉 晋作の考え",
+        "person": "高杉 晋作"
       },
       {
         "id": "choice-2",
         "label": "②",
         "text": "② 藩内で争うべきではない。同じ長州人同士が血を流してはならない。",
-        "value": "赤根武人の考え",
-        "person": "赤根武人"
+        "value": "赤根 武人の考え",
+        "person": "赤根 武人"
       },
       {
         "id": "choice-3",
         "label": "③",
         "text": "③ まだ決断する時ではない。情勢を見極めるべきだ。",
-        "value": "山縣狂介の考え",
-        "person": "山縣狂介"
+        "value": "山縣 狂介の考え",
+        "person": "山縣 狂介"
       }
     ],
     "notes": [],
@@ -3201,12 +3201,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-19",
         "kind": "narration",
-        "text": "長州藩士・桂小五郎（かつら こごろう）が静かに立ち上がる。"
+        "text": "長州藩士・桂 小五郎（かつら こごろう）が静かに立ち上がる。"
       },
       {
         "id": "p-20",
         "kind": "scene",
-        "text": "【桂小五郎】"
+        "text": "【桂 小五郎】"
       },
       {
         "id": "p-21",
@@ -3236,7 +3236,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-26",
         "kind": "narration",
-        "text": "後ろには土佐藩士・中岡慎太郎（なかおか しんたろう）。"
+        "text": "後ろには土佐藩士・中岡 慎太郎（なかおか しんたろう）。"
       },
       {
         "id": "p-27",
@@ -3291,7 +3291,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-37",
         "kind": "scene",
-        "text": "【村田蔵六】"
+        "text": "【村田 蔵六】"
       },
       {
         "id": "p-38",
@@ -3321,7 +3321,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-43",
         "kind": "scene",
-        "text": "【桂小五郎】"
+        "text": "【桂 小五郎】"
       },
       {
         "id": "p-44",
@@ -3361,7 +3361,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-51",
         "kind": "scene",
-        "text": "【村田蔵六】"
+        "text": "【村田 蔵六】"
       },
       {
         "id": "p-52",
@@ -3421,7 +3421,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-63",
         "kind": "scene",
-        "text": "【桂小五郎】"
+        "text": "【桂 小五郎】"
       },
       {
         "id": "p-64",
@@ -3466,7 +3466,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-72",
         "kind": "scene",
-        "text": "【坂本龍馬】"
+        "text": "【坂本 龍馬】"
       },
       {
         "id": "p-73",
@@ -3491,7 +3491,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-77",
         "kind": "narration",
-        "text": "坂本龍馬は、ふっと笑みを消した。"
+        "text": "坂本 龍馬は、ふっと笑みを消した。"
       },
       {
         "id": "p-78",
@@ -3561,7 +3561,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-91",
         "kind": "narration",
-        "text": "村田蔵六が静かに説明する。龍馬が続ける。"
+        "text": "村田 蔵六が静かに説明する。龍馬が続ける。"
       },
       {
         "id": "p-92",
@@ -3616,7 +3616,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-102",
         "kind": "scene",
-        "text": "【桂小五郎】"
+        "text": "【桂 小五郎】"
       },
       {
         "id": "p-103",
@@ -3726,7 +3726,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-124",
         "kind": "scene",
-        "text": "【村田蔵六】"
+        "text": "【村田 蔵六】"
       },
       {
         "id": "p-125",
@@ -3846,7 +3846,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-148",
         "kind": "narration",
-        "text": "桂小五郎。"
+        "text": "桂 小五郎。"
       },
       {
         "id": "p-149",
@@ -3856,7 +3856,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-150",
         "kind": "narration",
-        "text": "坂本龍馬。"
+        "text": "坂本 龍馬。"
       },
       {
         "id": "p-151",
@@ -3866,7 +3866,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-152",
         "kind": "narration",
-        "text": "村田蔵六。"
+        "text": "村田 蔵六。"
       },
       {
         "id": "p-153",
@@ -3966,22 +3966,22 @@ export const chapters: Chapter[] = [
         "id": "choice-1",
         "label": "①",
         "text": "① 敵であっても、日本のためなら手を結ぶべきだ。",
-        "person": "村田蔵六",
-        "value": "村田蔵六の考え"
+        "person": "村田 蔵六",
+        "value": "村田 蔵六の考え"
       },
       {
         "id": "choice-2",
         "label": "②",
         "text": "② まずは小さな信頼を積み重ねるべきだ。",
-        "person": "坂本龍馬",
-        "value": "坂本龍馬の考え"
+        "person": "坂本 龍馬",
+        "value": "坂本 龍馬の考え"
       },
       {
         "id": "choice-3",
         "label": "③",
         "text": "③ 自国の結束を固めてから協力を考えるべきだ。",
-        "person": "桂小五郎",
-        "value": "桂小五郎の考え"
+        "person": "桂 小五郎",
+        "value": "桂 小五郎の考え"
       }
     ],
     "notes": []
@@ -4070,7 +4070,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-16",
         "kind": "scene",
-        "text": "【桂小五郎】"
+        "text": "【桂 小五郎】"
       },
       {
         "id": "p-17",
@@ -4125,7 +4125,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-27",
         "kind": "scene",
-        "text": "【高杉晋作】"
+        "text": "【高杉 晋作】"
       },
       {
         "id": "p-28",
@@ -4175,7 +4175,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-37",
         "kind": "scene",
-        "text": "【村田蔵六】"
+        "text": "【村田 蔵六】"
       },
       {
         "id": "p-38",
@@ -4449,23 +4449,23 @@ export const chapters: Chapter[] = [
       {
         "id": "choice-1",
         "label": "①",
-        "text": "① 桂小五郎隊\n慎重な判断で仲間を守り、勝てる戦を積み重ねる。",
-        "person": "桂小五郎",
-        "value": "桂小五郎の考え"
+        "text": "① 桂 小五郎隊\n慎重な判断で仲間を守り、勝てる戦を積み重ねる。",
+        "person": "桂 小五郎",
+        "value": "桂 小五郎の考え"
       },
       {
         "id": "choice-2",
         "label": "②",
-        "text": "② 高杉晋作隊\n自ら先頭に立ち、勇気で仲間の士気を高め、不利な戦況を覆す。",
-        "person": "高杉晋作",
-        "value": "高杉晋作の考え"
+        "text": "② 高杉 晋作隊\n自ら先頭に立ち、勇気で仲間の士気を高め、不利な戦況を覆す。",
+        "person": "高杉 晋作",
+        "value": "高杉 晋作の考え"
       },
       {
         "id": "choice-3",
         "label": "③",
-        "text": "③ 村田蔵六隊\n合理的な準備と仕組みを整え、確実な勝利を目指す。",
-        "person": "村田蔵六",
-        "value": "村田蔵六の考え"
+        "text": "③ 村田 蔵六隊\n合理的な準備と仕組みを整え、確実な勝利を目指す。",
+        "person": "村田 蔵六",
+        "value": "村田 蔵六の考え"
       }
     ],
     "notes": []
@@ -4494,7 +4494,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-4",
         "kind": "narration",
-        "text": "徳川慶喜を新政府へ迎えるのか。"
+        "text": "徳川 慶喜を新政府へ迎えるのか。"
       },
       {
         "id": "p-5",
@@ -4514,7 +4514,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-8",
         "kind": "scene",
-        "text": "【公家・岩倉具視（いわくら ともみ）】"
+        "text": "【公家・岩倉 具視（いわくら ともみ）】"
       },
       {
         "id": "p-9",
@@ -4754,7 +4754,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-56",
         "kind": "scene",
-        "text": "【西郷吉之助】"
+        "text": "【西郷 吉之助】"
       },
       {
         "id": "p-57",
@@ -4861,7 +4861,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-4",
         "kind": "narration",
-        "text": "徳川慶喜は新政府から外され、"
+        "text": "徳川 慶喜は新政府から外され、"
       },
       {
         "id": "e-5",
@@ -4938,23 +4938,23 @@ export const chapters: Chapter[] = [
       {
         "id": "choice-1",
         "label": "①",
-        "text": "① 山内容堂\n「長年築き上げた信頼や恩義を大切にする。」",
-        "person": "山内容堂",
-        "value": "山内容堂の考え"
+        "text": "① 山内 容堂\n「長年築き上げた信頼や恩義を大切にする。」",
+        "person": "山内 容堂",
+        "value": "山内 容堂の考え"
       },
       {
         "id": "choice-2",
         "label": "②",
-        "text": "② 松平春嶽\n「公平な手続きと納得できる意思決定を大切にする。」",
-        "person": "松平春嶽",
-        "value": "松平春嶽の考え"
+        "text": "② 松平 春嶽\n「公平な手続きと納得できる意思決定を大切にする。」",
+        "person": "松平 春嶽",
+        "value": "松平 春嶽の考え"
       },
       {
         "id": "choice-3",
         "label": "③",
-        "text": "③ 西郷吉之助\n「最後は責任を背負い、自ら決断する。」",
-        "person": "西郷吉之助",
-        "value": "西郷吉之助の考え"
+        "text": "③ 西郷 吉之助\n「最後は責任を背負い、自ら決断する。」",
+        "person": "西郷 吉之助",
+        "value": "西郷 吉之助の考え"
       }
     ],
     "notes": []
@@ -5008,7 +5008,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-9",
         "kind": "narration",
-        "text": "大坂城では、徳川十五代将軍・徳川慶喜（とくがわ よしのぶ）が、大きな決断を迫られていた。"
+        "text": "大坂城では、徳川十五代将軍・徳川 慶喜（とくがわ よしのぶ）が、大きな決断を迫られていた。"
       },
       {
         "id": "p-10",
@@ -5033,7 +5033,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-14",
         "kind": "scene",
-        "text": "【勝海舟】"
+        "text": "【勝 海舟】"
       },
       {
         "id": "p-15",
@@ -5073,7 +5073,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-22",
         "kind": "scene",
-        "text": "【板倉勝静】"
+        "text": "【板倉 勝静】"
       },
       {
         "id": "p-23",
@@ -5108,7 +5108,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-29",
         "kind": "scene",
-        "text": "【松平容保】"
+        "text": "【松平 容保】"
       },
       {
         "id": "p-30",
@@ -5203,7 +5203,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-48",
         "kind": "scene",
-        "text": "【勝海舟】"
+        "text": "【勝 海舟】"
       },
       {
         "id": "p-49",
@@ -5233,7 +5233,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-54",
         "kind": "scene",
-        "text": "【板倉勝静】"
+        "text": "【板倉 勝静】"
       },
       {
         "id": "p-55",
@@ -5253,7 +5253,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-58",
         "kind": "scene",
-        "text": "【松平容保】"
+        "text": "【松平 容保】"
       },
       {
         "id": "p-59",
@@ -5403,22 +5403,22 @@ export const chapters: Chapter[] = [
         "id": "choice-1",
         "label": "①",
         "text": "① 日本全体を守ることを優先する",
-        "person": "勝海舟",
-        "value": "勝海舟の考え"
+        "person": "勝 海舟",
+        "value": "勝 海舟の考え"
       },
       {
         "id": "choice-2",
         "label": "②",
         "text": "② 徳川家と人々の生活を守ることを優先する",
-        "person": "板倉勝静",
-        "value": "板倉勝静の考え"
+        "person": "板倉 勝静",
+        "value": "板倉 勝静の考え"
       },
       {
         "id": "choice-3",
         "label": "③",
         "text": "③ 勝機を生かし、組織の統制を守ることを優先する",
-        "person": "松平容保",
-        "value": "松平容保の考え"
+        "person": "松平 容保",
+        "value": "松平 容保の考え"
       }
     ],
     "notes": []
@@ -5442,7 +5442,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-3",
         "kind": "narration",
-        "text": "徳川慶喜は江戸へ退き、新政府軍は江戸城へ迫る。"
+        "text": "徳川 慶喜は江戸へ退き、新政府軍は江戸城へ迫る。"
       },
       {
         "id": "p-4",
@@ -5522,7 +5522,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-19",
         "kind": "scene",
-        "text": "【勝海舟】"
+        "text": "【勝 海舟】"
       },
       {
         "id": "p-20",
@@ -5543,18 +5543,18 @@ export const chapters: Chapter[] = [
         "id": "p-23",
         "kind": "dialogue",
         "text": "「村瀬どん、今日は、よう聞いちょっせ。」",
-        "speaker": "西郷吉之助"
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-24",
         "kind": "dialogue",
         "text": "「日本の行く末を決める話じゃ。」",
-        "speaker": "西郷吉之助"
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-25",
         "kind": "scene",
-        "text": "【大村益次郎】"
+        "text": "【大村 益次郎】"
       },
       {
         "id": "p-26",
@@ -5569,12 +5569,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-28",
         "kind": "narration",
-        "text": "勝海舟が窓の外を見ながら、口を開く。"
+        "text": "勝 海舟が窓の外を見ながら、口を開く。"
       },
       {
         "id": "p-29",
         "kind": "scene",
-        "text": "【勝海舟】"
+        "text": "【勝 海舟】"
       },
       {
         "id": "p-30",
@@ -5664,7 +5664,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-47",
         "kind": "scene",
-        "text": "【西郷吉之助】"
+        "text": "【西郷 吉之助】"
       },
       {
         "id": "p-48",
@@ -5704,7 +5704,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-55",
         "kind": "scene",
-        "text": "【大村益次郎】"
+        "text": "【大村 益次郎】"
       },
       {
         "id": "p-56",
@@ -5871,7 +5871,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-2",
         "kind": "narration",
-        "text": "勝海舟と西郷吉之助は会談を重ねた。"
+        "text": "勝 海舟と西郷 吉之助は会談を重ねた。"
       },
       {
         "id": "e-3",
@@ -5944,22 +5944,22 @@ export const chapters: Chapter[] = [
         "id": "choice-1",
         "label": "①",
         "text": "① 禍根を残さない。未来の日本のため、争いの芽を断つ。",
-        "person": "西郷吉之助",
-        "value": "西郷吉之助の考え"
+        "person": "西郷 吉之助",
+        "value": "西郷 吉之助の考え"
       },
       {
         "id": "choice-2",
         "label": "②",
         "text": "② 国を疲弊させない。人を信じ、できる限り戦わずに収める。",
-        "person": "勝海舟",
-        "value": "勝海舟の考え"
+        "person": "勝 海舟",
+        "value": "勝 海舟の考え"
       },
       {
         "id": "choice-3",
         "label": "③",
         "text": "③ 秩序を守る。戦は避ける。しかし、人々の安心を守るため、必要な秩序は維持する。",
-        "person": "大村益次郎",
-        "value": "大村益次郎の考え"
+        "person": "大村 益次郎",
+        "value": "大村 益次郎の考え"
       }
     ],
     "notes": []
@@ -6043,7 +6043,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-15",
         "kind": "scene",
-        "text": "【大村益次郎】"
+        "text": "【大村 益次郎】"
       },
       {
         "id": "p-16",
@@ -6148,7 +6148,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-36",
         "kind": "scene",
-        "text": "【木戸孝允】"
+        "text": "【木戸 孝允】"
       },
       {
         "id": "p-37",
@@ -6268,12 +6268,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-60",
         "kind": "narration",
-        "text": "山縣有朋が一歩前へ出る。"
+        "text": "山縣 有朋が一歩前へ出る。"
       },
       {
         "id": "p-61",
         "kind": "scene",
-        "text": "【山縣有朋】"
+        "text": "【山縣 有朋】"
       },
       {
         "id": "p-62",
@@ -6393,7 +6393,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-85",
         "kind": "scene",
-        "text": "【木戸孝允】"
+        "text": "【木戸 孝允】"
       },
       {
         "id": "p-86",
@@ -6472,23 +6472,23 @@ export const chapters: Chapter[] = [
       {
         "id": "choice-1",
         "label": "①",
-        "text": "① 大村益次郎\n「平和は、平時の備えから生まれる。」",
-        "person": "大村益次郎",
-        "value": "大村益次郎の考え"
+        "text": "① 大村 益次郎\n「平和は、平時の備えから生まれる。」",
+        "person": "大村 益次郎",
+        "value": "大村 益次郎の考え"
       },
       {
         "id": "choice-2",
         "label": "②",
-        "text": "② 木戸孝允\n「信頼を失えば、どんな仕組みも長続きしない。」",
-        "person": "木戸孝允",
-        "value": "木戸孝允の考え"
+        "text": "② 木戸 孝允\n「信頼を失えば、どんな仕組みも長続きしない。」",
+        "person": "木戸 孝允",
+        "value": "木戸 孝允の考え"
       },
       {
         "id": "choice-3",
         "label": "③",
-        "text": "③ 山縣有朋\n「力ある者が国家を支える仕組みを作る。」",
-        "person": "山縣有朋",
-        "value": "山縣有朋の考え"
+        "text": "③ 山縣 有朋\n「力ある者が国家を支える仕組みを作る。」",
+        "person": "山縣 有朋",
+        "value": "山縣 有朋の考え"
       }
     ],
     "notes": []
@@ -6551,7 +6551,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-11",
         "kind": "scene",
-        "text": "【木戸孝允】"
+        "text": "【木戸 孝允】"
       },
       {
         "id": "p-12",
@@ -6571,7 +6571,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-15",
         "kind": "scene",
-        "text": "【大久保利通】"
+        "text": "【大久保 利通】"
       },
       {
         "id": "p-16",
@@ -6601,7 +6601,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-21",
         "kind": "scene",
-        "text": "【大久保利通】"
+        "text": "【大久保 利通】"
       },
       {
         "id": "p-22",
@@ -6646,7 +6646,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-30",
         "kind": "scene",
-        "text": "【大久保利通】"
+        "text": "【大久保 利通】"
       },
       {
         "id": "p-31",
@@ -6671,7 +6671,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-35",
         "kind": "scene",
-        "text": "【木戸孝允】"
+        "text": "【木戸 孝允】"
       },
       {
         "id": "p-36",
@@ -6696,7 +6696,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-40",
         "kind": "scene",
-        "text": "【大久保利通】"
+        "text": "【大久保 利通】"
       },
       {
         "id": "p-41",
@@ -6831,7 +6831,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-67",
         "kind": "scene",
-        "text": "【木戸孝允】"
+        "text": "【木戸 孝允】"
       },
       {
         "id": "p-68",
@@ -6916,22 +6916,22 @@ export const chapters: Chapter[] = [
         "id": "choice-1",
         "label": "①",
         "text": "① 改革は、一気に進める。",
-        "value": "大久保利通の考え",
-        "person": "大久保利通"
+        "value": "大久保 利通の考え",
+        "person": "大久保 利通"
       },
       {
         "id": "choice-2",
         "label": "②",
         "text": "② 改革は、人の理解を得ながら進める。",
-        "value": "木戸孝允の考え",
-        "person": "木戸孝允"
+        "value": "木戸 孝允の考え",
+        "person": "木戸 孝允"
       },
       {
         "id": "choice-3",
         "label": "③",
         "text": "③ 改革は、制度を整えてこそ成功する。",
-        "value": "江藤新平の考え",
-        "person": "江藤新平"
+        "value": "江藤 新平の考え",
+        "person": "江藤 新平"
       }
     ],
     "notes": [],
@@ -6965,12 +6965,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-5",
         "kind": "narration",
-        "text": "岩倉使節団が外国を巡っている間、留守を預かった政府は、西郷隆盛を朝鮮へ使節として送る方針を決めていた。"
+        "text": "岩倉使節団が外国を巡っている間、留守を預かった政府は、西郷 隆盛を朝鮮へ使節として送る方針を決めていた。"
       },
       {
         "id": "p-6",
         "kind": "narration",
-        "text": "だが、岩倉具視や大久保 利通（おおくぼ としみち／薩摩藩士）たちが帰国すると、その決定に異論が唱えられた。"
+        "text": "だが、岩倉 具視や大久保 利通（おおくぼ としみち／薩摩藩士）たちが帰国すると、その決定に異論が唱えられた。"
       },
       {
         "id": "p-7",
@@ -7000,7 +7000,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-12",
         "kind": "narration",
-        "text": "その奥には、太政大臣・三条実美（さんじょう さねとみ）と、右大臣・岩倉具視（いわくら ともみ）が座っている。"
+        "text": "その奥には、太政大臣・三条 実美（さんじょう さねとみ）と、右大臣・岩倉 具視（いわくら ともみ）が座っている。"
       },
       {
         "id": "p-13",
@@ -7011,61 +7011,61 @@ export const chapters: Chapter[] = [
         "id": "p-14",
         "kind": "dialogue",
         "text": "「村瀬。」",
-        "speaker": "三条実美"
+        "speaker": "三条 実美"
       },
       {
         "id": "p-15",
         "kind": "dialogue",
         "text": "「そなたにも聞いてもらいたい、もはや、簡単に決められる話ではない。」",
-        "speaker": "三条実美"
+        "speaker": "三条 実美"
       },
       {
         "id": "p-16",
         "kind": "dialogue",
         "text": "「難しく考えることはなか、政府は、おいを朝鮮へ送ると決めた。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-17",
         "kind": "dialogue",
         "text": "「ならば。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-18",
         "kind": "dialogue",
         "text": "「決めた通りに進めればよか。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-19",
         "kind": "dialogue",
         "text": "「西郷さん、状況が変われば、決定も見直さねばならん。」",
-        "speaker": "大久保利通"
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-20",
         "kind": "dialogue",
         "text": "「外国を見て分かった、今の日本は、まだ外へ力を向けられる国ではない。」",
-        "speaker": "大久保利通"
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-21",
         "kind": "dialogue",
         "text": "「産業も、軍も、財政も整っておらん、今、優先すべきは、国内の改革です。」",
-        "speaker": "大久保利通"
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-22",
         "kind": "dialogue",
         "text": "「おいは、戦をしに行くのではなか！一人で参り、誠を尽くして話をしてきもす。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-23",
         "kind": "dialogue",
         "text": "「国と国の間に問題があっとなら、誰かが向き合わにゃならん。おいは、その役目を引き受ける。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-24",
@@ -7081,31 +7081,31 @@ export const chapters: Chapter[] = [
         "id": "p-26",
         "kind": "dialogue",
         "text": "「西郷、そなたが命を懸けることは分かっておる。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-27",
         "kind": "dialogue",
         "text": "「だが。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-28",
         "kind": "dialogue",
         "text": "「そなた一人の命では済まぬかもしれん。使節が害されれば、国は黙っておれぬ。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-29",
         "kind": "dialogue",
         "text": "「その先に戦が起これば、多くの者が命を失う。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-30",
         "kind": "dialogue",
         "text": "「じゃからこそ、おい一人が参りもす！何もせずに、相手の態度だけを責めることはできもはん。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-31",
@@ -7116,13 +7116,13 @@ export const chapters: Chapter[] = [
         "id": "p-32",
         "kind": "dialogue",
         "text": "「覚悟があれば、何をしてもよいわけではない！国の力には限りがある。」",
-        "speaker": "大久保利通"
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-33",
         "kind": "dialogue",
         "text": "「今、外へ向ければ、国内の改革が遅れる。国家の責任者は、やりたいことではなく、今、最も必要なことを選ばねばならん。」",
-        "speaker": "大久保利通"
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-34",
@@ -7133,37 +7133,37 @@ export const chapters: Chapter[] = [
         "id": "p-35",
         "kind": "dialogue",
         "text": "「私は、お二人とは違うところを問題にしています。政府はすでに、西郷さんを使節として送る方針を決めました。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-36",
         "kind": "dialogue",
         "text": "「それを、使節団が帰ってきたからといって、簡単に覆してよいのでしょうか。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-37",
         "kind": "dialogue",
         "text": "「木戸さん、誤った決定なら、変えねばならん。」",
-        "speaker": "大久保利通"
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-38",
         "kind": "dialogue",
         "text": "「では、政府の決定とは何ですか、その場にいなかった者が戻り、事情が変わったと言えば、何度でも覆せるのですか。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-39",
         "kind": "dialogue",
         "text": "「それでは、誰も政府の言葉を信じなくなります。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-40",
         "kind": "dialogue",
         "text": "「木戸さんの言う通りじゃ、約束とは、都合が悪くなった時にこそ守るものではなかですか。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-41",
@@ -7174,13 +7174,13 @@ export const chapters: Chapter[] = [
         "id": "p-42",
         "kind": "dialogue",
         "text": "「西郷さん、私は、あなたを朝鮮へ送るべきだと言っているのではありません。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-43",
         "kind": "dialogue",
         "text": "「あなたほど誠実な方を、私は知りません。だからこそ、あなたを朝鮮へ送りたくないのです。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-44",
@@ -7191,43 +7191,43 @@ export const chapters: Chapter[] = [
         "id": "p-45",
         "kind": "dialogue",
         "text": "「もし、あなたが命を落とせば、日本は、あなた一人を失うだけでは済みません。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-46",
         "kind": "dialogue",
         "text": "「薩摩も、政府も、国そのものも揺らぎます。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-47",
         "kind": "dialogue",
         "text": "「決定を変えるなら、誰が、何を根拠に、どのような手続で変えるのか。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-48",
         "kind": "dialogue",
         "text": "「それを明らかにすべきです。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
         "text": "「木戸さん。」",
-        "speaker": "大久保利通"
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-50",
         "kind": "dialogue",
         "text": "「私は、西郷さんだから反対しているのではない。」",
-        "speaker": "大久保利通"
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-51",
         "kind": "dialogue",
         "text": "「誰であっても反対する。」",
-        "speaker": "大久保利通"
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-52",
@@ -7238,19 +7238,19 @@ export const chapters: Chapter[] = [
         "id": "p-53",
         "kind": "dialogue",
         "text": "「それが、大久保らしか。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-54",
         "kind": "dialogue",
         "text": "「国は、一人の覚悟だけでも、一人の判断だけでも動かせません。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-55",
         "kind": "dialogue",
         "text": "「決め方が揺らげば、政府そのものが揺らぎます。」",
-        "speaker": "木戸孝允"
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-56",
@@ -7261,31 +7261,31 @@ export const chapters: Chapter[] = [
         "id": "p-57",
         "kind": "dialogue",
         "text": "「西郷の覚悟も分かる。」",
-        "speaker": "三条実美"
+        "speaker": "三条 実美"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
         "text": "「大久保の言う国の事情も分かる。」",
-        "speaker": "三条実美"
+        "speaker": "三条 実美"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
         "text": "「木戸の言う政府の道理も分かる。」",
-        "speaker": "三条実美"
+        "speaker": "三条 実美"
       },
       {
         "id": "p-60",
         "kind": "dialogue",
         "text": "「皆、国を思っておる。」",
-        "speaker": "三条実美"
+        "speaker": "三条 実美"
       },
       {
         "id": "p-61",
         "kind": "dialogue",
         "text": "「それなのに、なぜ一つの答えにならぬのだ……。」",
-        "speaker": "三条実美"
+        "speaker": "三条 実美"
       },
       {
         "id": "p-62",
@@ -7296,25 +7296,25 @@ export const chapters: Chapter[] = [
         "id": "p-63",
         "kind": "dialogue",
         "text": "「三条殿。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-64",
         "kind": "dialogue",
         "text": "「少しお休みください。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-65",
         "kind": "dialogue",
         "text": "「休めば、答えが出るのか。」",
-        "speaker": "三条実美"
+        "speaker": "三条 実美"
       },
       {
         "id": "p-66",
         "kind": "dialogue",
         "text": "「どちらを選んでも、誰かの信義を傷つけ、国に大きな傷を残す。」",
-        "speaker": "三条実美"
+        "speaker": "三条 実美"
       },
       {
         "id": "p-67",
@@ -7330,25 +7330,25 @@ export const chapters: Chapter[] = [
         "id": "p-69",
         "kind": "dialogue",
         "text": "「同志とは、同じ考えを持つ者ではない。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-70",
         "kind": "dialogue",
         "text": "「違う考えであっても、同じ国を思える者じゃ。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-71",
         "kind": "dialogue",
         "text": "「だが。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-72",
         "kind": "dialogue",
         "text": "「決断する者は、すべての意見を理解したうえで、最後には一つを選ばねばならぬ。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-73",
@@ -7359,25 +7359,25 @@ export const chapters: Chapter[] = [
         "id": "p-74",
         "kind": "dialogue",
         "text": "「村瀬。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-75",
         "kind": "dialogue",
         "text": "「そなたの考えは、一度聞いてみる価値がある。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-76",
         "kind": "dialogue",
         "text": "「そなたなら、何を最も大切にする。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-77",
         "kind": "dialogue",
         "text": "「そなたの意見も聞かせてくれないか。」",
-        "speaker": "岩倉具視"
+        "speaker": "岩倉 具視"
       }
     ],
     "endingPassages": [
@@ -7394,7 +7394,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-3",
         "kind": "narration",
-        "text": "西郷隆盛は政府を去り、"
+        "text": "西郷 隆盛は政府を去り、"
       },
       {
         "id": "e-4",
@@ -7477,22 +7477,22 @@ export const chapters: Chapter[] = [
         "id": "choice-1",
         "label": "①",
         "text": "① 国の信義を守り、自ら責任を引き受ける。",
-        "person": "西郷隆盛",
-        "value": "西郷隆盛の考え"
+        "person": "西郷 隆盛",
+        "value": "西郷 隆盛の考え"
       },
       {
         "id": "choice-2",
         "label": "②",
         "text": "② 状況に応じて決定を見直し、国内改革を優先する。",
-        "person": "大久保利通",
-        "value": "大久保利通の考え"
+        "person": "大久保 利通",
+        "value": "大久保 利通の考え"
       },
       {
         "id": "choice-3",
         "label": "③",
         "text": "③ 決定を変えるなら、その根拠と手続を明確にする。",
-        "person": "木戸孝允",
-        "value": "木戸孝允の考え"
+        "person": "木戸 孝允",
+        "value": "木戸 孝允の考え"
       }
     ],
     "notes": [],
@@ -7531,7 +7531,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-6",
         "kind": "narration",
-        "text": "その頃、西郷隆盛もまた政府を離れ、薩摩で若者たちの教育に力を注いでいると聞いていた。"
+        "text": "その頃、西郷 隆盛もまた政府を離れ、薩摩で若者たちの教育に力を注いでいると聞いていた。"
       },
       {
         "id": "p-7",
@@ -7614,132 +7614,132 @@ export const chapters: Chapter[] = [
       {
         "id": "p-22",
         "kind": "scene",
-        "text": "【桐野利秋】"
+        "text": "【桐野 利秋】"
       },
       {
         "id": "p-23",
         "kind": "dialogue",
         "text": "「西郷先生！」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-24",
         "kind": "dialogue",
         "text": "「若い者は、戦がしたいわけじゃありもはん。」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-25",
         "kind": "dialogue",
         "text": "「先生を信じ、先生の教えを信じ、ここまでついて来た者たちでごわす。」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-26",
         "kind": "dialogue",
         "text": "「その者たちが、賊のように扱われ、黙って見ちょれと言うのですか。」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-27",
         "kind": "dialogue",
         "text": "「先生が背を向ければ、若い者は行き場を失います。」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-28",
         "kind": "dialogue",
         "text": "「私は戦をしたいのではありもはん。」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-29",
         "kind": "dialogue",
         "text": "「先生を信じて集まった者たちを、見捨てたくないだけです！」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-30",
         "kind": "scene",
-        "text": "【村田新八】"
+        "text": "【村田 新八】"
       },
       {
         "id": "p-31",
         "kind": "dialogue",
         "text": "「桐野どん、気持ちは分かります。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-32",
         "kind": "dialogue",
         "text": "「じゃっどん。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-33",
         "kind": "dialogue",
         "text": "「その怒りのまま動けば、政府の思うつぼです。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-34",
         "kind": "dialogue",
         "text": "「武器庫を襲うた者は、一人ずつ政府へ差し出します。事情を説明し。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-35",
         "kind": "dialogue",
         "text": "「先生には関わりがなかことを伝えたい。政府へ嘆願しもす。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-36",
         "kind": "dialogue",
         "text": "「それしか道はなか。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-37",
         "kind": "dialogue",
         "text": "「村田どん、若い者だけ罪人にするのですか！」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-38",
         "kind": "dialogue",
         "text": "「先生を信じた者だけに、責任を負わせるのですか！」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-39",
         "kind": "dialogue",
         "text": "「それでは、先生は何のために、若い者を導いてこられたのでごわす。」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-40",
         "kind": "dialogue",
         "text": "「違います。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-41",
         "kind": "dialogue",
         "text": "「先生を守るためです。ここで戦えば。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-42",
         "kind": "dialogue",
         "text": "「先生まで逆賊になります。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-43",
         "kind": "dialogue",
         "text": "「おいは、先生だけは守りたか。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-44",
@@ -7760,109 +7760,109 @@ export const chapters: Chapter[] = [
         "id": "p-47",
         "kind": "dialogue",
         "text": "「何が違うのです。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-48",
         "kind": "dialogue",
         "text": "「差し出す、嘆願する。」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
         "text": "「その時点で、政府の思うつぼじゃ。」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-50",
         "kind": "dialogue",
         "text": "「政府は、薩摩へ手を出す口実を探しちょいもす。」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-51",
         "kind": "dialogue",
         "text": "「差し出しても、嘆願しても、次の理由を作るだけじゃ。」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-52",
         "kind": "dialogue",
         "text": "「今。」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-53",
         "kind": "dialogue",
         "text": "「動いた方が負けじゃ！」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-54",
         "kind": "dialogue",
         "text": "「では、何もせんと言われるのですか。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-55",
         "kind": "dialogue",
         "text": "「そうじゃ。」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-56",
         "kind": "dialogue",
         "text": "「今は何もせんでよか。」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-57",
         "kind": "dialogue",
         "text": "「薩摩がじっとしちょればよか。」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
         "text": "「政府も、薩摩を敵に回す覚悟はまだできちょらん！」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
         "text": "「若い者が捕まってもですか。」",
-        "speaker": "村田新八"
+        "speaker": "村田 新八"
       },
       {
         "id": "p-60",
         "kind": "dialogue",
         "text": "「薩摩全部が滅ぶよりは、まだましじゃ。」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-61",
         "kind": "dialogue",
         "text": "「大山どん。」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-62",
         "kind": "dialogue",
         "text": "「若い者を見捨てろと言われるのですか！」",
-        "speaker": "桐野利秋"
+        "speaker": "桐野 利秋"
       },
       {
         "id": "p-63",
         "kind": "dialogue",
         "text": "「違う。」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-64",
         "kind": "dialogue",
         "text": "「薩摩を守れと言うちょる。」",
-        "speaker": "大山綱良"
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-65",
@@ -7903,19 +7903,19 @@ export const chapters: Chapter[] = [
         "id": "p-72",
         "kind": "dialogue",
         "text": "「……。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-73",
         "kind": "dialogue",
         "text": "「少し、時をくいやんせ。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-74",
         "kind": "dialogue",
         "text": "「今日は、ここまででよか。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-75",
@@ -7946,13 +7946,13 @@ export const chapters: Chapter[] = [
         "id": "p-80",
         "kind": "dialogue",
         "text": "「村瀬どん。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-81",
         "kind": "dialogue",
         "text": "「付き合わせてしもうたな。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-82",
@@ -7963,43 +7963,43 @@ export const chapters: Chapter[] = [
         "id": "p-83",
         "kind": "dialogue",
         "text": "「桐野どんにも理がある。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-84",
         "kind": "dialogue",
         "text": "「村田どんにも理がある。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-85",
         "kind": "dialogue",
         "text": "「大山どんにも理がある。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-86",
         "kind": "dialogue",
         "text": "「皆。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-87",
         "kind": "dialogue",
         "text": "「薩摩を思うちょる。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-88",
         "kind": "dialogue",
         "text": "「じゃっどん。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-89",
         "kind": "dialogue",
         "text": "「最後に決めるんは、おいじゃ。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-90",
@@ -8010,25 +8010,25 @@ export const chapters: Chapter[] = [
         "id": "p-91",
         "kind": "dialogue",
         "text": "「村瀬どん。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-92",
         "kind": "dialogue",
         "text": "「おはんなら。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-93",
         "kind": "dialogue",
         "text": "「どうする。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       },
       {
         "id": "p-94",
         "kind": "dialogue",
         "text": "「おはんの考えを、聞かせてもらえんか。」",
-        "speaker": "西郷隆盛"
+        "speaker": "西郷 隆盛"
       }
     ],
     "endingPassages": [
@@ -8045,7 +8045,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-3",
         "kind": "narration",
-        "text": "西郷隆盛は城山で倒れ、"
+        "text": "西郷 隆盛は城山で倒れ、"
       },
       {
         "id": "e-4",
@@ -8055,7 +8055,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-5",
         "kind": "narration",
-        "text": "村瀬新之助は、薩摩を後にすると、"
+        "text": "村瀬 新之助は、薩摩を後にすると、"
       },
       {
         "id": "e-6",
@@ -8115,47 +8115,47 @@ export const chapters: Chapter[] = [
       {
         "id": "e-17",
         "kind": "narration",
-        "text": "高杉晋作。"
+        "text": "高杉 晋作。"
       },
       {
         "id": "e-18",
         "kind": "narration",
-        "text": "久坂玄瑞。"
+        "text": "久坂 玄瑞。"
       },
       {
         "id": "e-19",
         "kind": "narration",
-        "text": "木戸孝允。"
+        "text": "木戸 孝允。"
       },
       {
         "id": "e-20",
         "kind": "narration",
-        "text": "大村益次郎。"
+        "text": "大村 益次郎。"
       },
       {
         "id": "e-21",
         "kind": "narration",
-        "text": "山県有朋。"
+        "text": "山県 有朋。"
       },
       {
         "id": "e-22",
         "kind": "narration",
-        "text": "大久保利通。"
+        "text": "大久保 利通。"
       },
       {
         "id": "e-23",
         "kind": "narration",
-        "text": "西郷隆盛。"
+        "text": "西郷 隆盛。"
       },
       {
         "id": "e-24",
         "kind": "narration",
-        "text": "坂本龍馬。"
+        "text": "坂本 龍馬。"
       },
       {
         "id": "e-25",
         "kind": "narration",
-        "text": "勝海舟。"
+        "text": "勝 海舟。"
       },
       {
         "id": "e-26",
@@ -8230,7 +8230,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-40",
         "kind": "narration",
-        "text": "村瀬新之助が歴史の表舞台に現れることは、二度となかった。"
+        "text": "村瀬 新之助が歴史の表舞台に現れることは、二度となかった。"
       },
       {
         "id": "e-41",
@@ -8262,23 +8262,23 @@ export const chapters: Chapter[] = [
       {
         "id": "choice-1",
         "label": "①",
-        "text": "① 桐野利秋\n仲間への責任を果たす",
-        "person": "桐野利秋",
-        "value": "桐野利秋の考え"
+        "text": "① 桐野 利秋\n仲間への責任を果たす",
+        "person": "桐野 利秋",
+        "value": "桐野 利秋の考え"
       },
       {
         "id": "choice-2",
         "label": "②",
-        "text": "② 村田新八\n法と規律を守る責任を果たす",
-        "person": "村田新八",
-        "value": "村田新八の考え"
+        "text": "② 村田 新八\n法と規律を守る責任を果たす",
+        "person": "村田 新八",
+        "value": "村田 新八の考え"
       },
       {
         "id": "choice-3",
         "label": "③",
-        "text": "③ 大山綱良\n今は耐え、薩摩を守る",
-        "person": "大山綱良",
-        "value": "大山綱良の考え"
+        "text": "③ 大山 綱良\n今は耐え、薩摩を守る",
+        "person": "大山 綱良",
+        "value": "大山 綱良の考え"
       }
     ],
     "notes": [],

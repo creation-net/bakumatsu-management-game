@@ -122,6 +122,7 @@ button:focus-visible {
 }
 
 .text-button {
+  width: 174px;
   padding: 0 14px;
 }
 
@@ -329,6 +330,11 @@ h3 {
   max-width: 100%;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.title-actions .primary-button,
+.title-actions .secondary-button {
+  width: 146px;
 }
 
 .progress-note {
@@ -991,6 +997,7 @@ h3 {
   }
 
   .text-button {
+    width: 100%;
     min-width: 0;
     min-height: 42px;
     padding: 0 8px;

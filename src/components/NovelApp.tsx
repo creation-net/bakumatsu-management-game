@@ -73,6 +73,12 @@ export function NovelApp() {
     }
 
     if (mode === "start") {
+      const hasSavedProgress =
+        Object.keys(progress.choices).length > 0 || progress.completedChapterIds.length > 0;
+      if (hasSavedProgress && !window.confirm("これまでの回答をリセットしますがよいですか？")) {
+        return;
+      }
+
       updateProgress({
         ...initialProgress,
         currentChapterId: 1,
@@ -199,7 +205,6 @@ export function NovelApp() {
           hasChapters={chapters.length > 0}
           onStart={() => startStory("start")}
           onContinue={() => startStory("continue")}
-          onIndex={() => setScreen("index")}
         />
       )}
 
@@ -241,13 +246,11 @@ function TitleScreen({
   hasChapters,
   onStart,
   onContinue,
-  onIndex,
 }: {
   completedCount: number;
   hasChapters: boolean;
   onStart: () => void;
   onContinue: () => void;
-  onIndex: () => void;
 }) {
   return (
     <section className="title-screen scene-frame title-art">
@@ -258,9 +261,9 @@ function TitleScreen({
           <span>経営資質診断</span>
         </h1>
         <p className="title-theme">幕末・明治維新編</p>
-        <p className="subtitle">一人の長州藩士・村瀬新之助とたどる十五の決断</p>
+        <p className="subtitle">一人の長州藩士・村瀬 新之助とたどる十五の決断</p>
         <p className="lead">
-          幕末から明治維新へ。架空の長州藩士・村瀬新之助の視点から、
+          幕末から明治維新へ。架空の長州藩士・村瀬 新之助（むらせ しんのすけ）の視点から、
           <br />
           歴史の分岐点に立つ人物たちの決断をたどり、
           <br />
@@ -279,9 +282,6 @@ function TitleScreen({
         </button>
         <button className="secondary-button" type="button" onClick={onContinue}>
           続きから
-        </button>
-        <button className="secondary-button" type="button" onClick={onIndex}>
-          章の一覧表
         </button>
       </div>
 
@@ -426,7 +426,7 @@ function getChoiceQuestion(chapterId: number) {
   }
 
   if (chapterId === 10) {
-    return "徳川慶喜は、何を選ぶか";
+    return "徳川 慶喜は、何を選ぶか";
   }
 
   return "村瀬は、何を選ぶか";

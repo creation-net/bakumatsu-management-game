@@ -100,12 +100,13 @@ function findDiagnosisCharacterId(...values: Array<string | undefined>): Diagnos
       continue;
     }
 
-    const direct = characterAliases[value];
+    const normalizedValue = value.replace(/\s/g, "");
+    const direct = characterAliases[normalizedValue];
     if (direct) {
       return direct;
     }
 
-    const matchedAlias = Object.entries(characterAliases).find(([name]) => value.includes(name));
+    const matchedAlias = Object.entries(characterAliases).find(([name]) => normalizedValue.includes(name));
     if (matchedAlias) {
       return matchedAlias[1];
     }
