@@ -644,9 +644,9 @@ h3 {
 .chapter-row {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(150px, auto);
-  align-items: center;
-  gap: 18px;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: stretch;
+  gap: 14px;
   width: 100%;
   max-width: 100%;
   min-width: 0;
@@ -731,13 +731,16 @@ h3 {
 }
 
 .chapter-row-status {
-  display: grid;
-  justify-items: end;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   gap: 10px;
+  width: 100%;
 }
 
 .chapter-row-status em {
-  justify-self: end;
+  flex: 0 0 auto;
   min-width: 68px;
   padding: 4px 9px;
   color: var(--ink-strong);
@@ -768,6 +771,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 8px;
+  margin-left: auto;
 }
 
 .small-button {
@@ -1095,25 +1099,24 @@ h3 {
   }
 
   .chapter-row {
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: stretch;
     gap: 12px;
     padding: 16px 0 16px 18px;
   }
 
   .chapter-row-status {
-    display: contents;
+    display: flex;
   }
 
   .chapter-row-status em {
-    grid-column: 1;
-    justify-self: start;
+    justify-self: auto;
   }
 
   .chapter-row-actions {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    align-self: center;
+    grid-column: auto;
+    grid-row: auto;
+    align-self: auto;
     justify-content: flex-end;
     width: auto;
   }
@@ -1161,8 +1164,8 @@ h3 {
   }
 
   .chapter-row {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 8px 10px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
     padding-left: 22px;
   }
 
@@ -1171,7 +1174,7 @@ h3 {
   }
 
   .chapter-row-actions {
-    grid-row: 1 / span 2;
+    grid-row: auto;
   }
 
   .small-button {
