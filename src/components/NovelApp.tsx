@@ -535,6 +535,13 @@ function ResultScreen({
           <p>{primary.summary}。</p>
         </section>
 
+        <section className="diagnosis-section" aria-label="補助的な特徴">
+          <h3>補助的に表れやすい特徴</h3>
+          <p className="diagnosis-combination">{secondary.name}</p>
+          <p className="diagnosis-type">{secondary.type}</p>
+          <p>{secondary.secondaryDescription}も、あなたの判断に表れやすい特徴です。</p>
+        </section>
+
         <section className="diagnosis-section" aria-label="得意な経営スタイル">
           <h3>あなたの得意な経営スタイル</h3>
           <p className="diagnosis-combination">
