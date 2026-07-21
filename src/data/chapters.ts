@@ -6106,7 +6106,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-67",
         "kind": "narration",
-        "text": "誰一人、自分のために話している者はいなかった。"
+        "text": "誰も、自分の利だけを語ってはいなかった。"
       },
       {
         "id": "p-68",
