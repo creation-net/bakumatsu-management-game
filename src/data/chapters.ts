@@ -1009,50 +1009,48 @@ export const chapters: Chapter[] = [
         "kind": "narration",
         "text": "議論は最後まで平行線だった。"
       },
-
-{
-        "id": "e-2",
-        "kind": "narration",
-        "text": "それでも。"
-      },
-{
-        "id": "e-2",
-        "kind": "narration",
-        "text": "誰一人、相手の志を否定する者はいなかった。"
-      },
-
       {
         "id": "e-3",
         "kind": "narration",
-        "text": "松陰が遺したものは、一つの答えではなかった。"
+        "text": "それでも。"
       },
       {
         "id": "e-4",
         "kind": "narration",
-        "text": "それぞれが考え、"
+        "text": "誰一人、相手の志を否定する者はいなかった。"
       },
       {
         "id": "e-5",
         "kind": "narration",
-        "text": "それぞれが歩み、"
+        "text": "松陰が遺したものは、一つの答えではなかった。"
       },
       {
         "id": "e-6",
         "kind": "narration",
-        "text": "それぞれのやり方で志を未来へつないでいくこと。"
+        "text": "それぞれが考え、"
       },
       {
         "id": "e-7",
+        "kind": "narration",
+        "text": "それぞれが歩み、"
+      },
+      {
+        "id": "e-8",
+        "kind": "narration",
+        "text": "それぞれのやり方で志を未来へつないでいくこと。"
+      },
+      {
+        "id": "e-9",
         "kind": "scene",
         "text": "（先生。）"
       },
       {
-        "id": "e-8",
+        "id": "e-10",
         "kind": "scene",
         "text": "（私は、私の道を歩きます。）"
       },
       {
-        "id": "e-9",
+        "id": "e-11",
         "kind": "narration",
         "text": "長州は、ここから動き始める。"
       }
@@ -5071,37 +5069,42 @@ export const chapters: Chapter[] = [
         "text": "廊下の奥から西郷 吉之助（さいごう きちのすけ／薩摩藩の中心人物）が歩いてくる。"
       },
       {
-        "id": "p-57",
+        "id": "p-56",
         "kind": "dialogue",
         "text": "「岩倉さま、まだ決まりもはんか。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-58",
+        "id": "p-57",
         "kind": "narration",
         "text": "岩倉は苦笑する。"
       },
       {
-        "id": "p-59",
+        "id": "p-58",
         "kind": "dialogue",
         "text": "「皆、正しいことを申す、だから決められん。」",
         "speaker": "岩倉 具視"
       },
       {
-        "id": "p-60",
+        "id": "p-59",
         "kind": "narration",
         "text": "西郷は静かに村瀬を見る。"
       },
       {
-        "id": "p-61",
+        "id": "p-60",
         "kind": "narration",
         "text": "そして腰の短刀にそっと手を添えた。"
       },
       {
-        "id": "p-62",
+        "id": "p-61",
         "kind": "dialogue",
         "text": "「あいくちが一本あればよか。」",
         "speaker": "西郷 吉之助"
+      },
+      {
+        "id": "p-62",
+        "kind": "narration",
+        "text": "あいくちとは、鍔のない短刀のことだ。"
       },
       {
         "id": "p-63",
@@ -5377,7 +5380,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-19",
         "kind": "dialogue",
-        "text": "「上様には、この大坂城にお残りいただきたい。上様がおられるからこそ、幕府軍を抑え、薩長とも交渉ができます。」",
+        "text": "「上様には、この大坂城にお残りいただきたい。上様がおられるからこそ、幕府軍が一つとなり、薩長とも交渉ができます。」」",
         "speaker": "勝 海舟"
       },
       {
