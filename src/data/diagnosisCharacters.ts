@@ -19,6 +19,7 @@ export type DiagnosisCharacter = {
   challenges: string[];
   secondaryDescription: string;
   recommendedPath: string;
+  cautionAdvice: string;
 };
 
 export const diagnosisCharacters: DiagnosisCharacter[] = [
@@ -31,6 +32,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     challenges: ["理想が先に立ち、現実の制約を見落とすことがある", "周囲に高い覚悟を求めすぎることがある"],
     secondaryDescription: "人の可能性を信じ、理念によって周囲を奮い立たせる力",
     recommendedPath: "事業の存在意義を言葉にし、新しい構想を示すことや、次の世代を担う人材を育てること",
+    cautionAdvice: "理想を大切にするほど、現場の条件や周囲との温度差が見えにくくなる場合があります。理念を示した後は、実現までの手順を具体化し、相手が無理なく動ける状態になっているかを確かめることが大切です。",
   },
   {
     id: "kusaka",
@@ -41,6 +43,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     challenges: ["信念が強いほど選択肢を狭めることがある", "状況の変化に合わせた軌道修正が遅れることがある"],
     secondaryDescription: "信念を貫き、困難な場面でも覚悟を示す力",
     recommendedPath: "難しい局面で判断基準を明確にし、事業の立て直しや重要な方針転換を先頭に立って進めること",
+    cautionAdvice: "信念が強いことは大きな支えになりますが、一つの考えに集中すると別の可能性が見えにくくなることがあります。決断の前に反対意見にも耳を傾け、状況が変わったときに方針を見直せる余地を残しておきましょう。",
   },
   {
     id: "takasugi",
@@ -51,6 +54,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     challenges: ["周囲がついてくる前に動きすぎることがある", "勢いが強いほど反発を招くことがある"],
     secondaryDescription: "前例にとらわれず、停滞した状況を動かす突破力",
     recommendedPath: "新規事業の立ち上げや事業転換など、従来の方法では前へ進めない課題に新しい道をつくること",
+    cautionAdvice: "新しい一手を急ぐと、周囲が目的を理解する前に計画だけが進んでしまうことがあります。動き出す前に、何を変えるのか、なぜ今なのかを共有し、協力する人がついてこられる速さを意識してください。",
   },
   {
     id: "kido",
@@ -61,6 +65,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     challenges: ["慎重になりすぎて決断が遅れることがある", "周囲への配慮から自分の考えを抑えることがある"],
     secondaryDescription: "状況を広く捉え、将来を見据えて物事の順序を組み立てる力",
     recommendedPath: "中長期の経営戦略や事業計画を描き、複雑な課題を整理して組織の進む順序を定めること",
+    cautionAdvice: "多くの状況を考慮できる一方で、検討を重ねるほど決断の時機を逃す場合があります。情報を集める期限と決断する日を先に定め、十分に考えた後は自分の方針を明確に伝えることが重要です。",
   },
   {
     id: "sakamoto",
@@ -71,6 +76,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     challenges: ["構想が広がりすぎて焦点がぼやけることがある", "調整相手が増えるほど実行が遅れることがある"],
     secondaryDescription: "立場の異なる人をつなぎ、協力関係を広げる力",
     recommendedPath: "他社との連携や部門横断のプロジェクトなど、異なる立場の人々を結んで新しい価値を生み出すこと",
+    cautionAdvice: "多くの人を巻き込めるからこそ、意見が広がりすぎて本来の目的が曖昧になることがあります。協力者を増やすときは、最終的に何を実現するのかを共有し、誰が決めて誰が実行するのかも明確にしましょう。",
   },
   {
     id: "omura",
@@ -81,6 +87,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     challenges: ["正しさを重視するあまり感情面への配慮が薄くなることがある", "周囲に冷たく見られることがある"],
     secondaryDescription: "感情に流されず、事実と仕組みから判断する力",
     recommendedPath: "業務改善やデジタル化、収益構造の見直しなど、事実を分析して仕組みから成果を高めること",
+    cautionAdvice: "合理的な判断が正しくても、関わる人の不安や納得感が置き去りになると実行は進みません。数字や仕組みを示すだけでなく、なぜ必要なのかを丁寧に説明し、現場の声を聞く時間も確保してください。",
   },
   {
     id: "saigo",
@@ -91,6 +98,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     challenges: ["人情を重んじるほど判断が重くなることがある", "期待を背負い込みすぎることがある"],
     secondaryDescription: "人の思いを受け止め、信頼によって周囲を動かす力",
     recommendedPath: "組織文化づくりや人材育成、後継者の支援など、人の信頼を土台に組織を一つにまとめること",
+    cautionAdvice: "人を大切にするほど、厳しい判断を後回しにしたり、周囲の期待を一人で背負ったりしやすくなります。相手への思いやりと経営上の判断を分けて考え、責任や負担を信頼できる人と共有することが大切です。",
   },
   {
     id: "okubo",
@@ -101,6 +109,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     challenges: ["実行を優先するほど周囲に厳しく映ることがある", "反発や孤立を招くことがある"],
     secondaryDescription: "構想を現実に落とし込み、粘り強く実行する力",
     recommendedPath: "組織改革や制度導入、重要プロジェクトなど、決めた方針を具体的な計画へ落とし込み完遂すること",
+    cautionAdvice: "成果を急ぐあまり、周囲には結論だけが伝わり、反発や孤立を招くことがあります。実行に移す前に目的と影響を説明し、途中で意見を受け取る機会を設けることで、速さと納得感を両立しやすくなります。",
   },
   {
     id: "katsu",
@@ -111,6 +120,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     challenges: ["強い主張をする人から弱腰に見られることがある", "妥協点を探すほど本音が伝わりにくいことがある"],
     secondaryDescription: "対立の中でも全体を見て、現実的な落としどころを探る力",
     recommendedPath: "利害の異なる関係者との交渉や組織統合など、対立を収めながら全体にとって納得できる着地点をつくること",
+    cautionAdvice: "全体の納得を求めるほど、自分が守りたい一線や決断の期限が曖昧になることがあります。交渉に入る前に譲れない条件を定め、調整を終える時期も明らかにしておくことが重要です。",
   },
   {
     id: "yamagata",
@@ -121,5 +131,6 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     challenges: ["統制を重んじるほど柔軟さを欠くことがある", "現場の自由度を狭めることがある"],
     secondaryDescription: "継続して動く組織や体制を整える力",
     recommendedPath: "事業の拡大に耐えられる組織設計や権限分担、ガバナンスやリスク管理の仕組みを整えること",
+    cautionAdvice: "組織を安定させようとするほど、規則が増え、現場の判断や新しい工夫を妨げることがあります。守るべき基準は明確にしつつ、現場に任せる範囲も定め、仕組みが目的になっていないか定期的に見直してください。",
   },
 ];

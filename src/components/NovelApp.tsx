@@ -605,18 +605,22 @@ function ResultScreen({
           </p>
           <div className="diagnosis-advice">
             <p>
-              あなたは、{primary.summary}。さらに、{secondary.secondaryDescription}も備えています。
+              あなたの経営スタイルは、{primary.type}を軸に、{secondary.type}の良さを取り入れる形です。
             </p>
             <p>
-              この二つを組み合わせると、{primary.strengths[0]}という持ち味を軸に、
-              {secondary.secondaryDescription}を加えた経営スタイルになります。
+              「{primary.strengths[0]}」という強みを、判断の中心に置くとよいでしょう。
+              そこに{secondary.secondaryDescription}を生かすことで、考えを周囲へ伝え、行動へつなげやすくなります。
             </p>
             <p>
-              これからの選択肢としては、{primary.recommendedPath}に力を注ぐ道が考えられます。
-              その際は、{secondary.secondaryDescription}を意識して行動に取り入れることで、
-              中心となる強みを補い、判断をより確かな成果へつなげやすくなるでしょう。
+              向いているのは、{primary.recommendedPath}です。
+              まず目的と進め方を周囲と共有し、小さな行動から確かめていくと、二つの強みを着実な成果へつなげられるでしょう。
             </p>
           </div>
+        </section>
+
+        <section className="diagnosis-section">
+          <h3>あなたが経営するうえで、気を付けたいこと</h3>
+          <p>{primary.cautionAdvice}</p>
         </section>
 
         <section className="diagnosis-section">
@@ -629,7 +633,7 @@ function ResultScreen({
         </section>
 
         <section className="diagnosis-section">
-          <h3>今後意識したいこと</h3>
+          <h3>課題点</h3>
           <ul className="diagnosis-list">
             {primary.challenges.slice(0, 2).map((item) => (
               <li key={item}>{item}</li>
