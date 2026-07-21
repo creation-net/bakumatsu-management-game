@@ -594,7 +594,6 @@ function ResultScreen({
 
         <article className="diagnosis-report">
           <header className="report-cover">
-            <p className="eyebrow">経営資質診断レポート</p>
             <h2>
               <span>幕末・明治維新</span>
               <span className="report-title-diagnosis">経営資質診断</span>
