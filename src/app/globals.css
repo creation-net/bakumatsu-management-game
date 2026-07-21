@@ -769,6 +769,117 @@ h3 {
   color: var(--muted);
 }
 
+.diagnosis-hero,
+.diagnosis-section {
+  margin: 0 0 28px;
+  padding: 22px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.diagnosis-hero {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.diagnosis-section.compact {
+  margin-bottom: 22px;
+}
+
+.diagnosis-section h3 {
+  margin: 0 0 14px;
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  letter-spacing: 0;
+}
+
+.diagnosis-hero p,
+.diagnosis-section p {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: clamp(1rem, 2vw, 1.08rem);
+  line-height: 2;
+}
+
+.diagnosis-name,
+.diagnosis-combination {
+  color: var(--ink-strong) !important;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 7vw, 3.8rem) !important;
+  font-weight: 800;
+  line-height: 1.2 !important;
+}
+
+.diagnosis-combination {
+  font-size: clamp(1.45rem, 4.8vw, 2.35rem) !important;
+}
+
+.diagnosis-type {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  padding: 6px 12px;
+  color: var(--gold) !important;
+  background: rgba(192, 160, 90, 0.08);
+  border: 1px solid rgba(192, 160, 90, 0.4);
+  font-family: var(--sans);
+  font-size: 1rem !important;
+  font-weight: 800;
+  line-height: 1.5 !important;
+}
+
+.diagnosis-list,
+.diagnosis-ranking {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.diagnosis-list {
+  display: grid;
+  gap: 10px;
+}
+
+.diagnosis-list li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--ink);
+  line-height: 1.8;
+}
+
+.diagnosis-list li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--gold);
+  content: "・";
+}
+
+.diagnosis-ranking {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.diagnosis-ranking li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  color: var(--ink);
+  border-bottom: 1px solid rgba(192, 160, 90, 0.16);
+  font-family: var(--sans);
+}
+
+.diagnosis-ranking small {
+  color: var(--muted);
+}
+
+.diagnosis-ranking strong {
+  color: var(--gold);
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;

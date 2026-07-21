@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { chapters } from "@/data/chapters";
+import { calculateDiagnosis } from "@/lib/diagnosis";
 import { initialProgress, loadProgress, resetProgress, saveProgress } from "@/lib/progress";
 import {
   getChapterImagePath,
@@ -519,21 +520,71 @@ function ResultScreen({
   progress: ReadingProgress;
   onIndex: () => void;
 }) {
-  const selectedCount = Object.keys(progress.choices).length;
+  const diagnosis = calculateDiagnosis(progress);
+  const { primary, secondary } = diagnosis;
 
   return (
     <section className="result-view scene-frame">
       <div className="reader-column">
-        <p className="eyebrow">仮診断</p>
-        <h2>タイプ診断</h2>
-        <p className="lead">
-          選択内容にもとづく意思決定タイプと学習フィードバックを、今後ここに表示します。
-        </p>
-        <p className="result-summary">
-          保存されている選択数: <strong>{selectedCount}</strong>
-        </p>
+        <p className="eyebrow">診断結果</p>
+        <h2>あなたに最も近い人物</h2>
+
+        <section className="diagnosis-hero" aria-label="最も近い人物">
+          <p className="diagnosis-name">{primary.name}</p>
+          <p className="diagnosis-type">{primary.type}</p>
+          <p>{primary.summary}。</p>
+        </section>
+
+        <section className="diagnosis-section" aria-label="得意な経営スタイル">
+          <h3>あなたの得意な経営スタイル</h3>
+          <p className="diagnosis-combination">
+            {primary.name} × {secondary.name}
+          </p>
+          <p className="diagnosis-type">
+            {primary.type} × {secondary.type}
+          </p>
+          <p>
+            あなたの中心にあるのは、{primary.name}のような{primary.summary}。
+            さらに、{secondary.name}のような{secondary.secondaryDescription}も備えています。
+          </p>
+        </section>
+
+        <section className="diagnosis-section">
+          <h3>強み</h3>
+          <ul className="diagnosis-list">
+            {[...primary.strengths, secondary.secondaryDescription].slice(0, 3).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="diagnosis-section">
+          <h3>今後意識したいこと</h3>
+          <ul className="diagnosis-list">
+            {primary.challenges.slice(0, 2).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="diagnosis-section compact">
+          <h3>得点順</h3>
+          <ol className="diagnosis-ranking">
+            {diagnosis.ranks.map((rank) => (
+              <li key={rank.character.id}>
+                <span>{rank.character.name}</span>
+                <small>{rank.character.type}</small>
+                <strong>{rank.score}点</strong>
+              </li>
+            ))}
+          </ol>
+          <p className="result-summary">
+            保存されている回答数: <strong>{diagnosis.selectedCount}</strong> / {chapters.length}
+          </p>
+        </section>
+
         <button className="primary-button" type="button" onClick={onIndex}>
-          章の一覧表を見る
+          進行確認を見る
         </button>
       </div>
     </section>
