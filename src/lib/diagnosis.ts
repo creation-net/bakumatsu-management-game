@@ -1,4 +1,5 @@
 import { diagnosisCharacters } from "@/data/diagnosisCharacters";
+import { diagnosisChoiceScores } from "@/data/diagnosisChoiceScores";
 import { chapters } from "@/data/chapters";
 import type { DiagnosisCharacter, DiagnosisCharacterId } from "@/data/diagnosisCharacters";
 import type { ReadingProgress } from "@/types/story";
@@ -46,8 +47,17 @@ export function calculateDiagnosis(progress: ReadingProgress): DiagnosisResult {
   chapters.forEach((chapter, index) => {
     const choiceId = progress.choices[chapter.id];
     const choice = chapter.choices.find((item) => item.id === choiceId);
-    const characterId = choice ? findDiagnosisCharacterId(choice.person, choice.value, choice.text) : undefined;
+    const scoreSet = diagnosisChoiceScores[chapter.id]?.[choiceId];
 
+    if (scoreSet) {
+      scoreSet.forEach(({ characterId, points }) => {
+        scores.set(characterId, (scores.get(characterId) ?? 0) + points);
+        lastSelectedOrder.set(characterId, index);
+      });
+      return;
+    }
+
+    const characterId = choice ? findDiagnosisCharacterId(choice.person, choice.value, choice.text) : undefined;
     if (!characterId) {
       return;
     }
