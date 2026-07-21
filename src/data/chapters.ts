@@ -2544,25 +2544,25 @@ export const chapters: Chapter[] = [
         "id": "p-56",
         "kind": "dialogue",
         "text": "「しかし。」",
-        "speaker": "村瀬"
+        "speaker": "周布 政之助 書状より"
       },
       {
         "id": "p-57",
         "kind": "dialogue",
         "text": "「未来まで差し出してはならない。」",
-        "speaker": "村瀬"
+        "speaker": "周布 政之助 書状より"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
         "text": "「長州には、再び立ち上がる日が来る。」",
-        "speaker": "村瀬"
+        "speaker": "周布 政之助 書状より"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
         "text": "「その日まで、知恵を尽くせ。」",
-        "speaker": "村瀬"
+        "speaker": "周布 政之助 書状より"
       },
       {
         "id": "p-60",
