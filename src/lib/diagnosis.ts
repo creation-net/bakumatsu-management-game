@@ -1,6 +1,5 @@
 import { diagnosisCharacters } from "@/data/diagnosisCharacters";
 import { diagnosisChoiceScores } from "@/data/diagnosisChoiceScores";
-import { diagnosisChoiceReflections } from "@/data/diagnosisChoiceReflections";
 import { chapters } from "@/data/chapters";
 import type { DiagnosisCharacter, DiagnosisCharacterId } from "@/data/diagnosisCharacters";
 import type { ReadingProgress } from "@/types/story";
@@ -35,7 +34,6 @@ export type DiagnosisResult = {
   secondary: DiagnosisCharacter;
   ranks: DiagnosisRank[];
   selectedCount: number;
-  influentialChoices: string[];
 };
 
 export function calculateDiagnosis(progress: ReadingProgress): DiagnosisResult {
@@ -87,60 +85,13 @@ export function calculateDiagnosis(progress: ReadingProgress): DiagnosisResult {
 
   const primary = ranks[0]?.character ?? diagnosisCharacters[0];
   const secondary = ranks.find((rank) => rank.character.id !== primary.id)?.character ?? diagnosisCharacters[1];
-  const influentialChoices = getInfluentialChoices(progress, primary.id, secondary.id);
 
   return {
     primary,
     secondary,
     ranks,
     selectedCount: Object.keys(progress.choices).length,
-    influentialChoices,
   };
-}
-
-function getInfluentialChoices(
-  progress: ReadingProgress,
-  primaryId: DiagnosisCharacterId,
-  secondaryId: DiagnosisCharacterId,
-): string[] {
-  const candidates = chapters.flatMap((chapter, index) => {
-    const choiceId = progress.choices[chapter.id];
-    if (!choiceId) {
-      return [];
-    }
-
-    const choice = chapter.choices.find((item) => item.id === choiceId);
-    const scoreSet = diagnosisChoiceScores[chapter.id]?.[choiceId] ?? [];
-    const primaryPoints = scoreSet.find((score) => score.characterId === primaryId)?.points ?? 0;
-    const secondaryPoints = scoreSet.find((score) => score.characterId === secondaryId)?.points ?? 0;
-    const strongestPositive = Math.max(0, ...scoreSet.map((score) => score.points));
-    const reflection = diagnosisChoiceReflections[chapter.id]?.[choiceId]
-      ?? sanitizeChoiceText(choice?.text ?? "");
-
-    return [{ reflection, primaryPoints, secondaryPoints, strongestPositive, index }];
-  });
-
-  return candidates
-    .filter((candidate) => candidate.reflection)
-    .sort((a, b) => (
-      b.primaryPoints - a.primaryPoints
-      || b.secondaryPoints - a.secondaryPoints
-      || b.strongestPositive - a.strongestPositive
-      || b.index - a.index
-    ))
-    .filter((candidate, index, items) => (
-      items.findIndex((item) => item.reflection === candidate.reflection) === index
-    ))
-    .slice(0, 5)
-    .map((candidate) => candidate.reflection);
-}
-
-function sanitizeChoiceText(text: string): string {
-  return text
-    .replace(/^[①②③]\s*/, "")
-    .replace(/[「」]/g, "")
-    .replace(/\\n/g, " ")
-    .trim();
 }
 
 function findDiagnosisCharacterId(...values: Array<string | undefined>): DiagnosisCharacterId | undefined {

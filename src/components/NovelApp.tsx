@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { chapters } from "@/data/chapters";
+import { getDiagnosisCombinationComments } from "@/data/diagnosisCombinationComments";
 import { calculateDiagnosis } from "@/lib/diagnosis";
 import { initialProgress, loadProgress, resetProgress, saveProgress } from "@/lib/progress";
 import {
@@ -577,6 +578,7 @@ function ResultScreen({
   const diagnosis = calculateDiagnosis(progress);
   const { primary, secondary } = diagnosis;
   const diagnosisDate = formatDiagnosisDate(progress.updatedAt);
+  const combinationComments = getDiagnosisCombinationComments(primary.id, secondary.id);
 
   return (
     <section className="result-view scene-frame">
@@ -592,10 +594,6 @@ function ResultScreen({
 
         <article className="diagnosis-report">
           <header className="report-cover">
-            <div className="report-logo" aria-label="幕末維新ロゴ">
-              <span>幕末</span>
-              <span>維新</span>
-            </div>
             <p className="eyebrow">経営資質診断レポート</p>
             <h2>
               <span>幕末・明治維新</span>
@@ -645,19 +643,7 @@ function ResultScreen({
               <p className="diagnosis-combination">{primary.type} × {secondary.type}</p>
               <p className="diagnosis-combination-people">{primary.name} × {secondary.name}</p>
               <div className="diagnosis-advice">
-                <p>
-                  あなたは、{primary.combinationAction}ことを土台にしながら、
-                  {secondary.combinationAction}こともできます。
-                  どちらか一方に偏らず、場面に応じて二つの視点を使い分けられることが、この組み合わせならではの持ち味です。
-                </p>
-                <p>
-                  この持ち味を経営の判断に生かすことで、状況に応じて判断の起点を切り替え、
-                  考えを具体的な行動へつなげやすくなります。
-                </p>
-                <p>
-                  その素質を十分に生かせば、{primary.recommendedPath}を通じて、
-                  事業や組織をより良い方向へ導き、周囲とともに持続的な成果を生み出せる可能性があります。
-                </p>
+                {combinationComments.map((comment) => <p key={comment}>{comment}</p>)}
               </div>
             </section>
 
@@ -695,12 +681,6 @@ function ResultScreen({
               </ul>
             </section>
 
-            <section className="diagnosis-section report-section">
-              <h2>診断を形づくった選択</h2>
-              <ul className="diagnosis-list diagnosis-reflections">
-                {diagnosis.influentialChoices.map((item) => <li key={item}>{item}</li>)}
-              </ul>
-            </section>
           </div>
 
           <footer className="report-footer">

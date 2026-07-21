@@ -1018,25 +1018,6 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
-.report-logo {
-  display: grid;
-  place-content: center;
-  width: 92px;
-  aspect-ratio: 1;
-  margin-bottom: 34px;
-  color: var(--gold);
-  border: 1px solid rgba(192, 160, 90, 0.66);
-  font-family: var(--serif);
-  font-size: 1.25rem;
-  font-weight: 800;
-  line-height: 1.25;
-  text-align: center;
-}
-
-.report-logo span {
-  display: block;
-}
-
 .report-cover h2 {
   max-width: 12em;
   font-size: clamp(2.5rem, 7vw, 5rem);
@@ -1135,13 +1116,8 @@ h3 {
   border-bottom: 1px solid rgba(192, 160, 90, 0.28);
 }
 
-.diagnosis-tendencies,
-.diagnosis-reflections {
+.diagnosis-tendencies {
   gap: 12px;
-}
-
-.diagnosis-reflections li {
-  color: var(--ink-strong);
 }
 
 .report-footer {
@@ -1369,12 +1345,6 @@ h3 {
     padding: 42px 20px 48px;
   }
 
-  .report-logo {
-    width: 76px;
-    margin-bottom: 26px;
-    font-size: 1.05rem;
-  }
-
   .report-cover h2 {
     font-size: clamp(1.85rem, 8.5vw, 2.7rem);
     line-height: 1.22;
@@ -1518,8 +1488,7 @@ h3 {
   .report-section .diagnosis-heading,
   .diagnosis-type-title,
   .diagnosis-combination,
-  .diagnosis-person strong,
-  .diagnosis-reflections li {
+  .diagnosis-person strong {
     color: #211d18 !important;
   }
 

@@ -10,7 +10,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "嘉永6年（1853年）。"
+        "text": "嘉永六年（1853年）。"
       },
       {
         "id": "p-2",
@@ -640,7 +640,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "安政6年（1859年）。"
+        "text": "安政六年（1859年）。"
       },
       {
         "id": "p-2",
@@ -1089,7 +1089,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "安政6年（1859年）。"
+        "text": "安政六年（1859年）。"
       },
       {
         "id": "p-2",
@@ -1664,7 +1664,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "文久3年（1863年）。"
+        "text": "文久三年（1863年）。"
       },
       {
         "id": "p-2",
@@ -2796,7 +2796,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "元治2年（1865年）。"
+        "text": "元治二年（1865年）。"
       },
       {
         "id": "p-2",
@@ -4269,75 +4269,80 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "禁門の変。"
+        "text": "慶応二年（1866年）。"
       },
       {
         "id": "p-2",
         "kind": "narration",
-        "text": "京都で多くの仲間を失った。"
+        "text": "禁門の変。"
       },
       {
         "id": "p-3",
         "kind": "narration",
-        "text": "第一次長州征討。"
+        "text": "京都で多くの仲間を失った。"
       },
       {
         "id": "p-4",
         "kind": "narration",
-        "text": "戦うことすら許されず、長州は屈辱に耐えた。"
+        "text": "第一次長州征討。"
       },
       {
         "id": "p-5",
         "kind": "narration",
-        "text": "功山寺挙兵。"
+        "text": "戦うことすら許されず、長州は屈辱に耐えた。"
       },
       {
         "id": "p-6",
         "kind": "narration",
-        "text": "長州は再び立ち上がった。"
+        "text": "功山寺挙兵。"
       },
       {
         "id": "p-7",
         "kind": "narration",
-        "text": "そして今。"
+        "text": "長州は再び立ち上がった。"
       },
       {
         "id": "p-8",
         "kind": "narration",
-        "text": "幕府との最後の決戦が始まろうとしていた。"
+        "text": "そして今。"
       },
       {
         "id": "p-9",
+        "kind": "narration",
+        "text": "幕府との最後の決戦が始まろうとしていた。"
+      },
+      {
+        "id": "p-10",
         "kind": "scene",
         "text": "【出陣前夜　軍議】"
       },
       {
-        "id": "p-10",
+        "id": "p-11",
         "kind": "narration",
         "text": "村瀬は軍議へ呼ばれた。"
       },
       {
-        "id": "p-11",
+        "id": "p-12",
         "kind": "narration",
         "text": "部屋には三人の指揮官がいる。"
       },
       {
-        "id": "p-12",
+        "id": "p-13",
         "kind": "narration",
         "text": "桂 小五郎（かつら こごろう／長州藩の重臣）。"
       },
       {
-        "id": "p-13",
+        "id": "p-14",
         "kind": "narration",
         "text": "高杉 晋作（たかすぎ しんさく／奇兵隊を率いる長州藩士）。"
       },
       {
-        "id": "p-14",
+        "id": "p-15",
         "kind": "narration",
         "text": "村田 蔵六（むらた ぞうろく／兵学者）。"
       },
       {
-        "id": "p-15",
+        "id": "p-16",
         "kind": "narration",
         "text": "静かな空気の中、桂が地図を広げる。"
       },
@@ -4398,289 +4403,289 @@ export const chapters: Chapter[] = [
         "text": "高杉が笑いながら腕を組む。"
       },
       {
-        "id": "p-28",
+        "id": "p-27",
         "kind": "dialogue",
         "text": "「桂さんらしいのう。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-29",
+        "id": "p-28",
         "kind": "narration",
         "text": "村瀬を見る。"
       },
       {
-        "id": "p-30",
+        "id": "p-29",
         "kind": "dialogue",
         "text": "「禁門も、功山寺も、よう生き抜いたな。敵は強い。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-31",
+        "id": "p-30",
         "kind": "dialogue",
         "text": "「数は向こうが上じゃ、じゃが。勝負は数で決まらん！」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-32",
+        "id": "p-31",
         "kind": "dialogue",
         "text": "「最後に戦うんは人じゃ。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-33",
+        "id": "p-32",
         "kind": "dialogue",
         "text": "「兵は、指揮官の背中を見て動く、わしが前へ出りゃ。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-34",
+        "id": "p-33",
         "kind": "dialogue",
         "text": "「皆も前へ出る！」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-35",
+        "id": "p-34",
         "kind": "dialogue",
         "text": "「士気は、数の差をひっくり返す！」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-36",
+        "id": "p-35",
         "kind": "narration",
         "text": "村田が静かに口を開く。"
       },
       {
-        "id": "p-38",
+        "id": "p-36",
         "kind": "dialogue",
         "text": "「高杉さん、士気は大切です。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-39",
+        "id": "p-37",
         "kind": "dialogue",
         "text": "「しかし。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-40",
+        "id": "p-38",
         "kind": "dialogue",
         "text": "「士気だけでは勝てません。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-41",
+        "id": "p-39",
         "kind": "narration",
         "text": "地図へ印を書き込む。"
       },
       {
-        "id": "p-42",
+        "id": "p-40",
         "kind": "dialogue",
         "text": "「兵糧、補給。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-43",
+        "id": "p-41",
         "kind": "dialogue",
         "text": "「情報、配置。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-44",
+        "id": "p-42",
         "kind": "dialogue",
         "text": "「これが整って初めて、兵は安心して戦えます。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-45",
+        "id": "p-43",
         "kind": "dialogue",
         "text": "「勝つ仕組みを作る。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-46",
+        "id": "p-44",
         "kind": "dialogue",
         "text": "「それが指揮官の仕事です。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-47",
+        "id": "p-45",
         "kind": "narration",
         "text": "高杉が笑う。"
       },
       {
-        "id": "p-48",
+        "id": "p-46",
         "kind": "dialogue",
         "text": "「村田先生。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-49",
+        "id": "p-47",
         "kind": "dialogue",
         "text": "「相変わらず理屈じゃのう。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-50",
+        "id": "p-48",
         "kind": "narration",
         "text": "村田は穏やかに答える。"
       },
       {
-        "id": "p-51",
+        "id": "p-49",
         "kind": "dialogue",
         "text": "「理屈で勝てる戦なら。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-52",
+        "id": "p-50",
         "kind": "dialogue",
         "text": "「理屈で勝つべきです。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-53",
+        "id": "p-51",
         "kind": "narration",
         "text": "桂は二人を見て微笑む。"
       },
       {
-        "id": "p-54",
+        "id": "p-52",
         "kind": "dialogue",
         "text": "「二人とも、間違うちょらん。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-55",
+        "id": "p-53",
         "kind": "dialogue",
         "text": "「戦には、勇気も、準備もいる。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-56",
+        "id": "p-54",
         "kind": "narration",
         "text": "軍議が終わる。"
       },
       {
-        "id": "p-57",
+        "id": "p-55",
         "kind": "narration",
         "text": "三人は立ち上がる。"
       },
       {
-        "id": "p-58",
+        "id": "p-56",
         "kind": "narration",
         "text": "村瀬も一礼して部屋を出ようとする。"
       },
       {
-        "id": "p-59",
+        "id": "p-57",
         "kind": "narration",
         "text": "桂が呼び止める。"
       },
       {
-        "id": "p-60",
+        "id": "p-58",
         "kind": "dialogue",
         "text": "「村瀬君。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-61",
+        "id": "p-59",
         "kind": "dialogue",
         "text": "「待ちなさい。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-62",
+        "id": "p-60",
         "kind": "narration",
         "text": "村瀬は振り返る。"
       },
       {
-        "id": "p-63",
+        "id": "p-61",
         "kind": "dialogue",
         "text": "「いよいよ。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-64",
+        "id": "p-62",
         "kind": "dialogue",
         "text": "「それぞれの隊が動きます。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-65",
+        "id": "p-63",
         "kind": "narration",
         "text": "高杉が笑う。"
       },
       {
-        "id": "p-66",
+        "id": "p-64",
         "kind": "dialogue",
         "text": "「お前にも働いてもらうぞ。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-67",
+        "id": "p-65",
         "kind": "narration",
         "text": "村田もうなずく。"
       },
       {
-        "id": "p-68",
+        "id": "p-66",
         "kind": "dialogue",
         "text": "「どの隊にも、役割があります。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-69",
+        "id": "p-67",
         "kind": "narration",
         "text": "桂が静かに言う。"
       },
       {
-        "id": "p-70",
+        "id": "p-68",
         "kind": "dialogue",
         "text": "「戦の時まで、よう考えなさい。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-71",
+        "id": "p-69",
         "kind": "narration",
         "text": "高杉。"
       },
       {
-        "id": "p-72",
+        "id": "p-70",
         "kind": "dialogue",
         "text": "「誰の下で戦いたいか。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-73",
+        "id": "p-71",
         "kind": "narration",
         "text": "村田。"
       },
       {
-        "id": "p-74",
+        "id": "p-72",
         "kind": "dialogue",
         "text": "「命を預ける相手は、自分で選ぶべきです。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-75",
+        "id": "p-73",
         "kind": "narration",
         "text": "桂。"
       },
       {
-        "id": "p-76",
+        "id": "p-74",
         "kind": "dialogue",
         "text": "「その決断が、お前自身の戦い方になる。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-77",
+        "id": "p-75",
         "kind": "narration",
         "text": "高杉は村瀬の肩を軽く叩く。"
       },
       {
-        "id": "p-78",
+        "id": "p-76",
         "kind": "dialogue",
         "text": "「どこへ来ても、長州のために戦うんは同じじゃ。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-79",
+        "id": "p-77",
         "kind": "narration",
         "text": "村瀬は三人へ深く頭を下げた。"
       }
@@ -4776,7 +4781,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "慶応三年十二月九日。"
+        "text": "慶応三年十二月九日（1867年）。"
       },
       {
         "id": "p-2",
@@ -5291,7 +5296,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "慶応四年（一八六八年）。"
+        "text": "慶応四年（1868年）。"
       },
       {
         "id": "p-2",
@@ -5764,7 +5769,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "慶応四年三月。"
+        "text": "慶応四年三月（1868年）。"
       },
       {
         "id": "p-2",
@@ -6324,7 +6329,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "明治二年。"
+        "text": "明治二年（1869年）。"
       },
       {
         "id": "p-2",
@@ -6858,12 +6863,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "― 一つの国家へ ―"
+        "text": "明治四年（1871年）。"
       },
       {
         "id": "p-2",
         "kind": "narration",
-        "text": "明治四年。"
+        "text": "― 一つの国家へ ―"
       },
       {
         "id": "p-3",
@@ -7307,12 +7312,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "― 国家の決断 ―"
+        "text": "明治六年（1873年）。"
       },
       {
         "id": "p-2",
         "kind": "narration",
-        "text": "明治六年。"
+        "text": "― 国家の決断 ―"
       },
       {
         "id": "p-3",
@@ -7868,12 +7873,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "～最後の決断～"
+        "text": "明治十年（1877年）。"
       },
       {
         "id": "p-2",
         "kind": "narration",
-        "text": "明治10年（1877年）。"
+        "text": "～最後の決断～"
       },
       {
         "id": "p-3",
