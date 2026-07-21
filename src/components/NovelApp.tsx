@@ -583,9 +583,20 @@ function ResultScreen({
           <p className="diagnosis-combination-people">
             {primary.name} × {secondary.name}
           </p>
-          <p>
-            あなたは、{primary.summary}。さらに、{secondary.secondaryDescription}も備えています。
-          </p>
+          <div className="diagnosis-advice">
+            <p>
+              あなたは、{primary.summary}。さらに、{secondary.secondaryDescription}も備えています。
+            </p>
+            <p>
+              この二つを組み合わせると、{primary.strengths[0]}という持ち味を軸に、
+              {secondary.secondaryDescription}を加えた経営スタイルになります。
+            </p>
+            <p>
+              これからの選択肢としては、{primary.recommendedPath}に力を注ぐ道が考えられます。
+              その際は、{secondary.secondaryDescription}を意識して行動に取り入れることで、
+              中心となる強みを補い、判断をより確かな成果へつなげやすくなるでしょう。
+            </p>
+          </div>
         </section>
 
         <section className="diagnosis-section">

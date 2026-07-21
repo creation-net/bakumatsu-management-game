@@ -885,6 +885,16 @@ h3 {
   margin-top: -6px !important;
 }
 
+.diagnosis-advice {
+  margin-top: 22px;
+  padding-left: 18px;
+  border-left: 1px solid rgba(192, 160, 90, 0.42);
+}
+
+.diagnosis-advice p:last-child {
+  margin-bottom: 0;
+}
+
 .diagnosis-type {
   display: inline-block;
   width: fit-content;

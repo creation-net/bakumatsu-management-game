@@ -18,6 +18,7 @@ export type DiagnosisCharacter = {
   strengths: string[];
   challenges: string[];
   secondaryDescription: string;
+  recommendedPath: string;
 };
 
 export const diagnosisCharacters: DiagnosisCharacter[] = [
@@ -29,6 +30,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     strengths: ["理念や目的を言葉にできる", "人の可能性を信じて育てられる", "困難な状況でも志を失いにくい"],
     challenges: ["理想が先に立ち、現実の制約を見落とすことがある", "周囲に高い覚悟を求めすぎることがある"],
     secondaryDescription: "人の可能性を信じ、理念によって周囲を奮い立たせる力",
+    recommendedPath: "事業の存在意義を言葉にし、新しい構想を示すことや、次の世代を担う人材を育てること",
   },
   {
     id: "kusaka",
@@ -38,6 +40,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     strengths: ["ぶれない判断軸を持てる", "困難な局面で覚悟を示せる", "周囲に本気度を伝えられる"],
     challenges: ["信念が強いほど選択肢を狭めることがある", "状況の変化に合わせた軌道修正が遅れることがある"],
     secondaryDescription: "信念を貫き、困難な場面でも覚悟を示す力",
+    recommendedPath: "難しい局面で判断基準を明確にし、事業の立て直しや重要な方針転換を先頭に立って進めること",
   },
   {
     id: "takasugi",
@@ -47,6 +50,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     strengths: ["停滞した状況を動かせる", "前例に縛られず発想できる", "勝負所で大胆に踏み出せる"],
     challenges: ["周囲がついてくる前に動きすぎることがある", "勢いが強いほど反発を招くことがある"],
     secondaryDescription: "前例にとらわれず、停滞した状況を動かす突破力",
+    recommendedPath: "新規事業の立ち上げや事業転換など、従来の方法では前へ進めない課題に新しい道をつくること",
   },
   {
     id: "kido",
@@ -56,6 +60,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     strengths: ["長期的な視点から方針を考えられる", "複雑な状況を整理できる", "周囲と調整しながら改革を進められる"],
     challenges: ["慎重になりすぎて決断が遅れることがある", "周囲への配慮から自分の考えを抑えることがある"],
     secondaryDescription: "状況を広く捉え、将来を見据えて物事の順序を組み立てる力",
+    recommendedPath: "中長期の経営戦略や事業計画を描き、複雑な課題を整理して組織の進む順序を定めること",
   },
   {
     id: "sakamoto",
@@ -65,6 +70,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     strengths: ["人と人をつなげられる", "異なる意見から新しい可能性を見つけられる", "開かれた関係性をつくれる"],
     challenges: ["構想が広がりすぎて焦点がぼやけることがある", "調整相手が増えるほど実行が遅れることがある"],
     secondaryDescription: "立場の異なる人をつなぎ、協力関係を広げる力",
+    recommendedPath: "他社との連携や部門横断のプロジェクトなど、異なる立場の人々を結んで新しい価値を生み出すこと",
   },
   {
     id: "omura",
@@ -74,6 +80,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     strengths: ["状況を冷静に分析できる", "仕組みや制度で問題を解決できる", "無駄を減らして成果に近づける"],
     challenges: ["正しさを重視するあまり感情面への配慮が薄くなることがある", "周囲に冷たく見られることがある"],
     secondaryDescription: "感情に流されず、事実と仕組みから判断する力",
+    recommendedPath: "業務改善やデジタル化、収益構造の見直しなど、事実を分析して仕組みから成果を高めること",
   },
   {
     id: "saigo",
@@ -83,6 +90,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     strengths: ["人から信頼されやすい", "相手の感情や誇りを受け止められる", "大きな局面で腹をくくれる"],
     challenges: ["人情を重んじるほど判断が重くなることがある", "期待を背負い込みすぎることがある"],
     secondaryDescription: "人の思いを受け止め、信頼によって周囲を動かす力",
+    recommendedPath: "組織文化づくりや人材育成、後継者の支援など、人の信頼を土台に組織を一つにまとめること",
   },
   {
     id: "okubo",
@@ -92,6 +100,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     strengths: ["決めたことを実行に移せる", "制度や組織を現実的に作り替えられる", "厳しい判断から逃げにくい"],
     challenges: ["実行を優先するほど周囲に厳しく映ることがある", "反発や孤立を招くことがある"],
     secondaryDescription: "構想を現実に落とし込み、粘り強く実行する力",
+    recommendedPath: "組織改革や制度導入、重要プロジェクトなど、決めた方針を具体的な計画へ落とし込み完遂すること",
   },
   {
     id: "katsu",
@@ -101,6 +110,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     strengths: ["対立を収める道を探せる", "広い視野で損失を抑えられる", "現実的な交渉ができる"],
     challenges: ["強い主張をする人から弱腰に見られることがある", "妥協点を探すほど本音が伝わりにくいことがある"],
     secondaryDescription: "対立の中でも全体を見て、現実的な落としどころを探る力",
+    recommendedPath: "利害の異なる関係者との交渉や組織統合など、対立を収めながら全体にとって納得できる着地点をつくること",
   },
   {
     id: "yamagata",
@@ -110,5 +120,6 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     strengths: ["組織の規律を整えられる", "継続的に動く仕組みを考えられる", "リスクに備えた体制を作れる"],
     challenges: ["統制を重んじるほど柔軟さを欠くことがある", "現場の自由度を狭めることがある"],
     secondaryDescription: "継続して動く組織や体制を整える力",
+    recommendedPath: "事業の拡大に耐えられる組織設計や権限分担、ガバナンスやリスク管理の仕組みを整えること",
   },
 ];
