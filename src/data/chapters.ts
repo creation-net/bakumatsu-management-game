@@ -1882,13 +1882,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「わしは、戦がしたいんじゃない、戦わずに済むなら。」",
+        "text": "「わしは、戦がしたいんじゃない。」",
         "speaker": "来島 又兵衛"
       },
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「それが一番じゃ。」",
+        "text": "「戦わずに済むなら、それが一番じゃ。」",
         "speaker": "来島 又兵衛"
       },
       {
