@@ -656,7 +656,7 @@ function ResultScreen({
               </div>
             </section>
 
-            <section className="diagnosis-section report-section" aria-label="得意な経営スタイル">
+            <section className="diagnosis-section report-section" aria-label="得意な経営の型">
               <h2>あなたの得意な経営の型</h2>
               <p className="diagnosis-combination">{primary.type} × {secondary.type}</p>
               <p className="diagnosis-combination-people">{primary.name} × {secondary.name}</p>
