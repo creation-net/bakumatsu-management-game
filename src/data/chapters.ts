@@ -3357,7 +3357,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-5",
         "kind": "narration",
-        "text": "それは武器だった。"
+        "text": "それは、戦い抜くための力だった。"
       },
       {
         "id": "p-6",
@@ -6638,7 +6638,6 @@ export const chapters: Chapter[] = [
         "text": "「兵も、財も、人も、長州より、はるかに余力があります。」",
         "speaker": "大村 益次郎"
       },
-
       {
         "id": "p-56",
         "kind": "narration",
