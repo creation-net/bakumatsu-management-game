@@ -5,6 +5,11 @@ type CombinationPerspective = {
   secondary: string;
 };
 
+type DirectionalPairFrame = {
+  lead: string;
+  support: string;
+};
+
 const perspectives: Record<DiagnosisCharacterId, CombinationPerspective> = {
   yoshida: {
     primary: "あなたの経営は、目指す未来と事業の存在意義を言葉にし、その理念に共感する人を育てるところから始まります。目先の成果だけでなく、何のために取り組むのかを組織の判断軸にできる人です。",
@@ -45,6 +50,49 @@ const perspectives: Record<DiagnosisCharacterId, CombinationPerspective> = {
   yamagata: {
     primary: "あなたの経営は、特定の個人の力量に依存せず、役割・規律・権限を整えて組織を継続させるスタイルです。成長や危機にも耐えられる体制を先回りして築けます。",
     secondary: "そこに組織型の資質が加わることで、一時的な成功を標準化し、誰が担当しても安定して動く体制へ育てられます。",
+  },
+};
+
+const directionalPairFrames: Record<DiagnosisCharacterId, DirectionalPairFrame> = {
+  yoshida: {
+    lead: "この組み合わせの中心は、目指す未来と事業の存在意義を示し、人の可能性を引き出す理念型です。",
+    support: "理念型の力が、中心となる判断へ『何のために取り組むのか』という意味を与え、人と組織の成長を促します。",
+  },
+  kusaka: {
+    lead: "この組み合わせの中心は、譲れない判断軸を定め、困難な局面でも覚悟をもって進む信念型です。",
+    support: "信念型の力が、中心となる判断にぶれない軸と決断の強さを加え、難局でも方針を貫きやすくします。",
+  },
+  takasugi: {
+    lead: "この組み合わせの中心は、前例にとらわれず、停滞した状況へ新しい突破口をつくる革新型です。",
+    support: "革新型の力が、中心となる判断へ大胆な発想と変化を起こす勢いを加え、既存の限界を越えやすくします。",
+  },
+  kido: {
+    lead: "この組み合わせの中心は、先を見通して全体を整理し、実現までの道筋を組み立てる戦略型です。",
+    support: "戦略型の力が、中心となる判断を中長期の視点から整え、優先順位と進める順序を明確にします。",
+  },
+  sakamoto: {
+    lead: "この組み合わせの中心は、立場の異なる人や組織をつなぎ、新しい価値をともにつくる共創型です。",
+    support: "共創型の力が、中心となる判断へ多様な知恵と協力者を呼び込み、一人では届かない成果へ広げます。",
+  },
+  omura: {
+    lead: "この組み合わせの中心は、事実を冷静に捉え、成果を再現できる仕組みへ落とし込む合理型です。",
+    support: "合理型の力が、中心となる判断を数字・役割・手順で具体化し、安定して成果を出せる形に整えます。",
+  },
+  saigo: {
+    lead: "この組み合わせの中心は、人の思いや誇りを受け止め、信頼を土台に周囲をまとめる人望型です。",
+    support: "人望型の力が、中心となる判断への納得と信頼を育て、周囲が自ら協力したくなる関係をつくります。",
+  },
+  okubo: {
+    lead: "この組み合わせの中心は、決めた方針を計画と役割へ落とし込み、成果が出るまで進め切る実行型です。",
+    support: "実行型の力が、中心となる判断を担当・期限・手順へ変え、構想を現実の成果まで運びます。",
+  },
+  katsu: {
+    lead: "この組み合わせの中心は、対立する双方の事情を読み、全体を前へ進める着地点をつくる調整型です。",
+    support: "調整型の力が、中心となる判断に相手の事情と利害を取り込ませ、対立を広げず合意へ導きます。",
+  },
+  yamagata: {
+    lead: "この組み合わせの中心は、役割と規律を整え、個人の力を持続可能な組織の力へ変える組織型です。",
+    support: "組織型の力が、中心となる判断を権限・規則・体制として定着させ、継続的に成果を出せる基盤を築きます。",
   },
 };
 
@@ -110,12 +158,17 @@ export function getDiagnosisCombinationComments(
 ): string[] {
   const pairKey = [primaryId, secondaryId].sort().join("-");
   const pairComment = pairComments[pairKey];
+  const directionalPairComment = [
+    directionalPairFrames[primaryId].lead,
+    directionalPairFrames[secondaryId].support,
+    pairComment ?? "二つの資質を結びつけることで、一つの視点だけでは見落としやすい課題にも向き合えます。中心となる強みを判断の軸にし、もう一つの強みを実現方法として活用してください。",
+  ].join("");
 
   return [
     perspectives[primaryId].primary,
     perspectives[secondaryId].secondary,
-    pairComment ?? "二つの資質を結びつけることで、一つの視点だけでは見落としやすい課題にも向き合えます。中心となる強みを判断の軸にし、もう一つの強みを実現方法として活用してください。",
+    directionalPairComment,
   ];
 }
 
-export const diagnosisCombinationCount = Object.keys(pairComments).length;
+export const diagnosisCombinationCount = Object.keys(pairComments).length * 2;
