@@ -2,10 +2,10 @@ import type { DiagnosisCharacterId } from "@/data/diagnosisCharacters";
 
 export type DiagnosisChoiceScore = {
   characterId: DiagnosisCharacterId;
-  points: 10 | 5 | 3 | 2 | 1;
+  points: 50 | 10 | 5 | 3 | 1;
 };
 
-const pointValues = [10, 5, 3, 2, 1] as const;
+const pointValues = [50, 10, 5, 3, 1] as const;
 
 function scores(characterIds: DiagnosisCharacterId[]): DiagnosisChoiceScore[] {
   return characterIds.map((characterId, index) => ({
