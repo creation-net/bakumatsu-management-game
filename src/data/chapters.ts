@@ -4480,15 +4480,31 @@ export const chapters: Chapter[] = [
       {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「兵糧、補給。」",
+        "text": "「兵糧、」",
         "speaker": "村田 蔵六"
       },
+
+  {
+        "id": "p-40",
+        "kind": "dialogue",
+        "text": "「補給、」",
+        "speaker": "村田 蔵六"
+      },
+
       {
         "id": "p-41",
         "kind": "dialogue",
-        "text": "「情報、配置。」",
+        "text": "「情報、」",
         "speaker": "村田 蔵六"
       },
+
+  {
+        "id": "p-41",
+        "kind": "dialogue",
+        "text": "「配置、」",
+        "speaker": "村田 蔵六"
+      },
+
       {
         "id": "p-42",
         "kind": "dialogue",

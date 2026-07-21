@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { chapters } from "@/data/chapters";
 import { getDiagnosisCombinationComments } from "@/data/diagnosisCombinationComments";
 import { calculateDiagnosis } from "@/lib/diagnosis";
+import { downloadDiagnosisReportPdf } from "@/lib/pdfExport";
 import { initialProgress, loadProgress, resetProgress, saveProgress } from "@/lib/progress";
 import {
   getChapterImagePath,
@@ -202,7 +203,7 @@ export function NovelApp() {
           タイトルに戻る
         </button>
         <button className="text-button" type="button" onClick={() => setScreen("index")}>
-          一覧表を見る
+          章を見る
         </button>
         <button
           className={canViewResult ? "text-button result-ready" : "text-button muted"}
@@ -254,7 +255,7 @@ export function NovelApp() {
         />
       )}
 
-      {screen === "result" && <ResultScreen progress={progress} onIndex={() => setScreen("index")} />}
+      {screen === "result" && <ResultScreen progress={progress} />}
     </main>
   );
 }
@@ -391,7 +392,7 @@ function EndingScreen({
             {nextLabel}
           </button>
           <button className="secondary-button" type="button" onClick={onIndex}>
-            章の一覧表へ戻る
+            章を見る
           </button>
         </div>
       </div>
@@ -570,15 +571,33 @@ function ChapterIndex({
 
 function ResultScreen({
   progress,
-  onIndex,
 }: {
   progress: ReadingProgress;
-  onIndex: () => void;
 }) {
   const diagnosis = calculateDiagnosis(progress);
   const { primary, secondary } = diagnosis;
   const diagnosisDate = formatDiagnosisDate(progress.updatedAt);
   const combinationComments = getDiagnosisCombinationComments(primary.id, secondary.id);
+  const reportRef = useRef<HTMLElement>(null);
+  const [pdfStatus, setPdfStatus] = useState<"idle" | "saving" | "saved">("idle");
+
+  const handlePdfDownload = async () => {
+    if (!reportRef.current || pdfStatus === "saving") {
+      return;
+    }
+
+    setPdfStatus("saving");
+
+    try {
+      await downloadDiagnosisReportPdf(reportRef.current, diagnosisDate);
+      setPdfStatus("saved");
+      window.setTimeout(() => setPdfStatus("idle"), 2500);
+    } catch (error) {
+      console.error(error);
+      window.alert("PDFを作成できませんでした。もう一度お試しください。");
+      setPdfStatus("idle");
+    }
+  };
 
   return (
     <section className="result-view scene-frame">
@@ -587,17 +606,14 @@ function ResultScreen({
           <button
             className="primary-button"
             type="button"
-            title="印刷画面で「PDFに保存」を選択できます"
-            onClick={() => printDiagnosisReport(diagnosisDate)}
+            disabled={pdfStatus === "saving"}
+            onClick={() => void handlePdfDownload()}
           >
-            PDFに出力する
-          </button>
-          <button className="secondary-button" type="button" onClick={onIndex}>
-            進行確認を見る
+            {pdfStatus === "saving" ? "PDFを作成中" : pdfStatus === "saved" ? "PDFを保存しました" : "PDFを保存する"}
           </button>
         </div>
 
-        <article className="diagnosis-report">
+        <article ref={reportRef} className="diagnosis-report">
           <header className="report-cover">
             <h2>
               <span>幕末・明治維新</span>
@@ -705,20 +721,4 @@ function formatDiagnosisDate(updatedAt: string): string {
     month: "long",
     day: "numeric",
   }).format(date);
-}
-
-function printDiagnosisReport(diagnosisDate: string) {
-  const originalTitle = document.title;
-  const fileDate = diagnosisDate.replace(/[年月]/g, "-").replace("日", "");
-
-  document.title = `幕末・明治維新_経営資質診断レポート_${fileDate}`;
-
-  const restoreTitle = () => {
-    document.title = originalTitle;
-    window.removeEventListener("afterprint", restoreTitle);
-  };
-
-  window.addEventListener("afterprint", restoreTitle, { once: true });
-  window.print();
-  window.setTimeout(restoreTitle, 1000);
 }
