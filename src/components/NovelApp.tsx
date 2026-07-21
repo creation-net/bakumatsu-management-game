@@ -665,7 +665,7 @@ function ResultScreen({
               </div>
             </section>
 
-            <section className="diagnosis-section report-section">
+            <section className="diagnosis-section report-section report-page-two-start">
               <h2>あなたが経営するうえで気を付けたいこと</h2>
               <p>{primary.cautionAdvice}</p>
             </section>

@@ -48,7 +48,7 @@ export async function downloadDiagnosisReportPdf(
 }
 
 function renderReportPages(reportElement: HTMLElement): HTMLCanvasElement[] {
-  const layoutScales = [0.9, 0.84, 0.78, 0.72, 0.66];
+  const layoutScales = [1, 0.96, 0.92, 0.88, 0.84, 0.8, 0.76, 0.72];
 
   for (const scale of layoutScales) {
     const pages = renderReportPagesAtScale(reportElement, scale);
@@ -68,6 +68,11 @@ function renderReportPagesAtScale(reportElement: HTMLElement, scale: number): HT
 
   const sections = reportElement.querySelectorAll<HTMLElement>(".report-body > .report-section");
   sections.forEach((section) => {
+    if (section.classList.contains("report-page-two-start") && pages.length === 1) {
+      currentPage = createPage("#ffffff");
+      pages.push(currentPage);
+    }
+
     if (currentPage.y > CANVAS_HEIGHT - 360 * scale) {
       currentPage = createPage("#ffffff");
       pages.push(currentPage);
