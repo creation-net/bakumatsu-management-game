@@ -215,6 +215,7 @@ export function NovelApp() {
           onChapterSelect={jumpToChapter}
           onChangeChoice={changeChapterChoice}
           onStart={() => startStory("continue")}
+          onResult={() => setScreen("result")}
         />
       )}
 
@@ -436,11 +437,13 @@ function ChapterIndex({
   onChapterSelect,
   onChangeChoice,
   onStart,
+  onResult,
 }: {
   progress: ReadingProgress;
   onChapterSelect: (chapterId: number) => void;
   onChangeChoice: (chapterId: number) => void;
   onStart: () => void;
+  onResult: () => void;
 }) {
   const answeredCount = Object.keys(progress.choices).length;
   const completedCount = progress.completedChapterIds.length;
@@ -507,6 +510,9 @@ function ChapterIndex({
       <div className="index-actions">
         <button className="primary-button" type="button" onClick={onStart}>
           続きから読む
+        </button>
+        <button className="secondary-button" type="button" onClick={onResult} disabled={answeredCount === 0}>
+          診断結果を見る
         </button>
       </div>
     </section>

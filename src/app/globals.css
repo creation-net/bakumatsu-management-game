@@ -153,6 +153,14 @@ button:focus-visible {
   transform: translateY(-1px);
 }
 
+.text-button:disabled,
+.secondary-button:disabled,
+.primary-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.46;
+  transform: none;
+}
+
 .scene-frame {
   position: relative;
   overflow: hidden;
@@ -580,6 +588,9 @@ h3 {
 }
 
 .index-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   width: 100%;
   max-width: 100%;
   min-width: 0;
