@@ -48,20 +48,33 @@ export async function downloadDiagnosisReportPdf(
 }
 
 function renderReportPages(reportElement: HTMLElement): HTMLCanvasElement[] {
+  const layoutScales = [0.9, 0.84, 0.78, 0.72, 0.66];
+
+  for (const scale of layoutScales) {
+    const pages = renderReportPagesAtScale(reportElement, scale);
+    if (pages.length <= 2) {
+      return pages;
+    }
+  }
+
+  return renderReportPagesAtScale(reportElement, layoutScales.at(-1) ?? 0.66);
+}
+
+function renderReportPagesAtScale(reportElement: HTMLElement, scale: number): HTMLCanvasElement[] {
   const pages: PdfPage[] = [];
   let currentPage = createPage("#ffffff");
   pages.push(currentPage);
-  drawCompactReportHeader(currentPage, reportElement);
+  drawCompactReportHeader(currentPage, reportElement, scale);
 
   const sections = reportElement.querySelectorAll<HTMLElement>(".report-body > .report-section");
   sections.forEach((section) => {
-    if (currentPage.y > CANVAS_HEIGHT - 360) {
+    if (currentPage.y > CANVAS_HEIGHT - 360 * scale) {
       currentPage = createPage("#ffffff");
       pages.push(currentPage);
     }
 
-    drawDivider(currentPage);
-    const blocks = extractSectionBlocks(section);
+    drawDivider(currentPage, scale);
+    const blocks = extractSectionBlocks(section).map((block) => scaleBlock(block, scale));
     blocks.forEach((block) => {
       currentPage = drawBlock(currentPage, pages, block);
     });
@@ -69,7 +82,7 @@ function renderReportPages(reportElement: HTMLElement): HTMLCanvasElement[] {
 
   const footerText = reportElement.querySelector<HTMLElement>(".report-footer")?.textContent?.trim();
   if (footerText) {
-    currentPage = drawBlock(currentPage, pages, {
+    currentPage = drawBlock(currentPage, pages, scaleBlock({
       text: footerText,
       size: 21,
       lineHeight: 34,
@@ -78,25 +91,36 @@ function renderReportPages(reportElement: HTMLElement): HTMLCanvasElement[] {
       marginTop: 36,
       marginBottom: 0,
       keepTogether: true,
-    });
+    }, scale));
   }
 
   return pages.map((page) => page.canvas);
 }
 
-function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement) {
+function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement, scale: number) {
   const titleLines = Array.from(reportElement.querySelectorAll<HTMLElement>(".report-cover h2 span"))
     .map((element) => element.textContent?.trim())
     .filter((text): text is string => Boolean(text));
   const title = titleLines.join(" ");
   const date = reportElement.querySelector<HTMLElement>(".report-meta dd")?.textContent?.trim();
 
-  drawSingleLine(page, title, PAGE_MARGIN, 34, "#211d18", "bold", "serif");
-  page.y += 54;
+  drawSingleLine(page, title, PAGE_MARGIN, 34 * scale, "#211d18", "bold", "serif");
+  page.y += 54 * scale;
   if (date) {
-    drawSingleLine(page, `診断日　${date}`, PAGE_MARGIN, 20, "#665e55", "normal", "sans");
-    page.y += 42;
+    drawSingleLine(page, `診断日　${date}`, PAGE_MARGIN, 20 * scale, "#665e55", "normal", "sans");
+    page.y += 42 * scale;
   }
+}
+
+function scaleBlock(block: DrawBlock, scale: number): DrawBlock {
+  return {
+    ...block,
+    size: block.size * scale,
+    lineHeight: block.lineHeight * scale,
+    marginTop: block.marginTop === undefined ? undefined : block.marginTop * scale,
+    marginBottom: block.marginBottom === undefined ? undefined : block.marginBottom * scale,
+    indent: block.indent === undefined ? undefined : block.indent * scale,
+  };
 }
 
 function extractSectionBlocks(section: HTMLElement): DrawBlock[] {
@@ -275,9 +299,9 @@ function createPage(background: string): PdfPage {
   return { canvas, context, y: PAGE_MARGIN };
 }
 
-function drawDivider(page: PdfPage) {
+function drawDivider(page: PdfPage, scale: number) {
   if (page.y > PAGE_MARGIN) {
-    page.y += 12;
+    page.y += 12 * scale;
   }
   page.context.strokeStyle = "#b9aa88";
   page.context.lineWidth = 2;
@@ -285,7 +309,7 @@ function drawDivider(page: PdfPage) {
   page.context.moveTo(PAGE_MARGIN, page.y);
   page.context.lineTo(CANVAS_WIDTH - PAGE_MARGIN, page.y);
   page.context.stroke();
-  page.y += 28;
+  page.y += 28 * scale;
 }
 
 function drawSingleLine(

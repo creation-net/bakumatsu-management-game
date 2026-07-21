@@ -1130,6 +1130,31 @@ h3 {
   gap: 12px;
 }
 
+.journey-letter {
+  margin-top: clamp(58px, 9vw, 96px);
+  padding: clamp(34px, 6vw, 54px) clamp(18px, 5vw, 42px) 0;
+  border-top: 1px solid rgba(192, 160, 90, 0.52);
+}
+
+.journey-letter > h2 {
+  margin-bottom: clamp(28px, 5vw, 42px);
+  color: var(--ink-strong);
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+}
+
+.journey-letter > p {
+  margin-bottom: 22px;
+  line-height: 2.15;
+}
+
+.journey-letter .journey-letter-signature {
+  margin-top: clamp(36px, 6vw, 54px);
+  margin-bottom: 0;
+  color: var(--muted);
+  font-family: var(--serif);
+  text-align: right;
+}
+
 .report-footer {
   padding: 28px clamp(24px, 6vw, 54px) 34px;
   color: var(--muted);

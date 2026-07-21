@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { chapters } from "@/data/chapters";
 import { getDiagnosisCombinationComments } from "@/data/diagnosisCombinationComments";
+import { getDiagnosisJourneyLetter } from "@/data/diagnosisJourneyLetters";
 import { calculateDiagnosis } from "@/lib/diagnosis";
 import { downloadDiagnosisReportPdf } from "@/lib/pdfExport";
 import { initialProgress, loadProgress, resetProgress, saveProgress } from "@/lib/progress";
@@ -578,6 +579,7 @@ function ResultScreen({
   const { primary, secondary } = diagnosis;
   const diagnosisDate = formatDiagnosisDate(progress.updatedAt);
   const combinationComments = getDiagnosisCombinationComments(primary.id, secondary.id);
+  const journeyLetter = getDiagnosisJourneyLetter(primary.id, secondary.id);
   const reportRef = useRef<HTMLElement>(null);
   const [pdfStatus, setPdfStatus] = useState<"idle" | "saving" | "saved">("idle");
 
@@ -695,6 +697,12 @@ function ResultScreen({
               <ul className="diagnosis-list diagnosis-tendencies">
                 {primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}
               </ul>
+            </section>
+
+            <section className="diagnosis-section report-section journey-letter" aria-label="旅を終えたあなたへ">
+              <h2>旅を終えたあなたへ</h2>
+              {journeyLetter.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              <p className="journey-letter-signature">―― 村瀬 新之助</p>
             </section>
 
           </div>
