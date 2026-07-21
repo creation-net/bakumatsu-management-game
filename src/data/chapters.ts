@@ -6445,7 +6445,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-27",
         "kind": "dialogue",
-        "text": "「なるほど、日本の真ん中ですから。」",
+        "text": "「なるほど、日本の中央にあるからこそ、兵を動かしやすいのですね。」",
         "speaker": "村瀬"
       },
       {

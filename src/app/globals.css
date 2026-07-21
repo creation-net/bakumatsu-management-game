@@ -399,6 +399,11 @@ h3 {
   border-left: 2px solid var(--gold-dim);
 }
 
+.passage.dialogue.same-speaker {
+  margin-top: -6px;
+  padding-top: 4px;
+}
+
 .passage.thought {
   margin: 14px 0 18px;
   padding: 16px 0 16px 22px;

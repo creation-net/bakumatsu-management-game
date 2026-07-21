@@ -421,15 +421,25 @@ function PassageList({ passages, compact = false }: { passages: Passage[]; compa
       {passages.map((passage, index) => {
         const isThought = passage.kind === "scene" && /^（/.test(passage.text);
         const previous = passages[index - 1];
+        const continuesSameSpeaker =
+          passage.kind === "dialogue" &&
+          previous?.kind === "dialogue" &&
+          Boolean(passage.speaker) &&
+          previous.speaker === passage.speaker;
         const showSpeaker =
           passage.kind === "dialogue" &&
           passage.speaker &&
-          !(previous?.kind === "dialogue" && previous.speaker === passage.speaker);
+          !continuesSameSpeaker;
+        const passageClassName = [
+          "passage",
+          passage.kind,
+          isThought ? "thought" : "",
+          continuesSameSpeaker ? "same-speaker" : "",
+        ]
+          .filter(Boolean)
+          .join(" ");
         return (
-          <section
-            className={isThought ? `passage ${passage.kind} thought` : `passage ${passage.kind}`}
-            key={passage.id}
-          >
+          <section className={passageClassName} key={passage.id}>
             {showSpeaker && <p className="speaker">【{passage.speaker}】</p>}
             <p className="passage-text">{passage.text}</p>
           </section>
