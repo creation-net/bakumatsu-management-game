@@ -7974,75 +7974,87 @@ export const chapters: Chapter[] = [
         "text": "西郷は静かに目を閉じる。"
       },
       {
-        "id": "p-23",
+        "id": "p-22",
         "kind": "dialogue",
         "text": "「西郷先生！」",
         "speaker": "桐野 利秋"
       },
       {
-        "id": "p-24",
+        "id": "p-23",
         "kind": "dialogue",
         "text": "「若い者は、戦がしたいわけじゃありもはん。」",
         "speaker": "桐野 利秋"
       },
       {
-        "id": "p-25",
+        "id": "p-24",
         "kind": "dialogue",
         "text": "「先生を信じ、先生の教えを信じ、ここまでついて来た者たちでごわす。」",
         "speaker": "桐野 利秋"
       },
       {
-        "id": "p-26",
+        "id": "p-25",
         "kind": "dialogue",
         "text": "「その者たちが、賊のように扱われ、黙って見ちょれと言うのですか。」",
         "speaker": "桐野 利秋"
       },
       {
-        "id": "p-27",
+        "id": "p-26",
         "kind": "dialogue",
         "text": "「先生が背を向ければ、若い者は行き場を失います。」",
         "speaker": "桐野 利秋"
       },
       {
-        "id": "p-28",
+        "id": "p-27",
         "kind": "dialogue",
         "text": "「私は戦をしたいのではありもはん。」",
         "speaker": "桐野 利秋"
       },
       {
-        "id": "p-29",
+        "id": "p-28",
         "kind": "dialogue",
         "text": "「先生を信じて集まった者たちを、見捨てたくないだけです！」",
         "speaker": "桐野 利秋"
       },
       {
-        "id": "p-31",
+        "id": "p-29",
         "kind": "dialogue",
         "text": "「桐野どん、気持ちは分かります。」",
         "speaker": "村田 新八"
       },
       {
-        "id": "p-32",
+        "id": "p-30",
         "kind": "dialogue",
         "text": "「じゃっどん。」",
         "speaker": "村田 新八"
       },
       {
-        "id": "p-33",
+        "id": "p-31",
         "kind": "dialogue",
         "text": "「その怒りのまま動けば、政府の思うつぼです。」",
         "speaker": "村田 新八"
       },
       {
+        "id": "p-32",
+        "kind": "dialogue",
+        "text": "「武器庫を襲うた者は、一人ずつ政府へ差し出します。」",
+        "speaker": "村田 新八"
+      },
+      {
+        "id": "p-33",
+        "kind": "dialogue",
+        "text": "「事情を説明し、」",
+        "speaker": "村田 新八"
+      },
+      {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「武器庫を襲うた者は、一人ずつ政府へ差し出します。事情を説明し。」",
+        "text": "「先生には関わりがなかことを伝えたい。」",
         "speaker": "村田 新八"
       },
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「先生には関わりがなかことを伝えたい。政府へ嘆願しもす。」",
+        "text": "「政府へ嘆願しもす。」",
         "speaker": "村田 新八"
       },
       {
@@ -8078,13 +8090,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-41",
         "kind": "dialogue",
-        "text": "「先生を守るためです。ここで戦えば。」",
+        "text": "「先生を守るためです。」",
         "speaker": "村田 新八"
       },
       {
         "id": "p-42",
         "kind": "dialogue",
-        "text": "「先生まで逆賊になります。」",
+        "text": "「ここで戦えば、先生まで逆賊になります。」",
         "speaker": "村田 新八"
       },
       {

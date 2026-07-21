@@ -617,15 +617,17 @@ function ResultScreen({
           </p>
           <div className="diagnosis-advice">
             <p>
-              あなたの経営スタイルは、{primary.type}を軸に、{secondary.type}の良さを取り入れる形です。
+              あなたには、「{primary.strengths[0]}」という素質があります。
+              さらに、{secondary.secondaryDescription}も備わっているため、
+              状況に応じて二つの強みを組み合わせながら物事を進められます。
             </p>
             <p>
-              「{primary.strengths[0]}」という強みを、判断の中心に置くとよいでしょう。
-              そこに{secondary.secondaryDescription}を生かすことで、考えを周囲へ伝え、行動へつなげやすくなります。
+              この二つの素質を経営の判断に生かすと、目指す方向を定めるだけでなく、
+              その考えを周囲と共有し、具体的な行動へつなげやすくなります。
             </p>
             <p>
-              向いているのは、{primary.recommendedPath}です。
-              まず目的と進め方を周囲と共有し、小さな行動から確かめていくと、二つの強みを着実な成果へつなげられるでしょう。
+              その素質を十分に生かせば、{primary.recommendedPath}を通じて、
+              事業や組織をより良い方向へ導き、周囲とともに持続的な成果を生み出せる可能性があります。
             </p>
           </div>
         </section>
