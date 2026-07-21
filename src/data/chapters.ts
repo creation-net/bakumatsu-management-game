@@ -5427,7 +5427,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-28",
         "kind": "narration",
-        "text": "会津藩主・松平 容保（まつだいら かたもり／会津藩主）が立ち上がる。"
+        "text": "松平 容保（まつだいら かたもり／会津藩主）が立ち上がる。"
       },
       {
         "id": "p-30",
