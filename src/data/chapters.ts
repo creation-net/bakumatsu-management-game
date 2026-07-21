@@ -1002,13 +1002,25 @@ export const chapters: Chapter[] = [
       {
         "id": "e-1",
         "kind": "narration",
-        "text": "三人は静かにうなずく。"
+        "text": "村瀬の言葉に三人は静かにうなずく。"
       },
       {
         "id": "e-2",
         "kind": "narration",
-        "text": "誰一人、相手を否定しない。"
+        "text": "議論は最後まで平行線だった。"
       },
+
+{
+        "id": "e-2",
+        "kind": "narration",
+        "text": "それでも。"
+      },
+{
+        "id": "e-2",
+        "kind": "narration",
+        "text": "誰一人、相手の志を否定する者はいなかった。"
+      },
+
       {
         "id": "e-3",
         "kind": "narration",
@@ -1567,12 +1579,12 @@ export const chapters: Chapter[] = [
       {
         "id": "e-1",
         "kind": "narration",
-        "text": "三人は静かにうなずく。"
+        "text": "しばらく、誰も言葉を発しなかった。"
       },
       {
         "id": "e-2",
         "kind": "narration",
-        "text": "誰も相手を否定しない。"
+        "text": "互いの考えは最後まで違った。"
       },
       {
         "id": "e-3",
@@ -2167,7 +2179,7 @@ export const chapters: Chapter[] = [
       {
         "id": "e-6",
         "kind": "narration",
-        "text": "ただ、守ろうとしているものが違っていた。"
+        "text": "ただ、そのために守ろうとするものが違っていた。"
       },
       {
         "id": "e-7",
@@ -2197,17 +2209,17 @@ export const chapters: Chapter[] = [
       {
         "id": "e-12",
         "kind": "narration",
-        "text": "やがて、この議論は現実となる。"
+        "text": "その時―――"
       },
       {
         "id": "e-13",
         "kind": "narration",
-        "text": "京都の町には銃声が響き、"
+        "text": "外から一発の銃声が響きわたった。"
       },
       {
         "id": "e-14",
         "kind": "narration",
-        "text": "長州藩は禁門の変という大きな転機を迎えることになる。"
+        "text": "この銃声が、やがて京都を戦火に包む「禁門の変」の始まりとなる。"
       }
     ],
     "choices": [
