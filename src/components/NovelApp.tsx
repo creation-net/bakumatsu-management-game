@@ -584,8 +584,13 @@ function ResultScreen({
     <section className="result-view scene-frame">
       <div className="report-shell">
         <div className="report-actions no-print">
-          <button className="primary-button" type="button" onClick={() => window.print()}>
-            PDF・印刷
+          <button
+            className="primary-button"
+            type="button"
+            title="印刷画面で「PDFに保存」を選択できます"
+            onClick={() => printDiagnosisReport(diagnosisDate)}
+          >
+            PDFに出力する
           </button>
           <button className="secondary-button" type="button" onClick={onIndex}>
             進行確認を見る
@@ -700,4 +705,20 @@ function formatDiagnosisDate(updatedAt: string): string {
     month: "long",
     day: "numeric",
   }).format(date);
+}
+
+function printDiagnosisReport(diagnosisDate: string) {
+  const originalTitle = document.title;
+  const fileDate = diagnosisDate.replace(/[年月]/g, "-").replace("日", "");
+
+  document.title = `幕末・明治維新_経営資質診断レポート_${fileDate}`;
+
+  const restoreTitle = () => {
+    document.title = originalTitle;
+    window.removeEventListener("afterprint", restoreTitle);
+  };
+
+  window.addEventListener("afterprint", restoreTitle, { once: true });
+  window.print();
+  window.setTimeout(restoreTitle, 1000);
 }
