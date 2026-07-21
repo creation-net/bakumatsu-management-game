@@ -131,378 +131,364 @@ export const chapters: Chapter[] = [
         "text": "村瀬は、その才を素直に認めながらも、どこか近寄り難さを感じていた。"
       },
       {
-        "id": "p-26",
+        "id": "p-25",
         "kind": "dialogue",
         "text": "「どこへ行くんですか。」",
         "speaker": "村瀬"
       },
       {
-        "id": "p-28",
+        "id": "p-26",
         "kind": "dialogue",
         "text": "「松下村塾（しょうかそんじゅく）じゃ。吉田 松陰（よしだ しょういん）先生がおられる。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-30",
+        "id": "p-27",
         "kind": "dialogue",
         "text": "「吉田 松陰……。」",
         "speaker": "村瀬"
       },
       {
-        "id": "p-31",
+        "id": "p-28",
         "kind": "dialogue",
         "text": "「あの、黒船へ乗り込もうとして捕まった男ですか。」",
         "speaker": "村瀬"
       },
       {
-        "id": "p-33",
+        "id": "p-29",
         "kind": "dialogue",
         "text": "「そうじゃ。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-34",
+        "id": "p-30",
         "kind": "dialogue",
         "text": "「じゃが。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-35",
+        "id": "p-31",
         "kind": "dialogue",
         "text": "「あの人ほど、この国のことを考えちょる人はおらん。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-36",
+        "id": "p-32",
         "kind": "narration",
         "text": "村瀬は少し眉をひそめる。"
       },
       {
-        "id": "p-37",
+        "id": "p-33",
         "kind": "dialogue",
         "text": "「また、大きなことを語る先生か。」",
         "speaker": "村瀬"
       },
       {
-        "id": "p-38",
+        "id": "p-34",
         "kind": "narration",
         "text": "そんな思いが胸をよぎる。"
       },
       {
-        "id": "p-40",
+        "id": "p-35",
         "kind": "dialogue",
         "text": "「分かりました。行きます。」",
         "speaker": "村瀬"
       },
       {
-        "id": "p-41",
+        "id": "p-36",
         "kind": "dialogue",
         "text": "「もし、国を惑わすだけの男なら。」",
         "speaker": "村瀬"
       },
       {
-        "id": "p-42",
+        "id": "p-37",
         "kind": "narration",
         "text": "村瀬は静かに腰の刀へ手を添える。"
       },
       {
-        "id": "p-43",
+        "id": "p-38",
         "kind": "dialogue",
         "text": "「武士として、見過ごすわけにはいきません。」",
         "speaker": "村瀬"
       },
       {
-        "id": "p-44",
+        "id": "p-39",
         "kind": "narration",
         "text": "久坂は苦笑する。"
       },
       {
-        "id": "p-45",
+        "id": "p-40",
         "kind": "dialogue",
         "text": "「そんな人じゃない。きっと、お前も分かる。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-46",
+        "id": "p-41",
         "kind": "scene",
         "text": "【松下村塾（しょうかそんじゅく）】"
       },
       {
-        "id": "p-47",
+        "id": "p-42",
         "kind": "narration",
         "text": "村瀬は初めて松下村塾の門をくぐる。"
       },
       {
-        "id": "p-48",
+        "id": "p-43",
         "kind": "narration",
         "text": "小さな部屋には、多くの若者が集まっていた。"
       },
       {
-        "id": "p-49",
+        "id": "p-44",
         "kind": "narration",
         "text": "先生だけが話しているわけではない。"
       },
       {
-        "id": "p-50",
+        "id": "p-45",
         "kind": "narration",
         "text": "皆が真剣な表情で語り合っている。"
       },
       {
-        "id": "p-51",
+        "id": "p-46",
         "kind": "narration",
         "text": "部屋の中央に座る男が、静かに村瀬へ目を向けた。"
       },
       {
-        "id": "p-53",
+        "id": "p-47",
         "kind": "dialogue",
         "text": "「初めて見る顔じゃな、よう来た。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-54",
+        "id": "p-48",
         "kind": "dialogue",
         "text": "「遠慮はいらん。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-55",
+        "id": "p-49",
         "kind": "dialogue",
         "text": "「ここでは、身分も年も関係ない、思うことを語ればよい。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-56",
+        "id": "p-50",
         "kind": "narration",
         "text": "村瀬は一礼し、輪の中へ座った。"
       },
       {
-        "id": "p-57",
+        "id": "p-51",
         "kind": "narration",
         "text": "松陰が静かに口を開く。"
       },
       {
-        "id": "p-58",
+        "id": "p-52",
         "kind": "dialogue",
         "text": "「黒船が浦賀へ現れた、この国は、大きな岐路に立っちょる。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-59",
+        "id": "p-53",
         "kind": "dialogue",
         "text": "「皆は、どう思う。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-60",
+        "id": "p-54",
         "kind": "narration",
         "text": "久坂 玄瑞"
       },
       {
-        "id": "p-61",
+        "id": "p-55",
         "kind": "narration",
         "text": "久坂は一歩前へ出る。"
       },
       {
-        "id": "p-62",
+        "id": "p-56",
         "kind": "dialogue",
         "text": "「先生、私は今こそ攘夷を決行すべき時じゃと思います。」",
         "speaker": "久坂 玄瑞"
       },
-
-
-  {
-        "id": "p-62",
+      {
+        "id": "p-57",
         "kind": "dialogue",
         "text": "「阿片戦争（あへんせんそう）で清国は西洋列強に敗れました。」",
         "speaker": "久坂 玄瑞"
       },
-
       {
-        "id": "p-63",
+        "id": "p-58",
         "kind": "dialogue",
         "text": "「その知らせを聞いた諸国は、西洋に逆らえば滅びると思い始めております。」",
         "speaker": "久坂 玄瑞"
       },
-
- {
-        "id": "p-63",
+      {
+        "id": "p-59",
         "kind": "dialogue",
         "text": "「もし日本まで異国の言いなりになれば、武士の魂も、民の誇りも失われましょう。」",
         "speaker": "久坂 玄瑞"
       },
-
-
-
- {
-        "id": "p-64",
+      {
+        "id": "p-60",
         "kind": "dialogue",
         "text": "「攘夷とは、異国への憎しみではありません。」",
         "speaker": "久坂 玄瑞"
       },
-
-
- {
-        "id": "p-64",
+      {
+        "id": "p-61",
         "kind": "dialogue",
         "text": "「日本は決して屈せぬ国であると天下に示し、」",
         "speaker": "久坂 玄瑞"
       },
-
-
       {
-        "id": "p-64",
+        "id": "p-62",
         "kind": "dialogue",
         "text": "「国を守る覚悟を示すことこそが攘夷じゃと思います。」",
         "speaker": "久坂 玄瑞"
       },
-
-
-
       {
-        "id": "p-65",
+        "id": "p-63",
         "kind": "narration",
         "text": "吉田 松陰（よしだ しょういん）"
       },
       {
-        "id": "p-66",
+        "id": "p-64",
         "kind": "narration",
         "text": "松陰は静かにうなずく。"
       },
       {
-        "id": "p-67",
+        "id": "p-65",
         "kind": "dialogue",
         "text": "「玄瑞、お前の志は立派じゃ、じゃが、力だけでは国は守れん。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-68",
+        "id": "p-66",
         "kind": "dialogue",
         "text": "「敵を知り、自らを知ることが先じゃ、西洋には学ぶべき学問、制度、技術が数多くある。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-69",
+        "id": "p-67",
         "kind": "dialogue",
         "text": "「それを学び、日本をより強い国にする。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-70",
+        "id": "p-68",
         "kind": "dialogue",
         "text": "「そして、その考えを幕府や藩主へ届け、国そのものを変えていかねばならん。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-71",
+        "id": "p-69",
         "kind": "dialogue",
         "text": "「戦うのは、その後でも遅くはない。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-72",
+        "id": "p-70",
         "kind": "narration",
         "text": "高杉 晋作（たかすぎ しんさく／長州藩士。のちに奇兵隊を率いる）"
       },
       {
-        "id": "p-73",
+        "id": "p-71",
         "kind": "narration",
         "text": "高杉は腕を組み、少し笑う。"
       },
       {
-        "id": "p-74",
+        "id": "p-72",
         "kind": "dialogue",
         "text": "「先生も玄瑞も、もっともじゃ。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-75",
+        "id": "p-73",
         "kind": "dialogue",
         "text": "「じゃが。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-76",
+        "id": "p-74",
         "kind": "dialogue",
         "text": "「今はまだ何も見えちょらん。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-77",
+        "id": "p-75",
         "kind": "dialogue",
         "text": "「黒船が来た。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-78",
+        "id": "p-76",
         "kind": "dialogue",
         "text": "「それだけじゃ。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-79",
+        "id": "p-77",
         "kind": "dialogue",
         "text": "「幕府がどう動くか。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-80",
+        "id": "p-78",
         "kind": "dialogue",
         "text": "「諸藩がどう動くか。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-81",
+        "id": "p-79",
         "kind": "dialogue",
         "text": "「誰も分からん。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-82",
+        "id": "p-80",
         "kind": "dialogue",
         "text": "「焦って動けば、国を滅ぼす。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-83",
+        "id": "p-81",
         "kind": "dialogue",
         "text": "「動かねば、好機を逃す。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-84",
+        "id": "p-82",
         "kind": "dialogue",
         "text": "「その時が来たら、誰よりも早く動けるよう、今は備えることじゃ。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-85",
+        "id": "p-83",
         "kind": "narration",
         "text": "三人の視線が、一斉にあなたへ向く。"
       },
       {
-        "id": "p-86",
+        "id": "p-84",
         "kind": "narration",
         "text": "部屋が静まり返る。"
       },
       {
-        "id": "p-87",
+        "id": "p-85",
         "kind": "narration",
         "text": "松陰が穏やかに微笑む。"
       },
       {
-        "id": "p-88",
+        "id": "p-86",
         "kind": "dialogue",
         "text": "「さて……。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-89",
+        "id": "p-87",
         "kind": "dialogue",
         "text": "「村瀬君だったかな。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-90",
+        "id": "p-88",
         "kind": "dialogue",
         "text": "「君の考えを聞かせてください。」",
         "speaker": "吉田 松陰"

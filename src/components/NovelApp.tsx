@@ -278,7 +278,7 @@ function TitleScreen({
           <span>経営資質診断</span>
         </h1>
         <p className="title-theme">幕末・明治維新編</p>
-        <p className="subtitle">一人の長州藩士・村瀬 新之助とたどる十五の決断</p>
+        <p className="subtitle">一人の長州藩士・村瀬 新之助とたどる15の決断</p>
         <p className="lead">
           幕末から明治維新へ。
           <br />
