@@ -2279,7 +2279,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-6",
         "kind": "narration",
-        "text": "対する長州は、禁門の変で多くの優秀な人材を失い、"
+        "text": "対する長州は、禁門の変と下関戦争によって多くの優秀な人材を失い、"
       },
       {
         "id": "p-7",
