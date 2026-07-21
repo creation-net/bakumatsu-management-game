@@ -847,6 +847,10 @@ h3 {
   line-height: 1.35 !important;
 }
 
+.diagnosis-heading span {
+  display: block;
+}
+
 .diagnosis-type-title {
   margin-bottom: 10px !important;
   color: var(--ink-strong) !important;

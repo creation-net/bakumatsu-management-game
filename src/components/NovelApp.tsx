@@ -554,7 +554,10 @@ function ResultScreen({
     <section className="result-view scene-frame">
       <div className="reader-column">
         <p className="eyebrow">診断結果</p>
-        <h2 className="diagnosis-heading">あなたの経営における最も大事にしている信念</h2>
+        <h2 className="diagnosis-heading">
+          <span>あなたの経営における</span>
+          <span>最も大事にしている信念</span>
+        </h2>
 
         <section className="diagnosis-hero" aria-label="最も大事にしている信念">
           <p className="diagnosis-type-title">{primary.type}</p>
