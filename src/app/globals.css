@@ -925,15 +925,18 @@ h3 {
 
   .top-bar {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: stretch;
-    gap: 6px;
+    gap: 8px;
   }
 
   .text-button {
     min-width: 0;
-    padding: 0 6px;
-    font-size: 0.82rem;
+    min-height: 42px;
+    padding: 0 8px;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
   }
 
   .title-art {

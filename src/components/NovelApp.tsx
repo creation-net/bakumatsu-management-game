@@ -175,10 +175,10 @@ export function NovelApp() {
     >
       <nav className="top-bar" aria-label="主要メニュー">
         <button className="text-button" type="button" onClick={showTitle}>
-          表紙
+          タイトルに戻る
         </button>
         <button className="text-button" type="button" onClick={() => setScreen("index")}>
-          進行確認
+          一覧表を見る
         </button>
         <button
           className={canViewResult ? "text-button result-ready" : "text-button muted"}
@@ -186,10 +186,10 @@ export function NovelApp() {
           onClick={() => setScreen("result")}
           disabled={!canViewResult}
         >
-          診断結果
+          診断結果を確認する
         </button>
         <button className="text-button muted" type="button" onClick={handleReset}>
-          リセット
+          回答をリセットする
         </button>
       </nav>
 
