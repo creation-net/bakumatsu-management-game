@@ -428,7 +428,7 @@ function PassageList({ passages, compact = false }: { passages: Passage[]; compa
             className={isThought ? `passage ${passage.kind} thought` : `passage ${passage.kind}`}
             key={passage.id}
           >
-            {showSpeaker && <p className="speaker">{passage.speaker}</p>}
+            {showSpeaker && <p className="speaker">【{passage.speaker}】</p>}
             <p className="passage-text">{passage.text}</p>
           </section>
         );

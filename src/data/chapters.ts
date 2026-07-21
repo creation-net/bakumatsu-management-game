@@ -75,7 +75,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-14",
         "kind": "dialogue",
-        "text": "「口で国は変わらん、武士なら行動せねば意味がない。」"
+        "text": "「口で国は変わらん、武士なら行動せねば意味がない。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-15",
@@ -90,12 +91,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-17",
         "kind": "dialogue",
-        "text": "「村瀬。」"
+        "text": "「村瀬。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-18",
         "kind": "dialogue",
-        "text": "「少し付き合わんか。」"
+        "text": "「少し付き合わんか。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-19",
@@ -128,59 +131,46 @@ export const chapters: Chapter[] = [
         "text": "村瀬は、その才を素直に認めながらも、どこか近寄り難さを感じていた。"
       },
       {
-        "id": "p-25",
-        "kind": "scene",
-        "text": "【村瀬】"
-      },
-      {
         "id": "p-26",
         "kind": "dialogue",
-        "text": "「どこへ行くんですか。」"
-      },
-      {
-        "id": "p-27",
-        "kind": "scene",
-        "text": "【久坂】"
+        "text": "「どこへ行くんですか。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-28",
         "kind": "dialogue",
-        "text": "「松下村塾（しょうかそんじゅく）じゃ。吉田 松陰（よしだ しょういん）先生がおられる。」"
-      },
-      {
-        "id": "p-29",
-        "kind": "scene",
-        "text": "【村瀬】"
+        "text": "「松下村塾（しょうかそんじゅく）じゃ。吉田 松陰（よしだ しょういん）先生がおられる。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-30",
         "kind": "dialogue",
-        "text": "「吉田 松陰……。」"
+        "text": "「吉田 松陰……。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-31",
         "kind": "dialogue",
-        "text": "「あの、黒船へ乗り込もうとして捕まった男ですか。」"
-      },
-      {
-        "id": "p-32",
-        "kind": "scene",
-        "text": "【久坂】"
+        "text": "「あの、黒船へ乗り込もうとして捕まった男ですか。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-33",
         "kind": "dialogue",
-        "text": "「そうじゃ。」"
+        "text": "「そうじゃ。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「じゃが。」"
+        "text": "「じゃが。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「あの人ほど、この国のことを考えちょる人はおらん。」"
+        "text": "「あの人ほど、この国のことを考えちょる人はおらん。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-36",
@@ -190,7 +180,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「また、大きなことを語る先生か。」"
+        "text": "「また、大きなことを語る先生か。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-38",
@@ -198,19 +189,16 @@ export const chapters: Chapter[] = [
         "text": "そんな思いが胸をよぎる。"
       },
       {
-        "id": "p-39",
-        "kind": "scene",
-        "text": "【村瀬】"
-      },
-      {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「分かりました。行きます。」"
+        "text": "「分かりました。行きます。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-41",
         "kind": "dialogue",
-        "text": "「もし、国を惑わすだけの男なら。」"
+        "text": "「もし、国を惑わすだけの男なら。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-42",
@@ -220,7 +208,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「武士として、見過ごすわけにはいきません。」"
+        "text": "「武士として、見過ごすわけにはいきません。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-44",
@@ -230,7 +219,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-45",
         "kind": "dialogue",
-        "text": "「そんな人じゃない。きっと、お前も分かる。」"
+        "text": "「そんな人じゃない。きっと、お前も分かる。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-46",
@@ -263,24 +253,22 @@ export const chapters: Chapter[] = [
         "text": "部屋の中央に座る男が、静かに村瀬へ目を向けた。"
       },
       {
-        "id": "p-52",
-        "kind": "scene",
-        "text": "【吉田 松陰】"
-      },
-      {
         "id": "p-53",
         "kind": "dialogue",
-        "text": "「初めて見る顔じゃな、よう来た。」"
+        "text": "「初めて見る顔じゃな、よう来た。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-54",
         "kind": "dialogue",
-        "text": "「遠慮はいらん。」"
+        "text": "「遠慮はいらん。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-55",
         "kind": "dialogue",
-        "text": "「ここでは、身分も年も関係ない、思うことを語ればよい。」"
+        "text": "「ここでは、身分も年も関係ない、思うことを語ればよい。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-56",
@@ -295,12 +283,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「黒船が浦賀へ現れた、この国は、大きな岐路に立っちょる。」"
+        "text": "「黒船が浦賀へ現れた、この国は、大きな岐路に立っちょる。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
-        "text": "「皆は、どう思う。」"
+        "text": "「皆は、どう思う。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-60",
@@ -315,17 +305,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-62",
         "kind": "dialogue",
-        "text": "「先生、私は今こそ攘夷を決行すべき時じゃと思います。阿片戦争（あへんせんそう）で清国は西洋列強に敗れました。」"
+        "text": "「先生、私は今こそ攘夷を決行すべき時じゃと思います。阿片戦争（あへんせんそう）で清国は西洋列強に敗れました。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-63",
         "kind": "dialogue",
-        "text": "「その知らせを聞いた諸国は、西洋に逆らえば滅びると思い始めております。もし日本まで異国の言いなりになれば、武士の魂も、民の誇りも失われましょう。」"
+        "text": "「その知らせを聞いた諸国は、西洋に逆らえば滅びると思い始めております。もし日本まで異国の言いなりになれば、武士の魂も、民の誇りも失われましょう。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-64",
         "kind": "dialogue",
-        "text": "「攘夷とは、異国への憎しみではありません。日本は決して屈せぬ国であると天下に示し、国を守る覚悟を示すことこそが攘夷じゃと思います。」"
+        "text": "「攘夷とは、異国への憎しみではありません。日本は決して屈せぬ国であると天下に示し、国を守る覚悟を示すことこそが攘夷じゃと思います。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-65",
@@ -340,27 +333,32 @@ export const chapters: Chapter[] = [
       {
         "id": "p-67",
         "kind": "dialogue",
-        "text": "「玄瑞、お前の志は立派じゃ、じゃが、力だけでは国は守れん。」"
+        "text": "「玄瑞、お前の志は立派じゃ、じゃが、力だけでは国は守れん。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「敵を知り、自らを知ることが先じゃ、西洋には学ぶべき学問、制度、技術が数多くある。」"
+        "text": "「敵を知り、自らを知ることが先じゃ、西洋には学ぶべき学問、制度、技術が数多くある。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「それを学び、日本をより強い国にする。」"
+        "text": "「それを学び、日本をより強い国にする。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-70",
         "kind": "dialogue",
-        "text": "「そして、その考えを幕府や藩主へ届け、国そのものを変えていかねばならん。」"
+        "text": "「そして、その考えを幕府や藩主へ届け、国そのものを変えていかねばならん。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「戦うのは、その後でも遅くはない。」"
+        "text": "「戦うのは、その後でも遅くはない。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-72",
@@ -375,57 +373,68 @@ export const chapters: Chapter[] = [
       {
         "id": "p-74",
         "kind": "dialogue",
-        "text": "「先生も玄瑞も、もっともじゃ。」"
+        "text": "「先生も玄瑞も、もっともじゃ。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-75",
         "kind": "dialogue",
-        "text": "「じゃが。」"
+        "text": "「じゃが。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-76",
         "kind": "dialogue",
-        "text": "「今はまだ何も見えちょらん。」"
+        "text": "「今はまだ何も見えちょらん。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-77",
         "kind": "dialogue",
-        "text": "「黒船が来た。」"
+        "text": "「黒船が来た。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-78",
         "kind": "dialogue",
-        "text": "「それだけじゃ。」"
+        "text": "「それだけじゃ。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-79",
         "kind": "dialogue",
-        "text": "「幕府がどう動くか。」"
+        "text": "「幕府がどう動くか。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-80",
         "kind": "dialogue",
-        "text": "「諸藩がどう動くか。」"
+        "text": "「諸藩がどう動くか。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-81",
         "kind": "dialogue",
-        "text": "「誰も分からん。」"
+        "text": "「誰も分からん。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-82",
         "kind": "dialogue",
-        "text": "「焦って動けば、国を滅ぼす。」"
+        "text": "「焦って動けば、国を滅ぼす。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-83",
         "kind": "dialogue",
-        "text": "「動かねば、好機を逃す。」"
+        "text": "「動かねば、好機を逃す。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-84",
         "kind": "dialogue",
-        "text": "「その時が来たら、誰よりも早く動けるよう、今は備えることじゃ。」"
+        "text": "「その時が来たら、誰よりも早く動けるよう、今は備えることじゃ。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-85",
@@ -445,17 +454,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-88",
         "kind": "dialogue",
-        "text": "「さて……。」"
+        "text": "「さて……。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-89",
         "kind": "dialogue",
-        "text": "「村瀬君だったかな。」"
+        "text": "「村瀬君だったかな。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-90",
         "kind": "dialogue",
-        "text": "「君の考えを聞かせてください。」"
+        "text": "「君の考えを聞かせてください。」",
+        "speaker": "吉田 松陰"
       }
     ],
     "endingPassages": [
@@ -879,17 +891,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「村瀬。」"
+        "text": "「村瀬。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「お前は、どう思う。」"
+        "text": "「お前は、どう思う。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-50",
         "kind": "dialogue",
-        "text": "「お前の意見を聞かせてくれ。」"
+        "text": "「お前の意見を聞かせてくれ。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-51",
@@ -899,7 +914,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-52",
         "kind": "dialogue",
-        "text": "『諸君、狂いたまえ。』"
+        "text": "『諸君、狂いたまえ。』",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-53",
@@ -1048,17 +1064,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-13",
         "kind": "dialogue",
-        "text": "「これから日本は京都で動く、江戸には幕府がおる。」"
+        "text": "「これから日本は京都で動く、江戸には幕府がおる。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-14",
         "kind": "dialogue",
-        "text": "「じゃが。」"
+        "text": "「じゃが。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-15",
         "kind": "dialogue",
-        "text": "「日本の大義は朝廷にある。」"
+        "text": "「日本の大義は朝廷にある。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-16",
@@ -1068,12 +1087,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-17",
         "kind": "dialogue",
-        "text": "「京都へ行けば、敵も味方もおる。」"
+        "text": "「京都へ行けば、敵も味方もおる。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-18",
         "kind": "dialogue",
-        "text": "「まずは自分の目で見い、人の話を聞け。」"
+        "text": "「まずは自分の目で見い、人の話を聞け。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-19",
@@ -1083,17 +1104,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-20",
         "kind": "dialogue",
-        "text": "「村瀬。」"
+        "text": "「村瀬。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-21",
         "kind": "dialogue",
-        "text": "「お前には京都へ行ってもらう。」"
+        "text": "「お前には京都へ行ってもらう。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-22",
         "kind": "dialogue",
-        "text": "「先生も、まず確かめよ、と言われちょった。」"
+        "text": "「先生も、まず確かめよ、と言われちょった。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-23",
@@ -1138,12 +1162,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-31",
         "kind": "dialogue",
-        "text": "「今日は敵味方はなしじゃき、日本の話をしようぜよ。」"
-      },
-      {
-        "id": "p-32",
-        "kind": "scene",
-        "text": "【勝 海舟】"
+        "text": "「今日は敵味方はなしじゃき、日本の話をしようぜよ。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-33",
@@ -1158,12 +1178,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「長州の若ぇ衆か、よく来たな。」"
+        "text": "「長州の若ぇ衆か、よく来たな。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-36",
         "kind": "dialogue",
-        "text": "「幕府も、ずいぶん古くなっちまった、そいつぁ、俺も認める。」"
+        "text": "「幕府も、ずいぶん古くなっちまった、そいつぁ、俺も認める。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-37",
@@ -1173,22 +1195,26 @@ export const chapters: Chapter[] = [
       {
         "id": "p-38",
         "kind": "dialogue",
-        "text": "「だがよ。」"
+        "text": "「だがよ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-39",
         "kind": "dialogue",
-        "text": "「古いってだけで壊しちまうのは、三流のやることだ。二百六十年も続いた仕組みだ。」"
+        "text": "「古いってだけで壊しちまうのは、三流のやることだ。二百六十年も続いた仕組みだ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「役に立つもんまで捨てるこたぁねぇ、残すもんは残す。」"
+        "text": "「役に立つもんまで捨てるこたぁねぇ、残すもんは残す。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-41",
         "kind": "dialogue",
-        "text": "「直すもんは直す、そうやって国ってぇのは続いていくんだ。」"
+        "text": "「直すもんは直す、そうやって国ってぇのは続いていくんだ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-42",
@@ -1203,17 +1229,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「勝どん、そいは立派な考えでごわす。」"
+        "text": "「勝どん、そいは立派な考えでごわす。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-45",
         "kind": "dialogue",
-        "text": "「・・じゃっどん、黒船が来て何年経った。」"
+        "text": "「・・じゃっどん、黒船が来て何年経った。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-46",
         "kind": "dialogue",
-        "text": "「話し合いばかいで、日本は変わりもしたか。」"
+        "text": "「話し合いばかいで、日本は変わりもしたか。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-47",
@@ -1223,17 +1252,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「今こそ、覚悟を決める時でごわす。」"
+        "text": "「今こそ、覚悟を決める時でごわす。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「変えるなら、一気に変えんにゃいかん。」"
-      },
-      {
-        "id": "p-50",
-        "kind": "scene",
-        "text": "【坂本 龍馬】"
+        "text": "「変えるなら、一気に変えんにゃいかん。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-51",
@@ -1243,12 +1269,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-52",
         "kind": "dialogue",
-        "text": "「二人とも、守るか、壊すか。」"
+        "text": "「二人とも、守るか、壊すか。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-53",
         "kind": "dialogue",
-        "text": "「そこばっかりながよ。」"
+        "text": "「そこばっかりながよ。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-54",
@@ -1258,27 +1286,32 @@ export const chapters: Chapter[] = [
       {
         "id": "p-55",
         "kind": "dialogue",
-        "text": "「朝廷。」"
+        "text": "「朝廷。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-56",
         "kind": "dialogue",
-        "text": "「幕府。」"
+        "text": "「幕府。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「薩摩。」"
+        "text": "「薩摩。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「長州。」"
+        "text": "「長州。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
-        "text": "「みんな敵になる必要はないがじゃ。」"
+        "text": "「みんな敵になる必要はないがじゃ。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-60",
@@ -1288,7 +1321,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-61",
         "kind": "dialogue",
-        "text": "「力を合わせる国は作れんろうか。」"
+        "text": "「力を合わせる国は作れんろうか。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-62",
@@ -1298,7 +1332,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-63",
         "kind": "dialogue",
-        "text": "「面白ぇこと言うじゃねぇか。」"
+        "text": "「面白ぇこと言うじゃねぇか。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-64",
@@ -1308,12 +1343,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-65",
         "kind": "dialogue",
-        "text": "「だがよ。」"
+        "text": "「だがよ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-66",
         "kind": "dialogue",
-        "text": "「国ってぇのは、理想だけじゃ動かねぇ。」"
+        "text": "「国ってぇのは、理想だけじゃ動かねぇ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-67",
@@ -1323,12 +1360,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「いや。」"
+        "text": "「いや。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「新しい仕組みぜよ。」"
+        "text": "「新しい仕組みぜよ。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-70",
@@ -1338,12 +1377,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「坂本どん。」"
+        "text": "「坂本どん。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-72",
         "kind": "dialogue",
-        "text": "「皆が同じ方向を向くとは思えん。」"
+        "text": "「皆が同じ方向を向くとは思えん。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-73",
@@ -1353,12 +1394,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-74",
         "kind": "dialogue",
-        "text": "「じゃき。」"
+        "text": "「じゃき。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-75",
         "kind": "dialogue",
-        "text": "「仕組みを変えるがじゃ。」"
+        "text": "「仕組みを変えるがじゃ。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-76",
@@ -1423,22 +1466,26 @@ export const chapters: Chapter[] = [
       {
         "id": "p-88",
         "kind": "dialogue",
-        "text": "「長州の若ぇ衆。」"
+        "text": "「長州の若ぇ衆。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-89",
         "kind": "dialogue",
-        "text": "「人の話ぁ聞いて。」"
+        "text": "「人の話ぁ聞いて。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-90",
         "kind": "dialogue",
-        "text": "「おめぇは何を思った。」"
+        "text": "「おめぇは何を思った。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-91",
         "kind": "dialogue",
-        "text": "「聞かせてみな。」"
+        "text": "「聞かせてみな。」",
+        "speaker": "勝 海舟"
       }
     ],
     "endingPassages": [
@@ -1557,12 +1604,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-6",
         "kind": "dialogue",
-        "text": "「このままでは終われない、朝廷に真意を伝えなければならない。」"
+        "text": "「このままでは終われない、朝廷に真意を伝えなければならない。」",
+        "speaker": "長州藩士たち"
       },
       {
         "id": "p-7",
         "kind": "dialogue",
-        "text": "「長州は逆賊ではない。」"
+        "text": "「長州は逆賊ではない。」",
+        "speaker": "長州藩士たち"
       },
       {
         "id": "p-8",
@@ -1600,14 +1649,10 @@ export const chapters: Chapter[] = [
         "text": "その時、来島 又兵衛（きじま またべえ／長州藩の強硬派の武士）が本陣へ入ってくる。"
       },
       {
-        "id": "p-15",
-        "kind": "scene",
-        "text": "【来島 又兵衛】"
-      },
-      {
         "id": "p-16",
         "kind": "dialogue",
-        "text": "「久坂、いつまで待つ。」"
+        "text": "「久坂、いつまで待つ。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-17",
@@ -1617,7 +1662,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-18",
         "kind": "dialogue",
-        "text": "「まだ勅使との話し合いが残っています。」"
+        "text": "「まだ勅使との話し合いが残っています。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-19",
@@ -1627,7 +1673,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-20",
         "kind": "dialogue",
-        "text": "「甘い！」"
+        "text": "「甘い！」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-21",
@@ -1637,12 +1684,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-22",
         "kind": "dialogue",
-        "text": "「会津、薩摩。」"
+        "text": "「会津、薩摩。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-23",
         "kind": "dialogue",
-        "text": "「奴らは既に戦うつもりじゃ！こちらが待てば待つほど包囲される。」"
+        "text": "「奴らは既に戦うつもりじゃ！こちらが待てば待つほど包囲される。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-24",
@@ -1652,12 +1701,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-25",
         "kind": "dialogue",
-        "text": "「京都で力を示さねば、誰も長州の話など聞かん！」"
-      },
-      {
-        "id": "p-26",
-        "kind": "scene",
-        "text": "【久坂 玄瑞】"
+        "text": "「京都で力を示さねば、誰も長州の話など聞かん！」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-27",
@@ -1667,12 +1712,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-28",
         "kind": "dialogue",
-        "text": "「来島殿、我らは戦をしに来たのではありません。」"
+        "text": "「来島殿、我らは戦をしに来たのではありません。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-29",
         "kind": "dialogue",
-        "text": "「朝廷へ、長州の真意を申し上げに来たのです。」"
+        "text": "「朝廷へ、長州の真意を申し上げに来たのです。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-30",
@@ -1682,12 +1729,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-31",
         "kind": "dialogue",
-        "text": "「ならば！」"
+        "text": "「ならば！」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-32",
         "kind": "dialogue",
-        "text": "「門は開くんか！」"
+        "text": "「門は開くんか！」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-33",
@@ -1702,17 +1751,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「久坂、公家は日和見じゃ。」"
+        "text": "「久坂、公家は日和見じゃ。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-36",
         "kind": "dialogue",
-        "text": "「強い方へ流れる。」"
+        "text": "「強い方へ流れる。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「今の京都じゃ、誰も長州の話など聞かん。」"
+        "text": "「今の京都じゃ、誰も長州の話など聞かん。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-38",
@@ -1722,17 +1774,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-39",
         "kind": "dialogue",
-        "text": "「じゃが。」"
+        "text": "「じゃが。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「ここで力を示せば、情勢は変わる。」"
+        "text": "「ここで力を示せば、情勢は変わる。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-41",
         "kind": "dialogue",
-        "text": "「朝廷も、無視はできん。」"
+        "text": "「朝廷も、無視はできん。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-42",
@@ -1742,27 +1797,32 @@ export const chapters: Chapter[] = [
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「わしは、戦がしたいんじゃない、戦わずに済むなら。」"
+        "text": "「わしは、戦がしたいんじゃない、戦わずに済むなら。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「それが一番じゃ。」"
+        "text": "「それが一番じゃ。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-45",
         "kind": "dialogue",
-        "text": "「じゃが。」"
+        "text": "「じゃが。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-46",
         "kind": "dialogue",
-        "text": "「今なら、武力で道を開ける。」"
+        "text": "「今なら、武力で道を開ける。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-47",
         "kind": "dialogue",
-        "text": "「その機を逃したら、長州は終わる。」"
+        "text": "「その機を逃したら、長州は終わる。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-48",
@@ -1782,7 +1842,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-51",
         "kind": "dialogue",
-        "text": "「二人とも落ち着け。」"
+        "text": "「二人とも落ち着け。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-52",
@@ -1792,7 +1853,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-53",
         "kind": "dialogue",
-        "text": "「来島殿の言うことも分かる、久坂の言うことも分かる。」"
+        "text": "「来島殿の言うことも分かる、久坂の言うことも分かる。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-54",
@@ -1802,17 +1864,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-55",
         "kind": "dialogue",
-        "text": "「しかし。」"
+        "text": "「しかし。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-56",
         "kind": "dialogue",
-        "text": "「軍勢を率いて京都へ近づいた時点で、相手は戦と見る。」"
+        "text": "「軍勢を率いて京都へ近づいた時点で、相手は戦と見る。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「こちらに戦う意思がなくとも、薩摩も会津もそうは受け取らん。」"
+        "text": "「こちらに戦う意思がなくとも、薩摩も会津もそうは受け取らん。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-58",
@@ -1827,17 +1892,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-60",
         "kind": "dialogue",
-        "text": "「弁明の機会は、また来る。」"
+        "text": "「弁明の機会は、また来る。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-61",
         "kind": "dialogue",
-        "text": "「しかし。」"
+        "text": "「しかし。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-62",
         "kind": "dialogue",
-        "text": "「今日ここで戦になれば、その機会は永遠に失われるかもしれん。」"
+        "text": "「今日ここで戦になれば、その機会は永遠に失われるかもしれん。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-63",
@@ -1847,7 +1915,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-64",
         "kind": "dialogue",
-        "text": "「待っておれば、長州は滅ぶ。」"
+        "text": "「待っておれば、長州は滅ぶ。」",
+        "speaker": "来島 又兵衛"
       },
       {
         "id": "p-65",
@@ -1857,32 +1926,38 @@ export const chapters: Chapter[] = [
       {
         "id": "p-66",
         "kind": "dialogue",
-        "text": "「戦えば、朝廷から完全に見放されます。」"
+        "text": "「戦えば、朝廷から完全に見放されます。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-67",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「ですが。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「まだ道が閉ざされたわけではありません。」"
+        "text": "「まだ道が閉ざされたわけではありません。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「長州に理解を示してくださっている鷹司家（たかつかさけ）に取り次いでいただければ。」"
+        "text": "「長州に理解を示してくださっている鷹司家（たかつかさけ）に取り次いでいただければ。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-70",
         "kind": "dialogue",
-        "text": "「我らの真意を朝廷へ届けられるやもしれません。」"
+        "text": "「我らの真意を朝廷へ届けられるやもしれません。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「武力に訴える前に、まずは嘆願によって、藩主父子の冤罪を晴らすべきです。」"
+        "text": "「武力に訴える前に、まずは嘆願によって、藩主父子の冤罪を晴らすべきです。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-72",
@@ -1952,12 +2027,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-85",
         "kind": "dialogue",
-        "text": "「お前はどう思う。」"
+        "text": "「お前はどう思う。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-86",
         "kind": "dialogue",
-        "text": "「お前なら考えを持っているはずだ。」"
+        "text": "「お前なら考えを持っているはずだ。」",
+        "speaker": "久坂 玄瑞"
       },
       {
         "id": "p-87",
@@ -1977,7 +2054,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-90",
         "kind": "dialogue",
-        "text": "「自分で考えよ。」"
+        "text": "「自分で考えよ。」",
+        "speaker": "吉田 松陰"
       },
       {
         "id": "p-91",
@@ -2161,12 +2239,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-15",
         "kind": "dialogue",
-        "text": "「皆、聞いちょるとおりじゃ、幕府軍は十五万。」"
+        "text": "「皆、聞いちょるとおりじゃ、幕府軍は十五万。」",
+        "speaker": "椋梨 藤太"
       },
       {
         "id": "p-16",
         "kind": "dialogue",
-        "text": "「今の長州に勝ち目はない。」"
+        "text": "「今の長州に勝ち目はない。」",
+        "speaker": "椋梨 藤太"
       },
       {
         "id": "p-17",
@@ -2176,7 +2256,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-18",
         "kind": "dialogue",
-        "text": "「ここで戦えば、長州藩そのものが滅ぶ。」"
+        "text": "「ここで戦えば、長州藩そのものが滅ぶ。」",
+        "speaker": "椋梨 藤太"
       },
       {
         "id": "p-19",
@@ -2191,7 +2272,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-21",
         "kind": "dialogue",
-        "text": "「しかし……、このまま頭を下げるのですか。」"
+        "text": "「しかし……、このまま頭を下げるのですか。」",
+        "speaker": "長州藩の家老"
       },
       {
         "id": "p-22",
@@ -2201,7 +2283,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-23",
         "kind": "dialogue",
-        "text": "「藩が無くなれば、家臣も、領民も、守れん。」"
+        "text": "「藩が無くなれば、家臣も、領民も、守れん。」",
+        "speaker": "椋梨 藤太"
       },
       {
         "id": "p-24",
@@ -2237,13 +2320,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-30",
         "kind": "dialogue",
-        "text": "「頭を下げる？それで長州が残る思うちょるんか！」"
+        "text": "「頭を下げる？それで長州が残る思うちょるんか！」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-31",
         "kind": "dialogue",
         "text": "「高杉、評議中じゃ。」",
-        "speaker": "椋梨"
+        "speaker": "椋梨 藤太"
       },
       {
         "id": "p-32",
@@ -2253,32 +2337,38 @@ export const chapters: Chapter[] = [
       {
         "id": "p-33",
         "kind": "dialogue",
-        "text": "「幕府は十五万、じゃが十五万が一つの軍じゃない。」"
+        "text": "「幕府は十五万、じゃが十五万が一つの軍じゃない。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「寄せ集めの諸藩じゃ、命令一つ。」"
+        "text": "「寄せ集めの諸藩じゃ、命令一つ。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「まともに動きゃせん。」"
+        "text": "「まともに動きゃせん。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-36",
         "kind": "dialogue",
-        "text": "「ここは長州。」"
+        "text": "「ここは長州。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「山も海も、わしらの庭じゃ。」"
+        "text": "「山も海も、わしらの庭じゃ。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-38",
         "kind": "dialogue",
-        "text": "「攻める者より、守る者が強い。」"
+        "text": "「攻める者より、守る者が強い。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-39",
@@ -2288,27 +2378,32 @@ export const chapters: Chapter[] = [
       {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「それに、奇兵隊がおる。武士だけじゃない。」"
+        "text": "「それに、奇兵隊がおる。武士だけじゃない。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-41",
         "kind": "dialogue",
-        "text": "「身分に関係なく、戦える者が戦う。」"
+        "text": "「身分に関係なく、戦える者が戦う。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-42",
         "kind": "dialogue",
-        "text": "「西洋の戦も学んじょる。幕府は数。」"
+        "text": "「西洋の戦も学んじょる。幕府は数。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「長州は質じゃ。戦えば。」"
+        "text": "「長州は質じゃ。戦えば。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「勝機はある！」"
+        "text": "「勝機はある！」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-45",
@@ -2323,22 +2418,26 @@ export const chapters: Chapter[] = [
       {
         "id": "p-47",
         "kind": "dialogue",
-        "text": "「高杉。」"
+        "text": "「高杉。」",
+        "speaker": "椋梨 藤太"
       },
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「お前の策は、勝つこともあろう。」"
+        "text": "「お前の策は、勝つこともあろう。」",
+        "speaker": "椋梨 藤太"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「だが。」"
+        "text": "「だが。」",
+        "speaker": "椋梨 藤太"
       },
       {
         "id": "p-50",
         "kind": "dialogue",
-        "text": "「藩の命運を託すには、危うすぎる。」"
+        "text": "「藩の命運を託すには、危うすぎる。」",
+        "speaker": "椋梨 藤太"
       },
       {
         "id": "p-51",
@@ -2363,27 +2462,32 @@ export const chapters: Chapter[] = [
       {
         "id": "p-55",
         "kind": "dialogue",
-        "text": "「今は感情で動く時ではない。」"
+        "text": "「今は感情で動く時ではない。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-56",
         "kind": "dialogue",
-        "text": "「しかし。」"
+        "text": "「しかし。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「未来まで差し出してはならない。」"
+        "text": "「未来まで差し出してはならない。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「長州には、再び立ち上がる日が来る。」"
+        "text": "「長州には、再び立ち上がる日が来る。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
-        "text": "「その日まで、知恵を尽くせ。」"
+        "text": "「その日まで、知恵を尽くせ。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-60",
@@ -2418,37 +2522,44 @@ export const chapters: Chapter[] = [
       {
         "id": "p-66",
         "kind": "dialogue",
-        "text": "「皆の話。」"
+        "text": "「皆の話。」",
+        "speaker": "毛利 敬親"
       },
       {
         "id": "p-67",
         "kind": "dialogue",
-        "text": "「よう聞いた。」"
+        "text": "「よう聞いた。」",
+        "speaker": "毛利 敬親"
       },
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「椋梨は藩を残そうとしちょる。」"
+        "text": "「椋梨は藩を残そうとしちょる。」",
+        "speaker": "毛利 敬親"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「高杉は志を守ろうとしちょる。」"
+        "text": "「高杉は志を守ろうとしちょる。」",
+        "speaker": "毛利 敬親"
       },
       {
         "id": "p-70",
         "kind": "dialogue",
-        "text": "「周布は未来を託した。」"
+        "text": "「周布は未来を託した。」",
+        "speaker": "毛利 敬親"
       },
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「皆。」"
+        "text": "「皆。」",
+        "speaker": "毛利 敬親"
       },
       {
         "id": "p-72",
         "kind": "dialogue",
-        "text": "「長州を思う気持ちは同じじゃ。」"
+        "text": "「長州を思う気持ちは同じじゃ。」",
+        "speaker": "毛利 敬親"
       },
       {
         "id": "p-73",
@@ -2478,17 +2589,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-78",
         "kind": "dialogue",
-        "text": "「松下村塾（しょうかそんじゅく）の者。」"
+        "text": "「松下村塾（しょうかそんじゅく）の者。」",
+        "speaker": "毛利 敬親"
       },
       {
         "id": "p-79",
         "kind": "dialogue",
-        "text": "「お前のことは聞いておる。」"
+        "text": "「お前のことは聞いておる。」",
+        "speaker": "毛利 敬親"
       },
       {
         "id": "p-80",
         "kind": "dialogue",
-        "text": "「お前はどう思う。」"
+        "text": "「お前はどう思う。」",
+        "speaker": "毛利 敬親"
       },
       {
         "id": "p-81",
@@ -2503,7 +2617,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-83",
         "kind": "dialogue",
-        "text": "「恐れながら、申し上げます。」"
+        "text": "「恐れながら、申し上げます。」",
+        "speaker": "村瀬"
       }
     ],
     "endingPassages": [
@@ -2639,29 +2754,28 @@ export const chapters: Chapter[] = [
         "text": "そこへ、高杉 晋作（たかすぎ しんさく／奇兵隊を率いる長州藩士）が立ち上がる。"
       },
       {
-        "id": "p-10",
-        "kind": "scene",
-        "text": "【高杉 晋作】"
-      },
-      {
         "id": "p-11",
         "kind": "dialogue",
-        "text": "「皆、聞いちょくれ！」"
+        "text": "「皆、聞いちょくれ！」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-12",
         "kind": "dialogue",
-        "text": "「このまま恭順派の連中に付き従うたら、長州は死ぬ。」"
+        "text": "「このまま恭順派の連中に付き従うたら、長州は死ぬ。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-13",
         "kind": "dialogue",
-        "text": "「わしらは、何のために奇兵隊を作った。」"
+        "text": "「わしらは、何のために奇兵隊を作った。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-14",
         "kind": "dialogue",
-        "text": "「身分に関係なく、この国を守るためじゃろう。」"
+        "text": "「身分に関係なく、この国を守るためじゃろう。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-15",
@@ -2671,32 +2785,38 @@ export const chapters: Chapter[] = [
       {
         "id": "p-16",
         "kind": "dialogue",
-        "text": "「今の藩政府は、幕府の顔色ばかり見ちょる。」"
+        "text": "「今の藩政府は、幕府の顔色ばかり見ちょる。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-17",
         "kind": "dialogue",
-        "text": "「じゃが。」"
+        "text": "「じゃが。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-18",
         "kind": "dialogue",
-        "text": "「わしらには奇兵隊がおる！西洋式の訓練も積んだ。」"
+        "text": "「わしらには奇兵隊がおる！西洋式の訓練も積んだ。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-19",
         "kind": "dialogue",
-        "text": "「最新のミニエー銃もある。恭順派に膝を折っとらん者も、まだ大勢おる！」"
+        "text": "「最新のミニエー銃もある。恭順派に膝を折っとらん者も、まだ大勢おる！」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-20",
         "kind": "dialogue",
-        "text": "「わしらは数じゃない。質で勝負する。数で劣っても、戦なら負けん。」"
+        "text": "「わしらは数じゃない。質で勝負する。数で劣っても、戦なら負けん。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-21",
         "kind": "dialogue",
-        "text": "「今なら、まだひっくり返せる。ここで立たにゃ、長州は終わる！」"
+        "text": "「今なら、まだひっくり返せる。ここで立たにゃ、長州は終わる！」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-22",
@@ -2706,17 +2826,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-23",
         "kind": "dialogue",
-        "text": "「そうじゃ！」"
+        "text": "「そうじゃ！」",
+        "speaker": "奇兵隊の隊士"
       },
       {
         "id": "p-24",
         "kind": "dialogue",
-        "text": "「晋さんについて行く！」"
+        "text": "「晋さんについて行く！」",
+        "speaker": "奇兵隊の隊士"
       },
       {
         "id": "p-25",
         "kind": "dialogue",
-        "text": "「恭順派なんぞに負けてたまるか！」"
+        "text": "「恭順派なんぞに負けてたまるか！」",
+        "speaker": "奇兵隊の隊士"
       },
       {
         "id": "p-26",
@@ -2739,14 +2862,10 @@ export const chapters: Chapter[] = [
         "text": "長州藩士・赤根 武人（あかね たけと）が口を開く。"
       },
       {
-        "id": "p-30",
-        "kind": "scene",
-        "text": "【赤根 武人】"
-      },
-      {
         "id": "p-31",
         "kind": "dialogue",
-        "text": "「皆、少し落ち着け。」"
+        "text": "「皆、少し落ち着け。」",
+        "speaker": "赤根 武人"
       },
       {
         "id": "p-32",
@@ -2756,22 +2875,26 @@ export const chapters: Chapter[] = [
       {
         "id": "p-33",
         "kind": "dialogue",
-        "text": "「高杉さんの志は立派じゃ。」"
+        "text": "「高杉さんの志は立派じゃ。」",
+        "speaker": "赤根 武人"
       },
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「じゃが。」"
+        "text": "「じゃが。」",
+        "speaker": "赤根 武人"
       },
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「今戦を始めれば、斬り合う相手は幕府ではない。同じ長州の仲間じゃ。」"
+        "text": "「今戦を始めれば、斬り合う相手は幕府ではない。同じ長州の仲間じゃ。」",
+        "speaker": "赤根 武人"
       },
       {
         "id": "p-36",
         "kind": "dialogue",
-        "text": "「長州が二つに割れてしまう。」"
+        "text": "「長州が二つに割れてしまう。」",
+        "speaker": "赤根 武人"
       },
       {
         "id": "p-37",
@@ -2781,17 +2904,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-38",
         "kind": "dialogue",
-        "text": "「恭順派も、長州を守ろうとしちょる、やり方が違うだけじゃ。」"
+        "text": "「恭順派も、長州を守ろうとしちょる、やり方が違うだけじゃ。」",
+        "speaker": "赤根 武人"
       },
       {
         "id": "p-39",
         "kind": "dialogue",
-        "text": "「藩を二つに割れば、幕府が喜ぶだけじゃ。」"
+        "text": "「藩を二つに割れば、幕府が喜ぶだけじゃ。」",
+        "speaker": "赤根 武人"
       },
       {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「今必要なんは、争いではない、長州を立て直すことじゃ。」"
+        "text": "「今必要なんは、争いではない、長州を立て直すことじゃ。」",
+        "speaker": "赤根 武人"
       },
       {
         "id": "p-41",
@@ -2806,12 +2932,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「赤根、恭順派と手を取り合うて。」"
+        "text": "「赤根、恭順派と手を取り合うて。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「長州は変わるんか。」"
+        "text": "「長州は変わるんか。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-45",
@@ -2821,7 +2949,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-46",
         "kind": "dialogue",
-        "text": "「戦うても、長州人同士が傷つけば、それは長州の勝ちとは言えん。」"
+        "text": "「戦うても、長州人同士が傷つけば、それは長州の勝ちとは言えん。」",
+        "speaker": "赤根 武人"
       },
       {
         "id": "p-47",
@@ -2844,24 +2973,22 @@ export const chapters: Chapter[] = [
         "text": "長州藩士・山縣 狂介（やまがた きょうすけ／のちの山縣 有朋。長州藩出身の軍政家）だった。"
       },
       {
-        "id": "p-51",
-        "kind": "scene",
-        "text": "【山縣 狂介】"
-      },
-      {
         "id": "p-52",
         "kind": "dialogue",
-        "text": "「……俺には分からん、高杉さんの言うことも分かる。」"
+        "text": "「……俺には分からん、高杉さんの言うことも分かる。」",
+        "speaker": "山縣 狂介"
       },
       {
         "id": "p-53",
         "kind": "dialogue",
-        "text": "「赤根さんの言うことも分かる。」"
+        "text": "「赤根さんの言うことも分かる。」",
+        "speaker": "山縣 狂介"
       },
       {
         "id": "p-54",
         "kind": "dialogue",
-        "text": "「どっちも、長州を思うちょる。」"
+        "text": "「どっちも、長州を思うちょる。」",
+        "speaker": "山縣 狂介"
       },
       {
         "id": "p-55",
@@ -2871,37 +2998,44 @@ export const chapters: Chapter[] = [
       {
         "id": "p-56",
         "kind": "dialogue",
-        "text": "「もし奇兵隊が割れたら、俺は、仲間へ銃を向けるんじゃろうか。」"
+        "text": "「もし奇兵隊が割れたら、俺は、仲間へ銃を向けるんじゃろうか。」",
+        "speaker": "山縣 狂介"
       },
       {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「まだ決断する時ではない。情勢を見極めるべきじゃ。」"
+        "text": "「まだ決断する時ではない。情勢を見極めるべきじゃ。」",
+        "speaker": "山縣 狂介"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「恭順を唱えちょる者も、皆が同じ思いではない。」"
+        "text": "「恭順を唱えちょる者も、皆が同じ思いではない。」",
+        "speaker": "山縣 狂介"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
-        "text": "「時が経てば。」"
+        "text": "「時が経てば。」",
+        "speaker": "山縣 狂介"
       },
       {
         "id": "p-60",
         "kind": "dialogue",
-        "text": "「必ず流れは変わる。」"
+        "text": "「必ず流れは変わる。」",
+        "speaker": "山縣 狂介"
       },
       {
         "id": "p-61",
         "kind": "dialogue",
-        "text": "「今動けば。」"
+        "text": "「今動けば。」",
+        "speaker": "山縣 狂介"
       },
       {
         "id": "p-62",
         "kind": "dialogue",
-        "text": "「敵より先に、長州の仲間へ銃を向けることになる。」"
+        "text": "「敵より先に、長州の仲間へ銃を向けることになる。」",
+        "speaker": "山縣 狂介"
       },
       {
         "id": "p-63",
@@ -2911,7 +3045,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-64",
         "kind": "dialogue",
-        "text": "「お前は、どうしてそんな冷静でおられるんじゃ。」"
+        "text": "「お前は、どうしてそんな冷静でおられるんじゃ。」",
+        "speaker": "山縣 狂介"
       },
       {
         "id": "p-65",
@@ -2956,17 +3091,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-73",
         "kind": "dialogue",
-        "text": "「異論がある者は、遠慮はいらん。」"
+        "text": "「異論がある者は、遠慮はいらん。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-74",
         "kind": "dialogue",
-        "text": "「今日。」"
+        "text": "「今日。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-75",
         "kind": "dialogue",
-        "text": "「この場で決める。」"
+        "text": "「この場で決める。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-76",
@@ -2976,17 +3114,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-77",
         "kind": "dialogue",
-        "text": "「村瀬！」"
+        "text": "「村瀬！」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-78",
         "kind": "dialogue",
-        "text": "「何か言いたそうな顔しちょるな。」"
+        "text": "「何か言いたそうな顔しちょるな。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-79",
         "kind": "dialogue",
-        "text": "「お前は、どう思う。」"
+        "text": "「お前は、どう思う。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-80",
@@ -3204,19 +3345,16 @@ export const chapters: Chapter[] = [
         "text": "長州藩士・桂 小五郎（かつら こごろう）が静かに立ち上がる。"
       },
       {
-        "id": "p-20",
-        "kind": "scene",
-        "text": "【桂 小五郎】"
-      },
-      {
         "id": "p-21",
         "kind": "dialogue",
-        "text": "「……帰ろう、これ以上。」"
+        "text": "「……帰ろう、これ以上。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-22",
         "kind": "dialogue",
-        "text": "「待つ理由はない。」"
+        "text": "「待つ理由はない。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-23",
@@ -3239,14 +3377,10 @@ export const chapters: Chapter[] = [
         "text": "後ろには土佐藩士・中岡 慎太郎（なかおか しんたろう）。"
       },
       {
-        "id": "p-27",
-        "kind": "scene",
-        "text": "【龍馬】"
-      },
-      {
         "id": "p-28",
         "kind": "dialogue",
-        "text": "「待っちょくれ！まだ終わっちゃおらん！」"
+        "text": "「待っちょくれ！まだ終わっちゃおらん！」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-29",
@@ -3256,12 +3390,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-30",
         "kind": "dialogue",
-        "text": "「桂先生、申し訳ありません。」"
+        "text": "「桂先生、申し訳ありません。」",
+        "speaker": "中岡 慎太郎"
       },
       {
         "id": "p-31",
         "kind": "dialogue",
-        "text": "「最後までお願いしましたが、西郷さんは動きませんでした。」"
+        "text": "「最後までお願いしましたが、西郷さんは動きませんでした。」",
+        "speaker": "中岡 慎太郎"
       },
       {
         "id": "p-32",
@@ -3276,12 +3412,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「そうか、なら。」"
+        "text": "「そうか、なら。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「今日はここまでじゃ。」"
+        "text": "「今日はここまでじゃ。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-36",
@@ -3289,19 +3427,16 @@ export const chapters: Chapter[] = [
         "text": "それまで黙っていた村田 蔵六（むらた ぞうろく／兵学者）が口を開く。"
       },
       {
-        "id": "p-37",
-        "kind": "scene",
-        "text": "【村田 蔵六】"
-      },
-      {
         "id": "p-38",
         "kind": "dialogue",
-        "text": "「桂さん、一つ、お聞きします。」"
+        "text": "「桂さん、一つ、お聞きします。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-39",
         "kind": "dialogue",
-        "text": "「本当に、長州だけで勝てるとお考えですか。」"
+        "text": "「本当に、長州だけで勝てるとお考えですか。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-40",
@@ -3311,47 +3446,50 @@ export const chapters: Chapter[] = [
       {
         "id": "p-41",
         "kind": "dialogue",
-        "text": "「幕府は、兵も、武器も、我々を上回っています。」"
+        "text": "「幕府は、兵も、武器も、我々を上回っています。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-42",
         "kind": "dialogue",
-        "text": "「薩摩の力なくして、勝てる見込みはありません。」"
-      },
-      {
-        "id": "p-43",
-        "kind": "scene",
-        "text": "【桂 小五郎】"
+        "text": "「薩摩の力なくして、勝てる見込みはありません。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「分かってます。」"
+        "text": "「分かってます。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-45",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「ですが。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-46",
         "kind": "dialogue",
-        "text": "「薩摩と組めば、藩論はまた割れるかもしれません。」"
+        "text": "「薩摩と組めば、藩論はまた割れるかもしれません。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-47",
         "kind": "dialogue",
-        "text": "「ようやく一つになった長州です。それに、私には長崎に伝手がある。」"
+        "text": "「ようやく一つになった長州です。それに、私には長崎に伝手がある。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「武器を手に入れる道は、まだ残ってます。」"
+        "text": "「武器を手に入れる道は、まだ残ってます。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「まずは、長州だけで戦える道を探る。」"
+        "text": "「まずは、長州だけで戦える道を探る。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-50",
@@ -3359,14 +3497,10 @@ export const chapters: Chapter[] = [
         "text": "村田は一歩前へ出る。"
       },
       {
-        "id": "p-51",
-        "kind": "scene",
-        "text": "【村田 蔵六】"
-      },
-      {
         "id": "p-52",
         "kind": "dialogue",
-        "text": "「それは、長州の面子ですか。」"
+        "text": "「それは、長州の面子ですか。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-53",
@@ -3376,7 +3510,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-54",
         "kind": "dialogue",
-        "text": "「……違います。」"
+        "text": "「……違います。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-55",
@@ -3386,32 +3521,38 @@ export const chapters: Chapter[] = [
       {
         "id": "p-56",
         "kind": "dialogue",
-        "text": "「私には、そう見えます。昨日まで敵だった。」"
+        "text": "「私には、そう見えます。昨日まで敵だった。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「だから頼りたくない。」"
+        "text": "「だから頼りたくない。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「それは感情です。」"
+        "text": "「それは感情です。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
-        "text": "「戦は、感情では勝てません。」"
+        "text": "「戦は、感情では勝てません。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-60",
         "kind": "dialogue",
-        "text": "「勝たねば。」"
+        "text": "「勝たねば。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-61",
         "kind": "dialogue",
-        "text": "「国は残りません。」"
+        "text": "「国は残りません。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-62",
@@ -3419,44 +3560,46 @@ export const chapters: Chapter[] = [
         "text": "静寂。"
       },
       {
-        "id": "p-63",
-        "kind": "scene",
-        "text": "【桂 小五郎】"
-      },
-      {
         "id": "p-64",
         "kind": "dialogue",
-        "text": "「村田先生。」"
+        "text": "「村田先生。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-65",
         "kind": "dialogue",
-        "text": "「あなたのおっしゃることは正しい。」"
+        "text": "「あなたのおっしゃることは正しい。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-66",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「ですが。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-67",
         "kind": "dialogue",
-        "text": "「国は理屈だけでは動かん。」"
+        "text": "「国は理屈だけでは動かん。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「人が動く。」"
+        "text": "「人が動く。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「藩が動く。」"
+        "text": "「藩が動く。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-70",
         "kind": "dialogue",
-        "text": "「その人心をまとめるのも、わたしの務めです。」"
+        "text": "「その人心をまとめるのも、わたしの務めです。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-71",
@@ -3464,29 +3607,28 @@ export const chapters: Chapter[] = [
         "text": "龍馬が苦笑いを浮かべながら立ち上がる。"
       },
       {
-        "id": "p-72",
-        "kind": "scene",
-        "text": "【坂本 龍馬】"
-      },
-      {
         "id": "p-73",
         "kind": "dialogue",
-        "text": "「まあまあ。」"
+        "text": "「まあまあ。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-74",
         "kind": "dialogue",
-        "text": "「二人とも落ち着いてつかあさい。」"
+        "text": "「二人とも落ち着いてつかあさい。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-75",
         "kind": "dialogue",
-        "text": "「うまいこと話がまとまる思うちょったが……。」"
+        "text": "「うまいこと話がまとまる思うちょったが……。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-76",
         "kind": "dialogue",
-        "text": "「やっぱり、どだい無理な話じゃったかのう。」"
+        "text": "「やっぱり、どだい無理な話じゃったかのう。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-77",
@@ -3496,27 +3638,32 @@ export const chapters: Chapter[] = [
       {
         "id": "p-78",
         "kind": "dialogue",
-        "text": "「じゃが。」"
+        "text": "「じゃが。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-79",
         "kind": "dialogue",
-        "text": "「二人とも、見ちゅう先が違うだけじゃ。」"
+        "text": "「二人とも、見ちゅう先が違うだけじゃ。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-80",
         "kind": "dialogue",
-        "text": "「桂さんは、まず長州を立て直したい。」"
+        "text": "「桂さんは、まず長州を立て直したい。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-81",
         "kind": "dialogue",
-        "text": "「蔵六先生は、幕府に勝つ方法を考えちゅう。」"
+        "text": "「蔵六先生は、幕府に勝つ方法を考えちゅう。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-82",
         "kind": "dialogue",
-        "text": "「どっちも間違うちゃあせん。」"
+        "text": "「どっちも間違うちゃあせん。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-83",
@@ -3526,22 +3673,26 @@ export const chapters: Chapter[] = [
       {
         "id": "p-84",
         "kind": "dialogue",
-        "text": "「じゃき、いきなり同盟を結ぼうとするき揉めるがじゃ。」"
+        "text": "「じゃき、いきなり同盟を結ぼうとするき揉めるがじゃ。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-85",
         "kind": "dialogue",
-        "text": "「まずは商いから始めようや。」"
+        "text": "「まずは商いから始めようや。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-86",
         "kind": "dialogue",
-        "text": "「わしは亀山社中（かめやましゃちゅう）いう、かんぱにいを作っちゅう。」"
+        "text": "「わしは亀山社中（かめやましゃちゅう）いう、かんぱにいを作っちゅう。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-87",
         "kind": "dialogue",
-        "text": "「……かんぱにい？」"
+        "text": "「……かんぱにい？」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-88",
@@ -3551,12 +3702,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-89",
         "kind": "dialogue",
-        "text": "「西洋でいう会社のようなものです。」"
+        "text": "「西洋でいう会社のようなものです。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-90",
         "kind": "dialogue",
-        "text": "「多くの人から資金を集め、力を合わせて大きな仕事を成し遂げる組織です。」"
+        "text": "「多くの人から資金を集め、力を合わせて大きな仕事を成し遂げる組織です。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-91",
@@ -3566,37 +3719,44 @@ export const chapters: Chapter[] = [
       {
         "id": "p-92",
         "kind": "dialogue",
-        "text": "「そのとおりじゃ。」"
+        "text": "「そのとおりじゃ。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-93",
         "kind": "dialogue",
-        "text": "「亀山社中が薩摩の名義で武器を買う。」"
+        "text": "「亀山社中が薩摩の名義で武器を買う。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-94",
         "kind": "dialogue",
-        "text": "「その武器を長州へ渡す。」"
+        "text": "「その武器を長州へ渡す。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-95",
         "kind": "dialogue",
-        "text": "「政治やない。」"
+        "text": "「政治やない。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-96",
         "kind": "dialogue",
-        "text": "「まずは商いじゃ。」"
+        "text": "「まずは商いじゃ。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-97",
         "kind": "dialogue",
-        "text": "「小さい約束を守れば、人は信用する。」"
+        "text": "「小さい約束を守れば、人は信用する。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-98",
         "kind": "dialogue",
-        "text": "「その積み重ねが、同盟になるがじゃ。」"
+        "text": "「その積み重ねが、同盟になるがじゃ。」",
+        "speaker": "坂本 龍馬"
       },
       {
         "id": "p-99",
@@ -3614,29 +3774,28 @@ export const chapters: Chapter[] = [
         "text": "やがて、ゆっくりと口を開く。"
       },
       {
-        "id": "p-102",
-        "kind": "scene",
-        "text": "【桂 小五郎】"
-      },
-      {
         "id": "p-103",
         "kind": "dialogue",
-        "text": "「坂本さん。」"
+        "text": "「坂本さん。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-104",
         "kind": "dialogue",
-        "text": "「私は、薩摩と手を結ぶことに反対ではありません。」"
+        "text": "「私は、薩摩と手を結ぶことに反対ではありません。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-105",
         "kind": "dialogue",
-        "text": "「だからこそ。」"
+        "text": "「だからこそ。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-106",
         "kind": "dialogue",
-        "text": "「藩内の反対を押し切り、ここまで参りました。」"
+        "text": "「藩内の反対を押し切り、ここまで参りました。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-107",
@@ -3646,22 +3805,26 @@ export const chapters: Chapter[] = [
       {
         "id": "p-108",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「ですが。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-109",
         "kind": "dialogue",
-        "text": "「藩では、皆が申しました。」"
+        "text": "「藩では、皆が申しました。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-110",
         "kind": "dialogue",
-        "text": "「薩摩は信用できぬ。」"
+        "text": "「薩摩は信用できぬ。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-111",
         "kind": "dialogue",
-        "text": "「また裏切られるだけだ、と。」"
+        "text": "「また裏切られるだけだ、と。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-112",
@@ -3671,42 +3834,50 @@ export const chapters: Chapter[] = [
       {
         "id": "p-113",
         "kind": "dialogue",
-        "text": "「それでも私は、長州を救う道は、それしかないと信じました。」"
+        "text": "「それでも私は、長州を救う道は、それしかないと信じました。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-114",
         "kind": "dialogue",
-        "text": "「しかし。」"
+        "text": "「しかし。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-115",
         "kind": "dialogue",
-        "text": "「会談は反故にされました。」"
+        "text": "「会談は反故にされました。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-116",
         "kind": "dialogue",
-        "text": "「あの時。」"
+        "text": "「あの時。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-117",
         "kind": "dialogue",
-        "text": "「皆の言うことが正しかったのではないかと。」"
+        "text": "「皆の言うことが正しかったのではないかと。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-118",
         "kind": "dialogue",
-        "text": "「そう思わずにはいられません。」"
+        "text": "「そう思わずにはいられません。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-119",
         "kind": "dialogue",
-        "text": "「それでも同盟を進めると申せば。」"
+        "text": "「それでも同盟を進めると申せば。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-120",
         "kind": "dialogue",
-        "text": "「私一人の首では済まぬ話でしょう。」"
+        "text": "「私一人の首では済まぬ話でしょう。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-121",
@@ -3724,39 +3895,40 @@ export const chapters: Chapter[] = [
         "text": "しかし、その空気を破るように村田が口を開く。"
       },
       {
-        "id": "p-124",
-        "kind": "scene",
-        "text": "【村田 蔵六】"
-      },
-      {
         "id": "p-125",
         "kind": "dialogue",
-        "text": "「坂本さん。」"
+        "text": "「坂本さん。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-126",
         "kind": "dialogue",
-        "text": "「あなたのお考えは分かります。」"
+        "text": "「あなたのお考えは分かります。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-127",
         "kind": "dialogue",
-        "text": "「しかし。」"
+        "text": "「しかし。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-128",
         "kind": "dialogue",
-        "text": "「今、長州には武器が足りません。」"
+        "text": "「今、長州には武器が足りません。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-129",
         "kind": "dialogue",
-        "text": "「兵も足りません。」"
+        "text": "「兵も足りません。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-130",
         "kind": "dialogue",
-        "text": "「次の征討が始まれば、今のままでは持ちこたえられません。」"
+        "text": "「次の征討が始まれば、今のままでは持ちこたえられません。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-131",
@@ -3766,72 +3938,86 @@ export const chapters: Chapter[] = [
       {
         "id": "p-132",
         "kind": "dialogue",
-        "text": "「信用を積み重ねる。」"
+        "text": "「信用を積み重ねる。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-133",
         "kind": "dialogue",
-        "text": "「坂本さん、そのお考えはごもっともです。」"
+        "text": "「坂本さん、そのお考えはごもっともです。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-134",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「ですが。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-135",
         "kind": "dialogue",
-        "text": "「それは平時の話です。」"
+        "text": "「それは平時の話です。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-136",
         "kind": "dialogue",
-        "text": "「幕府は、こちらの都合など待ってはくれません。」"
+        "text": "「幕府は、こちらの都合など待ってはくれません。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-137",
         "kind": "dialogue",
-        "text": "「今日も、明日も、征討の準備を進めています。」"
+        "text": "「今日も、明日も、征討の準備を進めています。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-138",
         "kind": "dialogue",
-        "text": "「我々が信用を築いている間にも、戦は近づいております。」"
+        "text": "「我々が信用を築いている間にも、戦は近づいております。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-139",
         "kind": "dialogue",
-        "text": "「それに、薩摩も安泰ではありません。」"
+        "text": "「それに、薩摩も安泰ではありません。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-140",
         "kind": "dialogue",
-        "text": "「長州が滅べば。」"
+        "text": "「長州が滅べば。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-141",
         "kind": "dialogue",
-        "text": "「幕府は次に薩摩へ向かうでしょう。」"
+        "text": "「幕府は次に薩摩へ向かうでしょう。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-142",
         "kind": "dialogue",
-        "text": "「それは薩摩も分かっているはずです。」"
+        "text": "「それは薩摩も分かっているはずです。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-143",
         "kind": "dialogue",
-        "text": "「ならば。」"
+        "text": "「ならば。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-144",
         "kind": "dialogue",
-        "text": "「今は信用を育てるより。」"
+        "text": "「今は信用を育てるより。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-145",
         "kind": "dialogue",
-        "text": "「共に生き残る道を選ぶべきではありませんか。」"
+        "text": "「共に生き残る道を選ぶべきではありませんか。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-146",
@@ -3901,17 +4087,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-159",
         "kind": "dialogue",
-        "text": "「村瀬君。」"
+        "text": "「村瀬君。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-160",
         "kind": "dialogue",
-        "text": "「……君なら。」"
+        "text": "「……君なら。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-161",
         "kind": "dialogue",
-        "text": "「君の考えも聞かせてほしい。」"
+        "text": "「君の考えも聞かせてほしい。」",
+        "speaker": "桂 小五郎"
       }
     ],
     "endingPassages": [
@@ -4068,24 +4257,22 @@ export const chapters: Chapter[] = [
         "text": "静かな空気の中、桂が地図を広げる。"
       },
       {
-        "id": "p-16",
-        "kind": "scene",
-        "text": "【桂 小五郎】"
-      },
-      {
         "id": "p-17",
         "kind": "dialogue",
-        "text": "「敵は、こちらの何倍もの兵力です。」"
+        "text": "「敵は、こちらの何倍もの兵力です。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-18",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「ですが。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-19",
         "kind": "dialogue",
-        "text": "「数で勝てぬ戦ほど、戦う場所が大事になります。」"
+        "text": "「数で勝てぬ戦ほど、戦う場所が大事になります。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-20",
@@ -4095,12 +4282,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-21",
         "kind": "dialogue",
-        "text": "「守る時は守る、退く時は退く。」"
+        "text": "「守る時は守る、退く時は退く。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-22",
         "kind": "dialogue",
-        "text": "「兵を失うたら、次の戦はない。」"
+        "text": "「兵を失うたら、次の戦はない。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-23",
@@ -4110,7 +4299,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-24",
         "kind": "dialogue",
-        "text": "「指揮官は、勝つ責任だけじゃない、皆を生きて帰す責任も負うてます。」"
+        "text": "「指揮官は、勝つ責任だけじゃない、皆を生きて帰す責任も負うてます。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-25",
@@ -4123,14 +4313,10 @@ export const chapters: Chapter[] = [
         "text": "高杉が笑いながら腕を組む。"
       },
       {
-        "id": "p-27",
-        "kind": "scene",
-        "text": "【高杉 晋作】"
-      },
-      {
         "id": "p-28",
         "kind": "dialogue",
-        "text": "「桂さんらしいのう。」"
+        "text": "「桂さんらしいのう。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-29",
@@ -4140,32 +4326,38 @@ export const chapters: Chapter[] = [
       {
         "id": "p-30",
         "kind": "dialogue",
-        "text": "「禁門も、功山寺も、よう生き抜いたな。敵は強い。」"
+        "text": "「禁門も、功山寺も、よう生き抜いたな。敵は強い。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-31",
         "kind": "dialogue",
-        "text": "「数は向こうが上じゃ、じゃが。勝負は数で決まらん！」"
+        "text": "「数は向こうが上じゃ、じゃが。勝負は数で決まらん！」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-32",
         "kind": "dialogue",
-        "text": "「最後に戦うんは人じゃ。」"
+        "text": "「最後に戦うんは人じゃ。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-33",
         "kind": "dialogue",
-        "text": "「兵は、指揮官の背中を見て動く、わしが前へ出りゃ。」"
+        "text": "「兵は、指揮官の背中を見て動く、わしが前へ出りゃ。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「皆も前へ出る！」"
+        "text": "「皆も前へ出る！」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「士気は、数の差をひっくり返す！」"
+        "text": "「士気は、数の差をひっくり返す！」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-36",
@@ -4173,24 +4365,22 @@ export const chapters: Chapter[] = [
         "text": "村田が静かに口を開く。"
       },
       {
-        "id": "p-37",
-        "kind": "scene",
-        "text": "【村田 蔵六】"
-      },
-      {
         "id": "p-38",
         "kind": "dialogue",
-        "text": "「高杉さん、士気は大切です。」"
+        "text": "「高杉さん、士気は大切です。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-39",
         "kind": "dialogue",
-        "text": "「しかし。」"
+        "text": "「しかし。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「士気だけでは勝てません。」"
+        "text": "「士気だけでは勝てません。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-41",
@@ -4200,27 +4390,32 @@ export const chapters: Chapter[] = [
       {
         "id": "p-42",
         "kind": "dialogue",
-        "text": "「兵糧、補給。」"
+        "text": "「兵糧、補給。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「情報、配置。」"
+        "text": "「情報、配置。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「これが整って初めて、兵は安心して戦えます。」"
+        "text": "「これが整って初めて、兵は安心して戦えます。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-45",
         "kind": "dialogue",
-        "text": "「勝つ仕組みを作る。」"
+        "text": "「勝つ仕組みを作る。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-46",
         "kind": "dialogue",
-        "text": "「それが指揮官の仕事です。」"
+        "text": "「それが指揮官の仕事です。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-47",
@@ -4230,12 +4425,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「村田先生。」"
+        "text": "「村田先生。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「相変わらず理屈じゃのう。」"
+        "text": "「相変わらず理屈じゃのう。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-50",
@@ -4245,12 +4442,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-51",
         "kind": "dialogue",
-        "text": "「理屈で勝てる戦なら。」"
+        "text": "「理屈で勝てる戦なら。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-52",
         "kind": "dialogue",
-        "text": "「理屈で勝つべきです。」"
+        "text": "「理屈で勝つべきです。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-53",
@@ -4260,12 +4459,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-54",
         "kind": "dialogue",
-        "text": "「二人とも、間違うちょらん。」"
+        "text": "「二人とも、間違うちょらん。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-55",
         "kind": "dialogue",
-        "text": "「戦には、勇気も、準備もいる。」"
+        "text": "「戦には、勇気も、準備もいる。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-56",
@@ -4290,12 +4491,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-60",
         "kind": "dialogue",
-        "text": "「村瀬君。」"
+        "text": "「村瀬君。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-61",
         "kind": "dialogue",
-        "text": "「待ちなさい。」"
+        "text": "「待ちなさい。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-62",
@@ -4305,12 +4508,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-63",
         "kind": "dialogue",
-        "text": "「いよいよ。」"
+        "text": "「いよいよ。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-64",
         "kind": "dialogue",
-        "text": "「それぞれの隊が動きます。」"
+        "text": "「それぞれの隊が動きます。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-65",
@@ -4320,7 +4525,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-66",
         "kind": "dialogue",
-        "text": "「お前にも働いてもらうぞ。」"
+        "text": "「お前にも働いてもらうぞ。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-67",
@@ -4330,7 +4536,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「どの隊にも、役割があります。」"
+        "text": "「どの隊にも、役割があります。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-69",
@@ -4340,7 +4547,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-70",
         "kind": "dialogue",
-        "text": "「戦の時まで、よう考えなさい。」"
+        "text": "「戦の時まで、よう考えなさい。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-71",
@@ -4350,7 +4558,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-72",
         "kind": "dialogue",
-        "text": "「誰の下で戦いたいか。」"
+        "text": "「誰の下で戦いたいか。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-73",
@@ -4360,7 +4569,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-74",
         "kind": "dialogue",
-        "text": "「命を預ける相手は、自分で選ぶべきです。」"
+        "text": "「命を預ける相手は、自分で選ぶべきです。」",
+        "speaker": "村田 蔵六"
       },
       {
         "id": "p-75",
@@ -4370,7 +4580,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-76",
         "kind": "dialogue",
-        "text": "「その決断が、お前自身の戦い方になる。」"
+        "text": "「その決断が、お前自身の戦い方になる。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-77",
@@ -4380,7 +4591,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-78",
         "kind": "dialogue",
-        "text": "「どこへ来ても、長州のために戦うんは同じじゃ。」"
+        "text": "「どこへ来ても、長州のために戦うんは同じじゃ。」",
+        "speaker": "高杉 晋作"
       },
       {
         "id": "p-79",
@@ -4519,12 +4731,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-9",
         "kind": "dialogue",
-        "text": "「それでは始めます。新しい国づくりについて」"
+        "text": "「それでは始めます。新しい国づくりについて」",
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-10",
         "kind": "dialogue",
-        "text": "「ご意見をお願いいたします。」"
+        "text": "「ご意見をお願いいたします。」",
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-11",
@@ -4539,7 +4753,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-13",
         "kind": "dialogue",
-        "text": "「待て！」"
+        "text": "「待て！」",
+        "speaker": "山内 容堂"
       },
       {
         "id": "p-14",
@@ -4549,12 +4764,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-15",
         "kind": "dialogue",
-        "text": "「皆、大事なことを忘れちょる、徳川家は二百六十年、この国を治めてきた。」"
+        "text": "「皆、大事なことを忘れちょる、徳川家は二百六十年、この国を治めてきた。」",
+        "speaker": "山内 容堂"
       },
       {
         "id": "p-16",
         "kind": "dialogue",
-        "text": "「その徳川を呼びもせず、新しい国を決めるじゃと！そんな道理があるか！」"
+        "text": "「その徳川を呼びもせず、新しい国を決めるじゃと！そんな道理があるか！」",
+        "speaker": "山内 容堂"
       },
       {
         "id": "p-17",
@@ -4569,12 +4786,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-19",
         "kind": "dialogue",
-        "text": "「慶喜公は政権を返上した、まずはその功績を認めるべきじゃ！」"
+        "text": "「慶喜公は政権を返上した、まずはその功績を認めるべきじゃ！」",
+        "speaker": "山内 容堂"
       },
       {
         "id": "p-20",
         "kind": "dialogue",
-        "text": "「徳川をここへ呼べ！本人の前で議論する。それが武士の道じゃ！」"
+        "text": "「徳川をここへ呼べ！本人の前で議論する。それが武士の道じゃ！」",
+        "speaker": "山内 容堂"
       },
       {
         "id": "p-21",
@@ -4589,27 +4808,32 @@ export const chapters: Chapter[] = [
       {
         "id": "p-23",
         "kind": "dialogue",
-        "text": "「私は、容堂公とは少し考えが違います。徳川中心である必要はありません。」"
+        "text": "「私は、容堂公とは少し考えが違います。徳川中心である必要はありません。」",
+        "speaker": "松平 春嶽"
       },
       {
         "id": "p-24",
         "kind": "dialogue",
-        "text": "「しかし。」"
+        "text": "「しかし。」",
+        "speaker": "松平 春嶽"
       },
       {
         "id": "p-25",
         "kind": "dialogue",
-        "text": "「今日決めることは、日本の未来です。未来を決めるのに、一方の話だけを聞いて決める。」"
+        "text": "「今日決めることは、日本の未来です。未来を決めるのに、一方の話だけを聞いて決める。」",
+        "speaker": "松平 春嶽"
       },
       {
         "id": "p-26",
         "kind": "dialogue",
-        "text": "「それでは後世に禍根を残します。徳川にも言い分があります。」"
+        "text": "「それでは後世に禍根を残します。徳川にも言い分があります。」",
+        "speaker": "松平 春嶽"
       },
       {
         "id": "p-27",
         "kind": "dialogue",
-        "text": "「まずは話を聞くべきです。その上で、日本にとって何が最善かを決めればよい。」"
+        "text": "「まずは話を聞くべきです。その上で、日本にとって何が最善かを決めればよい。」",
+        "speaker": "松平 春嶽"
       },
       {
         "id": "p-28",
@@ -4624,7 +4848,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-30",
         "kind": "dialogue",
-        "text": "「徳川を外したままでは、諸藩も納得いたしますまい。」"
+        "text": "「徳川を外したままでは、諸藩も納得いたしますまい。」",
+        "speaker": "列席者"
       },
       {
         "id": "p-31",
@@ -4634,17 +4859,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-32",
         "kind": "dialogue",
-        "text": "「されど、徳川を加えれば、再び幕府の世に戻るおそれがある。」"
+        "text": "「されど、徳川を加えれば、再び幕府の世に戻るおそれがある。」",
+        "speaker": "別の列席者"
       },
       {
         "id": "p-33",
         "kind": "dialogue",
-        "text": "「徳川を呼ぶとしても、どの立場で加わってもらうのか。旧幕府の主としてか。」"
+        "text": "「徳川を呼ぶとしても、どの立場で加わってもらうのか。旧幕府の主としてか。」",
+        "speaker": "別の列席者"
       },
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「一諸侯としてか。」"
+        "text": "「一諸侯としてか。」",
+        "speaker": "別の列席者"
       },
       {
         "id": "p-35",
@@ -4684,12 +4912,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-42",
         "kind": "dialogue",
-        "text": "「このまま続けても、今は結論が出まい。ひとまず休憩としよう。」"
+        "text": "「このまま続けても、今は結論が出まい。ひとまず休憩としよう。」",
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「各々、もう一度考えてもらいたい。」"
+        "text": "「各々、もう一度考えてもらいたい。」",
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-44",
@@ -4724,7 +4954,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-50",
         "kind": "dialogue",
-        "text": "「長州の者か。」"
+        "text": "「長州の者か。」",
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-51",
@@ -4739,7 +4970,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-53",
         "kind": "dialogue",
-        "text": "「皆、この国を思うておる、だからこそ決められん。」"
+        "text": "「皆、この国を思うておる、だからこそ決められん。」",
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-54",
@@ -4752,14 +4984,10 @@ export const chapters: Chapter[] = [
         "text": "廊下の奥から西郷 吉之助（さいごう きちのすけ／薩摩藩の中心人物）が歩いてくる。"
       },
       {
-        "id": "p-56",
-        "kind": "scene",
-        "text": "【西郷 吉之助】"
-      },
-      {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「岩倉さま、まだ決まりもはんか。」"
+        "text": "「岩倉さま、まだ決まりもはんか。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-58",
@@ -4769,7 +4997,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-59",
         "kind": "dialogue",
-        "text": "「皆、正しいことを申す、だから決められん。」"
+        "text": "「皆、正しいことを申す、だから決められん。」",
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-60",
@@ -4784,7 +5013,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-62",
         "kind": "dialogue",
-        "text": "「あいくちが一本あればよか。」"
+        "text": "「あいくちが一本あればよか。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-63",
@@ -4799,12 +5029,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-65",
         "kind": "dialogue",
-        "text": "「人を斬るためではなか、責任を負う覚悟です。」"
+        "text": "「人を斬るためではなか、責任を負う覚悟です。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-66",
         "kind": "dialogue",
-        "text": "「議論は尽くした、最後は誰かが決めんと、国は前へ進まん。」"
+        "text": "「議論は尽くした、最後は誰かが決めんと、国は前へ進まん。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-67",
@@ -4819,7 +5051,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「……そうですな、会議を再開いたしましょう。」"
+        "text": "「……そうですな、会議を再開いたしましょう。」",
+        "speaker": "岩倉 具視"
       },
       {
         "id": "p-70",
@@ -5031,39 +5264,40 @@ export const chapters: Chapter[] = [
         "text": "口を開いたのは、勝 海舟（かつ かいしゅう／幕臣）だった。"
       },
       {
-        "id": "p-14",
-        "kind": "scene",
-        "text": "【勝 海舟】"
-      },
-      {
         "id": "p-15",
         "kind": "dialogue",
-        "text": "「上様、こいつぁ、徳川だけの戦じゃありません。」"
+        "text": "「上様、こいつぁ、徳川だけの戦じゃありません。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-16",
         "kind": "dialogue",
-        "text": "「幕府には兵も船もある、戦えば勝てるかもしれません。」"
+        "text": "「幕府には兵も船もある、戦えば勝てるかもしれません。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-17",
         "kind": "dialogue",
-        "text": "「ですがね、勝っても、薩長を敵に回したままでは、この国はまとまりません。」"
+        "text": "「ですがね、勝っても、薩長を敵に回したままでは、この国はまとまりません。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-18",
         "kind": "dialogue",
-        "text": "「これ以上、戦を広げれば、日本の力は削られる一方です。今必要なのは、戦を終わらせることです。」"
+        "text": "「これ以上、戦を広げれば、日本の力は削られる一方です。今必要なのは、戦を終わらせることです。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-19",
         "kind": "dialogue",
-        "text": "「上様には、この大坂城にお残りいただきたい。上様がおられるからこそ、幕府軍を抑え、薩長とも交渉ができます。」"
+        "text": "「上様には、この大坂城にお残りいただきたい。上様がおられるからこそ、幕府軍を抑え、薩長とも交渉ができます。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-20",
         "kind": "dialogue",
-        "text": "「日本を一つにする道は、まだ残されております。」"
+        "text": "「日本を一つにする道は、まだ残されております。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-21",
@@ -5071,34 +5305,34 @@ export const chapters: Chapter[] = [
         "text": "板倉 勝静（いたくら かつきよ／幕府老中）が静かに口を開く。"
       },
       {
-        "id": "p-22",
-        "kind": "scene",
-        "text": "【板倉 勝静】"
-      },
-      {
         "id": "p-23",
         "kind": "dialogue",
-        "text": "「勝殿のお考えにも道理がございます。しかし、上様には徳川家を残す責任がございます。」"
+        "text": "「勝殿のお考えにも道理がございます。しかし、上様には徳川家を残す責任がございます。」",
+        "speaker": "板倉 勝静"
       },
       {
         "id": "p-24",
         "kind": "dialogue",
-        "text": "「二百六十年以上続いた徳川宗家、これを絶やしてはなりません。」"
+        "text": "「二百六十年以上続いた徳川宗家、これを絶やしてはなりません。」",
+        "speaker": "板倉 勝静"
       },
       {
         "id": "p-25",
         "kind": "dialogue",
-        "text": "「旗本も、御家人も、家臣も、その家族も、皆、徳川家とともに生きてまいりました。」"
+        "text": "「旗本も、御家人も、家臣も、その家族も、皆、徳川家とともに生きてまいりました。」",
+        "speaker": "板倉 勝静"
       },
       {
         "id": "p-26",
         "kind": "dialogue",
-        "text": "「上様がお生きであれば、徳川家は残ります。家が残れば、人も守れます。」"
+        "text": "「上様がお生きであれば、徳川家は残ります。家が残れば、人も守れます。」",
+        "speaker": "板倉 勝静"
       },
       {
         "id": "p-27",
         "kind": "dialogue",
-        "text": "「どうか江戸へお戻りください、徳川家を、お残しください。」"
+        "text": "「どうか江戸へお戻りください、徳川家を、お残しください。」",
+        "speaker": "板倉 勝静"
       },
       {
         "id": "p-28",
@@ -5106,14 +5340,10 @@ export const chapters: Chapter[] = [
         "text": "会津藩主・松平 容保（まつだいら かたもり／会津藩主）が立ち上がる。"
       },
       {
-        "id": "p-29",
-        "kind": "scene",
-        "text": "【松平 容保】"
-      },
-      {
         "id": "p-30",
         "kind": "dialogue",
-        "text": "「私は、戦うべきであると考えます。」"
+        "text": "「私は、戦うべきであると考えます。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-31",
@@ -5128,22 +5358,26 @@ export const chapters: Chapter[] = [
       {
         "id": "p-33",
         "kind": "dialogue",
-        "text": "「この戦、我らが敗れると決まったわけではございません。海軍は幕府が圧倒しております。」"
+        "text": "「この戦、我らが敗れると決まったわけではございません。海軍は幕府が圧倒しております。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「軍艦をもって海を押さえ、艦砲を撃てば、敵は容易には近づけません。陸においても、兵の数は我らが上です。」"
+        "text": "「軍艦をもって海を押さえ、艦砲を撃てば、敵は容易には近づけません。陸においても、兵の数は我らが上です。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「武器も決して引けを取ってはおりません。」"
+        "text": "「武器も決して引けを取ってはおりません。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-36",
         "kind": "dialogue",
-        "text": "「会津も、桑名も、新選組も、幕臣たちも、皆、戦う覚悟を固めております。」"
+        "text": "「会津も、桑名も、新選組も、幕臣たちも、皆、戦う覚悟を固めております。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-37",
@@ -5153,17 +5387,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-38",
         "kind": "dialogue",
-        "text": "「今の兵は、薩長への怒りで燃えております。命を懸けても戦うという者ばかりです。」"
+        "text": "「今の兵は、薩長への怒りで燃えております。命を懸けても戦うという者ばかりです。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-39",
         "kind": "dialogue",
-        "text": "「この状況で退却を命じれば、命令を受け入れず、勝手に動く者が現れるやもしれませぬ。」"
+        "text": "「この状況で退却を命じれば、命令を受け入れず、勝手に動く者が現れるやもしれませぬ。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「軍の統制は失われます。」"
+        "text": "「軍の統制は失われます。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-41",
@@ -5173,97 +5410,98 @@ export const chapters: Chapter[] = [
       {
         "id": "p-42",
         "kind": "dialogue",
-        "text": "「軍の統制を失えば。」"
+        "text": "「軍の統制を失えば。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「上様のお命すら、お守りできる保証はございません。」"
+        "text": "「上様のお命すら、お守りできる保証はございません。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「私は、意地や面目のために戦えと申しているのではございません。」"
+        "text": "「私は、意地や面目のために戦えと申しているのではございません。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-45",
         "kind": "dialogue",
-        "text": "「勝機がございます。」"
+        "text": "「勝機がございます。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-46",
         "kind": "dialogue",
-        "text": "「そして、上様と徳川家をお守りするためにも。」"
+        "text": "「そして、上様と徳川家をお守りするためにも。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-47",
         "kind": "dialogue",
-        "text": "「今は戦うべきでございます。」"
-      },
-      {
-        "id": "p-48",
-        "kind": "scene",
-        "text": "【勝 海舟】"
+        "text": "「今は戦うべきでございます。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「なるほどな。」"
+        "text": "「なるほどな。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-50",
         "kind": "dialogue",
-        "text": "「勝機はあるってわけだ。」"
+        "text": "「勝機はあるってわけだ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-51",
         "kind": "dialogue",
-        "text": "「だが容保公。」"
+        "text": "「だが容保公。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-52",
         "kind": "dialogue",
-        "text": "「勝ったあとに残る日本まで考えなきゃいけねえ。」"
+        "text": "「勝ったあとに残る日本まで考えなきゃいけねえ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-53",
         "kind": "dialogue",
-        "text": "「最後に守るべきものも、日本でしょう。」"
-      },
-      {
-        "id": "p-54",
-        "kind": "scene",
-        "text": "【板倉 勝静】"
+        "text": "「最後に守るべきものも、日本でしょう。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-55",
         "kind": "dialogue",
-        "text": "「日本も大切。」"
+        "text": "「日本も大切。」",
+        "speaker": "板倉 勝静"
       },
       {
         "id": "p-56",
         "kind": "dialogue",
-        "text": "「軍も大切。」"
+        "text": "「軍も大切。」",
+        "speaker": "板倉 勝静"
       },
       {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「しかし上様と徳川宗家を失えば、多くの者を守る道も失われます。」"
-      },
-      {
-        "id": "p-58",
-        "kind": "scene",
-        "text": "【松平 容保】"
+        "text": "「しかし上様と徳川宗家を失えば、多くの者を守る道も失われます。」",
+        "speaker": "板倉 勝静"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
-        "text": "「家だけ残っても、支える者が離れれば家は続きません。」"
+        "text": "「家だけ残っても、支える者が離れれば家は続きません。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-60",
         "kind": "dialogue",
-        "text": "「勝機がある今こそ戦うべきです。」"
+        "text": "「勝機がある今こそ戦うべきです。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-61",
@@ -5303,22 +5541,26 @@ export const chapters: Chapter[] = [
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「皆の考え、よく分かった。」"
+        "text": "「皆の考え、よく分かった。」",
+        "speaker": "徳川 慶喜"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「どの策にも道理がある。」"
+        "text": "「どの策にも道理がある。」",
+        "speaker": "徳川 慶喜"
       },
       {
         "id": "p-70",
         "kind": "dialogue",
-        "text": "「だからこそ。」"
+        "text": "「だからこそ。」",
+        "speaker": "徳川 慶喜"
       },
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「決めねばならぬ。」"
+        "text": "「決めねばならぬ。」",
+        "speaker": "徳川 慶喜"
       },
       {
         "id": "p-72",
@@ -5520,24 +5762,22 @@ export const chapters: Chapter[] = [
         "text": "そして徳川方代表・勝 海舟（かつ かいしゅう／幕臣）。"
       },
       {
-        "id": "p-19",
-        "kind": "scene",
-        "text": "【勝 海舟】"
-      },
-      {
         "id": "p-20",
         "kind": "dialogue",
-        "text": "「おっ、君が長州の若い侍か。」"
+        "text": "「おっ、君が長州の若い侍か。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-21",
         "kind": "dialogue",
-        "text": "「あの京都の料亭にいた若い侍か。思ったより胆が据わっていたな。まあ固くなるな。」"
+        "text": "「あの京都の料亭にいた若い侍か。思ったより胆が据わっていたな。まあ固くなるな。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-22",
         "kind": "dialogue",
-        "text": "「今日は日本の話だ、まあ固くなるな。座んな。」"
+        "text": "「今日は日本の話だ、まあ固くなるな。座んな。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-23",
@@ -5552,19 +5792,16 @@ export const chapters: Chapter[] = [
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-25",
-        "kind": "scene",
-        "text": "【大村 益次郎】"
-      },
-      {
         "id": "p-26",
         "kind": "dialogue",
-        "text": "「村瀬君、今日は勝ち負けの話ではありません。」"
+        "text": "「村瀬君、今日は勝ち負けの話ではありません。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-27",
         "kind": "dialogue",
-        "text": "「戦をどう終わらせるか、それを考えてください。」"
+        "text": "「戦をどう終わらせるか、それを考えてください。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-28",
@@ -5572,24 +5809,22 @@ export const chapters: Chapter[] = [
         "text": "勝 海舟が窓の外を見ながら、口を開く。"
       },
       {
-        "id": "p-29",
-        "kind": "scene",
-        "text": "【勝 海舟】"
-      },
-      {
         "id": "p-30",
         "kind": "dialogue",
-        "text": "「あの町が見えるだろう、侍だけじゃねえ。」"
+        "text": "「あの町が見えるだろう、侍だけじゃねえ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-31",
         "kind": "dialogue",
-        "text": "「商人も、職人も、子どもも暮らしている。あいつらはな。」"
+        "text": "「商人も、職人も、子どもも暮らしている。あいつらはな。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-32",
         "kind": "dialogue",
-        "text": "「戦なんぞ、これっぽっちも望んじゃいねえんだ。」"
+        "text": "「戦なんぞ、これっぽっちも望んじゃいねえんだ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-33",
@@ -5599,22 +5834,26 @@ export const chapters: Chapter[] = [
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「勘違いしちゃいけねえ、おれは、徳川だけを守りてえんじゃねえ。」"
+        "text": "「勘違いしちゃいけねえ、おれは、徳川だけを守りてえんじゃねえ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「日本を守りてえんだ、江戸を戦場にしてみろ。」"
+        "text": "「日本を守りてえんだ、江戸を戦場にしてみろ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-36",
         "kind": "dialogue",
-        "text": "「勝ったの、負けたのなんて話じゃ済まなくなる。町は焼ける。」"
+        "text": "「勝ったの、負けたのなんて話じゃ済まなくなる。町は焼ける。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「人は死ぬ、日本そのものが、損をするんだ。」"
+        "text": "「人は死ぬ、日本そのものが、損をするんだ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-38",
@@ -5624,12 +5863,14 @@ export const chapters: Chapter[] = [
       {
         "id": "p-39",
         "kind": "dialogue",
-        "text": "「戦って勝つだけなら、できるかもしれねえ。だがな。」"
+        "text": "「戦って勝つだけなら、できるかもしれねえ。だがな。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「始まった戦を終わらせる方が、よっぽど難しいんだよ。」"
+        "text": "「始まった戦を終わらせる方が、よっぽど難しいんだよ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-41",
@@ -5639,17 +5880,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-42",
         "kind": "dialogue",
-        "text": "「上野に彰義隊が集まっていることも、百も承知だ。放っておけなんて言うつもりはねえ。」"
+        "text": "「上野に彰義隊が集まっていることも、百も承知だ。放っておけなんて言うつもりはねえ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「おれが話をつける、だからよ。」"
+        "text": "「おれが話をつける、だからよ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「もう少しだけ待っちゃくれねえか。」"
+        "text": "「もう少しだけ待っちゃくれねえか。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-45",
@@ -5659,102 +5903,110 @@ export const chapters: Chapter[] = [
       {
         "id": "p-46",
         "kind": "dialogue",
-        "text": "「あいつらだって、同じ日本人なんだ。」"
-      },
-      {
-        "id": "p-47",
-        "kind": "scene",
-        "text": "【西郷 吉之助】"
+        "text": "「あいつらだって、同じ日本人なんだ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「勝先生のお気持ちは、よう分かりもす。」"
+        "text": "「勝先生のお気持ちは、よう分かりもす。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「じゃっどん。」"
+        "text": "「じゃっどん。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-50",
         "kind": "dialogue",
-        "text": "「新政府は、まだ生まれたばかいじゃ、火種ば残せば。」"
+        "text": "「新政府は、まだ生まれたばかいじゃ、火種ば残せば。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-51",
         "kind": "dialogue",
-        "text": "「また戦が始まりもす。」"
+        "text": "「また戦が始まりもす。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-52",
         "kind": "dialogue",
-        "text": "「おいは徳川ば憎んじょるわけではなか。」"
+        "text": "「おいは徳川ば憎んじょるわけではなか。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-53",
         "kind": "dialogue",
-        "text": "「新しか日本ば守りたか。」"
+        "text": "「新しか日本ば守りたか。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-54",
         "kind": "dialogue",
-        "text": "「禍根だけは残したくなか。じゃっどん、火種を断つために徹底せねばならん時もありもす。」"
-      },
-      {
-        "id": "p-55",
-        "kind": "scene",
-        "text": "【大村 益次郎】"
+        "text": "「禍根だけは残したくなか。じゃっどん、火種を断つために徹底せねばならん時もありもす。」",
+        "speaker": "西郷 吉之助"
       },
       {
         "id": "p-56",
         "kind": "dialogue",
-        "text": "「勝先生のお考えは理解しています。」"
+        "text": "「勝先生のお考えは理解しています。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「江戸城で戦う必要はありません。」"
+        "text": "「江戸城で戦う必要はありません。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「ですが。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
-        "text": "「上野には彰義隊が集まっています。」"
+        "text": "「上野には彰義隊が集まっています。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-60",
         "kind": "dialogue",
-        "text": "「武器を持つ集団が町に集まり続ければ、町民は安心して暮らせません。」"
+        "text": "「武器を持つ集団が町に集まり続ければ、町民は安心して暮らせません。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-61",
         "kind": "dialogue",
-        "text": "「秩序は崩れます。」"
+        "text": "「秩序は崩れます。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-62",
         "kind": "dialogue",
-        "text": "「私は兵学者です。ですが、戦は好きではありません。」"
+        "text": "「私は兵学者です。ですが、戦は好きではありません。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-63",
         "kind": "dialogue",
-        "text": "「だからこそ。」"
+        "text": "「だからこそ。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-64",
         "kind": "dialogue",
-        "text": "「二度と戦が起きぬよう。」"
+        "text": "「二度と戦が起きぬよう。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-65",
         "kind": "dialogue",
-        "text": "「必要な秩序は守らねばなりません。」"
+        "text": "「必要な秩序は守らねばなりません。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-66",
@@ -5804,17 +6056,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-75",
         "kind": "dialogue",
-        "text": "「皆、日本を思っている。」"
+        "text": "「皆、日本を思っている。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-76",
         "kind": "dialogue",
-        "text": "「だから。」"
+        "text": "「だから。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-77",
         "kind": "dialogue",
-        "text": "「答えは一つじゃない。」"
+        "text": "「答えは一つじゃない。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-78",
@@ -5829,32 +6084,38 @@ export const chapters: Chapter[] = [
       {
         "id": "p-80",
         "kind": "dialogue",
-        "text": "「村瀬。」"
+        "text": "「村瀬。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-81",
         "kind": "dialogue",
-        "text": "「若いんだから。」"
+        "text": "「若いんだから。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-82",
         "kind": "dialogue",
-        "text": "「よく見て、よく考えろ。」"
+        "text": "「よく見て、よく考えろ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-83",
         "kind": "dialogue",
-        "text": "「さて。」"
+        "text": "「さて。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-84",
         "kind": "dialogue",
-        "text": "「お前なら。」"
+        "text": "「お前なら。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-85",
         "kind": "dialogue",
-        "text": "「この戦を、どう終わらせる。」"
+        "text": "「この戦を、どう終わらせる。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-86",
@@ -6041,14 +6302,10 @@ export const chapters: Chapter[] = [
         "text": "大村は一枚の地図を広げた。"
       },
       {
-        "id": "p-15",
-        "kind": "scene",
-        "text": "【大村 益次郎】"
-      },
-      {
         "id": "p-16",
         "kind": "dialogue",
-        "text": "「村瀬君、ここへ政府直轄の武器庫を造ります。」"
+        "text": "「村瀬君、ここへ政府直轄の武器庫を造ります。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-17",
@@ -6056,24 +6313,22 @@ export const chapters: Chapter[] = [
         "text": "村瀬は地図を見つめる。"
       },
       {
-        "id": "p-18",
-        "kind": "scene",
-        "text": "【村瀬】"
-      },
-      {
         "id": "p-19",
         "kind": "dialogue",
-        "text": "「先生。」"
+        "text": "「先生。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-20",
         "kind": "dialogue",
-        "text": "「江戸ではなく、京都でもなく。」"
+        "text": "「江戸ではなく、京都でもなく。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-21",
         "kind": "dialogue",
-        "text": "「なぜ大阪なのですか。」"
+        "text": "「なぜ大阪なのですか。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-22",
@@ -6081,19 +6336,16 @@ export const chapters: Chapter[] = [
         "text": "大村は静かに日本地図を指でなぞる。"
       },
       {
-        "id": "p-23",
-        "kind": "scene",
-        "text": "【大村】"
-      },
-      {
         "id": "p-24",
         "kind": "dialogue",
-        "text": "「大阪なら。」"
+        "text": "「大阪なら。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-25",
         "kind": "dialogue",
-        "text": "「東へも、西へも、必要な場所へ、すぐ兵を動かせます。」"
+        "text": "「東へも、西へも、必要な場所へ、すぐ兵を動かせます。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-26",
@@ -6103,7 +6355,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-27",
         "kind": "dialogue",
-        "text": "「なるほど、日本の真ん中ですから。」"
+        "text": "「なるほど、日本の真ん中ですから。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-28",
@@ -6113,7 +6366,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-29",
         "kind": "dialogue",
-        "text": "「ええ。」"
+        "text": "「ええ。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-30",
@@ -6123,7 +6377,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-31",
         "kind": "dialogue",
-        "text": "「もちろん……薩摩へも。」"
+        "text": "「もちろん……薩摩へも。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-32",
@@ -6133,7 +6388,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-33",
         "kind": "dialogue",
-        "text": "「……！」"
+        "text": "「……！」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-34",
@@ -6146,29 +6402,28 @@ export const chapters: Chapter[] = [
         "text": "静かな時間が流れる。"
       },
       {
-        "id": "p-36",
-        "kind": "scene",
-        "text": "【木戸 孝允】"
-      },
-      {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「先生。」"
+        "text": "「先生。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-38",
         "kind": "dialogue",
-        "text": "「そのような備えを進めれば、薩摩は政府を警戒するようになります。」"
+        "text": "「そのような備えを進めれば、薩摩は政府を警戒するようになります。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-39",
         "kind": "dialogue",
-        "text": "「長州は、薩摩と手を取り合ったから、今日があります。」"
+        "text": "「長州は、薩摩と手を取り合ったから、今日があります。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「私は、その信頼を失いたくありません。」"
+        "text": "「私は、その信頼を失いたくありません。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-41",
@@ -6176,54 +6431,58 @@ export const chapters: Chapter[] = [
         "text": "大村は静かに頷く。"
       },
       {
-        "id": "p-42",
-        "kind": "scene",
-        "text": "【大村】"
-      },
-      {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「桂さん。」"
+        "text": "「桂さん。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「私も、薩摩を疑っているわけではありません。」"
+        "text": "「私も、薩摩を疑っているわけではありません。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-45",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「ですが。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-46",
         "kind": "dialogue",
-        "text": "「長州は、八月十八日の政変から、御所での戦。」"
+        "text": "「長州は、八月十八日の政変から、御所での戦。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-47",
         "kind": "dialogue",
-        "text": "「下関での戦、幕府による征討。」"
+        "text": "「下関での戦、幕府による征討。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「恭順派と正義派の内戦、四境戦争。」"
+        "text": "「恭順派と正義派の内戦、四境戦争。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「そして戊辰、幾度も戦いました。」"
+        "text": "「そして戊辰、幾度も戦いました。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-50",
         "kind": "dialogue",
-        "text": "「そのたびに、兵を失い、財を使い。」"
+        "text": "「そのたびに、兵を失い、財を使い。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-51",
         "kind": "dialogue",
-        "text": "「国の力を使いました。」"
+        "text": "「国の力を使いました。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-52",
@@ -6233,17 +6492,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-53",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「ですが。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-54",
         "kind": "dialogue",
-        "text": "「薩摩には、まだ大きな力が残っています。」"
+        "text": "「薩摩には、まだ大きな力が残っています。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-55",
         "kind": "dialogue",
-        "text": "「兵も、財も、人も、長州より、はるかに余力があります。」"
+        "text": "「兵も、財も、人も、長州より、はるかに余力があります。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-56",
@@ -6253,17 +6515,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「だから備えるのです。」"
+        "text": "「だから備えるのです。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「備えとは、相手を疑うことではありません。」"
+        "text": "「備えとは、相手を疑うことではありません。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
-        "text": "「誰が相手でも、国家が揺らがないようにすることです。」"
+        "text": "「誰が相手でも、国家が揺らがないようにすることです。」",
+        "speaker": "大村 益次郎"
       },
       {
         "id": "p-60",
@@ -6271,19 +6536,16 @@ export const chapters: Chapter[] = [
         "text": "山縣 有朋が一歩前へ出る。"
       },
       {
-        "id": "p-61",
-        "kind": "scene",
-        "text": "【山縣 有朋】"
-      },
-      {
         "id": "p-62",
         "kind": "dialogue",
-        "text": "「先生。」"
+        "text": "「先生。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-63",
         "kind": "dialogue",
-        "text": "「私は、もう一歩先まで進めるべきだと思います。」"
+        "text": "「私は、もう一歩先まで進めるべきだと思います。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-64",
@@ -6293,67 +6555,74 @@ export const chapters: Chapter[] = [
       {
         "id": "p-65",
         "kind": "dialogue",
-        "text": "「どういうことですか。」"
-      },
-      {
-        "id": "p-66",
-        "kind": "scene",
-        "text": "【山縣】"
+        "text": "「どういうことですか。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-67",
         "kind": "dialogue",
-        "text": "「国家は、公平でなければならないと思います。」"
+        "text": "「国家は、公平でなければならないと思います。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「力を持つ藩には、その力に応じた責任があります。」"
+        "text": "「力を持つ藩には、その力に応じた責任があります。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「軍備の費用も、武器庫の整備も、強い藩ほど負担する。」"
+        "text": "「軍備の費用も、武器庫の整備も、強い藩ほど負担する。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-70",
         "kind": "dialogue",
-        "text": "「それが公平です。」"
+        "text": "「それが公平です。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「そうすれば、力は藩ではなく。」"
+        "text": "「そうすれば、力は藩ではなく。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-72",
         "kind": "dialogue",
-        "text": "「国家へ集まります。」"
+        "text": "「国家へ集まります。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-73",
         "kind": "dialogue",
-        "text": "「私は、薩摩だから申し上げているのではありません。」"
+        "text": "「私は、薩摩だから申し上げているのではありません。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-74",
         "kind": "dialogue",
-        "text": "「長州でも、土佐でも、同じです。」"
+        "text": "「長州でも、土佐でも、同じです。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-75",
         "kind": "dialogue",
-        "text": "「力を持つ者ほど。」"
+        "text": "「力を持つ者ほど。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-76",
         "kind": "dialogue",
-        "text": "「国家を支える責任がある。」"
+        "text": "「国家を支える責任がある。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-77",
         "kind": "dialogue",
-        "text": "「その仕組みが、争いを防ぐ一番の備えだと思います。」"
+        "text": "「その仕組みが、争いを防ぐ一番の備えだと思います。」",
+        "speaker": "山縣 有朋"
       },
       {
         "id": "p-78",
@@ -6391,11 +6660,6 @@ export const chapters: Chapter[] = [
         "text": "違うのは、その国を守る方法だけだった。"
       },
       {
-        "id": "p-85",
-        "kind": "scene",
-        "text": "【木戸 孝允】"
-      },
-      {
         "id": "p-86",
         "kind": "narration",
         "text": "木戸は村瀬へ向き直る。"
@@ -6403,17 +6667,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-87",
         "kind": "dialogue",
-        "text": "「村瀬君。」"
+        "text": "「村瀬君。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-88",
         "kind": "dialogue",
-        "text": "「新しい国を築くなら。」"
+        "text": "「新しい国を築くなら。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-89",
         "kind": "dialogue",
-        "text": "「君は、何を一番大切にする。」"
+        "text": "「君は、何を一番大切にする。」",
+        "speaker": "木戸 孝允"
       }
     ],
     "endingPassages": [
@@ -6549,19 +6816,16 @@ export const chapters: Chapter[] = [
         "text": "そこには、大久保 利通（おおくぼ としみち／薩摩藩士）、江藤 新平（えとう しんぺい／司法担当の新政府要人）の姿もあった。"
       },
       {
-        "id": "p-11",
-        "kind": "scene",
-        "text": "【木戸 孝允】"
-      },
-      {
         "id": "p-12",
         "kind": "dialogue",
-        "text": "「村瀬君、今日は、君にも聞いてもらいたい。」"
+        "text": "「村瀬君、今日は、君にも聞いてもらいたい。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-13",
         "kind": "dialogue",
-        "text": "「日本の未来を左右する話です。」"
+        "text": "「日本の未来を左右する話です。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-14",
@@ -6569,29 +6833,22 @@ export const chapters: Chapter[] = [
         "text": "大久保は地図から目を離さない。"
       },
       {
-        "id": "p-15",
-        "kind": "scene",
-        "text": "【大久保 利通】"
-      },
-      {
         "id": "p-16",
         "kind": "dialogue",
-        "text": "「君。」"
+        "text": "「君。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-17",
         "kind": "dialogue",
-        "text": "「今の政府が、何に困っちょるか、分かりますか。」"
-      },
-      {
-        "id": "p-18",
-        "kind": "scene",
-        "text": "【村瀬】"
+        "text": "「今の政府が、何に困っちょるか、分かりますか。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-19",
         "kind": "dialogue",
-        "text": "「政府なのですから、国を自由に動かせるのではないのですか。」"
+        "text": "「政府なのですから、国を自由に動かせるのではないのですか。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-20",
@@ -6599,34 +6856,34 @@ export const chapters: Chapter[] = [
         "text": "大久保は静かに首を振る。"
       },
       {
-        "id": "p-21",
-        "kind": "scene",
-        "text": "【大久保 利通】"
-      },
-      {
         "id": "p-22",
         "kind": "dialogue",
-        "text": "「それが、できません。」"
+        "text": "「それが、できません。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-23",
         "kind": "dialogue",
-        "text": "「税は、いまだ藩が集めてます。」"
+        "text": "「税は、いまだ藩が集めてます。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-24",
         "kind": "dialogue",
-        "text": "「兵も、藩が持っています。」"
+        "text": "「兵も、藩が持っています。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-25",
         "kind": "dialogue",
-        "text": "「役人も、藩が決めています。」"
+        "text": "「役人も、藩が決めています。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-26",
         "kind": "dialogue",
-        "text": "「政府と言うても、藩に頼まんと、動けないのです。」"
+        "text": "「政府と言うても、藩に頼まんと、動けないのです。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-27",
@@ -6636,97 +6893,98 @@ export const chapters: Chapter[] = [
       {
         "id": "p-28",
         "kind": "dialogue",
-        "text": "「それでは……、国ではなく。」"
+        "text": "「それでは……、国ではなく。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-29",
         "kind": "dialogue",
-        "text": "「藩の集まりじゃないですか。結局、何も変わっていないように見えます。」"
-      },
-      {
-        "id": "p-30",
-        "kind": "scene",
-        "text": "【大久保 利通】"
+        "text": "「藩の集まりじゃないですか。結局、何も変わっていないように見えます。」",
+        "speaker": "村瀬"
       },
       {
         "id": "p-31",
         "kind": "dialogue",
-        "text": "「その通りです。だから藩をなくす。」"
+        "text": "「その通りです。だから藩をなくす。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-32",
         "kind": "dialogue",
-        "text": "「国が直接、税を集め。」"
+        "text": "「国が直接、税を集め。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-33",
         "kind": "dialogue",
-        "text": "「兵を持ち、役人を任命する。」"
+        "text": "「兵を持ち、役人を任命する。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「そうして初めて、日本は一つの国になる。」"
-      },
-      {
-        "id": "p-35",
-        "kind": "scene",
-        "text": "【木戸 孝允】"
+        "text": "「そうして初めて、日本は一つの国になる。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-36",
         "kind": "dialogue",
-        "text": "「私も、その考えには賛成です。」"
+        "text": "「私も、その考えには賛成です。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「ですが。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-38",
         "kind": "dialogue",
-        "text": "「急ぎすぎれば、人は変化についていけません。」"
+        "text": "「急ぎすぎれば、人は変化についていけません。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-39",
         "kind": "dialogue",
-        "text": "「改革とは、人が理解してこそ、長く続くものです。」"
-      },
-      {
-        "id": "p-40",
-        "kind": "scene",
-        "text": "【大久保 利通】"
+        "text": "「改革とは、人が理解してこそ、長く続くものです。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-41",
         "kind": "dialogue",
-        "text": "「木戸さん。」"
+        "text": "「木戸さん。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-42",
         "kind": "dialogue",
-        "text": "「少しずつ変えれば、反対する者は備え始める。」"
+        "text": "「少しずつ変えれば、反対する者は備え始める。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「変えるなら。」"
+        "text": "「変えるなら。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-44",
         "kind": "dialogue",
-        "text": "「一日です。」"
+        "text": "「一日です。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-45",
         "kind": "dialogue",
-        "text": "「迷えば。」"
+        "text": "「迷えば。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-46",
         "kind": "dialogue",
-        "text": "「日本は変わりません。」"
+        "text": "「日本は変わりません。」",
+        "speaker": "大久保 利通"
       },
       {
         "id": "p-47",
@@ -6736,32 +6994,38 @@ export const chapters: Chapter[] = [
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「お二人とも、お話はもっともです。」"
+        "text": "「お二人とも、お話はもっともです。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「ですが。」"
+        "text": "「ですが。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-50",
         "kind": "dialogue",
-        "text": "「私は別の心配があります。」"
+        "text": "「私は別の心配があります。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-51",
         "kind": "dialogue",
-        "text": "「村瀬君。」"
+        "text": "「村瀬君。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-52",
         "kind": "dialogue",
-        "text": "「藩をなくした翌日。」"
+        "text": "「藩をなくした翌日。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-53",
         "kind": "dialogue",
-        "text": "「税は誰が集めますか。」"
+        "text": "「税は誰が集めますか。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-54",
@@ -6771,47 +7035,56 @@ export const chapters: Chapter[] = [
       {
         "id": "p-55",
         "kind": "dialogue",
-        "text": "「裁判は、戸籍は、土地は、誰が管理しますか。」"
+        "text": "「裁判は、戸籍は、土地は、誰が管理しますか。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-56",
         "kind": "dialogue",
-        "text": "「改革とは、決断だけではありません。」"
+        "text": "「改革とは、決断だけではありません。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「その翌日から。」"
+        "text": "「その翌日から。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「国が動く仕組みが必要です。」"
+        "text": "「国が動く仕組みが必要です。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-59",
         "kind": "dialogue",
-        "text": "「法律。」"
+        "text": "「法律。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-60",
         "kind": "dialogue",
-        "text": "「制度。」"
+        "text": "「制度。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-61",
         "kind": "dialogue",
-        "text": "「役所。」"
+        "text": "「役所。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-62",
         "kind": "dialogue",
-        "text": "「それらを整えて初めて。」"
+        "text": "「それらを整えて初めて。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-63",
         "kind": "dialogue",
-        "text": "「改革は成功します。」"
+        "text": "「改革は成功します。」",
+        "speaker": "江藤 新平"
       },
       {
         "id": "p-64",
@@ -6829,29 +7102,28 @@ export const chapters: Chapter[] = [
         "text": "違うのは、何を最も大切にするかだけだった。"
       },
       {
-        "id": "p-67",
-        "kind": "scene",
-        "text": "【木戸 孝允】"
-      },
-      {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「村瀬君。」"
+        "text": "「村瀬君。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「君の話には、いつも何か気づかされる。」"
+        "text": "「君の話には、いつも何か気づかされる。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-70",
         "kind": "dialogue",
-        "text": "「君なら。」"
+        "text": "「君なら。」",
+        "speaker": "木戸 孝允"
       },
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「新しい国をつくるために、何を大切に考える。」"
+        "text": "「新しい国をつくるために、何を大切に考える。」",
+        "speaker": "木戸 孝允"
       }
     ],
     "endingPassages": [
@@ -7612,11 +7884,6 @@ export const chapters: Chapter[] = [
         "text": "西郷は静かに目を閉じる。"
       },
       {
-        "id": "p-22",
-        "kind": "scene",
-        "text": "【桐野 利秋】"
-      },
-      {
         "id": "p-23",
         "kind": "dialogue",
         "text": "「西郷先生！」",
@@ -7657,11 +7924,6 @@ export const chapters: Chapter[] = [
         "kind": "dialogue",
         "text": "「先生を信じて集まった者たちを、見捨てたくないだけです！」",
         "speaker": "桐野 利秋"
-      },
-      {
-        "id": "p-30",
-        "kind": "scene",
-        "text": "【村田 新八】"
       },
       {
         "id": "p-31",
@@ -7749,7 +8011,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-45",
         "kind": "dialogue",
-        "text": "「村田どん、そいも違う。」"
+        "text": "「村田どん、そいも違う。」",
+        "speaker": "大山 綱良"
       },
       {
         "id": "p-46",
@@ -8210,12 +8473,14 @@ export const chapters: Chapter[] = [
       {
         "id": "e-36",
         "kind": "dialogue",
-        "text": "「先生……。」"
+        "text": "「先生……。」",
+        "speaker": "村瀬"
       },
       {
         "id": "e-37",
         "kind": "dialogue",
-        "text": "「志は、人から人へ、受け継がれていくものなのですね。」"
+        "text": "「志は、人から人へ、受け継がれていくものなのですね。」",
+        "speaker": "村瀬"
       },
       {
         "id": "e-38",
