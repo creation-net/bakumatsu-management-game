@@ -5,7 +5,6 @@ import type { CSSProperties } from "react";
 import { chapters } from "@/data/chapters";
 import { getDiagnosisCombinationComments } from "@/data/diagnosisCombinationComments";
 import { calculateDiagnosis } from "@/lib/diagnosis";
-import { getSpeakerCrest, reportCrests } from "@/lib/crests";
 import { downloadDiagnosisReportPdf } from "@/lib/pdfExport";
 import { initialProgress, loadProgress, resetProgress, saveProgress } from "@/lib/progress";
 import {
@@ -334,7 +333,7 @@ function ChapterScreen({
       <ChapterHeader chapter={chapter} completedCount={progress.completedChapterIds.length} />
 
       <div className="reader-column">
-        <PassageList passages={chapter.passages} chapterId={chapter.id} />
+        <PassageList passages={chapter.passages} />
 
         <section id={`chapter-${chapter.id}-choices`} className="choice-panel" aria-label="選択肢">
           <p className="eyebrow">決断</p>
@@ -385,7 +384,7 @@ function EndingScreen({
         </section>
 
         <section className="ending-copy" aria-label="共通エンディング">
-          <PassageList passages={chapter.endingPassages} chapterId={chapter.id} compact />
+          <PassageList passages={chapter.endingPassages} compact />
         </section>
 
         <div className="ending-actions">
@@ -418,15 +417,7 @@ function ChapterHeader({
   );
 }
 
-function PassageList({
-  passages,
-  chapterId,
-  compact = false,
-}: {
-  passages: Passage[];
-  chapterId: number;
-  compact?: boolean;
-}) {
+function PassageList({ passages, compact = false }: { passages: Passage[]; compact?: boolean }) {
   return (
     <div className={compact ? "passage-list compact" : "passage-list"}>
       {passages.map((passage, index) => {
@@ -441,9 +432,6 @@ function PassageList({
           passage.kind === "dialogue" &&
           passage.speaker &&
           !continuesSameSpeaker;
-        const crest = passage.kind === "dialogue"
-          ? getSpeakerCrest(passage.speaker, chapterId)
-          : undefined;
         const passageClassName = [
           "passage",
           passage.kind,
@@ -453,7 +441,7 @@ function PassageList({
           .filter(Boolean)
           .join(" ");
         return (
-          <section className={passageClassName} key={passage.id} data-crest={crest}>
+          <section className={passageClassName} key={passage.id}>
             {showSpeaker && <p className="speaker">【{passage.speaker}】</p>}
             <p className="passage-text">{passage.text}</p>
           </section>
@@ -626,11 +614,6 @@ function ResultScreen({
         </div>
 
         <article ref={reportRef} className="diagnosis-report">
-          <div className="diagnosis-watermarks" aria-hidden="true">
-            {reportCrests.map((crest) => (
-              <span key={crest} data-crest={crest} />
-            ))}
-          </div>
           <header className="report-cover">
             <h2>
               <span>幕末・明治維新</span>

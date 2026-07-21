@@ -394,48 +394,9 @@ h3 {
 }
 
 .passage.dialogue {
-  position: relative;
-  isolation: isolate;
   margin: 14px 0 18px;
   padding: 16px 0 16px 22px;
   border-left: 2px solid var(--gold-dim);
-}
-
-[data-crest="mori"] {
-  --crest-image: url("/images/crests/mori.svg");
-}
-
-[data-crest="shimazu"] {
-  --crest-image: url("/images/crests/shimazu.svg");
-}
-
-[data-crest="yamauchi"] {
-  --crest-image: url("/images/crests/yamauchi.svg");
-}
-
-[data-crest="tokugawa"] {
-  --crest-image: url("/images/crests/tokugawa.svg");
-}
-
-[data-crest="government"] {
-  --crest-image: url("/images/crests/government.svg");
-}
-
-.passage.dialogue[data-crest]::after {
-  position: absolute;
-  z-index: -1;
-  inset: 4px 12% 4px 28%;
-  background-image: var(--crest-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: min(112px, 82%);
-  content: "";
-  opacity: 0.065;
-  pointer-events: none;
-}
-
-.passage.dialogue.same-speaker[data-crest]::after {
-  opacity: 0.05;
 }
 
 .passage.dialogue.same-speaker {
@@ -450,8 +411,6 @@ h3 {
 }
 
 .speaker {
-  position: relative;
-  z-index: 1;
   margin: 0 0 8px;
   color: var(--gold);
   font-family: var(--sans);
@@ -460,8 +419,6 @@ h3 {
 }
 
 .passage-text {
-  position: relative;
-  z-index: 1;
   max-width: 100%;
   margin: 0;
   color: var(--ink);
@@ -1057,90 +1014,10 @@ h3 {
 }
 
 .diagnosis-report {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
   background: rgba(8, 9, 11, 0.72);
-}
-
-.diagnosis-watermarks {
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  opacity: 0;
-  pointer-events: none;
-  animation: crest-watermarks-in 0.5s ease-out forwards;
-}
-
-.diagnosis-watermarks span {
-  position: absolute;
-  display: block;
-  width: clamp(150px, 25vw, 250px);
-  aspect-ratio: 1;
-  background-image: var(--crest-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.diagnosis-watermarks span:nth-child(1) {
-  top: 5%;
-  left: 7%;
-  width: clamp(170px, 28vw, 270px);
-  opacity: 0.035;
-}
-
-.diagnosis-watermarks span:nth-child(2) {
-  top: 25%;
-  right: 5%;
-  opacity: 0.028;
-}
-
-.diagnosis-watermarks span:nth-child(3) {
-  top: 45%;
-  left: 4%;
-  width: clamp(140px, 22vw, 220px);
-  opacity: 0.04;
-}
-
-.diagnosis-watermarks span:nth-child(4) {
-  top: 65%;
-  right: 8%;
-  width: clamp(180px, 27vw, 260px);
-  opacity: 0.025;
-}
-
-.diagnosis-watermarks span:nth-child(5) {
-  top: 84%;
-  left: 12%;
-  opacity: 0.04;
-}
-
-.report-cover,
-.report-body,
-.report-footer {
-  position: relative;
-  z-index: 1;
-}
-
-@keyframes crest-watermarks-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .diagnosis-watermarks {
-    opacity: 1;
-    animation: none;
-  }
 }
 
 .report-cover {
@@ -1584,10 +1461,6 @@ h3 {
   .diagnosis-report {
     max-width: none;
     background: #fff;
-  }
-
-  .diagnosis-watermarks {
-    display: none;
   }
 
   .report-cover {
