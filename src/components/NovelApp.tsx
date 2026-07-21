@@ -617,13 +617,13 @@ function ResultScreen({
           </p>
           <div className="diagnosis-advice">
             <p>
-              あなたには、「{primary.strengths[0]}」という素質があります。
-              さらに、{secondary.secondaryDescription}も備わっているため、
-              状況に応じて二つの強みを組み合わせながら物事を進められます。
+              あなたは、{primary.combinationAction}ことを土台にしながら、
+              {secondary.combinationAction}こともできます。
+              どちらか一方に偏らず、場面に応じて二つの視点を使い分けられることが、この組み合わせならではの持ち味です。
             </p>
             <p>
-              この二つの素質を経営の判断に生かすと、目指す方向を定めるだけでなく、
-              その考えを周囲と共有し、具体的な行動へつなげやすくなります。
+              この持ち味を経営の判断に生かすことで、状況に応じて判断の起点を切り替え、
+              考えを具体的な行動へつなげやすくなります。
             </p>
             <p>
               その素質を十分に生かせば、{primary.recommendedPath}を通じて、
