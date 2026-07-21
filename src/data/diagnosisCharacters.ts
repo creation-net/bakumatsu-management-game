@@ -21,6 +21,7 @@ export type DiagnosisCharacter = {
   combinationAction: string;
   recommendedPath: string;
   cautionAdvice: string;
+  decisionTendencies: string[];
 };
 
 export const diagnosisCharacters: DiagnosisCharacter[] = [
@@ -35,6 +36,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     combinationAction: "目指す未来と判断の軸を言葉にする",
     recommendedPath: "事業の存在意義を言葉にし、新しい構想を示すことや、次の世代を担う人材を育てること",
     cautionAdvice: "理想を大切にするほど、現場の条件や周囲との温度差が見えにくくなる場合があります。理念を示した後は、実現までの手順を具体化し、相手が無理なく動ける状態になっているかを確かめることが大切です。",
+    decisionTendencies: ["目先の損得より、理念や目的を重視する", "人の可能性と成長を信じて判断する", "未来の姿を言葉にして、周囲へ示そうとする"],
   },
   {
     id: "kusaka",
@@ -47,6 +49,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     combinationAction: "難しい局面でも判断の軸をぶらさない",
     recommendedPath: "難しい局面で判断基準を明確にし、事業の立て直しや重要な方針転換を先頭に立って進めること",
     cautionAdvice: "信念が強いことは大きな支えになりますが、一つの考えに集中すると別の可能性が見えにくくなることがあります。決断の前に反対意見にも耳を傾け、状況が変わったときに方針を見直せる余地を残しておきましょう。",
+    decisionTendencies: ["自分が正しいと信じる軸を大切にする", "難しい局面ほど、覚悟のある選択をする", "迷いがあっても、進む方向を明確にしようとする"],
   },
   {
     id: "takasugi",
@@ -59,6 +62,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     combinationAction: "前例にとらわれず、新しい突破口を探す",
     recommendedPath: "新規事業の立ち上げや事業転換など、従来の方法では前へ進めない課題に新しい道をつくること",
     cautionAdvice: "新しい一手を急ぐと、周囲が目的を理解する前に計画だけが進んでしまうことがあります。動き出す前に、何を変えるのか、なぜ今なのかを共有し、協力する人がついてこられる速さを意識してください。",
+    decisionTendencies: ["前例よりも、状況を変える新しい一手を選ぶ", "好機を見つけると、素早く行動へ移す", "不利な状況でも、突破口を探して判断する"],
   },
   {
     id: "kido",
@@ -71,6 +75,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     combinationAction: "全体を見渡し、進む順序を組み立てる",
     recommendedPath: "中長期の経営戦略や事業計画を描き、複雑な課題を整理して組織の進む順序を定めること",
     cautionAdvice: "多くの状況を考慮できる一方で、検討を重ねるほど決断の時機を逃す場合があります。情報を集める期限と決断する日を先に定め、十分に考えた後は自分の方針を明確に伝えることが重要です。",
+    decisionTendencies: ["長期的な視点から、進む方向を考える", "組織全体への影響を整理して判断する", "実行する順序と時機を慎重に見極める"],
   },
   {
     id: "sakamoto",
@@ -83,6 +88,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     combinationAction: "異なる立場を結び、協力を生み出す",
     recommendedPath: "他社との連携や部門横断のプロジェクトなど、異なる立場の人々を結んで新しい価値を生み出すこと",
     cautionAdvice: "多くの人を巻き込めるからこそ、意見が広がりすぎて本来の目的が曖昧になることがあります。協力者を増やすときは、最終的に何を実現するのかを共有し、誰が決めて誰が実行するのかも明確にしましょう。",
+    decisionTendencies: ["対立よりも、協力できる可能性を探す", "異なる立場の意見を結びつけて判断する", "一人で進めず、仲間を増やしながら形にする"],
   },
   {
     id: "omura",
@@ -95,6 +101,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     combinationAction: "事実を整理し、仕組みから解決策を考える",
     recommendedPath: "業務改善やデジタル化、収益構造の見直しなど、事実を分析して仕組みから成果を高めること",
     cautionAdvice: "合理的な判断が正しくても、関わる人の不安や納得感が置き去りになると実行は進みません。数字や仕組みを示すだけでなく、なぜ必要なのかを丁寧に説明し、現場の声を聞く時間も確保してください。",
+    decisionTendencies: ["感情よりも、事実と根拠を重視する", "個人の力量より、再現できる仕組みを選ぶ", "無駄を減らし、確実に成果へ近づく道を考える"],
   },
   {
     id: "saigo",
@@ -107,6 +114,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     combinationAction: "人の思いを受け止め、信頼を築く",
     recommendedPath: "組織文化づくりや人材育成、後継者の支援など、人の信頼を土台に組織を一つにまとめること",
     cautionAdvice: "人を大切にするほど、厳しい判断を後回しにしたり、周囲の期待を一人で背負ったりしやすくなります。相手への思いやりと経営上の判断を分けて考え、責任や負担を信頼できる人と共有することが大切です。",
+    decisionTendencies: ["人との信頼関係を大切にして判断する", "相手の思いや誇りを受け止めようとする", "重要な局面では、自ら責任を背負う覚悟を示す"],
   },
   {
     id: "okubo",
@@ -119,6 +127,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     combinationAction: "決断を具体的な行動へ移す",
     recommendedPath: "組織改革や制度導入、重要プロジェクトなど、決めた方針を具体的な計画へ落とし込み完遂すること",
     cautionAdvice: "成果を急ぐあまり、周囲には結論だけが伝わり、反発や孤立を招くことがあります。実行に移す前に目的と影響を説明し、途中で意見を受け取る機会を設けることで、速さと納得感を両立しやすくなります。",
+    decisionTendencies: ["議論だけで終わらせず、実行へ移すことを重視する", "必要な改革は、速度を持って進めようとする", "厳しい状況でも、現実的な成果を優先する"],
   },
   {
     id: "katsu",
@@ -131,6 +140,7 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     combinationAction: "対立を越えて、現実的な着地点を探る",
     recommendedPath: "利害の異なる関係者との交渉や組織統合など、対立を収めながら全体にとって納得できる着地点をつくること",
     cautionAdvice: "全体の納得を求めるほど、自分が守りたい一線や決断の期限が曖昧になることがあります。交渉に入る前に譲れない条件を定め、調整を終える時期も明らかにしておくことが重要です。",
+    decisionTendencies: ["対立を深めず、現実的な着地点を探す", "一部の勝敗より、全体の損失を抑えることを考える", "相手の立場も踏まえ、交渉による解決を選ぶ"],
   },
   {
     id: "yamagata",
@@ -143,5 +153,6 @@ export const diagnosisCharacters: DiagnosisCharacter[] = [
     combinationAction: "継続して動ける組織や体制を整える",
     recommendedPath: "事業の拡大に耐えられる組織設計や権限分担、ガバナンスやリスク管理の仕組みを整えること",
     cautionAdvice: "組織を安定させようとするほど、規則が増え、現場の判断や新しい工夫を妨げることがあります。守るべき基準は明確にしつつ、現場に任せる範囲も定め、仕組みが目的になっていないか定期的に見直してください。",
+    decisionTendencies: ["個人の力より、継続して動く組織を重視する", "リスクを予測し、事前に備える道を選ぶ", "規律と役割を明確にして、安定した判断を目指す"],
   },
 ];

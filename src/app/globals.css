@@ -986,6 +986,173 @@ h3 {
   color: var(--gold);
 }
 
+.result-view {
+  background-color: #08090b;
+}
+
+.report-shell {
+  width: 100%;
+  min-width: 0;
+}
+
+.report-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 18px clamp(18px, 4vw, 38px);
+  border-bottom: 1px solid var(--line);
+}
+
+.diagnosis-report {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(8, 9, 11, 0.72);
+}
+
+.report-cover {
+  display: grid;
+  align-content: center;
+  min-height: min(660px, 76vh);
+  padding: clamp(42px, 8vw, 84px) clamp(24px, 7vw, 72px);
+  border-bottom: 1px solid var(--line);
+}
+
+.report-logo {
+  display: grid;
+  place-content: center;
+  width: 92px;
+  aspect-ratio: 1;
+  margin-bottom: 34px;
+  color: var(--gold);
+  border: 1px solid rgba(192, 160, 90, 0.66);
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.report-logo span {
+  display: block;
+}
+
+.report-cover h2 {
+  max-width: 12em;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1.15;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.report-cover h2 span {
+  display: block;
+}
+
+.report-title-report {
+  display: inline !important;
+}
+
+.report-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 42px;
+  margin: 46px 0 0;
+  font-family: var(--sans);
+}
+
+.report-meta div {
+  min-width: 180px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(192, 160, 90, 0.34);
+}
+
+.report-meta dt {
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.report-meta dd {
+  margin: 0;
+  color: var(--ink-strong);
+  font-family: var(--serif);
+  font-size: 1.18rem;
+  font-weight: 700;
+}
+
+.report-body {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: clamp(38px, 7vw, 72px) clamp(24px, 6vw, 54px);
+}
+
+.report-section {
+  margin-bottom: clamp(42px, 7vw, 72px);
+  padding-top: clamp(30px, 5vw, 48px);
+}
+
+.report-section:first-child {
+  padding-top: 0;
+}
+
+.report-section > h2 {
+  max-width: 22em;
+  margin: 0 0 22px;
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 4vw, 2.2rem);
+  line-height: 1.45;
+  word-break: keep-all;
+}
+
+.report-section .diagnosis-heading {
+  color: var(--ink-strong);
+  font-size: clamp(1.8rem, 5vw, 3.4rem);
+}
+
+.diagnosis-person > span:first-child {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.diagnosis-stars {
+  color: var(--gold) !important;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em !important;
+}
+
+.diagnosis-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 42px;
+}
+
+.diagnosis-points h3 {
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(192, 160, 90, 0.28);
+}
+
+.diagnosis-tendencies,
+.diagnosis-reflections {
+  gap: 12px;
+}
+
+.diagnosis-reflections li {
+  color: var(--ink-strong);
+}
+
+.report-footer {
+  padding: 28px clamp(24px, 6vw, 54px) 34px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  line-height: 1.8;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -1181,5 +1348,199 @@ h3 {
     min-width: 82px;
     padding-right: 12px;
     padding-left: 12px;
+  }
+
+  .report-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 12px;
+  }
+
+  .report-actions .primary-button,
+  .report-actions .secondary-button {
+    width: 100%;
+    min-width: 0;
+    padding: 0 10px;
+    font-size: 0.86rem;
+  }
+
+  .report-cover {
+    min-height: auto;
+    padding: 42px 20px 48px;
+  }
+
+  .report-logo {
+    width: 76px;
+    margin-bottom: 26px;
+    font-size: 1.05rem;
+  }
+
+  .report-cover h2 {
+    font-size: clamp(1.85rem, 8.5vw, 2.7rem);
+    line-height: 1.22;
+  }
+
+  .report-title-report {
+    display: block !important;
+  }
+
+  .report-meta {
+    display: grid;
+    gap: 16px;
+    margin-top: 34px;
+  }
+
+  .report-meta div {
+    min-width: 0;
+  }
+
+  .report-body {
+    padding: 34px 18px 16px;
+  }
+
+  .report-section {
+    margin-bottom: 44px;
+    padding-top: 30px;
+  }
+
+  .report-section > h2 {
+    font-size: 1.4rem;
+  }
+
+  .report-section .diagnosis-heading {
+    font-size: clamp(1.65rem, 8vw, 2.35rem);
+  }
+
+  .diagnosis-type-title {
+    font-size: clamp(2.7rem, 14vw, 4rem) !important;
+  }
+
+  .diagnosis-type-title.secondary {
+    font-size: clamp(2.3rem, 12vw, 3.5rem) !important;
+  }
+
+  .diagnosis-person {
+    display: grid;
+    justify-items: start;
+  }
+
+  .diagnosis-points {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .report-footer {
+    padding: 24px 18px 28px;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  html,
+  body {
+    width: auto;
+    max-width: none;
+    color: #24201b;
+    background: #fff;
+  }
+
+  .app-shell {
+    max-width: none;
+    min-height: auto;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .top-bar,
+  .no-print {
+    display: none !important;
+  }
+
+  .result-view.scene-frame {
+    min-height: auto;
+    overflow: visible;
+    border: 0;
+    background: #fff;
+    box-shadow: none;
+    animation: none;
+  }
+
+  .result-view.scene-frame::before {
+    display: none;
+  }
+
+  .diagnosis-report {
+    max-width: none;
+    background: #fff;
+  }
+
+  .report-cover {
+    min-height: 269mm;
+    padding: 24mm 18mm;
+    color: #f3ead7;
+    background: #090a0c;
+    border: 0;
+    break-after: page;
+  }
+
+  .report-cover h2,
+  .report-meta dd {
+    color: #f7f0e1;
+  }
+
+  .report-body {
+    max-width: none;
+    padding: 0;
+  }
+
+  .report-section {
+    margin-bottom: 14mm;
+    padding-top: 9mm;
+    border-color: #b9aa88;
+    break-inside: avoid-page;
+  }
+
+  .report-section:first-child {
+    padding-top: 0;
+  }
+
+  .report-section > h2,
+  .report-section .diagnosis-heading,
+  .diagnosis-type-title,
+  .diagnosis-combination,
+  .diagnosis-person strong,
+  .diagnosis-reflections li {
+    color: #211d18 !important;
+  }
+
+  .report-body p,
+  .report-body li {
+    color: #332e27 !important;
+  }
+
+  .report-section > h2,
+  .diagnosis-stars,
+  .diagnosis-list li::before {
+    color: #806224 !important;
+  }
+
+  .diagnosis-advice {
+    border-color: #aa9568;
+  }
+
+  .report-footer {
+    padding: 8mm 0 0;
+    color: #595149;
+    border-color: #b9aa88;
   }
 }

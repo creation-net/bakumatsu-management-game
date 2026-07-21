@@ -640,7 +640,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "安政六年（1859年）。"
+        "text": "安政6年（1859年）。"
       },
       {
         "id": "p-2",
@@ -1089,7 +1089,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "安政六年。"
+        "text": "安政6年（1859年）。"
       },
       {
         "id": "p-2",
@@ -1664,7 +1664,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-1",
         "kind": "narration",
-        "text": "文久三年（1863年）。"
+        "text": "文久3年（1863年）。"
       },
       {
         "id": "p-2",

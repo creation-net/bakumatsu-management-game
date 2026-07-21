@@ -576,105 +576,149 @@ function ResultScreen({
 }) {
   const diagnosis = calculateDiagnosis(progress);
   const { primary, secondary } = diagnosis;
-  const primaryRank = diagnosis.ranks[0];
-  const secondaryRank = diagnosis.ranks[1];
+  const diagnosisDate = formatDiagnosisDate(progress.updatedAt);
 
   return (
     <section className="result-view scene-frame">
-      <div className="reader-column">
-        <p className="eyebrow">診断結果</p>
-        <h2 className="diagnosis-heading">
-          <span>あなたの経営における</span>
-          <span>最も大事にしている信念</span>
-        </h2>
+      <div className="report-shell">
+        <div className="report-actions no-print">
+          <button className="primary-button" type="button" onClick={() => window.print()}>
+            PDF・印刷
+          </button>
+          <button className="secondary-button" type="button" onClick={onIndex}>
+            進行確認を見る
+          </button>
+        </div>
 
-        <section className="diagnosis-hero" aria-label="最も大事にしている信念">
-          <p className="diagnosis-type-title">{primary.type}</p>
-          <p>{primary.summary}。</p>
-          <p className="diagnosis-person">
-            この型に近い人物 <strong>{primary.name}</strong>
-            {primaryRank ? <span>{primaryRank.percentage}%</span> : null}
-          </p>
-        </section>
+        <article className="diagnosis-report">
+          <header className="report-cover">
+            <div className="report-logo" aria-label="幕末維新ロゴ">
+              <span>幕末</span>
+              <span>維新</span>
+            </div>
+            <p className="eyebrow">経営資質診断レポート</p>
+            <h2>
+              <span>幕末・明治維新</span>
+              <span className="report-title-diagnosis">経営資質診断</span>
+              <span className="report-title-report">レポート</span>
+            </h2>
+            <dl className="report-meta">
+              <div>
+                <dt>診断日</dt>
+                <dd>{diagnosisDate}</dd>
+              </div>
+              <div>
+                <dt>あなたのタイプ</dt>
+                <dd>{primary.type}</dd>
+              </div>
+            </dl>
+          </header>
 
-        <section className="diagnosis-section" aria-label="もう一つの強み">
-          <h3>あなたに備わるもう一つの強み</h3>
-          <p className="diagnosis-type-title secondary">{secondary.type}</p>
-          <p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p>
-          <p className="diagnosis-person">
-            この型に近い人物 <strong>{secondary.name}</strong>
-            {secondaryRank ? <span>{secondaryRank.percentage}%</span> : null}
-          </p>
-        </section>
+          <div className="report-body">
+            <section className="diagnosis-hero report-section" aria-label="最も大事にしている信念">
+              <h2 className="diagnosis-heading">
+                <span>あなたの経営における</span>
+                <span>最も大事にしている信念</span>
+              </h2>
+              <p className="diagnosis-type-title">{primary.type}</p>
+              <p>{primary.summary}。</p>
+              <div className="diagnosis-person">
+                <span>この型に近い人物</span>
+                <strong>{primary.name}</strong>
+                <span className="diagnosis-stars" aria-label="五つ星">★★★★★</span>
+              </div>
+            </section>
 
-        <section className="diagnosis-section" aria-label="得意な経営スタイル">
-          <h3>あなたの得意な経営スタイル</h3>
-          <p className="diagnosis-combination">
-            {primary.type} × {secondary.type}
-          </p>
-          <p className="diagnosis-combination-people">
-            {primary.name} × {secondary.name}
-          </p>
-          <div className="diagnosis-advice">
-            <p>
-              あなたは、{primary.combinationAction}ことを土台にしながら、
-              {secondary.combinationAction}こともできます。
-              どちらか一方に偏らず、場面に応じて二つの視点を使い分けられることが、この組み合わせならではの持ち味です。
-            </p>
-            <p>
-              この持ち味を経営の判断に生かすことで、状況に応じて判断の起点を切り替え、
-              考えを具体的な行動へつなげやすくなります。
-            </p>
-            <p>
-              その素質を十分に生かせば、{primary.recommendedPath}を通じて、
-              事業や組織をより良い方向へ導き、周囲とともに持続的な成果を生み出せる可能性があります。
-            </p>
+            <section className="diagnosis-section report-section" aria-label="もう一つの強み">
+              <h2>あなたに備わるもう一つの強み</h2>
+              <p className="diagnosis-type-title secondary">{secondary.type}</p>
+              <p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p>
+              <div className="diagnosis-person">
+                <span>この型に近い人物</span>
+                <strong>{secondary.name}</strong>
+                <span className="diagnosis-stars" aria-label="四つ星">★★★★☆</span>
+              </div>
+            </section>
+
+            <section className="diagnosis-section report-section" aria-label="得意な経営スタイル">
+              <h2>あなたの得意な経営スタイル</h2>
+              <p className="diagnosis-combination">{primary.type} × {secondary.type}</p>
+              <p className="diagnosis-combination-people">{primary.name} × {secondary.name}</p>
+              <div className="diagnosis-advice">
+                <p>
+                  あなたは、{primary.combinationAction}ことを土台にしながら、
+                  {secondary.combinationAction}こともできます。
+                  どちらか一方に偏らず、場面に応じて二つの視点を使い分けられることが、この組み合わせならではの持ち味です。
+                </p>
+                <p>
+                  この持ち味を経営の判断に生かすことで、状況に応じて判断の起点を切り替え、
+                  考えを具体的な行動へつなげやすくなります。
+                </p>
+                <p>
+                  その素質を十分に生かせば、{primary.recommendedPath}を通じて、
+                  事業や組織をより良い方向へ導き、周囲とともに持続的な成果を生み出せる可能性があります。
+                </p>
+              </div>
+            </section>
+
+            <section className="diagnosis-section report-section">
+              <h2>あなたが経営するうえで気を付けたいこと</h2>
+              <p>{primary.cautionAdvice}</p>
+            </section>
+
+            <section className="diagnosis-section report-section">
+              <h2>強み・課題点</h2>
+              <div className="diagnosis-points">
+                <div>
+                  <h3>強み</h3>
+                  <ul className="diagnosis-list">
+                    {[...primary.strengths, secondary.secondaryDescription].slice(0, 3).map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3>課題点</h3>
+                  <ul className="diagnosis-list">
+                    {primary.challenges.slice(0, 2).map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section className="diagnosis-section report-section">
+              <h2>あなたの意思決定の傾向</h2>
+              <ul className="diagnosis-list diagnosis-tendencies">
+                {primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </section>
+
+            <section className="diagnosis-section report-section">
+              <h2>診断を形づくった選択</h2>
+              <ul className="diagnosis-list diagnosis-reflections">
+                {diagnosis.influentialChoices.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </section>
           </div>
-        </section>
 
-        <section className="diagnosis-section">
-          <h3>あなたが経営するうえで、気を付けたいこと</h3>
-          <p>{primary.cautionAdvice}</p>
-        </section>
-
-        <section className="diagnosis-section">
-          <h3>強み</h3>
-          <ul className="diagnosis-list">
-            {[...primary.strengths, secondary.secondaryDescription].slice(0, 3).map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="diagnosis-section">
-          <h3>課題点</h3>
-          <ul className="diagnosis-list">
-            {primary.challenges.slice(0, 2).map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="diagnosis-section compact">
-          <h3>得点順</h3>
-          <ol className="diagnosis-ranking">
-            {diagnosis.ranks.map((rank) => (
-              <li key={rank.character.id}>
-                <span>{rank.character.type}</span>
-                <strong>{rank.percentage}%</strong>
-                <small>{rank.character.name}</small>
-              </li>
-            ))}
-          </ol>
-          <p className="result-summary">
-            保存されている回答数: <strong>{diagnosis.selectedCount}</strong> / {chapters.length}
-          </p>
-        </section>
-
-        <button className="primary-button" type="button" onClick={onIndex}>
-          進行確認を見る
-        </button>
+          <footer className="report-footer">
+            この診断は45の歴史的意思決定をもとに、あなたの経営資質を分析しています。
+          </footer>
+        </article>
       </div>
     </section>
   );
+}
+
+function formatDiagnosisDate(updatedAt: string): string {
+  const parsedDate = updatedAt ? new Date(updatedAt) : new Date();
+  const date = Number.isNaN(parsedDate.getTime()) ? new Date() : parsedDate;
+
+  return new Intl.DateTimeFormat("ja-JP", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(date);
 }
