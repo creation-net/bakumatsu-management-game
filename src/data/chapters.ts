@@ -3,7 +3,7 @@ import type { Chapter } from "@/types/story";
 export const chapters: Chapter[] = [
   {
     "id": 1,
-    "title": "第一章 黒船",
+    "title": "第一章 黒船来航",
     "subtitle": "時代の幕開け",
     "sourceFile": "第1話_黒船_ストーリー案.docx",
     "passages": [
@@ -612,7 +612,7 @@ export const chapters: Chapter[] = [
   },
   {
     "id": 2,
-    "title": "第二章 吉田松陰処刑",
+    "title": "第二章 安政の大獄",
     "subtitle": "志は誰が継ぐ",
     "sourceFile": "第2話_吉田松陰処刑.docx",
     "passages": [
@@ -981,7 +981,7 @@ export const chapters: Chapter[] = [
   },
   {
     "id": 3,
-    "title": "第三章 京都政局",
+    "title": "第三章 京都料亭にて",
     "subtitle": "日本を動かす都",
     "sourceFile": "第3話_京都政局.docx",
     "passages": [
@@ -2263,240 +2263,245 @@ export const chapters: Chapter[] = [
       {
         "id": "p-35",
         "kind": "dialogue",
-        "text": "「まともに動きゃせん、ここは長州。」"
+        "text": "「まともに動きゃせん。」"
       },
       {
         "id": "p-36",
         "kind": "dialogue",
-        "text": "「山も海も、わしらの庭じゃ。」"
+        "text": "「ここは長州。」"
       },
       {
         "id": "p-37",
         "kind": "dialogue",
-        "text": "「攻める者より、守る者が強い。」"
+        "text": "「山も海も、わしらの庭じゃ。」"
       },
       {
         "id": "p-38",
+        "kind": "dialogue",
+        "text": "「攻める者より、守る者が強い。」"
+      },
+      {
+        "id": "p-39",
         "kind": "narration",
         "text": "少し間を置く。"
       },
       {
-        "id": "p-39",
-        "kind": "dialogue",
-        "text": "「それに、奇兵隊がおる、武士だけじゃない。」"
-      },
-      {
         "id": "p-40",
         "kind": "dialogue",
-        "text": "「身分に関係なく、戦える者が戦う。」"
+        "text": "「それに、奇兵隊がおる。武士だけじゃない。」"
       },
       {
         "id": "p-41",
         "kind": "dialogue",
-        "text": "「西洋の戦も学んじょる、幕府は数。」"
+        "text": "「身分に関係なく、戦える者が戦う。」"
       },
       {
         "id": "p-42",
         "kind": "dialogue",
-        "text": "「長州は質じゃ、戦えば。」"
+        "text": "「西洋の戦も学んじょる。幕府は数。」"
       },
       {
         "id": "p-43",
         "kind": "dialogue",
-        "text": "「勝機はある！」"
+        "text": "「長州は質じゃ。戦えば。」"
       },
       {
         "id": "p-44",
-        "kind": "narration",
-        "text": "部屋は静まり返る。"
+        "kind": "dialogue",
+        "text": "「勝機はある！」"
       },
       {
         "id": "p-45",
         "kind": "narration",
-        "text": "椋梨は高杉を見据える。"
+        "text": "部屋は静まり返る。"
       },
       {
         "id": "p-46",
-        "kind": "dialogue",
-        "text": "「高杉。」"
+        "kind": "narration",
+        "text": "椋梨は高杉を見据える。"
       },
       {
         "id": "p-47",
         "kind": "dialogue",
-        "text": "「お前の策は、勝つこともあろう。」"
+        "text": "「高杉。」"
       },
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「だが。」"
+        "text": "「お前の策は、勝つこともあろう。」"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「藩の命運を託すには、危うすぎる。」"
+        "text": "「だが。」"
       },
       {
         "id": "p-50",
-        "kind": "narration",
-        "text": "その時、一通の書状が運ばれてくる。"
+        "kind": "dialogue",
+        "text": "「藩の命運を託すには、危うすぎる。」"
       },
       {
         "id": "p-51",
         "kind": "narration",
-        "text": "送り主は周布 政之助（すふ まさのすけ／長州藩の家老）。"
+        "text": "その時、一通の書状が運ばれてくる。"
       },
       {
         "id": "p-52",
         "kind": "narration",
-        "text": "病床から送られた最後の書状だった。"
+        "text": "送り主は周布 政之助（すふ まさのすけ／長州藩の家老）。"
       },
       {
         "id": "p-53",
         "kind": "narration",
-        "text": "村瀬が読み上げる。"
+        "text": "病床から送られた最後の書状だった。"
       },
       {
         "id": "p-54",
-        "kind": "dialogue",
-        "text": "「今は感情で動く時ではない。」"
+        "kind": "narration",
+        "text": "村瀬が読み上げる。"
       },
       {
         "id": "p-55",
         "kind": "dialogue",
-        "text": "「しかし。」"
+        "text": "「今は感情で動く時ではない。」"
       },
       {
         "id": "p-56",
         "kind": "dialogue",
-        "text": "「未来まで差し出してはならない。」"
+        "text": "「しかし。」"
       },
       {
         "id": "p-57",
         "kind": "dialogue",
-        "text": "「長州には、再び立ち上がる日が来る。」"
+        "text": "「未来まで差し出してはならない。」"
       },
       {
         "id": "p-58",
         "kind": "dialogue",
-        "text": "「その日まで、知恵を尽くせ。」"
+        "text": "「長州には、再び立ち上がる日が来る。」"
       },
       {
         "id": "p-59",
-        "kind": "narration",
-        "text": "部屋は静まり返る。"
+        "kind": "dialogue",
+        "text": "「その日まで、知恵を尽くせ。」"
       },
       {
         "id": "p-60",
         "kind": "narration",
-        "text": "その時。"
+        "text": "部屋は静まり返る。"
       },
       {
         "id": "p-61",
         "kind": "narration",
-        "text": "襖が静かに開く。"
+        "text": "その時。"
       },
       {
         "id": "p-62",
         "kind": "narration",
-        "text": "長州藩主・毛利敬親（もうり たかちか）が姿を現す。"
+        "text": "襖が静かに開く。"
       },
       {
         "id": "p-63",
         "kind": "narration",
-        "text": "一同が頭を下げる。"
+        "text": "長州藩主・毛利敬親（もうり たかちか）が姿を現す。"
       },
       {
         "id": "p-64",
         "kind": "narration",
-        "text": "敬親は静かに席へ着く。"
+        "text": "一同が頭を下げる。"
       },
       {
         "id": "p-65",
-        "kind": "dialogue",
-        "text": "「皆の話。」"
+        "kind": "narration",
+        "text": "敬親は静かに席へ着く。"
       },
       {
         "id": "p-66",
         "kind": "dialogue",
-        "text": "「よう聞いた。」"
+        "text": "「皆の話。」"
       },
       {
         "id": "p-67",
         "kind": "dialogue",
-        "text": "「椋梨は藩を残そうとしちょる。」"
+        "text": "「よう聞いた。」"
       },
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「高杉は志を守ろうとしちょる。」"
+        "text": "「椋梨は藩を残そうとしちょる。」"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「周布は未来を託した。」"
+        "text": "「高杉は志を守ろうとしちょる。」"
       },
       {
         "id": "p-70",
         "kind": "dialogue",
-        "text": "「皆。」"
+        "text": "「周布は未来を託した。」"
       },
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「長州を思う気持ちは同じじゃ。」"
+        "text": "「皆。」"
       },
       {
         "id": "p-72",
+        "kind": "dialogue",
+        "text": "「長州を思う気持ちは同じじゃ。」"
+      },
+      {
+        "id": "p-73",
         "kind": "narration",
         "text": "村瀬は考える。"
       },
       {
-        "id": "p-73",
+        "id": "p-74",
         "kind": "scene",
         "text": "（椋梨様は藩を残そうとしている。）"
       },
       {
-        "id": "p-74",
+        "id": "p-75",
         "kind": "scene",
         "text": "（高杉さんは勝機を信じている。）"
       },
       {
-        "id": "p-75",
+        "id": "p-76",
         "kind": "scene",
         "text": "（周布様は未来を残そうとしている。）"
       },
       {
-        "id": "p-76",
+        "id": "p-77",
         "kind": "narration",
         "text": "敬親は村瀬を見る。"
       },
       {
-        "id": "p-77",
+        "id": "p-78",
         "kind": "dialogue",
         "text": "「松下村塾（しょうかそんじゅく）の者。」"
       },
       {
-        "id": "p-78",
+        "id": "p-79",
         "kind": "dialogue",
         "text": "「お前のことは聞いておる。」"
       },
       {
-        "id": "p-79",
+        "id": "p-80",
         "kind": "dialogue",
         "text": "「お前はどう思う。」"
       },
       {
-        "id": "p-80",
+        "id": "p-81",
         "kind": "scene",
         "text": "（……私に何ができる。）"
       },
       {
-        "id": "p-81",
+        "id": "p-82",
         "kind": "narration",
         "text": "村瀬は一度目を閉じた。"
       },
       {
-        "id": "p-82",
+        "id": "p-83",
         "kind": "dialogue",
         "text": "「恐れながら、申し上げます。」"
       }

@@ -231,8 +231,8 @@ function TitleScreen({
       <div className="title-copy">
         <p className="eyebrow">十五の決断で読み解く</p>
         <h1>
-          <span>経営者の</span>
-          <span>資質診断</span>
+          <span>あなたの</span>
+          <span>経営資質診断</span>
         </h1>
         <p className="title-theme">幕末・明治維新編</p>
         <p className="subtitle">一人の長州藩士・村瀬新之助とたどる十五の決断</p>
