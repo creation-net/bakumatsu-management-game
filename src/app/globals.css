@@ -1052,6 +1052,10 @@ h3 {
     display: grid;
   }
 
+  .title-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .primary-button,
   .secondary-button {
     width: 100%;
