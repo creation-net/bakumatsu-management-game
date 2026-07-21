@@ -4478,33 +4478,29 @@ export const chapters: Chapter[] = [
         "text": "地図へ印を書き込む。"
       },
       {
-        "id": "p-40",
+        "id": "p-40a",
         "kind": "dialogue",
         "text": "「兵糧、」",
         "speaker": "村田 蔵六"
       },
-
-  {
-        "id": "p-40",
+      {
+        "id": "p-40b",
         "kind": "dialogue",
         "text": "「補給、」",
         "speaker": "村田 蔵六"
       },
-
       {
-        "id": "p-41",
+        "id": "p-41a",
         "kind": "dialogue",
         "text": "「情報、」",
         "speaker": "村田 蔵六"
       },
-
-  {
-        "id": "p-41",
+      {
+        "id": "p-41b",
         "kind": "dialogue",
         "text": "「配置、」",
         "speaker": "村田 蔵六"
       },
-
       {
         "id": "p-42",
         "kind": "dialogue",
