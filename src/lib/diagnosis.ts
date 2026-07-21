@@ -26,6 +26,7 @@ const characterAliases: Record<string, DiagnosisCharacterId> = {
 export type DiagnosisRank = {
   character: DiagnosisCharacter;
   score: number;
+  percentage: number;
 };
 
 export type DiagnosisResult = {
@@ -66,15 +67,21 @@ export function calculateDiagnosis(progress: ReadingProgress): DiagnosisResult {
     lastSelectedOrder.set(characterId, index);
   });
 
-  const ranks = diagnosisCharacters
+  const rankedScores = diagnosisCharacters
     .map((character, index) => ({
       character,
       score: scores.get(character.id) ?? 0,
       lastSelected: lastSelectedOrder.get(character.id) ?? -1,
       index,
     }))
-    .sort((a, b) => b.score - a.score || b.lastSelected - a.lastSelected || a.index - b.index)
-    .map(({ character, score }) => ({ character, score }));
+    .sort((a, b) => b.score - a.score || b.lastSelected - a.lastSelected || a.index - b.index);
+
+  const totalScore = rankedScores.reduce((total, rank) => total + rank.score, 0);
+  const ranks = rankedScores.map(({ character, score }) => ({
+    character,
+    score,
+    percentage: totalScore > 0 ? Math.round((score / totalScore) * 100) : 0,
+  }));
 
   const primary = ranks[0]?.character ?? diagnosisCharacters[0];
   const secondary = ranks.find((rank) => rank.character.id !== primary.id)?.character ?? diagnosisCharacters[1];

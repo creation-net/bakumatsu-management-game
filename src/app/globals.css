@@ -823,7 +823,6 @@ h3 {
   line-height: 2;
 }
 
-.diagnosis-name,
 .diagnosis-combination {
   color: var(--ink-strong) !important;
   font-family: var(--serif);
@@ -834,6 +833,56 @@ h3 {
 
 .diagnosis-combination {
   font-size: clamp(1.45rem, 4.8vw, 2.35rem) !important;
+}
+
+.diagnosis-heading {
+  max-width: 18em;
+  font-size: clamp(1.8rem, 5vw, 3.4rem) !important;
+  line-height: 1.35 !important;
+}
+
+.diagnosis-type-title {
+  margin-bottom: 10px !important;
+  color: var(--ink-strong) !important;
+  font-family: var(--serif);
+  font-size: clamp(3.2rem, 10vw, 6rem) !important;
+  font-weight: 800;
+  line-height: 1.15 !important;
+}
+
+.diagnosis-type-title.secondary {
+  font-size: clamp(2.6rem, 8vw, 4.5rem) !important;
+}
+
+.diagnosis-person,
+.diagnosis-combination-people {
+  color: var(--muted) !important;
+  font-family: var(--sans);
+  font-size: 0.95rem !important;
+  line-height: 1.7 !important;
+}
+
+.diagnosis-person {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+  margin-top: 20px !important;
+}
+
+.diagnosis-person strong {
+  color: var(--ink-strong);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+.diagnosis-person span {
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.diagnosis-combination-people {
+  margin-top: -6px !important;
 }
 
 .diagnosis-type {
@@ -885,7 +934,7 @@ h3 {
 
 .diagnosis-ranking li {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
+  grid-template-columns: minmax(0, 1fr) auto minmax(5.5em, auto);
   align-items: center;
   gap: 10px;
   padding: 10px 0;
@@ -896,6 +945,7 @@ h3 {
 
 .diagnosis-ranking small {
   color: var(--muted);
+  text-align: right;
 }
 
 .diagnosis-ranking strong {

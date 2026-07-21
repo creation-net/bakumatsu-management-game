@@ -547,37 +547,44 @@ function ResultScreen({
 }) {
   const diagnosis = calculateDiagnosis(progress);
   const { primary, secondary } = diagnosis;
+  const primaryRank = diagnosis.ranks[0];
+  const secondaryRank = diagnosis.ranks[1];
 
   return (
     <section className="result-view scene-frame">
       <div className="reader-column">
         <p className="eyebrow">診断結果</p>
-        <h2>あなたに最も近い人物</h2>
+        <h2 className="diagnosis-heading">あなたの経営における最も大事にしている信念</h2>
 
-        <section className="diagnosis-hero" aria-label="最も近い人物">
-          <p className="diagnosis-name">{primary.name}</p>
-          <p className="diagnosis-type">{primary.type}</p>
+        <section className="diagnosis-hero" aria-label="最も大事にしている信念">
+          <p className="diagnosis-type-title">{primary.type}</p>
           <p>{primary.summary}。</p>
+          <p className="diagnosis-person">
+            この型に近い人物 <strong>{primary.name}</strong>
+            {primaryRank ? <span>{primaryRank.percentage}%</span> : null}
+          </p>
         </section>
 
-        <section className="diagnosis-section" aria-label="補助的な特徴">
-          <h3>補助的に表れやすい特徴</h3>
-          <p className="diagnosis-combination">{secondary.name}</p>
-          <p className="diagnosis-type">{secondary.type}</p>
-          <p>{secondary.secondaryDescription}も、あなたの判断に表れやすい特徴です。</p>
+        <section className="diagnosis-section" aria-label="もう一つの強み">
+          <h3>あなたに備わるもう一つの強み</h3>
+          <p className="diagnosis-type-title secondary">{secondary.type}</p>
+          <p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p>
+          <p className="diagnosis-person">
+            この型に近い人物 <strong>{secondary.name}</strong>
+            {secondaryRank ? <span>{secondaryRank.percentage}%</span> : null}
+          </p>
         </section>
 
         <section className="diagnosis-section" aria-label="得意な経営スタイル">
           <h3>あなたの得意な経営スタイル</h3>
           <p className="diagnosis-combination">
-            {primary.name} × {secondary.name}
-          </p>
-          <p className="diagnosis-type">
             {primary.type} × {secondary.type}
           </p>
+          <p className="diagnosis-combination-people">
+            {primary.name} × {secondary.name}
+          </p>
           <p>
-            あなたの中心にあるのは、{primary.name}のような{primary.summary}。
-            さらに、{secondary.name}のような{secondary.secondaryDescription}も備えています。
+            あなたは、{primary.summary}。さらに、{secondary.secondaryDescription}も備えています。
           </p>
         </section>
 
@@ -604,9 +611,9 @@ function ResultScreen({
           <ol className="diagnosis-ranking">
             {diagnosis.ranks.map((rank) => (
               <li key={rank.character.id}>
-                <span>{rank.character.name}</span>
-                <small>{rank.character.type}</small>
-                <strong>{rank.score}点</strong>
+                <span>{rank.character.type}</span>
+                <strong>{rank.percentage}%</strong>
+                <small>{rank.character.name}</small>
               </li>
             ))}
           </ol>
