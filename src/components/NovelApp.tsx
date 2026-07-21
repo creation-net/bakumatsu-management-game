@@ -611,7 +611,7 @@ function ResultScreen({
             disabled={pdfStatus === "saving"}
             onClick={() => void handlePdfDownload()}
           >
-            {pdfStatus === "saving" ? "PDFを作成中" : pdfStatus === "saved" ? "PDFを保存しました" : "PDFを保存する"}
+            {pdfStatus === "saving" ? "PDFを出力中" : pdfStatus === "saved" ? "PDFを出力しました" : "PDFで出力する"}
           </button>
         </div>
 
