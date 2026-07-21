@@ -35,6 +35,7 @@ export function NovelApp() {
   const [mounted, setMounted] = useState(false);
   const [screen, setScreen] = useState<Screen>("title");
   const [progress, setProgress] = useState<ReadingProgress>(initialProgress);
+  const [choiceTargetChapterId, setChoiceTargetChapterId] = useState<number | null>(null);
 
   useEffect(() => {
     const stored = loadProgress();
@@ -47,6 +48,21 @@ export function NovelApp() {
       window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     }
   }, [mounted, screen, progress.currentChapterId]);
+
+  useEffect(() => {
+    if (!mounted || screen !== "chapter" || choiceTargetChapterId !== progress.currentChapterId) {
+      return;
+    }
+
+    const frameId = window.requestAnimationFrame(() => {
+      document
+        .getElementById(`chapter-${choiceTargetChapterId}-choices`)
+        ?.scrollIntoView({ behavior: "auto", block: "start" });
+      setChoiceTargetChapterId(null);
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
+  }, [choiceTargetChapterId, mounted, progress.currentChapterId, screen]);
 
   const currentChapter = useMemo(
     () => getChapterById(progress.currentChapterId) ?? chapters[0],
@@ -141,6 +157,7 @@ export function NovelApp() {
   }
 
   function changeChapterChoice(chapterId: number) {
+    setChoiceTargetChapterId(chapterId);
     updateProgress({
       ...progress,
       currentChapterId: chapterId,
@@ -314,7 +331,7 @@ function ChapterScreen({
       <div className="reader-column">
         <PassageList passages={chapter.passages} />
 
-        <section className="choice-panel" aria-label="選択肢">
+        <section id={`chapter-${chapter.id}-choices`} className="choice-panel" aria-label="選択肢">
           <p className="eyebrow">決断</p>
           <h3>{getChoiceQuestion(chapter.id)}</h3>
           <div className="choice-grid">
