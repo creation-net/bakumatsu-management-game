@@ -22,13 +22,22 @@ export function loadProgress(): ReadingProgress {
 
   try {
     const parsed = JSON.parse(raw) as Partial<ReadingProgress>;
+    const choices = parsed.choices ?? {};
+    const answeredChapterIds = Object.keys(choices)
+      .map(Number)
+      .filter((chapterId) => Number.isInteger(chapterId));
+    const completedChapterIds = new Set(
+      Array.isArray(parsed.completedChapterIds)
+        ? parsed.completedChapterIds
+        : [],
+    );
+    answeredChapterIds.forEach((chapterId) => completedChapterIds.add(chapterId));
+
     return {
       currentChapterId: parsed.currentChapterId ?? 1,
       currentStep: parsed.currentStep ?? "reading",
-      completedChapterIds: Array.isArray(parsed.completedChapterIds)
-        ? parsed.completedChapterIds
-        : [],
-      choices: parsed.choices ?? {},
+      completedChapterIds: Array.from(completedChapterIds).sort((a, b) => a - b),
+      choices,
       updatedAt: parsed.updatedAt ?? "",
     };
   } catch {
