@@ -312,7 +312,7 @@ function TitleScreen({
       </div>
 
       <p className="progress-note">
-        回答済み: {completedCount} / 15
+        回答済 {completedCount} / 15
       </p>
 
       {!hasChapters && (
@@ -427,7 +427,7 @@ function ChapterHeader({
       <p className="eyebrow">{getChapterLabel(chapter.id)} / 全十五章</p>
       <h2>{chapter.title}</h2>
       {chapter.subtitle && <p className="chapter-subtitle">{chapter.subtitle}</p>}
-      <p className="progress-note">済 {completedCount} / 15</p>
+      <p className="progress-note">回答済 {completedCount} / 15</p>
     </header>
   );
 }
@@ -513,7 +513,7 @@ function ChapterIndex({
         <p className="eyebrow">進行と回答</p>
         <h2>進行確認</h2>
         <p className="index-summary">
-          回答 {answeredCount} / {chapters.length}
+          回答済 {answeredCount} / {chapters.length}
         </p>
       </header>
 
@@ -532,7 +532,7 @@ function ChapterIndex({
             const answered = Boolean(selectedChoice);
             const current = progress.currentChapterId === chapter.id && !completed;
             const status = completed ? "completed" : answered ? "answered" : current ? "current" : "unread";
-            const statusLabel = completed ? "済" : answered ? "回答済み" : current ? "途中" : "未読";
+            const statusLabel = completed ? "回答済" : answered ? "回答済" : current ? "途中" : "未読";
             return (
               <article
                 className={`chapter-row ${status}`}
