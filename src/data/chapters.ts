@@ -3508,7 +3508,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-34",
         "kind": "dialogue",
-        "text": "「今日はここまでじゃ。」",
+        "text": "「今日はここまでです。」",
         "speaker": "桂 小五郎"
       },
       {
