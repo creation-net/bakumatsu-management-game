@@ -182,11 +182,8 @@ button:focus-visible {
   min-height: 70vh;
   border: 1px solid var(--line);
   background:
-    linear-gradient(rgba(7, 9, 12, 0.76), rgba(7, 9, 12, 0.9)),
-    var(--chapter-image),
+    linear-gradient(rgba(7, 9, 12, 0.94), rgba(7, 9, 12, 0.98)),
     linear-gradient(135deg, var(--sumi-2), var(--sumi-3));
-  background-size: cover;
-  background-position: center;
   box-shadow: var(--shadow);
   animation: fade-in 360ms ease both;
 }
