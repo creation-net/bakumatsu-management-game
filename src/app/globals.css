@@ -928,6 +928,10 @@ h3 {
   white-space: nowrap;
 }
 
+.mobile-heading-break {
+  display: none;
+}
+
 .diagnosis-type-title {
   margin-bottom: 10px !important;
   color: var(--ink-strong) !important;
@@ -1612,6 +1616,10 @@ h3 {
 
   .diagnosis-heading span {
     white-space: normal;
+  }
+
+  .mobile-heading-break {
+    display: block;
   }
 
   .diagnosis-visual-section {

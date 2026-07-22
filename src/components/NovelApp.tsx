@@ -662,7 +662,11 @@ function ResultScreen({
             >
               <h2 className="diagnosis-heading">
                 <span>あなたの経営における</span>
-                <span>最も大事にしている信念</span>
+                <span>
+                  最も大事にしている
+                  <br className="mobile-heading-break" />
+                  信念
+                </span>
               </h2>
               <p className="diagnosis-type-title">{primary.type}</p>
               <p>{primary.summary}。</p>
@@ -678,7 +682,11 @@ function ResultScreen({
               aria-label="もう一つの強み"
               style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(secondary.id)}")` } as CSSProperties}
             >
-              <h2>あなたに備わるもう一つの強み</h2>
+              <h2>
+                あなたに備わるもう一つの
+                <br className="mobile-heading-break" />
+                強み
+              </h2>
               <p className="diagnosis-type-title secondary">{secondary.type}</p>
               <p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p>
               <div className="diagnosis-person">
