@@ -506,7 +506,6 @@ function ChapterIndex({
   canViewResult: boolean;
 }) {
   const answeredCount = Object.keys(progress.choices).length;
-  const completedCount = progress.completedChapterIds.length;
 
   return (
     <section className="index-view scene-frame">
@@ -514,7 +513,7 @@ function ChapterIndex({
         <p className="eyebrow">進行と回答</p>
         <h2>進行確認</h2>
         <p className="index-summary">
-          済 {completedCount} / {chapters.length}　回答 {answeredCount} / {chapters.length}
+          回答 {answeredCount} / {chapters.length}
         </p>
       </header>
 
