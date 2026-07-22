@@ -20,6 +20,10 @@ import type { Chapter, Choice, Passage, ReadingProgress, ReadingStep } from "@/t
 
 type Screen = "title" | "chapter" | "ending" | "index" | "result";
 
+function getDiagnosisImagePath(characterId: string): string {
+  return `/images/diagnosis/types/${characterId}.webp`;
+}
+
 function getChapterById(id: number): Chapter | undefined {
   return chapters.find((chapter) => chapter.id === id);
 }
@@ -337,8 +341,18 @@ function ChapterScreen({
         <PassageList passages={chapter.passages} />
 
         <section id={`chapter-${chapter.id}-choices`} className="choice-panel" aria-label="選択肢">
-          <p className="eyebrow">決断</p>
-          <h3>{getChoiceQuestion(chapter.id)}</h3>
+          <div className="choice-heading">
+            <div>
+              <p className="eyebrow">決断</p>
+              <h3>{getChoiceQuestion(chapter.id)}</h3>
+            </div>
+            <img
+              className="choice-heading-image"
+              src="/images/decision/heavy-choice.webp"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
           <div className="choice-grid">
             {chapter.choices.map((choice) => (
               <ChoiceButton
@@ -642,7 +656,11 @@ function ResultScreen({
           </header>
 
           <div className="report-body">
-            <section className="diagnosis-hero report-section" aria-label="最も大事にしている信念">
+            <section
+              className="diagnosis-hero report-section diagnosis-visual-section"
+              aria-label="最も大事にしている信念"
+              style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(primary.id)}")` } as CSSProperties}
+            >
               <h2 className="diagnosis-heading">
                 <span>あなたの経営における</span>
                 <span>最も大事にしている信念</span>
@@ -656,7 +674,11 @@ function ResultScreen({
               </div>
             </section>
 
-            <section className="diagnosis-section report-section" aria-label="もう一つの強み">
+            <section
+              className="diagnosis-section report-section diagnosis-visual-section secondary-visual"
+              aria-label="もう一つの強み"
+              style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(secondary.id)}")` } as CSSProperties}
+            >
               <h2>あなたに備わるもう一つの強み</h2>
               <p className="diagnosis-type-title secondary">{secondary.type}</p>
               <p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p>
