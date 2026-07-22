@@ -7,7 +7,6 @@ const PDF_HEIGHT_POINTS = 841.89;
 const SERIF_FONT = '"Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif';
 const SANS_FONT = '"Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif';
 const PDF_BG = "#f3ecdc";
-const PDF_DARK = "#08090b";
 const PDF_TEXT = "#302820";
 const PDF_SUBTEXT = "#6e604b";
 const PDF_HEADING = "#221a12";
@@ -116,23 +115,15 @@ async function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement
     .filter((text): text is string => Boolean(text));
   const title = titleLines.join(" ");
   const date = reportElement.querySelector<HTMLElement>(".report-meta dd")?.textContent?.trim();
-  const headerHeight = 210 * scale;
-  const headerBottom = headerHeight + PAGE_MARGIN * 0.2;
-  const fadeHeight = 70 * scale;
+  const headerHeight = 176 * scale;
+  const headerBottom = headerHeight + PAGE_MARGIN * 0.16;
 
   const headerGradient = page.context.createLinearGradient(0, 0, CANVAS_WIDTH, headerBottom);
-  headerGradient.addColorStop(0, PDF_DARK);
-  headerGradient.addColorStop(0.64, "#101115");
-  headerGradient.addColorStop(1, "#17130d");
+  headerGradient.addColorStop(0, "#f8f1df");
+  headerGradient.addColorStop(0.72, PDF_BG);
+  headerGradient.addColorStop(1, "#eadfc6");
   page.context.fillStyle = headerGradient;
   page.context.fillRect(0, 0, CANVAS_WIDTH, headerBottom);
-
-  const bottomFade = page.context.createLinearGradient(0, headerBottom - fadeHeight, 0, headerBottom + fadeHeight * 0.45);
-  bottomFade.addColorStop(0, "rgba(243, 236, 220, 0)");
-  bottomFade.addColorStop(0.58, "rgba(243, 236, 220, 0.62)");
-  bottomFade.addColorStop(1, PDF_BG);
-  page.context.fillStyle = bottomFade;
-  page.context.fillRect(0, headerBottom - fadeHeight, CANVAS_WIDTH, fadeHeight * 1.45);
 
   page.context.strokeStyle = PDF_GOLD_LIGHT;
   page.context.lineWidth = 3;
@@ -141,14 +132,14 @@ async function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement
   page.context.lineTo(CANVAS_WIDTH - PAGE_MARGIN, PAGE_MARGIN * 0.72);
   page.context.stroke();
 
-  page.y = PAGE_MARGIN * 1.25;
-  drawSingleLine(page, title, PAGE_MARGIN, 38 * scale, "#f7f0e1", "bold", "serif");
-  page.y += 58 * scale;
+  page.y = PAGE_MARGIN * 1.05;
+  drawSingleLine(page, title, PAGE_MARGIN, 38 * scale, PDF_HEADING, "bold", "serif");
+  page.y += 56 * scale;
   if (date) {
     drawSingleLine(page, `診断日　${date}`, PAGE_MARGIN, 22 * scale, PDF_GOLD_LIGHT, "normal", "sans");
     page.y += 42 * scale;
   }
-  page.y = headerHeight + 55 * scale;
+  page.y = headerHeight + 44 * scale;
 }
 
 function scaleBlock(block: DrawBlock, scale: number): DrawBlock {
