@@ -3,7 +3,7 @@ export const chapterImagePaths = Array.from({ length: 15 }, (_, index) => {
   return `/images/chapters/chapter-${chapterNumber}.webp`;
 });
 
-export const titleImagePath = "/images/title/main.webp";
+export const titleImagePath = "/images/title/main.png";
 
 const japaneseChapterNumerals = [
   "",

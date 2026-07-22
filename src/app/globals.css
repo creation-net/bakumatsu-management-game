@@ -215,11 +215,11 @@ button:focus-visible {
   min-height: min(760px, calc(100vh - 120px));
   padding: clamp(30px, 7vw, 76px);
   background:
-    linear-gradient(90deg, rgba(5, 7, 10, 0.95), rgba(8, 9, 11, 0.7) 54%, rgba(8, 9, 11, 0.94)),
+    linear-gradient(90deg, rgba(5, 7, 10, 0.98) 0%, rgba(5, 7, 10, 0.93) 38%, rgba(5, 7, 10, 0.68) 66%, rgba(5, 7, 10, 0.5) 100%),
     var(--title-image),
     linear-gradient(135deg, #080b10, #1a120e);
   background-size: cover;
-  background-position: center;
+  background-position: center right;
 }
 
 .title-copy {
@@ -1210,6 +1210,12 @@ h3 {
   .title-art {
     min-height: calc(100vh - 92px);
     padding: 28px 16px;
+    background:
+      linear-gradient(180deg, rgba(5, 7, 10, 0.76), rgba(5, 7, 10, 0.94)),
+      var(--title-image),
+      linear-gradient(135deg, #080b10, #1a120e);
+    background-size: cover;
+    background-position: 68% center;
   }
 
   h1 {
