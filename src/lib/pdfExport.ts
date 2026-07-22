@@ -6,10 +6,14 @@ const PDF_WIDTH_POINTS = 595.28;
 const PDF_HEIGHT_POINTS = 841.89;
 const SERIF_FONT = '"Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif';
 const SANS_FONT = '"Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif';
-const PDF_TEXT = "#111111";
-const PDF_SUBTEXT = "#2a2a2a";
-const PDF_HEADING = "#000000";
-const PDF_RULE = "#6a6a6a";
+const PDF_BG = "#f3ecdc";
+const PDF_DARK = "#08090b";
+const PDF_TEXT = "#302820";
+const PDF_SUBTEXT = "#6e604b";
+const PDF_HEADING = "#221a12";
+const PDF_GOLD = "#9f7c32";
+const PDF_GOLD_LIGHT = "#c5a55d";
+const PDF_RULE = "#b99a51";
 
 type TextWeight = "normal" | "bold";
 
@@ -38,7 +42,7 @@ export async function downloadDiagnosisReportPdf(
 ): Promise<{ pageCount: number; byteLength: number }> {
   await document.fonts?.ready;
 
-  const canvases = renderReportPages(reportElement);
+  const canvases = await renderReportPages(reportElement);
   const pageImages = canvases.map((canvas) => {
     const dataUrl = canvas.toDataURL("image/jpeg", 0.94);
     return base64ToBytes(dataUrl.split(",")[1]);
@@ -51,11 +55,11 @@ export async function downloadDiagnosisReportPdf(
   return { pageCount: pageImages.length, byteLength: pdfBytes.length };
 }
 
-function renderReportPages(reportElement: HTMLElement): HTMLCanvasElement[] {
+async function renderReportPages(reportElement: HTMLElement): Promise<HTMLCanvasElement[]> {
   const layoutScales = [1, 0.96, 0.92, 0.88, 0.84, 0.8, 0.76, 0.72];
 
   for (const scale of layoutScales) {
-    const pages = renderReportPagesAtScale(reportElement, scale);
+    const pages = await renderReportPagesAtScale(reportElement, scale);
     if (pages.length <= 2) {
       return pages;
     }
@@ -64,30 +68,31 @@ function renderReportPages(reportElement: HTMLElement): HTMLCanvasElement[] {
   return renderReportPagesAtScale(reportElement, layoutScales.at(-1) ?? 0.66);
 }
 
-function renderReportPagesAtScale(reportElement: HTMLElement, scale: number): HTMLCanvasElement[] {
+async function renderReportPagesAtScale(reportElement: HTMLElement, scale: number): Promise<HTMLCanvasElement[]> {
   const pages: PdfPage[] = [];
-  let currentPage = createPage("#ffffff");
+  let currentPage = createPage(PDF_BG);
   pages.push(currentPage);
-  drawCompactReportHeader(currentPage, reportElement, scale);
+  await drawCompactReportHeader(currentPage, reportElement, scale);
 
   const sections = reportElement.querySelectorAll<HTMLElement>(".report-body > .report-section");
-  sections.forEach((section) => {
+  for (const section of Array.from(sections)) {
     if (section.classList.contains("report-page-two-start") && pages.length === 1) {
-      currentPage = createPage("#ffffff");
+      currentPage = createPage(PDF_BG);
       pages.push(currentPage);
     }
 
     if (currentPage.y > CANVAS_HEIGHT - 360 * scale) {
-      currentPage = createPage("#ffffff");
+      currentPage = createPage(PDF_BG);
       pages.push(currentPage);
     }
 
     drawDivider(currentPage, scale);
+    await drawSectionArtwork(currentPage, section, scale);
     const blocks = extractSectionBlocks(section).map((block) => scaleBlock(block, scale));
     blocks.forEach((block) => {
       currentPage = drawBlock(currentPage, pages, block);
     });
-  });
+  }
 
   const footerText = reportElement.querySelector<HTMLElement>(".report-footer")?.textContent?.trim();
   if (footerText) {
@@ -106,19 +111,47 @@ function renderReportPagesAtScale(reportElement: HTMLElement, scale: number): HT
   return pages.map((page) => page.canvas);
 }
 
-function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement, scale: number) {
+async function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement, scale: number) {
   const titleLines = Array.from(reportElement.querySelectorAll<HTMLElement>(".report-cover h2 span"))
     .map((element) => element.textContent?.trim())
     .filter((text): text is string => Boolean(text));
   const title = titleLines.join(" ");
   const date = reportElement.querySelector<HTMLElement>(".report-meta dd")?.textContent?.trim();
+  const coverImage = reportElement.querySelector<HTMLImageElement>(".report-cover-image");
+  const headerHeight = 330 * scale;
 
-  drawSingleLine(page, title, PAGE_MARGIN, 34 * scale, PDF_HEADING, "bold", "serif");
-  page.y += 54 * scale;
+  page.context.fillStyle = PDF_DARK;
+  page.context.fillRect(0, 0, CANVAS_WIDTH, headerHeight + PAGE_MARGIN * 0.25);
+
+  if (coverImage?.src) {
+    const image = await loadImage(coverImage.src);
+    if (image) {
+      const imageWidth = CANVAS_WIDTH * 0.62;
+      drawImageCover(page.context, image, CANVAS_WIDTH - imageWidth, 0, imageWidth, headerHeight + PAGE_MARGIN * 0.25);
+      const gradient = page.context.createLinearGradient(PAGE_MARGIN, 0, CANVAS_WIDTH, 0);
+      gradient.addColorStop(0, "rgba(8, 9, 11, 0.98)");
+      gradient.addColorStop(0.48, "rgba(8, 9, 11, 0.86)");
+      gradient.addColorStop(1, "rgba(8, 9, 11, 0.28)");
+      page.context.fillStyle = gradient;
+      page.context.fillRect(0, 0, CANVAS_WIDTH, headerHeight + PAGE_MARGIN * 0.25);
+    }
+  }
+
+  page.context.strokeStyle = PDF_GOLD_LIGHT;
+  page.context.lineWidth = 3;
+  page.context.beginPath();
+  page.context.moveTo(PAGE_MARGIN, PAGE_MARGIN * 0.72);
+  page.context.lineTo(CANVAS_WIDTH - PAGE_MARGIN, PAGE_MARGIN * 0.72);
+  page.context.stroke();
+
+  page.y = PAGE_MARGIN * 1.25;
+  drawSingleLine(page, title, PAGE_MARGIN, 44 * scale, "#f7f0e1", "bold", "serif");
+  page.y += 72 * scale;
   if (date) {
-    drawSingleLine(page, `診断日　${date}`, PAGE_MARGIN, 20 * scale, PDF_SUBTEXT, "normal", "sans");
+    drawSingleLine(page, `診断日　${date}`, PAGE_MARGIN, 22 * scale, PDF_GOLD_LIGHT, "normal", "sans");
     page.y += 42 * scale;
   }
+  page.y = headerHeight + 70 * scale;
 }
 
 function scaleBlock(block: DrawBlock, scale: number): DrawBlock {
@@ -247,14 +280,14 @@ function drawBlock(page: PdfPage, pages: PdfPage[], block: DrawBlock): PdfPage {
   const blockHeight = marginTop + lines.length * block.lineHeight + marginBottom;
 
   if (block.keepTogether && page.y + blockHeight > CANVAS_HEIGHT - PAGE_MARGIN && page.y > PAGE_MARGIN) {
-    page = createPage("#ffffff");
+    page = createPage(PDF_BG);
     pages.push(page);
   }
 
   page.y += marginTop;
   lines.forEach((line) => {
     if (page.y + block.lineHeight > CANVAS_HEIGHT - PAGE_MARGIN) {
-      page = createPage("#ffffff");
+      page = createPage(PDF_BG);
       pages.push(page);
       page.context.font = fontValue(block.size, block.weight ?? "normal", block.font ?? "serif");
     }
@@ -303,6 +336,10 @@ function createPage(background: string): PdfPage {
 
   context.fillStyle = background;
   context.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+  context.fillStyle = "rgba(8, 9, 11, 0.035)";
+  for (let y = 0; y < CANVAS_HEIGHT; y += 8) {
+    context.fillRect(0, y, CANVAS_WIDTH, 1);
+  }
   context.textBaseline = "top";
 
   return { canvas, context, y: PAGE_MARGIN };
@@ -313,12 +350,106 @@ function drawDivider(page: PdfPage, scale: number) {
     page.y += 12 * scale;
   }
   page.context.strokeStyle = PDF_RULE;
-  page.context.lineWidth = 2;
+  page.context.lineWidth = 3;
   page.context.beginPath();
   page.context.moveTo(PAGE_MARGIN, page.y);
   page.context.lineTo(CANVAS_WIDTH - PAGE_MARGIN, page.y);
   page.context.stroke();
   page.y += 28 * scale;
+}
+
+async function drawSectionArtwork(page: PdfPage, section: HTMLElement, scale: number) {
+  const artworkUrl = getSectionArtworkUrl(section);
+  const artwork = artworkUrl ? await loadImage(artworkUrl) : null;
+
+  if (section.classList.contains("diagnosis-visual-section") && artwork) {
+    const width = 390 * scale;
+    const height = 250 * scale;
+    const x = CANVAS_WIDTH - PAGE_MARGIN - width;
+    const y = page.y - 8 * scale;
+    drawImageCover(page.context, artwork, x, y, width, height);
+    const gradient = page.context.createLinearGradient(x, y, x + width, y);
+    gradient.addColorStop(0, "rgba(243, 236, 220, 0.94)");
+    gradient.addColorStop(0.36, "rgba(243, 236, 220, 0.68)");
+    gradient.addColorStop(1, "rgba(243, 236, 220, 0.2)");
+    page.context.fillStyle = gradient;
+    page.context.fillRect(x, y, width, height);
+  }
+
+  if (section.classList.contains("journey-letter") && artwork) {
+    const width = 460 * scale;
+    const height = 300 * scale;
+    const x = CANVAS_WIDTH - PAGE_MARGIN - width;
+    const y = page.y + 20 * scale;
+    drawImageContain(page.context, artwork, x, y, width, height);
+    page.context.fillStyle = "rgba(243, 236, 220, 0.72)";
+    page.context.fillRect(x, y, width, height);
+  }
+}
+
+function getSectionArtworkUrl(section: HTMLElement): string | null {
+  if (section.classList.contains("diagnosis-visual-section")) {
+    return extractCssUrl(section.style.getPropertyValue("--diagnosis-image"));
+  }
+
+  if (section.classList.contains("journey-letter")) {
+    return "/images/diagnosis/murase-letter.webp";
+  }
+
+  return null;
+}
+
+function extractCssUrl(value: string): string | null {
+  const match = value.match(/url\(["']?(.+?)["']?\)/);
+  return match?.[1] ?? null;
+}
+
+function resolveImageUrl(source: string): string {
+  return new URL(source, window.location.origin).href;
+}
+
+async function loadImage(source: string): Promise<HTMLImageElement | null> {
+  const image = new Image();
+  image.decoding = "async";
+  image.crossOrigin = "anonymous";
+  image.src = resolveImageUrl(source);
+
+  try {
+    await image.decode();
+    return image;
+  } catch {
+    return null;
+  }
+}
+
+function drawImageCover(
+  context: CanvasRenderingContext2D,
+  image: HTMLImageElement,
+  x: number,
+  y: number,
+  width: number,
+  height: number,
+) {
+  const scale = Math.max(width / image.naturalWidth, height / image.naturalHeight);
+  const sourceWidth = width / scale;
+  const sourceHeight = height / scale;
+  const sourceX = (image.naturalWidth - sourceWidth) / 2;
+  const sourceY = (image.naturalHeight - sourceHeight) / 2;
+  context.drawImage(image, sourceX, sourceY, sourceWidth, sourceHeight, x, y, width, height);
+}
+
+function drawImageContain(
+  context: CanvasRenderingContext2D,
+  image: HTMLImageElement,
+  x: number,
+  y: number,
+  width: number,
+  height: number,
+) {
+  const scale = Math.min(width / image.naturalWidth, height / image.naturalHeight);
+  const drawWidth = image.naturalWidth * scale;
+  const drawHeight = image.naturalHeight * scale;
+  context.drawImage(image, x + width - drawWidth, y + (height - drawHeight) / 2, drawWidth, drawHeight);
 }
 
 function drawSingleLine(
