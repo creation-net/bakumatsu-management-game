@@ -1196,9 +1196,16 @@ h3 {
 
 .diagnosis-visual-section {
   position: relative;
+  width: min(calc(100% + 160px), calc(100vw - 88px));
   min-height: 360px;
   padding-right: 0;
   overflow: hidden;
+}
+
+.diagnosis-visual-section > h2,
+.diagnosis-visual-section > p:not(.diagnosis-type-title) {
+  max-width: none;
+  white-space: nowrap;
 }
 
 .diagnosis-visual-section::before {
@@ -1608,8 +1615,14 @@ h3 {
   }
 
   .diagnosis-visual-section {
+    width: 100%;
     min-height: 340px;
     padding-right: 14px;
+  }
+
+  .diagnosis-visual-section > h2,
+  .diagnosis-visual-section > p:not(.diagnosis-type-title) {
+    white-space: normal;
   }
 
   .diagnosis-visual-section::before {
