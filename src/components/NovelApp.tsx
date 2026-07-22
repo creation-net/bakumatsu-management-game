@@ -413,6 +413,12 @@ function ChapterHeader({
       <p className="eyebrow">{getChapterLabel(chapter.id)} / 全十五章</p>
       <h2>{chapter.title}</h2>
       {chapter.subtitle && <p className="chapter-subtitle">{chapter.subtitle}</p>}
+      <img
+        className="chapter-heading-image"
+        src={getChapterImagePath(chapter.id)}
+        alt=""
+        aria-hidden="true"
+      />
       <p className="progress-note">済 {completedCount} / 15</p>
     </header>
   );
@@ -525,6 +531,12 @@ function ChapterIndex({
                 className={`chapter-row ${status}`}
                 key={chapter.id}
               >
+                <img
+                  className="chapter-row-image"
+                  src={getChapterImagePath(chapter.id)}
+                  alt=""
+                  aria-hidden="true"
+                />
                 <div className="chapter-row-title">
                   <strong>{chapter.title}</strong>
                   {chapter.subtitle && <small>{chapter.subtitle}</small>}
@@ -617,6 +629,12 @@ function ResultScreen({
 
         <article ref={reportRef} className="diagnosis-report">
           <header className="report-cover">
+            <img
+              className="report-cover-image"
+              src={titleImagePath}
+              alt=""
+              aria-hidden="true"
+            />
             <h2>
               <span>幕末・明治維新</span>
               <span className="report-title-diagnosis">経営資質診断</span>

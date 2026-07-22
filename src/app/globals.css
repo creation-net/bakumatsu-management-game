@@ -367,8 +367,27 @@ h3 {
 }
 
 .chapter-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 38%);
+  align-items: center;
+  gap: clamp(18px, 4vw, 42px);
   padding: clamp(30px, 6vw, 68px) clamp(22px, 6vw, 72px) clamp(26px, 5vw, 46px);
   border-bottom: 1px solid var(--line);
+}
+
+.chapter-header > :not(.chapter-heading-image) {
+  grid-column: 1;
+}
+
+.chapter-heading-image {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid rgba(192, 160, 90, 0.34);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
 }
 
 .reader-column {
@@ -649,7 +668,7 @@ h3 {
 .chapter-row {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: 156px minmax(0, 1fr);
   align-items: stretch;
   gap: 14px;
   width: 100%;
@@ -662,6 +681,16 @@ h3 {
   background: transparent;
   border: 0;
   border-bottom: 1px solid rgba(192, 160, 90, 0.18);
+}
+
+.chapter-row-image {
+  grid-row: 1 / span 2;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid rgba(192, 160, 90, 0.28);
+  filter: saturate(0.92);
 }
 
 .chapter-row::before {
@@ -714,6 +743,7 @@ h3 {
 
 .chapter-row-title {
   display: grid;
+  grid-column: 2;
   min-width: 0;
   gap: 4px;
 }
@@ -736,6 +766,7 @@ h3 {
 }
 
 .chapter-row-status {
+  grid-column: 2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1026,11 +1057,39 @@ h3 {
 }
 
 .report-cover {
+  position: relative;
   display: grid;
   align-content: center;
   min-height: min(660px, 76vh);
   padding: clamp(42px, 8vw, 84px) clamp(24px, 7vw, 72px);
   border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.report-cover::before {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: "";
+  background:
+    linear-gradient(90deg, rgba(8, 9, 11, 0.94), rgba(8, 9, 11, 0.78) 46%, rgba(8, 9, 11, 0.42)),
+    repeating-linear-gradient(0deg, rgba(246, 231, 196, 0.03) 0 1px, transparent 1px 5px);
+  pointer-events: none;
+}
+
+.report-cover > :not(.report-cover-image) {
+  position: relative;
+  z-index: 2;
+}
+
+.report-cover-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  opacity: 0.72;
 }
 
 .report-cover h2 {
@@ -1358,6 +1417,17 @@ h3 {
     padding-left: 22px;
   }
 
+  .chapter-row-image,
+  .chapter-row-title,
+  .chapter-row-status {
+    grid-column: 1;
+  }
+
+  .chapter-row-image {
+    grid-row: auto;
+    width: min(100%, 320px);
+  }
+
   .chapter-row em {
     justify-self: start;
   }
@@ -1370,6 +1440,36 @@ h3 {
     min-width: 82px;
     padding-right: 12px;
     padding-left: 12px;
+  }
+
+  .chapter-header {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .chapter-header > :not(.chapter-heading-image),
+  .chapter-heading-image {
+    grid-column: 1;
+  }
+
+  .chapter-heading-image {
+    grid-row: 1;
+  }
+
+  .chapter-header .eyebrow {
+    grid-row: 2;
+  }
+
+  .chapter-header h2 {
+    grid-row: 3;
+  }
+
+  .chapter-subtitle {
+    grid-row: 4;
+  }
+
+  .chapter-header .progress-note {
+    grid-row: 5;
   }
 
   .report-actions {
