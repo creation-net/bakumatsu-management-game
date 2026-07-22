@@ -342,6 +342,11 @@ h3 {
   width: 146px;
 }
 
+.ending-actions .primary-button,
+.ending-actions .secondary-button {
+  width: 190px;
+}
+
 .progress-note {
   margin: 20px 0 0;
   color: var(--muted);

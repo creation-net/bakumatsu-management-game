@@ -204,7 +204,7 @@ export function NovelApp() {
           タイトルに戻る
         </button>
         <button className="text-button" type="button" onClick={() => setScreen("index")}>
-          章を見る
+          物語の一覧を見る
         </button>
         <button
           className={canViewResult ? "text-button result-ready" : "text-button muted"}
@@ -367,7 +367,7 @@ function EndingScreen({
 }) {
   const isLastChapter = chapter.id === chapters[chapters.length - 1]?.id;
   const nextLabel = isLastChapter
-    ? "タイプ診断へ進む"
+    ? "診断結果を確認する"
     : `第${getJapaneseChapterNumber(chapter.id + 1)}章へ進む`;
 
   return (
@@ -393,7 +393,7 @@ function EndingScreen({
             {nextLabel}
           </button>
           <button className="secondary-button" type="button" onClick={onIndex}>
-            章を見る
+            物語の一覧を見る
           </button>
         </div>
       </div>
@@ -530,7 +530,7 @@ function ChapterIndex({
                   {chapter.subtitle && <small>{chapter.subtitle}</small>}
                   {selectedChoice && (
                     <p className="chapter-choice-summary">
-                      選択: {getChoiceValue(selectedChoice.text, selectedChoice.value)}
+                      選択: {selectedChoice.person ?? getChoiceValue(selectedChoice.text, selectedChoice.value)}
                     </p>
                   )}
                 </div>
@@ -563,7 +563,7 @@ function ChapterIndex({
           onClick={onResult}
           disabled={!canViewResult}
         >
-          診断結果を見る
+          診断結果を確認する
         </button>
       </div>
     </section>

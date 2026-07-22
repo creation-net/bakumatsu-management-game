@@ -6,6 +6,10 @@ const PDF_WIDTH_POINTS = 595.28;
 const PDF_HEIGHT_POINTS = 841.89;
 const SERIF_FONT = '"Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif';
 const SANS_FONT = '"Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif';
+const PDF_TEXT = "#111111";
+const PDF_SUBTEXT = "#2a2a2a";
+const PDF_HEADING = "#000000";
+const PDF_RULE = "#6a6a6a";
 
 type TextWeight = "normal" | "bold";
 
@@ -91,7 +95,7 @@ function renderReportPagesAtScale(reportElement: HTMLElement, scale: number): HT
       text: footerText,
       size: 21,
       lineHeight: 34,
-      color: "#665e55",
+      color: PDF_SUBTEXT,
       font: "sans",
       marginTop: 36,
       marginBottom: 0,
@@ -109,10 +113,10 @@ function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement, scal
   const title = titleLines.join(" ");
   const date = reportElement.querySelector<HTMLElement>(".report-meta dd")?.textContent?.trim();
 
-  drawSingleLine(page, title, PAGE_MARGIN, 34 * scale, "#211d18", "bold", "serif");
+  drawSingleLine(page, title, PAGE_MARGIN, 34 * scale, PDF_HEADING, "bold", "serif");
   page.y += 54 * scale;
   if (date) {
-    drawSingleLine(page, `診断日　${date}`, PAGE_MARGIN, 20 * scale, "#665e55", "normal", "sans");
+    drawSingleLine(page, `診断日　${date}`, PAGE_MARGIN, 20 * scale, PDF_SUBTEXT, "normal", "sans");
     page.y += 42 * scale;
   }
 }
@@ -137,7 +141,7 @@ function extractSectionBlocks(section: HTMLElement): DrawBlock[] {
       text: heading.textContent.trim(),
       size: heading.classList.contains("diagnosis-heading") ? 34 : 29,
       lineHeight: 48,
-      color: "#806224",
+      color: PDF_HEADING,
       weight: "bold",
       marginBottom: 22,
       keepTogether: true,
@@ -156,13 +160,13 @@ function extractSectionBlocks(section: HTMLElement): DrawBlock[] {
       }
 
       if (child.classList.contains("diagnosis-type-title")) {
-        blocks.push(textBlock(text, child.classList.contains("secondary") ? 46 : 52, 64, "#211d18", "bold", 8, 22));
+        blocks.push(textBlock(text, child.classList.contains("secondary") ? 46 : 52, 64, PDF_HEADING, "bold", 8, 22));
       } else if (child.classList.contains("diagnosis-combination")) {
-        blocks.push(textBlock(text, 42, 58, "#211d18", "bold", 6, 14));
+        blocks.push(textBlock(text, 42, 58, PDF_HEADING, "bold", 6, 14));
       } else if (child.classList.contains("diagnosis-combination-people")) {
-        blocks.push(textBlock(text, 24, 38, "#665e55", "normal", 0, 20));
+        blocks.push(textBlock(text, 24, 38, PDF_SUBTEXT, "normal", 0, 20));
       } else {
-        blocks.push(textBlock(text, 24, 41, "#332e27", "normal", 0, 20));
+        blocks.push(textBlock(text, 24, 41, PDF_TEXT, "normal", 0, 20));
       }
       return;
     }
@@ -171,16 +175,16 @@ function extractSectionBlocks(section: HTMLElement): DrawBlock[] {
       const label = child.querySelector("span")?.textContent?.trim();
       const person = child.querySelector("strong")?.textContent?.trim();
       const stars = child.querySelector(".diagnosis-stars")?.textContent?.trim();
-      if (label) blocks.push(textBlock(label, 19, 30, "#665e55", "normal", 8, 6, "sans"));
-      if (person) blocks.push(textBlock(person, 30, 44, "#211d18", "bold", 0, 4));
-      if (stars) blocks.push(textBlock(stars, 24, 35, "#806224", "bold", 0, 20));
+      if (label) blocks.push(textBlock(label, 19, 30, PDF_SUBTEXT, "normal", 8, 6, "sans"));
+      if (person) blocks.push(textBlock(person, 30, 44, PDF_HEADING, "bold", 0, 4));
+      if (stars) blocks.push(textBlock(stars, 24, 35, PDF_HEADING, "bold", 0, 20));
       return;
     }
 
     if (child.classList.contains("diagnosis-advice")) {
       child.querySelectorAll<HTMLElement>("p").forEach((paragraph) => {
         const text = paragraph.textContent?.trim();
-        if (text) blocks.push(textBlock(text, 23, 39, "#332e27", "normal", 0, 18));
+        if (text) blocks.push(textBlock(text, 23, 39, PDF_TEXT, "normal", 0, 18));
       });
       return;
     }
@@ -188,7 +192,7 @@ function extractSectionBlocks(section: HTMLElement): DrawBlock[] {
     if (child.classList.contains("diagnosis-points")) {
       child.querySelectorAll<HTMLElement>(":scope > div").forEach((column) => {
         const title = column.querySelector("h3")?.textContent?.trim();
-        if (title) blocks.push(textBlock(title, 24, 38, "#806224", "bold", 8, 8));
+        if (title) blocks.push(textBlock(title, 24, 38, PDF_HEADING, "bold", 8, 8));
         column.querySelectorAll<HTMLElement>("li").forEach((item) => {
           const text = item.textContent?.trim();
           if (text) blocks.push(listBlock(text));
@@ -226,7 +230,7 @@ function listBlock(text: string): DrawBlock {
     text: `・${text}`,
     size: 22,
     lineHeight: 36,
-    color: "#332e27",
+    color: PDF_TEXT,
     marginBottom: 8,
     indent: 16,
   };
@@ -308,7 +312,7 @@ function drawDivider(page: PdfPage, scale: number) {
   if (page.y > PAGE_MARGIN) {
     page.y += 12 * scale;
   }
-  page.context.strokeStyle = "#b9aa88";
+  page.context.strokeStyle = PDF_RULE;
   page.context.lineWidth = 2;
   page.context.beginPath();
   page.context.moveTo(PAGE_MARGIN, page.y);
