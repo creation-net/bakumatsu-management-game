@@ -925,6 +925,7 @@ h3 {
 
 .diagnosis-heading span {
   display: block;
+  white-space: nowrap;
 }
 
 .diagnosis-type-title {
@@ -1196,7 +1197,7 @@ h3 {
 .diagnosis-visual-section {
   position: relative;
   min-height: 360px;
-  padding-right: clamp(240px, 38%, 340px);
+  padding-right: 0;
   overflow: hidden;
 }
 
@@ -1600,6 +1601,10 @@ h3 {
 
   .report-section .diagnosis-heading {
     font-size: clamp(1.65rem, 8vw, 2.35rem);
+  }
+
+  .diagnosis-heading span {
+    white-space: normal;
   }
 
   .diagnosis-visual-section {
