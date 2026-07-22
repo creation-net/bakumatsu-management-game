@@ -609,21 +609,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 今こそ、攘夷（外国を打ち払う）を決行すべきだ。",
         "person": "久坂 玄瑞",
         "value": "久坂 玄瑞の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② まずは学び、日本を強くする道を探るべきだ。",
         "person": "吉田 松陰",
         "value": "吉田 松陰の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 今は情勢を見極め、来るべき日に備えるべきだ。",
         "person": "高杉 晋作",
         "value": "高杉 晋作の考え"
@@ -1058,21 +1058,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "①「先生の志は、古い世を壊し、新しい道を切り開くことで受け継ぐべきです。」",
         "person": "高杉 晋作",
         "value": "変革によって志を継ぐ"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "②「先生の志は、命を懸けて実行することで受け継ぐべきです。」",
         "person": "久坂 玄瑞",
         "value": "決行によって志を継ぐ"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③「先生の志は、人と組織に残し、未来へつなぐことで受け継ぐべきです。」",
         "person": "桂 小五郎",
         "value": "継承によって志を継ぐ"
@@ -1633,21 +1633,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "①「今ある仕組みを活かしながら改革を進めるべきです。」",
         "person": "勝 海舟",
         "value": "勝 海舟の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "②「今こそ覚悟を決め、一気に改革を進めるべきです。」",
         "person": "西郷 吉之助",
         "value": "西郷 吉之助の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③「新しい仕組みを作り、皆が協力できる国を目指すべきです。」",
         "person": "坂本 龍馬",
         "value": "坂本 龍馬の考え"
@@ -2223,21 +2223,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 今こそ行動を起こし、長州の覚悟を示すべきです。",
         "person": "来島 又兵衛",
         "value": "来島 又兵衛の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② 目的は朝廷への嘆願です。戦えば本来の目的を失います。",
         "person": "久坂 玄瑞",
         "value": "久坂 玄瑞の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 今日は退き、長州が再び立ち上がる機会を残すべきです。",
         "person": "桂 小五郎",
         "value": "桂 小五郎の考え"
@@ -2766,21 +2766,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 藩を守るため、幕府の要求を受け入れるべきです。",
         "person": "椋梨 藤太",
         "value": "椋梨 藤太の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② 交渉し、少しでも長州に有利な条件を引き出すべきです。",
         "person": "周布 政之助",
         "value": "周布 政之助の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 勝機があるなら、長州の志を守るために戦うべきだ。",
         "person": "高杉 晋作",
         "value": "高杉 晋作の考え"
@@ -3306,21 +3306,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 今こそ立つべきだ。長州を救うには、今しかない。",
         "person": "高杉 晋作",
         "value": "高杉 晋作の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② 藩内で争うべきではない。同じ長州人同士が血を流してはならない。",
         "person": "赤根 武人",
         "value": "赤根 武人の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ まだ決断する時ではない。情勢を見極めるべきだ。",
         "person": "山縣 狂介",
         "value": "山縣 狂介の考え"
@@ -4249,21 +4249,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 敵であっても、日本のためなら手を結ぶべきだ。",
         "person": "村田 蔵六",
         "value": "村田 蔵六の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② まずは小さな信頼を積み重ねるべきだ。",
         "person": "坂本 龍馬",
         "value": "坂本 龍馬の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 自国の結束を固めてから協力を考えるべきだ。",
         "person": "桂 小五郎",
         "value": "桂 小五郎の考え"
@@ -4773,21 +4773,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 桂 小五郎隊\n慎重な判断で仲間を守り、勝てる戦を積み重ねる。",
         "person": "桂 小五郎",
         "value": "桂 小五郎の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② 高杉 晋作隊\n自ら先頭に立ち、勇気で仲間の士気を高め、不利な戦況を覆す。",
         "person": "高杉 晋作",
         "value": "高杉 晋作の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 村田 蔵六隊\n合理的な準備と仕組みを整え、確実な勝利を目指す。",
         "person": "村田 蔵六",
         "value": "村田 蔵六の考え"
@@ -5288,21 +5288,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 山内 容堂\n「長年築き上げた信頼や恩義を大切にする。」",
         "person": "山内 容堂",
         "value": "山内 容堂の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② 松平 春嶽\n「公平な手続きと納得できる意思決定を大切にする。」",
         "person": "松平 春嶽",
         "value": "松平 春嶽の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 西郷 吉之助\n「最後は責任を背負い、自ら決断する。」",
         "person": "西郷 吉之助",
         "value": "西郷 吉之助の考え"
@@ -5761,21 +5761,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 日本全体を守ることを優先する",
         "person": "勝 海舟",
         "value": "勝 海舟の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② 徳川家と人々の生活を守ることを優先する",
         "person": "板倉 勝静",
         "value": "板倉 勝静の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 勝機を生かし、組織の統制を守ることを優先する",
         "person": "松平 容保",
         "value": "松平 容保の考え"
@@ -6321,21 +6321,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 禍根を残さない。未来の日本のため、争いの芽を断つ。",
         "person": "西郷 吉之助",
         "value": "西郷 吉之助の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② 国を疲弊させない。人を信じ、できる限り戦わずに収める。",
         "person": "勝 海舟",
         "value": "勝 海舟の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 秩序を守る。戦は避ける。しかし、人々の安心を守るため、必要な秩序は維持する。",
         "person": "大村 益次郎",
         "value": "大村 益次郎の考え"
@@ -6874,21 +6874,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 大村 益次郎\n「平和は、平時の備えから生まれる。」",
         "person": "大村 益次郎",
         "value": "大村 益次郎の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② 木戸 孝允\n「信頼を失えば、どんな仕組みも長続きしない。」",
         "person": "木戸 孝允",
         "value": "木戸 孝允の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 山縣 有朋\n「力ある者が国家を支える仕組みを作る。」",
         "person": "山縣 有朋",
         "value": "山縣 有朋の考え"
@@ -7323,21 +7323,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 改革は、一気に進める。",
         "person": "大久保 利通",
         "value": "大久保 利通の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② 改革は、人の理解を得ながら進める。",
         "person": "木戸 孝允",
         "value": "木戸 孝允の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 改革は、制度を整えてこそ成功する。",
         "person": "江藤 新平",
         "value": "江藤 新平の考え"
@@ -7884,21 +7884,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 国の信義を守り、自ら責任を引き受ける。",
         "person": "西郷 隆盛",
         "value": "西郷 隆盛の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② 状況に応じて決定を見直し、国内改革を優先する。",
         "person": "大久保 利通",
         "value": "大久保 利通の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 決定を変えるなら、その根拠と手続を明確にする。",
         "person": "木戸 孝允",
         "value": "木戸 孝允の考え"
@@ -8675,21 +8675,21 @@ export const chapters: Chapter[] = [
     "choices": [
       {
         "id": "choice-1",
-        "label": "?",
+        "label": "①",
         "text": "① 桐野 利秋\n仲間への責任を果たす",
         "person": "桐野 利秋",
         "value": "桐野 利秋の考え"
       },
       {
         "id": "choice-2",
-        "label": "?",
+        "label": "②",
         "text": "② 村田 新八\n法と規律を守る責任を果たす",
         "person": "村田 新八",
         "value": "村田 新八の考え"
       },
       {
         "id": "choice-3",
-        "label": "?",
+        "label": "③",
         "text": "③ 大山 綱良\n今は耐え、薩摩を守る",
         "person": "大山 綱良",
         "value": "大山 綱良の考え"
