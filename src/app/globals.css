@@ -480,11 +480,34 @@ h3 {
 }
 
 .choice-heading {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(190px, 34%);
   align-items: center;
-  gap: clamp(18px, 4vw, 34px);
+  min-height: 118px;
+  padding: 10px clamp(210px, 34%, 330px) 10px 0;
   margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.choice-heading::before {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: min(48%, 390px);
+  content: "";
+  background:
+    linear-gradient(90deg, rgba(8, 9, 11, 0.98), rgba(8, 9, 11, 0.68) 36%, rgba(8, 9, 11, 0.2)),
+    url("/images/decision/heavy-choice.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  opacity: 0.24;
+  filter: brightness(0.82) saturate(0.88);
+  pointer-events: none;
+}
+
+.choice-heading > *:not(.choice-heading-image) {
+  position: relative;
+  z-index: 1;
 }
 
 .choice-panel h3 {
@@ -492,14 +515,7 @@ h3 {
 }
 
 .choice-heading-image {
-  width: 100%;
-  min-width: 0;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border: 1px solid rgba(192, 160, 90, 0.3);
-  opacity: 0.72;
-  filter: saturate(0.9);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+  display: none;
 }
 
 .choice-grid {
@@ -1461,24 +1477,23 @@ h3 {
   }
 
   .choice-heading {
-    position: relative;
     grid-template-columns: minmax(0, 1fr);
-    min-height: 132px;
+    min-height: 140px;
     padding: 16px 14px;
-    overflow: hidden;
-    border: 1px solid rgba(192, 160, 90, 0.22);
+    border: 0;
   }
 
   .choice-heading::before {
-    position: absolute;
     inset: 0;
-    content: "";
+    width: 100%;
     background:
-      linear-gradient(90deg, rgba(8, 9, 11, 0.78), rgba(8, 9, 11, 0.42)),
+      linear-gradient(90deg, rgba(8, 9, 11, 0.68), rgba(8, 9, 11, 0.34)),
       url("/images/decision/heavy-choice.webp");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.62;
+    opacity: 0.76;
+    filter: brightness(1.1) saturate(1);
   }
 
   .choice-heading > *:not(.choice-heading-image) {
