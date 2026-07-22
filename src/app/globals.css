@@ -367,27 +367,29 @@ h3 {
 }
 
 .chapter-header {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 38%);
-  align-items: center;
-  gap: clamp(18px, 4vw, 42px);
+  position: relative;
   padding: clamp(30px, 6vw, 68px) clamp(22px, 6vw, 72px) clamp(26px, 5vw, 46px);
   border-bottom: 1px solid var(--line);
+  overflow: hidden;
 }
 
-.chapter-header > :not(.chapter-heading-image) {
-  grid-column: 1;
+.chapter-header::after {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: min(58%, 720px);
+  content: "";
+  background:
+    linear-gradient(90deg, rgba(8, 9, 11, 0), rgba(8, 9, 11, 0.62)),
+    var(--chapter-image);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.34;
+  pointer-events: none;
 }
 
-.chapter-heading-image {
-  grid-column: 2;
-  grid-row: 1 / span 4;
-  width: 100%;
-  min-width: 0;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border: 1px solid rgba(192, 160, 90, 0.34);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
+.chapter-header > * {
+  position: relative;
+  z-index: 1;
 }
 
 .reader-column {
@@ -652,45 +654,35 @@ h3 {
 .chapter-list {
   position: relative;
   display: grid;
-  gap: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 14px;
   padding: 28px clamp(20px, 5vw, 58px);
 }
 
 .chapter-list::before {
-  position: absolute;
-  top: 28px;
-  bottom: 28px;
-  left: clamp(44px, 7vw, 86px);
-  content: "";
-  border-left: 1px solid var(--line);
+  display: none;
 }
 
 .chapter-row {
   position: relative;
   display: grid;
-  grid-template-columns: 156px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: stretch;
-  gap: 14px;
+  gap: 10px;
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  min-height: 92px;
-  padding: 16px 0 16px 20px;
+  min-height: 68px;
+  padding: 12px 0 12px 20px;
   color: var(--ink);
   text-align: left;
-  background: transparent;
+  background:
+    linear-gradient(90deg, rgba(8, 10, 12, 0.9), rgba(8, 10, 12, 0.78) 58%, rgba(8, 10, 12, 0.88)),
+    var(--row-image);
+  background-size: cover;
+  background-position: center;
   border: 0;
   border-bottom: 1px solid rgba(192, 160, 90, 0.18);
-}
-
-.chapter-row-image {
-  grid-row: 1 / span 2;
-  width: 100%;
-  min-width: 0;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border: 1px solid rgba(192, 160, 90, 0.28);
-  filter: saturate(0.92);
 }
 
 .chapter-row::before {
@@ -706,7 +698,11 @@ h3 {
 .chapter-row.current,
 .chapter-row:hover {
   color: var(--ink-strong);
-  background: rgba(72, 48, 27, 0.22);
+  background:
+    linear-gradient(90deg, rgba(50, 32, 19, 0.9), rgba(50, 32, 19, 0.74) 58%, rgba(50, 32, 19, 0.86)),
+    var(--row-image);
+  background-size: cover;
+  background-position: center;
 }
 
 .chapter-row.unread {
@@ -719,7 +715,7 @@ h3 {
 }
 
 .chapter-row.answered {
-  background: rgba(192, 160, 90, 0.08);
+  box-shadow: inset 0 0 0 999px rgba(192, 160, 90, 0.04);
 }
 
 .chapter-row.answered::before {
@@ -728,7 +724,7 @@ h3 {
 }
 
 .chapter-row.completed {
-  background: rgba(50, 72, 55, 0.18);
+  box-shadow: inset 0 0 0 999px rgba(50, 72, 55, 0.12);
 }
 
 .chapter-row.completed::before {
@@ -743,9 +739,8 @@ h3 {
 
 .chapter-row-title {
   display: grid;
-  grid-column: 2;
   min-width: 0;
-  gap: 4px;
+  gap: 2px;
 }
 
 .chapter-row-title strong {
@@ -766,7 +761,6 @@ h3 {
 }
 
 .chapter-row-status {
-  grid-column: 2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1339,6 +1333,7 @@ h3 {
   }
 
   .chapter-list {
+    grid-template-columns: minmax(0, 1fr);
     padding: 20px 16px;
   }
 
@@ -1417,17 +1412,6 @@ h3 {
     padding-left: 22px;
   }
 
-  .chapter-row-image,
-  .chapter-row-title,
-  .chapter-row-status {
-    grid-column: 1;
-  }
-
-  .chapter-row-image {
-    grid-row: auto;
-    width: min(100%, 320px);
-  }
-
   .chapter-row em {
     justify-self: start;
   }
@@ -1442,34 +1426,10 @@ h3 {
     padding-left: 12px;
   }
 
-  .chapter-header {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 14px;
-  }
-
-  .chapter-header > :not(.chapter-heading-image),
-  .chapter-heading-image {
-    grid-column: 1;
-  }
-
-  .chapter-heading-image {
-    grid-row: 1;
-  }
-
-  .chapter-header .eyebrow {
-    grid-row: 2;
-  }
-
-  .chapter-header h2 {
-    grid-row: 3;
-  }
-
-  .chapter-subtitle {
-    grid-row: 4;
-  }
-
-  .chapter-header .progress-note {
-    grid-row: 5;
+  .chapter-header::after {
+    inset: 0;
+    width: 100%;
+    opacity: 0.22;
   }
 
   .report-actions {

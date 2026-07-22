@@ -413,12 +413,6 @@ function ChapterHeader({
       <p className="eyebrow">{getChapterLabel(chapter.id)} / 全十五章</p>
       <h2>{chapter.title}</h2>
       {chapter.subtitle && <p className="chapter-subtitle">{chapter.subtitle}</p>}
-      <img
-        className="chapter-heading-image"
-        src={getChapterImagePath(chapter.id)}
-        alt=""
-        aria-hidden="true"
-      />
       <p className="progress-note">済 {completedCount} / 15</p>
     </header>
   );
@@ -530,13 +524,12 @@ function ChapterIndex({
               <article
                 className={`chapter-row ${status}`}
                 key={chapter.id}
+                style={
+                  {
+                    "--row-image": `url("${getChapterImagePath(chapter.id)}")`,
+                  } as CSSProperties
+                }
               >
-                <img
-                  className="chapter-row-image"
-                  src={getChapterImagePath(chapter.id)}
-                  alt=""
-                  aria-hidden="true"
-                />
                 <div className="chapter-row-title">
                   <strong>{chapter.title}</strong>
                   {chapter.subtitle && <small>{chapter.subtitle}</small>}
