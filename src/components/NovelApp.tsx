@@ -51,6 +51,17 @@ export function NovelApp() {
   }, []);
 
   useEffect(() => {
+    const handlePageShow = (event: PageTransitionEvent) => {
+      if (event.persisted) {
+        setProgress(loadProgress());
+      }
+    };
+
+    window.addEventListener("pageshow", handlePageShow);
+    return () => window.removeEventListener("pageshow", handlePageShow);
+  }, []);
+
+  useEffect(() => {
     if (mounted) {
       window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     }
@@ -613,8 +624,13 @@ function ResultScreen({
       setPdfStatus("saved");
       window.setTimeout(() => setPdfStatus("idle"), 2500);
     } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") {
+        setPdfStatus("idle");
+        return;
+      }
+
       console.error(error);
-      window.alert("PDFを作成できませんでした。もう一度お試しください。");
+      window.alert(error instanceof Error ? error.message : "PDFを作成できませんでした。もう一度お試しください。");
       setPdfStatus("idle");
     }
   };

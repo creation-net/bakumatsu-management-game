@@ -50,7 +50,7 @@ export async function downloadDiagnosisReportPdf(
   const fileDate = diagnosisDate.replace(/[年月]/g, "-").replace("日", "");
   const fileName = `幕末・明治維新_経営資質診断結果_${fileDate}.pdf`;
 
-  downloadBlob(new Blob([pdfBytes.buffer as ArrayBuffer], { type: "application/pdf" }), fileName);
+  await downloadBlob(new Blob([pdfBytes.buffer as ArrayBuffer], { type: "application/pdf" }), fileName);
   return { pageCount: pageImages.length, byteLength: pdfBytes.length };
 }
 
@@ -450,13 +450,32 @@ function concatenateBytes(chunks: Uint8Array[], byteLength: number): Uint8Array 
   return result;
 }
 
-function downloadBlob(blob: Blob, fileName: string) {
+async function downloadBlob(blob: Blob, fileName: string) {
+  const file = new File([blob], fileName, { type: blob.type || "application/pdf" });
+
+  if (isIOSWebKit()) {
+    if (!navigator.share || !(navigator.canShare?.({ files: [file] }) ?? false)) {
+      throw new Error("iPhone SafariでPDFを保存する準備ができませんでした。Safariを最新版にしてもう一度お試しください。");
+    }
+
+    await navigator.share({
+      files: [file],
+      title: fileName,
+    });
+    return;
+  }
+
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
   link.download = fileName;
+  link.rel = "noopener";
   document.body.appendChild(link);
   link.click();
   link.remove();
-  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+  window.setTimeout(() => URL.revokeObjectURL(url), 60000);
+}
+
+function isIOSWebKit(): boolean {
+  return /iP(?:hone|ad|od)/u.test(window.navigator.userAgent);
 }
