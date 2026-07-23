@@ -2,12 +2,14 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
-import { chapters } from "@/data/chapters";
+import { chapters as fullChapters } from "@/data/chapters";
+import { trialChapters } from "@/data/trialChapters";
 import { getDiagnosisCombinationComments } from "@/data/diagnosisCombinationComments";
 import { getDiagnosisJourneyLetter } from "@/data/diagnosisJourneyLetters";
 import { calculateDiagnosis } from "@/lib/diagnosis";
 import { downloadDiagnosisReportPdf } from "@/lib/pdfExport";
 import { initialProgress, loadProgress, resetProgress, saveProgress } from "@/lib/progress";
+import type { ProgressMode } from "@/lib/progress";
 import {
   getChapterImagePath,
   getChapterLabel,
@@ -19,13 +21,18 @@ import {
 import type { Chapter, Choice, Passage, ReadingProgress, ReadingStep } from "@/types/story";
 
 type Screen = "title" | "chapter" | "ending" | "index" | "result";
+type AppMode = ProgressMode;
 
 function getDiagnosisImagePath(characterId: string): string {
   return `/images/diagnosis/types/${characterId}.webp`;
 }
 
-function getChapterById(id: number): Chapter | undefined {
-  return chapters.find((chapter) => chapter.id === id);
+function getChaptersForMode(mode: AppMode): Chapter[] {
+  return mode === "trial" ? trialChapters : fullChapters;
+}
+
+function getChapterById(id: number, chapterList: Chapter[]): Chapter | undefined {
+  return chapterList.find((chapter) => chapter.id === id);
 }
 
 function getScreenFromStep(step: ReadingStep): Screen {
@@ -41,25 +48,26 @@ function getScreenFromStep(step: ReadingStep): Screen {
 export function NovelApp() {
   const [mounted, setMounted] = useState(false);
   const [screen, setScreen] = useState<Screen>("title");
+  const [appMode, setAppMode] = useState<AppMode>("trial");
   const [progress, setProgress] = useState<ReadingProgress>(initialProgress);
   const [choiceTargetChapterId, setChoiceTargetChapterId] = useState<number | null>(null);
 
   useEffect(() => {
-    const stored = loadProgress();
+    const stored = loadProgress(appMode);
     setProgress(stored);
     setMounted(true);
-  }, []);
+  }, [appMode]);
 
   useEffect(() => {
     const handlePageShow = (event: PageTransitionEvent) => {
       if (event.persisted) {
-        setProgress(loadProgress());
+        setProgress(loadProgress(appMode));
       }
     };
 
     window.addEventListener("pageshow", handlePageShow);
     return () => window.removeEventListener("pageshow", handlePageShow);
-  }, []);
+  }, [appMode]);
 
   useEffect(() => {
     if (mounted) {
@@ -82,47 +90,67 @@ export function NovelApp() {
     return () => window.cancelAnimationFrame(frameId);
   }, [choiceTargetChapterId, mounted, progress.currentChapterId, screen]);
 
+  const activeChapters = getChaptersForMode(appMode);
+  const chapterCount = activeChapters.length;
+
   const currentChapter = useMemo(
-    () => getChapterById(progress.currentChapterId) ?? chapters[0],
-    [progress.currentChapterId],
+    () => getChapterById(progress.currentChapterId, activeChapters) ?? activeChapters[0],
+    [activeChapters, progress.currentChapterId],
   );
 
   const selectedChoice = currentChapter
     ? currentChapter.choices.find((choice) => choice.id === progress.choices[currentChapter.id])
     : undefined;
 
-  function updateProgress(nextProgress: ReadingProgress) {
+  function updateProgress(nextProgress: ReadingProgress, mode: AppMode = appMode) {
     setProgress(nextProgress);
-    saveProgress(nextProgress);
+    saveProgress(nextProgress, mode);
   }
 
   function showTitle() {
     setScreen("title");
   }
 
-  function startStory(mode: "start" | "continue") {
-    if (chapters.length === 0) {
+  function startStory(mode: "start" | "continue", nextAppMode: AppMode = appMode) {
+    const nextChapters = getChaptersForMode(nextAppMode);
+    const nextProgress = nextAppMode === appMode ? progress : loadProgress(nextAppMode);
+
+    if (nextChapters.length === 0) {
+      setAppMode(nextAppMode);
+      setProgress(nextProgress);
       setScreen("index");
       return;
     }
 
     if (mode === "start") {
       const hasSavedProgress =
-        Object.keys(progress.choices).length > 0 || progress.completedChapterIds.length > 0;
+        Object.keys(nextProgress.choices).length > 0 || nextProgress.completedChapterIds.length > 0;
       if (hasSavedProgress && !window.confirm("これまでの回答をリセットしますがよいですか？")) {
         return;
       }
 
-      updateProgress({
-        ...initialProgress,
-        currentChapterId: 1,
-        currentStep: "reading",
-      });
+      setAppMode(nextAppMode);
+      updateProgress(
+        {
+          ...initialProgress,
+          currentChapterId: 1,
+          currentStep: "reading",
+        },
+        nextAppMode,
+      );
       setScreen("chapter");
       return;
     }
 
-    setScreen(getScreenFromStep(progress.currentStep));
+    setAppMode(nextAppMode);
+    setProgress(nextProgress);
+    setScreen(getScreenFromStep(nextProgress.currentStep));
+  }
+
+  function switchMode(nextAppMode: AppMode) {
+    setAppMode(nextAppMode);
+    setProgress(loadProgress(nextAppMode));
+    setScreen("title");
   }
 
   function selectChoice(chapterId: number, choiceId: string) {
@@ -150,7 +178,7 @@ export function NovelApp() {
     const completed = new Set(progress.completedChapterIds);
     completed.add(currentChapter.id);
     const nextChapterId = currentChapter.id + 1;
-    const hasNextChapter = chapters.some((chapter) => chapter.id === nextChapterId);
+    const hasNextChapter = activeChapters.some((chapter) => chapter.id === nextChapterId);
 
     updateProgress({
       ...progress,
@@ -190,13 +218,13 @@ export function NovelApp() {
       return;
     }
 
-    resetProgress();
+    resetProgress(appMode);
     setProgress(initialProgress);
     setScreen("title");
   }
 
   const answeredCount = Object.keys(progress.choices).length;
-  const canViewResult = answeredCount >= chapters.length && chapters.length > 0;
+  const canViewResult = answeredCount >= chapterCount && chapterCount > 0;
 
   if (!mounted) {
     return <main className="app-shell" />;
@@ -215,6 +243,7 @@ export function NovelApp() {
       }
     >
       <nav className="top-bar" aria-label="主要メニュー">
+        <span className="mode-pill">{appMode === "trial" ? "体験版" : "完全版"}</span>
         <button className="text-button" type="button" onClick={showTitle}>
           タイトルに戻る
         </button>
@@ -236,9 +265,13 @@ export function NovelApp() {
 
       {screen === "title" && (
         <TitleScreen
+          appMode={appMode}
           completedCount={progress.completedChapterIds.length}
-          hasChapters={chapters.length > 0}
-          onStart={() => startStory("start")}
+          hasChapters={chapterCount > 0}
+          onSelectTrial={() => switchMode("trial")}
+          onSelectFull={() => switchMode("full")}
+          onStartTrial={() => startStory("start", "trial")}
+          onStartFull={() => startStory("start", "full")}
           onContinue={() => startStory("continue")}
         />
       )}
@@ -255,6 +288,7 @@ export function NovelApp() {
         <EndingScreen
           chapter={currentChapter}
           choice={selectedChoice}
+          chapters={activeChapters}
           onNext={goNext}
           onIndex={() => setScreen("index")}
         />
@@ -263,6 +297,7 @@ export function NovelApp() {
       {screen === "index" && (
         <ChapterIndex
           progress={progress}
+          chapters={activeChapters}
           onChapterSelect={jumpToChapter}
           onChangeChoice={changeChapterChoice}
           onStart={() => startStory("continue")}
@@ -277,60 +312,52 @@ export function NovelApp() {
 }
 
 function TitleScreen({
+  appMode,
   completedCount,
   hasChapters,
-  onStart,
+  onSelectTrial,
+  onSelectFull,
+  onStartTrial,
+  onStartFull,
   onContinue,
 }: {
+  appMode: AppMode;
   completedCount: number;
   hasChapters: boolean;
-  onStart: () => void;
+  onSelectTrial: () => void;
+  onSelectFull: () => void;
+  onStartTrial: () => void;
+  onStartFull: () => void;
   onContinue: () => void;
 }) {
   return (
     <section className="title-screen scene-frame title-art">
       <div className="title-copy">
         <p className="eyebrow title-kicker">15の決断で読み解く</p>
-        <h1>
-          <span>あなたの</span>
-          <span>経営資質診断</span>
-        </h1>
+        <h1><span>あなたの</span><span>経営資質診断</span></h1>
         <p className="title-theme">幕末・明治維新編</p>
-        <p className="subtitle">一人の長州藩士・村瀬 新之助とたどる15の決断</p>
-        <p className="lead">
-          幕末から明治維新へ。
-          <br />
-          架空の長州藩士・村瀬 新之助（むらせ しんのすけ）の視点から、
-          <br />
-          歴史の分岐点に立つ人物たちの決断をたどり、
-          <br />
-          あなたの価値観に近い幕末の偉人タイプを診断します。
-        </p>
-        <p className="fiction-note">
-          本作は史実を尊重して制作しておりますが、物語として描くため、一部に創作を加えております。
-          <br />
-          史実と創作が織りなす幕末の世界を、どうぞお楽しみください。
-        </p>
+        <p className="subtitle">一人の長州藩士・村瀬 新之助とたどる、歴史上の決断</p>
+        <p className="lead">幕末から明治維新へ。<br />架空の長州藩士・村瀬 新之助の視点から、歴史の分岐点に立つ人物たちの決断をたどります。<br />あなたの選択から、経営における価値観と強みを診断します。</p>
+        <div className="experience-grid" aria-label="遊び方を選ぶ">
+          <article className={appMode === "trial" ? "experience-card selected" : "experience-card"}>
+            <p className="experience-label">体験版</p>
+            <h2>歴史上の決断を約15分で体験できます。</h2>
+            <p>各章の重要な場面を厳選し、歴史人物たちの価値観に触れながら、自分ならどう決断するかを考えるダイジェスト版です。</p>
+            <p>歴史に詳しくない方や、まず雰囲気を体験したい方におすすめです。</p>
+            <div className="experience-actions"><button className="primary-button" type="button" disabled={!hasChapters} onClick={onStartTrial}>体験版を始める</button>{appMode !== "trial" && <button className="secondary-button" type="button" onClick={onSelectTrial}>体験版を選択</button>}</div>
+          </article>
+          <article className={appMode === "full" ? "experience-card selected" : "experience-card"}>
+            <p className="experience-label">完全版</p>
+            <h2>すべての物語をじっくり体験できます。</h2>
+            <p>歴史上の人物たちの葛藤や対話、時代背景まで丁寧に描いた本編です。</p>
+            <p>一つひとつの決断に至る過程を追体験しながら、より深く歴史と経営資質を学ぶことができます。</p>
+            <div className="experience-actions"><button className="secondary-button" type="button" disabled={!hasChapters} onClick={onStartFull}>完全版を始める</button>{appMode !== "full" && <button className="secondary-button" type="button" onClick={onSelectFull}>完全版を選択</button>}</div>
+          </article>
+        </div>
+        <div className="title-actions"><button className="primary-button" type="button" disabled={!hasChapters} onClick={onContinue}>{completedCount > 0 ? "続きから読む" : appMode === "trial" ? "体験版を始める" : "完全版を始める"}</button></div>
+        {completedCount > 0 && <p className="progress-note">回答済 {completedCount} / 15</p>}
+        <p className="fiction-note">本作は史実を尊重して制作していますが、物語として描くため、一部に創作を加えています。</p>
       </div>
-
-      <div className="title-actions" aria-label="開始メニュー">
-        <button className="primary-button" type="button" onClick={onStart}>
-          物語を始める
-        </button>
-        <button className="secondary-button" type="button" onClick={onContinue}>
-          続きから
-        </button>
-      </div>
-
-      <p className="progress-note">
-        回答済 {completedCount} / 15
-      </p>
-
-      {!hasChapters && (
-        <p className="notice">
-          `story` フォルダーが未検出のため、本文データはまだ取り込まれていません。
-        </p>
-      )}
     </section>
   );
 }
@@ -382,11 +409,13 @@ function ChapterScreen({
 function EndingScreen({
   chapter,
   choice,
+  chapters,
   onNext,
   onIndex,
 }: {
   chapter: Chapter;
   choice: Choice;
+  chapters: Chapter[];
   onNext: () => void;
   onIndex: () => void;
 }) {
@@ -503,6 +532,7 @@ function ChoiceButton({ choice, onClick }: { choice: Choice; onClick: () => void
 
 function ChapterIndex({
   progress,
+  chapters,
   onChapterSelect,
   onChangeChoice,
   onStart,
@@ -510,6 +540,7 @@ function ChapterIndex({
   canViewResult,
 }: {
   progress: ReadingProgress;
+  chapters: Chapter[];
   onChapterSelect: (chapterId: number) => void;
   onChangeChoice: (chapterId: number) => void;
   onStart: () => void;

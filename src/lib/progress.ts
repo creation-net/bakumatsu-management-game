@@ -1,6 +1,11 @@
 import type { ReadingProgress } from "@/types/story";
 
-const STORAGE_KEY = "bakumatsu-meiji-progress";
+export type ProgressMode = "trial" | "full";
+
+const STORAGE_KEYS: Record<ProgressMode, string> = {
+  trial: "bakumatsu-meiji-progress-trial",
+  full: "bakumatsu-meiji-progress",
+};
 
 export const initialProgress: ReadingProgress = {
   currentChapterId: 1,
@@ -10,12 +15,12 @@ export const initialProgress: ReadingProgress = {
   updatedAt: "",
 };
 
-export function loadProgress(): ReadingProgress {
+export function loadProgress(mode: ProgressMode = "full"): ReadingProgress {
   if (typeof window === "undefined") {
     return initialProgress;
   }
 
-  const raw = window.localStorage.getItem(STORAGE_KEY);
+  const raw = window.localStorage.getItem(STORAGE_KEYS[mode]);
   if (!raw) {
     return initialProgress;
   }
@@ -45,13 +50,13 @@ export function loadProgress(): ReadingProgress {
   }
 }
 
-export function saveProgress(progress: ReadingProgress) {
+export function saveProgress(progress: ReadingProgress, mode: ProgressMode = "full") {
   if (typeof window === "undefined") {
     return;
   }
 
   window.localStorage.setItem(
-    STORAGE_KEY,
+    STORAGE_KEYS[mode],
     JSON.stringify({
       ...progress,
       updatedAt: new Date().toISOString(),
@@ -59,10 +64,10 @@ export function saveProgress(progress: ReadingProgress) {
   );
 }
 
-export function resetProgress() {
+export function resetProgress(mode: ProgressMode = "full") {
   if (typeof window === "undefined") {
     return;
   }
 
-  window.localStorage.removeItem(STORAGE_KEY);
+  window.localStorage.removeItem(STORAGE_KEYS[mode]);
 }
