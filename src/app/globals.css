@@ -1868,3 +1868,39 @@ h3 {
   .experience-actions .primary-button,
   .experience-actions .secondary-button { padding-inline: 14px; }
 }
+
+
+.development-link-note {
+  width: fit-content;
+  max-width: 100%;
+  margin: -10px 0 0;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.development-link-note a,
+.development-link-panel a {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(192, 160, 90, 0.46);
+}
+
+.development-link-note a:hover,
+.development-link-panel a:hover {
+  color: var(--ink-strong);
+  border-bottom-color: var(--ink-strong);
+}
+
+.development-link-panel {
+  max-width: 920px;
+  margin: 24px auto 0;
+  padding: 18px clamp(18px, 4vw, 28px);
+  color: var(--muted);
+  background: rgba(7, 9, 12, 0.72);
+  border: 1px solid rgba(192, 160, 90, 0.28);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  text-align: center;
+}

@@ -454,6 +454,11 @@ function TitleScreen({
         <p className="fiction-note">
           本作は史実を尊重して制作していますが、物語として描くため、一部に創作を加えています。
         </p>
+        <p className="development-link-note">
+          <a href="https://hyogo-seinenbu.com/2607bakumatsureport/" target="_blank" rel="noreferrer">
+            制作の背景・開発に込めた思いはこちら
+          </a>
+        </p>
       </div>
     </section>
   );
@@ -899,6 +904,12 @@ function ResultScreen({
             この診断は15の歴史的意思決定をもとに、あなたの経営資質を分析しています。
           </footer>
         </article>
+
+        <div className="development-link-panel no-print">
+          <a href="https://hyogo-seinenbu.com/2607bakumatsureport/" target="_blank" rel="noreferrer">
+            この診断アプリに込めた思いを読む
+          </a>
+        </div>
       </div>
     </section>
   );
