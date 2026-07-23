@@ -272,6 +272,9 @@ export function NovelApp() {
         <button className="text-button" type="button" onClick={showTitle}>
           タイトルに戻る
         </button>
+        <button className="text-button muted" type="button" onClick={handleReset}>
+          回答をリセットする
+        </button>
         <button className="text-button" type="button" onClick={() => openIndex("trial")}>
           体験版の物語一覧
         </button>
@@ -293,9 +296,6 @@ export function NovelApp() {
           disabled={!canViewResultForMode("full")}
         >
           完全版の診断結果
-        </button>
-        <button className="text-button muted" type="button" onClick={handleReset}>
-          回答をリセットする
         </button>
       </nav>
 
