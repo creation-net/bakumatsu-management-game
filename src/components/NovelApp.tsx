@@ -513,7 +513,7 @@ function EndingScreen({
   return (
     <article className="ending-view scene-frame">
       <div className="reader-column">
-        <p className="eyebrow">第{chapter.id}章 選択結果</p>
+        <p className="eyebrow">{getChapterLabel(chapter.id)} 選択結果</p>
         <h2>決断の余韻</h2>
 
         <section className="selected-choice" aria-label="選択した内容">

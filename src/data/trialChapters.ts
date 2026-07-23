@@ -3467,7 +3467,7 @@ export const trialChapters: Chapter[] = trialChapterSources.map((trialChapter, i
     subtitle: trialChapter.subtitle,
     sourceFile: "短縮版ストーリー.txt",
     passages: trialChapter.passages,
-    endingPassages: [],
+    endingPassages: fullChapter.endingPassages,
     choices: fullChapter.choices.map((choice, choiceIndex) =>
       mergeTrialChoice(choice, trialChapter.choices[choiceIndex]),
     ),
