@@ -631,7 +631,8 @@ function ChapterIndex({
             const answered = Boolean(selectedChoice);
             const current = progress.currentChapterId === chapter.id && !completed;
             const status = completed ? "completed" : answered ? "answered" : current ? "current" : "unread";
-            const statusLabel = completed ? "回答済" : answered ? "回答済" : current ? "途中" : "未読";
+            const statusLabel = answered || completed ? "回答済" : current ? "途中" : "未読";
+
             return (
               <article
                 className={`chapter-row chapter-row-${chapter.id} ${status}`}
