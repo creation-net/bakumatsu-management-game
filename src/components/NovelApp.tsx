@@ -409,7 +409,7 @@ function TitleScreen({
         <div className="experience-grid" aria-label="遊び方を選ぶ">
           <article className="experience-card selected">
             <p className="experience-label">体験版</p>
-            <h2>物語を10分で体験・診断します。</h2>
+            <h2>物語を約10分で体験できます。</h2>
             <p>
               各章の重要な場面をケーススタディとして体験し、歴史人物の価値観に触れながら、自分ならどう決断するかを考えます。
             </p>
@@ -427,11 +427,13 @@ function TitleScreen({
           <article className="experience-card">
             <p className="experience-label">完全版</p>
             <h2>物語をじっくり体験できます。</h2>
-            <p>歴史人物たちの葛藤や対話、時代背景まで描いた本編です。</p>
+            <p>歴史人物たちの葛藤や対話、時代背景まで丁寧に描いた本編です。</p>
             <p>
-              一つひとつの決断に至る過程を追体験しながら、より深く歴史と経営資質を学ぶことができます。
+              一つひとつの決断に至る過程を追体験しながら、歴史への理解を深めるとともに、自分自身の経営資質を振り返ることができます。
             </p>
-            <p>約60分ですが、回答は保存されるので、ゆっくり進めることができます。</p>
+            <p>
+              所要時間は約60分です。回答内容は自動で保存されるため、途中で中断しても、続きからご自身のペースで進められます。
+            </p>
             <div className="experience-actions">
               <button className="primary-button" type="button" disabled={!hasChapters} onClick={onStartFull}>
                 完全版を始める
