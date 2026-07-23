@@ -243,7 +243,6 @@ export function NovelApp() {
       }
     >
       <nav className="top-bar" aria-label="主要メニュー">
-        <span className="mode-pill">{appMode === "trial" ? "体験版" : "完全版"}</span>
         <button className="text-button" type="button" onClick={showTitle}>
           タイトルに戻る
         </button>
@@ -341,8 +340,8 @@ function TitleScreen({
         <div className="experience-grid" aria-label="遊び方を選ぶ">
           <article className={appMode === "trial" ? "experience-card selected" : "experience-card"}>
             <p className="experience-label">体験版</p>
-            <h2>歴史上の決断を約15分で体験できます。</h2>
-            <p>各章の重要な場面を厳選し、歴史人物たちの価値観に触れながら、自分ならどう決断するかを考えるダイジェスト版です。</p>
+            <h2>経営ケーススタディとして短く読む</h2>
+            <p>各章の重要な場面をケーススタディとして整理し、歴史人物たちの価値観に触れながら、自分ならどう決断するかを短時間で考えます。</p>
             <p>歴史に詳しくない方や、まず雰囲気を体験したい方におすすめです。</p>
             <div className="experience-actions"><button className="primary-button" type="button" disabled={!hasChapters} onClick={onStartTrial}>体験版を始める</button>{appMode !== "trial" && <button className="secondary-button" type="button" onClick={onSelectTrial}>体験版を選択</button>}</div>
           </article>
@@ -354,7 +353,6 @@ function TitleScreen({
             <div className="experience-actions"><button className="secondary-button" type="button" disabled={!hasChapters} onClick={onStartFull}>完全版を始める</button>{appMode !== "full" && <button className="secondary-button" type="button" onClick={onSelectFull}>完全版を選択</button>}</div>
           </article>
         </div>
-        <div className="title-actions"><button className="primary-button" type="button" disabled={!hasChapters} onClick={onContinue}>{completedCount > 0 ? "続きから読む" : appMode === "trial" ? "体験版を始める" : "完全版を始める"}</button></div>
         {completedCount > 0 && <p className="progress-note">回答済 {completedCount} / 15</p>}
         <p className="fiction-note">本作は史実を尊重して制作していますが、物語として描くため、一部に創作を加えています。</p>
       </div>
