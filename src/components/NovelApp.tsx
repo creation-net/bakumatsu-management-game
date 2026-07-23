@@ -279,6 +279,7 @@ export function NovelApp() {
   }
 
   const answeredCount = Object.keys(progress.choices).length;
+  const modeLabel = appMode === "trial" ? "体験版" : "完全版";
   const canViewResult = answeredCount >= chapterCount && chapterCount > 0;
 
   if (!mounted) {
@@ -358,6 +359,7 @@ export function NovelApp() {
 
       {screen === "index" && (
         <ChapterIndex
+          appMode={appMode}
           progress={progress}
           chapters={activeChapters}
           onChapterSelect={jumpToChapter}
@@ -617,6 +619,7 @@ function ChoiceButton({ choice, onClick }: { choice: Choice; onClick: () => void
 }
 
 function ChapterIndex({
+  appMode,
   progress,
   chapters,
   onChapterSelect,
@@ -625,6 +628,7 @@ function ChapterIndex({
   onResult,
   canViewResult,
 }: {
+  appMode: AppMode;
   progress: ReadingProgress;
   chapters: Chapter[];
   onChapterSelect: (chapterId: number) => void;
@@ -639,7 +643,7 @@ function ChapterIndex({
     <section className="index-view scene-frame">
       <header className="section-header">
         <p className="eyebrow">進行と回答</p>
-        <h2>進行確認</h2>
+        <h2>進行確認 <span className="index-mode-label">（{modeLabel}）</span></h2>
         <p className="index-summary">
           回答済 {answeredCount} / {chapters.length}
         </p>
