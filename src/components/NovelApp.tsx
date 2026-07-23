@@ -455,7 +455,7 @@ function TitleScreen({
           本作は史実を尊重して制作していますが、物語として描くため、一部に創作を加えています。
         </p>
         <p className="development-link-note">
-          <a href="https://hyogo-seinenbu.com/2607bakumatsureport/" target="_blank" rel="noreferrer">
+          <a href="/development">
             制作の背景・開発に込めた思いはこちら
           </a>
         </p>
@@ -906,7 +906,7 @@ function ResultScreen({
         </article>
 
         <div className="development-link-panel no-print">
-          <a href="https://hyogo-seinenbu.com/2607bakumatsureport/" target="_blank" rel="noreferrer">
+          <a href="/development">
             この診断アプリに込めた思いを読む
           </a>
         </div>
