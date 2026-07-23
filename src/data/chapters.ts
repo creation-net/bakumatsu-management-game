@@ -3372,7 +3372,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-8",
         "kind": "narration",
-        "text": "桂は、村田 蔵六（むらた ぞうろく／長州藩の軍略家）とともに京都へ向かう。"
+        "text": "桂は、村田 蔵六（むらた ぞうろく／長州藩の軍略家）とともに下関へ向かう。"
       },
       {
         "id": "p-9",
@@ -3382,7 +3382,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-10",
         "kind": "scene",
-        "text": "【下関　長州側の屋敷】"
+        "text": "【下関の豪商・白石正一郎（しらいし しょういちろう）の屋敷】"
       },
       {
         "id": "p-11",
