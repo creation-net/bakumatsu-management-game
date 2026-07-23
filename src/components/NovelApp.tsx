@@ -193,7 +193,7 @@ export function NovelApp() {
 
   return (
     <main
-      className="app-shell"
+      className={`app-shell chapter-theme-${currentChapter?.id ?? "none"}`}
       style={
         {
           "--chapter-image": currentChapter
@@ -535,7 +535,7 @@ function ChapterIndex({
             const statusLabel = completed ? "回答済" : answered ? "回答済" : current ? "途中" : "未読";
             return (
               <article
-                className={`chapter-row ${status}`}
+                className={`chapter-row chapter-row-${chapter.id} ${status}`}
                 key={chapter.id}
                 style={
                   {

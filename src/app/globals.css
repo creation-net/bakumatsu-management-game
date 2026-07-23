@@ -738,6 +738,41 @@ h3 {
   background-position: center;
 }
 
+.chapter-theme-6 .chapter-header::after {
+  width: min(68%, 840px);
+  background:
+    linear-gradient(90deg, rgba(8, 9, 11, 0), rgba(8, 9, 11, 0.22)),
+    var(--chapter-image);
+  opacity: 0.72;
+  filter: brightness(1.28) saturate(1.08);
+}
+
+.chapter-theme-6 .ending-view {
+  background:
+    linear-gradient(rgba(3, 5, 7, 0.62), rgba(3, 5, 7, 0.78)),
+    var(--chapter-image),
+    linear-gradient(135deg, #06080b, #1b110d);
+  background-size: cover;
+  background-position: center;
+}
+
+.chapter-row-6 {
+  background:
+    linear-gradient(90deg, rgba(8, 10, 12, 0.76), rgba(8, 10, 12, 0.48) 58%, rgba(8, 10, 12, 0.62)),
+    var(--row-image);
+  background-size: cover;
+  background-position: center;
+}
+
+.chapter-row-6.current,
+.chapter-row-6:hover {
+  background:
+    linear-gradient(90deg, rgba(50, 32, 19, 0.72), rgba(50, 32, 19, 0.42) 58%, rgba(50, 32, 19, 0.58)),
+    var(--row-image);
+  background-size: cover;
+  background-position: center;
+}
+
 .chapter-row.unread {
   opacity: 0.72;
 }
@@ -1560,6 +1595,26 @@ h3 {
     width: 100%;
     opacity: 0.42;
     filter: brightness(1.24) saturate(1.06);
+  }
+
+  .chapter-theme-6 .chapter-header::after {
+    width: 100%;
+    background:
+      linear-gradient(180deg, rgba(8, 9, 11, 0.38), rgba(8, 9, 11, 0.68)),
+      var(--chapter-image);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.66;
+    filter: brightness(1.24) saturate(1.06);
+  }
+
+  .chapter-theme-6 .ending-view {
+    background:
+      linear-gradient(rgba(3, 5, 7, 0.66), rgba(3, 5, 7, 0.84)),
+      var(--chapter-image),
+      linear-gradient(135deg, #06080b, #1b110d);
+    background-size: cover;
+    background-position: center;
   }
 
   .report-actions {
