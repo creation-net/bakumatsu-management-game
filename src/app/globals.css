@@ -1404,12 +1404,12 @@ h3 {
     min-height: calc(100vh - 92px);
     padding: 28px 16px;
     background:
-      linear-gradient(90deg, rgba(5, 7, 10, 0.96) 0%, rgba(5, 7, 10, 0.86) 54%, rgba(5, 7, 10, 0.58) 100%),
+      linear-gradient(90deg, rgba(5, 7, 10, 0.95) 0%, rgba(5, 7, 10, 0.82) 52%, rgba(5, 7, 10, 0.46) 100%),
       var(--title-image),
       linear-gradient(135deg, #080b10, #1a120e);
     background-repeat: no-repeat;
-    background-size: auto 92%;
-    background-position: 82% 12px;
+    background-size: auto 58%;
+    background-position: 100% 18px;
   }
 
   h1 {
