@@ -639,6 +639,7 @@ function ChapterIndex({
   canViewResult: boolean;
 }) {
   const answeredCount = Object.keys(progress.choices).length;
+  const modeLabel = appMode === "trial" ? "体験版" : "完全版";
 
   return (
     <section className="index-view scene-frame">
