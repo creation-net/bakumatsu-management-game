@@ -212,17 +212,22 @@ export function NovelApp() {
     const completed = new Set(progress.completedChapterIds);
     completed.add(chapterId);
 
+    const nextChapterId = chapterId + 1;
+    const hasNextChapter = activeChapters.some((chapter) => chapter.id === nextChapterId);
+    const shouldSkipEnding = appMode === "trial" && hasNextChapter;
+    const nextStep: ReadingStep = shouldSkipEnding ? "reading" : "ending";
+
     updateProgress({
       ...progress,
-      currentChapterId: chapterId,
-      currentStep: "ending",
+      currentChapterId: shouldSkipEnding ? nextChapterId : chapterId,
+      currentStep: nextStep,
       completedChapterIds: Array.from(completed).sort((a, b) => a - b),
       choices: {
         ...progress.choices,
         [chapterId]: choiceId,
       },
     });
-    setScreen("ending");
+    setScreen(getScreenFromStep(nextStep));
   }
 
   function goNext() {
