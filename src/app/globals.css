@@ -739,12 +739,15 @@ h3 {
 }
 
 .chapter-theme-6 .chapter-header::after {
-  width: min(68%, 840px);
+  width: min(58%, 720px);
   background:
-    linear-gradient(90deg, rgba(8, 9, 11, 0), rgba(8, 9, 11, 0.22)),
+    linear-gradient(90deg, rgba(8, 9, 11, 0), rgba(8, 9, 11, 0.28)),
     var(--chapter-image);
-  opacity: 0.72;
-  filter: brightness(1.28) saturate(1.08);
+  background-repeat: no-repeat;
+  background-size: 100% 100%, auto 100%;
+  background-position: center, right center;
+  opacity: 0.68;
+  filter: brightness(1.2) saturate(1.06);
 }
 
 .chapter-theme-6 .ending-view {
