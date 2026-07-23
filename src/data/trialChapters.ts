@@ -1,5 +1,17 @@
-import { chapters } from "@/data/chapters";
-import type { Chapter, Passage } from "@/types/story";
+import { chapters as fullChapters } from "@/data/chapters";
+import type { Chapter, Choice, Passage } from "@/types/story";
+
+type TrialChapterSource = {
+  id: number;
+  title: string;
+  subtitle?: string;
+  passages: Passage[];
+  choices: Array<{
+    label: string;
+    text: string;
+    value?: string;
+  }>;
+};
 
 export type TrialEditReport = {
   chapterId: number;
@@ -11,227 +23,3459 @@ export type TrialEditReport = {
   changedDialogueSummary: string;
 };
 
-const trialChapterThemes: Record<number, string> = {
-  1: "未知の外圧を前に、すぐ動くか、学ぶか、時を待つかを考えること。",
-  2: "理想を継ぐ覚悟と、組織を守る現実判断のどちらを重く見るか。",
-  3: "攘夷の熱と現実的な外交判断を、どう両立させるか。",
-  4: "敗北が迫る場面で、正面突破か撤退か再起かを選ぶこと。",
-  5: "藩の存続と信念のために、屈辱を受け入れるか抗うかを考えること。",
-  6: "孤立した夜に、行動・慎重・組織維持のどれを選ぶか。",
-  7: "敵同士だった相手と手を組むために、何を優先するか。",
-  8: "大きな戦の中で、自分がどの指揮官に命を預けるかを選ぶこと。",
-  9: "新政権の形を決める場で、手続きと実行力をどう扱うか。",
-  10: "時代を閉じる決断で、誇りと被害回避のどちらを優先するか。",
-  11: "戦わずに道を開くために、何を差し出し、何を守るか。",
-  12: "新しい国家づくりで、制度・人材・軍備をどう結びつけるか。",
-  13: "古い仕組みを壊す改革で、納得と速度のどちらを重んじるか。",
-  14: "国の進路をめぐる対立で、外への拡張と内の整備をどう選ぶか。",
-  15: "武士の時代の終わりに、義と未来をどう受け止めるか。",
-};
+const trialChapterSources: TrialChapterSource[] = [
+  {
+    "id": 1,
+    "title": "第一章 黒船来航",
+    "subtitle": "時代の幕開け",
+    "passages": [
+      {
+        "id": "trial-1-p-1",
+        "kind": "narration",
+        "text": "嘉永六年（1853年）。"
+      },
+      {
+        "id": "trial-1-p-2",
+        "kind": "narration",
+        "text": "アメリカのペリー提督率いる黒船が浦賀へ現れた。"
+      },
+      {
+        "id": "trial-1-p-3",
+        "kind": "narration",
+        "text": "二百年以上続いた泰平の世は、大きく揺れ始める。"
+      },
+      {
+        "id": "trial-1-p-4",
+        "kind": "scene",
+        "text": "【長州藩　城下町】"
+      },
+      {
+        "id": "trial-1-p-5",
+        "kind": "narration",
+        "text": "村瀬 新之助は、長州藩の下級武士である。"
+      },
+      {
+        "id": "trial-1-p-6",
+        "kind": "narration",
+        "text": "国が変わろうとしていることは感じていた。"
+      },
+      {
+        "id": "trial-1-p-7",
+        "kind": "narration",
+        "text": "しかし、自分に何ができるのか分からない。"
+      },
+      {
+        "id": "trial-1-p-8",
+        "kind": "narration",
+        "text": "そんなある日、藩でも評判の秀才・久坂 玄瑞が声を掛ける。"
+      },
+      {
+        "id": "trial-1-p-9",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「松下村塾へ来んか。」"
+      },
+      {
+        "id": "trial-1-p-10",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「吉田 松陰先生がおられる。」"
+      },
+      {
+        "id": "trial-1-p-11",
+        "kind": "scene",
+        "text": "【松下村塾】"
+      },
+      {
+        "id": "trial-1-p-12",
+        "kind": "narration",
+        "text": "村瀬は初めて松下村塾を訪れる。"
+      },
+      {
+        "id": "trial-1-p-13",
+        "kind": "narration",
+        "text": "そこでは吉田 松陰を囲み、多くの若者が国の未来について議論していた。"
+      },
+      {
+        "id": "trial-1-p-14",
+        "kind": "dialogue",
+        "speaker": "吉田 松陰",
+        "text": "「黒船が現れた今、日本は大きな岐路に立っちょる。」"
+      },
+      {
+        "id": "trial-1-p-15",
+        "kind": "dialogue",
+        "speaker": "吉田 松陰",
+        "text": "「皆はどう思う。」"
+      },
+      {
+        "id": "trial-1-p-16",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「今こそ攘夷を決行すべきです。」"
+      },
+      {
+        "id": "trial-1-p-17",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「日本が屈しない国であることを示さねばなりません。」"
+      },
+      {
+        "id": "trial-1-p-18",
+        "kind": "dialogue",
+        "speaker": "吉田 松陰",
+        "text": "「志は立派じゃ。」"
+      },
+      {
+        "id": "trial-1-p-19",
+        "kind": "dialogue",
+        "speaker": "吉田 松陰",
+        "text": "「じゃが、まずは西洋に学び、日本を強くすることが先じゃ。」"
+      },
+      {
+        "id": "trial-1-p-20",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「どちらももっともじゃ。」"
+      },
+      {
+        "id": "trial-1-p-21",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「じゃが、今はまだ何も見えちょらん。」"
+      },
+      {
+        "id": "trial-1-p-22",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「情勢を見極め、来るべき日に備えることじゃ。」"
+      },
+      {
+        "id": "trial-1-p-23",
+        "kind": "narration",
+        "text": "三人の視線が村瀬へ向く。"
+      },
+      {
+        "id": "trial-1-p-24",
+        "kind": "dialogue",
+        "speaker": "吉田 松陰",
+        "text": "「さて、村瀬君。」"
+      },
+      {
+        "id": "trial-1-p-25",
+        "kind": "dialogue",
+        "speaker": "吉田 松陰",
+        "text": "「君なら、どう考える。」"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "今こそ、攘夷（外国を打ち払う）を決行すべきだ。\n（久坂玄瑞の考え）",
+        "value": "久坂玄瑞の考え"
+      },
+      {
+        "label": "②",
+        "text": "まずは学び、日本を強くする道を探るべきだ。\n（吉田松陰の考え）",
+        "value": "吉田松陰の考え"
+      },
+      {
+        "label": "③",
+        "text": "今は情勢を見極め、来るべき日に備えるべきだ。\n（高杉晋作の考え）",
+        "value": "高杉晋作の考え"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "第二章 安政の大獄",
+    "subtitle": "志は誰が継ぐ",
+    "passages": [
+      {
+        "id": "trial-2-p-1",
+        "kind": "narration",
+        "text": "安政六年（1859年）。"
+      },
+      {
+        "id": "trial-2-p-2",
+        "kind": "narration",
+        "text": "吉田 松陰は江戸・伝馬町牢屋敷で処刑された。"
+      },
+      {
+        "id": "trial-2-p-3",
+        "kind": "narration",
+        "text": "享年二十九。"
+      },
+      {
+        "id": "trial-2-p-4",
+        "kind": "narration",
+        "text": "先生は最後まで、日本の未来を信じていた。"
+      },
+      {
+        "id": "trial-2-p-5",
+        "kind": "scene",
+        "text": "【松下村塾】"
+      },
+      {
+        "id": "trial-2-p-6",
+        "kind": "narration",
+        "text": "松陰を失った松下村塾には、静かな時間が流れていた。"
+      },
+      {
+        "id": "trial-2-p-7",
+        "kind": "narration",
+        "text": "誰もが悲しみを抱えながら、それぞれの志を胸に秘めている。"
+      },
+      {
+        "id": "trial-2-p-8",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「先生は死んだ。」"
+      },
+      {
+        "id": "trial-2-p-9",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「じゃが、先生の志まで終わらせちゃならん。」"
+      },
+      {
+        "id": "trial-2-p-10",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「古い世を壊し、新しい日本をつくる。」"
+      },
+      {
+        "id": "trial-2-p-11",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「そのために、時代に合わせて戦い方も変えにゃならん。」"
+      },
+      {
+        "id": "trial-2-p-12",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「わしは、変革によって先生の志を継ぐ。」"
+      },
+      {
+        "id": "trial-2-p-13",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「先生は正しいと思う道のために命を懸けられた。」"
+      },
+      {
+        "id": "trial-2-p-14",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「ならば我らも、志を言葉で終わらせてはならん。」"
+      },
+      {
+        "id": "trial-2-p-15",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「私は、命を懸けて志を実行します。」"
+      },
+      {
+        "id": "trial-2-p-16",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「二人とも先生を思う気持ちは同じじゃ。」"
+      },
+      {
+        "id": "trial-2-p-17",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「じゃが、一人の命だけでは国は変わらん。」"
+      },
+      {
+        "id": "trial-2-p-18",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「志を人へ伝え、未来へ受け継ぐ。」"
+      },
+      {
+        "id": "trial-2-p-19",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「私は、継承によって先生の志を守りたい。」"
+      },
+      {
+        "id": "trial-2-p-20",
+        "kind": "narration",
+        "text": "村瀬は三人の言葉を静かに聞いていた。"
+      },
+      {
+        "id": "trial-2-p-21",
+        "kind": "narration",
+        "text": "どれも先生を思う気持ちから生まれた考えだった。"
+      },
+      {
+        "id": "trial-2-p-22",
+        "kind": "narration",
+        "text": "その時、先生の言葉が頭をよぎる。"
+      },
+      {
+        "id": "trial-2-p-23",
+        "kind": "dialogue",
+        "speaker": "吉田 松陰",
+        "text": "「諸君、狂いたまえ。」"
+      },
+      {
+        "id": "trial-2-p-24",
+        "kind": "narration",
+        "text": "久坂が村瀬へ目を向ける。"
+      },
+      {
+        "id": "trial-2-p-25",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「村瀬。」"
+      },
+      {
+        "id": "trial-2-p-26",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「お前なら、どうする。」"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "先生の志は、古い世を壊し、新しい道を切り開くことで受け継ぐべきです。\n（変革によって志を継ぐ）",
+        "value": "変革によって志を継ぐ"
+      },
+      {
+        "label": "②",
+        "text": "先生の志は、命を懸けて実行することで受け継ぐべきです。\n（決行によって志を継ぐ）",
+        "value": "決行によって志を継ぐ"
+      },
+      {
+        "label": "③",
+        "text": "先生の志は、人と組織に残し、未来へつなぐことで受け継ぐべきです。\n（継承によって志を継ぐ）",
+        "value": "継承によって志を継ぐ"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "第三章 京都料亭にて",
+    "subtitle": "日本を動かす都",
+    "passages": [
+      {
+        "id": "trial-3-p-1",
+        "kind": "narration",
+        "text": "文久二年（1862年）。"
+      },
+      {
+        "id": "trial-3-p-2",
+        "kind": "narration",
+        "text": "吉田 松陰が処刑されて数年。"
+      },
+      {
+        "id": "trial-3-p-3",
+        "kind": "narration",
+        "text": "久坂 玄瑞、高杉 晋作、桂 小五郎らは、それぞれの方法で日本を変えようと動き始めていた。"
+      },
+      {
+        "id": "trial-3-p-4",
+        "kind": "narration",
+        "text": "その中心となったのが、天皇のおられる都・京都だった。"
+      },
+      {
+        "id": "trial-3-p-5",
+        "kind": "scene",
+        "text": "【京都・料亭・近江屋】"
+      },
+      {
+        "id": "trial-3-p-6",
+        "kind": "narration",
+        "text": "静かな座敷に、三人の男が向かい合っていた。"
+      },
+      {
+        "id": "trial-3-p-7",
+        "kind": "narration",
+        "text": "幕臣・勝 海舟。"
+      },
+      {
+        "id": "trial-3-p-8",
+        "kind": "narration",
+        "text": "薩摩藩の西郷 吉之助。"
+      },
+      {
+        "id": "trial-3-p-9",
+        "kind": "narration",
+        "text": "土佐藩出身の坂本 龍馬。"
+      },
+      {
+        "id": "trial-3-p-10",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「今日は敵味方はなしじゃき。」"
+      },
+      {
+        "id": "trial-3-p-11",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「日本の話をしようぜよ。」"
+      },
+      {
+        "id": "trial-3-p-12",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「幕府が古くなったのは、俺も認める。」"
+      },
+      {
+        "id": "trial-3-p-13",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「だが、古いってだけで全部壊しちまうのはよくねぇ。」"
+      },
+      {
+        "id": "trial-3-p-14",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「残すもんは残す。」"
+      },
+      {
+        "id": "trial-3-p-15",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「直すもんは直す。」"
+      },
+      {
+        "id": "trial-3-p-16",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「今ある仕組みを活かして、国を変えるべきだ。」"
+      },
+      {
+        "id": "trial-3-p-17",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「そいは立派な考えでごわす。」"
+      },
+      {
+        "id": "trial-3-p-18",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「じゃっどん、話し合いばかりで日本は変わりもしたか。」"
+      },
+      {
+        "id": "trial-3-p-19",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「今こそ覚悟を決める時でごわす。」"
+      },
+      {
+        "id": "trial-3-p-20",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「変えるなら、一気に変えんにゃいかん。」"
+      },
+      {
+        "id": "trial-3-p-21",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「二人とも、守るか壊すかにとらわれすぎぜよ。」"
+      },
+      {
+        "id": "trial-3-p-22",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「朝廷も、幕府も、薩摩も、長州も、皆が敵になる必要はないがじゃ。」"
+      },
+      {
+        "id": "trial-3-p-23",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「皆が力を合わせられる、新しい仕組みをつくるべきぜよ。」"
+      },
+      {
+        "id": "trial-3-p-24",
+        "kind": "narration",
+        "text": "村瀬は三人を見つめる。"
+      },
+      {
+        "id": "trial-3-p-25",
+        "kind": "narration",
+        "text": "勝は、積み上げてきたものを活かそうとしている。"
+      },
+      {
+        "id": "trial-3-p-26",
+        "kind": "narration",
+        "text": "西郷は、今を逃せば国は変わらないと考えている。"
+      },
+      {
+        "id": "trial-3-p-27",
+        "kind": "narration",
+        "text": "龍馬は、争いを越えて協力できる国を目指している。"
+      },
+      {
+        "id": "trial-3-p-28",
+        "kind": "narration",
+        "text": "考え方は違っても、皆が日本の未来を真剣に考えていた。"
+      },
+      {
+        "id": "trial-3-p-29",
+        "kind": "narration",
+        "text": "勝が村瀬を見据える。"
+      },
+      {
+        "id": "trial-3-p-30",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「長州の若ぇ衆。」"
+      },
+      {
+        "id": "trial-3-p-31",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「人の話を聞いて、おめぇは何を思った。」"
+      },
+      {
+        "id": "trial-3-p-32",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「聞かせてみな。」"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "今ある仕組みを活かしながら、改革を進めるべきです。\n（勝 海舟の考え）",
+        "value": "勝 海舟の考え"
+      },
+      {
+        "label": "②",
+        "text": "今こそ覚悟を決め、一気に改革を進めるべきです。\n（西郷 吉之助の考え）",
+        "value": "西郷 吉之助の考え"
+      },
+      {
+        "label": "③",
+        "text": "新しい仕組みをつくり、皆が協力できる国を目指すべきです。\n（坂本 龍馬の考え）",
+        "value": "坂本 龍馬の考え"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "第四章 禁門の変",
+    "subtitle": "理想と現実",
+    "passages": [
+      {
+        "id": "trial-4-p-1",
+        "kind": "narration",
+        "text": "文久三年（1863年）。"
+      },
+      {
+        "id": "trial-4-p-2",
+        "kind": "narration",
+        "text": "八月十八日の政変により、長州藩は京都から追われた。"
+      },
+      {
+        "id": "trial-4-p-3",
+        "kind": "narration",
+        "text": "長州は朝廷へ真意を伝えるため、軍勢を率いて再び京都へ向かう。"
+      },
+      {
+        "id": "trial-4-p-4",
+        "kind": "scene",
+        "text": "【京都郊外】"
+      },
+      {
+        "id": "trial-4-p-5",
+        "kind": "narration",
+        "text": "村瀬は久坂 玄瑞の本陣にいた。"
+      },
+      {
+        "id": "trial-4-p-6",
+        "kind": "narration",
+        "text": "目の前には京都。"
+      },
+      {
+        "id": "trial-4-p-7",
+        "kind": "narration",
+        "text": "目的は朝廷への嘆願。"
+      },
+      {
+        "id": "trial-4-p-8",
+        "kind": "narration",
+        "text": "しかし、本陣には緊張が漂っていた。"
+      },
+      {
+        "id": "trial-4-p-9",
+        "kind": "narration",
+        "text": "その時、来島 又兵衛が姿を現す。"
+      },
+      {
+        "id": "trial-4-p-10",
+        "kind": "dialogue",
+        "speaker": "来島 又兵衛",
+        "text": "「久坂。」"
+      },
+      {
+        "id": "trial-4-p-11",
+        "kind": "dialogue",
+        "speaker": "来島 又兵衛",
+        "text": "「いつまで待つ。」"
+      },
+      {
+        "id": "trial-4-p-12",
+        "kind": "dialogue",
+        "speaker": "来島 又兵衛",
+        "text": "「会津も薩摩も、戦うつもりじゃ。」"
+      },
+      {
+        "id": "trial-4-p-13",
+        "kind": "dialogue",
+        "speaker": "来島 又兵衛",
+        "text": "「今こそ武力で長州の覚悟を示さねば、誰も我らの話など聞かん。」"
+      },
+      {
+        "id": "trial-4-p-14",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「我らは戦をしに来たのではありません。」"
+      },
+      {
+        "id": "trial-4-p-15",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「目的は朝廷へ長州の真意を伝えることです。」"
+      },
+      {
+        "id": "trial-4-p-16",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「戦えば、本来の目的を失ってしまいます。」"
+      },
+      {
+        "id": "trial-4-p-17",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「二人とも言うことは分かる。」"
+      },
+      {
+        "id": "trial-4-p-18",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「じゃが、軍勢を率いて京都へ来た時点で、相手は戦と受け取る。」"
+      },
+      {
+        "id": "trial-4-p-19",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「今日ここで戦になれば、長州は朝廷との道を失うかもしれん。」"
+      },
+      {
+        "id": "trial-4-p-20",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「退くことも、未来を守る決断じゃ。」"
+      },
+      {
+        "id": "trial-4-p-21",
+        "kind": "narration",
+        "text": "村瀬は三人を見つめる。"
+      },
+      {
+        "id": "trial-4-p-22",
+        "kind": "narration",
+        "text": "来島は、今動かなければ長州は終わると考えている。"
+      },
+      {
+        "id": "trial-4-p-23",
+        "kind": "narration",
+        "text": "久坂は、目的を見失ってはならないと言う。"
+      },
+      {
+        "id": "trial-4-p-24",
+        "kind": "narration",
+        "text": "桂は、長州が再び立ち上がる未来を守ろうとしている。"
+      },
+      {
+        "id": "trial-4-p-25",
+        "kind": "narration",
+        "text": "皆、長州を救いたいという思いは同じだった。"
+      },
+      {
+        "id": "trial-4-p-26",
+        "kind": "narration",
+        "text": "久坂が村瀬を見る。"
+      },
+      {
+        "id": "trial-4-p-27",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「お前はどう思う。」"
+      },
+      {
+        "id": "trial-4-p-28",
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「お前なら考えを持っているはずだ。」"
+      },
+      {
+        "id": "trial-4-p-29",
+        "kind": "narration",
+        "text": "本陣が静まり返る。"
+      },
+      {
+        "id": "trial-4-p-30",
+        "kind": "narration",
+        "text": "（私などが……。）"
+      },
+      {
+        "id": "trial-4-p-31",
+        "kind": "narration",
+        "text": "しかし、先生の言葉がよみがえる。"
+      },
+      {
+        "id": "trial-4-p-32",
+        "kind": "dialogue",
+        "speaker": "吉田 松陰",
+        "text": "「自分で考えよ。」"
+      },
+      {
+        "id": "trial-4-p-33",
+        "kind": "narration",
+        "text": "村瀬は一歩前へ出た。"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "今こそ行動を起こし、長州の覚悟を示すべきです。\n（来島 又兵衛の考え）",
+        "value": "来島 又兵衛の考え"
+      },
+      {
+        "label": "②",
+        "text": "目的は朝廷への嘆願です。戦えば本来の目的を失います。\n（久坂 玄瑞の考え）",
+        "value": "久坂 玄瑞の考え"
+      },
+      {
+        "label": "③",
+        "text": "今日は退き、長州が再び立ち上がる機会を残すべきです。\n（桂 小五郎の考え）",
+        "value": "桂 小五郎の考え"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "第五章 第一次長州征討",
+    "subtitle": "藩を残す決断",
+    "passages": [
+      {
+        "id": "trial-5-p-1",
+        "kind": "narration",
+        "text": "元治元年（1864年）。"
+      },
+      {
+        "id": "trial-5-p-2",
+        "kind": "narration",
+        "text": "禁門の変で敗れ、朝敵となった長州藩へ、幕府は諸藩に出兵を命じた。"
+      },
+      {
+        "id": "trial-5-p-3",
+        "kind": "narration",
+        "text": "幕府軍は十五万。"
+      },
+      {
+        "id": "trial-5-p-4",
+        "kind": "narration",
+        "text": "対する長州は、戦える状態ではなかった。"
+      },
+      {
+        "id": "trial-5-p-5",
+        "kind": "scene",
+        "text": "【萩城　評議の間】"
+      },
+      {
+        "id": "trial-5-p-6",
+        "kind": "narration",
+        "text": "机の中央には、幕府からの書状が置かれている。"
+      },
+      {
+        "id": "trial-5-p-7",
+        "kind": "narration",
+        "text": "長州藩重臣の椋梨 藤太が静かに口を開く。"
+      },
+      {
+        "id": "trial-5-p-8",
+        "kind": "dialogue",
+        "speaker": "椋梨 藤太",
+        "text": "「幕府軍は十五万。」"
+      },
+      {
+        "id": "trial-5-p-9",
+        "kind": "dialogue",
+        "speaker": "椋梨 藤太",
+        "text": "「今の長州に勝ち目はない。」"
+      },
+      {
+        "id": "trial-5-p-10",
+        "kind": "dialogue",
+        "speaker": "椋梨 藤太",
+        "text": "「ここで戦えば、藩そのものが滅ぶ。」"
+      },
+      {
+        "id": "trial-5-p-11",
+        "kind": "dialogue",
+        "speaker": "椋梨 藤太",
+        "text": "「藩を残し、家臣と領民を守るためには、幕府の要求を受け入れるしかない。」"
+      },
+      {
+        "id": "trial-5-p-12",
+        "kind": "narration",
+        "text": "その時、高杉 晋作が部屋へ入ってくる。"
+      },
+      {
+        "id": "trial-5-p-13",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「幕府軍は十五万。」"
+      },
+      {
+        "id": "trial-5-p-14",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「じゃが、寄せ集めの諸藩じゃ。」"
+      },
+      {
+        "id": "trial-5-p-15",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「ここは長州。」"
+      },
+      {
+        "id": "trial-5-p-16",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「地の利も、奇兵隊もある。」"
+      },
+      {
+        "id": "trial-5-p-17",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「戦えば、まだ勝機はある。」"
+      },
+      {
+        "id": "trial-5-p-18",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「頭を下げて志まで失うくらいなら、戦うべきじゃ。」"
+      },
+      {
+        "id": "trial-5-p-19",
+        "kind": "narration",
+        "text": "そこへ、病床の周布 政之助から書状が届く。"
+      },
+      {
+        "id": "trial-5-p-20",
+        "kind": "dialogue",
+        "speaker": "周布 政之助　書状より",
+        "text": "「今は感情で動く時ではない。」"
+      },
+      {
+        "id": "trial-5-p-21",
+        "kind": "dialogue",
+        "speaker": "周布 政之助　書状より",
+        "text": "「しかし、未来まで差し出してはならない。」"
+      },
+      {
+        "id": "trial-5-p-22",
+        "kind": "dialogue",
+        "speaker": "周布 政之助　書状より",
+        "text": "「交渉によって時間を稼ぎ、少しでも長州に有利な条件を引き出せ。」"
+      },
+      {
+        "id": "trial-5-p-23",
+        "kind": "dialogue",
+        "speaker": "周布 政之助　書状より",
+        "text": "「再び立ち上がる日のために、知恵を尽くせ。」"
+      },
+      {
+        "id": "trial-5-p-24",
+        "kind": "narration",
+        "text": "長州藩主・毛利 敬親が、三人の意見を静かに聞く。"
+      },
+      {
+        "id": "trial-5-p-25",
+        "kind": "dialogue",
+        "speaker": "毛利 敬親",
+        "text": "「椋梨は、藩を残そうとしちょる。」"
+      },
+      {
+        "id": "trial-5-p-26",
+        "kind": "dialogue",
+        "speaker": "毛利 敬親",
+        "text": "「高杉は、志を守ろうとしちょる。」"
+      },
+      {
+        "id": "trial-5-p-27",
+        "kind": "dialogue",
+        "speaker": "毛利 敬親",
+        "text": "「周布は、未来へつなごうとしちょる。」"
+      },
+      {
+        "id": "trial-5-p-28",
+        "kind": "dialogue",
+        "speaker": "毛利 敬親",
+        "text": "「皆、長州を思う気持ちは同じじゃ。」"
+      },
+      {
+        "id": "trial-5-p-29",
+        "kind": "narration",
+        "text": "敬親は村瀬を見る。"
+      },
+      {
+        "id": "trial-5-p-30",
+        "kind": "dialogue",
+        "speaker": "毛利 敬親",
+        "text": "「松下村塾（しょうかそんじゅく）の者。」"
+      },
+      {
+        "id": "trial-5-p-31",
+        "kind": "dialogue",
+        "speaker": "毛利 敬親",
+        "text": "「お前のことは聞いておる。」"
+      },
+      {
+        "id": "trial-5-p-32",
+        "kind": "dialogue",
+        "speaker": "毛利 敬親",
+        "text": "「お前はどう思う。」"
+      },
+      {
+        "id": "trial-5-p-33",
+        "kind": "narration",
+        "text": "（……私に何ができる。）"
+      },
+      {
+        "id": "trial-5-p-34",
+        "kind": "narration",
+        "text": "村瀬は一度目を閉じた。"
+      },
+      {
+        "id": "trial-5-p-35",
+        "kind": "dialogue",
+        "speaker": "村瀬",
+        "text": "「恐れながら、申し上げます。」"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "藩を守るため、幕府の要求を受け入れるべきです。\n（椋梨 藤太の考え）",
+        "value": "椋梨 藤太の考え"
+      },
+      {
+        "label": "②",
+        "text": "交渉し、少しでも長州に有利な条件を引き出すべきです。\n（周布 政之助の考え）",
+        "value": "周布 政之助の考え"
+      },
+      {
+        "label": "③",
+        "text": "勝機があるなら、長州の志を守るために戦うべきです。\n（高杉 晋作の考え）",
+        "value": "高杉 晋作の考え"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "第六章 奇兵隊、決断の夜",
+    "subtitle": "動く者の責任",
+    "passages": [
+      {
+        "id": "trial-6-p-1",
+        "kind": "narration",
+        "text": "元治二年（1865年）。"
+      },
+      {
+        "id": "trial-6-p-2",
+        "kind": "narration",
+        "text": "第一次長州征討が終わり、藩内では恭順派が実権を握っていた。"
+      },
+      {
+        "id": "trial-6-p-3",
+        "kind": "narration",
+        "text": "正義派は追われ、長州は再び分裂の危機を迎えていた。"
+      },
+      {
+        "id": "trial-6-p-4",
+        "kind": "scene",
+        "text": "【夜　奇兵隊屯所】"
+      },
+      {
+        "id": "trial-6-p-5",
+        "kind": "narration",
+        "text": "奇兵隊の隊士たちが集まり、重苦しい空気が流れている。"
+      },
+      {
+        "id": "trial-6-p-6",
+        "kind": "narration",
+        "text": "高杉 晋作が静かに立ち上がる。"
+      },
+      {
+        "id": "trial-6-p-7",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「このまま恭順派に従えば、長州は終わる。」"
+      },
+      {
+        "id": "trial-6-p-8",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「奇兵隊には力がある。」"
+      },
+      {
+        "id": "trial-6-p-9",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「今なら、まだひっくり返せる。」"
+      },
+      {
+        "id": "trial-6-p-10",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「ここで立たにゃ、長州は救えん。」"
+      },
+      {
+        "id": "trial-6-p-11",
+        "kind": "narration",
+        "text": "赤根 武人が静かに口を開く。"
+      },
+      {
+        "id": "trial-6-p-12",
+        "kind": "dialogue",
+        "speaker": "赤根 武人",
+        "text": "「高杉さんの志は立派じゃ。」"
+      },
+      {
+        "id": "trial-6-p-13",
+        "kind": "dialogue",
+        "speaker": "赤根 武人",
+        "text": "「じゃが、戦えば相手は幕府ではない。」"
+      },
+      {
+        "id": "trial-6-p-14",
+        "kind": "dialogue",
+        "speaker": "赤根 武人",
+        "text": "「同じ長州の仲間じゃ。」"
+      },
+      {
+        "id": "trial-6-p-15",
+        "kind": "dialogue",
+        "speaker": "赤根 武人",
+        "text": "「長州人同士が血を流してまで得る勝利は、本当の勝利とは言えん。」"
+      },
+      {
+        "id": "trial-6-p-16",
+        "kind": "narration",
+        "text": "部屋の隅で、山縣 狂介がつぶやく。"
+      },
+      {
+        "id": "trial-6-p-17",
+        "kind": "dialogue",
+        "speaker": "山縣 狂介",
+        "text": "「俺には、どちらも長州を思う気持ちは同じに見える。」"
+      },
+      {
+        "id": "trial-6-p-18",
+        "kind": "dialogue",
+        "speaker": "山縣 狂介",
+        "text": "「だからこそ、まだ決断する時ではない。」"
+      },
+      {
+        "id": "trial-6-p-19",
+        "kind": "dialogue",
+        "speaker": "山縣 狂介",
+        "text": "「情勢を見極めれば、流れは変わるかもしれん。」"
+      },
+      {
+        "id": "trial-6-p-20",
+        "kind": "dialogue",
+        "speaker": "山縣 狂介",
+        "text": "「今動けば、仲間へ銃を向けることになる。」"
+      },
+      {
+        "id": "trial-6-p-21",
+        "kind": "narration",
+        "text": "村瀬は三人を見つめる。"
+      },
+      {
+        "id": "trial-6-p-22",
+        "kind": "narration",
+        "text": "高杉は、今こそ立ち上がるべきだと言う。"
+      },
+      {
+        "id": "trial-6-p-23",
+        "kind": "narration",
+        "text": "赤根は、長州人同士の争いを避けるべきだと言う。"
+      },
+      {
+        "id": "trial-6-p-24",
+        "kind": "narration",
+        "text": "山縣は、今は情勢を見極めるべきだと考えている。"
+      },
+      {
+        "id": "trial-6-p-25",
+        "kind": "narration",
+        "text": "誰もが、長州を守りたいという思いは同じだった。"
+      },
+      {
+        "id": "trial-6-p-26",
+        "kind": "narration",
+        "text": "高杉が村瀬を見る。"
+      },
+      {
+        "id": "trial-6-p-27",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「村瀬！」"
+      },
+      {
+        "id": "trial-6-p-28",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「何か言いたそうな顔しちょるな。」"
+      },
+      {
+        "id": "trial-6-p-29",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「お前は、どう思う。」"
+      },
+      {
+        "id": "trial-6-p-30",
+        "kind": "narration",
+        "text": "部屋中の視線が村瀬へ集まる。"
+      },
+      {
+        "id": "trial-6-p-31",
+        "kind": "narration",
+        "text": "村瀬も部屋を見渡した。"
+      },
+      {
+        "id": "trial-6-p-32",
+        "kind": "narration",
+        "text": "（私は……。）"
+      },
+      {
+        "id": "trial-6-p-33",
+        "kind": "narration",
+        "text": "村瀬はゆっくり立ち上がった。"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "今こそ立つべきだ。長州を救うには、今しかない。\n（高杉 晋作の考え）",
+        "value": "高杉 晋作の考え"
+      },
+      {
+        "label": "②",
+        "text": "藩内で争うべきではない。同じ長州人同士が血を流してはならない。\n（赤根 武人の考え）",
+        "value": "赤根 武人の考え"
+      },
+      {
+        "label": "③",
+        "text": "まだ決断する時ではない。情勢を見極めるべきだ。\n（山縣 狂介の考え）",
+        "value": "山縣 狂介の考え"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "第七章 薩長密約",
+    "subtitle": "政敵と手を取り合う",
+    "passages": [
+      {
+        "id": "trial-7-p-1",
+        "kind": "narration",
+        "text": "慶応元年（1865年）。"
+      },
+      {
+        "id": "trial-7-p-2",
+        "kind": "narration",
+        "text": "功山寺挙兵によって長州藩は再び一つとなった。"
+      },
+      {
+        "id": "trial-7-p-3",
+        "kind": "narration",
+        "text": "しかし幕府は第二次長州征討の準備を進めていた。"
+      },
+      {
+        "id": "trial-7-p-4",
+        "kind": "narration",
+        "text": "長州に足りないもの。"
+      },
+      {
+        "id": "trial-7-p-5",
+        "kind": "narration",
+        "text": "それは、戦い抜くための力だった。"
+      },
+      {
+        "id": "trial-7-p-6",
+        "kind": "scene",
+        "text": "【下関・白石正一郎邸】"
+      },
+      {
+        "id": "trial-7-p-7",
+        "kind": "narration",
+        "text": "桂 小五郎は、薩摩との会談に望みを託していた。"
+      },
+      {
+        "id": "trial-7-p-8",
+        "kind": "narration",
+        "text": "しかし、待ち続けても西郷 吉之助は現れない。"
+      },
+      {
+        "id": "trial-7-p-9",
+        "kind": "narration",
+        "text": "重苦しい空気の中、桂は立ち上がる。"
+      },
+      {
+        "id": "trial-7-p-10",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「……帰ろう。」"
+      },
+      {
+        "id": "trial-7-p-11",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「今日はここまでです。」"
+      },
+      {
+        "id": "trial-7-p-12",
+        "kind": "narration",
+        "text": "その時、坂本 龍馬と中岡 慎太郎が駆け込んでくる。"
+      },
+      {
+        "id": "trial-7-p-13",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「待っちょくれ！」"
+      },
+      {
+        "id": "trial-7-p-14",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「まだ終わっちゃおらん！」"
+      },
+      {
+        "id": "trial-7-p-15",
+        "kind": "narration",
+        "text": "村田 蔵六が静かに口を開く。"
+      },
+      {
+        "id": "trial-7-p-16",
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「桂さん。」"
+      },
+      {
+        "id": "trial-7-p-17",
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「本当に長州だけで勝てるとお考えですか。」"
+      },
+      {
+        "id": "trial-7-p-18",
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「戦は感情では勝てません。」"
+      },
+      {
+        "id": "trial-7-p-19",
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「日本を守るためなら、昨日まで敵だった相手とも手を結ぶべきです。」"
+      },
+      {
+        "id": "trial-7-p-20",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「あなたのおっしゃることは正しい。」"
+      },
+      {
+        "id": "trial-7-p-21",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「ですが、国は理屈だけでは動かん。」"
+      },
+      {
+        "id": "trial-7-p-22",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「藩をまとめ、人心を守ることも私の務めです。」"
+      },
+      {
+        "id": "trial-7-p-23",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「まずは長州が一つであることが大切です。」"
+      },
+      {
+        "id": "trial-7-p-24",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「二人とも、見ちゅう先が違うだけじゃ。」"
+      },
+      {
+        "id": "trial-7-p-25",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「いきなり同盟を結ぼうとするき揉めるがじゃ。」"
+      },
+      {
+        "id": "trial-7-p-26",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「まずは商いでもえい。」"
+      },
+      {
+        "id": "trial-7-p-27",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「小さな約束を守れば、人は信用する。」"
+      },
+      {
+        "id": "trial-7-p-28",
+        "kind": "dialogue",
+        "speaker": "坂本 龍馬",
+        "text": "「その積み重ねが、やがて本当の同盟になるがじゃ。」"
+      },
+      {
+        "id": "trial-7-p-29",
+        "kind": "narration",
+        "text": "村瀬は三人を見つめる。"
+      },
+      {
+        "id": "trial-7-p-30",
+        "kind": "narration",
+        "text": "桂は、組織の結束を守ろうとしている。"
+      },
+      {
+        "id": "trial-7-p-31",
+        "kind": "narration",
+        "text": "龍馬は、人と人との信頼を育てようとしている。"
+      },
+      {
+        "id": "trial-7-p-32",
+        "kind": "narration",
+        "text": "村田は、日本を救うため最善の方法を考えている。"
+      },
+      {
+        "id": "trial-7-p-33",
+        "kind": "narration",
+        "text": "三人とも、日本を救おうとしていた。"
+      },
+      {
+        "id": "trial-7-p-34",
+        "kind": "narration",
+        "text": "だから。"
+      },
+      {
+        "id": "trial-7-p-35",
+        "kind": "narration",
+        "text": "誰も間違っていない。"
+      },
+      {
+        "id": "trial-7-p-36",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「村瀬君。」"
+      },
+      {
+        "id": "trial-7-p-37",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「……君なら。」"
+      },
+      {
+        "id": "trial-7-p-38",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「君の考えも聞かせてほしい。」"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "敵であっても、日本のためなら手を結ぶべきだ。\n（村田 蔵六の考え）",
+        "value": "村田 蔵六の考え"
+      },
+      {
+        "label": "②",
+        "text": "まずは小さな信頼を積み重ねるべきだ。\n（坂本 龍馬の考え）",
+        "value": "坂本 龍馬の考え"
+      },
+      {
+        "label": "③",
+        "text": "自国の結束を固めてから協力を考えるべきだ。\n（桂 小五郎の考え）",
+        "value": "桂 小五郎の考え"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "第八章 第二次長州征討",
+    "subtitle": "誰の下で戦うか",
+    "passages": [
+      {
+        "id": "trial-8-p-1",
+        "kind": "narration",
+        "text": "慶応二年（1866年）。"
+      },
+      {
+        "id": "trial-8-p-2",
+        "kind": "narration",
+        "text": "禁門の変、第一次長州征討、功山寺挙兵。"
+      },
+      {
+        "id": "trial-8-p-3",
+        "kind": "narration",
+        "text": "多くの犠牲と屈辱を越え、長州は再び立ち上がった。"
+      },
+      {
+        "id": "trial-8-p-4",
+        "kind": "narration",
+        "text": "そして今、幕府との最後の決戦が始まろうとしていた。"
+      },
+      {
+        "id": "trial-8-p-5",
+        "kind": "scene",
+        "text": "【出陣前夜　軍議】"
+      },
+      {
+        "id": "trial-8-p-6",
+        "kind": "narration",
+        "text": "村瀬は軍議へ呼ばれた。"
+      },
+      {
+        "id": "trial-8-p-7",
+        "kind": "narration",
+        "text": "部屋には、桂 小五郎、高杉 晋作、村田 蔵六の三人がいる。"
+      },
+      {
+        "id": "trial-8-p-8",
+        "kind": "narration",
+        "text": "桂が地図を広げる。"
+      },
+      {
+        "id": "trial-8-p-9",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「敵は、こちらの何倍もの兵力です。」"
+      },
+      {
+        "id": "trial-8-p-10",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「じゃが、数で勝てぬ戦ほど、戦う場所と退く判断が大事になります。」"
+      },
+      {
+        "id": "trial-8-p-11",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「指揮官は、勝つ責任だけではない。」"
+      },
+      {
+        "id": "trial-8-p-12",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「皆を生きて帰す責任も負うてます。」"
+      },
+      {
+        "id": "trial-8-p-13",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「敵は強い。」"
+      },
+      {
+        "id": "trial-8-p-14",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「数も向こうが上じゃ。」"
+      },
+      {
+        "id": "trial-8-p-15",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「じゃが、最後に戦うんは人じゃ。」"
+      },
+      {
+        "id": "trial-8-p-16",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「兵は、指揮官の背中を見て動く。」"
+      },
+      {
+        "id": "trial-8-p-17",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「わしが先頭へ出れば、皆も前へ出る。」"
+      },
+      {
+        "id": "trial-8-p-18",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「士気は、数の差をひっくり返す。」"
+      },
+      {
+        "id": "trial-8-p-19",
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「士気は大切です。」"
+      },
+      {
+        "id": "trial-8-p-20",
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「しかし、士気だけでは勝てません。」"
+      },
+      {
+        "id": "trial-8-p-21",
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「兵糧、補給、情報、配置。」"
+      },
+      {
+        "id": "trial-8-p-22",
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「勝つための仕組みが整って初めて、兵は安心して戦えます。」"
+      },
+      {
+        "id": "trial-8-p-23",
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「理屈で勝てる戦なら、理屈で勝つべきです。」"
+      },
+      {
+        "id": "trial-8-p-24",
+        "kind": "narration",
+        "text": "桂は二人の意見を聞き、静かにうなずく。"
+      },
+      {
+        "id": "trial-8-p-25",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「二人とも、間違うちょらん。」"
+      },
+      {
+        "id": "trial-8-p-26",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「戦には、勇気も、準備もいる。」"
+      },
+      {
+        "id": "trial-8-p-27",
+        "kind": "narration",
+        "text": "軍議が終わり、村瀬も部屋を出ようとする。"
+      },
+      {
+        "id": "trial-8-p-28",
+        "kind": "narration",
+        "text": "桂が呼び止める。"
+      },
+      {
+        "id": "trial-8-p-29",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「村瀬君。」"
+      },
+      {
+        "id": "trial-8-p-30",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「待ちなさい。」"
+      },
+      {
+        "id": "trial-8-p-31",
+        "kind": "narration",
+        "text": "村瀬は振り返る。"
+      },
+      {
+        "id": "trial-8-p-32",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「誰の下で戦いたいか。」"
+      },
+      {
+        "id": "trial-8-p-33",
+        "kind": "narration",
+        "text": "村田。"
+      },
+      {
+        "id": "trial-8-p-34",
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「命を預ける相手は、自分で選ぶべきです。」"
+      },
+      {
+        "id": "trial-8-p-35",
+        "kind": "narration",
+        "text": "桂。"
+      },
+      {
+        "id": "trial-8-p-36",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「その決断が、お前自身の戦い方になる。」"
+      },
+      {
+        "id": "trial-8-p-37",
+        "kind": "narration",
+        "text": "高杉は村瀬の肩を軽く叩く。"
+      },
+      {
+        "id": "trial-8-p-38",
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「どこへ来ても、長州のために戦うんは同じじゃ。」"
+      },
+      {
+        "id": "trial-8-p-39",
+        "kind": "narration",
+        "text": "村瀬は三人へ深く頭を下げた。"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "桂 小五郎隊\n慎重な判断で仲間を守り、勝てる戦を積み重ねる。\n（桂 小五郎の考え）",
+        "value": "桂 小五郎の考え"
+      },
+      {
+        "label": "②",
+        "text": "高杉 晋作隊\n自ら先頭に立ち、勇気で仲間の士気を高め、不利な戦況を覆す。\n（高杉 晋作の考え）",
+        "value": "高杉 晋作の考え"
+      },
+      {
+        "label": "③",
+        "text": "村田 蔵六隊\n合理的な準備と仕組みを整え、確実な勝利を目指す。\n（村田 蔵六の考え）",
+        "value": "村田 蔵六の考え"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "第九章 小御所会議",
+    "subtitle": "決断とは何か",
+    "passages": [
+      {
+        "id": "trial-9-p-1",
+        "kind": "narration",
+        "text": "慶応三年十二月九日（1867年）。"
+      },
+      {
+        "id": "trial-9-p-2",
+        "kind": "narration",
+        "text": "王政復古の大号令が発せられた。"
+      },
+      {
+        "id": "trial-9-p-3",
+        "kind": "narration",
+        "text": "しかし、新しい国の形はまだ決まっていなかった。"
+      },
+      {
+        "id": "trial-9-p-4",
+        "kind": "narration",
+        "text": "徳川慶喜を新政府へ迎えるのか。"
+      },
+      {
+        "id": "trial-9-p-5",
+        "kind": "narration",
+        "text": "それとも、新たな政を始めるのか。"
+      },
+      {
+        "id": "trial-9-p-6",
+        "kind": "narration",
+        "text": "その答えを求め、小御所に諸侯と公家が集まっていた。"
+      },
+      {
+        "id": "trial-9-p-7",
+        "kind": "scene",
+        "text": "【小御所会議】"
+      },
+      {
+        "id": "trial-9-p-8",
+        "kind": "narration",
+        "text": "岩倉 具視が静かに口を開く。"
+      },
+      {
+        "id": "trial-9-p-9",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「それでは、新しい国づくりについて、ご意見をお願いいたします。」"
+      },
+      {
+        "id": "trial-9-p-10",
+        "kind": "narration",
+        "text": "山内 容堂が立ち上がる。"
+      },
+      {
+        "id": "trial-9-p-11",
+        "kind": "dialogue",
+        "speaker": "山内 容堂",
+        "text": "「徳川家は二百六十年、この国を治めてきた。」"
+      },
+      {
+        "id": "trial-9-p-12",
+        "kind": "dialogue",
+        "speaker": "山内 容堂",
+        "text": "「その功績を認めず、新しい国を決めるのは道理に合わん。」"
+      },
+      {
+        "id": "trial-9-p-13",
+        "kind": "dialogue",
+        "speaker": "山内 容堂",
+        "text": "「まずは慶喜公をここへ呼び、本人の前で議論すべきじゃ。」"
+      },
+      {
+        "id": "trial-9-p-14",
+        "kind": "narration",
+        "text": "松平 春嶽が続く。"
+      },
+      {
+        "id": "trial-9-p-15",
+        "kind": "dialogue",
+        "speaker": "松平 春嶽",
+        "text": "「私は、徳川中心である必要はないと思います。」"
+      },
+      {
+        "id": "trial-9-p-16",
+        "kind": "dialogue",
+        "speaker": "松平 春嶽",
+        "text": "「しかし、日本の未来を決める以上、一方の話だけで結論を出してはなりません。」"
+      },
+      {
+        "id": "trial-9-p-17",
+        "kind": "dialogue",
+        "speaker": "松平 春嶽",
+        "text": "「徳川の考えも聞いた上で、日本にとって最善の道を選ぶべきです。」"
+      },
+      {
+        "id": "trial-9-p-18",
+        "kind": "narration",
+        "text": "議論は続く。"
+      },
+      {
+        "id": "trial-9-p-19",
+        "kind": "narration",
+        "text": "誰もが国の未来を思っていた。"
+      },
+      {
+        "id": "trial-9-p-20",
+        "kind": "narration",
+        "text": "だからこそ、結論は出なかった。"
+      },
+      {
+        "id": "trial-9-p-21",
+        "kind": "narration",
+        "text": "岩倉は静かに立ち上がる。"
+      },
+      {
+        "id": "trial-9-p-22",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「ひとまず休憩といたしましょう。」"
+      },
+      {
+        "id": "trial-9-p-23",
+        "kind": "scene",
+        "text": "【廊下】"
+      },
+      {
+        "id": "trial-9-p-24",
+        "kind": "narration",
+        "text": "岩倉が庭を眺めている。"
+      },
+      {
+        "id": "trial-9-p-25",
+        "kind": "narration",
+        "text": "そこへ西郷 吉之助が歩いてくる。"
+      },
+      {
+        "id": "trial-9-p-26",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「岩倉さま、まだ決まりもはんか。」"
+      },
+      {
+        "id": "trial-9-p-27",
+        "kind": "narration",
+        "text": "岩倉は苦笑する。"
+      },
+      {
+        "id": "trial-9-p-28",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「皆、正しいことを申す。」"
+      },
+      {
+        "id": "trial-9-p-29",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「だから決められん。」"
+      },
+      {
+        "id": "trial-9-p-30",
+        "kind": "narration",
+        "text": "西郷は腰の短刀へそっと手を添える。"
+      },
+      {
+        "id": "trial-9-p-31",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「あいくち（短刀）が一本あればよか。」"
+      },
+      {
+        "id": "trial-9-p-32",
+        "kind": "narration",
+        "text": "村瀬は驚く。"
+      },
+      {
+        "id": "trial-9-p-33",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「人を斬るためではなか。」"
+      },
+      {
+        "id": "trial-9-p-34",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「責任を負う覚悟です。」"
+      },
+      {
+        "id": "trial-9-p-35",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「議論は尽くした。」"
+      },
+      {
+        "id": "trial-9-p-36",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「最後は誰かが決めんと、国は前へ進まん。」"
+      },
+      {
+        "id": "trial-9-p-37",
+        "kind": "narration",
+        "text": "岩倉は静かにうなずく。"
+      },
+      {
+        "id": "trial-9-p-38",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「……そうですな。」"
+      },
+      {
+        "id": "trial-9-p-39",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「会議を再開いたしましょう。」"
+      },
+      {
+        "id": "trial-9-p-40",
+        "kind": "narration",
+        "text": "村瀬は岩倉の後ろを歩く。"
+      },
+      {
+        "id": "trial-9-p-41",
+        "kind": "narration",
+        "text": "胸には、一つの問いが残っていた。"
+      },
+      {
+        "id": "trial-9-p-42",
+        "kind": "narration",
+        "text": "――自分なら、何を最も大切にするか。"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "長年築き上げた信頼や恩義を大切にする。\n（山内 容堂の考え）",
+        "value": "山内 容堂の考え"
+      },
+      {
+        "label": "②",
+        "text": "公平な手続きと納得できる意思決定を大切にする。\n（松平 春嶽の考え）",
+        "value": "松平 春嶽の考え"
+      },
+      {
+        "label": "③",
+        "text": "最後は責任を背負い、自ら決断する。\n（西郷 吉之助の考え）",
+        "value": "西郷 吉之助の考え"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "第十章 鳥羽・伏見前夜",
+    "subtitle": "将軍、最後の決断",
+    "passages": [
+      {
+        "id": "trial-10-p-1",
+        "kind": "narration",
+        "text": "慶応四年（1868年）。"
+      },
+      {
+        "id": "trial-10-p-2",
+        "kind": "narration",
+        "text": "京都、鳥羽・伏見。"
+      },
+      {
+        "id": "trial-10-p-3",
+        "kind": "narration",
+        "text": "新政府軍と旧幕府軍は、ついに武器を手に向かい合った。"
+      },
+      {
+        "id": "trial-10-p-4",
+        "kind": "narration",
+        "text": "大坂城では、徳川十五代将軍・徳川 慶喜が大きな決断を迫られていた。"
+      },
+      {
+        "id": "trial-10-p-5",
+        "kind": "scene",
+        "text": "【大坂城】"
+      },
+      {
+        "id": "trial-10-p-6",
+        "kind": "narration",
+        "text": "重臣たちが並ぶ中、勝 海舟が口を開く。"
+      },
+      {
+        "id": "trial-10-p-7",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「上様。」"
+      },
+      {
+        "id": "trial-10-p-8",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「こいつぁ、徳川だけの戦じゃありません。」"
+      },
+      {
+        "id": "trial-10-p-9",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「戦えば勝てるかもしれません。」"
+      },
+      {
+        "id": "trial-10-p-10",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「ですが、戦が長引けば、日本の力は失われていきます。」"
+      },
+      {
+        "id": "trial-10-p-11",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「上様には、この大坂城にお残りいただきたい。」"
+      },
+      {
+        "id": "trial-10-p-12",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「幕府軍をまとめ、薩長と交渉するのです。」"
+      },
+      {
+        "id": "trial-10-p-13",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「最後に守るべきものは、日本でしょう。」"
+      },
+      {
+        "id": "trial-10-p-14",
+        "kind": "narration",
+        "text": "板倉 勝静が静かに続ける。"
+      },
+      {
+        "id": "trial-10-p-15",
+        "kind": "dialogue",
+        "speaker": "板倉 勝静",
+        "text": "「勝殿のお考えにも道理がございます。」"
+      },
+      {
+        "id": "trial-10-p-16",
+        "kind": "dialogue",
+        "speaker": "板倉 勝静",
+        "text": "「しかし、上様には徳川家を残す責任がございます。」"
+      },
+      {
+        "id": "trial-10-p-17",
+        "kind": "dialogue",
+        "speaker": "板倉 勝静",
+        "text": "「徳川家とともに生きてきた家臣や、その家族もおります。」"
+      },
+      {
+        "id": "trial-10-p-18",
+        "kind": "dialogue",
+        "speaker": "板倉 勝静",
+        "text": "「上様がお生きであれば、徳川家は残ります。」"
+      },
+      {
+        "id": "trial-10-p-19",
+        "kind": "dialogue",
+        "speaker": "板倉 勝静",
+        "text": "「家が残れば、人々を守る道も残ります。」"
+      },
+      {
+        "id": "trial-10-p-20",
+        "kind": "dialogue",
+        "speaker": "板倉 勝静",
+        "text": "「どうか江戸へお戻りください。」"
+      },
+      {
+        "id": "trial-10-p-21",
+        "kind": "narration",
+        "text": "松平 容保が立ち上がる。"
+      },
+      {
+        "id": "trial-10-p-22",
+        "kind": "dialogue",
+        "speaker": "松平 容保",
+        "text": "「私は、戦うべきであると考えます。」"
+      },
+      {
+        "id": "trial-10-p-23",
+        "kind": "dialogue",
+        "speaker": "松平 容保",
+        "text": "「兵の数も、海軍の力も、我らが劣っているわけではございません。」"
+      },
+      {
+        "id": "trial-10-p-24",
+        "kind": "dialogue",
+        "speaker": "松平 容保",
+        "text": "「会津も、桑名も、幕臣たちも、戦う覚悟を固めております。」"
+      },
+      {
+        "id": "trial-10-p-25",
+        "kind": "dialogue",
+        "speaker": "松平 容保",
+        "text": "「今ここで退けば、軍の統制を失うおそれがあります。」"
+      },
+      {
+        "id": "trial-10-p-26",
+        "kind": "dialogue",
+        "speaker": "松平 容保",
+        "text": "「上様と徳川家を守るためにも。」"
+      },
+      {
+        "id": "trial-10-p-27",
+        "kind": "dialogue",
+        "speaker": "松平 容保",
+        "text": "「勝機がある今こそ、戦うべきです。」"
+      },
+      {
+        "id": "trial-10-p-28",
+        "kind": "narration",
+        "text": "三人は互いに譲らない。"
+      },
+      {
+        "id": "trial-10-p-29",
+        "kind": "narration",
+        "text": "勝は、日本全体を守ろうとしている。"
+      },
+      {
+        "id": "trial-10-p-30",
+        "kind": "narration",
+        "text": "板倉は、徳川家と人々の生活を守ろうとしている。"
+      },
+      {
+        "id": "trial-10-p-31",
+        "kind": "narration",
+        "text": "容保は、軍の統制と勝機を守ろうとしている。"
+      },
+      {
+        "id": "trial-10-p-32",
+        "kind": "narration",
+        "text": "誰も、自らの利益のために語っているわけではなかった。"
+      },
+      {
+        "id": "trial-10-p-33",
+        "kind": "narration",
+        "text": "守ろうとしているものが、それぞれ違うだけだった。"
+      },
+      {
+        "id": "trial-10-p-34",
+        "kind": "narration",
+        "text": "慶喜は静かに立ち上がる。"
+      },
+      {
+        "id": "trial-10-p-35",
+        "kind": "dialogue",
+        "speaker": "徳川 慶喜",
+        "text": "「皆の考え、よく分かった。」"
+      },
+      {
+        "id": "trial-10-p-36",
+        "kind": "dialogue",
+        "speaker": "徳川 慶喜",
+        "text": "「どの策にも道理がある。」"
+      },
+      {
+        "id": "trial-10-p-37",
+        "kind": "dialogue",
+        "speaker": "徳川 慶喜",
+        "text": "「だからこそ。」"
+      },
+      {
+        "id": "trial-10-p-38",
+        "kind": "dialogue",
+        "speaker": "徳川 慶喜",
+        "text": "「決めねばならぬ。」"
+      },
+      {
+        "id": "trial-10-p-39",
+        "kind": "narration",
+        "text": "静寂が流れる。"
+      },
+      {
+        "id": "trial-10-p-40",
+        "kind": "narration",
+        "text": "慶喜は、何を最も守るべきだと考えるか。"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "日本全体を守ることを優先する。\n（勝 海舟の考え）",
+        "value": "勝 海舟の考え"
+      },
+      {
+        "label": "②",
+        "text": "徳川家と人々の生活を守ることを優先する。\n（板倉 勝静の考え）",
+        "value": "板倉 勝静の考え"
+      },
+      {
+        "label": "③",
+        "text": "勝機を生かし、組織の統制を守ることを優先する。\n（松平 容保の考え）",
+        "value": "松平 容保の考え"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "第十一章 江戸城無血開城",
+    "subtitle": "勝つことと、終わらせること",
+    "passages": [
+      {
+        "id": "trial-11-p-1",
+        "kind": "narration",
+        "text": "慶応四年三月（1868年）。"
+      },
+      {
+        "id": "trial-11-p-2",
+        "kind": "narration",
+        "text": "鳥羽・伏見の戦いは新政府軍の勝利に終わった。"
+      },
+      {
+        "id": "trial-11-p-3",
+        "kind": "narration",
+        "text": "徳川慶喜は江戸へ退き、新政府軍は江戸城へ迫る。"
+      },
+      {
+        "id": "trial-11-p-4",
+        "kind": "narration",
+        "text": "しかし、その先には百万人を超える人々が暮らす町があった。"
+      },
+      {
+        "id": "trial-11-p-5",
+        "kind": "narration",
+        "text": "ここで戦になれば、多くの民が巻き込まれる。"
+      },
+      {
+        "id": "trial-11-p-6",
+        "kind": "scene",
+        "text": "【軍議】"
+      },
+      {
+        "id": "trial-11-p-7",
+        "kind": "narration",
+        "text": "村瀬は重要な軍議へ呼ばれた。"
+      },
+      {
+        "id": "trial-11-p-8",
+        "kind": "narration",
+        "text": "そこには、西郷 吉之助、大村 益次郎、そして勝 海舟がいた。"
+      },
+      {
+        "id": "trial-11-p-9",
+        "kind": "narration",
+        "text": "勝が窓の外を見ながら話し始める。"
+      },
+      {
+        "id": "trial-11-p-10",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「あの町には、侍だけじゃねえ。」"
+      },
+      {
+        "id": "trial-11-p-11",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「商人も、職人も、子どもも暮らしている。」"
+      },
+      {
+        "id": "trial-11-p-12",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「おれが守りてえのは、徳川だけじゃねえ。」"
+      },
+      {
+        "id": "trial-11-p-13",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「日本だ。」"
+      },
+      {
+        "id": "trial-11-p-14",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「戦って勝つことはできるかもしれねえ。」"
+      },
+      {
+        "id": "trial-11-p-15",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「だがな。」"
+      },
+      {
+        "id": "trial-11-p-16",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「始まった戦を終わらせる方が、よっぽど難しいんだよ。」"
+      },
+      {
+        "id": "trial-11-p-17",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「だから、もう少しだけ待っちゃくれねえか。」"
+      },
+      {
+        "id": "trial-11-p-18",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「勝先生のお気持ちは、よう分かりもす。」"
+      },
+      {
+        "id": "trial-11-p-19",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「じゃっどん。」"
+      },
+      {
+        "id": "trial-11-p-20",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「新政府は、まだ生まれたばかいじゃ。」"
+      },
+      {
+        "id": "trial-11-p-21",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「火種ば残せば、また戦が始まりもす。」"
+      },
+      {
+        "id": "trial-11-p-22",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「禍根だけは残したくなか。」"
+      },
+      {
+        "id": "trial-11-p-23",
+        "kind": "dialogue",
+        "speaker": "西郷 吉之助",
+        "text": "「そのためには、断たねばならん火種もありもす。」"
+      },
+      {
+        "id": "trial-11-p-24",
+        "kind": "dialogue",
+        "speaker": "大村 益次郎",
+        "text": "「江戸城で戦う必要はありません。」"
+      },
+      {
+        "id": "trial-11-p-25",
+        "kind": "dialogue",
+        "speaker": "大村 益次郎",
+        "text": "「ですが、武器を持つ集団を放置すれば、人々は安心して暮らせません。」"
+      },
+      {
+        "id": "trial-11-p-26",
+        "kind": "dialogue",
+        "speaker": "大村 益次郎",
+        "text": "「私は戦が好きではありません。」"
+      },
+      {
+        "id": "trial-11-p-27",
+        "kind": "dialogue",
+        "speaker": "大村 益次郎",
+        "text": "「だからこそ。」"
+      },
+      {
+        "id": "trial-11-p-28",
+        "kind": "dialogue",
+        "speaker": "大村 益次郎",
+        "text": "「二度と戦が起きぬよう、必要な秩序は守らねばなりません。」"
+      },
+      {
+        "id": "trial-11-p-29",
+        "kind": "narration",
+        "text": "部屋は静まり返る。"
+      },
+      {
+        "id": "trial-11-p-30",
+        "kind": "narration",
+        "text": "勝は、日本全体を守ろうとしている。"
+      },
+      {
+        "id": "trial-11-p-31",
+        "kind": "narration",
+        "text": "西郷は、新しい日本の未来を守ろうとしている。"
+      },
+      {
+        "id": "trial-11-p-32",
+        "kind": "narration",
+        "text": "大村は、人々が安心して暮らせる秩序を守ろうとしている。"
+      },
+      {
+        "id": "trial-11-p-33",
+        "kind": "narration",
+        "text": "誰も、自分の利だけを語ってはいなかった。"
+      },
+      {
+        "id": "trial-11-p-34",
+        "kind": "narration",
+        "text": "守ろうとしているものが違うだけだった。"
+      },
+      {
+        "id": "trial-11-p-35",
+        "kind": "scene",
+        "text": "【休憩】"
+      },
+      {
+        "id": "trial-11-p-36",
+        "kind": "narration",
+        "text": "村瀬は廊下へ出る。"
+      },
+      {
+        "id": "trial-11-p-37",
+        "kind": "narration",
+        "text": "荷を運ぶ商人。"
+      },
+      {
+        "id": "trial-11-p-38",
+        "kind": "narration",
+        "text": "笑う子ども。"
+      },
+      {
+        "id": "trial-11-p-39",
+        "kind": "narration",
+        "text": "夕餉の支度をする母親。"
+      },
+      {
+        "id": "trial-11-p-40",
+        "kind": "narration",
+        "text": "村瀬は静かにつぶやく。"
+      },
+      {
+        "id": "trial-11-p-41",
+        "kind": "dialogue",
+        "speaker": "村瀬",
+        "text": "「皆、日本を思っている。」"
+      },
+      {
+        "id": "trial-11-p-42",
+        "kind": "dialogue",
+        "speaker": "村瀬",
+        "text": "「だから。」"
+      },
+      {
+        "id": "trial-11-p-43",
+        "kind": "dialogue",
+        "speaker": "村瀬",
+        "text": "「答えは一つじゃない。」"
+      },
+      {
+        "id": "trial-11-p-44",
+        "kind": "scene",
+        "text": "【決断】"
+      },
+      {
+        "id": "trial-11-p-45",
+        "kind": "narration",
+        "text": "勝が静かに笑う。"
+      },
+      {
+        "id": "trial-11-p-46",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「村瀬。」"
+      },
+      {
+        "id": "trial-11-p-47",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「若いんだから。」"
+      },
+      {
+        "id": "trial-11-p-48",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「よく見て、よく考えろ。」"
+      },
+      {
+        "id": "trial-11-p-49",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「さて。」"
+      },
+      {
+        "id": "trial-11-p-50",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「お前なら。」"
+      },
+      {
+        "id": "trial-11-p-51",
+        "kind": "dialogue",
+        "speaker": "勝 海舟",
+        "text": "「この戦を、どう終わらせる。」"
+      },
+      {
+        "id": "trial-11-p-52",
+        "kind": "narration",
+        "text": "村瀬は、何を最も大切にするか。"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "禍根を残さない。未来の日本のため、争いの芽を断つ。\n（西郷 吉之助の考え）",
+        "value": "西郷 吉之助の考え"
+      },
+      {
+        "label": "②",
+        "text": "国を疲弊させない。人を信じ、できる限り戦わずに収める。\n（勝 海舟の考え）",
+        "value": "勝 海舟の考え"
+      },
+      {
+        "label": "③",
+        "text": "秩序を守る。戦は避ける。しかし、人々の安心を守るため、必要な秩序は維持する。\n（大村 益次郎の考え）",
+        "value": "大村 益次郎の考え"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "第十二章 大阪砲兵工廠",
+    "subtitle": "国家を守る備え",
+    "passages": [
+      {
+        "id": "trial-12-p-1",
+        "kind": "narration",
+        "text": "明治二年（1869年）。"
+      },
+      {
+        "id": "trial-12-p-2",
+        "kind": "narration",
+        "text": "戊辰戦争は終結し、新しい政府が誕生した。"
+      },
+      {
+        "id": "trial-12-p-3",
+        "kind": "narration",
+        "text": "しかし、各藩はなお兵と財を持ち、日本はまだ一つではなかった。"
+      },
+      {
+        "id": "trial-12-p-4",
+        "kind": "narration",
+        "text": "村瀬は、大村 益次郎に大阪へ呼び出される。"
+      },
+      {
+        "id": "trial-12-p-5",
+        "kind": "narration",
+        "text": "そこには木戸 孝允、山縣 有朋もいた。"
+      },
+      {
+        "id": "trial-12-p-6",
+        "kind": "scene",
+        "text": "【大阪】"
+      },
+      {
+        "id": "trial-12-p-7",
+        "kind": "narration",
+        "text": "大村が一枚の地図を広げる。"
+      },
+      {
+        "id": "trial-12-p-8",
+        "kind": "dialogue",
+        "speaker": "大村 益次郎",
+        "text": "「ここへ政府直轄の武器庫を造ります。」"
+      },
+      {
+        "id": "trial-12-p-9",
+        "kind": "narration",
+        "text": "村瀬が尋ねる。"
+      },
+      {
+        "id": "trial-12-p-10",
+        "kind": "dialogue",
+        "speaker": "村瀬",
+        "text": "「先生。」"
+      },
+      {
+        "id": "trial-12-p-11",
+        "kind": "dialogue",
+        "speaker": "村瀬",
+        "text": "「なぜ大阪なのですか。」"
+      },
+      {
+        "id": "trial-12-p-12",
+        "kind": "dialogue",
+        "speaker": "大村 益次郎",
+        "text": "「大阪なら、日本の東西どちらへも兵を動かせます。」"
+      },
+      {
+        "id": "trial-12-p-13",
+        "kind": "dialogue",
+        "speaker": "大村 益次郎",
+        "text": "「もちろん……薩摩へも。」"
+      },
+      {
+        "id": "trial-12-p-14",
+        "kind": "narration",
+        "text": "村瀬は驚く。"
+      },
+      {
+        "id": "trial-12-p-15",
+        "kind": "narration",
+        "text": "大村は静かに続ける。"
+      },
+      {
+        "id": "trial-12-p-16",
+        "kind": "dialogue",
+        "speaker": "大村 益次郎",
+        "text": "「備えとは、相手を疑うことではありません。」"
+      },
+      {
+        "id": "trial-12-p-17",
+        "kind": "dialogue",
+        "speaker": "大村 益次郎",
+        "text": "「誰が相手でも、国家が揺らがないようにすることです。」"
+      },
+      {
+        "id": "trial-12-p-18",
+        "kind": "narration",
+        "text": "木戸 孝允が口を開く。"
+      },
+      {
+        "id": "trial-12-p-19",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「先生のお考えは理解できます。」"
+      },
+      {
+        "id": "trial-12-p-20",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「ですが、長州は薩摩と手を取り合ったからこそ今日があります。」"
+      },
+      {
+        "id": "trial-12-p-21",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「私は、その信頼を失いたくありません。」"
+      },
+      {
+        "id": "trial-12-p-22",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「信頼があってこそ、新しい国は一つになれるのです。」"
+      },
+      {
+        "id": "trial-12-p-23",
+        "kind": "narration",
+        "text": "山縣 有朋が前へ出る。"
+      },
+      {
+        "id": "trial-12-p-24",
+        "kind": "dialogue",
+        "speaker": "山縣 有朋",
+        "text": "「私は、もう一歩先まで進めるべきだと思います。」"
+      },
+      {
+        "id": "trial-12-p-25",
+        "kind": "dialogue",
+        "speaker": "山縣 有朋",
+        "text": "「国家は、公平でなければなりません。」"
+      },
+      {
+        "id": "trial-12-p-26",
+        "kind": "dialogue",
+        "speaker": "山縣 有朋",
+        "text": "「力を持つ藩ほど、大きな責任を負う。」"
+      },
+      {
+        "id": "trial-12-p-27",
+        "kind": "dialogue",
+        "speaker": "山縣 有朋",
+        "text": "「そうして力を国家へ集める仕組みを作ることが、争いを防ぐ一番の備えです。」"
+      },
+      {
+        "id": "trial-12-p-28",
+        "kind": "narration",
+        "text": "静かな時間が流れる。"
+      },
+      {
+        "id": "trial-12-p-29",
+        "kind": "narration",
+        "text": "大村は、国家を守る備えを語った。"
+      },
+      {
+        "id": "trial-12-p-30",
+        "kind": "narration",
+        "text": "木戸は、人と人との信頼を語った。"
+      },
+      {
+        "id": "trial-12-p-31",
+        "kind": "narration",
+        "text": "山縣は、公平な制度を語った。"
+      },
+      {
+        "id": "trial-12-p-32",
+        "kind": "narration",
+        "text": "目指す国は同じだった。"
+      },
+      {
+        "id": "trial-12-p-33",
+        "kind": "narration",
+        "text": "違うのは、その国を守る方法だけだった。"
+      },
+      {
+        "id": "trial-12-p-34",
+        "kind": "narration",
+        "text": "木戸は村瀬へ向き直る。"
+      },
+      {
+        "id": "trial-12-p-35",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「村瀬君。」"
+      },
+      {
+        "id": "trial-12-p-36",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「新しい国を築くなら。」"
+      },
+      {
+        "id": "trial-12-p-37",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「君は、何を一番大切にする。」"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "平和は、平時の備えから生まれる。\n（大村 益次郎の考え）",
+        "value": "大村 益次郎の考え"
+      },
+      {
+        "label": "②",
+        "text": "信頼を失えば、どんな仕組みも長続きしない。\n（木戸 孝允の考え）",
+        "value": "木戸 孝允の考え"
+      },
+      {
+        "label": "③",
+        "text": "力ある者が国家を支える仕組みを作る。\n（山縣 有朋の考え）",
+        "value": "山縣 有朋の考え"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "第十三章 廃藩置県",
+    "subtitle": "藩を越える国",
+    "passages": [
+      {
+        "id": "trial-13-p-1",
+        "kind": "narration",
+        "text": "明治四年（1871年）。"
+      },
+      {
+        "id": "trial-13-p-2",
+        "kind": "narration",
+        "text": "戊辰戦争が終わり、新しい政府が誕生した。"
+      },
+      {
+        "id": "trial-13-p-3",
+        "kind": "narration",
+        "text": "しかし、税も兵も役人も、なお藩が握っていた。"
+      },
+      {
+        "id": "trial-13-p-4",
+        "kind": "narration",
+        "text": "日本はまだ、本当の意味で一つの国ではなかった。"
+      },
+      {
+        "id": "trial-13-p-5",
+        "kind": "scene",
+        "text": "【政府の一室】"
+      },
+      {
+        "id": "trial-13-p-6",
+        "kind": "narration",
+        "text": "机の上には、日本地図が広げられている。"
+      },
+      {
+        "id": "trial-13-p-7",
+        "kind": "narration",
+        "text": "部屋には、木戸 孝允、大久保 利通、江藤 新平がいた。"
+      },
+      {
+        "id": "trial-13-p-8",
+        "kind": "narration",
+        "text": "大久保が静かに口を開く。"
+      },
+      {
+        "id": "trial-13-p-9",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「今の政府は、藩に頼らなければ動けません。」"
+      },
+      {
+        "id": "trial-13-p-10",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「税も、兵も、役人も、藩が握っています。」"
+      },
+      {
+        "id": "trial-13-p-11",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「だから藩をなくす。」"
+      },
+      {
+        "id": "trial-13-p-12",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「国が直接、税を集め、兵を持ち、役人を任命する。」"
+      },
+      {
+        "id": "trial-13-p-13",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「変えるなら、一気に進めるべきです。」"
+      },
+      {
+        "id": "trial-13-p-14",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「迷えば、日本は変わりません。」"
+      },
+      {
+        "id": "trial-13-p-15",
+        "kind": "narration",
+        "text": "木戸が続く。"
+      },
+      {
+        "id": "trial-13-p-16",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「私も、藩をなくすことには賛成です。」"
+      },
+      {
+        "id": "trial-13-p-17",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「ですが、急ぎすぎれば、人は変化についていけません。」"
+      },
+      {
+        "id": "trial-13-p-18",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「改革は、人が理解し、受け入れてこそ長く続きます。」"
+      },
+      {
+        "id": "trial-13-p-19",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「日本を一つにするからこそ、人々の納得を大切にすべきです。」"
+      },
+      {
+        "id": "trial-13-p-20",
+        "kind": "narration",
+        "text": "江藤 新平が地図を見ながら口を開く。"
+      },
+      {
+        "id": "trial-13-p-21",
+        "kind": "dialogue",
+        "speaker": "江藤 新平",
+        "text": "「お二人のお考えは分かります。」"
+      },
+      {
+        "id": "trial-13-p-22",
+        "kind": "dialogue",
+        "speaker": "江藤 新平",
+        "text": "「ですが、藩をなくした翌日から、国は動かねばなりません。」"
+      },
+      {
+        "id": "trial-13-p-23",
+        "kind": "dialogue",
+        "speaker": "江藤 新平",
+        "text": "「税は誰が集めるのか。」"
+      },
+      {
+        "id": "trial-13-p-24",
+        "kind": "dialogue",
+        "speaker": "江藤 新平",
+        "text": "「裁判、戸籍、土地は誰が管理するのか。」"
+      },
+      {
+        "id": "trial-13-p-25",
+        "kind": "dialogue",
+        "speaker": "江藤 新平",
+        "text": "「改革とは、決断するだけではありません。」"
+      },
+      {
+        "id": "trial-13-p-26",
+        "kind": "dialogue",
+        "speaker": "江藤 新平",
+        "text": "「法律や制度、役所を整えてこそ成功するのです。」"
+      },
+      {
+        "id": "trial-13-p-27",
+        "kind": "narration",
+        "text": "静かな時間が流れる。"
+      },
+      {
+        "id": "trial-13-p-28",
+        "kind": "narration",
+        "text": "大久保は、改革を進める決断力を重んじている。"
+      },
+      {
+        "id": "trial-13-p-29",
+        "kind": "narration",
+        "text": "木戸は、人々の理解と納得を大切にしている。"
+      },
+      {
+        "id": "trial-13-p-30",
+        "kind": "narration",
+        "text": "江藤は、改革を支える制度を整えようとしている。"
+      },
+      {
+        "id": "trial-13-p-31",
+        "kind": "narration",
+        "text": "三人とも、日本を一つの国にしようとしていた。"
+      },
+      {
+        "id": "trial-13-p-32",
+        "kind": "narration",
+        "text": "違うのは、何を最も大切にするかだけだった。"
+      },
+      {
+        "id": "trial-13-p-33",
+        "kind": "narration",
+        "text": "木戸が村瀬へ向き直る。"
+      },
+      {
+        "id": "trial-13-p-34",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「村瀬君。」"
+      },
+      {
+        "id": "trial-13-p-35",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「君の話には、いつも何か気づかされる。」"
+      },
+      {
+        "id": "trial-13-p-36",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「君なら。」"
+      },
+      {
+        "id": "trial-13-p-37",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「新しい国をつくるために、何を大切に考える。」"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "改革は、一気に進める。\n（大久保 利通の考え）",
+        "value": "大久保 利通の考え"
+      },
+      {
+        "label": "②",
+        "text": "改革は、人の理解を得ながら進める。\n（木戸 孝允の考え）",
+        "value": "木戸 孝允の考え"
+      },
+      {
+        "label": "③",
+        "text": "改革は、制度を整えてこそ成功する。\n（江藤 新平の考え）",
+        "value": "江藤 新平の考え"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "第十四章 征韓論",
+    "subtitle": "外へ向かう覚悟",
+    "passages": [
+      {
+        "id": "trial-14-p-1",
+        "kind": "narration",
+        "text": "明治六年（1873年）。"
+      },
+      {
+        "id": "trial-14-p-2",
+        "kind": "narration",
+        "text": "廃藩置県から二年。"
+      },
+      {
+        "id": "trial-14-p-3",
+        "kind": "narration",
+        "text": "日本は一つの国家として歩み始めていた。"
+      },
+      {
+        "id": "trial-14-p-4",
+        "kind": "narration",
+        "text": "しかし、朝鮮との関係をめぐり、新政府は大きな決断を迫られていた。"
+      },
+      {
+        "id": "trial-14-p-5",
+        "kind": "scene",
+        "text": "【政府の一室】"
+      },
+      {
+        "id": "trial-14-p-6",
+        "kind": "narration",
+        "text": "村瀬が部屋へ入ると、西郷 隆盛、大久保 利通、木戸 孝允が向かい合っていた。"
+      },
+      {
+        "id": "trial-14-p-7",
+        "kind": "narration",
+        "text": "三条 実美と岩倉 具視も、その様子を見守っている。"
+      },
+      {
+        "id": "trial-14-p-8",
+        "kind": "narration",
+        "text": "西郷が静かに口を開く。"
+      },
+      {
+        "id": "trial-14-p-9",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「政府は、おいを朝鮮へ送ると決めた。」"
+      },
+      {
+        "id": "trial-14-p-10",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「ならば、その約束は守るべきです。」"
+      },
+      {
+        "id": "trial-14-p-11",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「おいは戦をしに行くのではなか。」"
+      },
+      {
+        "id": "trial-14-p-12",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「誠を尽くして話をしてきもす。」"
+      },
+      {
+        "id": "trial-14-p-13",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「誰かが向き合わねばならん役目なら、おいが引き受けもす。」"
+      },
+      {
+        "id": "trial-14-p-14",
+        "kind": "narration",
+        "text": "大久保が応じる。"
+      },
+      {
+        "id": "trial-14-p-15",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「西郷さん。」"
+      },
+      {
+        "id": "trial-14-p-16",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「状況が変われば、決定も見直さねばならん。」"
+      },
+      {
+        "id": "trial-14-p-17",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「外国を見て分かった。」"
+      },
+      {
+        "id": "trial-14-p-18",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「今の日本は、まだ外へ力を向けられる国ではない。」"
+      },
+      {
+        "id": "trial-14-p-19",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「今、優先すべきは国内の改革です。」"
+      },
+      {
+        "id": "trial-14-p-20",
+        "kind": "dialogue",
+        "speaker": "大久保 利通",
+        "text": "「国家の責任者は、やりたいことではなく、今最も必要なことを選ばねばならん。」"
+      },
+      {
+        "id": "trial-14-p-21",
+        "kind": "narration",
+        "text": "木戸が静かに口を開く。"
+      },
+      {
+        "id": "trial-14-p-22",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「私は、お二人とは違うところを問題にしています。」"
+      },
+      {
+        "id": "trial-14-p-23",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「政府は一度、西郷さんを送ると決めました。」"
+      },
+      {
+        "id": "trial-14-p-24",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「それを変えるなら、その根拠と手続を明らかにしなければなりません。」"
+      },
+      {
+        "id": "trial-14-p-25",
+        "kind": "dialogue",
+        "speaker": "木戸 孝允",
+        "text": "「決め方が揺らげば、政府そのものが揺らぎます。」"
+      },
+      {
+        "id": "trial-14-p-26",
+        "kind": "narration",
+        "text": "三条は深く息をつく。"
+      },
+      {
+        "id": "trial-14-p-27",
+        "kind": "dialogue",
+        "speaker": "三条 実美",
+        "text": "「西郷の覚悟も分かる。」"
+      },
+      {
+        "id": "trial-14-p-28",
+        "kind": "dialogue",
+        "speaker": "三条 実美",
+        "text": "「大久保の言う国の事情も分かる。」"
+      },
+      {
+        "id": "trial-14-p-29",
+        "kind": "dialogue",
+        "speaker": "三条 実美",
+        "text": "「木戸の言う政府の道理も分かる。」"
+      },
+      {
+        "id": "trial-14-p-30",
+        "kind": "dialogue",
+        "speaker": "三条 実美",
+        "text": "「皆、国を思っておる。」"
+      },
+      {
+        "id": "trial-14-p-31",
+        "kind": "dialogue",
+        "speaker": "三条 実美",
+        "text": "「それなのに、一つの答えにならぬのだ……。」"
+      },
+      {
+        "id": "trial-14-p-32",
+        "kind": "narration",
+        "text": "岩倉が静かに口を開く。"
+      },
+      {
+        "id": "trial-14-p-33",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「同志とは、同じ考えを持つ者ではない。」"
+      },
+      {
+        "id": "trial-14-p-34",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「違う考えであっても、同じ国を思える者じゃ。」"
+      },
+      {
+        "id": "trial-14-p-35",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「だが。」"
+      },
+      {
+        "id": "trial-14-p-36",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「決断する者は、すべての意見を理解したうえで、最後には一つを選ばねばならぬ。」"
+      },
+      {
+        "id": "trial-14-p-37",
+        "kind": "narration",
+        "text": "岩倉は村瀬を見る。"
+      },
+      {
+        "id": "trial-14-p-38",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「村瀬。」"
+      },
+      {
+        "id": "trial-14-p-39",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「そなたの考えは、一度聞いてみる価値がある。」"
+      },
+      {
+        "id": "trial-14-p-40",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「そなたなら、何を最も大切にする。」"
+      },
+      {
+        "id": "trial-14-p-41",
+        "kind": "dialogue",
+        "speaker": "岩倉 具視",
+        "text": "「そなたの意見も聞かせてくれないか。」"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "国の信義を守り、自ら責任を引き受ける。\n（西郷 隆盛の考え）",
+        "value": "西郷 隆盛の考え"
+      },
+      {
+        "label": "②",
+        "text": "状況に応じて決定を見直し、国内改革を優先する。\n（大久保 利通の考え）",
+        "value": "大久保 利通の考え"
+      },
+      {
+        "label": "③",
+        "text": "決定を変えるなら、その根拠と手続を明確にする。\n（木戸 孝允の考え）",
+        "value": "木戸 孝允の考え"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "第十五章 武士の終焉",
+    "subtitle": "志を受け継ぐ者",
+    "passages": [
+      {
+        "id": "trial-15-p-1",
+        "kind": "narration",
+        "text": "明治十年（1877年）。"
+      },
+      {
+        "id": "trial-15-p-2",
+        "kind": "narration",
+        "text": "廃刀令、徴兵令、そして廃藩置県。"
+      },
+      {
+        "id": "trial-15-p-3",
+        "kind": "narration",
+        "text": "武士の時代は、大きな転換点を迎えていた。"
+      },
+      {
+        "id": "trial-15-p-4",
+        "kind": "narration",
+        "text": "政府を辞した村瀬は、恩人・西郷隆盛を訪ねて薩摩へ向かう。"
+      },
+      {
+        "id": "trial-15-p-5",
+        "kind": "narration",
+        "text": "しかし、その頃、鹿児島では政府と薩摩の対立が深まり、若者たちが武器庫を襲撃する事件が起こっていた。"
+      },
+      {
+        "id": "trial-15-p-6",
+        "kind": "scene",
+        "text": "【西郷邸】"
+      },
+      {
+        "id": "trial-15-p-7",
+        "kind": "narration",
+        "text": "知らせを受け、桐野 利秋、村田 新八、大山 綱良が集まる。"
+      },
+      {
+        "id": "trial-15-p-8",
+        "kind": "narration",
+        "text": "桐野が声を上げる。"
+      },
+      {
+        "id": "trial-15-p-9",
+        "kind": "dialogue",
+        "speaker": "桐野 利秋",
+        "text": "「若い者は、戦がしたいわけではありもはん。」"
+      },
+      {
+        "id": "trial-15-p-10",
+        "kind": "dialogue",
+        "speaker": "桐野 利秋",
+        "text": "「先生を信じて、ここまでついて来た者たちでごわす。」"
+      },
+      {
+        "id": "trial-15-p-11",
+        "kind": "dialogue",
+        "speaker": "桐野 利秋",
+        "text": "「先生が背を向ければ、若い者は行き場を失います。」"
+      },
+      {
+        "id": "trial-15-p-12",
+        "kind": "dialogue",
+        "speaker": "桐野 利秋",
+        "text": "「先生を信じた者たちを、見捨てたくありもはん。」"
+      },
+      {
+        "id": "trial-15-p-13",
+        "kind": "narration",
+        "text": "村田が静かに応じる。"
+      },
+      {
+        "id": "trial-15-p-14",
+        "kind": "dialogue",
+        "speaker": "村田 新八",
+        "text": "「気持ちは分かります。」"
+      },
+      {
+        "id": "trial-15-p-15",
+        "kind": "dialogue",
+        "speaker": "村田 新八",
+        "text": "「ですが、このまま戦えば先生まで逆賊になります。」"
+      },
+      {
+        "id": "trial-15-p-16",
+        "kind": "dialogue",
+        "speaker": "村田 新八",
+        "text": "「武器庫を襲った者は政府へ差し出し、事情を説明する。」"
+      },
+      {
+        "id": "trial-15-p-17",
+        "kind": "dialogue",
+        "speaker": "村田 新八",
+        "text": "「先生だけは守らねばなりません。」"
+      },
+      {
+        "id": "trial-15-p-18",
+        "kind": "narration",
+        "text": "大山が首を振る。"
+      },
+      {
+        "id": "trial-15-p-19",
+        "kind": "dialogue",
+        "speaker": "大山 綱良",
+        "text": "「それも違う。」"
+      },
+      {
+        "id": "trial-15-p-20",
+        "kind": "dialogue",
+        "speaker": "大山 綱良",
+        "text": "「今動けば、政府の思うつぼじゃ。」"
+      },
+      {
+        "id": "trial-15-p-21",
+        "kind": "dialogue",
+        "speaker": "大山 綱良",
+        "text": "「薩摩は、じっと耐えるべきじゃ。」"
+      },
+      {
+        "id": "trial-15-p-22",
+        "kind": "dialogue",
+        "speaker": "大山 綱良",
+        "text": "「今は薩摩全体を守ることを考えねばならん。」"
+      },
+      {
+        "id": "trial-15-p-23",
+        "kind": "narration",
+        "text": "部屋は静まり返る。"
+      },
+      {
+        "id": "trial-15-p-24",
+        "kind": "narration",
+        "text": "桐野は、仲間への責任を語った。"
+      },
+      {
+        "id": "trial-15-p-25",
+        "kind": "narration",
+        "text": "村田は、法と規律を語った。"
+      },
+      {
+        "id": "trial-15-p-26",
+        "kind": "narration",
+        "text": "大山は、薩摩全体を守ることを語った。"
+      },
+      {
+        "id": "trial-15-p-27",
+        "kind": "narration",
+        "text": "誰も、自分のために語っているわけではなかった。"
+      },
+      {
+        "id": "trial-15-p-28",
+        "kind": "narration",
+        "text": "守ろうとしているものが違うだけだった。"
+      },
+      {
+        "id": "trial-15-p-29",
+        "kind": "scene",
+        "text": "【夜　西郷邸】"
+      },
+      {
+        "id": "trial-15-p-30",
+        "kind": "narration",
+        "text": "夜風が庭を吹き抜ける。"
+      },
+      {
+        "id": "trial-15-p-31",
+        "kind": "narration",
+        "text": "西郷は縁側で静かに庭を眺めていた。"
+      },
+      {
+        "id": "trial-15-p-32",
+        "kind": "narration",
+        "text": "村瀬が隣へ腰を下ろす。"
+      },
+      {
+        "id": "trial-15-p-33",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「桐野どんにも理がある。」"
+      },
+      {
+        "id": "trial-15-p-34",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「村田どんにも理がある。」"
+      },
+      {
+        "id": "trial-15-p-35",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「大山どんにも理がある。」"
+      },
+      {
+        "id": "trial-15-p-36",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「皆。」"
+      },
+      {
+        "id": "trial-15-p-37",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「薩摩を思うちょる。」"
+      },
+      {
+        "id": "trial-15-p-38",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「じゃっどん。」"
+      },
+      {
+        "id": "trial-15-p-39",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「最後に決めるんは、おいじゃ。」"
+      },
+      {
+        "id": "trial-15-p-40",
+        "kind": "narration",
+        "text": "西郷は村瀬を見つめる。"
+      },
+      {
+        "id": "trial-15-p-41",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「村瀬どん。」"
+      },
+      {
+        "id": "trial-15-p-42",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「おはんなら。」"
+      },
+      {
+        "id": "trial-15-p-43",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「どうする。」"
+      },
+      {
+        "id": "trial-15-p-44",
+        "kind": "dialogue",
+        "speaker": "西郷 隆盛",
+        "text": "「おはんの考えを、聞かせてもらえんか。」"
+      }
+    ],
+    "choices": [
+      {
+        "label": "①",
+        "text": "仲間への責任を果たす。\n（桐野 利秋の考え）",
+        "value": "桐野 利秋の考え"
+      },
+      {
+        "label": "②",
+        "text": "法と規律を守る責任を果たす。\n（村田 新八の考え）",
+        "value": "村田 新八の考え"
+      },
+      {
+        "label": "③",
+        "text": "今は耐え、薩摩を守る。\n（大山 綱良の考え）",
+        "value": "大山 綱良の考え"
+      }
+    ]
+  }
+];
 
-const trialPassages: Record<number, Passage[]> = {
-  1: [
-    n(1, 1, "嘉永六年（一八五三年）、黒船が浦賀に現れた。"),
-    n(1, 2, "長州藩士・村瀬 新之助は、列強の力を前にして、ただ議論を重ねるだけの藩や幕府に苛立っていた。国を守るには、誰かが行動しなければならない。そう考えていた村瀬に、久坂玄瑞が声をかける。"),
-    d(1, 3, "久坂 玄瑞", "少し付き合わんか。"),
-    n(1, 4, "連れて行かれた先は、松下村塾だった。そこには、黒船に乗り込もうとして捕らえられた男、吉田松陰がいた。"),
-    n(1, 5, "村瀬は警戒していた。無謀な理想を語るだけの人物なら、長州を誤らせるかもしれない。しかし松陰の言葉は、村瀬の予想とは違っていた。"),
-    d(1, 6, "吉田 松陰", "敵を知り、自らを知ることが先じゃ。"),
-    n(1, 7, "松陰は、ただ外国を打ち払えとは言わなかった。西洋の学問、制度、技術を学び、日本を強くする必要があると説いた。"),
-    n(1, 8, "一方で、久坂玄瑞は違う。国が危機にあるなら、武士は行動すべきだと考えていた。覚悟を示さなければ、時代は動かない。"),
-    n(1, 9, "高杉晋作は、さらに別の見方をしていた。焦って動けば国を滅ぼす。しかし、備えを怠れば好機を逃す。今は情勢を見極め、来るべき日に備えるべきだと考えていた。"),
-    n(1, 10, "三人の考えは、どれも国を思うものだった。だが、進む道は同じではない。すぐに行動するのか。まず学び、力を蓄えるのか。時を待ち、決断の日に備えるのか。"),
-    n(1, 11, "松陰が、村瀬を見る。"),
-    d(1, 12, "吉田 松陰", "さて……。"),
-    d(1, 13, "吉田 松陰", "村瀬君だったかな。"),
-    d(1, 14, "吉田 松陰", "君の考えを聞かせてください。"),
-  ],
-  2: [
-    n(2, 1, "松陰が処罰されるという報せは、長州の若者たちに重くのしかかった。松下村塾で学んだ者たちは、師の言葉を胸に抱きながらも、現実の力の前で立ち尽くしていた。"),
-    n(2, 2, "村瀬は、怒りだけで動くことの危うさを知っていた。だが、何もしなければ松陰の思想も、長州の誇りも、時代の濁流に飲み込まれてしまう。"),
-    n(2, 3, "高杉晋作は、感情に任せて動くべきではないと考えていた。いま必要なのは、松陰の死を無駄にしないための力を蓄えることだった。"),
-    n(2, 4, "久坂玄瑞は、黙って耐えるだけでは志は継げないと考えていた。誰かが覚悟を示さなければ、世の中は変わらない。"),
-    n(2, 5, "桂小五郎は、藩を潰しては元も子もないと見ていた。思想を守るには、生き残り、機を待つ冷静さも必要だった。"),
-    n(2, 6, "怒り、覚悟、そして組織を守る理性。松陰の教えをどう継ぐのか、答えは一つではなかった。"),
-    n(2, 7, "久坂が静かに村瀬を見る。"),
-    d(2, 8, "久坂 玄瑞", "村瀬。"),
-    d(2, 9, "久坂 玄瑞", "お前は、どう思う。"),
-    d(2, 10, "久坂 玄瑞", "お前の意見を聞かせてくれ。"),
-    d(2, 11, "吉田 松陰", "諸君、狂いたまえ。"),
-    n(2, 12, "村瀬は静かに立ち上がった。"),
-  ],
-  3: [
-    n(3, 1, "京の空気は張りつめていた。尊王攘夷の声は高まり、幕府への不信も広がっている。村瀬は長州の志を背負い、薩摩や土佐、幕臣たちの考えに触れることになる。"),
-    n(3, 2, "西郷吉之助は、人の心を動かすには信頼が必要だと見ていた。怒りだけでは大きな流れは作れない。"),
-    n(3, 3, "坂本龍馬は、藩の枠だけで考えていては国を守れないと考えていた。敵味方を超えた新しい道を探すべきだという。"),
-    n(3, 4, "勝海舟は、世界の広さを知っていた。外国を知らずに攘夷を叫んでも、戦えば負ける。まず現実を見なければならない。"),
-    n(3, 5, "村瀬の胸には、長州の誇りと、日本全体を見なければならないという思いがぶつかっていた。"),
-    n(3, 6, "勝は村瀬を見据える。"),
-    d(3, 7, "勝 海舟", "長州の若ぇ衆。"),
-    d(3, 8, "勝 海舟", "人の話ぁ聞いて。"),
-    d(3, 9, "勝 海舟", "おめぇは何を思った。"),
-    d(3, 10, "勝 海舟", "聞かせてみな。"),
-  ],
-  4: [
-    n(4, 1, "禁門の変。長州は京で大きな賭けに出ようとしていた。御所をめぐる緊張は限界に達し、若い志士たちの熱は止めがたいものになっていた。"),
-    n(4, 2, "来島又兵衛は、退くことを恥と見ていた。ここで覚悟を示さなければ、長州の名は地に落ちる。"),
-    n(4, 3, "久坂玄瑞は、志を曲げたくない一方で、無謀な戦いが多くの命を奪うことも分かっていた。"),
-    n(4, 4, "桂小五郎は、ここで潰れては未来がないと見ていた。誇りを守るためにも、生きて再起する道がある。"),
-    n(4, 5, "村瀬は炎と怒号の気配の中で考えた。いま必要なのは、武士の意地か、志を未来へ残す判断か。"),
-    n(4, 6, "久坂が村瀬を見る。"),
-    d(4, 7, "久坂 玄瑞", "お前はどう思う。"),
-    d(4, 8, "久坂 玄瑞", "お前なら考えを持っているはずだ。"),
-    d(4, 9, "吉田 松陰", "自分で考えよ。"),
-    n(4, 10, "村瀬は一歩前へ出た。"),
-  ],
-  5: [
-    n(5, 1, "第一次長州征討。幕府の圧力を受け、長州藩は存亡の瀬戸際に立たされた。藩内では、恭順か抗戦かをめぐって意見が割れていた。"),
-    n(5, 2, "椋梨藤太は、藩を守るには一度頭を下げるしかないと考えていた。生き残らなければ、次の機会もない。"),
-    n(5, 3, "周布政之助は、藩の誇りと現実の間で苦しんでいた。無謀な抗戦は避けたいが、志を捨てれば長州ではなくなる。"),
-    n(5, 4, "高杉晋作は、屈服が長州の魂を失わせると見ていた。たとえ不利でも、立ち上がる者が必要だった。"),
-    n(5, 5, "村瀬は、守るべきものが何かを考えた。藩の形か、藩の志か。その二つは、いつも同じではない。"),
-    n(5, 6, "敬親は村瀬を見る。"),
-    d(5, 7, "毛利 敬親", "松下村塾（しょうかそんじゅく）の者。"),
-    d(5, 8, "毛利 敬親", "お前のことは聞いておる。"),
-    d(5, 9, "毛利 敬親", "お前はどう思う。"),
-    n(5, 10, "村瀬は一度目を閉じた。"),
-    d(5, 11, "村瀬", "恐れながら、申し上げます。"),
-  ],
-  6: [
-    n(6, 1, "雪の功山寺。長州は保守派に押さえられ、尊攘派は追い詰められていた。高杉晋作は、わずかな兵を率いて立ち上がろうとしている。"),
-    n(6, 2, "高杉は、ここで動かなければ長州は終わると見ていた。兵の数ではなく、時代を動かす火種が必要だった。"),
-    n(6, 3, "赤根武人は、組織を割ることの危うさを知っていた。内部で争えば、長州そのものが崩れるかもしれない。"),
-    n(6, 4, "山縣狂介は、戦うなら勝てる形を作るべきだと考えていた。勢いだけでは兵を死なせる。"),
-    n(6, 5, "村瀬の前には、すぐに立つ道、耐えて整える道、組織を守る道があった。どれも逃げではなく、どれも危険を含んでいた。"),
-    d(6, 6, "高杉 晋作", "村瀬！"),
-    d(6, 7, "高杉 晋作", "何か言いたそうな顔しちょるな。"),
-    d(6, 8, "高杉 晋作", "お前は、どう思う。"),
-    n(6, 9, "部屋中の視線が村瀬へ集まる。"),
-    n(6, 10, "村瀬も部屋を見渡した。"),
-    n(6, 11, "村瀬はゆっくり立ち上がった。"),
-  ],
-  7: [
-    n(7, 1, "薩長密約。かつて京で刃を向け合った薩摩と長州が、幕府に対抗するため手を結ぼうとしていた。だが、恨みは簡単には消えない。"),
-    n(7, 2, "村田蔵六は、感情よりも実効性を重く見ていた。勝つために必要なら、昨日の敵とも手を組むべきだ。"),
-    n(7, 3, "坂本龍馬は、互いの面子を立てながら橋渡しをしようとしていた。信頼は理屈だけでは生まれない。"),
-    n(7, 4, "桂小五郎は、長州の犠牲を背負っていた。簡単に薩摩を信じることはできないが、国の未来を考えれば避けて通れない。"),
-    n(7, 5, "村瀬は、過去の傷と未来の必要性の間で迷った。許すことと忘れることは違う。手を結ぶとは、何を引き受けることなのか。"),
-    n(7, 6, "桂が村瀬を見る。"),
-    d(7, 7, "桂 小五郎", "村瀬君。"),
-    d(7, 8, "桂 小五郎", "……君なら。"),
-    d(7, 9, "桂 小五郎", "君の考えも聞かせてほしい。"),
-  ],
-  8: [
-    n(8, 1, "第二次長州征討。長州は再び幕府軍と向き合うことになった。兵力差は大きい。だが、長州には新しい戦い方を試す者たちがいた。"),
-    n(8, 2, "桂小五郎は、全体の政治的な意味を見ていた。戦いは勝つだけでなく、長州の未来を守るものでなければならない。"),
-    n(8, 3, "高杉晋作は、奇兵隊の力と人の気概を信じていた。身分に関係なく戦う者が時代を変える。"),
-    n(8, 4, "村田蔵六は、感情よりも兵站と戦術を重んじた。勝つためには、冷静な計算と配置が必要だった。"),
-    n(8, 5, "村瀬は考える。誰のもとで戦うかは、どんな戦い方を選ぶかでもある。"),
-    d(8, 6, "高杉 晋作", "誰の下で戦いたいか。"),
-    d(8, 7, "村田 蔵六", "命を預ける相手は、自分で選ぶべきです。"),
-    d(8, 8, "桂 小五郎", "その決断が、お前自身の戦い方になる。"),
-    n(8, 9, "高杉は村瀬の肩を軽く叩く。"),
-    d(8, 10, "高杉 晋作", "どこへ来ても、長州のために戦うんは同じじゃ。"),
-    n(8, 11, "村瀬は三人へ深く頭を下げた。"),
-  ],
-  9: [
-    n(9, 1, "小御所会議。王政復古のあと、新しい政治の形をどうするかが問われていた。慶喜をどう扱うか、諸侯の意見は割れている。"),
-    n(9, 2, "山内容堂は、急ぎすぎる改革を危険視していた。手続きと納得を欠けば、新政府は最初から不安定になる。"),
-    n(9, 3, "松平春嶽は、徳川を完全に排除するのではなく、秩序ある移行を考えていた。混乱を抑えることが国を守る道だという。"),
-    n(9, 4, "西郷吉之助は、決めるべき時に決めなければ旧体制は動かないと考えていた。責任を負う覚悟が政治を前へ進める。"),
-    n(9, 5, "村瀬は、正しさだけでは国は動かず、力だけでも国はまとまらないことを感じていた。"),
-    n(9, 6, "村瀬は驚く。"),
-    d(9, 7, "西郷 吉之助", "人を斬るためではなか、責任を負う覚悟です。"),
-    d(9, 8, "西郷 吉之助", "議論は尽くした、最後は誰かが決めんと、国は前へ進まん。"),
-    d(9, 9, "岩倉 具視", "……そうですな、会議を再開いたしましょう。"),
-    n(9, 10, "村瀬も、その後ろを静かについていく。"),
-    n(9, 11, "村瀬の胸に、一つの問いが残っていた。"),
-  ],
-  10: [
-    n(10, 1, "鳥羽・伏見前夜。徳川慶喜の周囲では、薩長との戦いを避けられないとする声が高まっていた。だが、一度戦端が開けば、国全体を巻き込む。"),
-    n(10, 2, "勝海舟は、戦の先にある損害を見ていた。ここで引くことは弱さではなく、国を守るための判断になり得る。"),
-    n(10, 3, "板倉勝静は、幕府の面目と家臣たちの士気を考えていた。退けば徳川の権威は崩れるかもしれない。"),
-    n(10, 4, "松平容保は、忠義と責任の重さを背負っていた。主君と幕府のため、最後まで戦う覚悟もまた一つの道だった。"),
-    n(10, 5, "慶喜は、戦うことも退くことも、それぞれに犠牲を伴うと分かっていた。"),
-    d(10, 6, "徳川 慶喜", "皆の考え、よく分かった。"),
-    d(10, 7, "徳川 慶喜", "どの策にも道理がある。"),
-    d(10, 8, "徳川 慶喜", "だからこそ。"),
-    d(10, 9, "徳川 慶喜", "決めねばならぬ。"),
-  ],
-  11: [
-    n(11, 1, "江戸城無血開城。旧幕府軍と新政府軍が衝突すれば、江戸の町は火の海になる。勝海舟と西郷隆盛は、戦を避ける道を探っていた。"),
-    n(11, 2, "西郷吉之助は、旧幕府側が本当に責任を負う覚悟を示すなら、無用な流血は避けられると見ていた。"),
-    n(11, 3, "勝海舟は、江戸の民を守ることを最優先に考えていた。面子よりも、人の命を残すことが政治の責任だった。"),
-    n(11, 4, "大村益次郎は、戦を終わらせるにも条件と見通しが必要だと考えていた。曖昧な情に流されれば、次の混乱を生む。"),
-    n(11, 5, "村瀬は、勝つことと終わらせることの違いを考えた。戦わない決断にも、戦う以上の覚悟がいる。"),
-    d(11, 6, "勝 海舟", "若いんだから。"),
-    d(11, 7, "勝 海舟", "よく見て、よく考えろ。"),
-    d(11, 8, "勝 海舟", "さて。"),
-    d(11, 9, "勝 海舟", "お前なら。"),
-    d(11, 10, "勝 海舟", "この戦を、どう終わらせる。"),
-    n(11, 11, "村瀬は、何を最も大切にするか。"),
-  ],
-  12: [
-    n(12, 1, "大阪砲兵工廠。明治の新政府は、近代国家としての力を整えようとしていた。武士の気概だけでは、もはや国は守れない。"),
-    n(12, 2, "大村益次郎は、制度と技術によって軍を近代化する必要を説いた。情熱だけで戦えば、兵も国も失う。"),
-    n(12, 3, "木戸孝允は、軍備だけでなく人を育てることが国の基礎になると考えていた。新しい国には、新しい学びが必要だった。"),
-    n(12, 4, "山縣有朋は、将来の争いを防ぐためにも、全国を支える軍の仕組みが必要だと見ていた。"),
-    n(12, 5, "村瀬は、武士の時代から国家の時代へ移る重みを感じていた。力を持つとは、何を管理することなのか。"),
-    d(12, 6, "山縣 有朋", "その仕組みが、争いを防ぐ一番の備えだと思います。"),
-    n(12, 7, "木戸は村瀬へ向き直る。"),
-    d(12, 8, "木戸 孝允", "村瀬君。"),
-    d(12, 9, "木戸 孝允", "新しい国を築くなら。"),
-    d(12, 10, "木戸 孝允", "君は、何を一番大切にする。"),
-  ],
-  13: [
-    n(13, 1, "廃藩置県。明治政府は、藩をなくし、中央集権の国家を作ろうとしていた。だが、それは長く続いた秩序を一気に変える決断でもあった。"),
-    n(13, 2, "大久保利通は、改革を進めるには強い実行力が必要だと見ていた。ためらえば、古い力が再び国を縛る。"),
-    n(13, 3, "木戸孝允は、改革には人々の納得と将来の制度設計が欠かせないと考えていた。急ぎすぎれば、国民の心が離れる。"),
-    n(13, 4, "江藤新平は、法と仕組みを整えなければ、改革はただの命令で終わると考えていた。新しい秩序には公平さが必要だった。"),
-    n(13, 5, "村瀬は、古いものを壊す勇気と、新しいものを根づかせる責任の両方を感じていた。"),
-    d(13, 6, "江藤 新平", "それらを整えて初めて。"),
-    d(13, 7, "江藤 新平", "改革は成功します。"),
-    d(13, 8, "木戸 孝允", "村瀬君。"),
-    d(13, 9, "木戸 孝允", "君の話には、いつも何か気づかされる。"),
-    d(13, 10, "木戸 孝允", "君なら。"),
-    d(13, 11, "木戸 孝允", "新しい国をつくるために、何を大切に考える。"),
-  ],
-  14: [
-    n(14, 1, "征韓論。明治政府の中で、朝鮮への使節派遣と対外政策をめぐる議論が激しくなっていた。留守政府と岩倉使節団の対立も深まっている。"),
-    n(14, 2, "西郷隆盛は、武士たちの不満と国家の名誉を背負っていた。外へ向かうことで、新しい役割を示せると考えていた。"),
-    n(14, 3, "大久保利通は、いま国の内側を整えることが先だと考えていた。財政も制度も不安定なまま外へ出れば、国家そのものが危うい。"),
-    n(14, 4, "木戸孝允は、理想と現実の間で苦しんでいた。急進も停滞も、どちらも新政府を傷つける。"),
-    n(14, 5, "村瀬は、国の誇りと国の体力をどう測るべきか考えた。正しい目的でも、時を誤れば傷になる。"),
-    d(14, 6, "岩倉 具視", "決断する者は、すべての意見を理解したうえで、最後には一つを選ばねばならぬ。"),
-    n(14, 7, "岩倉は村瀬を見る。"),
-    d(14, 8, "岩倉 具視", "村瀬。"),
-    d(14, 9, "岩倉 具視", "そなたの考えは、一度聞いてみる価値がある。"),
-    d(14, 10, "岩倉 具視", "そなたなら、何を最も大切にする。"),
-    d(14, 11, "岩倉 具視", "そなたの意見も聞かせてくれないか。"),
-  ],
-  15: [
-    n(15, 1, "城山の夜明け。西南戦争は終わりに近づき、武士の時代もまた終わろうとしていた。かつて維新を動かした者たちが、新しい政府と向き合っている。"),
-    n(15, 2, "桐野利秋は、最後まで武士として戦う道を選んでいた。敗れるとしても、誇りを捨てることはできない。"),
-    n(15, 3, "村田新八は、西郷と共に歩む者として、義を貫く意味を考えていた。人は何のために生き、何のために終わるのか。"),
-    n(15, 4, "大山綱良は、現実の政治と情の間で揺れていた。新しい時代を認めながらも、切り捨てられる者たちの声を無視できない。"),
-    n(15, 5, "村瀬は、維新が生んだ光と影を見ていた。未来を作ることは、過去を置き去りにすることでもあるのか。"),
-    d(15, 6, "西郷 隆盛", "最後に決めるんは、おいじゃ。"),
-    n(15, 7, "西郷はゆっくりと村瀬を見つめる。"),
-    d(15, 8, "西郷 隆盛", "村瀬どん。"),
-    d(15, 9, "西郷 隆盛", "おはんなら。"),
-    d(15, 10, "西郷 隆盛", "どうする。"),
-    d(15, 11, "西郷 隆盛", "おはんの考えを、聞かせてもらえんか。"),
-  ],
-};
+export const trialChapters: Chapter[] = trialChapterSources.map((trialChapter, index) => {
+  const fullChapter = fullChapters[index];
 
-export const trialChapters: Chapter[] = chapters.map((chapter) => ({
-  ...chapter,
-  passages: trialPassages[chapter.id] ?? chapter.passages,
-  endingPassages: selectTrialEndingPassages(chapter.endingPassages),
-}));
+  if (!fullChapter) {
+    throw new Error(`対応する本編の章が見つかりません: ${trialChapter.id}`);
+  }
+
+  return {
+    ...fullChapter,
+    id: trialChapter.id,
+    title: trialChapter.title,
+    subtitle: trialChapter.subtitle,
+    sourceFile: "短縮版ストーリー.txt",
+    passages: trialChapter.passages,
+    endingPassages: [],
+    choices: fullChapter.choices.map((choice, choiceIndex) =>
+      mergeTrialChoice(choice, trialChapter.choices[choiceIndex]),
+    ),
+  };
+});
 
 export const trialEditReports: TrialEditReport[] = trialChapters.map((chapter, index) => {
-  const original = chapters[index];
+  const original = fullChapters[index];
   const originalCharacters = countCharacters([...original.passages, ...original.endingPassages]);
   const editedCharacters = countCharacters([...chapter.passages, ...chapter.endingPassages]);
 
@@ -240,25 +3484,26 @@ export const trialEditReports: TrialEditReport[] = trialChapters.map((chapter, i
     originalCharacters,
     editedCharacters,
     reductionRate: Math.round((1 - editedCharacters / originalCharacters) * 1000) / 10,
-    theme: trialChapterThemes[chapter.id] ?? "歴史上の決断を、自分の価値観で選び取ること。",
-    removedNarrationSummary:
-      "詳細な時代背景、場面転換の長い描写、重複する説明を整理し、判断材料が伝わるナレーションに統合しました。",
-    changedDialogueSummary:
-      "本文中の会話はケーススタディの流れに合わせて大幅に整理しました。各章最後の問いかけと選択肢は完全版の流れを維持しています。",
+    theme: "短縮版ストーリー.txt の内容を使用した体験版シナリオです。",
+    removedNarrationSummary: "本編とは別データとして管理しています。本編テキストは変更していません。",
+    changedDialogueSummary: "選択肢IDと診断スコアは本編の同じ章・同じ順番のものを再利用しています。",
   };
 });
 
-function n(chapterId: number, id: number, text: string): Passage {
-  return { id: "trial-" + chapterId + "-n-" + id, kind: "narration", text };
-}
+function mergeTrialChoice(
+  fullChoice: Choice,
+  trialChoice: TrialChapterSource["choices"][number] | undefined,
+): Choice {
+  if (!trialChoice) {
+    return fullChoice;
+  }
 
-function d(chapterId: number, id: number, speaker: string, text: string): Passage {
-  return { id: "trial-" + chapterId + "-d-" + id, kind: "dialogue", speaker, text };
-}
-
-function selectTrialEndingPassages(passages: Passage[]): Passage[] {
-  if (passages.length <= 3) return passages;
-  return passages.slice(-3);
+  return {
+    ...fullChoice,
+    label: trialChoice.label,
+    text: trialChoice.text,
+    value: trialChoice.value ?? fullChoice.value,
+  };
 }
 
 function countCharacters(passages: Passage[]): number {

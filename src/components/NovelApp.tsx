@@ -48,15 +48,25 @@ function getScreenFromStep(step: ReadingStep): Screen {
 export function NovelApp() {
   const [mounted, setMounted] = useState(false);
   const [screen, setScreen] = useState<Screen>("title");
-  const [appMode, setAppMode] = useState<AppMode>("trial");
+  const [appMode, setAppMode] = useState<AppMode>("full");
   const [progress, setProgress] = useState<ReadingProgress>(initialProgress);
   const [choiceTargetChapterId, setChoiceTargetChapterId] = useState<number | null>(null);
 
   useEffect(() => {
-    const stored = loadProgress(appMode);
-    setProgress(stored);
+    const storedMode = loadAppMode();
+    setAppMode(storedMode);
+    setProgress(loadProgress(storedMode));
     setMounted(true);
-  }, [appMode]);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) {
+      return;
+    }
+
+    saveAppMode(appMode);
+    setProgress(loadProgress(appMode));
+  }, [appMode, mounted]);
 
   useEffect(() => {
     const handlePageShow = (event: PageTransitionEvent) => {
@@ -275,10 +285,15 @@ export function NovelApp() {
         <button className="text-button muted" type="button" onClick={handleReset}>
           回答をリセットする
         </button>
-        <button className="text-button muted" type="button" disabled>
+        <button className="text-button" type="button" onClick={() => openIndex("trial")}>
           体験版の物語一覧
         </button>
-        <button className="text-button muted" type="button" disabled>
+        <button
+          className={canViewResultForMode("trial") ? "text-button result-ready" : "text-button muted"}
+          type="button"
+          onClick={() => openResult("trial")}
+          disabled={!canViewResultForMode("trial")}
+        >
           体験版の診断結果
         </button>
         <button className="text-button" type="button" onClick={() => openIndex("full")}>
@@ -341,6 +356,8 @@ export function NovelApp() {
 
 function TitleScreen({
   hasChapters,
+  onStartTrial,
+  onContinueTrial,
   onStartFull,
   onContinueFull,
 }: {
@@ -371,16 +388,16 @@ function TitleScreen({
         <div className="experience-grid" aria-label="遊び方を選ぶ">
           <article className="experience-card selected">
             <p className="experience-label">体験版</p>
-            <h2>準備中</h2>
+            <h2>歴史上の決断を10分間で体験できます。</h2>
             <p>
-              体験版は現在、内容を再構成しています。
+              各章の重要な場面をケーススタディとして体験し、歴史人物の価値観に触れながら、自分ならどう決断するかを考えます。
             </p>
-            <p>公開までしばらくお待ちください。</p>
+            <p>歴史に詳しくない方や、まず雰囲気を体験したい方におすすめです。</p>
             <div className="experience-actions">
-              <button className="primary-button" type="button" disabled>
+              <button className="primary-button" type="button" disabled={!hasChapters} onClick={onStartTrial}>
                 体験版を始める
               </button>
-              <button className="secondary-button" type="button" disabled>
+              <button className="secondary-button" type="button" disabled={!hasChapters} onClick={onContinueTrial}>
                 続きから始める
               </button>
             </div>
