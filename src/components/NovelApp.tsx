@@ -23,6 +23,25 @@ import type { Chapter, Choice, Passage, ReadingProgress, ReadingStep } from "@/t
 type Screen = "title" | "chapter" | "ending" | "index" | "result";
 type AppMode = ProgressMode;
 
+const APP_MODE_STORAGE_KEY = "bakumatsu-meiji-app-mode";
+
+function loadAppMode(): AppMode {
+  if (typeof window === "undefined") {
+    return "full";
+  }
+
+  const storedMode = window.localStorage.getItem(APP_MODE_STORAGE_KEY);
+  return storedMode === "trial" || storedMode === "full" ? storedMode : "full";
+}
+
+function saveAppMode(mode: AppMode) {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  window.localStorage.setItem(APP_MODE_STORAGE_KEY, mode);
+}
+
 function getDiagnosisImagePath(characterId: string): string {
   return `/images/diagnosis/types/${characterId}.webp`;
 }
