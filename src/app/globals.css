@@ -1408,8 +1408,8 @@ h3 {
       var(--title-image),
       linear-gradient(135deg, #080b10, #1a120e);
     background-repeat: no-repeat;
-    background-size: auto 84%;
-    background-position: 86% 14px;
+    background-size: auto 78%;
+    background-position: 100% 18px;
   }
 
   h1 {
