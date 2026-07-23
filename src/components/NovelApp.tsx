@@ -275,15 +275,10 @@ export function NovelApp() {
         <button className="text-button muted" type="button" onClick={handleReset}>
           回答をリセットする
         </button>
-        <button className="text-button" type="button" onClick={() => openIndex("trial")}>
+        <button className="text-button muted" type="button" disabled>
           体験版の物語一覧
         </button>
-        <button
-          className={canViewResultForMode("trial") ? "text-button result-ready" : "text-button muted"}
-          type="button"
-          onClick={() => openResult("trial")}
-          disabled={!canViewResultForMode("trial")}
-        >
+        <button className="text-button muted" type="button" disabled>
           体験版の診断結果
         </button>
         <button className="text-button" type="button" onClick={() => openIndex("full")}>
@@ -346,8 +341,6 @@ export function NovelApp() {
 
 function TitleScreen({
   hasChapters,
-  onStartTrial,
-  onContinueTrial,
   onStartFull,
   onContinueFull,
 }: {
@@ -378,16 +371,16 @@ function TitleScreen({
         <div className="experience-grid" aria-label="遊び方を選ぶ">
           <article className="experience-card selected">
             <p className="experience-label">体験版</p>
-            <h2>歴史上の決断を10分間で体験できます。</h2>
+            <h2>準備中</h2>
             <p>
-              各章の重要な場面をケーススタディとして体験し、歴史人物の価値観に触れながら、自分ならどう決断するかを考えます。
+              体験版は現在、内容を再構成しています。
             </p>
-            <p>歴史に詳しくない方や、まず雰囲気を体験したい方におすすめです。</p>
+            <p>公開までしばらくお待ちください。</p>
             <div className="experience-actions">
-              <button className="primary-button" type="button" disabled={!hasChapters} onClick={onStartTrial}>
+              <button className="primary-button" type="button" disabled>
                 体験版を始める
               </button>
-              <button className="secondary-button" type="button" disabled={!hasChapters} onClick={onContinueTrial}>
+              <button className="secondary-button" type="button" disabled>
                 続きから始める
               </button>
             </div>
