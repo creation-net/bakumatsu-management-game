@@ -413,6 +413,7 @@ function TitleScreen({
             <p>
               各章の重要な場面をケーススタディとして体験し、歴史人物の価値観に触れながら、自分ならどう決断するかを考えます。
             </p>
+            <p>選んだ回答をもとに、自分の経営資質を振り返ることができます。</p>
             <p>歴史に詳しくない方や、まず雰囲気を体験したい方におすすめです。</p>
             <div className="experience-actions">
               <button className="primary-button" type="button" disabled={!hasChapters} onClick={onStartTrial}>
