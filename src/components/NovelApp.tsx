@@ -153,6 +153,32 @@ export function NovelApp() {
     setScreen("title");
   }
 
+  function getProgressForMode(nextAppMode: AppMode) {
+    return nextAppMode === appMode ? progress : loadProgress(nextAppMode);
+  }
+
+  function canViewResultForMode(nextAppMode: AppMode) {
+    const modeProgress = getProgressForMode(nextAppMode);
+    const modeChapterCount = getChaptersForMode(nextAppMode).length;
+    return Object.keys(modeProgress.choices).length >= modeChapterCount && modeChapterCount > 0;
+  }
+
+  function openIndex(nextAppMode: AppMode) {
+    setAppMode(nextAppMode);
+    setProgress(getProgressForMode(nextAppMode));
+    setScreen("index");
+  }
+
+  function openResult(nextAppMode: AppMode) {
+    if (!canViewResultForMode(nextAppMode)) {
+      return;
+    }
+
+    setAppMode(nextAppMode);
+    setProgress(getProgressForMode(nextAppMode));
+    setScreen("result");
+  }
+
   function selectChoice(chapterId: number, choiceId: string) {
     const completed = new Set(progress.completedChapterIds);
     completed.add(chapterId);
@@ -246,16 +272,27 @@ export function NovelApp() {
         <button className="text-button" type="button" onClick={showTitle}>
           タイトルに戻る
         </button>
-        <button className="text-button" type="button" onClick={() => setScreen("index")}>
-          物語の一覧を見る
+        <button className="text-button" type="button" onClick={() => openIndex("trial")}>
+          体験版の物語一覧
         </button>
         <button
-          className={canViewResult ? "text-button result-ready" : "text-button muted"}
+          className={canViewResultForMode("trial") ? "text-button result-ready" : "text-button muted"}
           type="button"
-          onClick={() => setScreen("result")}
-          disabled={!canViewResult}
+          onClick={() => openResult("trial")}
+          disabled={!canViewResultForMode("trial")}
         >
-          診断結果を確認する
+          体験版の診断結果
+        </button>
+        <button className="text-button" type="button" onClick={() => openIndex("full")}>
+          完全版の物語一覧
+        </button>
+        <button
+          className={canViewResultForMode("full") ? "text-button result-ready" : "text-button muted"}
+          type="button"
+          onClick={() => openResult("full")}
+          disabled={!canViewResultForMode("full")}
+        >
+          完全版の診断結果
         </button>
         <button className="text-button muted" type="button" onClick={handleReset}>
           回答をリセットする
@@ -264,14 +301,11 @@ export function NovelApp() {
 
       {screen === "title" && (
         <TitleScreen
-          appMode={appMode}
-          completedCount={progress.completedChapterIds.length}
           hasChapters={chapterCount > 0}
-          onSelectTrial={() => switchMode("trial")}
-          onSelectFull={() => switchMode("full")}
           onStartTrial={() => startStory("start", "trial")}
+          onContinueTrial={() => startStory("continue", "trial")}
           onStartFull={() => startStory("start", "full")}
-          onContinue={() => startStory("continue")}
+          onContinueFull={() => startStory("continue", "full")}
         />
       )}
 
@@ -311,50 +345,75 @@ export function NovelApp() {
 }
 
 function TitleScreen({
-  appMode,
-  completedCount,
   hasChapters,
-  onSelectTrial,
-  onSelectFull,
   onStartTrial,
+  onContinueTrial,
   onStartFull,
-  onContinue,
+  onContinueFull,
 }: {
-  appMode: AppMode;
-  completedCount: number;
   hasChapters: boolean;
-  onSelectTrial: () => void;
-  onSelectFull: () => void;
   onStartTrial: () => void;
+  onContinueTrial: () => void;
   onStartFull: () => void;
-  onContinue: () => void;
+  onContinueFull: () => void;
 }) {
   return (
     <section className="title-screen scene-frame title-art">
       <div className="title-copy">
         <p className="eyebrow title-kicker">15の決断で読み解く</p>
-        <h1><span>あなたの</span><span>経営資質診断</span></h1>
+        <h1>
+          <span>あなたの</span>
+          <span>経営資質診断</span>
+        </h1>
         <p className="title-theme">幕末・明治維新編</p>
         <p className="subtitle">一人の長州藩士・村瀬 新之助とたどる、歴史上の決断</p>
-        <p className="lead">幕末から明治維新へ。<br />架空の長州藩士・村瀬 新之助の視点から、歴史の分岐点に立つ人物たちの決断をたどります。<br />あなたの選択から、経営における価値観と強みを診断します。</p>
+        <p className="lead">
+          幕末から明治維新へ。
+          <br />
+          架空の長州藩士・村瀬 新之助の視点から、歴史の分岐点に立つ人物たちの決断をたどります。
+          <br />
+          あなたの選択から、経営における価値観と強みを診断します。
+        </p>
+
         <div className="experience-grid" aria-label="遊び方を選ぶ">
-          <article className={appMode === "trial" ? "experience-card selected" : "experience-card"}>
+          <article className="experience-card selected">
             <p className="experience-label">体験版</p>
             <h2>経営ケーススタディとして短く読む</h2>
-            <p>各章の重要な場面をケーススタディとして整理し、歴史人物たちの価値観に触れながら、自分ならどう決断するかを短時間で考えます。</p>
+            <p>
+              各章の重要な場面をケーススタディとして整理し、歴史人物たちの価値観に触れながら、自分ならどう決断するかを短時間で考えます。
+            </p>
             <p>歴史に詳しくない方や、まず雰囲気を体験したい方におすすめです。</p>
-            <div className="experience-actions"><button className="primary-button" type="button" disabled={!hasChapters} onClick={onStartTrial}>体験版を始める</button>{appMode !== "trial" && <button className="secondary-button" type="button" onClick={onSelectTrial}>体験版を選択</button>}</div>
+            <div className="experience-actions">
+              <button className="primary-button" type="button" disabled={!hasChapters} onClick={onStartTrial}>
+                体験版を始める
+              </button>
+              <button className="secondary-button" type="button" disabled={!hasChapters} onClick={onContinueTrial}>
+                続きから始める
+              </button>
+            </div>
           </article>
-          <article className={appMode === "full" ? "experience-card selected" : "experience-card"}>
+
+          <article className="experience-card">
             <p className="experience-label">完全版</p>
             <h2>すべての物語をじっくり体験できます。</h2>
             <p>歴史上の人物たちの葛藤や対話、時代背景まで丁寧に描いた本編です。</p>
-            <p>一つひとつの決断に至る過程を追体験しながら、より深く歴史と経営資質を学ぶことができます。</p>
-            <div className="experience-actions"><button className="secondary-button" type="button" disabled={!hasChapters} onClick={onStartFull}>完全版を始める</button>{appMode !== "full" && <button className="secondary-button" type="button" onClick={onSelectFull}>完全版を選択</button>}</div>
+            <p>
+              一つひとつの決断に至る過程を追体験しながら、より深く歴史と経営資質を学ぶことができます。
+            </p>
+            <div className="experience-actions">
+              <button className="primary-button" type="button" disabled={!hasChapters} onClick={onStartFull}>
+                完全版を始める
+              </button>
+              <button className="secondary-button" type="button" disabled={!hasChapters} onClick={onContinueFull}>
+                続きから始める
+              </button>
+            </div>
           </article>
         </div>
-        {completedCount > 0 && <p className="progress-note">回答済 {completedCount} / 15</p>}
-        <p className="fiction-note">本作は史実を尊重して制作していますが、物語として描くため、一部に創作を加えています。</p>
+
+        <p className="fiction-note">
+          本作は史実を尊重して制作していますが、物語として描くため、一部に創作を加えています。
+        </p>
       </div>
     </section>
   );
