@@ -212,7 +212,7 @@ button:focus-visible {
   min-height: min(760px, calc(100vh - 120px));
   padding: clamp(30px, 7vw, 76px);
   background:
-    linear-gradient(90deg, rgba(5, 7, 10, 0.98) 0%, rgba(5, 7, 10, 0.93) 38%, rgba(5, 7, 10, 0.68) 66%, rgba(5, 7, 10, 0.5) 100%),
+    linear-gradient(90deg, rgba(5, 7, 10, 0.96) 0%, rgba(5, 7, 10, 0.88) 38%, rgba(5, 7, 10, 0.52) 66%, rgba(5, 7, 10, 0.34) 100%),
     var(--title-image),
     linear-gradient(135deg, #080b10, #1a120e);
   background-size: cover;
@@ -373,14 +373,15 @@ h3 {
 .chapter-header::after {
   position: absolute;
   inset: 0 0 0 auto;
-  width: min(58%, 720px);
+  width: min(62%, 760px);
   content: "";
   background:
-    linear-gradient(90deg, rgba(8, 9, 11, 0), rgba(8, 9, 11, 0.62)),
+    linear-gradient(90deg, rgba(8, 9, 11, 0), rgba(8, 9, 11, 0.38)),
     var(--chapter-image);
   background-size: cover;
   background-position: center;
-  opacity: 0.34;
+  opacity: 0.52;
+  filter: brightness(1.12) saturate(1.04);
   pointer-events: none;
 }
 
@@ -582,7 +583,7 @@ h3 {
 
 .ending-view {
   background:
-    linear-gradient(rgba(3, 5, 7, 0.88), rgba(3, 5, 7, 0.94)),
+    linear-gradient(rgba(3, 5, 7, 0.78), rgba(3, 5, 7, 0.88)),
     var(--chapter-image),
     linear-gradient(135deg, #06080b, #1b110d);
   background-size: cover;
@@ -709,7 +710,7 @@ h3 {
   color: var(--ink);
   text-align: left;
   background:
-    linear-gradient(90deg, rgba(8, 10, 12, 0.9), rgba(8, 10, 12, 0.78) 58%, rgba(8, 10, 12, 0.88)),
+    linear-gradient(90deg, rgba(8, 10, 12, 0.86), rgba(8, 10, 12, 0.66) 58%, rgba(8, 10, 12, 0.78)),
     var(--row-image);
   background-size: cover;
   background-position: center;
@@ -731,7 +732,7 @@ h3 {
 .chapter-row:hover {
   color: var(--ink-strong);
   background:
-    linear-gradient(90deg, rgba(50, 32, 19, 0.9), rgba(50, 32, 19, 0.74) 58%, rgba(50, 32, 19, 0.86)),
+    linear-gradient(90deg, rgba(50, 32, 19, 0.84), rgba(50, 32, 19, 0.58) 58%, rgba(50, 32, 19, 0.72)),
     var(--row-image);
   background-size: cover;
   background-position: center;
@@ -1218,13 +1219,13 @@ h3 {
   width: min(56%, 470px);
   content: "";
   background:
-    linear-gradient(90deg, rgba(8, 9, 11, 0.98), rgba(8, 9, 11, 0.76) 28%, rgba(8, 9, 11, 0.28)),
+    linear-gradient(90deg, rgba(8, 9, 11, 0.94), rgba(8, 9, 11, 0.66) 28%, rgba(8, 9, 11, 0.18)),
     var(--diagnosis-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
-  opacity: 0.48;
-  filter: brightness(1.08) saturate(1.06);
+  opacity: 0.58;
+  filter: brightness(1.14) saturate(1.08);
   pointer-events: none;
 }
 
@@ -1278,12 +1279,13 @@ h3 {
   width: min(72%, 680px);
   content: "";
   background:
-    linear-gradient(90deg, rgba(8, 9, 11, 0.72), rgba(8, 9, 11, 0.22)),
+    linear-gradient(90deg, rgba(8, 9, 11, 0.58), rgba(8, 9, 11, 0.12)),
     url("/images/diagnosis/murase-letter.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center right;
-  opacity: 0.34;
+  opacity: 0.44;
+  filter: brightness(1.1) saturate(1.04);
   pointer-events: none;
 }
 
