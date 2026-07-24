@@ -304,34 +304,45 @@ export function NovelApp() {
       }
     >
       <nav className="top-bar" aria-label="主要メニュー">
-        <button className="text-button" type="button" onClick={showTitle}>
-          タイトルに戻る
-        </button>
-        <button className="text-button muted" type="button" onClick={handleReset}>
-          回答をリセットする
-        </button>
-        <button className="text-button" type="button" onClick={() => openIndex("trial")}>
-          体験版の物語一覧
-        </button>
-        <button
-          className={canViewResultForMode("trial") ? "text-button result-ready" : "text-button muted"}
-          type="button"
-          onClick={() => openResult("trial")}
-          disabled={!canViewResultForMode("trial")}
-        >
-          体験版の診断結果
-        </button>
-        <button className="text-button" type="button" onClick={() => openIndex("full")}>
-          完全版の物語一覧
-        </button>
-        <button
-          className={canViewResultForMode("full") ? "text-button result-ready" : "text-button muted"}
-          type="button"
-          onClick={() => openResult("full")}
-          disabled={!canViewResultForMode("full")}
-        >
-          完全版の診断結果
-        </button>
+        <div className="top-bar-group top-bar-group-common" aria-label="共通操作">
+          <span className="top-bar-label">共通</span>
+          <button className="text-button" type="button" onClick={showTitle}>
+            タイトルに戻る
+          </button>
+          <button className="text-button muted" type="button" onClick={handleReset}>
+            回答をリセットする
+          </button>
+        </div>
+
+        <div className="top-bar-group top-bar-group-trial" aria-label="体験版メニュー">
+          <span className="top-bar-label">体験版</span>
+          <button className="text-button" type="button" onClick={() => openIndex("trial")}>
+            物語一覧
+          </button>
+          <button
+            className={canViewResultForMode("trial") ? "text-button result-ready" : "text-button muted"}
+            type="button"
+            onClick={() => openResult("trial")}
+            disabled={!canViewResultForMode("trial")}
+          >
+            診断結果
+          </button>
+        </div>
+
+        <div className="top-bar-group top-bar-group-full" aria-label="完全版メニュー">
+          <span className="top-bar-label">完全版</span>
+          <button className="text-button" type="button" onClick={() => openIndex("full")}>
+            物語一覧
+          </button>
+          <button
+            className={canViewResultForMode("full") ? "text-button result-ready" : "text-button muted"}
+            type="button"
+            onClick={() => openResult("full")}
+            disabled={!canViewResultForMode("full")}
+          >
+            診断結果
+          </button>
+        </div>
       </nav>
 
       {screen === "title" && (
