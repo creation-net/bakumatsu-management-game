@@ -2725,3 +2725,33 @@ h3 {
     font-size: 0.8rem;
   }
 }
+
+/* Desktop single-row compact menu final */
+@media (min-width: 721px) {
+  .compact-top-menu {
+    grid-template-columns: auto auto !important;
+    width: fit-content;
+    justify-content: end !important;
+    justify-items: end;
+    margin-left: auto;
+  }
+
+  .compact-menu-row-common {
+    grid-column: 1;
+  }
+
+  .compact-menu-row-editions {
+    grid-column: 2;
+  }
+
+  .compact-menu-row-common,
+  .compact-menu-row-editions {
+    grid-template-columns: repeat(2, 184px);
+    justify-self: end;
+  }
+
+  .compact-menu-button,
+  .compact-top-menu .text-button {
+    width: 184px !important;
+  }
+}
