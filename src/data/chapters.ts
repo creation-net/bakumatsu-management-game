@@ -867,6 +867,7 @@ export const chapters: Chapter[] = [
       {
       {
       {
+      {
         "id": "p-42",
         "kind": "dialogue",
             "speaker": "久坂 玄瑞",
