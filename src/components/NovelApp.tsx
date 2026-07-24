@@ -70,6 +70,7 @@ export function NovelApp() {
   const [appMode, setAppMode] = useState<AppMode>("full");
   const [progress, setProgress] = useState<ReadingProgress>(initialProgress);
   const [choiceTargetChapterId, setChoiceTargetChapterId] = useState<number | null>(null);
+  const [expandedMenu, setExpandedMenu] = useState<AppMode | null>(null);
 
   useEffect(() => {
     const storedMode = loadAppMode();
@@ -283,6 +284,20 @@ export function NovelApp() {
     setScreen("title");
   }
 
+  function toggleEditionMenu(mode: AppMode) {
+    setExpandedMenu((current) => (current === mode ? null : mode));
+  }
+
+  function openIndexFromMenu(mode: AppMode) {
+    setExpandedMenu(null);
+    openIndex(mode);
+  }
+
+  function openResultFromMenu(mode: AppMode) {
+    setExpandedMenu(null);
+    openResult(mode);
+  }
+
   const answeredCount = Object.keys(progress.choices).length;
   const modeLabel = appMode === "trial" ? "体験版" : "完全版";
   const canViewResult = answeredCount >= chapterCount && chapterCount > 0;
@@ -303,45 +318,68 @@ export function NovelApp() {
         } as CSSProperties
       }
     >
-      <nav className="top-bar" aria-label="主要メニュー">
-        <div className="top-bar-group top-bar-group-common" aria-label="共通操作">
-          <span className="top-bar-label">共通</span>
-          <button className="text-button" type="button" onClick={showTitle}>
+      <nav className="top-bar compact-top-menu" aria-label="主要メニュー">
+        <div className="compact-menu-row compact-menu-row-common" aria-label="共通操作">
+          <button className="text-button compact-menu-button" type="button" onClick={showTitle}>
             タイトルへ戻る
           </button>
-          <button className="text-button muted" type="button" onClick={handleReset}>
+          <button className="text-button compact-menu-button muted" type="button" onClick={handleReset}>
             回答をリセット
           </button>
         </div>
 
-        <div className="top-bar-group top-bar-group-trial" aria-label="体験版メニュー">
-          <span className="top-bar-label">体験版</span>
-          <button className="text-button" type="button" onClick={() => openIndex("trial")}>
-            物語一覧
-          </button>
-          <button
-            className={canViewResultForMode("trial") ? "text-button result-ready" : "text-button muted"}
-            type="button"
-            onClick={() => openResult("trial")}
-            disabled={!canViewResultForMode("trial")}
-          >
-            診断結果
-          </button>
-        </div>
+        <div className="compact-menu-row compact-menu-row-editions" aria-label="版別メニュー">
+          <div className="edition-menu">
+            <button
+              className={expandedMenu === "trial" ? "text-button compact-menu-button edition-toggle active" : "text-button compact-menu-button edition-toggle"}
+              type="button"
+              onClick={() => toggleEditionMenu("trial")}
+              aria-expanded={expandedMenu === "trial"}
+            >
+              体験版
+            </button>
+            {expandedMenu === "trial" && (
+              <div className="edition-dropdown" aria-label="体験版の操作">
+                <button className="text-button compact-menu-button" type="button" onClick={() => openIndexFromMenu("trial")}>
+                  物語一覧
+                </button>
+                <button
+                  className={canViewResultForMode("trial") ? "text-button compact-menu-button result-ready" : "text-button compact-menu-button muted"}
+                  type="button"
+                  onClick={() => openResultFromMenu("trial")}
+                  disabled={!canViewResultForMode("trial")}
+                >
+                  診断結果
+                </button>
+              </div>
+            )}
+          </div>
 
-        <div className="top-bar-group top-bar-group-full" aria-label="完全版メニュー">
-          <span className="top-bar-label">完全版</span>
-          <button className="text-button" type="button" onClick={() => openIndex("full")}>
-            物語一覧
-          </button>
-          <button
-            className={canViewResultForMode("full") ? "text-button result-ready" : "text-button muted"}
-            type="button"
-            onClick={() => openResult("full")}
-            disabled={!canViewResultForMode("full")}
-          >
-            診断結果
-          </button>
+          <div className="edition-menu">
+            <button
+              className={expandedMenu === "full" ? "text-button compact-menu-button edition-toggle active" : "text-button compact-menu-button edition-toggle"}
+              type="button"
+              onClick={() => toggleEditionMenu("full")}
+              aria-expanded={expandedMenu === "full"}
+            >
+              完全版
+            </button>
+            {expandedMenu === "full" && (
+              <div className="edition-dropdown" aria-label="完全版の操作">
+                <button className="text-button compact-menu-button" type="button" onClick={() => openIndexFromMenu("full")}>
+                  物語一覧
+                </button>
+                <button
+                  className={canViewResultForMode("full") ? "text-button compact-menu-button result-ready" : "text-button compact-menu-button muted"}
+                  type="button"
+                  onClick={() => openResultFromMenu("full")}
+                  disabled={!canViewResultForMode("full")}
+                >
+                  診断結果
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       </nav>
 
