@@ -714,33 +714,7 @@ const trialChapterSources: TrialChapterSource[] = [
         "speaker": "久坂 玄瑞",
         "text": "「お前なら考えを持っているはずだ。」"
       },
-      {
-        "id": "trial-4-p-29",
-        "kind": "narration",
-        "text": "本陣が静まり返る。"
-      },
-      {
-        "id": "trial-4-p-30",
-        "kind": "narration",
-        "text": "（私などが……。）"
-      },
-      {
-        "id": "trial-4-p-31",
-        "kind": "narration",
-        "text": "しかし、先生の言葉がよみがえる。"
-      },
-      {
-        "id": "trial-4-p-32",
-        "kind": "dialogue",
-        "speaker": "吉田 松陰",
-        "text": "「自分で考えよ。」"
-      },
-      {
-        "id": "trial-4-p-33",
-        "kind": "narration",
-        "text": "村瀬は一歩前へ出た。"
-      }
-    ],
+         ],
     "choices": [
       {
         "label": "①",
@@ -945,23 +919,8 @@ const trialChapterSources: TrialChapterSource[] = [
         "speaker": "毛利 敬親",
         "text": "「お前はどう思う。」"
       },
-      {
-        "id": "trial-5-p-33",
-        "kind": "narration",
-        "text": "（……私に何ができる。）"
-      },
-      {
-        "id": "trial-5-p-34",
-        "kind": "narration",
-        "text": "村瀬は一度目を閉じた。"
-      },
-      {
-        "id": "trial-5-p-35",
-        "kind": "dialogue",
-        "speaker": "村瀬",
-        "text": "「恐れながら、申し上げます。」"
-      }
-    ],
+      
+        ],
     "choices": [
       {
         "label": "①",

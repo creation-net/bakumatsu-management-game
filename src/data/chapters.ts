@@ -5500,7 +5500,88 @@ export const chapters: Chapter[] = [
       {
         "id": "p-34",
         "kind": "narration",
-        "text": "少し間を置く。"
+        "text": "その時だった。"
+      },
+      {
+        "id": "p-34a",
+        "kind": "narration",
+        "text": "「薩長を討て！」"
+      },
+      {
+        "id": "p-34b",
+        "kind": "narration",
+        "text": "「徳川を守れ！」"
+      },
+      {
+        "id": "p-34c",
+        "kind": "narration",
+        "text": "「一歩も退くな！」"
+      },
+      {
+        "id": "p-34d",
+        "kind": "narration",
+        "text": "幾千もの兵たちの鬨の声が城外から響き渡る。"
+      },
+      {
+        "id": "p-34e",
+        "kind": "narration",
+        "text": "その声は幾重にも重なり、大坂城全体を揺らしているかのようだった。"
+      },
+      {
+        "id": "p-34f",
+        "kind": "narration",
+        "text": "障子が微かに震える。"
+      },
+      {
+        "id": "p-34g",
+        "kind": "narration",
+        "text": "すると、一人の兵が叫ぶ。"
+      },
+      {
+        "id": "p-34h",
+        "kind": "narration",
+        "text": "「上様がおられるぞ！」"
+      },
+      {
+        "id": "p-34i",
+        "kind": "narration",
+        "text": "その一言に呼応するように、"
+      },
+      {
+        "id": "p-34j",
+        "kind": "narration",
+        "text": "「おおおおっ!!」"
+      },
+      {
+        "id": "p-34k",
+        "kind": "narration",
+        "text": "歓声が爆発した。"
+      },
+      {
+        "id": "p-34l",
+        "kind": "narration",
+        "text": "城中の空気が震える。"
+      },
+      {
+        "id": "p-34m",
+        "kind": "narration",
+        "text": "慶喜はゆっくりと目を伏せた。"
+      },
+      {
+        "id": "p-34n",
+        "kind": "narration",
+        "text": "そして、障子から静かに視線を逸らす。"
+      },
+      {
+        "id": "p-34o",
+        "kind": "narration",
+        "text": "容保は、その様子を見つめながら口を開く。"
+      },
+      {
+        "id": "p-34p",
+        "kind": "dialogue",
+        "text": "「……上様も、お聞きになられたでしょう。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-35",
@@ -5560,6 +5641,51 @@ export const chapters: Chapter[] = [
         "kind": "dialogue",
         "text": "「今は戦うべきでございます。」",
         "speaker": "松平 容保"
+      },
+      {
+        "id": "p-44a",
+        "kind": "narration",
+        "text": "慶喜は黙ったままだった。"
+      },
+      {
+        "id": "p-44b",
+        "kind": "narration",
+        "text": "徳川のために命を捨てる覚悟を決めた兵たち。"
+      },
+      {
+        "id": "p-44c",
+        "kind": "narration",
+        "text": "その忠義は、これ以上ないほど頼もしい。"
+      },
+      {
+        "id": "p-44d",
+        "kind": "narration",
+        "text": "だが同時に、その熱気は、もはや命令ひとつで抑えられるものではないことも感じていた。"
+      },
+      {
+        "id": "p-44e",
+        "kind": "narration",
+        "text": "もし、この場で退却を命じれば──。"
+      },
+      {
+        "id": "p-44f",
+        "kind": "narration",
+        "text": "その瞬間、慶喜の胸をよぎったのは、敵ではなかった。"
+      },
+      {
+        "id": "p-44g",
+        "kind": "narration",
+        "text": "熱狂した味方の姿だった。"
+      },
+      {
+        "id": "p-44h",
+        "kind": "narration",
+        "text": "静寂が部屋を包む。"
+      },
+      {
+        "id": "p-44i",
+        "kind": "narration",
+        "text": "そして、"
       },
       {
         "id": "p-45",
