@@ -1995,111 +1995,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-61",
         "kind": "narration",
-        "text": "来島は静かに首を振る。"
+        "text": "来島は拳を握る。"
       },
       {
-        "id": "p-62a",
-        "kind": "dialogue",
-        "text": "「桂。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62b",
-        "kind": "dialogue",
-        "text": "「機会は待っておれば来るものではない。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62c",
-        "kind": "dialogue",
-        "text": "「自ら掴みに行くものじゃ。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62d",
-        "kind": "narration",
-        "text": "京都へ目を向ける。"
-      },
-      {
-        "id": "p-62e",
-        "kind": "dialogue",
-        "text": "「今の朝廷は、長州を朝敵として見ておる。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62f",
-        "kind": "dialogue",
-        "text": "「このまま待っておれば、その見方は強まるばかりじゃ。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62g",
-        "kind": "dialogue",
-        "text": "「弁明の機会など、誰が与えてくれる。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62h",
-        "kind": "narration",
-        "text": "久坂を見る。"
-      },
-      {
-        "id": "p-62i",
-        "kind": "dialogue",
-        "text": "「久坂。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62j",
-        "kind": "dialogue",
-        "text": "「お主は朝廷が我らの真意を聞いてくださると信じておる。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62k",
-        "kind": "dialogue",
-        "text": "「わしも、それが叶うなら、それに越したことはない。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62l",
-        "kind": "dialogue",
-        "text": "「じゃが。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62m",
-        "kind": "dialogue",
-        "text": "「言葉だけでは門は開かん。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62n",
-        "kind": "dialogue",
-        "text": "「武力は朝廷へ刃を向けるためではない。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62o",
-        "kind": "dialogue",
-        "text": "「閉ざされた道を開くための力じゃ。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62p",
-        "kind": "narration",
-        "text": "少し間を置く。"
-      },
-      {
-        "id": "p-62q",
+        "id": "p-62",
         "kind": "dialogue",
         "text": "「待っておれば、長州は滅ぶ。」",
-        "speaker": "来島 又兵衛"
-      },
-      {
-        "id": "p-62r",
-        "kind": "dialogue",
-        "text": "「今なら、まだ自ら道を切り開ける。」",
         "speaker": "来島 又兵衛"
       },
       {
@@ -5622,7 +5523,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-34d",
         "kind": "narration",
-        "text": "幾千もの兵たちの鬨の声が城外から響き渡る。"
+        "text": "幾千もの兵たちの鬨（とき）の声が城外から響き渡る。"
       },
       {
         "id": "p-34e",
@@ -5780,6 +5681,11 @@ export const chapters: Chapter[] = [
         "id": "p-44g",
         "kind": "narration",
         "text": "熱狂した味方の姿だった。"
+      },
+      {
+        "id": "p-44g-pause",
+        "kind": "narration",
+        "text": "　"
       },
       {
         "id": "p-44h",
