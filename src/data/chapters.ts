@@ -5893,7 +5893,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-34n",
         "kind": "narration",
-        "text": "そして、障子から静かに視線を逸らす。"
+        "text": ""
       },
       {
         "id": "p-34o",
