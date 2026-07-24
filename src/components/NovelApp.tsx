@@ -307,10 +307,10 @@ export function NovelApp() {
         <div className="top-bar-group top-bar-group-common" aria-label="共通操作">
           <span className="top-bar-label">共通</span>
           <button className="text-button" type="button" onClick={showTitle}>
-            タイトルに戻る
+            タイトルへ戻る
           </button>
           <button className="text-button muted" type="button" onClick={handleReset}>
-            回答をリセットする
+            回答をリセット
           </button>
         </div>
 

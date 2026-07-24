@@ -2388,3 +2388,99 @@ h3 {
     white-space: nowrap;
   }
 }
+
+/* Top menu card layout final */
+.top-bar {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  width: min(100%, 420px);
+  max-width: 420px;
+  margin-left: auto;
+  margin-bottom: clamp(26px, 5vw, 46px);
+  gap: clamp(24px, 3vw, 32px);
+  justify-content: stretch !important;
+}
+
+.top-bar-group {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  width: 100%;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid rgba(193, 159, 79, 0.42);
+  background:
+    linear-gradient(180deg, rgba(32, 22, 15, 0.68), rgba(7, 8, 10, 0.82)),
+    rgba(9, 9, 10, 0.82);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+.top-bar-group-common {
+  background:
+    linear-gradient(180deg, rgba(18, 17, 15, 0.7), rgba(7, 8, 10, 0.84)),
+    rgba(9, 9, 10, 0.82);
+}
+
+.top-bar-group-full {
+  border-color: rgba(143, 50, 34, 0.62);
+}
+
+.top-bar-label {
+  display: flex !important;
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  padding: 0 0 10px;
+  border-bottom: 1px solid rgba(193, 159, 79, 0.22);
+  color: var(--gold);
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+
+.top-bar-group .text-button,
+.top-bar-group-common .text-button,
+.top-bar .text-button {
+  width: 100% !important;
+  min-width: 0;
+  min-height: 52px;
+  padding-inline: 14px;
+  white-space: nowrap;
+}
+
+.top-bar-group .text-button.result-ready {
+  background: linear-gradient(180deg, rgba(143, 50, 34, 0.94), rgba(104, 35, 24, 0.92));
+}
+
+@media (max-width: 720px) {
+  .top-bar {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    gap: 26px;
+  }
+
+  .top-bar-group,
+  .top-bar-group-common {
+    grid-template-columns: 1fr !important;
+    padding: 18px 16px;
+    gap: 12px;
+  }
+
+  .top-bar-group-common .top-bar-label {
+    display: flex !important;
+  }
+
+  .top-bar-label {
+    height: auto;
+    padding: 0 0 10px;
+    font-size: 0.9rem;
+  }
+
+  .top-bar .text-button,
+  .top-bar-group .text-button,
+  .top-bar-group-common .text-button {
+    width: 100% !important;
+    min-height: 52px;
+    font-size: 0.95rem;
+  }
+}
