@@ -2768,3 +2768,37 @@ h3 {
     white-space: nowrap;
   }
 }
+
+/* Development hero compact frame final */
+.development-hero {
+  min-height: clamp(300px, 39vw, 510px);
+}
+
+.development-hero-copy {
+  padding: clamp(36px, 6vw, 72px);
+}
+
+@media (max-width: 860px) {
+  .development-hero {
+    min-height: 0;
+  }
+
+  .development-hero-copy {
+    padding: 30px 20px 34px;
+  }
+
+  .development-hero-copy h1 {
+    margin-bottom: 14px;
+  }
+
+  .development-hero-copy p:last-child {
+    margin-bottom: 0;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 380px) {
+  .development-hero-copy {
+    padding: 26px 16px 30px;
+  }
+}
