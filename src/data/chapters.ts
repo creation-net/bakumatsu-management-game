@@ -638,366 +638,585 @@ export const chapters: Chapter[] = [
     "sourceFile": "第2話_吉田松陰処刑.docx",
     "passages": [
       {
-        "id": "p-1",
-        "kind": "narration",
-        "text": "安政六年（1859年）。"
+            "id": "p-1",
+            "kind": "narration",
+            "text": "安政六年（1859年）。"
       },
       {
-        "id": "p-2",
-        "kind": "narration",
-        "text": "吉田 松陰（よしだ しょういん）は江戸・伝馬町牢屋敷で処刑された。"
+            "id": "p-2",
+            "kind": "narration",
+            "text": "吉田 松陰（よしだ しょういん）は江戸・伝馬町牢屋敷で処刑された。"
       },
       {
-        "id": "p-3",
-        "kind": "narration",
-        "text": "享年二十九。"
+            "id": "p-3",
+            "kind": "narration",
+            "text": "享年二十九。"
       },
       {
-        "id": "p-4",
-        "kind": "narration",
-        "text": "先生は、最後まで日本の未来を信じていた。"
+            "id": "p-4",
+            "kind": "narration",
+            "text": "先生は、最後まで日本の未来を信じていた。"
       },
       {
-        "id": "p-5",
-        "kind": "narration",
-        "text": "その知らせは長州にも届く。"
+            "id": "p-5",
+            "kind": "narration",
+            "text": "その知らせは長州にも届く。"
       },
       {
-        "id": "p-6",
-        "kind": "narration",
-        "text": "松下村塾（しょうかそんじゅく）には、静かな時間だけが流れていた。"
+            "id": "p-6",
+            "kind": "narration",
+            "text": "松下村塾（しょうかそんじゅく）には、静かな時間だけが流れていた。"
       },
       {
-        "id": "p-7",
-        "kind": "scene",
-        "text": "【松下村塾（しょうかそんじゅく）】"
+            "id": "p-7",
+            "kind": "scene",
+            "text": "【松下村塾（しょうかそんじゅく）】"
       },
       {
-        "id": "p-8",
-        "kind": "narration",
-        "text": "誰も口を開かない。"
+            "id": "p-8",
+            "kind": "narration",
+            "text": "誰も口を開かない。"
       },
       {
-        "id": "p-9",
-        "kind": "narration",
-        "text": "机の上には先生が読まれていた本。"
+            "id": "p-9",
+            "kind": "narration",
+            "text": "机の上には先生が読まれていた本。"
       },
       {
-        "id": "p-10",
-        "kind": "narration",
-        "text": "壁には掛け軸。"
+            "id": "p-10",
+            "kind": "narration",
+            "text": "壁には掛け軸。"
       },
       {
-        "id": "p-11",
-        "kind": "narration",
-        "text": "先生だけがいない。"
+            "id": "p-11",
+            "kind": "narration",
+            "text": "先生だけがいない。"
       },
       {
-        "id": "p-12",
-        "kind": "narration",
-        "text": "村瀬は静かに座っていた。"
+            "id": "p-12",
+            "kind": "narration",
+            "text": "村瀬は静かに座っていた。"
       },
       {
-        "id": "p-13",
-        "kind": "scene",
-        "text": "（先生は、本当にいなくなった。）"
+            "id": "p-13",
+            "kind": "scene",
+            "text": "（先生は、本当にいなくなった。）"
       },
       {
-        "id": "p-14",
-        "kind": "scene",
-        "text": "（もう二度と教えは聞けない。）"
+            "id": "p-14",
+            "kind": "scene",
+            "text": "（もう二度と教えは聞けない。）"
       },
       {
-        "id": "p-15",
-        "kind": "dialogue",
-        "text": "「先生は死んだ、じゃが、先生の志まで墓に入れちゃならん。」",
-        "speaker": "高杉 晋作"
+            "id": "p-15",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「先生は死んだ。」"
       },
       {
-        "id": "p-16",
-        "kind": "dialogue",
-        "text": "「先生が望まれたんは、教えをそのまま守ることじゃない。」",
-        "speaker": "高杉 晋作"
+            "id": "p-16",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「じゃが、先生の志まで墓に入れちゃならん。」"
       },
       {
-        "id": "p-17",
-        "kind": "dialogue",
-        "text": "「古い世を壊し、新しい日本をつくることじゃ。」",
-        "speaker": "高杉 晋作"
+            "id": "p-17",
+            "kind": "narration",
+            "text": "高杉は、静かな部屋を見渡す。"
       },
       {
-        "id": "p-18",
-        "kind": "dialogue",
-        "text": "「時代が変われば、戦い方も変えにゃならん。」",
-        "speaker": "高杉 晋作"
+            "id": "p-18",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「先生がおらん今。」"
       },
       {
-        "id": "p-19",
-        "kind": "dialogue",
-        "text": "「先生の言葉に従うだけでは、先生を超えることはできん。」",
-        "speaker": "高杉 晋作"
+            "id": "p-19",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「もう誰も答えを教えてはくれん。」"
       },
       {
-        "id": "p-20",
-        "kind": "dialogue",
-        "text": "「誰かが最初の一歩を踏み出さにゃ、世の中は何も変わらんのじゃ。」",
-        "speaker": "高杉 晋作"
+            "id": "p-20",
+            "kind": "narration",
+            "text": "先生の机へ視線を向ける。"
       },
       {
-        "id": "p-21",
-        "kind": "dialogue",
-        "text": "「村瀬。」",
-        "speaker": "高杉 晋作"
+            "id": "p-21",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「先生は、学べと言われた。」"
       },
       {
-        "id": "p-22",
-        "kind": "dialogue",
-        "text": "「わしは、先生の志を変革によって継ぐ。」",
-        "speaker": "高杉 晋作"
+            "id": "p-22",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「考えろと言われた。」"
       },
       {
-        "id": "p-23",
-        "kind": "dialogue",
-        "text": "「世の中はのう、変えようとする者がおりゃあ、変わる。」",
-        "speaker": "高杉 晋作"
+            "id": "p-23",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「狂えと言われた。」"
       },
       {
-        "id": "p-24",
-        "kind": "dialogue",
-        "text": "「高杉、新しい道を語るだけでは足りません。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-24",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「ならば。」"
       },
       {
-        "id": "p-25",
-        "kind": "dialogue",
-        "text": "「先生は、正しいと思う道のために命を懸けられた。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-25",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「先生の言葉を守ることだけが、先生への恩返しではない。」"
       },
       {
-        "id": "p-26",
-        "kind": "dialogue",
-        "text": "「ならば我らも、志を言葉で終わらせてはならん。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-26",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「先生なら、この時代に生きておられたら。」"
       },
       {
-        "id": "p-27",
-        "kind": "dialogue",
-        "text": "「攘夷を唱えるなら、攘夷を決行する、」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-27",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「もっと新しい道を探されたはずじゃ。」"
       },
       {
-        "id": "p-28",
-        "kind": "dialogue",
-        "text": "「国を守ると申すなら、そのために命を差し出す。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-28",
+            "kind": "narration",
+            "text": "高杉は村瀬を見る。"
       },
       {
-        "id": "p-29",
-        "kind": "dialogue",
-        "text": "「覚悟を行いに変えてこそ、志は本物になるのです。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-29",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「わしは。」"
       },
       {
-        "id": "p-30",
-        "kind": "dialogue",
-        "text": "「私は、先生の志を決行によって継ぎます。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-30",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「先生の志を、変革によって生かす。」"
       },
       {
-        "id": "p-31",
-        "kind": "dialogue",
-        "text": "「先生のお示しになった道を、最後まで歩みます。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-31",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「世の中はのう。」"
       },
       {
-        "id": "p-32",
-        "kind": "dialogue",
-        "text": "「それが私の覚悟です。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-32",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「昨日と同じことをしちょったら変わらん。」"
       },
       {
-        "id": "p-33",
-        "kind": "dialogue",
-        "text": "「命を懸けるだけで、国が変わるんか、」",
-        "speaker": "高杉 晋作"
+            "id": "p-33",
+            "kind": "narration",
+            "text": "久坂は静かに首を振る。"
       },
       {
-        "id": "p-34",
-        "kind": "dialogue",
-        "text": "「倒れることが覚悟なら、生きて変える者は誰になる。」",
-        "speaker": "高杉 晋作"
+            "id": "p-34",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「高杉。」"
       },
       {
-        "id": "p-35",
-        "kind": "dialogue",
-        "text": "「命を惜しんで決断を避ければ、何一つ始まりません。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-35",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「私は違います。」"
       },
       {
-        "id": "p-36",
-        "kind": "dialogue",
-        "text": "「行われぬ志は、志ではなく願いにすぎんのです。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-36",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「先生は。」"
       },
       {
-        "id": "p-37",
-        "kind": "dialogue",
-        "text": "「二人とも、先生を思う気持ちは同じじゃ。」",
-        "speaker": "桂 小五郎"
+            "id": "p-37",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「命を懸けて、ご自分が正しいと信じた道を歩まれました。」"
       },
       {
-        "id": "p-38",
-        "kind": "dialogue",
-        "text": "「じゃが、志は一人の命だけでは成し遂げられん。」",
-        "speaker": "桂 小五郎"
+            "id": "p-38",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「だから我らも。」"
       },
       {
-        "id": "p-39",
-        "kind": "dialogue",
-        "text": "「高杉が道を切り開き、久坂が先頭に立つ。」",
-        "speaker": "桂 小五郎"
+            "id": "p-39",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「教えを変えるのではありません。」"
       },
       {
-        "id": "p-40",
-        "kind": "dialogue",
-        "text": "「それでも、あとに続く者がおらねば、そこで終わってしまう。」",
-        "speaker": "桂 小五郎"
+            "id": "p-40",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「教えを最後まで貫くのです。」"
       },
       {
-        "id": "p-41",
-        "kind": "dialogue",
-        "text": "「志を人に伝え、仲間を増やし、次の世代へ残す。生き残ることもまた、覚悟の一つじゃ。」",
-        "speaker": "桂 小五郎"
+            "id": "p-41",
+            "kind": "narration",
+            "text": "久坂は拳を握る。"
       },
       {
-        "id": "p-42",
-        "kind": "dialogue",
-        "text": "「私は、先生の志を継承によって未来へつなぐ。」",
-        "speaker": "桂 小五郎"
+            "id": "p-42",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「攘夷を唱えるなら攘夷を行う。」"
       },
       {
-        "id": "p-43",
-        "kind": "dialogue",
-        "text": "「人が育ち、志が受け継がれてこそ、日本は変わる。」",
-        "speaker": "桂 小五郎"
+            "id": "p-43",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「国を守ると言うなら命を差し出す。」"
       },
       {
-        "id": "p-44",
-        "kind": "dialogue",
-        "text": "「それが先生の願いじゃと思う。」",
-        "speaker": "桂 小五郎"
+            "id": "p-44",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「先生の教えは。」"
       },
       {
-        "id": "p-45",
-        "kind": "dialogue",
-        "text": "「桂さん。」",
-        "speaker": "高杉 晋作"
+            "id": "p-45",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「実践してこそ意味があります。」"
       },
       {
-        "id": "p-46",
-        "kind": "dialogue",
-        "text": "「後に残すことばかり考えちょったら、最初の一歩が遅れます。」",
-        "speaker": "高杉 晋作"
+            "id": "p-46",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「私は。」"
       },
       {
-        "id": "p-47",
-        "kind": "dialogue",
-        "text": "「世の中を変えるんは、いつも先に踏み出した者です。」",
-        "speaker": "高杉 晋作"
+            "id": "p-47",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「先生の志を、決行によって継ぎます。」"
       },
       {
-        "id": "p-48",
-        "kind": "dialogue",
-        "text": "「その一歩を無駄にせんために、残る者が必要なのじゃ。」",
-        "speaker": "桂 小五郎"
+            "id": "p-48",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「久坂。」"
       },
       {
-        "id": "p-49",
-        "kind": "dialogue",
-        "text": "「一人の英雄が世を動かしても、その後が続かねば国は変わらん。」",
-        "speaker": "桂 小五郎"
+            "id": "p-49",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「命を懸けることだけが、志じゃない。」"
       },
       {
-        "id": "p-50",
-        "kind": "dialogue",
-        "text": "「変える力と、続ける力。その両方が必要なんじゃ。」",
-        "speaker": "桂 小五郎"
+            "id": "p-50",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「死ぬ覚悟は尊い。」"
       },
       {
-        "id": "p-51",
-        "kind": "narration",
-        "text": "部屋は静まり返る。"
+            "id": "p-51",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「じゃが、生きて世を変える覚悟も要る。」"
       },
       {
-        "id": "p-52",
-        "kind": "narration",
-        "text": "三人の言葉が胸に響く。"
+            "id": "p-52",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「ただ突き進むだけでは、先生の志を狭くしてしまう。」"
       },
       {
-        "id": "p-53",
-        "kind": "scene",
-        "text": "（高杉さんは、新しい時代を切り開こうとしている。）"
+            "id": "p-53",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「新しい道を探すという名で、決断を先延ばしにしてはなりません。」"
       },
       {
-        "id": "p-54",
-        "kind": "scene",
-        "text": "（久坂さんは、命を懸けて志を実行しようとしている。）"
+            "id": "p-54",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「志は、行動して初めて世に示される。」"
       },
       {
-        "id": "p-55",
-        "kind": "scene",
-        "text": "（桂さんは、その志を未来へつなごうとしている。）"
+            "id": "p-55",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「動かぬまま考え続けても、国は救えません。」"
       },
       {
-        "id": "p-56",
-        "kind": "scene",
-        "text": "（どれも先生が教えてくださった道だ。）"
+            "id": "p-56",
+            "kind": "narration",
+            "text": "桂は二人を見渡す。"
       },
       {
-        "id": "p-57",
-        "kind": "scene",
-        "text": "（先生なら……何とおっしゃるだろう。）"
+            "id": "p-57",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「二人とも。」"
       },
       {
-        "id": "p-58",
-        "kind": "narration",
-        "text": "久坂が静かに村瀬を見る。"
+            "id": "p-58",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「先生を思う気持ちは変わらん。」"
       },
       {
-        "id": "p-59",
-        "kind": "dialogue",
-        "text": "「村瀬。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-59",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「じゃが。」"
       },
       {
-        "id": "p-60",
-        "kind": "dialogue",
-        "text": "「お前は、どう思う。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-60",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「先生は、一人で日本を変えようとなさったのではない。」"
       },
       {
-        "id": "p-61",
-        "kind": "dialogue",
-        "text": "「お前の意見を聞かせてくれ。」",
-        "speaker": "久坂 玄瑞"
+            "id": "p-61",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「我らを育てられた。」"
       },
       {
-        "id": "p-62",
-        "kind": "narration",
-        "text": "先生の言葉が頭をよぎる。"
+            "id": "p-62",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「志を託された。」"
       },
       {
-        "id": "p-63",
-        "kind": "dialogue",
-        "text": "『諸君、狂いたまえ。』",
-        "speaker": "吉田 松陰"
+            "id": "p-63",
+            "kind": "narration",
+            "text": "桂は静かに松下村塾を見回す。"
       },
       {
-        "id": "p-64",
-        "kind": "narration",
-        "text": "村瀬は静かに立ち上がった。"
+            "id": "p-64",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「先生がおられなくなった今。」"
+      },
+      {
+            "id": "p-65",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「志まで失ってはならん。」"
+      },
+      {
+            "id": "p-66",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「そのためには。」"
+      },
+      {
+            "id": "p-67",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「人を育て。」"
+      },
+      {
+            "id": "p-68",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「志を語り。」"
+      },
+      {
+            "id": "p-69",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「次の世代へ受け継がねばならん。」"
+      },
+      {
+            "id": "p-70",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「私は。」"
+      },
+      {
+            "id": "p-71",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「先生の志を、継承によって未来へつなぐ。」"
+      },
+      {
+            "id": "p-72",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「桂さん。」"
+      },
+      {
+            "id": "p-73",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「後に残すことばかり考えちょったら、最初の一歩が遅れます。」"
+      },
+      {
+            "id": "p-74",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「時代は、待ってくれん。」"
+      },
+      {
+            "id": "p-75",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「だからこそ、急ぐ者だけで走ってはならん。」"
+      },
+      {
+            "id": "p-76",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「一人が倒れれば終わる志では、日本は変わらん。」"
+      },
+      {
+            "id": "p-77",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「人に残し、組織に残し、未来に残す。」"
+      },
+      {
+            "id": "p-78",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「それもまた、先生の教えを生きる道じゃ。」"
+      },
+      {
+            "id": "p-79",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「残すことは大切です。」"
+      },
+      {
+            "id": "p-80",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「しかし、誰かが命を懸けて門を開かねば、志を託す未来も来ません。」"
+      },
+      {
+            "id": "p-81",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「その門を、正面から破るだけが道ではない。」"
+      },
+      {
+            "id": "p-82",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「新しい仕組みをつくり、古い世を動かす。」"
+      },
+      {
+            "id": "p-83",
+            "kind": "dialogue",
+            "speaker": "高杉 晋作",
+            "text": "「わしは、それが先生の志を一番生かす道じゃと思う。」"
+      },
+      {
+            "id": "p-84",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「私は、先生の言葉を曲げず、行動で示す道を選びます。」"
+      },
+      {
+            "id": "p-85",
+            "kind": "dialogue",
+            "speaker": "桂 小五郎",
+            "text": "「私は、志を長く生かすために、人へ託す道を選ぶ。」"
+      },
+      {
+            "id": "p-86",
+            "kind": "narration",
+            "text": "静寂が流れる。"
+      },
+      {
+            "id": "p-87",
+            "kind": "narration",
+            "text": "村瀬は三人を見つめる。"
+      },
+      {
+            "id": "p-88",
+            "kind": "scene",
+            "text": "（高杉さんは。）"
+      },
+      {
+            "id": "p-89",
+            "kind": "scene",
+            "text": "（先生の志を、新しい時代へ生かそうとしている。）"
+      },
+      {
+            "id": "p-90",
+            "kind": "scene",
+            "text": "（久坂さんは。）"
+      },
+      {
+            "id": "p-91",
+            "kind": "scene",
+            "text": "（先生の教えを、一歩も曲げずに貫こうとしている。）"
+      },
+      {
+            "id": "p-92",
+            "kind": "scene",
+            "text": "（桂さんは。）"
+      },
+      {
+            "id": "p-93",
+            "kind": "scene",
+            "text": "（先生の志を、人へ、人へと受け継ごうとしている。）"
+      },
+      {
+            "id": "p-94",
+            "kind": "scene",
+            "text": "（先生は。）"
+      },
+      {
+            "id": "p-95",
+            "kind": "scene",
+            "text": "（誰にも答えを残されなかった。）"
+      },
+      {
+            "id": "p-96",
+            "kind": "scene",
+            "text": "（考え続けることだけを、私たちに残された。）"
+      },
+      {
+            "id": "p-97",
+            "kind": "narration",
+            "text": "久坂が静かに村瀬を見る。"
+      },
+      {
+            "id": "p-98",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「村瀬。」"
+      },
+      {
+            "id": "p-99",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「先生は、もうおられない。」"
+      },
+      {
+            "id": "p-100",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「だからこそ聞く。」"
+      },
+      {
+            "id": "p-101",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「お前は。」"
+      },
+      {
+            "id": "p-102",
+            "kind": "dialogue",
+            "speaker": "久坂 玄瑞",
+            "text": "「先生の教えを、どう生きる。」"
       }
-    ],
+],
     "endingPassages": [
       {
         "id": "e-1",
@@ -1057,27 +1276,27 @@ export const chapters: Chapter[] = [
     ],
     "choices": [
       {
-        "id": "choice-1",
-        "label": "①",
-        "text": "①「先生の志は、古い世を壊し、新しい道を切り開くことで受け継ぐべきです。」",
-        "person": "高杉 晋作",
-        "value": "変革によって志を継ぐ"
+            "id": "choice-1",
+            "label": "①",
+            "text": "①「先生の志を、変革によって生かすべきです。」",
+            "person": "高杉 晋作",
+            "value": "変革によって志を継ぐ"
       },
       {
-        "id": "choice-2",
-        "label": "②",
-        "text": "②「先生の志は、命を懸けて実行することで受け継ぐべきです。」",
-        "person": "久坂 玄瑞",
-        "value": "決行によって志を継ぐ"
+            "id": "choice-2",
+            "label": "②",
+            "text": "②「先生の教えを、決行によって貫くべきです。」",
+            "person": "久坂 玄瑞",
+            "value": "決行によって志を継ぐ"
       },
       {
-        "id": "choice-3",
-        "label": "③",
-        "text": "③「先生の志は、人と組織に残し、未来へつなぐことで受け継ぐべきです。」",
-        "person": "桂 小五郎",
-        "value": "継承によって志を継ぐ"
+            "id": "choice-3",
+            "label": "③",
+            "text": "③「先生の志を、継承によって未来へつなぐべきです。」",
+            "person": "桂 小五郎",
+            "value": "継承によって志を継ぐ"
       }
-    ],
+],
     "notes": []
   },
   {
