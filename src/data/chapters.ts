@@ -865,8 +865,9 @@ export const chapters: Chapter[] = [
             "text": "久坂は拳を握る。"
       },
       {
-            "id": "p-42",
-            "kind": "dialogue",
+      {
+        "id": "p-42",
+        "kind": "dialogue",
             "speaker": "久坂 玄瑞",
             "text": "「攘夷を唱えるなら攘夷を行う。」"
       },
