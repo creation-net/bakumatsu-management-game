@@ -2823,3 +2823,19 @@ h3 {
     width: 100%;
   }
 }
+
+/* Development bottom back left align final */
+.development-bottom-nav {
+  justify-content: flex-start;
+}
+
+.development-bottom-nav .development-back-button {
+  min-width: 0;
+  width: 225px;
+}
+
+@media (max-width: 720px) {
+  .development-bottom-nav .development-back-button {
+    width: min(100%, 225px);
+  }
+}
