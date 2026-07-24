@@ -71,6 +71,38 @@ export function NovelApp() {
   const [progress, setProgress] = useState<ReadingProgress>(initialProgress);
   const [choiceTargetChapterId, setChoiceTargetChapterId] = useState<number | null>(null);
   const [expandedMenu, setExpandedMenu] = useState<AppMode | null>(null);
+  const topMenuRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (!expandedMenu) {
+      return;
+    }
+
+    const handleTopMenuPointerDown = (event: PointerEvent) => {
+      if (topMenuRef.current?.contains(event.target as Node)) {
+        return;
+      }
+      setExpandedMenu(null);
+    };
+
+    const handleTopMenuKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setExpandedMenu(null);
+      }
+    };
+
+    const closeTopMenu = () => setExpandedMenu(null);
+
+    document.addEventListener("pointerdown", handleTopMenuPointerDown);
+    document.addEventListener("keydown", handleTopMenuKeyDown);
+    window.addEventListener("scroll", closeTopMenu, { passive: true });
+
+    return () => {
+      document.removeEventListener("pointerdown", handleTopMenuPointerDown);
+      document.removeEventListener("keydown", handleTopMenuKeyDown);
+      window.removeEventListener("scroll", closeTopMenu);
+    };
+  }, [expandedMenu]);
 
   useEffect(() => {
     const storedMode = loadAppMode();
@@ -138,6 +170,7 @@ export function NovelApp() {
   }
 
   function showTitle() {
+    setExpandedMenu(null);
     setScreen("title");
   }
 
@@ -280,6 +313,7 @@ export function NovelApp() {
     }
 
     resetProgress(appMode);
+    setExpandedMenu(null);
     setProgress(initialProgress);
     setScreen("title");
   }
@@ -318,7 +352,7 @@ export function NovelApp() {
         } as CSSProperties
       }
     >
-      <nav className="top-bar compact-top-menu" aria-label="主要メニュー">
+      <nav ref={topMenuRef} className="top-bar compact-top-menu" aria-label="主要メニュー">
         <div className="compact-menu-row compact-menu-row-common" aria-label="共通操作">
           <button className="text-button compact-menu-button" type="button" onClick={showTitle}>
             タイトルへ戻る
