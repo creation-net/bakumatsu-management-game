@@ -6032,44 +6032,158 @@ export const chapters: Chapter[] = [
       {
         "id": "p-48",
         "kind": "dialogue",
-        "text": "「勝ったあとに残る日本まで考えなきゃいけねえ。」",
+        "text": "「それじゃあ。」",
         "speaker": "勝 海舟"
       },
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「最後に守るべきものも、日本でしょう。」",
+        "text": "「本当に徳川を朝敵（ちょうてき）にしちまう気ですかい。」",
         "speaker": "勝 海舟"
       },
       {
         "id": "p-50",
         "kind": "dialogue",
-        "text": "「日本も大切。」",
-        "speaker": "板倉 勝静"
+        "text": "「……。」",
+        "speaker": "松平 容保"
       },
       {
         "id": "p-51",
         "kind": "dialogue",
-        "text": "「軍も大切。」",
-        "speaker": "板倉 勝静"
+        "text": "「戦に勝つことだけじゃねえ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-52",
         "kind": "dialogue",
-        "text": "「しかし上様と徳川宗家を失えば、多くの者を守る道も失われます。」",
-        "speaker": "板倉 勝静"
+        "text": "「勝ったあとに。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-53",
         "kind": "dialogue",
-        "text": "「家だけ残っても、支える者が離れれば家は続きません。」",
-        "speaker": "松平 容保"
+        "text": "「この国がどうなるかまで考えなきゃならねえ。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-54",
         "kind": "dialogue",
-        "text": "「勝機がある今こそ戦うべきです。」",
+        "text": "「最後に守るべきものも。」",
+        "speaker": "勝 海舟"
+      },
+      {
+        "id": "p-54a",
+        "kind": "dialogue",
+        "text": "「日本でしょう。」",
+        "speaker": "勝 海舟"
+      },
+      {
+        "id": "p-54b",
+        "kind": "dialogue",
+        "text": "「勝殿のお考えには。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54c",
+        "kind": "dialogue",
+        "text": "「私も同じ思いです。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54d",
+        "kind": "dialogue",
+        "text": "「徳川が朝敵となれば。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54e",
+        "kind": "dialogue",
+        "text": "「宗家の存続そのものが危うくなります。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54f",
+        "kind": "dialogue",
+        "text": "「もし徳川が失われれば。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54g",
+        "kind": "dialogue",
+        "text": "「四百万石のもとで暮らす家臣。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54h",
+        "kind": "dialogue",
+        "text": "「領民。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54i",
+        "kind": "dialogue",
+        "text": "「その家族まで。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54j",
+        "kind": "dialogue",
+        "text": "「行き場を失うことになります。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54k",
+        "kind": "dialogue",
+        "text": "「私は。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54l",
+        "kind": "dialogue",
+        "text": "「徳川という家を守ることが。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54m",
+        "kind": "dialogue",
+        "text": "「多くの者を守ることにつながると考えています。」",
+        "speaker": "板倉 勝静"
+      },
+      {
+        "id": "p-54n",
+        "kind": "dialogue",
+        "text": "「だからと言って。」",
         "speaker": "松平 容保"
+      },
+      {
+        "id": "p-54o",
+        "kind": "dialogue",
+        "text": "「戦わずして。」",
+        "speaker": "松平 容保"
+      },
+      {
+        "id": "p-54p",
+        "kind": "dialogue",
+        "text": "「朝廷へ刃を向けたとの汚名だけを受け入れろと言うのですか。」",
+        "speaker": "松平 容保"
+      },
+      {
+        "id": "p-54q",
+        "kind": "dialogue",
+        "text": "「いや。」",
+        "speaker": "勝 海舟"
+      },
+      {
+        "id": "p-54r",
+        "kind": "dialogue",
+        "text": "「だからこそ。」",
+        "speaker": "勝 海舟"
+      },
+      {
+        "id": "p-54s",
+        "kind": "dialogue",
+        "text": "「朝敵にならねえ道を探すんです。」",
+        "speaker": "勝 海舟"
       },
       {
         "id": "p-55",
