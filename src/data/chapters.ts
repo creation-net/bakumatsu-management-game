@@ -5505,23 +5505,20 @@ export const chapters: Chapter[] = [
       {
         "id": "p-34a",
         "kind": "dialogue",
-        "text": "「薩長を討て！」"
- 	"speaker": "旧幕府軍兵"
-
+        "text": "「薩長を討て！」",
+        "speaker": "旧幕府軍兵たち"
       },
       {
         "id": "p-34b",
-        "kind": dialogue",
-        "text": "「徳川を守れ！」"
- 	"speaker": "旧幕府軍兵"
-
+        "kind": "dialogue",
+        "text": "「徳川を守れ！」",
+        "speaker": "旧幕府軍兵たち"
       },
       {
         "id": "p-34c",
         "kind": "dialogue",
-        "text": "「一歩も退くな！」"
- 	"speaker": "旧幕府軍兵"
-
+        "text": "「一歩も退くな！」",
+        "speaker": "旧幕府軍兵たち"
       },
       {
         "id": "p-34d",
@@ -5546,9 +5543,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-34h",
         "kind": "dialogue",
-        "text": "「上様がおられるぞ！」"
- 	"speaker": "旧幕府軍兵"
-
+        "text": "「上様がおられるぞ！」",
+        "speaker": "旧幕府軍兵たち"
       },
       {
         "id": "p-34i",
@@ -5558,9 +5554,8 @@ export const chapters: Chapter[] = [
       {
         "id": "p-34j",
         "kind": "dialogue",
-        "text": "「おおおおっ!!」"
- 	"speaker": "旧幕府軍兵"
-
+        "text": "「おおおおっ!!」",
+        "speaker": "旧幕府軍兵たち"
       },
       {
         "id": "p-34k",
