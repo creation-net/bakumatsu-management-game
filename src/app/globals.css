@@ -2367,3 +2367,24 @@ h3 {
     font-size: 0.92rem;
   }
 }
+
+
+/* Development mobile title duplicate fix */
+.development-hero-copy h1 .development-title-line-mobile {
+  display: none !important;
+}
+
+.development-hero-copy h1 .development-title-line-desktop {
+  display: block !important;
+}
+
+@media (max-width: 860px) {
+  .development-hero-copy h1 .development-title-line-desktop {
+    display: none !important;
+  }
+
+  .development-hero-copy h1 .development-title-line-mobile {
+    display: block !important;
+    white-space: nowrap;
+  }
+}
