@@ -1104,27 +1104,7 @@ const trialChapterSources: TrialChapterSource[] = [
         "speaker": "高杉 晋作",
         "text": "「お前は、どう思う。」"
       },
-      {
-        "id": "trial-6-p-30",
-        "kind": "narration",
-        "text": "部屋中の視線が村瀬へ集まる。"
-      },
-      {
-        "id": "trial-6-p-31",
-        "kind": "narration",
-        "text": "村瀬も部屋を見渡した。"
-      },
-      {
-        "id": "trial-6-p-32",
-        "kind": "narration",
-        "text": "（私は……。）"
-      },
-      {
-        "id": "trial-6-p-33",
-        "kind": "narration",
-        "text": "村瀬はゆっくり立ち上がった。"
-      }
-    ],
+        ],
     "choices": [
       {
         "label": "①",
