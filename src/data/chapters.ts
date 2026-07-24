@@ -3336,220 +3336,251 @@ export const chapters: Chapter[] = [
       {
         "id": "p-41",
         "kind": "dialogue",
-        "text": "「赤根、恭順派と手を取り合うて。」",
+        "text": "「赤根、」",
         "speaker": "高杉 晋作"
       },
+
+  "id": "p-42",
+        "kind": "dialogue",
+        "text": "「恭順派と手を取り合うて。」",
+        "speaker": "高杉 晋作"
+      },
+
+
       {
-        "id": "p-42",
+        "id": "p-43",
         "kind": "dialogue",
         "text": "「長州は変わるんか。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-43",
+        "id": "p-44",
         "kind": "narration",
         "text": "赤根は静かに答える。"
       },
       {
-        "id": "p-44",
+        "id": "p-45",
         "kind": "dialogue",
-        "text": "「戦うても、長州人同士が傷つけば、それは長州の勝ちとは言えん。」",
+        "text": "「戦うても、」",
         "speaker": "赤根 武人"
       },
+
+     "id": "p-46",
+        "kind": "dialogue",
+        "text": "「長州人同士が傷つけば、」",
+        "speaker": "赤根 武人"
+      },
+
+
+ {
+        "id": "p-47",
+        "kind": "dialogue",
+        "text": "「それは長州の勝ちとは言えん。」",
+        "speaker": "赤根 武人"
+      },
+
       {
-        "id": "p-45",
+        "id": "p-48",
         "kind": "narration",
         "text": "隊士たちは互いの顔を見合わせる。"
       },
       {
-        "id": "p-46",
+        "id": "p-49",
         "kind": "narration",
         "text": "部屋の隅。"
       },
       {
-        "id": "p-47",
+        "id": "p-50",
         "kind": "narration",
         "text": "村瀬の隣に座る若い隊士が小さくつぶやく。"
       },
       {
-        "id": "p-48",
+        "id": "p-51",
         "kind": "narration",
         "text": "長州藩士・山縣 狂介（やまがた きょうすけ／のちの山縣 有朋。長州藩出身の軍政家）だった。"
       },
       {
-        "id": "p-49",
+        "id": "p-52",
         "kind": "dialogue",
         "text": "「……俺には分からん、高杉さんの言うことも分かる。」",
         "speaker": "山縣 狂介"
       },
       {
-        "id": "p-50",
+        "id": "p-53",
         "kind": "dialogue",
         "text": "「赤根さんの言うことも分かる。」",
         "speaker": "山縣 狂介"
       },
       {
-        "id": "p-51",
+        "id": "p-54",
         "kind": "dialogue",
         "text": "「どっちも、長州を思うちょる。」",
         "speaker": "山縣 狂介"
       },
       {
-        "id": "p-52",
+        "id": "p-55",
         "kind": "narration",
         "text": "少し間を置く。"
       },
       {
-        "id": "p-53",
+        "id": "p-56",
         "kind": "dialogue",
-        "text": "「もし奇兵隊が割れたら、俺は、仲間へ銃を向けるんじゃろうか。」",
+        "text": "「もし奇兵隊が割れたら、」",
         "speaker": "山縣 狂介"
       },
+
+   "id": "p-57",
+        "kind": "dialogue",
+        "text": "「俺は、仲間へ銃を向けるんじゃろうか。」",
+        "speaker": "山縣 狂介"
+      },
+
+
       {
-        "id": "p-54",
+        "id": "p-58",
         "kind": "dialogue",
         "text": "「まだ決断する時ではない。情勢を見極めるべきじゃ。」",
         "speaker": "山縣 狂介"
       },
       {
-        "id": "p-55",
+        "id": "p-59",
         "kind": "dialogue",
         "text": "「恭順を唱えちょる者も、皆が同じ思いではない。」",
         "speaker": "山縣 狂介"
       },
       {
-        "id": "p-56",
+        "id": "p-60",
         "kind": "dialogue",
         "text": "「時が経てば。」",
         "speaker": "山縣 狂介"
       },
       {
-        "id": "p-57",
+        "id": "p-61",
         "kind": "dialogue",
         "text": "「必ず流れは変わる。」",
         "speaker": "山縣 狂介"
       },
       {
-        "id": "p-58",
+        "id": "p-62",
         "kind": "dialogue",
         "text": "「今動けば。」",
         "speaker": "山縣 狂介"
       },
       {
-        "id": "p-59",
+        "id": "p-63",
         "kind": "dialogue",
         "text": "「敵より先に、長州の仲間へ銃を向けることになる。」",
         "speaker": "山縣 狂介"
       },
       {
-        "id": "p-60",
+        "id": "p-64",
         "kind": "narration",
         "text": "山縣は村瀬を見る。"
       },
       {
-        "id": "p-61",
+        "id": "p-65",
         "kind": "dialogue",
         "text": "「お前は、どうしてそんな冷静でおられるんじゃ。」",
         "speaker": "山縣 狂介"
       },
       {
-        "id": "p-62",
+        "id": "p-66",
         "kind": "narration",
         "text": "村瀬は首を横に振った。"
       },
       {
-        "id": "p-63",
+        "id": "p-67",
         "kind": "narration",
         "text": "冷静だったわけではない。"
       },
       {
-        "id": "p-64",
+        "id": "p-68",
         "kind": "narration",
         "text": "誰よりも不安だった。"
       },
       {
-        "id": "p-65",
+        "id": "p-69",
         "kind": "narration",
         "text": "それでも。"
       },
       {
-        "id": "p-66",
+        "id": "p-70",
         "kind": "narration",
         "text": "今、自分に何ができるのか。"
       },
       {
-        "id": "p-67",
+        "id": "p-71",
         "kind": "narration",
         "text": "それだけを考えていた。"
       },
       {
-        "id": "p-68",
+        "id": "p-72",
         "kind": "narration",
         "text": "その時。"
       },
       {
-        "id": "p-69",
+        "id": "p-73",
         "kind": "narration",
         "text": "高杉が部屋を見渡す。"
       },
       {
-        "id": "p-70",
+        "id": "p-74",
         "kind": "dialogue",
         "text": "「異論がある者は、遠慮はいらん。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-71",
+        "id": "p-75",
         "kind": "dialogue",
         "text": "「今日。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-72",
+        "id": "p-76",
         "kind": "dialogue",
         "text": "「この場で決める。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-73",
+        "id": "p-77",
         "kind": "narration",
         "text": "村瀬を見る。"
       },
       {
-        "id": "p-74",
+        "id": "p-78",
         "kind": "dialogue",
         "text": "「村瀬！」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-75",
+        "id": "p-79",
         "kind": "dialogue",
         "text": "「何か言いたそうな顔しちょるな。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-76",
+        "id": "p-80",
         "kind": "dialogue",
         "text": "「お前は、どう思う。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-77",
+        "id": "p-81",
         "kind": "narration",
         "text": "部屋中の視線が村瀬へ集まる。"
       },
       {
-        "id": "p-78",
+        "id": "p-82",
         "kind": "narration",
         "text": "村瀬も部屋を見渡した。"
       },
       {
-        "id": "p-79",
+        "id": "p-83",
         "kind": "scene",
         "text": "（私は……。）"
       },
       {
-        "id": "p-80",
+        "id": "p-84",
         "kind": "narration",
         "text": "村瀬はゆっくり立ち上がった。"
       }
