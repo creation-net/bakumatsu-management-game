@@ -2839,3 +2839,25 @@ h3 {
     width: min(100%, 225px);
   }
 }
+
+/* Development bottom back left align final */
+.development-bottom-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: clamp(34px, 6vw, 70px);
+}
+
+.development-bottom-nav .development-back-button {
+  min-width: 0;
+  width: 225px;
+}
+
+@media (max-width: 720px) {
+  .development-bottom-nav {
+    margin-top: 34px;
+  }
+
+  .development-bottom-nav .development-back-button {
+    width: min(100%, 225px);
+  }
+}
