@@ -865,9 +865,6 @@ export const chapters: Chapter[] = [
             "text": "久坂は拳を握る。"
       },
       {
-      {
-      {
-      {
         "id": "p-42",
         "kind": "dialogue",
             "speaker": "久坂 玄瑞",
@@ -3342,8 +3339,8 @@ export const chapters: Chapter[] = [
         "text": "「赤根、」",
         "speaker": "高杉 晋作"
       },
-
-  "id": "p-42",
+      {
+        "id": "p-42",
         "kind": "dialogue",
         "text": "「恭順派と手を取り合うて。」",
         "speaker": "高杉 晋作"
