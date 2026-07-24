@@ -2802,3 +2802,24 @@ h3 {
     padding: 26px 16px 30px;
   }
 }
+
+/* Development bottom back button final */
+.development-bottom-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(34px, 6vw, 70px);
+}
+
+.development-bottom-nav .development-back-button {
+  min-width: min(100%, 260px);
+}
+
+@media (max-width: 720px) {
+  .development-bottom-nav {
+    margin-top: 34px;
+  }
+
+  .development-bottom-nav .development-back-button {
+    width: 100%;
+  }
+}

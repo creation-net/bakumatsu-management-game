@@ -145,6 +145,12 @@ export default function DevelopmentPage() {
               </li>
             </ul>
           </section>
+
+          <nav className="development-bottom-nav" aria-label="アプリへ戻る">
+            <a className="ghost-button development-back-button" href="/">
+              アプリに戻る
+            </a>
+          </nav>
         </article>
       </section>
     </main>
