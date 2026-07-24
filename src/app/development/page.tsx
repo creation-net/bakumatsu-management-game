@@ -29,10 +29,10 @@ function DevelopmentSection({ section }: { section: DevelopmentPageSection }) {
 
 export default function DevelopmentPage() {
   return (
-    <main className="app-shell">
+    <main className="app-shell development-shell">
       <section className="development-view" id="development-story">
-        <nav className="top-nav development-top-nav" aria-label="開発への思い">
-          <a className="ghost-button" href="/">
+        <nav className="top-nav development-top-nav" aria-label="開発に込めた思い">
+          <a className="ghost-button development-back-button" href="/">
             アプリに戻る
           </a>
         </nav>
@@ -42,7 +42,10 @@ export default function DevelopmentPage() {
           <div className="development-hero-shade" />
           <div className="development-hero-copy">
             <p className="eyebrow">開発に込めた思い</p>
-            <h1>歴史上の決断から、自分の経営資質を振り返る</h1>
+            <h1>
+              <span>歴史上の決断から</span>
+              <span>自分の経営資質を振り返る</span>
+            </h1>
             <p>『幕末・明治維新 経営資質診断』開発に込めた思い</p>
           </div>
         </header>
@@ -70,7 +73,7 @@ export default function DevelopmentPage() {
             </p>
 
             <div className="development-edition-grid">
-              <div className="development-edition-card">
+              <article className="development-edition-card">
                 <p className="edition-label">体験版</p>
                 <h3>物語を約10分で体験できます。</h3>
                 <p>
@@ -86,9 +89,9 @@ export default function DevelopmentPage() {
                     続きから始める
                   </a>
                 </div>
-              </div>
+              </article>
 
-              <div className="development-edition-card">
+              <article className="development-edition-card">
                 <p className="edition-label">完全版</p>
                 <h3>物語をじっくり体験できます。</h3>
                 <p>歴史人物たちの葛藤や対話、時代背景まで丁寧に描いた本編です。</p>
@@ -103,10 +106,10 @@ export default function DevelopmentPage() {
                     完全版を始める
                   </a>
                   <a className="ghost-button" href="/">
-                    完全版の続きから始める
+                    続きから始める
                   </a>
                 </div>
-              </div>
+              </article>
             </div>
           </section>
 
@@ -115,22 +118,26 @@ export default function DevelopmentPage() {
           ))}
 
           <section className="development-related">
+            <p className="eyebrow">Links</p>
             <h2>関連ページ</h2>
-            <p>アプリの活用、研修や企業支援での利用などについては、お問い合わせページからご連絡ください。</p>
+            <p>アプリの活用、研修や企業支援での利用などについては、各ページからご確認ください。</p>
             <ul>
               <li>
                 <a href={developmentPageLinks.youth} target="_blank" rel="noopener noreferrer">
-                  兵庫県中小企業診断士協会 青年部会 ホームページ
+                  <span>兵庫県中小企業診断士協会 青年部会</span>
+                  <small>青年部会の活動を見る</small>
                 </a>
               </li>
               <li>
                 <a href={developmentPageLinks.profile} target="_blank" rel="noopener noreferrer">
-                  開発者・岡本一幸の紹介ページ
+                  <span>開発者・岡本一幸の紹介ページ</span>
+                  <small>開発者のプロフィールを見る</small>
                 </a>
               </li>
               <li>
                 <a href={developmentPageLinks.contact} target="_blank" rel="noopener noreferrer">
-                  お問い合わせページ
+                  <span>お問い合わせページ</span>
+                  <small>研修・企業支援での活用を相談する</small>
                 </a>
               </li>
             </ul>
