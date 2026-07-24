@@ -43,8 +43,11 @@ export default function DevelopmentPage() {
           <div className="development-hero-copy">
             <p className="eyebrow">開発に込めた思い</p>
             <h1>
-              <span>歴史上の決断から</span>
-              <span>自分の経営資質を振り返る</span>
+              <span className="development-title-line development-title-line-desktop">歴史上の決断から</span>
+              <span className="development-title-line development-title-line-desktop">自分の経営資質を振り返る</span>
+              <span className="development-title-line development-title-line-mobile">歴史上の決断から</span>
+              <span className="development-title-line development-title-line-mobile">自分の経営資質を</span>
+              <span className="development-title-line development-title-line-mobile">振り返る</span>
             </h1>
             <p>『幕末・明治維新 経営資質診断』開発に込めた思い</p>
           </div>
