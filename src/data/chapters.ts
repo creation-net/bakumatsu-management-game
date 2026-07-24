@@ -3364,8 +3364,8 @@ export const chapters: Chapter[] = [
         "text": "「戦うても、」",
         "speaker": "赤根 武人"
       },
-
-     "id": "p-46",
+      {
+        "id": "p-46",
         "kind": "dialogue",
         "text": "「長州人同士が傷つけば、」",
         "speaker": "赤根 武人"
@@ -3428,8 +3428,8 @@ export const chapters: Chapter[] = [
         "text": "「もし奇兵隊が割れたら、」",
         "speaker": "山縣 狂介"
       },
-
-   "id": "p-57",
+      {
+        "id": "p-57",
         "kind": "dialogue",
         "text": "「俺は、仲間へ銃を向けるんじゃろうか。」",
         "speaker": "山縣 狂介"
