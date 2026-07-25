@@ -2861,3 +2861,10 @@ h3 {
     width: min(100%, 225px);
   }
 }
+
+/* Development hero Murase desktop head position final */
+@media (min-width: 861px) {
+  .development-hero img {
+    object-position: right 36%;
+  }
+}
