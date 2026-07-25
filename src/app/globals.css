@@ -2984,3 +2984,48 @@ h3 {
     font-size: clamp(1.85rem, 8.2vw, 2.55rem);
   }
 }
+
+/* Mobile title copy spacing like previous screenshot final */
+@media (max-width: 720px) {
+  .title-art {
+    align-content: start;
+    padding: 24px 14px 28px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .title-copy {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .title-copy h1 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(2.05rem, 10.2vw, 3.25rem);
+    line-height: 1.08;
+  }
+
+  .title-copy h1 span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .title-copy .subtitle,
+  .title-copy .lead {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .title-art {
+    padding: 22px 14px 28px;
+  }
+
+  .title-copy h1 {
+    font-size: clamp(1.95rem, 9.7vw, 2.95rem);
+  }
+}
