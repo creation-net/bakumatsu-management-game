@@ -2932,3 +2932,55 @@ h3 {
     font-size: clamp(2rem, 9.35vw, 3.1rem);
   }
 }
+
+/* Mobile top horizontal overflow fix final */
+@media (max-width: 720px) {
+  .app-shell,
+  .top-bar,
+  .scene-frame,
+  .title-screen,
+  .title-art,
+  .title-copy,
+  .experience-grid,
+  .experience-card,
+  .development-link-note {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .title-art {
+    overflow: hidden;
+  }
+
+  .title-copy {
+    max-width: min(88%, 23rem);
+  }
+
+  .title-copy h1 {
+    max-width: 100%;
+    font-size: clamp(1.95rem, 8.7vw, 3rem);
+    line-height: 1.12;
+  }
+
+  .title-copy h1 span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .experience-grid {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .title-copy {
+    max-width: min(90%, 21rem);
+  }
+
+  .title-copy h1 {
+    font-size: clamp(1.85rem, 8.2vw, 2.55rem);
+  }
+}
