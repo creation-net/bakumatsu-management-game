@@ -72,6 +72,7 @@ export function NovelApp() {
   const [choiceTargetChapterId, setChoiceTargetChapterId] = useState<number | null>(null);
   const [expandedMenu, setExpandedMenu] = useState<AppMode | null>(null);
   const topMenuRef = useRef<HTMLElement>(null);
+  const launchFromUrlHandledRef = useRef(false);
 
   useEffect(() => {
     if (!expandedMenu) {
@@ -209,6 +210,28 @@ export function NovelApp() {
     setProgress(nextProgress);
     setScreen(getScreenFromStep(nextProgress.currentStep));
   }
+
+  useEffect(() => {
+    if (!mounted || launchFromUrlHandledRef.current) {
+      return;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const requestedMode = params.get("mode");
+    const requestedAction = params.get("action");
+
+    if (
+      (requestedMode !== "trial" && requestedMode !== "full") ||
+      (requestedAction !== "start" && requestedAction !== "continue")
+    ) {
+      return;
+    }
+
+    launchFromUrlHandledRef.current = true;
+    window.history.replaceState(null, "", window.location.pathname);
+    startStory(requestedAction, requestedMode);
+  }, [mounted]);
+
 
   function switchMode(nextAppMode: AppMode) {
     setAppMode(nextAppMode);

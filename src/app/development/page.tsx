@@ -85,10 +85,10 @@ export default function DevelopmentPage() {
                 <p>選んだ回答をもとに、自分の経営資質を振り返ることができます。</p>
                 <p>歴史に詳しくない方や、まず雰囲気を体験したい方におすすめです。</p>
                 <div className="development-actions">
-                  <a className="primary-button" href="/">
+                  <a className="primary-button" href="/?mode=trial&action=start">
                     体験版を始める
                   </a>
-                  <a className="ghost-button" href="/">
+                  <a className="ghost-button" href="/?mode=trial&action=continue">
                     続きから始める
                   </a>
                 </div>
@@ -105,10 +105,10 @@ export default function DevelopmentPage() {
                   所要時間は約60分です。回答内容は自動で保存されるため、途中で中断しても、続きからご自身のペースで進められます。
                 </p>
                 <div className="development-actions">
-                  <a className="primary-button" href="/">
+                  <a className="primary-button" href="/?mode=full&action=start">
                     完全版を始める
                   </a>
-                  <a className="ghost-button" href="/">
+                  <a className="ghost-button" href="/?mode=full&action=continue">
                     続きから始める
                   </a>
                 </div>
