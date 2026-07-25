@@ -2868,3 +2868,41 @@ h3 {
     object-position: right 36%;
   }
 }
+
+/* Mobile title hero development-style layout final */
+@media (max-width: 720px) {
+  .title-art {
+    align-content: start;
+    min-height: auto;
+    padding: 86px 16px 28px;
+    background:
+      linear-gradient(90deg, rgba(5, 7, 10, 0.96) 0%, rgba(5, 7, 10, 0.82) 52%, rgba(5, 7, 10, 0.24) 100%),
+      linear-gradient(180deg, rgba(5, 7, 10, 0.08) 0%, rgba(5, 7, 10, 0.18) 34%, rgba(5, 7, 10, 0.92) 66%, rgba(5, 7, 10, 0.98) 100%),
+      var(--title-image),
+      linear-gradient(135deg, #080b10, #1a120e);
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 100% 100%, 100% auto, 100% 100%;
+    background-position: center, center, center top, center;
+  }
+
+  .title-copy {
+    max-width: 72%;
+  }
+
+  .title-copy .lead,
+  .title-copy .subtitle {
+    max-width: min(100%, 23rem);
+  }
+}
+
+@media (max-width: 430px) {
+  .title-art {
+    padding-top: 78px;
+    background-size: 100% 100%, 100% 100%, 112% auto, 100% 100%;
+    background-position: center, center, 58% top, center;
+  }
+
+  .title-copy {
+    max-width: 76%;
+  }
+}
