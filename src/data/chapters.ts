@@ -1011,7 +1011,7 @@ export const chapters: Chapter[] = [
           {
                 "id": "p-66",
                 "kind": "dialogue",
-                "text": "「桂。」",
+                "text": "「桂さん。」",
                 "speaker": "高杉 晋作"
           },
           {
@@ -1259,7 +1259,7 @@ export const chapters: Chapter[] = [
           {
                 "id": "choice-1",
                 "label": "①",
-                "text": "①先生の教えを最後まで実践する。",
+                "text": "①教えを実践して証明する。",
                 "person": "久坂 玄瑞",
                 "value": "決行によって志を継ぐ"
           },
