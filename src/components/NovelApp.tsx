@@ -716,7 +716,7 @@ function PassageList({ passages, compact = false }: { passages: Passage[]; compa
 
 function getChoiceQuestion(chapterId: number) {
   if (chapterId === 8) {
-    return "村瀬は、誰の軍に入るか";
+    return "村瀬は、大島をどうするか。";
   }
 
   if (chapterId === 10) {

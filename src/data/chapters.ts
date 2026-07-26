@@ -4604,444 +4604,759 @@ export const chapters: Chapter[] = [
   {
     "id": 8,
     "title": "第八章 第二次長州征討",
-    "subtitle": "誰の下で戦うか",
+    "subtitle": "大島を救うか、長州を守るか",
     "sourceFile": "第8話_第二次長州征討.docx",
-    "passages": [
-      {
-        "id": "p-1",
-        "kind": "narration",
-        "text": "慶応二年（1866年）。"
-      },
-      {
-        "id": "p-2",
-        "kind": "narration",
-        "text": "禁門の変。"
-      },
-      {
-        "id": "p-3",
-        "kind": "narration",
-        "text": "京都で多くの仲間を失った。"
-      },
-      {
-        "id": "p-4",
-        "kind": "narration",
-        "text": "第一次長州征討。"
-      },
-      {
-        "id": "p-5",
-        "kind": "narration",
-        "text": "戦うことすら許されず、長州は屈辱に耐えた。"
-      },
-      {
-        "id": "p-6",
-        "kind": "narration",
-        "text": "功山寺挙兵。"
-      },
-      {
-        "id": "p-7",
-        "kind": "narration",
-        "text": "長州は再び立ち上がった。"
-      },
-      {
-        "id": "p-8",
-        "kind": "narration",
-        "text": "そして今。"
-      },
-      {
-        "id": "p-9",
-        "kind": "narration",
-        "text": "幕府との最後の決戦が始まろうとしていた。"
-      },
-      {
-        "id": "p-10",
-        "kind": "scene",
-        "text": "【出陣前夜　軍議】"
-      },
-      {
-        "id": "p-11",
-        "kind": "narration",
-        "text": "村瀬は軍議へ呼ばれた。"
-      },
-      {
-        "id": "p-12",
-        "kind": "narration",
-        "text": "部屋には三人の指揮官がいる。"
-      },
-      {
-        "id": "p-13",
-        "kind": "narration",
-        "text": "桂 小五郎（かつら こごろう／長州藩の重臣）。"
-      },
-      {
-        "id": "p-14",
-        "kind": "narration",
-        "text": "高杉 晋作（たかすぎ しんさく／奇兵隊を率いる長州藩士）。"
-      },
-      {
-        "id": "p-15",
-        "kind": "narration",
-        "text": "村田 蔵六（むらた ぞうろく／兵学者）。"
-      },
-      {
-        "id": "p-16",
-        "kind": "narration",
-        "text": "静かな空気の中、桂が地図を広げる。"
-      },
-      {
-        "id": "p-17",
-        "kind": "dialogue",
-        "text": "「敵は、こちらの何倍もの兵力です。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-18",
-        "kind": "dialogue",
-        "text": "「ですが。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-19",
-        "kind": "dialogue",
-        "text": "「数で勝てぬ戦ほど、戦う場所が大事になります。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-20",
-        "kind": "narration",
-        "text": "地図を指す。"
-      },
-      {
-        "id": "p-21",
-        "kind": "dialogue",
-        "text": "「守る時は守る、退く時は退く。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-22",
-        "kind": "dialogue",
-        "text": "「兵を失うたら、次の戦はない。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-23",
-        "kind": "narration",
-        "text": "村瀬を見る。"
-      },
-      {
-        "id": "p-24",
-        "kind": "dialogue",
-        "text": "「指揮官は、勝つ責任だけじゃない、皆を生きて帰す責任も負うてます。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-25",
-        "kind": "narration",
-        "text": "静寂。"
-      },
-      {
-        "id": "p-26",
-        "kind": "narration",
-        "text": "高杉が笑いながら腕を組む。"
-      },
-      {
-        "id": "p-27",
-        "kind": "dialogue",
-        "text": "「桂さんらしいのう。」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-28",
-        "kind": "narration",
-        "text": "村瀬を見る。"
-      },
-      {
-        "id": "p-29",
-        "kind": "dialogue",
-        "text": "「禁門も、功山寺も、よう生き抜いたな。敵は強い。」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-30",
-        "kind": "dialogue",
-        "text": "「数は向こうが上じゃ、じゃが。勝負は数で決まらん！」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-31",
-        "kind": "dialogue",
-        "text": "「最後に戦うんは人じゃ。」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-32",
-        "kind": "dialogue",
-        "text": "「兵は、指揮官の背中を見て動く、わしが前へ出りゃ。」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-33",
-        "kind": "dialogue",
-        "text": "「皆も前へ出る！」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-34",
-        "kind": "dialogue",
-        "text": "「士気は、数の差をひっくり返す！」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-35",
-        "kind": "narration",
-        "text": "村田が静かに口を開く。"
-      },
-      {
-        "id": "p-36",
-        "kind": "dialogue",
-        "text": "「高杉さん、士気は大切です。」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-37",
-        "kind": "dialogue",
-        "text": "「しかし。」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-38",
-        "kind": "dialogue",
-        "text": "「士気だけでは勝てません。」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-39",
-        "kind": "narration",
-        "text": "地図へ印を書き込む。"
-      },
-      {
-        "id": "p-40",
-        "kind": "dialogue",
-        "text": "「兵糧、」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-41",
-        "kind": "dialogue",
-        "text": "「補給、」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-42",
-        "kind": "dialogue",
-        "text": "「情報、」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-43",
-        "kind": "dialogue",
-        "text": "「配置、」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-44",
-        "kind": "dialogue",
-        "text": "「これが整って初めて、兵は安心して戦えます。」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-45",
-        "kind": "dialogue",
-        "text": "「勝つ仕組みを作る。」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-46",
-        "kind": "dialogue",
-        "text": "「それが指揮官の仕事です。」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-47",
-        "kind": "narration",
-        "text": "高杉が笑う。"
-      },
-      {
-        "id": "p-48",
-        "kind": "dialogue",
-        "text": "「村田先生。」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-49",
-        "kind": "dialogue",
-        "text": "「相変わらず理屈じゃのう。」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-50",
-        "kind": "narration",
-        "text": "村田は穏やかに答える。"
-      },
-      {
-        "id": "p-51",
-        "kind": "dialogue",
-        "text": "「理屈で勝てる戦なら。」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-52",
-        "kind": "dialogue",
-        "text": "「理屈で勝つべきです。」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-53",
-        "kind": "narration",
-        "text": "桂は二人を見て微笑む。"
-      },
-      {
-        "id": "p-54",
-        "kind": "dialogue",
-        "text": "「二人とも、間違うちょらん。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-55",
-        "kind": "dialogue",
-        "text": "「戦には、勇気も、準備もいる。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-56",
-        "kind": "narration",
-        "text": "軍議が終わる。"
-      },
-      {
-        "id": "p-57",
-        "kind": "narration",
-        "text": "三人は立ち上がる。"
-      },
-      {
-        "id": "p-58",
-        "kind": "narration",
-        "text": "村瀬も一礼して部屋を出ようとする。"
-      },
-      {
-        "id": "p-59",
-        "kind": "narration",
-        "text": "桂が呼び止める。"
-      },
-      {
-        "id": "p-60",
-        "kind": "dialogue",
-        "text": "「村瀬君。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-61",
-        "kind": "dialogue",
-        "text": "「待ちなさい。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-62",
-        "kind": "narration",
-        "text": "村瀬は振り返る。"
-      },
-      {
-        "id": "p-63",
-        "kind": "dialogue",
-        "text": "「いよいよ。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-64",
-        "kind": "dialogue",
-        "text": "「それぞれの隊が動きます。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-65",
-        "kind": "narration",
-        "text": "高杉が笑う。"
-      },
-      {
-        "id": "p-66",
-        "kind": "dialogue",
-        "text": "「お前にも働いてもらうぞ。」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-67",
-        "kind": "narration",
-        "text": "村田もうなずく。"
-      },
-      {
-        "id": "p-68",
-        "kind": "dialogue",
-        "text": "「どの隊にも、役割があります。」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-69",
-        "kind": "narration",
-        "text": "桂が静かに言う。"
-      },
-      {
-        "id": "p-70",
-        "kind": "dialogue",
-        "text": "「戦の時まで、よう考えなさい。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-71",
-        "kind": "narration",
-        "text": "高杉。"
-      },
-      {
-        "id": "p-72",
-        "kind": "dialogue",
-        "text": "「誰の下で戦いたいか。」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-73",
-        "kind": "narration",
-        "text": "村田。"
-      },
-      {
-        "id": "p-74",
-        "kind": "dialogue",
-        "text": "「命を預ける相手は、自分で選ぶべきです。」",
-        "speaker": "村田 蔵六"
-      },
-      {
-        "id": "p-75",
-        "kind": "narration",
-        "text": "桂。"
-      },
-      {
-        "id": "p-76",
-        "kind": "dialogue",
-        "text": "「その決断が、お前自身の戦い方になる。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-77",
-        "kind": "narration",
-        "text": "高杉は村瀬の肩を軽く叩く。"
-      },
-      {
-        "id": "p-78",
-        "kind": "dialogue",
-        "text": "「どこへ来ても、長州のために戦うんは同じじゃ。」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-79",
-        "kind": "narration",
-        "text": "村瀬は三人へ深く頭を下げた。"
-      }
+    "passages":     [
+          {
+                "id": "p-1",
+                "kind": "narration",
+                "text": "慶応二年（1866年）。"
+          },
+          {
+                "id": "p-2",
+                "kind": "narration",
+                "text": "禁門の変。"
+          },
+          {
+                "id": "p-3",
+                "kind": "narration",
+                "text": "京都で多くの仲間を失った。"
+          },
+          {
+                "id": "p-4",
+                "kind": "narration",
+                "text": "第一次長州征討。"
+          },
+          {
+                "id": "p-5",
+                "kind": "narration",
+                "text": "戦うことすら許されず。"
+          },
+          {
+                "id": "p-6",
+                "kind": "narration",
+                "text": "長州は屈辱に耐えた。"
+          },
+          {
+                "id": "p-7",
+                "kind": "narration",
+                "text": "功山寺挙兵。"
+          },
+          {
+                "id": "p-8",
+                "kind": "narration",
+                "text": "長州は再び立ち上がった。"
+          },
+          {
+                "id": "p-9",
+                "kind": "narration",
+                "text": "そして今。"
+          },
+          {
+                "id": "p-10",
+                "kind": "narration",
+                "text": "幕府は。"
+          },
+          {
+                "id": "p-11",
+                "kind": "narration",
+                "text": "四方から長州へ攻め込んできた。"
+          },
+          {
+                "id": "p-12",
+                "kind": "scene",
+                "text": "【山口　藩庁】"
+          },
+          {
+                "id": "p-13",
+                "kind": "narration",
+                "text": "村瀬は軍議へ呼ばれた。"
+          },
+          {
+                "id": "p-14",
+                "kind": "narration",
+                "text": "部屋には三人の指揮官がいる。"
+          },
+          {
+                "id": "p-15",
+                "kind": "narration",
+                "text": "桂小五郎。"
+          },
+          {
+                "id": "p-16",
+                "kind": "narration",
+                "text": "高杉晋作。"
+          },
+          {
+                "id": "p-17",
+                "kind": "narration",
+                "text": "村田蔵六。"
+          },
+          {
+                "id": "p-18",
+                "kind": "narration",
+                "text": "部屋の中央には。"
+          },
+          {
+                "id": "p-19",
+                "kind": "narration",
+                "text": "長州全域の地図が広げられていた。"
+          },
+          {
+                "id": "p-20",
+                "kind": "narration",
+                "text": "桂は地図を静かに指す。"
+          },
+          {
+                "id": "p-21",
+                "kind": "narration",
+                "text": "東には。"
+          },
+          {
+                "id": "p-22",
+                "kind": "narration",
+                "text": "芸州口。"
+          },
+          {
+                "id": "p-23",
+                "kind": "narration",
+                "text": "広島方面から幕府軍が迫っている。"
+          },
+          {
+                "id": "p-24",
+                "kind": "narration",
+                "text": "北には。"
+          },
+          {
+                "id": "p-25",
+                "kind": "narration",
+                "text": "石州口。"
+          },
+          {
+                "id": "p-26",
+                "kind": "narration",
+                "text": "石見方面から長州へ攻め込もうとしている。"
+          },
+          {
+                "id": "p-27",
+                "kind": "narration",
+                "text": "西には。"
+          },
+          {
+                "id": "p-28",
+                "kind": "narration",
+                "text": "小倉口。"
+          },
+          {
+                "id": "p-29",
+                "kind": "narration",
+                "text": "関門海峡を挟み、小倉藩を中心とした軍が待ち構えている。"
+          },
+          {
+                "id": "p-30",
+                "kind": "narration",
+                "text": "そして南東の海には。"
+          },
+          {
+                "id": "p-31",
+                "kind": "narration",
+                "text": "大島口。"
+          },
+          {
+                "id": "p-32",
+                "kind": "narration",
+                "text": "瀬戸内海に浮かぶ周防大島がある。"
+          },
+          {
+                "id": "p-33",
+                "kind": "narration",
+                "text": "長州は。"
+          },
+          {
+                "id": "p-34",
+                "kind": "narration",
+                "text": "四方から包囲されていた。"
+          },
+          {
+                "id": "p-35",
+                "kind": "dialogue",
+                "text": "「幕府軍は四方から攻めてきます。兵力は、こちらの何倍もあります。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-36",
+                "kind": "dialogue",
+                "text": "「すべてを守ることはできません。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-37",
+                "kind": "narration",
+                "text": "静かな空気が流れる。"
+          },
+          {
+                "id": "p-38",
+                "kind": "narration",
+                "text": "そこへ一人の伝令が駆け込んできた。"
+          },
+          {
+                "id": "p-39",
+                "kind": "dialogue",
+                "text": "「申し上げます！」",
+                "speaker": "伝令"
+          },
+          {
+                "id": "p-40",
+                "kind": "dialogue",
+                "text": "「伊予松山藩が周防大島へ上陸し、島を占領いたしました！」",
+                "speaker": "伝令"
+          },
+          {
+                "id": "p-41",
+                "kind": "narration",
+                "text": "部屋が静まり返る。"
+          },
+          {
+                "id": "p-42",
+                "kind": "narration",
+                "text": "伝令は息を整え、さらに続ける。"
+          },
+          {
+                "id": "p-43",
+                "kind": "dialogue",
+                "text": "「島では領民への乱暴狼藉が相次いでおります！」",
+                "speaker": "伝令"
+          },
+          {
+                "id": "p-44",
+                "kind": "dialogue",
+                "text": "「家屋への放火や略奪も始まっております！」",
+                "speaker": "伝令"
+          },
+          {
+                "id": "p-45",
+                "kind": "narration",
+                "text": "村瀬は思わず息をのんだ。"
+          },
+          {
+                "id": "p-46",
+                "kind": "narration",
+                "text": "高杉が地図へ近づく。"
+          },
+          {
+                "id": "p-47",
+                "kind": "narration",
+                "text": "大島口の印を強く見つめる。"
+          },
+          {
+                "id": "p-48",
+                "kind": "dialogue",
+                "text": "「村瀬。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-49",
+                "kind": "dialogue",
+                "text": "「お前は禁門の変を生き延び、下関では異国の軍艦とも戦うた。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-50",
+                "kind": "dialogue",
+                "text": "「功山寺から始まった戦でも、俺たちと一緒に恭順派を退けた。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-51",
+                "kind": "narration",
+                "text": "高杉は村瀬の肩を軽く叩く。"
+          },
+          {
+                "id": "p-52",
+                "kind": "dialogue",
+                "text": "「もう若いだけの藩士じゃない。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-53",
+                "kind": "dialogue",
+                "text": "「お前の考えも聞かせてもらうぞ。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-54",
+                "kind": "narration",
+                "text": "桂と村田も静かにうなずく。"
+          },
+          {
+                "id": "p-55",
+                "kind": "dialogue",
+                "text": "「その前に、我々の考えを話しておきましょう。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-56",
+                "kind": "narration",
+                "text": "高杉が村田を見る。"
+          },
+          {
+                "id": "p-57",
+                "kind": "dialogue",
+                "text": "「村田先生。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-58",
+                "kind": "dialogue",
+                "text": "「奇兵隊は武士だけの軍じゃない。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-59",
+                "kind": "dialogue",
+                "text": "「百姓も、町人も、漁師も、みんな長州を守るために集まってくれた。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-60",
+                "kind": "dialogue",
+                "text": "「功山寺で俺たちが立てたんは、奇兵隊だけじゃない。長州そのものじゃ。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-61",
+                "kind": "dialogue",
+                "text": "「今度は俺たち武士が、その恩を返す番じゃ。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-62",
+                "kind": "dialogue",
+                "text": "「大島には奇兵隊の家族もおる。仲間もおる。見捨てることはできん。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-63",
+                "kind": "narration",
+                "text": "高杉は桂を見る。"
+          },
+          {
+                "id": "p-64",
+                "kind": "dialogue",
+                "text": "「兵をくれ。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-65",
+                "kind": "dialogue",
+                "text": "「奇兵隊なら、大島を取り返してみせる。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-66",
+                "kind": "dialogue",
+                "text": "「島を奪還できれば、長州中の者が、まだ戦えると思える。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-67",
+                "kind": "narration",
+                "text": "桂はすぐには答えない。"
+          },
+          {
+                "id": "p-68",
+                "kind": "narration",
+                "text": "地図の上に置かれた印を見つめる。"
+          },
+          {
+                "id": "p-69",
+                "kind": "narration",
+                "text": "芸州口。"
+          },
+          {
+                "id": "p-70",
+                "kind": "narration",
+                "text": "石州口。"
+          },
+          {
+                "id": "p-71",
+                "kind": "narration",
+                "text": "小倉口。"
+          },
+          {
+                "id": "p-72",
+                "kind": "narration",
+                "text": "そして。"
+          },
+          {
+                "id": "p-73",
+                "kind": "narration",
+                "text": "大島口。"
+          },
+          {
+                "id": "p-74",
+                "kind": "dialogue",
+                "text": "「高杉。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-75",
+                "kind": "dialogue",
+                "text": "「奪還できるだけの兵は出せません。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-76",
+                "kind": "narration",
+                "text": "高杉の表情が変わる。"
+          },
+          {
+                "id": "p-77",
+                "kind": "dialogue",
+                "text": "「なぜじゃ。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-78",
+                "kind": "dialogue",
+                "text": "「大島へ兵を集めれば、芸州口が薄くなる。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-79",
+                "kind": "dialogue",
+                "text": "「石州口も、小倉口も同じです。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-80",
+                "kind": "dialogue",
+                "text": "「敵は大島だけから来るのではありません。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-81",
+                "kind": "dialogue",
+                "text": "「じゃが、今も島の者が襲われちょる！」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-82",
+                "kind": "dialogue",
+                "text": "「分かっています。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-83",
+                "kind": "dialogue",
+                "text": "「分かっちょって、見捨てるんか！」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-84",
+                "kind": "dialogue",
+                "text": "「見捨てるとは言っていません。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-85",
+                "kind": "dialogue",
+                "text": "「援軍は送ります。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-86",
+                "kind": "narration",
+                "text": "高杉が桂を見る。"
+          },
+          {
+                "id": "p-87",
+                "kind": "dialogue",
+                "text": "「ですが、奪還を前提とした兵力は出しません。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-88",
+                "kind": "dialogue",
+                "text": "「それでは、取り返す気がないじゃないか！」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-89",
+                "kind": "dialogue",
+                "text": "「今の長州には、一つの島を取り返すために、他の三つの戦場を危険にさらす余裕はありません。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-90",
+                "kind": "dialogue",
+                "text": "「そんな援軍では島を救えん。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-91",
+                "kind": "dialogue",
+                "text": "「それでは、送られる兵も捨て石じゃ！」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-92",
+                "kind": "narration",
+                "text": "部屋の空気が張りつめる。"
+          },
+          {
+                "id": "p-93",
+                "kind": "narration",
+                "text": "村田が静かに口を開く。"
+          },
+          {
+                "id": "p-94",
+                "kind": "dialogue",
+                "text": "「私も、桂さんの案には反対です。」",
+                "speaker": "村田 蔵六"
+          },
+          {
+                "id": "p-95",
+                "kind": "dialogue",
+                "text": "「理由を聞きましょう。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-96",
+                "kind": "dialogue",
+                "text": "「奪還できない兵力なら、送るべきではありません。」",
+                "speaker": "村田 蔵六"
+          },
+          {
+                "id": "p-97",
+                "kind": "dialogue",
+                "text": "「少数の兵を送っても、伊予松山藩を退けることはできない。」",
+                "speaker": "村田 蔵六"
+          },
+          {
+                "id": "p-98",
+                "kind": "dialogue",
+                "text": "「兵を失い、他の戦場まで弱くするだけです。」",
+                "speaker": "村田 蔵六"
+          },
+          {
+                "id": "p-99",
+                "kind": "narration",
+                "text": "村田は地図の石州口を指す。"
+          },
+          {
+                "id": "p-100",
+                "kind": "dialogue",
+                "text": "「その兵を石州口へ回せば、敵の進軍を止められます。」",
+                "speaker": "村田 蔵六"
+          },
+          {
+                "id": "p-101",
+                "kind": "narration",
+                "text": "次に芸州口を指す。"
+          },
+          {
+                "id": "p-102",
+                "kind": "dialogue",
+                "text": "「芸州口の守りにも使える。」",
+                "speaker": "村田 蔵六"
+          },
+          {
+                "id": "p-103",
+                "kind": "dialogue",
+                "text": "「今の長州に、助けたという形を残すためだけに兵を使う余裕はありません。」",
+                "speaker": "村田 蔵六"
+          },
+          {
+                "id": "p-104",
+                "kind": "narration",
+                "text": "桂は村田を見る。"
+          },
+          {
+                "id": "p-105",
+                "kind": "dialogue",
+                "text": "「形だけではありません。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-106",
+                "kind": "dialogue",
+                "text": "「結果が伴わなければ、形です。」",
+                "speaker": "村田 蔵六"
+          },
+          {
+                "id": "p-107",
+                "kind": "narration",
+                "text": "桂は一瞬、言葉を止める。"
+          },
+          {
+                "id": "p-108",
+                "kind": "dialogue",
+                "text": "「大島を完全に放棄すれば、島の者だけの問題では済みません。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-109",
+                "kind": "dialogue",
+                "text": "「芸州口の領民も、石州口の領民も、次は自分たちが見捨てられると思うでしょう。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-110",
+                "kind": "dialogue",
+                "text": "「兵も同じです。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-111",
+                "kind": "dialogue",
+                "text": "「自分の家族が襲われても、藩は助けに来ない。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-112",
+                "kind": "dialogue",
+                "text": "「そう思うた兵が、最後まで戦えるでしょうか。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-113",
+                "kind": "narration",
+                "text": "村田は黙って桂を見る。"
+          },
+          {
+                "id": "p-114",
+                "kind": "dialogue",
+                "text": "「国は、兵の数だけでは支えられません。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-115",
+                "kind": "dialogue",
+                "text": "「領民が、この藩は自分たちを見捨てないと信じられることも必要です。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-116",
+                "kind": "dialogue",
+                "text": "「なら、取り返せばええ。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-117",
+                "kind": "dialogue",
+                "text": "「取り返せれば、それが一番よい。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-118",
+                "kind": "dialogue",
+                "text": "「ですが、奪還を約束して長州全体を失うことはできません。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-119",
+                "kind": "dialogue",
+                "text": "「救える者は救う。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-120",
+                "kind": "dialogue",
+                "text": "「敵を牽制する。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-121",
+                "kind": "dialogue",
+                "text": "「長州は大島を忘れていないと示す。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-122",
+                "kind": "dialogue",
+                "text": "「そこまでです。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-123",
+                "kind": "dialogue",
+                "text": "「俺は、そこまででは終われん。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-124",
+                "kind": "dialogue",
+                "text": "「行くなら、取り返す。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-125",
+                "kind": "dialogue",
+                "text": "「私は、一兵も送るべきではないと考えます。」",
+                "speaker": "村田 蔵六"
+          },
+          {
+                "id": "p-126",
+                "kind": "narration",
+                "text": "三人の視線が交わる。"
+          },
+          {
+                "id": "p-127",
+                "kind": "narration",
+                "text": "しばらくして。"
+          },
+          {
+                "id": "p-128",
+                "kind": "narration",
+                "text": "桂が村瀬を見る。"
+          },
+          {
+                "id": "p-129",
+                "kind": "dialogue",
+                "text": "「村瀬君。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-130",
+                "kind": "dialogue",
+                "text": "「お前は、何度も戦場を生き抜いてきました。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-131",
+                "kind": "dialogue",
+                "text": "「理想だけでは人を守れず、理屈だけでも人は動かないことを知っているはずです。」",
+                "speaker": "桂 小五郎"
+          },
+          {
+                "id": "p-132",
+                "kind": "narration",
+                "text": "高杉も村瀬を見る。"
+          },
+          {
+                "id": "p-133",
+                "kind": "dialogue",
+                "text": "「俺たちは、お前の考えを聞いちょる。」",
+                "speaker": "高杉 晋作"
+          },
+          {
+                "id": "p-134",
+                "kind": "narration",
+                "text": "村田が地図から顔を上げる。"
+          },
+          {
+                "id": "p-135",
+                "kind": "dialogue",
+                "text": "「限られた兵を、どこへ向けるべきか。」",
+                "speaker": "村田 蔵六"
+          },
+          {
+                "id": "p-136",
+                "kind": "dialogue",
+                "text": "「村瀬君なら、どう判断しますか。」",
+                "speaker": "村田 蔵六"
+          }
     ],
     "endingPassages": [
       {
@@ -5100,28 +5415,28 @@ export const chapters: Chapter[] = [
         "text": "長州の未来を支える一歩となっていく。"
       }
     ],
-    "choices": [
-      {
-        "id": "choice-1",
-        "label": "①",
-        "text": "① 桂 小五郎隊\n慎重な判断で仲間を守り、勝てる戦を積み重ねる。",
-        "person": "桂 小五郎",
-        "value": "桂 小五郎の考え"
-      },
-      {
-        "id": "choice-2",
-        "label": "②",
-        "text": "② 高杉 晋作隊\n自ら先頭に立ち、勇気で仲間の士気を高め、不利な戦況を覆す。",
-        "person": "高杉 晋作",
-        "value": "高杉 晋作の考え"
-      },
-      {
-        "id": "choice-3",
-        "label": "③",
-        "text": "③ 村田 蔵六隊\n合理的な準備と仕組みを整え、確実な勝利を目指す。",
-        "person": "村田 蔵六",
-        "value": "村田 蔵六の考え"
-      }
+    "choices":     [
+          {
+                "id": "choice-1",
+                "label": "①",
+                "text": "① 限定的な援軍を送り、長州全体と領民の信頼を守る。\n救える領民を救い、敵を牽制し、長州が領民を見捨てない藩であることを示す。",
+                "person": "桂 小五郎",
+                "value": "桂 小五郎の考え"
+          },
+          {
+                "id": "choice-2",
+                "label": "②",
+                "text": "② 奇兵隊を率いて、大島を奪還する。\n身分を超えて長州を支えた領民への恩に報い、勝利によって士気を高める。",
+                "person": "高杉 晋作",
+                "value": "高杉 晋作の考え"
+          },
+          {
+                "id": "choice-3",
+                "label": "③",
+                "text": "③ 大島へ兵を送らず、他の戦線へ集中する。\n限られた兵力を分散させず、重要な戦場へ集中させ、戦争全体を有利に進める。",
+                "person": "村田 蔵六",
+                "value": "村田 蔵六の考え"
+          }
     ],
     "notes": []
   },
