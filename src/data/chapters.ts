@@ -5042,236 +5042,230 @@ export const chapters: Chapter[] = [
       {
         "id": "p-81",
         "kind": "dialogue",
-        "text": "「理由を聞きましょう。」",
-        "speaker": "桂 小五郎"
-      },
-      {
-        "id": "p-82",
-        "kind": "dialogue",
         "text": "「奪還できない兵力なら、送るべきではありません。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-83",
+        "id": "p-82",
         "kind": "dialogue",
         "text": "「少数の兵を送っても、伊予松山藩を退けることはできない。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-84",
+        "id": "p-83",
         "kind": "dialogue",
         "text": "「兵を失い、他の戦場まで弱くするだけです。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-85",
+        "id": "p-84",
         "kind": "narration",
         "text": "村田は地図の石州口を指す。"
       },
       {
-        "id": "p-86",
+        "id": "p-85",
         "kind": "dialogue",
         "text": "「その兵を石州口へ回せば、敵の進軍を止められます。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-87",
+        "id": "p-86",
         "kind": "narration",
         "text": "次に芸州口を指す。"
       },
       {
-        "id": "p-88",
+        "id": "p-87",
         "kind": "dialogue",
         "text": "「芸州口の守りにも使える。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-89",
+        "id": "p-88",
         "kind": "dialogue",
         "text": "「今の長州に、助けたという形を残すためだけに兵を使う余裕はありません。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-90",
+        "id": "p-89",
         "kind": "narration",
         "text": "桂は村田を見る。"
       },
       {
-        "id": "p-91",
+        "id": "p-90",
         "kind": "dialogue",
         "text": "「形だけではありません。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-92",
+        "id": "p-91",
         "kind": "dialogue",
         "text": "「結果が伴わなければ、形です。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-93",
+        "id": "p-92",
         "kind": "narration",
         "text": "桂は一瞬、言葉を止める。"
       },
       {
-        "id": "p-94",
+        "id": "p-93",
         "kind": "dialogue",
         "text": "「大島を完全に放棄すれば、島の者だけの問題では済みません。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-95",
+        "id": "p-94",
         "kind": "dialogue",
         "text": "「芸州口の領民も、石州口の領民も、次は自分たちが見捨てられると思うでしょう。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-96",
+        "id": "p-95",
         "kind": "dialogue",
         "text": "「兵も同じです。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-97",
+        "id": "p-96",
         "kind": "dialogue",
         "text": "「自分の家族が襲われても、藩は助けに来ない。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-98",
+        "id": "p-97",
         "kind": "dialogue",
         "text": "「そう思うた兵が、最後まで戦えるでしょうか。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-99",
+        "id": "p-98",
         "kind": "narration",
         "text": "村田は黙って桂を見る。"
       },
       {
-        "id": "p-100",
+        "id": "p-99",
         "kind": "dialogue",
         "text": "「国は、兵の数だけでは支えられません。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-101",
+        "id": "p-100",
         "kind": "dialogue",
         "text": "「領民が、この藩は自分たちを見捨てないと信じられることも必要です。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-102",
+        "id": "p-101",
         "kind": "dialogue",
         "text": "「なら、取り返せばええ。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-103",
+        "id": "p-102",
         "kind": "dialogue",
         "text": "「取り返せれば、それが一番よい。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-104",
+        "id": "p-103",
         "kind": "dialogue",
         "text": "「ですが、一つの島を取り返すために。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-105",
+        "id": "p-104",
         "kind": "dialogue",
         "text": "「長州全体を危険にさらすことはできません。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-106",
+        "id": "p-105",
         "kind": "dialogue",
         "text": "「救える者は救う。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-107",
+        "id": "p-106",
         "kind": "dialogue",
         "text": "「敵を牽制する。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-108",
+        "id": "p-107",
         "kind": "dialogue",
         "text": "「長州は大島を忘れていないと示す。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-109",
+        "id": "p-108",
         "kind": "dialogue",
         "text": "「そこまでです。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-110",
+        "id": "p-109",
         "kind": "dialogue",
         "text": "「俺は、そこまででは終われん。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-111",
+        "id": "p-110",
         "kind": "dialogue",
         "text": "「行くなら、取り返す。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-112",
+        "id": "p-111",
         "kind": "dialogue",
         "text": "「私は、一兵も送るべきではないと考えます。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-113",
+        "id": "p-112",
         "kind": "narration",
         "text": "三人の視線が交わる。"
       },
       {
-        "id": "p-114",
+        "id": "p-113",
         "kind": "narration",
         "text": "しばらくして。"
       },
       {
-        "id": "p-115",
+        "id": "p-114",
         "kind": "narration",
         "text": "桂が村瀬を見る。"
       },
       {
-        "id": "p-116",
+        "id": "p-115",
         "kind": "dialogue",
         "text": "「村瀬君。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-117",
+        "id": "p-116",
         "kind": "dialogue",
         "text": "「君は、何度も戦場を生き抜いてきました。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-118",
+        "id": "p-117",
         "kind": "dialogue",
         "text": "「理想だけでは人を守れず、理屈だけでも人は動かないことを知っているはずです。」",
         "speaker": "桂 小五郎"
       },
       {
-        "id": "p-119",
+        "id": "p-118",
         "kind": "narration",
         "text": "村田が地図から顔を上げる。"
       },
       {
-        "id": "p-120",
+        "id": "p-119",
         "kind": "dialogue",
         "text": "「限られた兵を、どこへ向けるべきか。」",
         "speaker": "村田 蔵六"
       },
       {
-        "id": "p-121",
+        "id": "p-120",
         "kind": "dialogue",
         "text": "「村瀬君なら、どう判断しますか。」",
         "speaker": "村田 蔵六"
