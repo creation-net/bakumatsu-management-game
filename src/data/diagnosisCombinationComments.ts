@@ -485,7 +485,17 @@ export function getDiagnosisCombinationCautionAdvice(
   primaryId: DiagnosisCharacterId,
   secondaryId: DiagnosisCharacterId,
 ): string | undefined {
-  return orderedCombinationComments[`${primaryId}-${secondaryId}`]?.[1];
+  const paragraph = orderedCombinationComments[`${primaryId}-${secondaryId}`]?.[1];
+  if (!paragraph) {
+    return undefined;
+  }
+
+  const firstSentenceEnd = paragraph.indexOf("。");
+  const caution = firstSentenceEnd >= 0
+    ? paragraph.slice(firstSentenceEnd + 1).trim()
+    : "";
+
+  return caution || undefined;
 }
 
 export function getDiagnosisCombinationComments(
