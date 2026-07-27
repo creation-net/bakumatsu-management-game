@@ -4715,12 +4715,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-22",
         "kind": "narration",
-        "text": ""
+        "text": "広島方面から幕府軍が迫っている。"
       },
       {
         "id": "p-23",
         "kind": "narration",
-        "text": "広島方面から幕府軍が迫っている。"
+        "text": ""
       },
       {
         "id": "p-24",
@@ -4730,12 +4730,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-25",
         "kind": "narration",
-        "text": ""
+        "text": "石見方面から長州へ攻め込もうとしている。"
       },
       {
         "id": "p-26",
         "kind": "narration",
-        "text": "石見方面から長州へ攻め込もうとしている。"
+        "text": ""
       },
       {
         "id": "p-27",
@@ -4745,12 +4745,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-28",
         "kind": "narration",
-        "text": ""
+        "text": "関門海峡を挟み、小倉藩を中心とした軍が待ち構えている。"
       },
       {
         "id": "p-29",
         "kind": "narration",
-        "text": "関門海峡を挟み、小倉藩を中心とした軍が待ち構えている。"
+        "text": ""
       },
       {
         "id": "p-30",
@@ -4760,12 +4760,12 @@ export const chapters: Chapter[] = [
       {
         "id": "p-31",
         "kind": "narration",
-        "text": ""
+        "text": "瀬戸内海に浮かぶ周防大島がある。"
       },
       {
         "id": "p-32",
         "kind": "narration",
-        "text": "瀬戸内海に浮かぶ周防大島がある。"
+        "text": ""
       },
       {
         "id": "p-33",
@@ -4856,7 +4856,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-49",
         "kind": "dialogue",
-        "text": "「兵をくれ。」",
+        "text": "「桂さん、兵をくれ。」",
         "speaker": "高杉 晋作"
       },
       {
@@ -4867,49 +4867,49 @@ export const chapters: Chapter[] = [
       },
       {
         "id": "p-51",
-        "kind": "dialogue",
-        "text": "「島を奪還できれば、長州中の者が、まだ戦えると思える。」",
-        "speaker": "高杉 晋作"
-      },
-      {
-        "id": "p-52",
         "kind": "narration",
         "text": "高杉が村田を見る。"
       },
       {
-        "id": "p-53",
+        "id": "p-52",
         "kind": "dialogue",
         "text": "「村田先生。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-54",
+        "id": "p-53",
         "kind": "dialogue",
         "text": "「奇兵隊は武士だけの軍じゃない。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-55",
+        "id": "p-54",
         "kind": "dialogue",
         "text": "「百姓も、町人も、漁師も、みんな長州を守るために集まってくれた。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-56",
+        "id": "p-55",
         "kind": "dialogue",
         "text": "「功山寺で俺たちが立てたんは、奇兵隊だけじゃない。長州そのものじゃ。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-57",
+        "id": "p-56",
         "kind": "dialogue",
         "text": "「今度は俺たち武士が、その恩を返す番じゃ。」",
         "speaker": "高杉 晋作"
       },
       {
-        "id": "p-58",
+        "id": "p-57",
         "kind": "dialogue",
         "text": "「大島には奇兵隊の家族もおる。仲間もおる。見捨てることはできん。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-58",
+        "kind": "dialogue",
+        "text": "「島を奪還できれば、長州中の者が、まだ戦えると思える。」",
         "speaker": "高杉 晋作"
       },
       {
@@ -4926,7 +4926,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-61",
         "kind": "dialogue",
-        "text": "「奪還できるだけの兵は出せません。」",
+        "text": "「奪還できるだけの兵は出せん。」",
         "speaker": "桂 小五郎"
       },
       {
@@ -4949,13 +4949,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-65",
         "kind": "dialogue",
-        "text": "「石州口も、小倉口も同じです。」",
+        "text": "「石州口も、小倉口も同じじゃ。」",
         "speaker": "桂 小五郎"
       },
       {
         "id": "p-66",
         "kind": "dialogue",
-        "text": "「敵は大島だけから来るのではありません。」",
+        "text": "「敵は大島だけから来るのではない。」",
         "speaker": "桂 小五郎"
       },
       {
@@ -4967,7 +4967,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-68",
         "kind": "dialogue",
-        "text": "「分かっています。」",
+        "text": "「分かっている。」",
         "speaker": "桂 小五郎"
       },
       {
@@ -4979,13 +4979,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-70",
         "kind": "dialogue",
-        "text": "「見捨てるとは言っていません。」",
+        "text": "「見捨てるとは言っちょらん。」",
         "speaker": "桂 小五郎"
       },
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「援軍は送ります。」",
+        "text": "「援軍は送る。」",
         "speaker": "桂 小五郎"
       },
       {
@@ -4996,7 +4996,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-73",
         "kind": "dialogue",
-        "text": "「ですが、奪還を前提とした兵力は出しません。」",
+        "text": "「ただし、奪還を前提とした兵力は出さない。」",
         "speaker": "桂 小五郎"
       },
       {
@@ -5008,7 +5008,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-75",
         "kind": "dialogue",
-        "text": "「今の長州には、一つの島を取り返すために、他の三つの戦場を危険にさらす余裕はありません。」",
+        "text": "「今の長州には、一つの島を取り返すために、他の三つの戦場を危険にさらす余裕はない。」",
         "speaker": "桂 小五郎"
       },
       {
@@ -5169,13 +5169,13 @@ export const chapters: Chapter[] = [
       {
         "id": "p-103",
         "kind": "dialogue",
-        "text": "「ですが、一つの島を取り返すために。」",
+        "text": "「だが、一つの島を取り返すために。」",
         "speaker": "桂 小五郎"
       },
       {
         "id": "p-104",
         "kind": "dialogue",
-        "text": "「長州全体を危険にさらすことはできません。」",
+        "text": "「長州全体を危険にさらすことはできん。」",
         "speaker": "桂 小五郎"
       },
       {
@@ -5199,7 +5199,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-108",
         "kind": "dialogue",
-        "text": "「そこまでです。」",
+        "text": "「そこまでじゃ。」",
         "speaker": "桂 小五郎"
       },
       {
