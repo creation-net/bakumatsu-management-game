@@ -4715,7 +4715,7 @@ export const chapters: Chapter[] = [
           {
                 "id": "p-22",
                 "kind": "narration",
-                "text": "。"
+                "text": ""
           },
           {
                 "id": "p-23",
@@ -4740,7 +4740,7 @@ export const chapters: Chapter[] = [
           {
                 "id": "p-27",
                 "kind": "narration",
-                "text": "西には、小倉口。。"
+                "text": "西には、小倉口。"
           },
           {
                 "id": "p-28",
