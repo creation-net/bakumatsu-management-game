@@ -4710,12 +4710,12 @@ export const chapters: Chapter[] = [
           {
                 "id": "p-21",
                 "kind": "narration",
-                "text": "東には。"
+                "text": "東には、芸州口。"
           },
           {
                 "id": "p-22",
                 "kind": "narration",
-                "text": "芸州口。"
+                "text": "。"
           },
           {
                 "id": "p-23",
@@ -4725,12 +4725,12 @@ export const chapters: Chapter[] = [
           {
                 "id": "p-24",
                 "kind": "narration",
-                "text": "北には。"
+                "text": "北には、石州口。"
           },
           {
                 "id": "p-25",
                 "kind": "narration",
-                "text": "石州口。"
+                "text": ""
           },
           {
                 "id": "p-26",
@@ -4740,12 +4740,12 @@ export const chapters: Chapter[] = [
           {
                 "id": "p-27",
                 "kind": "narration",
-                "text": "西には。"
+                "text": "西には、小倉口。。"
           },
           {
                 "id": "p-28",
                 "kind": "narration",
-                "text": "小倉口。"
+                "text": ""
           },
           {
                 "id": "p-29",
@@ -4755,12 +4755,12 @@ export const chapters: Chapter[] = [
           {
                 "id": "p-30",
                 "kind": "narration",
-                "text": "そして南東の海には。"
+                "text": "そして南東の海には、大島口。"
           },
           {
                 "id": "p-31",
                 "kind": "narration",
-                "text": "大島口。"
+                "text": ""
           },
           {
                 "id": "p-32",
@@ -4770,12 +4770,12 @@ export const chapters: Chapter[] = [
           {
                 "id": "p-33",
                 "kind": "narration",
-                "text": "長州は。"
+                "text": "長州は四方から包囲されていた。"
           },
           {
                 "id": "p-34",
                 "kind": "narration",
-                "text": "四方から包囲されていた。"
+                "text": ""
           },
           {
                 "id": "p-35",

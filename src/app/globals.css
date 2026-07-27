@@ -3034,35 +3034,15 @@ h3 {
   padding-bottom: clamp(12px, 2vw, 20px);
 }
 
-.management-theme-title {
-  max-width: 920px;
-  margin: 20px 0 28px !important;
-  color: var(--ink-strong) !important;
+.management-theme-list {
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.management-theme-list li {
+  color: var(--ink-strong);
   font-family: var(--serif);
-  font-size: clamp(1.35rem, 3vw, 2rem) !important;
+  font-size: clamp(1.15rem, 2.5vw, 1.55rem);
   font-weight: 700;
-  line-height: 1.7 !important;
-}
-
-.management-theme-details {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 26px 42px;
-  padding-top: 22px;
-  border-top: 1px solid rgba(192, 160, 90, 0.28);
-}
-
-.management-theme-details h3 {
-  margin-bottom: 10px;
-}
-
-.management-theme-details p {
-  margin-bottom: 0;
-}
-
-@media (max-width: 720px) {
-  .management-theme-details {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 22px;
-  }
+  line-height: 1.7;
 }
