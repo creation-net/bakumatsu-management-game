@@ -4,7 +4,10 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { chapters as fullChapters } from "@/data/chapters";
 import { trialChapters } from "@/data/trialChapters";
-import { getDiagnosisCombinationComments } from "@/data/diagnosisCombinationComments";
+import {
+  getDiagnosisCombinationCautionAdvice,
+  getDiagnosisCombinationComments,
+} from "@/data/diagnosisCombinationComments";
 import { getDiagnosisManagementThemes } from "@/data/diagnosisManagementThemes";
 import { getDiagnosisJourneyLetter } from "@/data/diagnosisJourneyLetters";
 import { calculateDiagnosis } from "@/lib/diagnosis";
@@ -852,6 +855,7 @@ function ResultScreen({
   const { primary, secondary } = diagnosis;
   const diagnosisDate = formatDiagnosisDate(progress.updatedAt);
   const combinationComments = getDiagnosisCombinationComments(primary.id, secondary.id);
+  const combinationCautionAdvice = getDiagnosisCombinationCautionAdvice(primary.id, secondary.id);
   const managementThemes = getDiagnosisManagementThemes(primary.id, secondary.id);
   const journeyLetter = getDiagnosisJourneyLetter(primary.id, secondary.id);
   const reportRef = useRef<HTMLElement>(null);
@@ -968,7 +972,7 @@ function ResultScreen({
 
             <section className="diagnosis-section report-section report-page-two-start">
               <h2>あなたが経営するうえで気を付けたいこと</h2>
-              <p>{primary.cautionAdvice}</p>
+              <p>{combinationCautionAdvice ?? primary.cautionAdvice}</p>
             </section>
 
             <section className="diagnosis-section report-section">
@@ -977,7 +981,7 @@ function ResultScreen({
                 <div>
                   <h3>強み</h3>
                   <ul className="diagnosis-list">
-                    {[...primary.strengths, secondary.secondaryDescription].slice(0, 3).map((item) => (
+                    {[...primary.strengths.slice(0, 2), secondary.secondaryDescription].map((item) => (
                       <li key={item}>{item}</li>
                     ))}
                   </ul>

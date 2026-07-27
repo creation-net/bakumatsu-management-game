@@ -481,6 +481,13 @@ function getPositiveOpening(paragraph: string): string {
   return firstSentenceEnd >= 0 ? paragraph.slice(0, firstSentenceEnd + 1) : paragraph;
 }
 
+export function getDiagnosisCombinationCautionAdvice(
+  primaryId: DiagnosisCharacterId,
+  secondaryId: DiagnosisCharacterId,
+): string | undefined {
+  return orderedCombinationComments[`${primaryId}-${secondaryId}`]?.[1];
+}
+
 export function getDiagnosisCombinationComments(
   primaryId: DiagnosisCharacterId,
   secondaryId: DiagnosisCharacterId,
