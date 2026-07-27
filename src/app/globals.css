@@ -2754,6 +2754,13 @@ h3 {
   .compact-top-menu .text-button {
     width: 184px !important;
   }
+
+  .edition-dropdown .compact-menu-button,
+  .edition-dropdown .text-button {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
 }
 
 /* Ending result button nowrap final */
