@@ -5,6 +5,7 @@ import type { CSSProperties } from "react";
 import { chapters as fullChapters } from "@/data/chapters";
 import { trialChapters } from "@/data/trialChapters";
 import { getDiagnosisCombinationComments } from "@/data/diagnosisCombinationComments";
+import { getDiagnosisManagementTheme } from "@/data/diagnosisManagementThemes";
 import { getDiagnosisJourneyLetter } from "@/data/diagnosisJourneyLetters";
 import { calculateDiagnosis } from "@/lib/diagnosis";
 import { downloadDiagnosisReportPdf } from "@/lib/pdfExport";
@@ -851,6 +852,7 @@ function ResultScreen({
   const { primary, secondary } = diagnosis;
   const diagnosisDate = formatDiagnosisDate(progress.updatedAt);
   const combinationComments = getDiagnosisCombinationComments(primary.id, secondary.id);
+  const managementTheme = getDiagnosisManagementTheme(primary.id, secondary.id);
   const journeyLetter = getDiagnosisJourneyLetter(primary.id, secondary.id);
   const reportRef = useRef<HTMLElement>(null);
   const [pdfStatus, setPdfStatus] = useState<"idle" | "saving" | "saved">("idle");
@@ -998,6 +1000,20 @@ function ResultScreen({
               </ul>
             </section>
 
+            <section className="diagnosis-section report-section management-theme-section" aria-label="力を発揮しやすい経営テーマ">
+              <h2>あなたが力を発揮しやすい経営テーマ</h2>
+              <p className="management-theme-title">{managementTheme.theme}</p>
+              <div className="management-theme-details">
+                <div>
+                  <h3>なぜ向いているのか</h3>
+                  <p>{managementTheme.reason}</p>
+                </div>
+                <div>
+                  <h3>具体的な取り組み</h3>
+                  <p>{managementTheme.action}</p>
+                </div>
+              </div>
+            </section>
             <section className="diagnosis-section report-section journey-letter" aria-label="旅を終えたあなたへ">
               <h2>旅を終えたあなたへ</h2>
               {journeyLetter.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
