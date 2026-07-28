@@ -1353,747 +1353,725 @@ export const chapters: Chapter[] = [
       },
       {
         "id": "p-13",
-        "kind": "narration",
-        "text": "久坂は静かに笑った。"
+        "kind": "dialogue",
+        "text": "「お前自身の目で見て。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-14",
         "kind": "dialogue",
-        "text": "「先生は、いつも言われちょった。」",
-        "speaker": "久坂 玄瑞"
+        "text": "「耳で聞いて。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-15",
         "kind": "dialogue",
-        "text": "「まず相手の話を聞け。」",
-        "speaker": "久坂 玄瑞"
+        "text": "「その上で考えてこい。」",
+        "speaker": "桂 小五郎"
       },
       {
         "id": "p-16",
-        "kind": "dialogue",
-        "text": "「そして――。」",
-        "speaker": "久坂 玄瑞"
-      },
-      {
-        "id": "p-17",
-        "kind": "dialogue",
-        "text": "「お前はどう思う。」",
-        "speaker": "久坂 玄瑞"
-      },
-      {
-        "id": "p-18",
         "kind": "narration",
         "text": "村瀬は深く頭を下げた。"
       },
       {
-        "id": "p-19",
+        "id": "p-17",
         "kind": "narration",
         "text": "京都。"
       },
       {
-        "id": "p-20",
+        "id": "p-18",
         "kind": "narration",
         "text": "村瀬は藩の使者として各地を巡る。"
       },
       {
-        "id": "p-21",
+        "id": "p-19",
         "kind": "narration",
         "text": "情報を集め、人と会い、時代を動かす人物たちの考えに触れていく。"
       },
       {
-        "id": "p-22",
+        "id": "p-20",
         "kind": "narration",
         "text": "数日後"
       },
       {
-        "id": "p-23",
+        "id": "p-21",
         "kind": "scene",
         "text": "【料亭】"
       },
       {
-        "id": "p-24",
+        "id": "p-22",
         "kind": "narration",
         "text": "勝 海舟は湯呑みを置いた。"
       },
       {
-        "id": "p-25",
+        "id": "p-23",
         "kind": "dialogue",
         "text": "「長州の村瀬か。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-26",
+        "id": "p-24",
         "kind": "dialogue",
         "text": "「桂から話は聞いてる。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-27",
+        "id": "p-25",
         "kind": "dialogue",
         "text": "「若ぇのによく動いてるそうじゃねぇか。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-28",
+        "id": "p-26",
         "kind": "narration",
         "text": "村瀬が礼を述べると、勝は静かに語り始めた。"
       },
       {
-        "id": "p-29",
+        "id": "p-27",
         "kind": "dialogue",
         "text": "「幕府も古くなった。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-30",
+        "id": "p-28",
         "kind": "dialogue",
         "text": "「それは俺も認める。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-31",
+        "id": "p-29",
         "kind": "dialogue",
         "text": "「だが、古いという理由だけで捨てるのは惜しい。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-32",
+        "id": "p-30",
         "kind": "dialogue",
         "text": "「二百六十年積み重ねた仕組みには、多くの知恵がある。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-33",
+        "id": "p-31",
         "kind": "dialogue",
         "text": "「国を変えるなら、その知恵も生かさなきゃならねぇ。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-34",
+        "id": "p-32",
         "kind": "dialogue",
         "text": "「新しいものを作ることも大事だ。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-35",
+        "id": "p-33",
         "kind": "dialogue",
         "text": "「だが、積み重ねてきたものを生かせる者こそ、本当の改革者だと俺は思っている。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-36",
+        "id": "p-34",
         "kind": "narration",
         "text": "数日後"
       },
       {
-        "id": "p-37",
+        "id": "p-35",
         "kind": "scene",
         "text": "【薩摩藩邸】"
       },
       {
-        "id": "p-38",
+        "id": "p-36",
         "kind": "narration",
         "text": "西郷 吉之助は穏やかに村瀬を迎えた。"
       },
       {
-        "id": "p-39",
+        "id": "p-37",
         "kind": "dialogue",
         "text": "「長州の村瀬どんでごわすか。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-40",
+        "id": "p-38",
         "kind": "dialogue",
-        "text": "「勝どんのお考えは、わしも立派じゃと思いもす。」",
+        "text": "「勝どんのお考えは、おいも立派じゃと思いもす。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-41",
+        "id": "p-39",
         "kind": "dialogue",
         "text": "「長く国を支えてきた仕組みには、学ぶべきことが多か。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-42",
+        "id": "p-40",
         "kind": "narration",
         "text": "少し間を置く。"
       },
       {
-        "id": "p-43",
+        "id": "p-41",
         "kind": "dialogue",
         "text": "「じゃっどん。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-44",
+        "id": "p-42",
         "kind": "dialogue",
         "text": "「外国は待ってくれもはん。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-45",
+        "id": "p-43",
         "kind": "dialogue",
         "text": "「国を守るには、決断の時というものがありもす。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-46",
+        "id": "p-44",
         "kind": "dialogue",
         "text": "「どれほど立派な仕組みでも、時代に合わなくなれば、人は守れもはん。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-47",
+        "id": "p-45",
         "kind": "dialogue",
         "text": "「未来を守るためには。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-48",
+        "id": "p-46",
         "kind": "dialogue",
-        "text": "「変える覚悟もまた、国を守ることだとわしは思いもす。」",
+        "text": "「変える覚悟もまた、国を守ることだとおいは思いもす。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-49",
+        "id": "p-47",
         "kind": "narration",
         "text": "村瀬は静かに頷いた。"
       },
       {
-        "id": "p-50",
+        "id": "p-48",
         "kind": "narration",
         "text": "数日後"
       },
       {
-        "id": "p-51",
+        "id": "p-49",
         "kind": "scene",
         "text": "【近江屋】"
       },
       {
-        "id": "p-52",
+        "id": "p-50",
         "kind": "narration",
         "text": "坂本 龍馬は村瀬を見るなり笑った。"
       },
       {
-        "id": "p-53",
+        "id": "p-51",
         "kind": "dialogue",
         "text": "「おまんが村瀬か。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-54",
+        "id": "p-52",
         "kind": "dialogue",
         "text": "「長州の面白い若ぇ衆がおると聞いちょった。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-55",
+        "id": "p-53",
         "kind": "narration",
         "text": "紙を広げる。"
       },
       {
-        "id": "p-56",
+        "id": "p-54",
         "kind": "narration",
         "text": "そこには、"
       },
       {
-        "id": "p-57",
+        "id": "p-55",
         "kind": "narration",
         "text": "幕府。"
       },
       {
-        "id": "p-58",
+        "id": "p-56",
         "kind": "narration",
         "text": "朝廷。"
       },
       {
-        "id": "p-59",
+        "id": "p-57",
         "kind": "narration",
         "text": "薩摩。"
       },
       {
-        "id": "p-60",
+        "id": "p-58",
         "kind": "narration",
         "text": "長州。"
       },
       {
-        "id": "p-61",
+        "id": "p-59",
         "kind": "narration",
         "text": "と書かれていた。"
       },
       {
-        "id": "p-62",
+        "id": "p-60",
         "kind": "dialogue",
         "text": "「皆、日本を思うちゅう。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-63",
+        "id": "p-61",
         "kind": "dialogue",
         "text": "「じゃき、わしは誰が正しいとは思わん。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-64",
+        "id": "p-62",
         "kind": "dialogue",
         "text": "「じゃけんど。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-65",
+        "id": "p-63",
         "kind": "dialogue",
         "text": "「皆、自分の立場から日本を見ゆう。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-66",
+        "id": "p-64",
         "kind": "narration",
         "text": "紙の中央へ円を書く。"
       },
       {
-        "id": "p-67",
+        "id": "p-65",
         "kind": "dialogue",
         "text": "「わしは、日本全体を見たいがじゃ。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-68",
+        "id": "p-66",
         "kind": "dialogue",
         "text": "「幕府も。」",
+        "speaker": "坂本 龍馬"
+      },
+      {
+        "id": "p-67",
+        "kind": "dialogue",
+        "text": "「薩摩も。」",
+        "speaker": "坂本 龍馬"
+      },
+      {
+        "id": "p-68",
+        "kind": "dialogue",
+        "text": "「長州も。」",
         "speaker": "坂本 龍馬"
       },
       {
         "id": "p-69",
         "kind": "dialogue",
-        "text": "「薩摩も。」",
+        "text": "「力を貸し合えるようになったら。」",
         "speaker": "坂本 龍馬"
       },
       {
         "id": "p-70",
         "kind": "dialogue",
-        "text": "「長州も。」",
+        "text": "「もっと大きな力になる。」",
         "speaker": "坂本 龍馬"
       },
       {
         "id": "p-71",
         "kind": "dialogue",
-        "text": "「力を貸し合えるようになったら。」",
+        "text": "「誰が勝つかより。」",
         "speaker": "坂本 龍馬"
       },
       {
         "id": "p-72",
         "kind": "dialogue",
-        "text": "「もっと大きな力になる。」",
-        "speaker": "坂本 龍馬"
-      },
-      {
-        "id": "p-73",
-        "kind": "dialogue",
-        "text": "「誰が勝つかより。」",
-        "speaker": "坂本 龍馬"
-      },
-      {
-        "id": "p-74",
-        "kind": "dialogue",
         "text": "「皆が力を合わせる仕組みを作りたい。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-75",
+        "id": "p-73",
         "kind": "narration",
         "text": "その夜。"
       },
       {
-        "id": "p-76",
+        "id": "p-74",
         "kind": "narration",
         "text": "龍馬の計らいで、小さな座敷に三人が集まった。"
       },
       {
-        "id": "p-77",
+        "id": "p-75",
         "kind": "narration",
         "text": "村瀬は末席で静かに耳を傾ける。"
       },
       {
-        "id": "p-78",
+        "id": "p-76",
         "kind": "dialogue",
         "text": "「龍馬。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-79",
+        "id": "p-77",
         "kind": "dialogue",
         "text": "「皆が力を合わせる。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-80",
+        "id": "p-78",
         "kind": "dialogue",
         "text": "「その志は立派だ。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-81",
+        "id": "p-79",
         "kind": "dialogue",
         "text": "「だが、人が集まるだけでは国は動かねぇ。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-82",
+        "id": "p-80",
         "kind": "dialogue",
         "text": "「責任を負う者がいて。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-83",
+        "id": "p-81",
         "kind": "dialogue",
         "text": "「秩序があるからこそ。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-84",
+        "id": "p-82",
         "kind": "dialogue",
         "text": "「人は安心して暮らせる。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-85",
+        "id": "p-83",
         "kind": "dialogue",
         "text": "「その土台があって初めて、新しい力も生きる。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-86",
+        "id": "p-84",
         "kind": "dialogue",
         "text": "「勝さん。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-87",
+        "id": "p-85",
         "kind": "dialogue",
         "text": "「その土台は大事じゃ。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-88",
+        "id": "p-86",
         "kind": "dialogue",
         "text": "「じゃけんど。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-89",
+        "id": "p-87",
         "kind": "dialogue",
         "text": "「土台だけでは家は広がらん。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-90",
+        "id": "p-88",
         "kind": "dialogue",
         "text": "「薩摩も。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-91",
+        "id": "p-89",
         "kind": "dialogue",
         "text": "「長州も。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-92",
+        "id": "p-90",
         "kind": "dialogue",
         "text": "「幕府も。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-93",
+        "id": "p-91",
         "kind": "dialogue",
         "text": "「皆が別々の家を建てゆう。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-94",
+        "id": "p-92",
         "kind": "dialogue",
         "text": "「その家をつなぐ道がなければ、日本は一つになれんがじゃ。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-95",
+        "id": "p-93",
         "kind": "dialogue",
         "text": "「坂本どん。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-96",
+        "id": "p-94",
         "kind": "dialogue",
         "text": "「皆が手を取り合える国。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-97",
+        "id": "p-95",
         "kind": "dialogue",
-        "text": "「それは、わしも願いもす。」",
+        "text": "「それは、おいも願いもす。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-98",
+        "id": "p-96",
         "kind": "dialogue",
         "text": "「じゃっどん。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-99",
+        "id": "p-97",
         "kind": "dialogue",
         "text": "「その未来を待っている間にも、日本は追い詰められていきもす。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-100",
+        "id": "p-98",
         "kind": "dialogue",
         "text": "「決断を先送りにすれば。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-101",
+        "id": "p-99",
         "kind": "dialogue",
         "text": "「未来そのものが失われるかもしれもはん。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-102",
+        "id": "p-100",
         "kind": "dialogue",
         "text": "「未来を守るには。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-103",
+        "id": "p-101",
         "kind": "dialogue",
         "text": "「覚悟を持って一歩を踏み出す者が必要でごわす。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-104",
+        "id": "p-102",
         "kind": "dialogue",
         "text": "「西郷さん。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-105",
+        "id": "p-103",
         "kind": "dialogue",
         "text": "「その覚悟には頭が下がる。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-106",
+        "id": "p-104",
         "kind": "dialogue",
         "text": "「だが。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-107",
+        "id": "p-105",
         "kind": "dialogue",
         "text": "「変えることだけを急げば。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-108",
+        "id": "p-106",
         "kind": "dialogue",
         "text": "「今、この国を支えている人たちはどうなる。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-109",
+        "id": "p-107",
         "kind": "dialogue",
         "text": "「武士も。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-110",
+        "id": "p-108",
         "kind": "dialogue",
         "text": "「町人も。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-111",
+        "id": "p-109",
         "kind": "dialogue",
         "text": "「百姓も。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-112",
+        "id": "p-110",
         "kind": "dialogue",
         "text": "「皆、明日を生きている。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-113",
+        "id": "p-111",
         "kind": "dialogue",
         "text": "「国を変えるなら。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-114",
+        "id": "p-112",
         "kind": "dialogue",
         "text": "「その暮らしまで守る道を考えなけりゃならねぇ。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-115",
+        "id": "p-113",
         "kind": "dialogue",
         "text": "「勝どん。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-116",
+        "id": "p-114",
         "kind": "dialogue",
         "text": "「だからこそ。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-117",
+        "id": "p-115",
         "kind": "dialogue",
         "text": "「今、決めるのでごわす。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-118",
+        "id": "p-116",
         "kind": "dialogue",
         "text": "「国そのものが失われれば。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-119",
+        "id": "p-117",
         "kind": "dialogue",
         "text": "「守る暮らしもなくなってしまいもす。」",
         "speaker": "西郷 吉之助"
       },
       {
-        "id": "p-120",
+        "id": "p-118",
         "kind": "dialogue",
         "text": "「勝さんは。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-121",
+        "id": "p-119",
         "kind": "dialogue",
         "text": "「国を支える土台を守ろうとしゆう。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-122",
+        "id": "p-120",
         "kind": "dialogue",
         "text": "「西郷さんは。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-123",
+        "id": "p-121",
         "kind": "dialogue",
         "text": "「未来を守るために動こうとしゆう。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-124",
+        "id": "p-122",
         "kind": "dialogue",
         "text": "「どちらも日本のためじゃ。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-125",
+        "id": "p-123",
         "kind": "narration",
         "text": "少し笑う。"
       },
       {
-        "id": "p-126",
+        "id": "p-124",
         "kind": "dialogue",
         "text": "「ほいたら。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-127",
+        "id": "p-125",
         "kind": "dialogue",
         "text": "「わしは。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-128",
+        "id": "p-126",
         "kind": "dialogue",
         "text": "「その二つをつなぎたい。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-129",
+        "id": "p-127",
         "kind": "dialogue",
         "text": "「立場を越えて。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-130",
+        "id": "p-128",
         "kind": "dialogue",
         "text": "「皆が日本のために力を貸せる国。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-131",
+        "id": "p-129",
         "kind": "dialogue",
         "text": "「そんな国を見てみたいがじゃ。」",
         "speaker": "坂本 龍馬"
       },
       {
-        "id": "p-132",
+        "id": "p-130",
         "kind": "narration",
         "text": "部屋は静まり返る。"
       },
       {
-        "id": "p-133",
+        "id": "p-131",
         "kind": "narration",
         "text": "三人とも、相手を見つめる。"
       },
       {
-        "id": "p-134",
+        "id": "p-132",
         "kind": "narration",
         "text": "否定する者はいない。"
       },
       {
-        "id": "p-135",
+        "id": "p-133",
         "kind": "narration",
         "text": "互いの言葉を受け止め、その先にある日本の未来を考えていた。"
       },
       {
-        "id": "p-136",
+        "id": "p-134",
         "kind": "narration",
         "text": "やがて勝が村瀬へ視線を向ける。"
       },
       {
-        "id": "p-137",
+        "id": "p-135",
         "kind": "dialogue",
         "text": "「長州の若ぇ衆。」",
         "speaker": "勝 海舟"
       },
       {
+        "id": "p-136",
+        "kind": "dialogue",
+        "text": "「人の話ぁ聞いて。」",
+        "speaker": "勝 海舟"
+      },
+      {
+        "id": "p-137",
+        "kind": "dialogue",
+        "text": "「おめぇは何を思った。」",
+        "speaker": "勝 海舟"
+      },
+      {
         "id": "p-138",
         "kind": "dialogue",
-        "text": "「今日は、一言も口を挟まなかったな。」",
-        "speaker": "勝 海舟"
-      },
-      {
-        "id": "p-139",
-        "kind": "dialogue",
-        "text": "「ずっと聞いていた。」",
-        "speaker": "勝 海舟"
-      },
-      {
-        "id": "p-140",
-        "kind": "dialogue",
-        "text": "「なら聞こう。」",
-        "speaker": "勝 海舟"
-      },
-      {
-        "id": "p-141",
-        "kind": "narration",
-        "text": "少し笑う。"
-      },
-      {
-        "id": "p-142",
-        "kind": "dialogue",
-        "text": "「お前は、どう思う。」",
+        "text": "「聞かせてみな。」",
         "speaker": "勝 海舟"
       }
     ],
