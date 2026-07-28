@@ -357,8 +357,8 @@ const trialChapterSources: TrialChapterSource[] = [
   },
   {
     "id": 3,
-    "title": "第三章 京都料亭にて",
-    "subtitle": "日本を動かす都",
+    "title": "第三章 京都の論客",
+    "subtitle": "未来をどう築くか",
     "passages": [
       {
         "id": "trial-3-p-1",
