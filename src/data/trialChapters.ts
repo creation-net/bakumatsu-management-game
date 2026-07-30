@@ -194,163 +194,191 @@ const trialChapterSources: TrialChapterSource[] = [
       {
         "id": "trial-2-p-1",
         "kind": "narration",
-        "text": "安政六年（1859年）。"
+        "text": "吉田 松陰は、江戸・伝馬町牢屋敷で処刑された。"
       },
       {
         "id": "trial-2-p-2",
         "kind": "narration",
-        "text": "吉田 松陰は江戸・伝馬町牢屋敷で処刑された。"
+        "text": "享年二十九。"
       },
       {
         "id": "trial-2-p-3",
         "kind": "narration",
-        "text": "享年二十九。"
+        "text": "その知らせが届いた松下村塾には、静かな時間だけが流れていた。"
       },
       {
         "id": "trial-2-p-4",
         "kind": "narration",
-        "text": "先生は最後まで、日本の未来を信じていた。"
+        "text": "先生が読まれていた本。"
       },
       {
         "id": "trial-2-p-5",
-        "kind": "scene",
-        "text": "【松下村塾】"
+        "kind": "narration",
+        "text": "壁に掛けられた掛け軸。"
       },
       {
         "id": "trial-2-p-6",
         "kind": "narration",
-        "text": "松陰を失った松下村塾には、静かな時間が流れていた。"
+        "text": "先生だけがいない。"
       },
       {
         "id": "trial-2-p-7",
-        "kind": "narration",
-        "text": "誰もが悲しみを抱えながら、それぞれの志を胸に秘めている。"
+        "kind": "dialogue",
+        "speaker": "久坂 玄瑞",
+        "text": "「先生は、この国の進むべき道を、命を懸けて示してくださいました。」"
       },
       {
         "id": "trial-2-p-8",
         "kind": "dialogue",
-        "speaker": "高杉 晋作",
-        "text": "「先生は死んだ。」"
+        "speaker": "久坂 玄瑞",
+        "text": "「ですが、そのお考えは、まだ私たちの行動にはなっておりません。」"
       },
       {
         "id": "trial-2-p-9",
         "kind": "dialogue",
-        "speaker": "高杉 晋作",
-        "text": "「じゃが、先生の志まで終わらせちゃならん。」"
+        "speaker": "久坂 玄瑞",
+        "text": "「私は、先生から学んだことを。」"
       },
       {
         "id": "trial-2-p-10",
         "kind": "dialogue",
-        "speaker": "高杉 晋作",
-        "text": "「古い世を壊し、新しい日本をつくる。」"
+        "speaker": "久坂 玄瑞",
+        "text": "「まず、この手で実践します。」"
       },
       {
         "id": "trial-2-p-11",
         "kind": "dialogue",
-        "speaker": "高杉 晋作",
-        "text": "「そのために、時代に合わせて戦い方も変えにゃならん。」"
+        "speaker": "久坂 玄瑞",
+        "text": "「その先に何があるのか。」"
       },
       {
         "id": "trial-2-p-12",
         "kind": "dialogue",
-        "speaker": "高杉 晋作",
-        "text": "「わしは、変革によって先生の志を継ぐ。」"
+        "speaker": "久坂 玄瑞",
+        "text": "「自分の目で確かめたいのです。」"
       },
       {
         "id": "trial-2-p-13",
         "kind": "dialogue",
-        "speaker": "久坂 玄瑞",
-        "text": "「先生は正しいと思う道のために命を懸けられた。」"
+        "speaker": "高杉 晋作",
+        "text": "「じゃが先生は、答えだけを残されたわけではなかろう。」"
       },
       {
         "id": "trial-2-p-14",
         "kind": "dialogue",
-        "speaker": "久坂 玄瑞",
-        "text": "「ならば我らも、志を言葉で終わらせてはならん。」"
+        "speaker": "高杉 晋作",
+        "text": "「先生は何度も。」"
       },
       {
         "id": "trial-2-p-15",
         "kind": "dialogue",
-        "speaker": "久坂 玄瑞",
-        "text": "「私は、命を懸けて志を実行します。」"
+        "speaker": "高杉 晋作",
+        "text": "「『お前はどう思う。』」"
       },
       {
         "id": "trial-2-p-16",
         "kind": "dialogue",
-        "speaker": "桂 小五郎",
-        "text": "「二人とも先生を思う気持ちは同じじゃ。」"
+        "speaker": "高杉 晋作",
+        "text": "「そう聞かれた。」"
       },
       {
         "id": "trial-2-p-17",
         "kind": "dialogue",
-        "speaker": "桂 小五郎",
-        "text": "「じゃが、一人の命だけでは国は変わらん。」"
+        "speaker": "高杉 晋作",
+        "text": "「わしは、時代と向き合い。」"
       },
       {
         "id": "trial-2-p-18",
         "kind": "dialogue",
-        "speaker": "桂 小五郎",
-        "text": "「志を人へ伝え、未来へ受け継ぐ。」"
+        "speaker": "高杉 晋作",
+        "text": "「自分の頭で考え続ける。」"
       },
       {
         "id": "trial-2-p-19",
         "kind": "dialogue",
-        "speaker": "桂 小五郎",
-        "text": "「私は、継承によって先生の志を守りたい。」"
+        "speaker": "高杉 晋作",
+        "text": "「先生の答えを守るだけではなく。」"
       },
       {
         "id": "trial-2-p-20",
-        "kind": "narration",
-        "text": "村瀬は三人の言葉を静かに聞いていた。"
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「その考え方を受け継ぎたい。」"
       },
       {
         "id": "trial-2-p-21",
-        "kind": "narration",
-        "text": "どれも先生を思う気持ちから生まれた考えだった。"
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「二人の考えも大切だ。」"
       },
       {
         "id": "trial-2-p-22",
-        "kind": "narration",
-        "text": "その時、先生の言葉が頭をよぎる。"
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「だが。」"
       },
       {
         "id": "trial-2-p-23",
         "kind": "dialogue",
-        "speaker": "吉田 松陰",
-        "text": "「諸君、狂いたまえ。」"
+        "speaker": "桂 小五郎",
+        "text": "「動く者が倒れれば、志まで失われるかもしれない。」"
       },
       {
         "id": "trial-2-p-24",
-        "kind": "narration",
-        "text": "久坂が村瀬へ目を向ける。"
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「先生は亡くなられた。」"
       },
       {
         "id": "trial-2-p-25",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「それでも先生の志は、今もここに残っている。」"
+      },
+      {
+        "id": "trial-2-p-26",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「私は、その志を。」"
+      },
+      {
+        "id": "trial-2-p-27",
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「次の仲間へつないでいきたい。」"
+      },
+      {
+        "id": "trial-2-p-28",
+        "kind": "narration",
+        "text": "三人は村瀬を見る。"
+      },
+      {
+        "id": "trial-2-p-29",
         "kind": "dialogue",
         "speaker": "久坂 玄瑞",
         "text": "「村瀬。」"
       },
       {
-        "id": "trial-2-p-26",
+        "id": "trial-2-p-30",
         "kind": "dialogue",
         "speaker": "久坂 玄瑞",
-        "text": "「お前なら、どうする。」"
+        "text": "「先生から、何を受け継ぐ。」"
       }
     ],
     "choices": [
       {
         "label": "①",
-        "text": "先生の志は、古い世を壊し、新しい道を切り開くことで受け継ぐべきです。\n（変革によって志を継ぐ）",
-        "value": "変革によって志を継ぐ"
-      },
-      {
-        "label": "②",
-        "text": "先生の志は、命を懸けて実行することで受け継ぐべきです。\n（決行によって志を継ぐ）",
+        "text": "教えを実践して証明する。\n（決行によって志を継ぐ）",
         "value": "決行によって志を継ぐ"
       },
       {
+        "label": "②",
+        "text": "時代に合わせて考え続ける。\n（変革によって志を継ぐ）",
+        "value": "変革によって志を継ぐ"
+      },
+      {
         "label": "③",
-        "text": "先生の志は、人と組織に残し、未来へつなぐことで受け継ぐべきです。\n（継承によって志を継ぐ）",
+        "text": "志を仲間へ受け継ぐ。\n（継承によって志を継ぐ）",
         "value": "継承によって志を継ぐ"
       }
     ]
