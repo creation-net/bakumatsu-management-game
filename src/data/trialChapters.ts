@@ -1388,7 +1388,7 @@ const trialChapterSources: TrialChapterSource[] = [
   {
     "id": 8,
     "title": "第八章 第二次長州征討",
-    "subtitle": "誰の下で戦うか",
+    "subtitle": "大島を救うか、長州を守るか",
     "passages": [
       {
         "id": "trial-8-p-1",
@@ -1398,231 +1398,235 @@ const trialChapterSources: TrialChapterSource[] = [
       {
         "id": "trial-8-p-2",
         "kind": "narration",
-        "text": "禁門の変、第一次長州征討、功山寺挙兵。"
+        "text": "幕府は約十万五千の兵を率い、四方から長州へ攻め込んできた。"
       },
       {
         "id": "trial-8-p-3",
         "kind": "narration",
-        "text": "多くの犠牲と屈辱を越え、長州は再び立ち上がった。"
+        "text": "対する長州軍は約三千五百。"
       },
       {
         "id": "trial-8-p-4",
         "kind": "narration",
-        "text": "そして今、幕府との最後の決戦が始まろうとしていた。"
+        "text": "長州は村田 蔵六の献策により、兵力を分散させず、主戦場へ集中する方針を決めた。"
       },
       {
         "id": "trial-8-p-5",
-        "kind": "scene",
-        "text": "【出陣前夜　軍議】"
+        "kind": "narration",
+        "text": "そのため、周防大島はやむなく放棄された。"
       },
       {
         "id": "trial-8-p-6",
-        "kind": "narration",
-        "text": "村瀬は軍議へ呼ばれた。"
+        "kind": "scene",
+        "text": "【山口　藩庁】"
       },
       {
         "id": "trial-8-p-7",
         "kind": "narration",
-        "text": "部屋には、桂 小五郎、高杉 晋作、村田 蔵六の三人がいる。"
+        "text": "村瀬は、桂 小五郎、高杉 晋作、村田 蔵六が集まる軍議へ呼ばれた。"
       },
       {
         "id": "trial-8-p-8",
         "kind": "narration",
-        "text": "桂が地図を広げる。"
+        "text": "その時、一人の伝令が駆け込んできた。"
       },
       {
         "id": "trial-8-p-9",
         "kind": "dialogue",
-        "speaker": "桂 小五郎",
-        "text": "「敵は、こちらの何倍もの兵力です。」"
+        "speaker": "伝令",
+        "text": "「申し上げます！」"
       },
       {
         "id": "trial-8-p-10",
         "kind": "dialogue",
-        "speaker": "桂 小五郎",
-        "text": "「じゃが、数で勝てぬ戦ほど、戦う場所と退く判断が大事になります。」"
+        "speaker": "伝令",
+        "text": "「伊予松山藩が周防大島へ上陸し、島を占領いたしました！」"
       },
       {
         "id": "trial-8-p-11",
         "kind": "dialogue",
-        "speaker": "桂 小五郎",
-        "text": "「指揮官は、勝つ責任だけではない。」"
+        "speaker": "伝令",
+        "text": "「領民への乱暴狼藉、略奪、放火も始まっております！」"
       },
       {
         "id": "trial-8-p-12",
-        "kind": "dialogue",
-        "speaker": "桂 小五郎",
-        "text": "「皆を生きて帰す責任も負うてます。」"
+        "kind": "narration",
+        "text": "高杉は、地図に描かれた大島を見つめる。"
       },
       {
         "id": "trial-8-p-13",
         "kind": "dialogue",
         "speaker": "高杉 晋作",
-        "text": "「敵は強い。」"
+        "text": "「桂さん、兵をくれ。」"
       },
       {
         "id": "trial-8-p-14",
         "kind": "dialogue",
         "speaker": "高杉 晋作",
-        "text": "「数も向こうが上じゃ。」"
+        "text": "「奇兵隊なら、大島を取り返してみせる。」"
       },
       {
         "id": "trial-8-p-15",
         "kind": "dialogue",
         "speaker": "高杉 晋作",
-        "text": "「じゃが、最後に戦うんは人じゃ。」"
+        "text": "「奇兵隊には、百姓も、町人も、漁師もおる。」"
       },
       {
         "id": "trial-8-p-16",
         "kind": "dialogue",
         "speaker": "高杉 晋作",
-        "text": "「兵は、指揮官の背中を見て動く。」"
+        "text": "「皆、長州を守るために立ち上がってくれた。」"
       },
       {
         "id": "trial-8-p-17",
         "kind": "dialogue",
         "speaker": "高杉 晋作",
-        "text": "「わしが先頭へ出れば、皆も前へ出る。」"
+        "text": "「今度は俺たちが、その恩を返す番じゃ。」"
       },
       {
         "id": "trial-8-p-18",
         "kind": "dialogue",
-        "speaker": "高杉 晋作",
-        "text": "「士気は、数の差をひっくり返す。」"
+        "speaker": "桂 小五郎",
+        "text": "「大島を見捨てるつもりはない。」"
       },
       {
         "id": "trial-8-p-19",
         "kind": "dialogue",
-        "speaker": "村田 蔵六",
-        "text": "「士気は大切です。」"
+        "speaker": "桂 小五郎",
+        "text": "「だが、奪還のために兵を集めれば、他の戦場が危うくなる。」"
       },
       {
         "id": "trial-8-p-20",
         "kind": "dialogue",
-        "speaker": "村田 蔵六",
-        "text": "「しかし、士気だけでは勝てません。」"
+        "speaker": "桂 小五郎",
+        "text": "「限定的な援軍を送り、敵を牽制する。」"
       },
       {
         "id": "trial-8-p-21",
         "kind": "dialogue",
-        "speaker": "村田 蔵六",
-        "text": "「兵糧、補給、情報、配置。」"
+        "speaker": "桂 小五郎",
+        "text": "「長州は大島を忘れていないと示す。」"
       },
       {
         "id": "trial-8-p-22",
         "kind": "dialogue",
-        "speaker": "村田 蔵六",
-        "text": "「勝つための仕組みが整って初めて、兵は安心して戦えます。」"
+        "speaker": "高杉 晋作",
+        "text": "「それでは、島を救えん。」"
       },
       {
         "id": "trial-8-p-23",
         "kind": "dialogue",
-        "speaker": "村田 蔵六",
-        "text": "「理屈で勝てる戦なら、理屈で勝つべきです。」"
+        "speaker": "高杉 晋作",
+        "text": "「行くなら、取り返す。」"
       },
       {
         "id": "trial-8-p-24",
         "kind": "narration",
-        "text": "桂は二人の意見を聞き、静かにうなずく。"
+        "text": "村田が静かに口を開く。"
       },
       {
         "id": "trial-8-p-25",
         "kind": "dialogue",
-        "speaker": "桂 小五郎",
-        "text": "「二人とも、間違うちょらん。」"
+        "speaker": "村田 蔵六",
+        "text": "「私は、一兵も送るべきではないと考えます。」"
       },
       {
         "id": "trial-8-p-26",
         "kind": "dialogue",
-        "speaker": "桂 小五郎",
-        "text": "「戦には、勇気も、準備もいる。」"
+        "speaker": "村田 蔵六",
+        "text": "「奪還できない兵力を送っても、兵を失うだけです。」"
       },
       {
         "id": "trial-8-p-27",
-        "kind": "narration",
-        "text": "軍議が終わり、村瀬も部屋を出ようとする。"
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「その兵を石州口や芸州口へ回せば、敵の進軍を止められます。」"
       },
       {
         "id": "trial-8-p-28",
-        "kind": "narration",
-        "text": "桂が呼び止める。"
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「大島を完全に放棄すれば、他の領民や兵も、次は自分たちが見捨てられると思うでしょう。」"
       },
       {
         "id": "trial-8-p-29",
         "kind": "dialogue",
         "speaker": "桂 小五郎",
-        "text": "「村瀬君。」"
+        "text": "「国は、兵の数だけでは支えられません。」"
       },
       {
         "id": "trial-8-p-30",
         "kind": "dialogue",
         "speaker": "桂 小五郎",
-        "text": "「待ちなさい。」"
+        "text": "「藩は自分たちを見捨てない。」"
       },
       {
         "id": "trial-8-p-31",
-        "kind": "narration",
-        "text": "村瀬は振り返る。"
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「その信頼も必要です。」"
       },
       {
         "id": "trial-8-p-32",
         "kind": "dialogue",
-        "speaker": "高杉 晋作",
-        "text": "「誰の下で戦いたいか。」"
+        "speaker": "村田 蔵六",
+        "text": "「ですが、結果の出ない援軍では、その信頼も守れません。」"
       },
       {
         "id": "trial-8-p-33",
-        "kind": "narration",
-        "text": "村田。"
+        "kind": "dialogue",
+        "speaker": "高杉 晋作",
+        "text": "「なら、取り返せばええ。」"
       },
       {
         "id": "trial-8-p-34",
-        "kind": "dialogue",
-        "speaker": "村田 蔵六",
-        "text": "「命を預ける相手は、自分で選ぶべきです。」"
+        "kind": "narration",
+        "text": "三人の視線が交わる。"
       },
       {
         "id": "trial-8-p-35",
         "kind": "narration",
-        "text": "桂。"
+        "text": "桂が村瀬を見る。"
       },
       {
         "id": "trial-8-p-36",
         "kind": "dialogue",
         "speaker": "桂 小五郎",
-        "text": "「その決断が、お前自身の戦い方になる。」"
+        "text": "「村瀬君。」"
       },
       {
         "id": "trial-8-p-37",
-        "kind": "narration",
-        "text": "高杉は村瀬の肩を軽く叩く。"
+        "kind": "dialogue",
+        "speaker": "桂 小五郎",
+        "text": "「理想だけでは人を守れず、理屈だけでも人は動かない。」"
       },
       {
         "id": "trial-8-p-38",
         "kind": "dialogue",
-        "speaker": "高杉 晋作",
-        "text": "「どこへ来ても、長州のために戦うんは同じじゃ。」"
+        "speaker": "村田 蔵六",
+        "text": "「限られた兵を、どこへ向けるべきか。」"
       },
       {
         "id": "trial-8-p-39",
-        "kind": "narration",
-        "text": "村瀬は三人へ深く頭を下げた。"
+        "kind": "dialogue",
+        "speaker": "村田 蔵六",
+        "text": "「村瀬君なら、どう判断しますか。」"
       }
     ],
     "choices": [
       {
         "label": "①",
-        "text": "桂 小五郎隊\n慎重な判断で仲間を守り、勝てる戦を積み重ねる。\n（桂 小五郎の考え）",
+        "text": "限定的な援軍を送り、長州全体を守る。\n（桂 小五郎の考え）",
         "value": "桂 小五郎の考え"
       },
       {
         "label": "②",
-        "text": "高杉 晋作隊\n自ら先頭に立ち、勇気で仲間の士気を高め、不利な戦況を覆す。\n（高杉 晋作の考え）",
+        "text": "奇兵隊を率いて、大島を奪還する。\n（高杉 晋作の考え）",
         "value": "高杉 晋作の考え"
       },
       {
         "label": "③",
-        "text": "村田 蔵六隊\n合理的な準備と仕組みを整え、確実な勝利を目指す。\n（村田 蔵六の考え）",
+        "text": "大島へ兵を送らず、他の戦線へ集中する。\n（村田 蔵六の考え）",
         "value": "村田 蔵六の考え"
       }
     ]
