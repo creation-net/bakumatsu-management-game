@@ -5555,57 +5555,57 @@ export const chapters: Chapter[] = [
       {
         "id": "e-1",
         "kind": "narration",
-        "text": "翌朝。"
+        "text": "軍議は終わった。"
       },
       {
         "id": "e-2",
         "kind": "narration",
-        "text": "長州軍はそれぞれの持ち場へ向かった。"
+        "text": "大島を見捨てず、長州全体も守るのか。"
       },
       {
         "id": "e-3",
         "kind": "narration",
-        "text": "同じ敵と戦う。"
+        "text": "危険を承知で、大島を取り返すのか。"
       },
       {
         "id": "e-4",
         "kind": "narration",
-        "text": "しかし。"
+        "text": "限られた兵を、勝てる戦場へ集中するのか。"
       },
       {
         "id": "e-5",
         "kind": "narration",
-        "text": "信じる戦い方は違う。"
+        "text": "誰も。"
       },
       {
         "id": "e-6",
         "kind": "narration",
-        "text": "仲間を守る者。"
+        "text": "大島の民を軽んじていたわけではない。"
       },
       {
         "id": "e-7",
         "kind": "narration",
-        "text": "先頭に立つ者。"
+        "text": "守ろうとしているものと。"
       },
       {
         "id": "e-8",
         "kind": "narration",
-        "text": "勝つ仕組みを築く者。"
+        "text": "守るための方法が違っていた。"
       },
       {
         "id": "e-9",
         "kind": "narration",
-        "text": "村瀬は自ら選んだ道を歩き始める。"
+        "text": "村瀬は、自ら選んだ判断の重さを胸に刻む。"
       },
       {
         "id": "e-10",
         "kind": "narration",
-        "text": "その選択が。"
+        "text": "翌朝。"
       },
       {
         "id": "e-11",
         "kind": "narration",
-        "text": "長州の未来を支える一歩となっていく。"
+        "text": "長州軍は、それぞれの戦場へ向かった。"
       }
     ],
     "choices": [
