@@ -417,6 +417,18 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
+.passage.timed-scene-transition {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.passage.scene.after-timed-scene-transition {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
 .passage.dialogue {
   margin: 14px 0 18px;
   padding: 16px 0 16px 22px;

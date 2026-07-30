@@ -690,6 +690,15 @@ function PassageList({ passages, compact = false }: { passages: Passage[]; compa
       {passages.map((passage, index) => {
         const isThought = passage.kind === "scene" && /^（/.test(passage.text);
         const previous = passages[index - 1];
+        const next = passages[index + 1];
+        const startsTimedSceneTransition =
+          passage.kind === "narration" &&
+          passage.text === "数日後" &&
+          next?.kind === "scene";
+        const followsTimedSceneTransition =
+          passage.kind === "scene" &&
+          previous?.kind === "narration" &&
+          previous.text === "数日後";
         const continuesSameSpeaker =
           passage.kind === "dialogue" &&
           previous?.kind === "dialogue" &&
@@ -703,6 +712,8 @@ function PassageList({ passages, compact = false }: { passages: Passage[]; compa
           "passage",
           passage.kind,
           isThought ? "thought" : "",
+          startsTimedSceneTransition ? "timed-scene-transition" : "",
+          followsTimedSceneTransition ? "after-timed-scene-transition" : "",
           continuesSameSpeaker ? "same-speaker" : "",
         ]
           .filter(Boolean)
