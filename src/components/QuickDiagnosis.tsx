@@ -76,11 +76,19 @@ export function QuickDiagnosis() {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(nextAnswers));
   }
 
-  function startDiagnosis() {
-    if (answeredCount === quickDiagnosisQuestions.length) {
-      setScreen("summary");
-      return;
-    }
+  function startNewDiagnosis() {
+    if (
+      answeredCount > 0
+      && !window.confirm("これまでの簡易診断の回答をリセットして、最初から始めますか？")
+    ) return;
+
+    window.localStorage.removeItem(STORAGE_KEY);
+    setAnswers({});
+    setQuestionIndex(0);
+    setScreen("question");
+  }
+
+  function continueDiagnosis() {
     const firstUnanswered = quickDiagnosisQuestions.findIndex((question) => !answers[question.id]);
     setQuestionIndex(firstUnanswered >= 0 ? firstUnanswered : 0);
     setScreen("question");
@@ -133,9 +141,21 @@ export function QuickDiagnosis() {
             <p>15の場面で「自分ならどうするか」を選んでください。</p>
             <p>約5分で、あなたの意思決定の特徴を診断します。</p>
           </div>
-          <button className="primary-button quick-main-button" type="button" onClick={startDiagnosis}>
-            {answeredCount === quickDiagnosisQuestions.length ? "簡易結果を見る" : "診断を始める"}
-          </button>
+          <div className={answeredCount === 0 ? "quick-intro-actions single" : "quick-intro-actions"}>
+            <button className="primary-button quick-main-button" type="button" onClick={startNewDiagnosis}>
+              診断を始める
+            </button>
+            {answeredCount > 0 && answeredCount < quickDiagnosisQuestions.length && (
+              <button className="secondary-button quick-main-button" type="button" onClick={continueDiagnosis}>
+                続きから
+              </button>
+            )}
+            {answeredCount === quickDiagnosisQuestions.length && (
+              <button className="secondary-button quick-main-button" type="button" onClick={() => setScreen("summary")}>
+                結果を見る
+              </button>
+            )}
+          </div>
           {answeredCount > 0 && (
             <p className="quick-resume-note">
               {answeredCount === quickDiagnosisQuestions.length ? "回答済み" : "回答途中"}のデータがあります（{answeredCount} / 15）
