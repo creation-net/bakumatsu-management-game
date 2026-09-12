@@ -1,14 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { FormEvent } from "react";
 import { getDiagnosisCombinationCautionAdvice, getDiagnosisCombinationComments } from "@/data/diagnosisCombinationComments";
 import { getDiagnosisManagementThemes } from "@/data/diagnosisManagementThemes";
 import { quickDiagnosisQuestions } from "@/data/quickDiagnosisQuestions";
 import { calculateDiagnosis } from "@/lib/diagnosis";
 import type { ReadingProgress } from "@/types/story";
 
-type QuickScreen = "intro" | "question" | "summary" | "form" | "detail";
+type QuickScreen = "intro" | "question" | "summary" | "detail";
 type QuickAnswers = Record<number, string>;
 
 const STORAGE_KEY = "bakumatsu-meiji-quick-diagnosis-v1";
@@ -50,12 +49,6 @@ export function QuickDiagnosis() {
   const [screen, setScreen] = useState<QuickScreen>("intro");
   const [answers, setAnswers] = useState<QuickAnswers>({});
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [organization, setOrganization] = useState("");
-  const [role, setRole] = useState("");
-  const [consented, setConsented] = useState(false);
-  const [formError, setFormError] = useState("");
 
   useEffect(() => {
     const savedAnswers = loadAnswers();
@@ -123,20 +116,6 @@ export function QuickDiagnosis() {
     setAnswers({});
     setQuestionIndex(0);
     setScreen("intro");
-  }
-
-  function submitProfile(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setFormError("");
-    if (!/^\S+@\S+\.\S+$/.test(email)) {
-      setFormError("有効なメールアドレスを入力してください。");
-      return;
-    }
-    if (!consented) {
-      setFormError("プライバシーポリシーへの同意が必要です。");
-      return;
-    }
-    setScreen("detail");
   }
 
   if (!mounted) return <main className="quick-shell" />;
@@ -234,31 +213,8 @@ export function QuickDiagnosis() {
           <div className="quick-detail-invitation">
             <h2>さらに詳しい診断結果を見る</h2>
             <p>あなたの強み、意思決定の特徴、注意したいポイント、相性のよい幕末の人物、そして「村瀬からの手紙」をご覧いただけます。</p>
-            <button className="primary-button quick-main-button" type="button" onClick={() => setScreen("form")}>詳しい診断結果を見る</button>
+            <button className="primary-button quick-main-button" type="button" onClick={() => setScreen("detail")}>詳しい診断結果を見る</button>
           </div>
-        </section>
-      </main>
-    );
-  }
-
-  if (screen === "form") {
-    return (
-      <main className="quick-shell">
-        <nav className="quick-topbar"><button type="button" onClick={() => setScreen("summary")}>簡易結果へ戻る</button></nav>
-        <section className="quick-form-panel quick-panel">
-          <p className="eyebrow">詳細診断</p>
-          <h1>詳しい診断結果をお届けします</h1>
-          <p className="quick-form-lead">15の決断から見えてきた、あなたの意思決定の特徴を詳しくご紹介します。</p>
-          <form onSubmit={submitProfile} noValidate>
-            <label>メールアドレス <em>必須</em><input type="email" value={email} onChange={(event) => setEmail(event.target.value)} autoComplete="email" required /></label>
-            <label>お名前 <span>任意</span><input type="text" value={name} onChange={(event) => setName(event.target.value)} autoComplete="name" /></label>
-            <label>会社・組織名 <span>任意</span><input type="text" value={organization} onChange={(event) => setOrganization(event.target.value)} autoComplete="organization" /></label>
-            <label>役職 <span>任意</span><input type="text" value={role} onChange={(event) => setRole(event.target.value)} autoComplete="organization-title" /></label>
-            <label className="quick-consent"><input type="checkbox" checked={consented} onChange={(event) => setConsented(event.target.checked)} /><span><a href="/privacy" target="_blank" rel="noreferrer">プライバシーポリシー</a>に同意する</span></label>
-            <p className="quick-privacy-note">ご入力いただいた情報は、診断結果の提供および当サービスに関するご案内に利用します。現在の試作版では外部へ送信・保存されません。</p>
-            {formError && <p className="quick-form-error" role="alert">{formError}</p>}
-            <button className="primary-button quick-main-button" type="submit">詳しい診断結果を見る</button>
-          </form>
         </section>
       </main>
     );
@@ -276,7 +232,6 @@ export function QuickDiagnosis() {
         <header className="quick-detail-header">
           <p className="eyebrow">幕末の15の決断</p>
           <h1>あなたの経営資質診断</h1>
-          {name && <p>{name}さんの診断結果</p>}
         </header>
         <section><h2>あなたが大切にしている信念</h2><p className="quick-type">{primary.type}</p><p>{primary.summary}</p><p className="quick-person">この型に近い人物 <strong>{primary.name}</strong></p></section>
         <section><h2>あなたに備わるもう一つの強み</h2><p className="quick-type secondary">{secondary.type}</p><p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p><p className="quick-person">この型に近い人物 <strong>{secondary.name}</strong></p></section>
