@@ -20,8 +20,8 @@ export const quickDiagnosisQuestions: QuickDiagnosisQuestion[] = [
     question: "あなたなら、まずどうしますか。",
     options: [
       { id: "choice-1", text: "危機に対して、すぐ行動を起こす。" },
-      { id: "choice-2", text: "まず相手を学び、自分たちを強くする方法を考える。" },
-      { id: "choice-3", text: "情勢を見極め、動くべき時に備える。" },
+      { id: "choice-2", text: "相手から学び、自分たちを強くする方法を考える。" },
+      { id: "choice-3", text: "すぐには動かず、情勢を見極める。" },
     ],
   },
   {
@@ -30,9 +30,9 @@ export const quickDiagnosisQuestions: QuickDiagnosisQuestion[] = [
     description: "自分を導いてくれた人物がいなくなりました。",
     question: "その人が残した考えを、あなたならどう受け継ぎますか。",
     options: [
-      { id: "choice-1", text: "教えを実践して証明する。", note: "決行によって志を継ぐ" },
-      { id: "choice-2", text: "時代に合わせて考え続ける。", note: "変革によって志を継ぐ" },
-      { id: "choice-3", text: "志を仲間へ受け継ぐ。", note: "継承によって志を継ぐ" },
+      { id: "choice-1", text: "教えが正しいのか、自分で実践して確かめる。" },
+      { id: "choice-2", text: "時代に合わせて、教えを自分なりに考え直す。" },
+      { id: "choice-3", text: "教えや志を仲間に伝え、次の人へつないでいく。" },
     ],
   },
   {
@@ -41,20 +41,20 @@ export const quickDiagnosisQuestions: QuickDiagnosisQuestion[] = [
     description: "国の仕組みそのものを見直さなければならない時代が来ました。",
     question: "あなたなら、どのように未来を築きますか。",
     options: [
-      { id: "choice-1", text: "今ある仕組みを生かしながら、日本を改革する。", note: "勝 海舟の考え" },
-      { id: "choice-2", text: "覚悟を持って時代を切り開き、新しい日本を築く。", note: "西郷 吉之助の考え" },
-      { id: "choice-3", text: "立場を越えて人をつなぎ、協力できる日本を築く。", note: "坂本 龍馬の考え" },
+      { id: "choice-1", text: "今ある仕組みを生かしながら、日本を改革する。" },
+      { id: "choice-2", text: "覚悟を持って変革を進め、新しい日本を築く。" },
+      { id: "choice-3", text: "立場を越えて人をつなぎ、協力できる日本を築く。" },
     ],
   },
   {
     id: 4,
     heading: "自分たちの立場が危うくなったら",
-    description: "長州は京都から追われ、立場を失いました。このままでは終われない一方、無理に動けばさらに大きな損失を招く可能性があります。",
+    description: "政治の中心から追われ、立場を失いました。このままでは終われない一方、無理に動けばさらに大きな損失を招く可能性があります。",
     question: "あなたならどうしますか。",
     options: [
-      { id: "choice-1", text: "今こそ行動し、自分たちの覚悟を示す。" },
-      { id: "choice-2", text: "本来の目的を見失わず、必要以上の争いは避ける。" },
-      { id: "choice-3", text: "一度退き、再び立ち上がる機会を残す。" },
+      { id: "choice-1", text: "立場を取り戻すため、覚悟をもって行動を起こす。" },
+      { id: "choice-2", text: "争いを避けながら、交渉による解決を目指す。" },
+      { id: "choice-3", text: "一度退き、再び立ち上がる機会を待つ。" },
     ],
   },
   {
@@ -87,7 +87,7 @@ export const quickDiagnosisQuestions: QuickDiagnosisQuestion[] = [
     options: [
       { id: "choice-1", text: "必要なら、敵であってもすぐに手を組む。" },
       { id: "choice-2", text: "まず小さな協力から始め、信頼を積み重ねる。" },
-      { id: "choice-3", text: "まず自分たちの結束を固めてから協力する。" },
+      { id: "choice-3", text: "まず内部の結束を固めてから、協力を検討する。" },
     ],
   },
   {
@@ -96,31 +96,31 @@ export const quickDiagnosisQuestions: QuickDiagnosisQuestion[] = [
     description: "圧倒的に不利な戦いの中、一部の地域が攻撃され、人々が苦しんでいます。しかし、救援に人員を割けば、全体が危険になります。",
     question: "あなたならどうしますか。",
     options: [
-      { id: "choice-1", text: "限定的な援軍を送り、長州全体を守る。", note: "桂 小五郎の考え" },
-      { id: "choice-2", text: "奇兵隊を率いて、大島を奪還する。", note: "高杉 晋作の考え" },
-      { id: "choice-3", text: "大島へ兵を送らず、他の戦線へ集中する。", note: "村田 蔵六の考え" },
+      { id: "choice-1", text: "援軍は限定的でも、仲間を守る姿勢を示す。" },
+      { id: "choice-2", text: "全体の士気も考え、全力で仲間を救う。" },
+      { id: "choice-3", text: "援軍は送らず、全体を守ることを優先する。" },
     ],
   },
   {
     id: 9,
     heading: "重要な決定で意見が割れたら",
-    description: "新しい体制を作ろうとしています。これまでの関係を大切にする意見、公平な手続きを求める意見、最後は責任者が決断すべきという意見があります。",
-    question: "あなたなら何を重視しますか。",
+    description: "新しい体制を作ろうとしています。これまで貢献してくれた人に対して、どのような処遇にすべきか意見が割れています。",
+    question: "あなたならどうしますか。",
     options: [
-      { id: "choice-1", text: "これまで築いてきた信頼や恩義。" },
-      { id: "choice-2", text: "公平な手続きと、皆が納得できる意思決定。" },
-      { id: "choice-3", text: "最後は責任を背負い、自分で決断する。" },
+      { id: "choice-1", text: "これまで貢献してくれた人とともに、新しい国づくりを進める。" },
+      { id: "choice-2", text: "過去の貢献だけで特別扱いせず、公正・公平な手続きを踏む。" },
+      { id: "choice-3", text: "過去の貢献にとらわれず、決別する覚悟で新しい国づくりを進める。" },
     ],
   },
   {
     id: 10,
     heading: "組織が敗北の危機に立ったら",
-    description: "戦いを続ければ組織そのものが失われる可能性があります。一方で、まだ戦えるという意見もあります。",
+    description: "戦いを続ければ組織そのものが失われる可能性があります。一方で、戦う意思を示さないと軍の統制が失われる危険があります。",
     question: "あなたなら何を優先しますか。",
     options: [
-      { id: "choice-1", text: "より大きな全体を守る。" },
+      { id: "choice-1", text: "組織の枠を越え、国全体を考えて行動する。" },
       { id: "choice-2", text: "自分の組織と、その中で暮らす人々を守る。" },
-      { id: "choice-3", text: "残された勝機を生かし、組織の統制を守る。" },
+      { id: "choice-3", text: "組織の統制を守るため、残された勝機に賭ける。" },
     ],
   },
   {
@@ -129,9 +129,9 @@ export const quickDiagnosisQuestions: QuickDiagnosisQuestion[] = [
     description: "勝利できる可能性は高い。しかし戦えば、多くの市民も巻き込まれます。",
     question: "あなたならどうしますか。",
     options: [
-      { id: "choice-1", text: "将来の禍根を残さないため、最後まで決着をつける。" },
+      { id: "choice-1", text: "将来の禍根を残さないため、覚悟をもって最後まで決着をつける。" },
       { id: "choice-2", text: "国を疲弊させないため、できる限り戦わずに終わらせる。" },
-      { id: "choice-3", text: "戦いは避けながら、必要な秩序は維持する。" },
+      { id: "choice-3", text: "戦いは避けながら、人々の安心に必要な秩序は維持する。" },
     ],
   },
   {
@@ -140,9 +140,9 @@ export const quickDiagnosisQuestions: QuickDiagnosisQuestion[] = [
     description: "大きな争いが終わりました。今後の安定を守るため、新たな仕組みを作ろうとしています。",
     question: "あなたなら何を重視しますか。",
     options: [
-      { id: "choice-1", text: "将来の危機に備え、平時から準備する。" },
-      { id: "choice-2", text: "関係者との信頼を守る。" },
-      { id: "choice-3", text: "力のある者が相応の責任を負う仕組みにする。" },
+      { id: "choice-1", text: "将来の内部対立に備え、平時から準備を進める。" },
+      { id: "choice-2", text: "内部の信頼関係を強くする。" },
+      { id: "choice-3", text: "内部の規律と責任の仕組みを整える。" },
     ],
   },
   {
@@ -153,7 +153,7 @@ export const quickDiagnosisQuestions: QuickDiagnosisQuestion[] = [
     options: [
       { id: "choice-1", text: "必要な改革なら、一気に進める。" },
       { id: "choice-2", text: "人の理解を得ながら進める。" },
-      { id: "choice-3", text: "制度を整えながら進める。" },
+      { id: "choice-3", text: "必要な制度を整えながら進める。" },
     ],
   },
   {
@@ -164,7 +164,7 @@ export const quickDiagnosisQuestions: QuickDiagnosisQuestion[] = [
     options: [
       { id: "choice-1", text: "一度した約束を守り、自ら責任を引き受ける。" },
       { id: "choice-2", text: "状況が変わったなら、決定を見直して優先順位を変える。" },
-      { id: "choice-3", text: "変更するなら、その理由と手続きを明確にする。" },
+      { id: "choice-3", text: "変更の理由と正式な手続きを明らかにして進める。" },
     ],
   },
   {
@@ -173,9 +173,9 @@ export const quickDiagnosisQuestions: QuickDiagnosisQuestion[] = [
     description: "自分たちが大切にしてきた時代が終わろうとしています。仲間には不満があり、新しい社会のルールとの間で葛藤が生まれています。",
     question: "あなたならどうしますか。",
     options: [
-      { id: "choice-1", text: "仲間への責任を果たす。" },
-      { id: "choice-2", text: "法と規律を守る責任を果たす。" },
-      { id: "choice-3", text: "今は耐え、組織と地域を守る。" },
+      { id: "choice-1", text: "仲間の不満を一手に引き受け、自分の責任を果たす。" },
+      { id: "choice-2", text: "新たな法と規律を守り、自分の責任を果たす。" },
+      { id: "choice-3", text: "すぐには行動に移さず、状況を見極めながら待つ。" },
     ],
   },
 ];
