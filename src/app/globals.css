@@ -3067,9 +3067,27 @@ h3 {
 }
 
 /* Quick diagnosis */
+.app-shell.screen-title {
+  max-width: 1480px;
+}
+
+.screen-title .title-copy {
+  max-width: 1200px;
+}
+
 .experience-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  max-width: 1120px;
+  width: 100%;
+  max-width: 1200px;
+  gap: 18px;
+}
+
+.experience-actions .primary-button,
+.experience-actions .secondary-button,
+.experience-actions .quick-link-button {
+  padding-inline: 10px;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .quick-experience-card {
@@ -3107,6 +3125,9 @@ h3 {
 
 .quick-topbar a,
 .quick-topbar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 42px;
   padding: 0 16px;
   color: var(--ink);
@@ -3476,7 +3497,7 @@ h3 {
   margin-top: 32px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .experience-grid {
     grid-template-columns: 1fr;
     max-width: 680px;

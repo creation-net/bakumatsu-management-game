@@ -369,7 +369,7 @@ export function NovelApp() {
 
   return (
     <main
-      className={`app-shell chapter-theme-${currentChapter?.id ?? "none"}`}
+      className={`app-shell screen-${screen} chapter-theme-${currentChapter?.id ?? "none"}`}
       style={
         {
           "--chapter-image": currentChapter
