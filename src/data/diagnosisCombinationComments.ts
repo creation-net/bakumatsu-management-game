@@ -476,26 +476,12 @@ const positiveCombinationConclusions: Record<string, string> = {
   "yamagata-katsu": "異なる立場の人々が納得できる秩序をつくり、安定した協力を長く続けることで、変化にも柔軟に対応できる組織基盤を築けます。",
 };
 
-function getPositiveOpening(paragraph: string): string {
-  const firstSentenceEnd = paragraph.indexOf("。");
-  return firstSentenceEnd >= 0 ? paragraph.slice(0, firstSentenceEnd + 1) : paragraph;
-}
-
 export function getDiagnosisCombinationCautionAdvice(
   primaryId: DiagnosisCharacterId,
   secondaryId: DiagnosisCharacterId,
 ): string | undefined {
   const paragraph = orderedCombinationComments[`${primaryId}-${secondaryId}`]?.[1];
-  if (!paragraph) {
-    return undefined;
-  }
-
-  const firstSentenceEnd = paragraph.indexOf("。");
-  const caution = firstSentenceEnd >= 0
-    ? paragraph.slice(firstSentenceEnd + 1).trim()
-    : "";
-
-  return caution || undefined;
+  return paragraph || undefined;
 }
 
 export function getDiagnosisCombinationComments(
@@ -508,7 +494,6 @@ export function getDiagnosisCombinationComments(
   return comments && conclusion
     ? [
         comments[0],
-        getPositiveOpening(comments[1]),
         conclusion,
       ]
     : [
