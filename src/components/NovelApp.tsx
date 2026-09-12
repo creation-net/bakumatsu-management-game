@@ -531,17 +531,20 @@ function TitleScreen({
               <a className="primary-button quick-link-button" href="/quick">
                 簡易版を始める
               </a>
+              <a className="secondary-button quick-link-button" href="/quick#continue">
+                続きから始める
+              </a>
             </div>
           </article>
 
           <article className="experience-card selected">
             <p className="experience-label">体験版</p>
-            <h2>物語を約10分で体験できます。</h2>
+            <h2>物語を約15分で体験できます。</h2>
             <p>
               各章の重要な場面をケーススタディとして体験し、歴史人物の価値観に触れながら、自分ならどう決断するかを考えます。
             </p>
             <p>選んだ回答をもとに、自分の経営資質を振り返ることができます。</p>
-            <p>歴史に詳しくない方や、まず雰囲気を体験したい方におすすめです。</p>
+            <p>所要時間は約15分です。回答内容は自動で保存されるため、途中で中断しても、続きからご自身のペースで進められます。</p>
             <div className="experience-actions">
               <button className="primary-button" type="button" disabled={!hasChapters} onClick={onStartTrial}>
                 体験版を始める

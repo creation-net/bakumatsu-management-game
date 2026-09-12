@@ -58,7 +58,20 @@ export function QuickDiagnosis() {
   const [formError, setFormError] = useState("");
 
   useEffect(() => {
-    setAnswers(loadAnswers());
+    const savedAnswers = loadAnswers();
+    setAnswers(savedAnswers);
+
+    if (window.location.hash === "#continue") {
+      const savedCount = Object.keys(savedAnswers).length;
+      if (savedCount === quickDiagnosisQuestions.length) {
+        setScreen("summary");
+      } else {
+        const firstUnanswered = quickDiagnosisQuestions.findIndex((question) => !savedAnswers[question.id]);
+        setQuestionIndex(firstUnanswered >= 0 ? firstUnanswered : 0);
+        setScreen("question");
+      }
+    }
+
     setMounted(true);
   }, []);
 
