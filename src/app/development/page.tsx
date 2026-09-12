@@ -81,21 +81,39 @@ export default function DevelopmentPage() {
           ))}
 
           <section className="development-section development-section-editions">
-            <p className="eyebrow">体験版と完全版</p>
-            <h2>体験版と完全版</h2>
+            <p className="eyebrow">簡易版・体験版・完全版</p>
+            <h2>三つの楽しみ方</h2>
             <p>
-              本アプリには、短時間で雰囲気を体験できる体験版と、物語をじっくり追体験できる完全版があります。
+              本アプリには、15問を約5分で診断できる簡易版、物語の要点を約15分で体験できる体験版、物語をじっくり追体験できる完全版があります。
             </p>
 
             <div className="development-edition-grid">
               <article className="development-edition-card">
+                <p className="edition-label">簡易版</p>
+                <h3>15問を約5分で診断できます。</h3>
+                <p>
+                  幕末の出来事を短く抽象化した15の場面で、「自分ならどうするか」を三つの選択肢から選びます。
+                </p>
+                <p>長い物語を読まずに、意思決定の特徴と経営資質を手軽に確認できます。</p>
+                <p>回答内容は自動で保存され、途中から再開できます。</p>
+                <div className="development-actions">
+                  <a className="primary-button" href="/quick">
+                    簡易版を始める
+                  </a>
+                  <a className="ghost-button" href="/quick#continue">
+                    続きから始める
+                  </a>
+                </div>
+              </article>
+
+              <article className="development-edition-card">
                 <p className="edition-label">体験版</p>
-                <h3>物語を約10分で体験できます。</h3>
+                <h3>物語を約15分で体験できます。</h3>
                 <p>
                   各章の重要な場面をケーススタディとして体験し、歴史人物の価値観に触れながら、自分ならどう決断するかを考えます。
                 </p>
                 <p>選んだ回答をもとに、自分の経営資質を振り返ることができます。</p>
-                <p>歴史に詳しくない方や、まず雰囲気を体験したい方におすすめです。</p>
+                <p>所要時間は約15分です。回答内容は自動で保存されるため、途中で中断しても、続きからご自身のペースで進められます。</p>
                 <div className="development-actions">
                   <a className="primary-button" href="/?mode=trial&action=start">
                     体験版を始める
