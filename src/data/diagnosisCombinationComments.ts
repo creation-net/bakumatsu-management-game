@@ -482,7 +482,12 @@ export function getDiagnosisCombinationCautionAdvice(
   secondaryId: DiagnosisCharacterId,
 ): string | undefined {
   const paragraph = orderedCombinationComments[`${primaryId}-${secondaryId}`]?.[1];
-  return paragraph || undefined;
+  if (!paragraph) {
+    return undefined;
+  }
+
+  const secondSentenceEnd = paragraph.indexOf("。", paragraph.indexOf("。") + 1);
+  return secondSentenceEnd >= 0 ? paragraph.slice(0, secondSentenceEnd + 1) : paragraph;
 }
 
 export function getDiagnosisCombinationComments(
