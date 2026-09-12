@@ -522,6 +522,18 @@ function TitleScreen({
         </p>
 
         <div className="experience-grid" aria-label="遊び方を選ぶ">
+          <article className="experience-card quick-experience-card">
+            <p className="experience-label">簡易版</p>
+            <h2>15問を約5分で診断できます。</h2>
+            <p>幕末の出来事を短く抽象化した場面で、「自分ならどうするか」を三つの選択肢から選びます。</p>
+            <p>長い物語を読まずに、意思決定の特徴と経営資質を手軽に確認できます。</p>
+            <div className="experience-actions">
+              <a className="primary-button quick-link-button" href="/quick">
+                簡易版を始める
+              </a>
+            </div>
+          </article>
+
           <article className="experience-card selected">
             <p className="experience-label">体験版</p>
             <h2>物語を約10分で体験できます。</h2>
