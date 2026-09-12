@@ -3287,12 +3287,31 @@ h3 {
   transition: border-color 160ms ease, background 160ms ease;
 }
 
-.quick-option:hover,
-.quick-option:focus-visible,
 .quick-option.selected {
   color: var(--ink-strong);
   background: rgba(70, 38, 27, 0.82);
   border-color: var(--gold);
+}
+
+.quick-option:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .quick-option:hover {
+    color: var(--ink-strong);
+    border-color: var(--gold);
+  }
+}
+
+.quick-option.selected {
+  box-shadow: inset 4px 0 0 var(--gold);
+}
+
+.quick-option.selected .quick-option-number {
+  color: var(--sumi-1);
+  background: var(--gold);
 }
 
 .quick-option-number {

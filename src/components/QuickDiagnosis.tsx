@@ -200,9 +200,13 @@ export function QuickDiagnosis() {
             {currentQuestion.options.map((option, index) => (
               <button
                 className={selectedId === option.id ? "quick-option selected" : "quick-option"}
-                key={option.id}
+                key={`${currentQuestion.id}-${option.id}`}
                 type="button"
-                onClick={() => selectAnswer(option.id)}
+                aria-pressed={selectedId === option.id}
+                onClick={(event) => {
+                  event.currentTarget.blur();
+                  selectAnswer(option.id);
+                }}
               >
                 <span className="quick-option-number">{index + 1}</span>
                 <span><strong>{option.text}</strong>{option.note && <small>{option.note}</small>}</span>
