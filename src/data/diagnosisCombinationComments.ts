@@ -1,4 +1,5 @@
 import type { DiagnosisCharacterId } from "@/data/diagnosisCharacters";
+import { diagnosisCombinationExpansions } from "@/data/diagnosisCombinationExpansions";
 
 type CombinationComments = readonly [string, string];
 
@@ -490,10 +491,12 @@ export function getDiagnosisCombinationComments(
 ): string[] {
   const comments = orderedCombinationComments[`${primaryId}-${secondaryId}`];
   const conclusion = positiveCombinationConclusions[`${primaryId}-${secondaryId}`];
+  const expansion = diagnosisCombinationExpansions[`${primaryId}-${secondaryId}`];
 
-  return comments && conclusion
+  return comments && expansion && conclusion
     ? [
         comments[0],
+        expansion,
         conclusion,
       ]
     : [
