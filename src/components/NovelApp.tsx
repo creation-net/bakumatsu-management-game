@@ -10,6 +10,7 @@ import {
 import { getDiagnosisCombinationComments } from "@/data/診断テキスト/得意な経営の型";
 import { getDiagnosisManagementThemes } from "@/data/診断テキスト/力を発揮しやすい経営テーマ";
 import { getDiagnosisJourneyLetter } from "@/data/診断テキスト/旅を終えたあなたへ";
+import { getDiagnosisDecisionTendencies } from "@/data/診断テキスト/意思決定の特徴";
 import { calculateDiagnosis } from "@/lib/diagnosis";
 import { downloadDiagnosisReportPdf } from "@/lib/pdfExport";
 import { initialProgress, loadProgress, resetProgress, saveProgress } from "@/lib/progress";
@@ -888,6 +889,7 @@ function ResultScreen({
   const combinationCautionAdvice = getDiagnosisCombinationCautionAdvice(primary.id, secondary.id);
   const cautionParagraphs = (combinationCautionAdvice ?? primary.cautionAdvice).split("\n\n");
   const managementThemes = getDiagnosisManagementThemes(primary.id, secondary.id);
+  const decisionTendencies = getDiagnosisDecisionTendencies(primary.id, secondary.id);
   const journeyLetter = getDiagnosisJourneyLetter(primary.id, secondary.id);
   const reportRef = useRef<HTMLElement>(null);
   const [pdfStatus, setPdfStatus] = useState<"idle" | "saving" | "saved">("idle");
@@ -1014,7 +1016,7 @@ function ResultScreen({
             <section className="diagnosis-section report-section">
               <h2>あなたの意思決定の傾向</h2>
               <ul className="diagnosis-list diagnosis-tendencies">
-                {primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}
+                {decisionTendencies.map((item) => <li key={item}>{item}</li>)}
               </ul>
             </section>
 
