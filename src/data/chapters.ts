@@ -636,567 +636,567 @@ export const chapters: Chapter[] = [
     "title": "第二章 安政の大獄",
     "subtitle": "志は誰が継ぐ",
     "sourceFile": "第2話_吉田松陰処刑.docx",
-    "passages":     [
-          {
-                "id": "p-1",
-                "kind": "narration",
-                "text": "安政六年（1859年）。"
-          },
-          {
-                "id": "p-2",
-                "kind": "narration",
-                "text": "吉田 松陰（よしだ しょういん）は江戸・伝馬町牢屋敷で処刑された。"
-          },
-          {
-                "id": "p-3",
-                "kind": "narration",
-                "text": "享年二十九。"
-          },
-          {
-                "id": "p-4",
-                "kind": "narration",
-                "text": "先生は、最後まで日本の未来を信じていた。"
-          },
-          {
-                "id": "p-5",
-                "kind": "narration",
-                "text": "その知らせは長州にも届く。"
-          },
-          {
-                "id": "p-6",
-                "kind": "narration",
-                "text": "松下村塾（しょうかそんじゅく）には、静かな時間だけが流れていた。"
-          },
-          {
-                "id": "p-7",
-                "kind": "scene",
-                "text": "【松下村塾（しょうかそんじゅく）】"
-          },
-          {
-                "id": "p-8",
-                "kind": "narration",
-                "text": "誰も口を開かない。"
-          },
-          {
-                "id": "p-9",
-                "kind": "narration",
-                "text": "机の上には先生が読まれていた本。"
-          },
-          {
-                "id": "p-10",
-                "kind": "narration",
-                "text": "壁には掛け軸。"
-          },
-          {
-                "id": "p-11",
-                "kind": "narration",
-                "text": "先生だけがいない。"
-          },
-          {
-                "id": "p-12",
-                "kind": "narration",
-                "text": "村瀬は静かに座っていた。"
-          },
-          {
-                "id": "p-13",
-                "kind": "narration",
-                "text": "（先生は、本当にいなくなった。）"
-          },
-          {
-                "id": "p-14",
-                "kind": "narration",
-                "text": "（もう二度と教えは聞けない。）"
-          },
-          {
-                "id": "p-15",
-                "kind": "narration",
-                "text": "久坂は先生の机を見つめながら口を開く。"
-          },
-          {
-                "id": "p-16",
-                "kind": "dialogue",
-                "text": "「先生は。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-17",
-                "kind": "dialogue",
-                "text": "「この国の進むべき道を。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-18",
-                "kind": "dialogue",
-                "text": "「命を懸けて私たちに示してくださいました。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-19",
-                "kind": "dialogue",
-                "text": "「ですが。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-20",
-                "kind": "dialogue",
-                "text": "「そのお考えは。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-21",
-                "kind": "dialogue",
-                "text": "「まだ、この国には届いておりません。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-22",
-                "kind": "dialogue",
-                "text": "「……。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-23",
-                "kind": "dialogue",
-                "text": "「先生は。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-24",
-                "kind": "dialogue",
-                "text": "「誰よりも考え。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-25",
-                "kind": "dialogue",
-                "text": "「誰よりも悩み。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-26",
-                "kind": "dialogue",
-                "text": "「その末に。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-27",
-                "kind": "dialogue",
-                "text": "「一つの答えへたどり着かれたのです。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-28",
-                "kind": "dialogue",
-                "text": "「私は。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-29",
-                "kind": "dialogue",
-                "text": "「その答えを信じます。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-30",
-                "kind": "dialogue",
-                "text": "「久坂。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-31",
-                "kind": "dialogue",
-                "text": "「お前の覚悟は分かる。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-32",
-                "kind": "dialogue",
-                "text": "「じゃが先生は。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-33",
-                "kind": "dialogue",
-                "text": "「答えだけを残されたわけではなかろう。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-34",
-                "kind": "dialogue",
-                "text": "「先生は何度も。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-35",
-                "kind": "dialogue",
-                "text": "「『お前はどう思う。』」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-36",
-                "kind": "dialogue",
-                "text": "「そう聞かれた。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-37",
-                "kind": "dialogue",
-                "text": "「先生が育てようとされたのは。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-38",
-                "kind": "dialogue",
-                "text": "「先生と同じ答えを唱える者だけではない。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-39",
-                "kind": "dialogue",
-                "text": "「自分の頭で考え。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-40",
-                "kind": "dialogue",
-                "text": "「時代と向き合う者じゃ。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-41",
-                "kind": "dialogue",
-                "text": "「高杉さんのお考えも分かります。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-42",
-                "kind": "dialogue",
-                "text": "「私も先生と何度も議論しました。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-43",
-                "kind": "dialogue",
-                "text": "「考えました。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-44",
-                "kind": "dialogue",
-                "text": "「その上で。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-45",
-                "kind": "dialogue",
-                "text": "「先生のお示しくださった道こそ。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-46",
-                "kind": "dialogue",
-                "text": "「日本を救う道だと信じているのです。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-47",
-                "kind": "dialogue",
-                "text": "「ならば。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-48",
-                "kind": "dialogue",
-                "text": "「その道を試す者も必要じゃ。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-49",
-                "kind": "dialogue",
-                "text": "「同時に。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-50",
-                "kind": "dialogue",
-                "text": "「時代に合わせて、道そのものを考え直す者も必要じゃろう。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-51",
-                "kind": "dialogue",
-                "text": "「私は。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-52",
-                "kind": "dialogue",
-                "text": "「先生のお考えを。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-53",
-                "kind": "dialogue",
-                "text": "「最後まで実践します。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-54",
-                "kind": "dialogue",
-                "text": "「その結果で。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-55",
-                "kind": "dialogue",
-                "text": "「先生のお考えが。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-56",
-                "kind": "dialogue",
-                "text": "「この国を変えることを証明したいのです。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-57",
-                "kind": "narration",
-                "text": "静まり返る。"
-          },
-          {
-                "id": "p-58",
-                "kind": "narration",
-                "text": "高杉もすぐには言葉を返せない。"
-          },
-          {
-                "id": "p-59",
-                "kind": "narration",
-                "text": "その時。"
-          },
-          {
-                "id": "p-60",
-                "kind": "narration",
-                "text": "桂が静かに口を開く。"
-          },
-          {
-                "id": "p-61",
-                "kind": "dialogue",
-                "text": "「私は。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-62",
-                "kind": "dialogue",
-                "text": "「二人の考えを否定するつもりはない。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-63",
-                "kind": "dialogue",
-                "text": "「ただ。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-64",
-                "kind": "dialogue",
-                "text": "「私は先生の志を。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-65",
-                "kind": "dialogue",
-                "text": "「未来へつなぎたい。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-66",
-                "kind": "dialogue",
-                "text": "「桂さん。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-67",
-                "kind": "dialogue",
-                "text": "「志を受け継ぐことは大事じゃ。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-68",
-                "kind": "dialogue",
-                "text": "「じゃが、まず動かにゃ。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-69",
-                "kind": "dialogue",
-                "text": "「世は変わらんじゃろう。」",
-                "speaker": "高杉 晋作"
-          },
-          {
-                "id": "p-70",
-                "kind": "dialogue",
-                "text": "「私も。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-71",
-                "kind": "dialogue",
-                "text": "「先生のお考えは。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-72",
-                "kind": "dialogue",
-                "text": "「実践してこそ。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-73",
-                "kind": "dialogue",
-                "text": "「人に伝わると思います。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-74",
-                "kind": "narration",
-                "text": "桂は静かに二人を見る。"
-          },
-          {
-                "id": "p-75",
-                "kind": "dialogue",
-                "text": "「その通りだ。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-76",
-                "kind": "dialogue",
-                "text": "「動く者もいる。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-77",
-                "kind": "dialogue",
-                "text": "「実践する者もいる。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-78",
-                "kind": "dialogue",
-                "text": "「だが。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-79",
-                "kind": "dialogue",
-                "text": "「もし、その者たちが倒れたら。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-80",
-                "kind": "narration",
-                "text": "沈黙。"
-          },
-          {
-                "id": "p-81",
-                "kind": "dialogue",
-                "text": "「先生は亡くなられた。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-82",
-                "kind": "dialogue",
-                "text": "「それでも先生のお考えは。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-83",
-                "kind": "dialogue",
-                "text": "「今、ここに残っている。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-84",
-                "kind": "dialogue",
-                "text": "「それは。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-85",
-                "kind": "dialogue",
-                "text": "「先生の志を受け継いだ者がいたからだ。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-86",
-                "kind": "dialogue",
-                "text": "「どれほど立派な教えも。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-87",
-                "kind": "dialogue",
-                "text": "「受け継ぐ者がいなければ。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-88",
-                "kind": "dialogue",
-                "text": "「そこで終わる。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-89",
-                "kind": "dialogue",
-                "text": "「私は。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-90",
-                "kind": "dialogue",
-                "text": "「先生の志を。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-91",
-                "kind": "dialogue",
-                "text": "「一人でも多くの仲間へつなぎたい。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-92",
-                "kind": "dialogue",
-                "text": "「それが。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-93",
-                "kind": "dialogue",
-                "text": "「私の果たすべき役目だと思う。」",
-                "speaker": "桂 小五郎"
-          },
-          {
-                "id": "p-94",
-                "kind": "narration",
-                "text": "三人は村瀬を見る。"
-          },
-          {
-                "id": "p-95",
-                "kind": "dialogue",
-                "text": "「村瀬。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-96",
-                "kind": "dialogue",
-                "text": "「お前は先生から。」",
-                "speaker": "久坂 玄瑞"
-          },
-          {
-                "id": "p-97",
-                "kind": "dialogue",
-                "text": "「何を受け継ぐ。」",
-                "speaker": "久坂 玄瑞"
-          }
+    "passages": [
+      {
+        "id": "p-1",
+        "kind": "narration",
+        "text": "安政六年（1859年）。"
+      },
+      {
+        "id": "p-2",
+        "kind": "narration",
+        "text": "吉田 松陰（よしだ しょういん）は江戸・伝馬町牢屋敷で処刑された。"
+      },
+      {
+        "id": "p-3",
+        "kind": "narration",
+        "text": "享年二十九。"
+      },
+      {
+        "id": "p-4",
+        "kind": "narration",
+        "text": "先生は、最後まで日本の未来を信じていた。"
+      },
+      {
+        "id": "p-5",
+        "kind": "narration",
+        "text": "その知らせは長州にも届く。"
+      },
+      {
+        "id": "p-6",
+        "kind": "narration",
+        "text": "松下村塾（しょうかそんじゅく）には、静かな時間だけが流れていた。"
+      },
+      {
+        "id": "p-7",
+        "kind": "scene",
+        "text": "【松下村塾（しょうかそんじゅく）】"
+      },
+      {
+        "id": "p-8",
+        "kind": "narration",
+        "text": "誰も口を開かない。"
+      },
+      {
+        "id": "p-9",
+        "kind": "narration",
+        "text": "机の上には先生が読まれていた本。"
+      },
+      {
+        "id": "p-10",
+        "kind": "narration",
+        "text": "壁には掛け軸。"
+      },
+      {
+        "id": "p-11",
+        "kind": "narration",
+        "text": "先生だけがいない。"
+      },
+      {
+        "id": "p-12",
+        "kind": "narration",
+        "text": "村瀬は静かに座っていた。"
+      },
+      {
+        "id": "p-13",
+        "kind": "narration",
+        "text": "（先生は、本当にいなくなった。）"
+      },
+      {
+        "id": "p-14",
+        "kind": "narration",
+        "text": "（もう二度と教えは聞けない。）"
+      },
+      {
+        "id": "p-15",
+        "kind": "narration",
+        "text": "久坂は先生の机を見つめながら口を開く。"
+      },
+      {
+        "id": "p-16",
+        "kind": "dialogue",
+        "text": "「先生は。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-17",
+        "kind": "dialogue",
+        "text": "「この国の進むべき道を。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-18",
+        "kind": "dialogue",
+        "text": "「命を懸けて私たちに示してくださいました。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-19",
+        "kind": "dialogue",
+        "text": "「ですが。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-20",
+        "kind": "dialogue",
+        "text": "「そのお考えは。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-21",
+        "kind": "dialogue",
+        "text": "「まだ、この国には届いておりません。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-22",
+        "kind": "dialogue",
+        "text": "「……。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-23",
+        "kind": "dialogue",
+        "text": "「先生は。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-24",
+        "kind": "dialogue",
+        "text": "「誰よりも考え。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-25",
+        "kind": "dialogue",
+        "text": "「誰よりも悩み。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-26",
+        "kind": "dialogue",
+        "text": "「その末に。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-27",
+        "kind": "dialogue",
+        "text": "「一つの答えへたどり着かれたのです。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-28",
+        "kind": "dialogue",
+        "text": "「私は。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-29",
+        "kind": "dialogue",
+        "text": "「その答えを信じます。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-30",
+        "kind": "dialogue",
+        "text": "「久坂。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-31",
+        "kind": "dialogue",
+        "text": "「お前の覚悟は分かる。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-32",
+        "kind": "dialogue",
+        "text": "「じゃが先生は。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-33",
+        "kind": "dialogue",
+        "text": "「答えだけを残されたわけではなかろう。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-34",
+        "kind": "dialogue",
+        "text": "「先生は何度も。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-35",
+        "kind": "dialogue",
+        "text": "「『お前はどう思う。』」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-36",
+        "kind": "dialogue",
+        "text": "「そう聞かれた。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-37",
+        "kind": "dialogue",
+        "text": "「先生が育てようとされたのは。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-38",
+        "kind": "dialogue",
+        "text": "「先生と同じ答えを唱える者だけではない。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-39",
+        "kind": "dialogue",
+        "text": "「自分の頭で考え。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-40",
+        "kind": "dialogue",
+        "text": "「時代と向き合う者じゃ。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-41",
+        "kind": "dialogue",
+        "text": "「高杉さんのお考えも分かります。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-42",
+        "kind": "dialogue",
+        "text": "「私も先生と何度も議論しました。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-43",
+        "kind": "dialogue",
+        "text": "「考えました。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-44",
+        "kind": "dialogue",
+        "text": "「その上で。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-45",
+        "kind": "dialogue",
+        "text": "「先生のお示しくださった道こそ。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-46",
+        "kind": "dialogue",
+        "text": "「日本を救う道だと信じているのです。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-47",
+        "kind": "dialogue",
+        "text": "「ならば。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-48",
+        "kind": "dialogue",
+        "text": "「その道を試す者も必要じゃ。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-49",
+        "kind": "dialogue",
+        "text": "「同時に。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-50",
+        "kind": "dialogue",
+        "text": "「時代に合わせて、道そのものを考え直す者も必要じゃろう。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-51",
+        "kind": "dialogue",
+        "text": "「私は。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-52",
+        "kind": "dialogue",
+        "text": "「先生のお考えを。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-53",
+        "kind": "dialogue",
+        "text": "「最後まで実践します。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-54",
+        "kind": "dialogue",
+        "text": "「その結果で。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-55",
+        "kind": "dialogue",
+        "text": "「先生のお考えが。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-56",
+        "kind": "dialogue",
+        "text": "「この国を変えることを証明したいのです。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-57",
+        "kind": "narration",
+        "text": "静まり返る。"
+      },
+      {
+        "id": "p-58",
+        "kind": "narration",
+        "text": "高杉もすぐには言葉を返せない。"
+      },
+      {
+        "id": "p-59",
+        "kind": "narration",
+        "text": "その時。"
+      },
+      {
+        "id": "p-60",
+        "kind": "narration",
+        "text": "桂が静かに口を開く。"
+      },
+      {
+        "id": "p-61",
+        "kind": "dialogue",
+        "text": "「私は。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-62",
+        "kind": "dialogue",
+        "text": "「二人の考えを否定するつもりはない。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-63",
+        "kind": "dialogue",
+        "text": "「ただ。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-64",
+        "kind": "dialogue",
+        "text": "「私は先生の志を。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-65",
+        "kind": "dialogue",
+        "text": "「未来へつなぎたい。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-66",
+        "kind": "dialogue",
+        "text": "「桂さん。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-67",
+        "kind": "dialogue",
+        "text": "「志を受け継ぐことは大事じゃ。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-68",
+        "kind": "dialogue",
+        "text": "「じゃが、まず動かにゃ。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-69",
+        "kind": "dialogue",
+        "text": "「世は変わらんじゃろう。」",
+        "speaker": "高杉 晋作"
+      },
+      {
+        "id": "p-70",
+        "kind": "dialogue",
+        "text": "「私も。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-71",
+        "kind": "dialogue",
+        "text": "「先生のお考えは。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-72",
+        "kind": "dialogue",
+        "text": "「実践してこそ。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-73",
+        "kind": "dialogue",
+        "text": "「人に伝わると思います。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-74",
+        "kind": "narration",
+        "text": "桂は静かに二人を見る。"
+      },
+      {
+        "id": "p-75",
+        "kind": "dialogue",
+        "text": "「その通りだ。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-76",
+        "kind": "dialogue",
+        "text": "「動く者もいる。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-77",
+        "kind": "dialogue",
+        "text": "「実践する者もいる。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-78",
+        "kind": "dialogue",
+        "text": "「だが。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-79",
+        "kind": "dialogue",
+        "text": "「もし、その者たちが倒れたら。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-80",
+        "kind": "narration",
+        "text": "沈黙。"
+      },
+      {
+        "id": "p-81",
+        "kind": "dialogue",
+        "text": "「先生は亡くなられた。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-82",
+        "kind": "dialogue",
+        "text": "「それでも先生のお考えは。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-83",
+        "kind": "dialogue",
+        "text": "「今、ここに残っている。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-84",
+        "kind": "dialogue",
+        "text": "「それは。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-85",
+        "kind": "dialogue",
+        "text": "「先生の志を受け継いだ者がいたからだ。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-86",
+        "kind": "dialogue",
+        "text": "「どれほど立派な教えも。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-87",
+        "kind": "dialogue",
+        "text": "「受け継ぐ者がいなければ。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-88",
+        "kind": "dialogue",
+        "text": "「そこで終わる。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-89",
+        "kind": "dialogue",
+        "text": "「私は。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-90",
+        "kind": "dialogue",
+        "text": "「先生の志を。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-91",
+        "kind": "dialogue",
+        "text": "「一人でも多くの仲間へつなぎたい。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-92",
+        "kind": "dialogue",
+        "text": "「それが。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-93",
+        "kind": "dialogue",
+        "text": "「私の果たすべき役目だと思う。」",
+        "speaker": "桂 小五郎"
+      },
+      {
+        "id": "p-94",
+        "kind": "narration",
+        "text": "三人は村瀬を見る。"
+      },
+      {
+        "id": "p-95",
+        "kind": "dialogue",
+        "text": "「村瀬。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-96",
+        "kind": "dialogue",
+        "text": "「お前は先生から。」",
+        "speaker": "久坂 玄瑞"
+      },
+      {
+        "id": "p-97",
+        "kind": "dialogue",
+        "text": "「何を受け継ぐ。」",
+        "speaker": "久坂 玄瑞"
+      }
     ],
     "endingPassages": [
       {
@@ -1209,65 +1209,64 @@ export const chapters: Chapter[] = [
         "kind": "narration",
         "text": "議論は最後まで平行線だった。"
       },
-     
       {
-        "id": "e-5",
+        "id": "e-3",
         "kind": "narration",
         "text": "松陰が遺したものは、一つの答えではなかった。"
       },
       {
-        "id": "e-6",
+        "id": "e-4",
         "kind": "narration",
         "text": "それぞれが考え、"
       },
       {
-        "id": "e-7",
+        "id": "e-5",
         "kind": "narration",
         "text": "それぞれが歩み、"
       },
       {
-        "id": "e-8",
+        "id": "e-6",
         "kind": "narration",
         "text": "それぞれのやり方で志を未来へつないでいくこと。"
       },
       {
-        "id": "e-9",
+        "id": "e-7",
         "kind": "scene",
         "text": "（先生。）"
       },
       {
-        "id": "e-10",
+        "id": "e-8",
         "kind": "scene",
         "text": "（私は、私の道を歩きます。）"
       },
       {
-        "id": "e-11",
+        "id": "e-9",
         "kind": "narration",
         "text": "長州は、ここから動き始める。"
       }
     ],
-    "choices":     [
-          {
-                "id": "choice-1",
-                "label": "①",
-                "text": "①教えを実践して証明する。",
-                "person": "久坂 玄瑞",
-                "value": "決行によって志を継ぐ"
-          },
-          {
-                "id": "choice-2",
-                "label": "②",
-                "text": "②時代に合わせて考え続ける。",
-                "person": "高杉 晋作",
-                "value": "変革によって志を継ぐ"
-          },
-          {
-                "id": "choice-3",
-                "label": "③",
-                "text": "③志を仲間へ受け継ぐ。",
-                "person": "桂 小五郎",
-                "value": "継承によって志を継ぐ"
-          }
+    "choices": [
+      {
+        "id": "choice-1",
+        "label": "①",
+        "text": "①教えを実践して証明する。",
+        "person": "久坂 玄瑞",
+        "value": "決行によって志を継ぐ"
+      },
+      {
+        "id": "choice-2",
+        "label": "②",
+        "text": "②時代に合わせて考え続ける。",
+        "person": "高杉 晋作",
+        "value": "変革によって志を継ぐ"
+      },
+      {
+        "id": "choice-3",
+        "label": "③",
+        "text": "③志を仲間へ受け継ぐ。",
+        "person": "桂 小五郎",
+        "value": "継承によって志を継ぐ"
+      }
     ],
     "notes": []
   },
@@ -2043,36 +2042,36 @@ export const chapters: Chapter[] = [
         "kind": "narration",
         "text": "三人とも、相手を見つめる。"
       },
-           {
-        "id": "p-136",
+      {
+        "id": "p-135",
         "kind": "narration",
         "text": "互いの言葉を受け止め、その先にある日本の未来を考えていた。"
       },
       {
-        "id": "p-137",
+        "id": "p-136",
         "kind": "narration",
         "text": "やがて勝が村瀬へ視線を向ける。"
       },
       {
-        "id": "p-138",
+        "id": "p-137",
         "kind": "dialogue",
         "text": "「長州の若ぇ衆。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-139",
+        "id": "p-138",
         "kind": "dialogue",
         "text": "「人の話ぁ聞いて。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-140",
+        "id": "p-139",
         "kind": "dialogue",
         "text": "「おめぇは何を思った。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-141",
+        "id": "p-140",
         "kind": "dialogue",
         "text": "「聞かせてみな。」",
         "speaker": "勝 海舟"
@@ -2129,15 +2128,13 @@ export const chapters: Chapter[] = [
         "kind": "scene",
         "text": "（志は、人によって形が違う。）"
       },
-
-  {
-        "id": "e-10",
+      {
+        "id": "e-11",
         "kind": "scene",
         "text": "（私の志とは、何だろうか……。）"
       },
-
       {
-        "id": "e-11",
+        "id": "e-12",
         "kind": "narration",
         "text": "京都の夜は、まだ静かだった。"
       }
@@ -2510,251 +2507,251 @@ export const chapters: Chapter[] = [
         "text": "来島は静かに首を振る。"
       },
       {
-        "id": "p-62a",
+        "id": "p-62",
         "kind": "dialogue",
         "text": "「桂。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62b",
+        "id": "p-63",
         "kind": "dialogue",
         "text": "「機会は待っておれば来るものではない。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62c",
+        "id": "p-64",
         "kind": "dialogue",
         "text": "「自ら掴みに行くものじゃ。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62d",
+        "id": "p-65",
         "kind": "narration",
         "text": "京都へ目を向ける。"
       },
       {
-        "id": "p-62e",
+        "id": "p-66",
         "kind": "dialogue",
         "text": "「今の朝廷は、長州を朝敵として見ておる。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62f",
+        "id": "p-67",
         "kind": "dialogue",
         "text": "「このまま待っておれば、その見方は強まるばかりじゃ。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62g",
+        "id": "p-68",
         "kind": "dialogue",
         "text": "「弁明の機会など、誰が与えてくれる。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62h",
+        "id": "p-69",
         "kind": "narration",
         "text": "久坂を見る。"
       },
       {
-        "id": "p-62i",
+        "id": "p-70",
         "kind": "dialogue",
         "text": "「久坂。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62j",
+        "id": "p-71",
         "kind": "dialogue",
         "text": "「お主は朝廷が我らの真意を聞いてくださると信じておる。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62k",
+        "id": "p-72",
         "kind": "dialogue",
         "text": "「わしも、それが叶うなら、それに越したことはない。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62l",
+        "id": "p-73",
         "kind": "dialogue",
         "text": "「じゃが。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62m",
+        "id": "p-74",
         "kind": "dialogue",
         "text": "「言葉だけでは門は開かん。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62n",
+        "id": "p-75",
         "kind": "dialogue",
         "text": "「武力は朝廷へ刃を向けるためではない。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62o",
+        "id": "p-76",
         "kind": "dialogue",
         "text": "「閉ざされた道を開くための力じゃ。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62p",
+        "id": "p-77",
         "kind": "narration",
         "text": "少し間を置く。"
       },
       {
-        "id": "p-62q",
+        "id": "p-78",
         "kind": "dialogue",
         "text": "「待っておれば、長州は滅ぶ。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-62r",
+        "id": "p-79",
         "kind": "dialogue",
         "text": "「今なら、まだ自ら道を切り開ける。」",
         "speaker": "来島 又兵衛"
       },
       {
-        "id": "p-63",
+        "id": "p-80",
         "kind": "narration",
         "text": "久坂は答える。"
       },
       {
-        "id": "p-64",
+        "id": "p-81",
         "kind": "dialogue",
         "text": "「戦えば、朝廷から完全に見放されます。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-65",
+        "id": "p-82",
         "kind": "dialogue",
         "text": "「ですが。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-66",
+        "id": "p-83",
         "kind": "dialogue",
         "text": "「まだ道が閉ざされたわけではありません。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-67",
+        "id": "p-84",
         "kind": "dialogue",
         "text": "「長州に理解を示してくださっている鷹司家（たかつかさけ）に取り次いでいただければ。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-68",
+        "id": "p-85",
         "kind": "dialogue",
         "text": "「我らの真意を朝廷へ届けられるやもしれません。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-69",
+        "id": "p-86",
         "kind": "dialogue",
         "text": "「武力に訴える前に、まずは嘆願によって、藩主父子の冤罪を晴らすべきです。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-70",
+        "id": "p-87",
         "kind": "narration",
         "text": "二人の視線がぶつかる。"
       },
       {
-        "id": "p-71",
+        "id": "p-88",
         "kind": "narration",
         "text": "村瀬は三人を見る。"
       },
       {
-        "id": "p-72",
+        "id": "p-89",
         "kind": "scene",
         "text": "（来島殿は。）"
       },
       {
-        "id": "p-73",
+        "id": "p-90",
         "kind": "scene",
         "text": "（今動かなければ終わると言う。）"
       },
       {
-        "id": "p-74",
+        "id": "p-91",
         "kind": "scene",
         "text": "（久坂さんは。）"
       },
       {
-        "id": "p-75",
+        "id": "p-92",
         "kind": "scene",
         "text": "（目的を見失うなと言う。）"
       },
       {
-        "id": "p-76",
+        "id": "p-93",
         "kind": "scene",
         "text": "（桂さんは。）"
       },
       {
-        "id": "p-77",
+        "id": "p-94",
         "kind": "scene",
         "text": "（未来を守れと言う。）"
       },
       {
-        "id": "p-78",
+        "id": "p-95",
         "kind": "scene",
         "text": "（三人とも。）"
       },
       {
-        "id": "p-79",
+        "id": "p-96",
         "kind": "scene",
         "text": "（長州を救おうとしている。）"
       },
       {
-        "id": "p-80",
+        "id": "p-97",
         "kind": "scene",
         "text": "（先生なら。）"
       },
       {
-        "id": "p-81",
+        "id": "p-98",
         "kind": "scene",
         "text": "（どうされたのだろう。）"
       },
       {
-        "id": "p-82",
+        "id": "p-99",
         "kind": "narration",
         "text": "久坂が村瀬を見る。"
       },
       {
-        "id": "p-83",
+        "id": "p-100",
         "kind": "dialogue",
         "text": "「お前はどう思う。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-84",
+        "id": "p-101",
         "kind": "dialogue",
         "text": "「お前なら考えを持っているはずだ。」",
         "speaker": "久坂 玄瑞"
       },
       {
-        "id": "p-85",
+        "id": "p-102",
         "kind": "narration",
         "text": "本陣が静まり返る。"
       },
       {
-        "id": "p-86",
+        "id": "p-103",
         "kind": "scene",
         "text": "（私などが……。）"
       },
       {
-        "id": "p-87",
+        "id": "p-104",
         "kind": "narration",
         "text": "しかし、先生の言葉がよみがえる。"
       },
       {
-        "id": "p-88",
+        "id": "p-105",
         "kind": "dialogue",
         "text": "「自分で考えよ。」",
         "speaker": "吉田 松陰"
       },
       {
-        "id": "p-89",
+        "id": "p-106",
         "kind": "narration",
         "text": "村瀬は一歩前へ出た。"
       }
@@ -3638,8 +3635,6 @@ export const chapters: Chapter[] = [
         "text": "「恭順派と手を取り合うて。」",
         "speaker": "高杉 晋作"
       },
-
-
       {
         "id": "p-43",
         "kind": "dialogue",
@@ -3663,15 +3658,12 @@ export const chapters: Chapter[] = [
         "text": "「長州人同士が傷つけば、」",
         "speaker": "赤根 武人"
       },
-
-
- {
+      {
         "id": "p-47",
         "kind": "dialogue",
         "text": "「それは長州の勝ちとは言えん。」",
         "speaker": "赤根 武人"
       },
-
       {
         "id": "p-48",
         "kind": "narration",
@@ -3727,8 +3719,6 @@ export const chapters: Chapter[] = [
         "text": "「俺は、仲間へ銃を向けるんじゃろうか。」",
         "speaker": "山縣 狂介"
       },
-
-
       {
         "id": "p-58",
         "kind": "dialogue",
@@ -5545,57 +5535,57 @@ export const chapters: Chapter[] = [
       }
     ],
     "endingPassages": [
-  {
-    "id": "e-1",
-    "kind": "narration",
-    "text": "軍議は終わった。"
-  },
-  {
-    "id": "e-2",
-    "kind": "narration",
-    "text": "長州は、大島を奪還するため動き始める。"
-  },
-  {
-    "id": "e-3",
-    "kind": "narration",
-    "text": "高杉 晋作は丙寅丸に乗り込み、大島へ向かった。"
-  },
-  {
-    "id": "e-4",
-    "kind": "narration",
-    "text": "丙寅丸による奇襲をきっかけに、戦況は動き始める。"
-  },
-  {
-    "id": "e-5",
-    "kind": "narration",
-    "text": "その後、長州軍は大島へ上陸。"
-  },
-  {
-    "id": "e-6",
-    "kind": "narration",
-    "text": "第二奇兵隊をはじめとする兵たちは、島を知り尽くした地の利を生かして反撃した。"
-  },
-  {
-    "id": "e-7",
-    "kind": "narration",
-    "text": "そして。"
-  },
-  {
-    "id": "e-8",
-    "kind": "narration",
-    "text": "長州軍は、周防大島を奪還する。"
-  },
-  {
-    "id": "e-9",
-    "kind": "narration",
-    "text": "大島での勝利は、長州の人々に大きな自信を与えた。"
-  },
-  {
-    "id": "e-10",
-    "kind": "narration",
-    "text": "第二次長州征討は、ここから各地で大きく動き始める。"
-  }
-]
+      {
+        "id": "e-1",
+        "kind": "narration",
+        "text": "軍議は終わった。"
+      },
+      {
+        "id": "e-2",
+        "kind": "narration",
+        "text": "長州は、大島を奪還するため動き始める。"
+      },
+      {
+        "id": "e-3",
+        "kind": "narration",
+        "text": "高杉 晋作は丙寅丸に乗り込み、大島へ向かった。"
+      },
+      {
+        "id": "e-4",
+        "kind": "narration",
+        "text": "丙寅丸による奇襲をきっかけに、戦況は動き始める。"
+      },
+      {
+        "id": "e-5",
+        "kind": "narration",
+        "text": "その後、長州軍は大島へ上陸。"
+      },
+      {
+        "id": "e-6",
+        "kind": "narration",
+        "text": "第二奇兵隊をはじめとする兵たちは、島を知り尽くした地の利を生かして反撃した。"
+      },
+      {
+        "id": "e-7",
+        "kind": "narration",
+        "text": "そして。"
+      },
+      {
+        "id": "e-8",
+        "kind": "narration",
+        "text": "長州軍は、周防大島を奪還する。"
+      },
+      {
+        "id": "e-9",
+        "kind": "narration",
+        "text": "大島での勝利は、長州の人々に大きな自信を与えた。"
+      },
+      {
+        "id": "e-10",
+        "kind": "narration",
+        "text": "第二次長州征討は、ここから各地で大きく動き始める。"
+      }
+    ],
     "choices": [
       {
         "id": "choice-1",
@@ -6329,436 +6319,435 @@ export const chapters: Chapter[] = [
         "text": "その時だった。"
       },
       {
-        "id": "p-34a",
+        "id": "p-35",
         "kind": "dialogue",
         "text": "「薩長を討て！」",
         "speaker": "旧幕府軍兵たち"
       },
       {
-        "id": "p-34b",
+        "id": "p-36",
         "kind": "dialogue",
         "text": "「徳川を守れ！」",
         "speaker": "旧幕府軍兵たち"
       },
       {
-        "id": "p-34c",
+        "id": "p-37",
         "kind": "dialogue",
         "text": "「一歩も退くな！」",
         "speaker": "旧幕府軍兵たち"
       },
       {
-        "id": "p-34d",
+        "id": "p-38",
         "kind": "narration",
         "text": "幾千もの兵たちの鬨（とき）の声が城外から響き渡る。"
       },
       {
-        "id": "p-34e",
+        "id": "p-39",
         "kind": "narration",
         "text": "その声は幾重にも重なり、大坂城全体を揺らしているかのようだった。"
       },
       {
-        "id": "p-34f",
+        "id": "p-40",
         "kind": "narration",
         "text": "障子が微かに震える。"
       },
       {
-        "id": "p-34g",
+        "id": "p-41",
         "kind": "narration",
         "text": "すると、一人の兵が叫ぶ。"
       },
       {
-        "id": "p-34h",
+        "id": "p-42",
         "kind": "dialogue",
         "text": "「上様がおられるぞ！」",
         "speaker": "旧幕府軍兵たち"
       },
       {
-        "id": "p-34i",
+        "id": "p-43",
         "kind": "narration",
         "text": "その一言に呼応するように、"
       },
       {
-        "id": "p-34j",
+        "id": "p-44",
         "kind": "dialogue",
         "text": "「おおおおっ!!」",
         "speaker": "旧幕府軍兵たち"
       },
       {
-        "id": "p-34k",
+        "id": "p-45",
         "kind": "narration",
         "text": "歓声が爆発した。"
       },
       {
-        "id": "p-34l",
+        "id": "p-46",
         "kind": "narration",
         "text": "城中の空気が震える。"
       },
       {
-        "id": "p-34m",
+        "id": "p-47",
         "kind": "narration",
         "text": "慶喜はゆっくりと目を伏せた。"
       },
       {
-        "id": "p-34n",
+        "id": "p-48",
         "kind": "narration",
         "text": ""
       },
       {
-        "id": "p-34o",
+        "id": "p-49",
         "kind": "narration",
         "text": "容保は、その様子を見つめながら口を開く。"
       },
       {
-        "id": "p-34p",
+        "id": "p-50",
         "kind": "dialogue",
         "text": "「……上様も、お聞きになられたでしょう。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-35",
+        "id": "p-51",
         "kind": "dialogue",
         "text": "「今の兵は、薩長への怒りで燃えております。命を懸けても戦うという者ばかりです。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-36",
+        "id": "p-52",
         "kind": "dialogue",
         "text": "「この状況で退却を命じれば、命令を受け入れず、勝手に動く者が現れるやもしれませぬ。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-37",
+        "id": "p-53",
         "kind": "dialogue",
         "text": "「軍の統制は失われます。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-38",
+        "id": "p-54",
         "kind": "narration",
         "text": "容保は慶喜をまっすぐ見つめる。"
       },
       {
-        "id": "p-39",
+        "id": "p-55",
         "kind": "dialogue",
         "text": "「軍の統制を失えば。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-40",
+        "id": "p-56",
         "kind": "dialogue",
         "text": "「上様のお命すら、お守りできる保証はございません。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-41",
+        "id": "p-57",
         "kind": "dialogue",
         "text": "「私は、意地や面目のために戦えと申しているのではございません。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-42",
+        "id": "p-58",
         "kind": "dialogue",
         "text": "「勝機がございます。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-43",
+        "id": "p-59",
         "kind": "dialogue",
         "text": "「そして、上様と徳川家をお守りするためにも。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-44",
+        "id": "p-60",
         "kind": "dialogue",
         "text": "「今は戦うべきでございます。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-44a",
+        "id": "p-61",
         "kind": "narration",
         "text": "慶喜は黙ったままだった。"
       },
       {
-        "id": "p-44b",
+        "id": "p-62",
         "kind": "narration",
         "text": "徳川のために命を捨てる覚悟を決めた兵たち。"
       },
       {
-        "id": "p-44c",
+        "id": "p-63",
         "kind": "narration",
         "text": "その忠義は、これ以上ないほど頼もしい。"
       },
       {
-        "id": "p-44d",
+        "id": "p-64",
         "kind": "narration",
         "text": "だが同時に、その熱気は、もはや命令ひとつで抑えられるものではないことも感じていた。"
       },
       {
-        "id": "p-44e",
+        "id": "p-65",
         "kind": "narration",
         "text": "もし、この場で退却を命じれば──。"
       },
       {
-        "id": "p-44f",
+        "id": "p-66",
         "kind": "narration",
         "text": "その瞬間、慶喜の胸をよぎったのは、敵ではなかった。"
       },
       {
-        "id": "p-44g",
+        "id": "p-67",
         "kind": "narration",
         "text": "熱狂した味方の姿だった。"
       },
       {
-        "id": "p-44g-pause",
+        "id": "p-68",
         "kind": "narration",
         "text": "　"
       },
       {
-        "id": "p-44h",
+        "id": "p-69",
         "kind": "narration",
         "text": "静寂が部屋を包む。"
       },
-     
       {
-        "id": "p-45",
+        "id": "p-70",
         "kind": "dialogue",
         "text": "「なるほどな。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-46",
+        "id": "p-71",
         "kind": "dialogue",
         "text": "「勝機はあるってわけだ。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-47",
+        "id": "p-72",
         "kind": "dialogue",
         "text": "「だが容保公。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-48",
+        "id": "p-73",
         "kind": "dialogue",
         "text": "「それじゃあ。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-49",
+        "id": "p-74",
         "kind": "dialogue",
         "text": "「本当に徳川を朝敵（ちょうてき）にしちまう気ですかい。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-50",
+        "id": "p-75",
         "kind": "dialogue",
         "text": "「……。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-51",
+        "id": "p-76",
         "kind": "dialogue",
         "text": "「戦に勝つことだけじゃねえ。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-52",
+        "id": "p-77",
         "kind": "dialogue",
         "text": "「勝ったあとに。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-53",
+        "id": "p-78",
         "kind": "dialogue",
         "text": "「この国がどうなるかまで考えなきゃならねえ。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-54",
+        "id": "p-79",
         "kind": "dialogue",
         "text": "「最後に守るべきものも。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-54a",
+        "id": "p-80",
         "kind": "dialogue",
         "text": "「日本でしょう。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-54b",
+        "id": "p-81",
         "kind": "dialogue",
         "text": "「勝殿のお考えには。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54c",
+        "id": "p-82",
         "kind": "dialogue",
         "text": "「私も同じ思いです。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54d",
+        "id": "p-83",
         "kind": "dialogue",
         "text": "「徳川が朝敵となれば。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54e",
+        "id": "p-84",
         "kind": "dialogue",
         "text": "「宗家の存続そのものが危うくなります。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54f",
+        "id": "p-85",
         "kind": "dialogue",
         "text": "「もし徳川が失われれば。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54g",
+        "id": "p-86",
         "kind": "dialogue",
         "text": "「四百万石のもとで暮らす家臣。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54h",
+        "id": "p-87",
         "kind": "dialogue",
         "text": "「領民。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54i",
+        "id": "p-88",
         "kind": "dialogue",
         "text": "「その家族まで。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54j",
+        "id": "p-89",
         "kind": "dialogue",
         "text": "「行き場を失うことになります。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54k",
+        "id": "p-90",
         "kind": "dialogue",
         "text": "「私は。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54l",
+        "id": "p-91",
         "kind": "dialogue",
         "text": "「徳川という家を守ることが。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54m",
+        "id": "p-92",
         "kind": "dialogue",
         "text": "「多くの者を守ることにつながると考えています。」",
         "speaker": "板倉 勝静"
       },
       {
-        "id": "p-54n",
+        "id": "p-93",
         "kind": "dialogue",
         "text": "「だからと言って。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-54o",
+        "id": "p-94",
         "kind": "dialogue",
         "text": "「戦わずして。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-54p",
+        "id": "p-95",
         "kind": "dialogue",
         "text": "「朝廷へ刃を向けたとの汚名だけを受け入れろと言うのですか。」",
         "speaker": "松平 容保"
       },
       {
-        "id": "p-54q",
+        "id": "p-96",
         "kind": "dialogue",
         "text": "「いや。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-54r",
+        "id": "p-97",
         "kind": "dialogue",
         "text": "「だからこそ。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-54s",
+        "id": "p-98",
         "kind": "dialogue",
         "text": "「朝敵にならねえ道を探すんです。」",
         "speaker": "勝 海舟"
       },
       {
-        "id": "p-55",
+        "id": "p-99",
         "kind": "narration",
         "text": "三人は互いに譲らない。"
       },
       {
-        "id": "p-56",
+        "id": "p-100",
         "kind": "narration",
         "text": "部屋は静まり返る。"
       },
       {
-        "id": "p-57",
+        "id": "p-101",
         "kind": "narration",
         "text": "誰一人、"
       },
       {
-        "id": "p-58",
+        "id": "p-102",
         "kind": "narration",
         "text": "誰も、自らの利益のために語っているわけではなかった。"
       },
       {
-        "id": "p-59",
+        "id": "p-103",
         "kind": "narration",
         "text": "守ろうとしているものが、"
       },
       {
-        "id": "p-60",
+        "id": "p-104",
         "kind": "narration",
         "text": "それぞれ違うだけだった。"
       },
       {
-        "id": "p-61",
+        "id": "p-105",
         "kind": "narration",
         "text": "慶喜は静かに立ち上がる。"
       },
       {
-        "id": "p-62",
+        "id": "p-106",
         "kind": "dialogue",
         "text": "「皆の考え、よく分かった。」",
         "speaker": "徳川 慶喜"
       },
       {
-        "id": "p-63",
+        "id": "p-107",
         "kind": "dialogue",
         "text": "「どの策にも道理がある。」",
         "speaker": "徳川 慶喜"
       },
       {
-        "id": "p-64",
+        "id": "p-108",
         "kind": "dialogue",
         "text": "「だからこそ。」",
         "speaker": "徳川 慶喜"
       },
       {
-        "id": "p-65",
+        "id": "p-109",
         "kind": "dialogue",
         "text": "「決めねばならぬ。」",
         "speaker": "徳川 慶喜"
       },
       {
-        "id": "p-66",
+        "id": "p-110",
         "kind": "narration",
         "text": "静寂が流れる。"
       },
       {
-        "id": "p-67",
+        "id": "p-111",
         "kind": "narration",
         "text": "慶喜は、何を最も守るべきだと考えるか。"
       }
