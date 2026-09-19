@@ -1,3 +1,5 @@
+import QRCode from "qrcode";
+
 const CANVAS_WIDTH = 1240;
 const CANVAS_HEIGHT = 1754;
 const PAGE_MARGIN = 100;
@@ -13,6 +15,7 @@ const PDF_HEADING = "#221a12";
 const PDF_GOLD = "#9f7c32";
 const PDF_GOLD_LIGHT = "#c5a55d";
 const PDF_RULE = "#b99a51";
+const RELATED_PAGE_URL = "https://bakumatsu-management-game.vercel.app/development";
 
 type TextWeight = "normal" | "bold";
 
@@ -109,7 +112,60 @@ async function renderReportPagesAtScale(reportElement: HTMLElement, scale: numbe
     }, scale));
   }
 
+  currentPage = drawReportAttribution(currentPage, pages, scale);
+
   return pages.map((page) => page.canvas);
+}
+
+function drawReportAttribution(page: PdfPage, pages: PdfPage[], scale: number): PdfPage {
+  const qrTargetSize = 176;
+  const blockHeight = 230;
+
+  if (page.y + blockHeight > CANVAS_HEIGHT - PAGE_MARGIN) {
+    page = createPage(PDF_BG);
+    pages.push(page);
+  }
+
+  drawDivider(page, scale);
+  const top = page.y;
+  const qrCode = QRCode.create(RELATED_PAGE_URL, { errorCorrectionLevel: "M" });
+  const quietZone = 4;
+  const moduleCount = qrCode.modules.size + quietZone * 2;
+  const moduleSize = Math.max(1, Math.floor(qrTargetSize / moduleCount));
+  const qrSize = moduleCount * moduleSize;
+  const qrX = CANVAS_WIDTH - PAGE_MARGIN - qrSize;
+
+  page.context.fillStyle = "#ffffff";
+  page.context.fillRect(qrX, top, qrSize, qrSize);
+  page.context.fillStyle = "#17130f";
+  for (let row = 0; row < qrCode.modules.size; row += 1) {
+    for (let column = 0; column < qrCode.modules.size; column += 1) {
+      if (qrCode.modules.get(row, column)) {
+        page.context.fillRect(
+          qrX + (column + quietZone) * moduleSize,
+          top + (row + quietZone) * moduleSize,
+          moduleSize,
+          moduleSize,
+        );
+      }
+    }
+  }
+
+  const textX = PAGE_MARGIN;
+  page.context.fillStyle = PDF_GOLD;
+  page.context.font = fontValue(18, "bold", "sans");
+  page.context.fillText("企画・制作", textX, top + 2);
+  page.context.fillStyle = PDF_HEADING;
+  page.context.font = fontValue(25, "bold", "serif");
+  page.context.fillText("兵庫県中小企業診断士協会 青年部会", textX, top + 38);
+  page.context.fillStyle = PDF_SUBTEXT;
+  page.context.font = fontValue(19, "normal", "sans");
+  page.context.fillText("関連ページはこちら", textX, top + 94);
+  page.context.font = fontValue(15, "normal", "sans");
+  page.context.fillText(RELATED_PAGE_URL.replace("https://", ""), textX, top + 126);
+
+  page.y = top + Math.max(qrSize, 164) + 18;
+  return page;
 }
 
 async function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement, scale: number) {
@@ -117,6 +173,7 @@ async function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement
     .map((element) => element.textContent?.trim())
     .filter((text): text is string => Boolean(text));
   const title = titleLines.join(" ")
+    || reportElement.dataset.reportTitle
     || reportElement.querySelector<HTMLElement>(".quick-detail-header h1")?.textContent?.trim()
     || "幕末・明治維新 経営資質診断結果";
   const date = reportElement.querySelector<HTMLElement>(".report-meta dd")?.textContent?.trim()

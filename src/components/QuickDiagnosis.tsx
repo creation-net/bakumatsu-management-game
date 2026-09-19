@@ -244,7 +244,12 @@ export function QuickDiagnosis() {
         </button>
         <button className="muted" type="button" onClick={restart}>最初からやり直す</button>
       </nav>
-      <article ref={reportRef} className="quick-detail quick-panel" data-diagnosis-date={diagnosisDate}>
+      <article
+        ref={reportRef}
+        className="quick-detail quick-panel"
+        data-diagnosis-date={diagnosisDate}
+        data-report-title="幕末・明治維新 経営資質診断結果"
+      >
         <header className="quick-detail-header">
           <p className="eyebrow">幕末の15の決断</p>
           <h1>あなたの経営資質診断</h1>

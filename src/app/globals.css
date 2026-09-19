@@ -1975,7 +1975,7 @@ h3 {
 }
 
 .development-body {
-  max-width: 940px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: clamp(34px, 6vw, 72px) clamp(18px, 4vw, 40px) clamp(70px, 8vw, 112px);
 }
@@ -2045,6 +2045,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+  align-items: stretch;
   margin-top: 28px;
 }
 
@@ -2069,6 +2070,9 @@ h3 {
 }
 
 .development-edition-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
   border: 1px solid rgba(193, 159, 79, 0.48);
   background: linear-gradient(180deg, rgba(33, 22, 16, 0.78), rgba(7, 9, 12, 0.72));
   padding: clamp(22px, 3vw, 32px);
@@ -2202,8 +2206,10 @@ h3 {
 }
 
 .development-edition-card h3 {
-  white-space: nowrap;
-  font-size: clamp(1.24rem, 1.72vw, 1.62rem);
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: clamp(1.18rem, 1.55vw, 1.52rem);
 }
 
 .development-actions {
@@ -3122,6 +3128,19 @@ h3 {
   text-decoration: none;
 }
 
+@media (max-width: 1180px) {
+  .development-section-editions .development-edition-grid {
+    grid-template-columns: 1fr;
+    max-width: 680px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .development-edition-card h3 {
+    font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  }
+}
+
 .quick-shell,
 .policy-shell {
   width: 100%;
@@ -3612,6 +3631,19 @@ h3 {
     padding: 0 8px;
     box-sizing: border-box;
     font-size: 0.82rem;
+  }
+
+  .quick-result-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .quick-result-actions a,
+  .quick-result-actions button {
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 0.72rem;
+    white-space: nowrap;
   }
 
   .quick-panel,
