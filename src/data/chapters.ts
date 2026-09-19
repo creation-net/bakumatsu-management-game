@@ -1188,7 +1188,7 @@ export const chapters: Chapter[] = [
           {
                 "id": "p-96",
                 "kind": "dialogue",
-                "text": "「先生から。」",
+                "text": "「お前は先生から。」",
                 "speaker": "久坂 玄瑞"
           },
           {
@@ -1209,16 +1209,7 @@ export const chapters: Chapter[] = [
         "kind": "narration",
         "text": "議論は最後まで平行線だった。"
       },
-      {
-        "id": "e-3",
-        "kind": "narration",
-        "text": "それでも。"
-      },
-      {
-        "id": "e-4",
-        "kind": "narration",
-        "text": "誰一人、相手の志を否定する者はいなかった。"
-      },
+     
       {
         "id": "e-5",
         "kind": "narration",
@@ -1354,7 +1345,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-13",
         "kind": "dialogue",
-        "text": "「お前自身の目で見て。」",
+        "text": "「君自身の目で見て。」",
         "speaker": "桂 小五郎"
       },
       {
