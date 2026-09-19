@@ -521,6 +521,10 @@ function TitleScreen({
           あなたの選択から、経営における価値観と強みを診断します。
         </p>
 
+        <p className="diagnosis-scope-note">
+          本診断では、あなたの性格ではなく、意思決定に表れる経営資質を読み解きます。
+        </p>
+
         <div className="experience-grid" aria-label="遊び方を選ぶ">
           <article className="experience-card quick-experience-card">
             <p className="experience-label">簡易版</p>

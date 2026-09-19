@@ -2048,6 +2048,26 @@ h3 {
   margin-top: 28px;
 }
 
+.diagnosis-scope-note {
+  width: 100%;
+  max-width: 760px;
+  margin: 20px 0 0;
+  padding-left: 14px;
+  color: var(--muted);
+  border-left: 2px solid rgba(192, 160, 90, 0.38);
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+.quick-intro .diagnosis-scope-note {
+  margin: 0 0 22px;
+}
+
+.development-section-editions > .diagnosis-scope-note {
+  margin-bottom: 24px;
+}
+
 .development-edition-card {
   border: 1px solid rgba(193, 159, 79, 0.48);
   background: linear-gradient(180deg, rgba(33, 22, 16, 0.78), rgba(7, 9, 12, 0.72));

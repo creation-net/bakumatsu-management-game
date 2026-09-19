@@ -86,6 +86,9 @@ export default function DevelopmentPage() {
             <p>
               本アプリには、15問を約5分で診断できる簡易版、物語の要点を約15分で体験できる体験版、物語をじっくり追体験できる完全版があります。
             </p>
+            <p className="diagnosis-scope-note">
+              本診断では、あなたの性格ではなく、意思決定に表れる経営資質を読み解きます。
+            </p>
 
             <div className="development-edition-grid">
               <article className="development-edition-card">

@@ -9,7 +9,7 @@ import { quickDiagnosisQuestions } from "@/data/quickDiagnosisQuestions";
 import { calculateDiagnosis } from "@/lib/diagnosis";
 import type { ReadingProgress } from "@/types/story";
 
-type QuickScreen = "intro" | "question" | "summary" | "detail";
+type QuickScreen = "intro" | "question" | "detail";
 type QuickAnswers = Record<number, string>;
 
 const STORAGE_KEY = "bakumatsu-meiji-quick-diagnosis-v1";
@@ -52,7 +52,7 @@ export function QuickDiagnosis() {
     if (window.location.hash === "#continue") {
       const savedCount = Object.keys(savedAnswers).length;
       if (savedCount === quickDiagnosisQuestions.length) {
-        setScreen("summary");
+        setScreen("detail");
       } else {
         const firstUnanswered = quickDiagnosisQuestions.findIndex((question) => !savedAnswers[question.id]);
         setQuestionIndex(firstUnanswered >= 0 ? firstUnanswered : 0);
@@ -99,7 +99,7 @@ export function QuickDiagnosis() {
     const nextAnswers = { ...answers, [currentQuestion.id]: choiceId };
     saveAnswers(nextAnswers);
     if (questionIndex === quickDiagnosisQuestions.length - 1) {
-      setScreen("summary");
+      setScreen("detail");
     } else {
       setQuestionIndex(questionIndex + 1);
     }
@@ -128,6 +128,9 @@ export function QuickDiagnosis() {
             <p>15の場面で「自分ならどうするか」を選んでください。</p>
             <p>約5分で、あなたの意思決定の特徴を診断します。</p>
           </div>
+          <p className="diagnosis-scope-note">
+            本診断では、あなたの性格ではなく、意思決定に表れる経営資質を読み解きます。
+          </p>
           <div className={answeredCount === 0 ? "quick-intro-actions single" : "quick-intro-actions"}>
             <button className="primary-button quick-main-button" type="button" onClick={startNewDiagnosis}>
               診断を始める
@@ -138,7 +141,7 @@ export function QuickDiagnosis() {
               </button>
             )}
             {answeredCount === quickDiagnosisQuestions.length && (
-              <button className="secondary-button quick-main-button" type="button" onClick={() => setScreen("summary")}>
+              <button className="secondary-button quick-main-button" type="button" onClick={() => setScreen("detail")}>
                 結果を見る
               </button>
             )}
@@ -189,26 +192,6 @@ export function QuickDiagnosis() {
           </div>
           <div className="quick-question-actions">
             <button className="secondary-button" type="button" disabled={questionIndex === 0} onClick={() => setQuestionIndex(questionIndex - 1)}>前の質問へ</button>
-          </div>
-        </section>
-      </main>
-    );
-  }
-
-  if (screen === "summary") {
-    if (answeredCount < quickDiagnosisQuestions.length) return null;
-    return (
-      <main className="quick-shell">
-        <nav className="quick-topbar"><button type="button" onClick={() => { setQuestionIndex(14); setScreen("question"); }}>回答を見直す</button><button className="muted" type="button" onClick={restart}>最初からやり直す</button></nav>
-        <section className="quick-result quick-panel">
-          <p className="eyebrow">あなたの診断タイプ</p>
-          <h1>{diagnosis.primary.type}</h1>
-          <p className="quick-result-summary">{diagnosis.primary.summary}</p>
-          <p className="quick-person">この型に近い人物 <strong>{diagnosis.primary.name}</strong></p>
-          <div className="quick-detail-invitation">
-            <h2>さらに詳しい診断結果を見る</h2>
-            <p>あなたの強み、意思決定の特徴、注意したいポイント、相性のよい幕末の人物、そして「村瀬からの手紙」をご覧いただけます。</p>
-            <button className="primary-button quick-main-button" type="button" onClick={() => setScreen("detail")}>詳しい診断結果を見る</button>
           </div>
         </section>
       </main>
