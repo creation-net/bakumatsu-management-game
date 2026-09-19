@@ -3497,10 +3497,38 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+.quick-result-shell {
+  background: #08090b;
+}
+
 .quick-detail > section,
 .policy-panel section {
   padding: clamp(34px, 6vw, 58px) 0;
   border-bottom: 1px solid rgba(192, 160, 90, 0.22);
+}
+
+.quick-detail > .quick-diagnosis-visual {
+  position: relative;
+  min-height: 330px;
+  padding-right: clamp(180px, 38%, 330px);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.quick-diagnosis-visual::before {
+  position: absolute;
+  inset: 0 0 0 auto;
+  z-index: -1;
+  width: min(58%, 460px);
+  content: "";
+  background:
+    linear-gradient(90deg, #08090b 0%, rgba(8, 9, 11, 0.7) 30%, rgba(8, 9, 11, 0.2) 100%),
+    var(--diagnosis-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  opacity: 0.58;
+  pointer-events: none;
 }
 
 .quick-detail section > p,
@@ -3579,6 +3607,23 @@ h3 {
   .quick-panel,
   .policy-panel {
     padding: 26px 18px 34px;
+  }
+
+  .quick-detail > .quick-diagnosis-visual {
+    min-height: 350px;
+    padding-right: 0;
+  }
+
+  .quick-diagnosis-visual::before {
+    inset: 0;
+    width: 100%;
+    background:
+      linear-gradient(90deg, rgba(8, 9, 11, 0.94) 0%, rgba(8, 9, 11, 0.72) 56%, rgba(8, 9, 11, 0.4) 100%),
+      var(--diagnosis-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    opacity: 0.42;
   }
 
   .quick-intro {

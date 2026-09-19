@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import type { CSSProperties } from "react";
 import { getDiagnosisCombinationCautionAdvice } from "@/data/診断テキスト/経営で気を付けたいこと";
 import { getDiagnosisCombinationComments } from "@/data/診断テキスト/得意な経営の型";
 import { getDiagnosisManagementThemes } from "@/data/診断テキスト/力を発揮しやすい経営テーマ";
@@ -13,6 +14,11 @@ type QuickScreen = "intro" | "question" | "detail";
 type QuickAnswers = Record<number, string>;
 
 const STORAGE_KEY = "bakumatsu-meiji-quick-diagnosis-v1";
+
+function getDiagnosisImagePath(characterId: string): string {
+  return `/images/diagnosis/types/${characterId}.webp`;
+}
+
 function loadAnswers(): QuickAnswers {
   if (typeof window === "undefined") return {};
   try {
@@ -206,15 +212,21 @@ export function QuickDiagnosis() {
   const journeyLetter = getDiagnosisJourneyLetter(primary.id, secondary.id);
 
   return (
-    <main className="quick-shell">
+    <main className="quick-shell quick-result-shell">
       <nav className="quick-topbar"><a href="/">タイトルへ戻る</a><button className="muted" type="button" onClick={restart}>最初からやり直す</button></nav>
       <article className="quick-detail quick-panel">
         <header className="quick-detail-header">
           <p className="eyebrow">幕末の15の決断</p>
           <h1>あなたの経営資質診断</h1>
         </header>
-        <section><h2>あなたが大切にしている価値観</h2><p className="quick-type">{primary.type}</p><p>{primary.summary}</p><p className="quick-person">この型に近い人物 <strong>{primary.name}</strong></p></section>
-        <section><h2>あなたの判断を支えるもう一つの強み</h2><p className="quick-type secondary">{secondary.type}</p><p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p><p className="quick-person">この型に近い人物 <strong>{secondary.name}</strong></p></section>
+        <section
+          className="quick-diagnosis-visual"
+          style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(primary.id)}")` } as CSSProperties}
+        ><h2>あなたが大切にしている価値観</h2><p className="quick-type">{primary.type}</p><p>{primary.summary}</p><p className="quick-person">この型に近い人物 <strong>{primary.name}</strong></p></section>
+        <section
+          className="quick-diagnosis-visual"
+          style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(secondary.id)}")` } as CSSProperties}
+        ><h2>あなたの判断を支えるもう一つの強み</h2><p className="quick-type secondary">{secondary.type}</p><p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p><p className="quick-person">この型に近い人物 <strong>{secondary.name}</strong></p></section>
         <section><h2>あなたの得意な経営の型</h2><p className="quick-combination">{primary.type} × {secondary.type}</p>{comments.map((comment) => <p key={comment}>{comment}</p>)}</section>
         <section><h2>あなたが経営するうえで気を付けたいこと</h2>{cautionParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>
         <section><h2>意思決定の特徴</h2><ul>{primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}</ul></section>
