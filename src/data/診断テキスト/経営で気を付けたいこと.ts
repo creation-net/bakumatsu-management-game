@@ -106,9 +106,25 @@ export const defaultCautionTexts: Record<DiagnosisCharacterId, string> = {
   "yamagata": "組織を安定させようとするほど、規則が増え、現場の判断や新しい工夫を妨げることがあります。守るべき基準は明確にしつつ、現場に任せる範囲も定め、仕組みが目的になっていないか定期的に見直してください。"
 };
 
+export const supportiveAdviceTexts: Record<DiagnosisCharacterId, string> = {
+  "yoshida": "迷ったときは、何のための決断かを言葉にすると、あなたの思いは周囲にも届きやすくなるでしょう。",
+  "kusaka": "譲れないものを一つに絞れば、その覚悟は頑なさではなく、周囲を支える強さになるでしょう。",
+  "takasugi": "まず小さな一歩で手応えを確かめれば、あなたの大胆さを周囲も安心して支えられるでしょう。",
+  "kido": "考える期限を決めて一歩を選べば、先を読む力は迷いではなく、確かな道しるべになります。",
+  "sakamoto": "すべてを一人でまとめず、信頼できる人へ役割を託せば、つながりの力はより大きく育つでしょう。",
+  "omura": "結論を伝える前に相手の思いを一度受け止めれば、あなたの確かな判断は協力を得やすくなります。",
+  "saigo": "人を思うのと同じように自分の負担にも目を向ければ、あなたの温かさは長く力を保てるでしょう。",
+  "okubo": "歩みを少し止めて周囲の声を確かめれば、あなたの実行力はより多くの人を動かす力になります。",
+  "katsu": "誰もが納得する答えを探し続けるより、守る一線を言葉にすれば、あなたの調整力は決断を前へ運べます。",
+  "yamagata": "決まりを整えるときに現場の工夫が生きる余白も残せば、秩序と柔軟さを両立できるでしょう。"
+};
+
 export function getDiagnosisCombinationCautionAdvice(
   primaryId: DiagnosisCharacterId,
   secondaryId: DiagnosisCharacterId,
 ): string | undefined {
-  return combinationCautionTexts[`${primaryId}-${secondaryId}`];
+  const cautionText = combinationCautionTexts[`${primaryId}-${secondaryId}`];
+  if (!cautionText) return undefined;
+
+  return `${cautionText}${supportiveAdviceTexts[secondaryId]}`;
 }
