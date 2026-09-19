@@ -1357,7 +1357,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-15",
         "kind": "dialogue",
-        "text": "「その上で考えてこい。」",
+        "text": "「その上で考えてみなさい。」",
         "speaker": "桂 小五郎"
       },
       {
@@ -1692,7 +1692,7 @@ export const chapters: Chapter[] = [
       {
         "id": "p-75",
         "kind": "dialogue",
-        "text": "「皆が力を合わせる仕組みを作りたい。」",
+        "text": "「皆が力を合わせられる仕組みを作りたいがじゃ。」",
         "speaker": "坂本 龍馬"
       },
       {
@@ -2043,12 +2043,7 @@ export const chapters: Chapter[] = [
         "kind": "narration",
         "text": "三人とも、相手を見つめる。"
       },
-      {
-        "id": "p-135",
-        "kind": "narration",
-        "text": "否定する者はいない。"
-      },
-      {
+           {
         "id": "p-136",
         "kind": "narration",
         "text": "互いの言葉を受け止め、その先にある日本の未来を考えていた。"
@@ -2134,6 +2129,13 @@ export const chapters: Chapter[] = [
         "kind": "scene",
         "text": "（志は、人によって形が違う。）"
       },
+
+  {
+        "id": "e-10",
+        "kind": "scene",
+        "text": "（私の志とは、何だろうか……。）"
+      },
+
       {
         "id": "e-11",
         "kind": "narration",
@@ -5543,62 +5545,57 @@ export const chapters: Chapter[] = [
       }
     ],
     "endingPassages": [
-      {
-        "id": "e-1",
-        "kind": "narration",
-        "text": "軍議は終わった。"
-      },
-      {
-        "id": "e-2",
-        "kind": "narration",
-        "text": "大島を見捨てず、長州全体も守るのか。"
-      },
-      {
-        "id": "e-3",
-        "kind": "narration",
-        "text": "危険を承知で、大島を取り返すのか。"
-      },
-      {
-        "id": "e-4",
-        "kind": "narration",
-        "text": "限られた兵を、勝てる戦場へ集中するのか。"
-      },
-      {
-        "id": "e-5",
-        "kind": "narration",
-        "text": "誰も。"
-      },
-      {
-        "id": "e-6",
-        "kind": "narration",
-        "text": "大島の民を軽んじていたわけではない。"
-      },
-      {
-        "id": "e-7",
-        "kind": "narration",
-        "text": "守ろうとしているものと。"
-      },
-      {
-        "id": "e-8",
-        "kind": "narration",
-        "text": "守るための方法が違っていた。"
-      },
-      {
-        "id": "e-9",
-        "kind": "narration",
-        "text": "村瀬は、自ら選んだ判断の重さを胸に刻む。"
-      },
-      {
-        "id": "e-10",
-        "kind": "narration",
-        "text": "翌朝。"
-      },
-      {
-        "id": "e-11",
-        "kind": "narration",
-        "text": "長州軍は、それぞれの戦場へ向かった。"
-      }
-    ],
+  {
+    "id": "e-1",
+    "kind": "narration",
+    "text": "軍議は終わった。"
+  },
+  {
+    "id": "e-2",
+    "kind": "narration",
+    "text": "長州は、大島を奪還するため動き始める。"
+  },
+  {
+    "id": "e-3",
+    "kind": "narration",
+    "text": "高杉 晋作は丙寅丸に乗り込み、大島へ向かった。"
+  },
+  {
+    "id": "e-4",
+    "kind": "narration",
+    "text": "丙寅丸による奇襲をきっかけに、戦況は動き始める。"
+  },
+  {
+    "id": "e-5",
+    "kind": "narration",
+    "text": "その後、長州軍は大島へ上陸。"
+  },
+  {
+    "id": "e-6",
+    "kind": "narration",
+    "text": "第二奇兵隊をはじめとする兵たちは、島を知り尽くした地の利を生かして反撃した。"
+  },
+  {
+    "id": "e-7",
+    "kind": "narration",
+    "text": "そして。"
+  },
+  {
+    "id": "e-8",
+    "kind": "narration",
+    "text": "長州軍は、周防大島を奪還する。"
+  },
+  {
+    "id": "e-9",
+    "kind": "narration",
+    "text": "大島での勝利は、長州の人々に大きな自信を与えた。"
+  },
+  {
+    "id": "e-10",
+    "kind": "narration",
+    "text": "第二次長州征討は、ここから各地で大きく動き始める。"
+  }
+]
     "choices": [
       {
         "id": "choice-1",
