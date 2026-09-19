@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { getDiagnosisCombinationCautionAdvice } from "@/data/診断テキスト/経営で気を付けたいこと";
 import { getDiagnosisCombinationComments } from "@/data/診断テキスト/得意な経営の型";
 import { getDiagnosisManagementThemes } from "@/data/診断テキスト/力を発揮しやすい経営テーマ";
-import { quickJourneyLetter } from "@/data/診断テキスト/旅を終えたあなたへ";
+import { getDiagnosisJourneyLetter } from "@/data/診断テキスト/旅を終えたあなたへ";
 import { quickDiagnosisQuestions } from "@/data/quickDiagnosisQuestions";
 import { calculateDiagnosis } from "@/lib/diagnosis";
 import type { ReadingProgress } from "@/types/story";
@@ -203,6 +203,7 @@ export function QuickDiagnosis() {
   const caution = getDiagnosisCombinationCautionAdvice(primary.id, secondary.id) ?? primary.cautionAdvice;
   const cautionParagraphs = caution.split("\n\n");
   const themes = getDiagnosisManagementThemes(primary.id, secondary.id);
+  const journeyLetter = getDiagnosisJourneyLetter(primary.id, secondary.id);
 
   return (
     <main className="quick-shell">
@@ -218,7 +219,7 @@ export function QuickDiagnosis() {
         <section><h2>あなたが経営するうえで気を付けたいこと</h2>{cautionParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>
         <section><h2>意思決定の特徴</h2><ul>{primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}</ul></section>
         <section><h2>力を発揮しやすい経営テーマ</h2><ul>{themes.map((item) => <li key={item}>{item}</li>)}</ul></section>
-        <section className="quick-letter"><h2>旅を終えたあなたへ</h2>{quickJourneyLetter.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<p className="quick-signature">――村瀬</p></section>
+        <section className="quick-letter"><h2>旅を終えたあなたへ</h2>{journeyLetter.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<p className="quick-signature">―― 村瀬 新之助</p></section>
       </article>
     </main>
   );

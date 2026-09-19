@@ -365,13 +365,6 @@ export const journeyLetterTexts: Record<string, JourneyLetter> = {
   ]
 };
 
-export const quickJourneyLetter: readonly string[] = [
-  "十五の問いに、正しい答えはありません。",
-  "私もあの時代の中で、何度も迷いました。",
-  "大切なのは、何を選んだかだけではなく、なぜそれを選んだのか。",
-  "今回の結果が、あなた自身の考え方を振り返るきっかけになれば嬉しく思います。"
-];
-
 export function getDiagnosisJourneyLetter(
   primaryId: DiagnosisCharacterId,
   secondaryId: DiagnosisCharacterId,
