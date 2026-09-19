@@ -52,26 +52,3 @@ export const decisionTendencyTexts: Record<DiagnosisCharacterId, string[]> = {
     "規律と役割を明確にして、安定した判断を目指す"
   ]
 };
-
-const secondaryDecisionTendencyTexts: Record<DiagnosisCharacterId, string> = {
-  "yoshida": "迷ったときは、判断の目的に立ち返る",
-  "kusaka": "守るべきものを明確にし、必要な場面では覚悟を持って決める",
-  "takasugi": "行き詰まったときは、前例のない方法も選択肢に入れる",
-  "kido": "その場の結果だけでなく、将来への影響も考える",
-  "sakamoto": "関係する人の意見をつなぎ、協力できる道を探す",
-  "omura": "事実や根拠を確かめ、実現できる方法を選ぶ",
-  "saigo": "相手の思いや納得も考え、信頼を保てる道を選ぶ",
-  "okubo": "決めたことを担当・期限・行動へ落とし込む",
-  "katsu": "意見が対立したときも、双方が進める着地点を探す",
-  "yamagata": "役割と責任を整理し、組織全体が動ける形を考える"
-};
-
-export function getDiagnosisDecisionTendencies(
-  primaryId: DiagnosisCharacterId,
-  secondaryId: DiagnosisCharacterId,
-): string[] {
-  return [
-    ...decisionTendencyTexts[primaryId].slice(0, 2),
-    secondaryDecisionTendencyTexts[secondaryId],
-  ];
-}
