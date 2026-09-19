@@ -998,25 +998,12 @@ function ResultScreen({
             </section>
 
             <section className="diagnosis-section report-section">
-              <h2>強み・課題点</h2>
-              <div className="diagnosis-points">
-                <div>
-                  <h3>強み</h3>
-                  <ul className="diagnosis-list">
-                    {[...primary.strengths.slice(0, 2), secondary.secondaryDescription].map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h3>課題点</h3>
-                  <ul className="diagnosis-list">
-                    {primary.challenges.slice(0, 2).map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              <h2>課題点</h2>
+              <ul className="diagnosis-list">
+                {primary.challenges.slice(0, 2).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </section>
 
             <section className="diagnosis-section report-section">

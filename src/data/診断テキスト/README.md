@@ -29,4 +29,4 @@
 - `katsu`: 勝 海舟（調整型）
 - `yamagata`: 山縣 有朋（組織型）
 
-人物名、型名、箇条書きの「強み・課題点」は、一つ上の階層にある `diagnosisCharacters.ts` で管理しています。
+人物名、型名、箇条書きの「課題点」は、一つ上の階層にある `diagnosisCharacters.ts` で管理しています。
