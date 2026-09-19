@@ -119,6 +119,10 @@ export const supportiveAdviceTexts: Record<DiagnosisCharacterId, string> = {
   "yamagata": "決まりを整えるときに現場の工夫が生きる余白も残せば、秩序と柔軟さを両立できるでしょう。"
 };
 
+const supportiveAdviceOverrides: Record<string, string> = {
+  "kusaka-saigo": "あなたが信じる道を大切にするのと同じように、あなたを支える仲間の言葉にも耳を傾けてみてください。異なる意見を受け入れる余白が、これまで見えなかった道を開いてくれるでしょう。"
+};
+
 export function getDiagnosisCombinationCautionAdvice(
   primaryId: DiagnosisCharacterId,
   secondaryId: DiagnosisCharacterId,
@@ -126,5 +130,7 @@ export function getDiagnosisCombinationCautionAdvice(
   const cautionText = combinationCautionTexts[`${primaryId}-${secondaryId}`];
   if (!cautionText) return undefined;
 
-  return `${cautionText}${supportiveAdviceTexts[secondaryId]}`;
+  const combinationKey = `${primaryId}-${secondaryId}`;
+  const supportiveAdvice = supportiveAdviceOverrides[combinationKey] ?? supportiveAdviceTexts[secondaryId];
+  return `${cautionText}${supportiveAdvice}`;
 }
