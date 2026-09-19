@@ -233,8 +233,8 @@ export function QuickDiagnosis() {
           <p className="eyebrow">幕末の15の決断</p>
           <h1>あなたの経営資質診断</h1>
         </header>
-        <section><h2>あなたが大切にしている信念</h2><p className="quick-type">{primary.type}</p><p>{primary.summary}</p><p className="quick-person">この型に近い人物 <strong>{primary.name}</strong></p></section>
-        <section><h2>あなたに備わるもう一つの強み</h2><p className="quick-type secondary">{secondary.type}</p><p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p><p className="quick-person">この型に近い人物 <strong>{secondary.name}</strong></p></section>
+        <section><h2>あなたが大切にしている価値観</h2><p className="quick-type">{primary.type}</p><p>{primary.summary}</p><p className="quick-person">この型に近い人物 <strong>{primary.name}</strong></p></section>
+        <section><h2>あなたの判断を支えるもう一つの強み</h2><p className="quick-type secondary">{secondary.type}</p><p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p><p className="quick-person">この型に近い人物 <strong>{secondary.name}</strong></p></section>
         <section><h2>あなたの得意な経営の型</h2><p className="quick-combination">{primary.type} × {secondary.type}</p>{comments.map((comment) => <p key={comment}>{comment}</p>)}</section>
         <section><h2>あなたが経営するうえで気を付けたいこと</h2><p>{caution}</p></section>
         <section><h2>強み</h2><ul>{[...primary.strengths.slice(0, 2), secondary.secondaryDescription].map((item) => <li key={item}>{item}</li>)}</ul></section>

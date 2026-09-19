@@ -948,16 +948,12 @@ function ResultScreen({
           <div className="report-body">
             <section
               className="diagnosis-hero report-section diagnosis-visual-section"
-              aria-label="最も大事にしている信念"
+              aria-label="あなたが大切にしている価値観"
               style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(primary.id)}")` } as CSSProperties}
             >
               <h2 className="diagnosis-heading">
-                <span>あなたの経営における</span>
-                <span>
-                  最も大事にしている
-                  <br className="mobile-heading-break" />
-                  信念
-                </span>
+                <span>あなたが大切にしている</span>
+                <span>価値観</span>
               </h2>
               <p className="diagnosis-type-title">{primary.type}</p>
               <p>{primary.summary}。</p>
@@ -970,13 +966,13 @@ function ResultScreen({
 
             <section
               className="diagnosis-section report-section diagnosis-visual-section secondary-visual"
-              aria-label="もう一つの強み"
+              aria-label="あなたの判断を支えるもう一つの強み"
               style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(secondary.id)}")` } as CSSProperties}
             >
               <h2>
-                あなたに備わるもう一つの
+                あなたの判断を支える
                 <br className="mobile-heading-break" />
-                強み
+                もう一つの強み
               </h2>
               <p className="diagnosis-type-title secondary">{secondary.type}</p>
               <p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p>
