@@ -3164,6 +3164,16 @@ h3 {
   color: var(--muted);
 }
 
+.quick-result-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.quick-result-actions > * {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .quick-panel,
 .policy-panel {
   width: min(920px, 100%);

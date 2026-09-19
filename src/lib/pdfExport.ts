@@ -73,7 +73,10 @@ async function renderReportPagesAtScale(reportElement: HTMLElement, scale: numbe
   pages.push(currentPage);
   await drawCompactReportHeader(currentPage, reportElement, scale);
 
-  const sections = reportElement.querySelectorAll<HTMLElement>(".report-body > .report-section");
+  const reportSections = reportElement.querySelectorAll<HTMLElement>(".report-body > .report-section");
+  const sections = reportSections.length > 0
+    ? reportSections
+    : reportElement.querySelectorAll<HTMLElement>(":scope > .report-section");
   for (const section of Array.from(sections)) {
     if (section.classList.contains("report-page-two-start") && pages.length === 1) {
       currentPage = createPage(PDF_BG);
@@ -113,8 +116,11 @@ async function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement
   const titleLines = Array.from(reportElement.querySelectorAll<HTMLElement>(".report-cover h2 span"))
     .map((element) => element.textContent?.trim())
     .filter((text): text is string => Boolean(text));
-  const title = titleLines.join(" ");
-  const date = reportElement.querySelector<HTMLElement>(".report-meta dd")?.textContent?.trim();
+  const title = titleLines.join(" ")
+    || reportElement.querySelector<HTMLElement>(".quick-detail-header h1")?.textContent?.trim()
+    || "幕末・明治維新 経営資質診断結果";
+  const date = reportElement.querySelector<HTMLElement>(".report-meta dd")?.textContent?.trim()
+    || reportElement.dataset.diagnosisDate;
   const headerHeight = 176 * scale;
   const headerBottom = headerHeight + PAGE_MARGIN * 0.16;
 
@@ -180,9 +186,9 @@ function extractSectionBlocks(section: HTMLElement): DrawBlock[] {
         return;
       }
 
-      if (child.classList.contains("diagnosis-type-title")) {
+      if (child.classList.contains("diagnosis-type-title") || child.classList.contains("quick-type")) {
         blocks.push(textBlock(text, child.classList.contains("secondary") ? 46 : 52, 64, PDF_HEADING, "bold", 8, 22));
-      } else if (child.classList.contains("diagnosis-combination")) {
+      } else if (child.classList.contains("diagnosis-combination") || child.classList.contains("quick-combination")) {
         blocks.push(textBlock(text, 42, 58, PDF_HEADING, "bold", 6, 14));
       } else if (child.classList.contains("diagnosis-combination-people")) {
         blocks.push(textBlock(text, 24, 38, PDF_SUBTEXT, "normal", 0, 20));

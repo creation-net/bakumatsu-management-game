@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { getDiagnosisCombinationCautionAdvice } from "@/data/診断テキスト/経営で気を付けたいこと";
 import { getDiagnosisCombinationComments } from "@/data/診断テキスト/得意な経営の型";
@@ -8,6 +8,7 @@ import { getDiagnosisManagementThemes } from "@/data/診断テキスト/力を�
 import { getDiagnosisJourneyLetter } from "@/data/診断テキスト/旅を終えたあなたへ";
 import { quickDiagnosisQuestions } from "@/data/quickDiagnosisQuestions";
 import { calculateDiagnosis } from "@/lib/diagnosis";
+import { downloadDiagnosisReportPdf } from "@/lib/pdfExport";
 import type { ReadingProgress } from "@/types/story";
 
 type QuickScreen = "intro" | "question" | "detail";
@@ -50,6 +51,8 @@ export function QuickDiagnosis() {
   const [screen, setScreen] = useState<QuickScreen>("intro");
   const [answers, setAnswers] = useState<QuickAnswers>({});
   const [questionIndex, setQuestionIndex] = useState(0);
+  const reportRef = useRef<HTMLElement>(null);
+  const [pdfStatus, setPdfStatus] = useState<"idle" | "saving" | "saved">("idle");
 
   useEffect(() => {
     const savedAnswers = loadAnswers();
@@ -76,6 +79,7 @@ export function QuickDiagnosis() {
   const answeredCount = Object.keys(answers).length;
   const progress = useMemo(() => toProgress(answers), [answers]);
   const diagnosis = useMemo(() => calculateDiagnosis(progress), [progress]);
+  const diagnosisDate = formatQuickDiagnosisDate(progress.updatedAt);
   const currentQuestion = quickDiagnosisQuestions[questionIndex];
 
   function saveAnswers(nextAnswers: QuickAnswers) {
@@ -117,6 +121,26 @@ export function QuickDiagnosis() {
     setAnswers({});
     setQuestionIndex(0);
     setScreen("intro");
+  }
+
+  async function handlePdfDownload() {
+    if (!reportRef.current || pdfStatus === "saving") return;
+
+    setPdfStatus("saving");
+    try {
+      await downloadDiagnosisReportPdf(reportRef.current, diagnosisDate);
+      setPdfStatus("saved");
+      window.setTimeout(() => setPdfStatus("idle"), 2500);
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") {
+        setPdfStatus("idle");
+        return;
+      }
+
+      console.error(error);
+      window.alert(error instanceof Error ? error.message : "PDFを作成できませんでした。もう一度お試しください。");
+      setPdfStatus("idle");
+    }
   }
 
   if (!mounted) return <main className="quick-shell" />;
@@ -213,27 +237,45 @@ export function QuickDiagnosis() {
 
   return (
     <main className="quick-shell quick-result-shell">
-      <nav className="quick-topbar"><a href="/">タイトルへ戻る</a><button className="muted" type="button" onClick={restart}>最初からやり直す</button></nav>
-      <article className="quick-detail quick-panel">
+      <nav className="quick-topbar quick-result-actions">
+        <a href="/">タイトルへ戻る</a>
+        <button className="primary-button" type="button" disabled={pdfStatus === "saving"} onClick={() => void handlePdfDownload()}>
+          {pdfStatus === "saving" ? "PDFを出力中" : pdfStatus === "saved" ? "PDFを出力しました" : "PDFで出力する"}
+        </button>
+        <button className="muted" type="button" onClick={restart}>最初からやり直す</button>
+      </nav>
+      <article ref={reportRef} className="quick-detail quick-panel" data-diagnosis-date={diagnosisDate}>
         <header className="quick-detail-header">
           <p className="eyebrow">幕末の15の決断</p>
           <h1>あなたの経営資質診断</h1>
         </header>
         <section
-          className="quick-diagnosis-visual"
+          className="quick-diagnosis-visual report-section"
           style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(primary.id)}")` } as CSSProperties}
         ><h2>あなたが大切にしている価値観</h2><p className="quick-type">{primary.type}</p><p>{primary.summary}</p><p className="quick-person">この型に近い人物 <strong>{primary.name}</strong></p></section>
         <section
-          className="quick-diagnosis-visual"
+          className="quick-diagnosis-visual report-section"
           style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(secondary.id)}")` } as CSSProperties}
         ><h2>あなたの判断を支えるもう一つの強み</h2><p className="quick-type secondary">{secondary.type}</p><p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p><p className="quick-person">この型に近い人物 <strong>{secondary.name}</strong></p></section>
-        <section><h2>あなたの得意な経営の型</h2><p className="quick-combination">{primary.type} × {secondary.type}</p>{comments.map((comment) => <p key={comment}>{comment}</p>)}</section>
-        <section><h2>あなたが経営するうえで気を付けたいこと</h2>{cautionParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>
-        <section><h2>あなたの意思決定の傾向</h2><ul>{primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}</ul></section>
-        <section><h2>課題点</h2><ul>{primary.challenges.slice(0, 2).map((item) => <li key={item}>{item}</li>)}</ul></section>
-        <section><h2>力を発揮しやすい経営テーマ</h2><ul>{themes.map((item) => <li key={item}>{item}</li>)}</ul></section>
-        <section className="quick-letter"><h2>旅を終えたあなたへ</h2>{journeyLetter.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<p className="quick-signature">―― 村瀬 新之助</p></section>
+        <section className="report-section"><h2>あなたの得意な経営の型</h2><p className="quick-combination">{primary.type} × {secondary.type}</p>{comments.map((comment) => <p key={comment}>{comment}</p>)}</section>
+        <section className="report-section report-page-two-start"><h2>あなたが経営するうえで気を付けたいこと</h2>{cautionParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>
+        <section className="report-section"><h2>あなたの意思決定の傾向</h2><ul>{primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}</ul></section>
+        <section className="report-section"><h2>課題点</h2><ul>{primary.challenges.slice(0, 2).map((item) => <li key={item}>{item}</li>)}</ul></section>
+        <section className="report-section"><h2>力を発揮しやすい経営テーマ</h2><ul>{themes.map((item) => <li key={item}>{item}</li>)}</ul></section>
+        <section className="quick-letter report-section"><h2>旅を終えたあなたへ</h2>{journeyLetter.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<p className="quick-signature">―― 村瀬 新之助</p></section>
+        <footer className="report-footer">この診断は15の歴史的意思決定をもとに、あなたの経営資質を分析しています。</footer>
       </article>
     </main>
   );
+}
+
+function formatQuickDiagnosisDate(updatedAt: string): string {
+  const parsedDate = updatedAt ? new Date(updatedAt) : new Date();
+  const date = Number.isNaN(parsedDate.getTime()) ? new Date() : parsedDate;
+
+  return new Intl.DateTimeFormat("ja-JP", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(date);
 }
