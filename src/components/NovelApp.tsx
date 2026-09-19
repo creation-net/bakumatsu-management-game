@@ -6,10 +6,10 @@ import { chapters as fullChapters } from "@/data/chapters";
 import { trialChapters } from "@/data/trialChapters";
 import {
   getDiagnosisCombinationCautionAdvice,
-  getDiagnosisCombinationComments,
-} from "@/data/diagnosisCombinationComments";
-import { getDiagnosisManagementThemes } from "@/data/diagnosisManagementThemes";
-import { getDiagnosisJourneyLetter } from "@/data/diagnosisJourneyLetters";
+} from "@/data/診断テキスト/経営で気を付けたいこと";
+import { getDiagnosisCombinationComments } from "@/data/診断テキスト/得意な経営の型";
+import { getDiagnosisManagementThemes } from "@/data/診断テキスト/力を発揮しやすい経営テーマ";
+import { getDiagnosisJourneyLetter } from "@/data/診断テキスト/旅を終えたあなたへ";
 import { calculateDiagnosis } from "@/lib/diagnosis";
 import { downloadDiagnosisReportPdf } from "@/lib/pdfExport";
 import { initialProgress, loadProgress, resetProgress, saveProgress } from "@/lib/progress";

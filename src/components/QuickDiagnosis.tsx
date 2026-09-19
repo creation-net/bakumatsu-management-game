@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { getDiagnosisCombinationCautionAdvice, getDiagnosisCombinationComments } from "@/data/diagnosisCombinationComments";
-import { getDiagnosisManagementThemes } from "@/data/diagnosisManagementThemes";
+import { getDiagnosisCombinationCautionAdvice } from "@/data/診断テキスト/経営で気を付けたいこと";
+import { getDiagnosisCombinationComments } from "@/data/診断テキスト/得意な経営の型";
+import { getDiagnosisManagementThemes } from "@/data/診断テキスト/力を発揮しやすい経営テーマ";
+import { quickJourneyLetter } from "@/data/診断テキスト/旅を終えたあなたへ";
 import { quickDiagnosisQuestions } from "@/data/quickDiagnosisQuestions";
 import { calculateDiagnosis } from "@/lib/diagnosis";
 import type { ReadingProgress } from "@/types/story";
@@ -11,13 +13,6 @@ type QuickScreen = "intro" | "question" | "summary" | "detail";
 type QuickAnswers = Record<number, string>;
 
 const STORAGE_KEY = "bakumatsu-meiji-quick-diagnosis-v1";
-const QUICK_LETTER = [
-  "十五の問いに、正しい答えはありません。",
-  "私もあの時代の中で、何度も迷いました。",
-  "大切なのは、何を選んだかだけではなく、なぜそれを選んだのか。",
-  "今回の結果が、あなた自身の考え方を振り返るきっかけになれば嬉しく思います。",
-];
-
 function loadAnswers(): QuickAnswers {
   if (typeof window === "undefined") return {};
   try {
@@ -240,7 +235,7 @@ export function QuickDiagnosis() {
         <section><h2>強み</h2><ul>{[...primary.strengths.slice(0, 2), secondary.secondaryDescription].map((item) => <li key={item}>{item}</li>)}</ul></section>
         <section><h2>意思決定の特徴</h2><ul>{primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}</ul></section>
         <section><h2>力を発揮しやすい経営テーマ</h2><ul>{themes.map((item) => <li key={item}>{item}</li>)}</ul></section>
-        <section className="quick-letter"><h2>旅を終えたあなたへ</h2>{QUICK_LETTER.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<p className="quick-signature">――村瀬</p></section>
+        <section className="quick-letter"><h2>旅を終えたあなたへ</h2>{quickJourneyLetter.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<p className="quick-signature">――村瀬</p></section>
       </article>
     </main>
   );
