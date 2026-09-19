@@ -1003,18 +1003,18 @@ function ResultScreen({
             </section>
 
             <section className="diagnosis-section report-section">
+              <h2>あなたの意思決定の傾向</h2>
+              <ul className="diagnosis-list diagnosis-tendencies">
+                {primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </section>
+
+            <section className="diagnosis-section report-section">
               <h2>課題点</h2>
               <ul className="diagnosis-list">
                 {primary.challenges.slice(0, 2).map((item) => (
                   <li key={item}>{item}</li>
                 ))}
-              </ul>
-            </section>
-
-            <section className="diagnosis-section report-section">
-              <h2>あなたの意思決定の傾向</h2>
-              <ul className="diagnosis-list diagnosis-tendencies">
-                {primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}
               </ul>
             </section>
 
