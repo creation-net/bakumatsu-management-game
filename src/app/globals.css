@@ -1712,13 +1712,13 @@ h3 {
     inset: 0;
     width: 100%;
     background:
-      linear-gradient(90deg, rgba(8, 9, 11, 0.94) 0%, rgba(8, 9, 11, 0.7) 48%, rgba(8, 9, 11, 0.08) 100%),
+      linear-gradient(90deg, rgba(8, 9, 11, 0.98) 0%, rgba(8, 9, 11, 0.86) 48%, rgba(8, 9, 11, 0.42) 100%),
       var(--diagnosis-image);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
-    opacity: 0.86;
-    filter: brightness(1.16) saturate(1.08);
+    opacity: 0.82;
+    filter: brightness(0.92) saturate(0.96);
   }
 
   .diagnosis-visual-section.secondary-visual {
@@ -3660,13 +3660,13 @@ h3 {
     inset: 0;
     width: 100%;
     background:
-      linear-gradient(90deg, rgba(8, 9, 11, 0.94) 0%, rgba(8, 9, 11, 0.7) 48%, rgba(8, 9, 11, 0.08) 100%),
+      linear-gradient(90deg, rgba(8, 9, 11, 0.98) 0%, rgba(8, 9, 11, 0.86) 48%, rgba(8, 9, 11, 0.42) 100%),
       var(--diagnosis-image);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
-    opacity: 0.86;
-    filter: brightness(1.16) saturate(1.08);
+    opacity: 0.82;
+    filter: brightness(0.92) saturate(0.96);
   }
 
   .quick-intro {
