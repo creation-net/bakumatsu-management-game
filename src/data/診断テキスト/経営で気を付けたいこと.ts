@@ -132,5 +132,5 @@ export function getDiagnosisCombinationCautionAdvice(
 
   const combinationKey = `${primaryId}-${secondaryId}`;
   const supportiveAdvice = supportiveAdviceOverrides[combinationKey] ?? supportiveAdviceTexts[secondaryId];
-  return `${cautionText}${supportiveAdvice}`;
+  return `${cautionText}\n\n${supportiveAdvice}`;
 }

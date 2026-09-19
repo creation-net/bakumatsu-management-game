@@ -886,6 +886,7 @@ function ResultScreen({
   const diagnosisDate = formatDiagnosisDate(progress.updatedAt);
   const combinationComments = getDiagnosisCombinationComments(primary.id, secondary.id);
   const combinationCautionAdvice = getDiagnosisCombinationCautionAdvice(primary.id, secondary.id);
+  const cautionParagraphs = (combinationCautionAdvice ?? primary.cautionAdvice).split("\n\n");
   const managementThemes = getDiagnosisManagementThemes(primary.id, secondary.id);
   const journeyLetter = getDiagnosisJourneyLetter(primary.id, secondary.id);
   const reportRef = useRef<HTMLElement>(null);
@@ -998,7 +999,7 @@ function ResultScreen({
 
             <section className="diagnosis-section report-section report-page-two-start">
               <h2>あなたが経営するうえで気を付けたいこと</h2>
-              <p>{combinationCautionAdvice ?? primary.cautionAdvice}</p>
+              {cautionParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </section>
 
             <section className="diagnosis-section report-section">

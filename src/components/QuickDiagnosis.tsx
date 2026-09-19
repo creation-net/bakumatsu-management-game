@@ -201,6 +201,7 @@ export function QuickDiagnosis() {
   const { primary, secondary } = diagnosis;
   const comments = getDiagnosisCombinationComments(primary.id, secondary.id);
   const caution = getDiagnosisCombinationCautionAdvice(primary.id, secondary.id) ?? primary.cautionAdvice;
+  const cautionParagraphs = caution.split("\n\n");
   const themes = getDiagnosisManagementThemes(primary.id, secondary.id);
 
   return (
@@ -214,7 +215,7 @@ export function QuickDiagnosis() {
         <section><h2>あなたが大切にしている価値観</h2><p className="quick-type">{primary.type}</p><p>{primary.summary}</p><p className="quick-person">この型に近い人物 <strong>{primary.name}</strong></p></section>
         <section><h2>あなたの判断を支えるもう一つの強み</h2><p className="quick-type secondary">{secondary.type}</p><p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p><p className="quick-person">この型に近い人物 <strong>{secondary.name}</strong></p></section>
         <section><h2>あなたの得意な経営の型</h2><p className="quick-combination">{primary.type} × {secondary.type}</p>{comments.map((comment) => <p key={comment}>{comment}</p>)}</section>
-        <section><h2>あなたが経営するうえで気を付けたいこと</h2><p>{caution}</p></section>
+        <section><h2>あなたが経営するうえで気を付けたいこと</h2>{cautionParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>
         <section><h2>意思決定の特徴</h2><ul>{primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}</ul></section>
         <section><h2>力を発揮しやすい経営テーマ</h2><ul>{themes.map((item) => <li key={item}>{item}</li>)}</ul></section>
         <section className="quick-letter"><h2>旅を終えたあなたへ</h2>{quickJourneyLetter.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<p className="quick-signature">――村瀬</p></section>
