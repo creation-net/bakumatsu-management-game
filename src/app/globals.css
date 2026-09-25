@@ -2052,10 +2052,20 @@ h3 {
 
 .development-edition-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   align-items: stretch;
+  width: 100%;
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 28px;
+}
+
+.development-edition-card:last-child {
+  grid-column: 1 / -1;
+  width: calc((100% - 18px) / 2);
+  justify-self: center;
 }
 
 .diagnosis-scope-note {
@@ -2146,6 +2156,11 @@ h3 {
 
   .development-edition-grid {
     grid-template-columns: 1fr;
+  }
+
+  .development-edition-card:last-child {
+    grid-column: auto;
+    width: 100%;
   }
 
   .development-actions {
@@ -3143,6 +3158,11 @@ h3 {
     max-width: 680px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .development-section-editions .development-edition-card:last-child {
+    grid-column: auto;
+    width: 100%;
   }
 
   .development-edition-card h3 {
