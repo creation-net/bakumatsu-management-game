@@ -178,7 +178,8 @@ async function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement
     || "幕末・明治維新 経営資質診断結果";
   const date = reportElement.querySelector<HTMLElement>(".report-meta dd")?.textContent?.trim()
     || reportElement.dataset.diagnosisDate;
-  const headerHeight = 176 * scale;
+  const contextNote = reportElement.querySelector<HTMLElement>(".diagnosis-context-note")?.textContent?.trim();
+  const headerHeight = contextNote ? 236 * scale : 176 * scale;
   const headerBottom = headerHeight + PAGE_MARGIN * 0.16;
 
   const headerGradient = page.context.createLinearGradient(0, 0, CANVAS_WIDTH, headerBottom);
@@ -201,6 +202,14 @@ async function drawCompactReportHeader(page: PdfPage, reportElement: HTMLElement
   if (date) {
     drawSingleLine(page, `診断日　${date}`, PAGE_MARGIN, 22 * scale, PDF_GOLD_LIGHT, "normal", "sans");
     page.y += 42 * scale;
+  }
+  if (contextNote) {
+    page.context.font = fontValue(18 * scale, "normal", "sans");
+    page.context.fillStyle = PDF_SUBTEXT;
+    wrapText(page.context, contextNote, CONTENT_WIDTH).forEach((line) => {
+      page.context.fillText(line, PAGE_MARGIN, page.y);
+      page.y += 30 * scale;
+    });
   }
   page.y = headerHeight + 44 * scale;
 }

@@ -1192,6 +1192,15 @@ h3 {
   display: inline !important;
 }
 
+.diagnosis-context-note {
+  max-width: 42rem;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
 .report-meta {
   display: flex;
   flex-wrap: wrap;
@@ -3524,6 +3533,10 @@ h3 {
 .quick-detail-header {
   padding-bottom: clamp(34px, 6vw, 58px);
   border-bottom: 1px solid var(--line);
+}
+
+.quick-detail-header .diagnosis-context-note {
+  margin-top: 22px;
 }
 
 .quick-result-shell {

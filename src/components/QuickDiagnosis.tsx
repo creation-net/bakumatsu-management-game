@@ -253,6 +253,9 @@ export function QuickDiagnosis() {
         <header className="quick-detail-header">
           <p className="eyebrow">幕末の15の決断</p>
           <h1>あなたの経営資質診断</h1>
+          <p className="diagnosis-context-note">
+            本診断の結果は、性格そのものを示すものではありません。15の意思決定に表れた傾向から、あなたの経営資質を読み解いたものです。
+          </p>
         </header>
         <section
           className="quick-diagnosis-visual report-section"

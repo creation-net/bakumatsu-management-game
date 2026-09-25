@@ -942,6 +942,9 @@ function ResultScreen({
               <span className="report-title-diagnosis">経営資質診断</span>
               <span className="report-title-report">結果</span>
             </h2>
+            <p className="diagnosis-context-note">
+              本診断の結果は、性格そのものを示すものではありません。15の意思決定に表れた傾向から、あなたの経営資質を読み解いたものです。
+            </p>
             <dl className="report-meta">
               <div>
                 <dt>診断日</dt>
