@@ -5,6 +5,9 @@ export const chapterImagePaths = Array.from({ length: 15 }, (_, index) => {
 
 export const titleImagePath = "/images/title/main.png";
 
+export const diagnosisResultFooterText =
+  "本診断の結果は、性格そのものを示すものではありません。15の意思決定に表れた傾向から、あなたの経営資質を読み解いたものです。";
+
 const japaneseChapterNumerals = [
   "",
   "一",

@@ -9,6 +9,7 @@ import { getDiagnosisJourneyLetter } from "@/data/診断テキスト/旅を終�
 import { quickDiagnosisQuestions } from "@/data/quickDiagnosisQuestions";
 import { calculateDiagnosis } from "@/lib/diagnosis";
 import { downloadDiagnosisReportPdf } from "@/lib/pdfExport";
+import { diagnosisResultFooterText, titleImagePath } from "@/lib/storyPresentation";
 import type { ReadingProgress } from "@/types/story";
 
 type QuickScreen = "intro" | "question" | "detail";
@@ -244,35 +245,112 @@ export function QuickDiagnosis() {
         </button>
         <button className="muted" type="button" onClick={restart}>最初からやり直す</button>
       </nav>
-      <article
-        ref={reportRef}
-        className="quick-detail quick-panel"
-        data-diagnosis-date={diagnosisDate}
-        data-report-title="幕末・明治維新 経営資質診断結果"
-      >
-        <header className="quick-detail-header">
-          <p className="eyebrow">幕末の15の決断</p>
-          <h1>あなたの経営資質診断</h1>
-          <p className="diagnosis-context-note">
-            本診断の結果は、性格そのものを示すものではありません。15の意思決定に表れた傾向から、あなたの経営資質を読み解いたものです。
-          </p>
-        </header>
-        <section
-          className="quick-diagnosis-visual report-section"
-          style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(primary.id)}")` } as CSSProperties}
-        ><h2>あなたが大切にしている価値観</h2><p className="quick-type">{primary.type}</p><p>{primary.summary}</p><p className="quick-person">この型に近い人物 <strong>{primary.name}</strong></p></section>
-        <section
-          className="quick-diagnosis-visual report-section"
-          style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(secondary.id)}")` } as CSSProperties}
-        ><h2>あなたの判断を支えるもう一つの強み</h2><p className="quick-type secondary">{secondary.type}</p><p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p><p className="quick-person">この型に近い人物 <strong>{secondary.name}</strong></p></section>
-        <section className="report-section"><h2>あなたの得意な経営の型</h2><p className="quick-combination">{primary.type} × {secondary.type}</p>{comments.map((comment) => <p key={comment}>{comment}</p>)}</section>
-        <section className="report-section report-page-two-start"><h2>あなたが経営するうえで気を付けたいこと</h2>{cautionParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>
-        <section className="report-section"><h2>あなたの意思決定の傾向</h2><ul>{primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}</ul></section>
-        <section className="report-section"><h2>課題点</h2><ul>{primary.challenges.slice(0, 2).map((item) => <li key={item}>{item}</li>)}</ul></section>
-        <section className="report-section"><h2>力を発揮しやすい経営テーマ</h2><ul>{themes.map((item) => <li key={item}>{item}</li>)}</ul></section>
-        <section className="quick-letter report-section"><h2>旅を終えたあなたへ</h2>{journeyLetter.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<p className="quick-signature">―― 村瀬 新之助</p></section>
-        <footer className="report-footer">この診断は15の歴史的意思決定をもとに、あなたの経営資質を分析しています。</footer>
-      </article>
+      <section className="result-view scene-frame">
+        <div className="report-shell">
+          <article ref={reportRef} className="diagnosis-report">
+            <header className="report-cover">
+              <img className="report-cover-image" src={titleImagePath} alt="" aria-hidden="true" />
+              <h2>
+                <span>幕末・明治維新</span>
+                <span className="report-title-diagnosis">経営資質診断</span>
+                <span className="report-title-report">結果</span>
+              </h2>
+              <dl className="report-meta">
+                <div>
+                  <dt>診断日</dt>
+                  <dd>{diagnosisDate}</dd>
+                </div>
+              </dl>
+            </header>
+
+            <div className="report-body">
+              <section
+                className="diagnosis-hero report-section diagnosis-visual-section"
+                aria-label="あなたが大切にしている価値観"
+                style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(primary.id)}")` } as CSSProperties}
+              >
+                <h2 className="diagnosis-heading">
+                  <span>あなたが大切にしている</span>
+                  <span>価値観</span>
+                </h2>
+                <p className="diagnosis-type-title">{primary.type}</p>
+                <p>{primary.summary}。</p>
+                <div className="diagnosis-person">
+                  <span>この型に近い人物</span>
+                  <strong>{primary.name}</strong>
+                  <span className="diagnosis-stars" aria-label="五つ星">★★★★★</span>
+                </div>
+              </section>
+
+              <section
+                className="diagnosis-section report-section diagnosis-visual-section secondary-visual"
+                aria-label="あなたの判断を支えるもう一つの強み"
+                style={{ "--diagnosis-image": `url("${getDiagnosisImagePath(secondary.id)}")` } as CSSProperties}
+              >
+                <h2>
+                  あなたの判断を支える
+                  <br className="mobile-heading-break" />
+                  もう一つの強み
+                </h2>
+                <p className="diagnosis-type-title secondary">{secondary.type}</p>
+                <p>{secondary.secondaryDescription}も、あなたの判断に表れやすい強みです。</p>
+                <div className="diagnosis-person">
+                  <span>この型に近い人物</span>
+                  <strong>{secondary.name}</strong>
+                  <span className="diagnosis-stars" aria-label="四つ星">★★★★☆</span>
+                </div>
+              </section>
+
+              <section className="diagnosis-section report-section" aria-label="得意な経営の型">
+                <h2>あなたの得意な経営の型</h2>
+                <p className="diagnosis-combination">{primary.type} × {secondary.type}</p>
+                <p className="diagnosis-combination-people">{primary.name} × {secondary.name}</p>
+                <div className="diagnosis-advice">
+                  {comments.map((comment) => <p key={comment}>{comment}</p>)}
+                </div>
+              </section>
+
+              <section className="diagnosis-section report-section report-page-two-start">
+                <h2>あなたが経営するうえで気を付けたいこと</h2>
+                {cautionParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              </section>
+
+              <section className="diagnosis-section report-section">
+                <h2>あなたの意思決定の傾向</h2>
+                <ul className="diagnosis-list diagnosis-tendencies">
+                  {primary.decisionTendencies.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </section>
+
+              <section className="diagnosis-section report-section">
+                <h2>課題点</h2>
+                <ul className="diagnosis-list">
+                  {primary.challenges.slice(0, 2).map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </section>
+
+              <section className="diagnosis-section report-section management-theme-section" aria-label="力を発揮しやすい経営テーマ">
+                <h2>あなたが力を発揮しやすい経営テーマ</h2>
+                <ul className="diagnosis-list management-theme-list">
+                  {themes.map((theme) => <li key={theme}>{theme}</li>)}
+                </ul>
+              </section>
+
+              <section className="diagnosis-section report-section journey-letter" aria-label="旅を終えたあなたへ">
+                <h2>旅を終えたあなたへ</h2>
+                {journeyLetter.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                <p className="journey-letter-signature">―― 村瀬 新之助</p>
+              </section>
+            </div>
+
+            <footer className="report-footer">{diagnosisResultFooterText}</footer>
+          </article>
+
+          <div className="development-link-panel no-print">
+            <a href="/development">この診断アプリに込めた思いを読む</a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

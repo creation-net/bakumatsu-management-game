@@ -11,7 +11,7 @@ export const valueAndStrengthTexts: Record<DiagnosisCharacterId, ValueAndStrengt
     "secondaryStrengthDescription": "人の可能性を信じ、理念によって周囲を奮い立たせる力"
   },
   "kusaka": {
-    "valueDescription": "あなたは強い信念を軸に、迷いの多い局面でも覚悟をもって前に進むことができます。",
+    "valueDescription": "あなたは強い信念を軸に、迷いの多い局面でも覚悟をもって前に進むことができます",
     "secondaryStrengthDescription": "信念を貫き、困難な場面でも覚悟を示す力"
   },
   "takasugi": {
